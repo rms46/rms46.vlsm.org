@@ -1,0 +1,38 @@
+Dave Borman  -- 5 May 1989 -- TCP/IP list
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8908.mm.www/0139.html
+-------------------------------------------------------------------------
+
+                          IETF TELNET working group
+
+
+This is an announcement that the IETF (Internet Engineering Task Force)
+will be forming a new working group to address the TELNET protocol.
+
+In the last six months to a year, there has been a lot of interest in
+the TELNET protocol, a lot of new options have been proposed, and a lot
+of discussion has gone into how to make TELNET better. The purpose of
+this working group will be to collect the current uses and wishes for
+TELNET, and produce one or more RFCs to address these issues.
+
+One possible outcome from this working group would be to issue a new
+RFC on TELNET that would obsolete RFC 854. Also, some new TELNET
+options may be added to fix problems/limitations that people are
+currently having with TELNET (an option to allow automatic user
+authentication is needed).
+
+This group will have its first meeting at the next IETF meeting (at the
+end of July at Stanford). There will be a mailing list for this working
+group, and that is what this message is for. I hope that a lot of the
+discussion will happen over the mailing list, even before the first
+meeting of the group. I am going to start a list of names for the
+mailing list. Send me your name if you want to be on this mailing list.
+When the mailing list is formed, you will receive mail about where the
+mailing list is located (and there will probably be another announcement
+on tcp-ip). Also, please indicate whether or not you are involved in
+the IETF and would be at the next meeting.
+
+Send your requests to dab@cray.com, or, if you don't have nameserver
+and MX record support, and MX record support, dab%cray.com@uc.msc.umn.edu.
+
+                -Dave Borman, dab@cray.com
+

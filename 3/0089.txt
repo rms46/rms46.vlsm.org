@@ -1,0 +1,36 @@
+IMR -- March 1993 -- http://www.isi.edu/in-notes/imr/imr9303.txt
+----------------------------------------------------------------
+
+  THE NEW WORLD ORDER
+
+     The November 1992 IETF meeting adopted the outline of a new
+     organizational structure for the IAB/IETF, to accomodate continued
+     growth and new consituencies.  This outline was documented in RFC-
+     1396 ["The Process for Organization of Internet Standards Working
+     Group (POISED)", S. Crocker, RFC-1396, January 1993].  The Board of
+     Trustees of the Internet Society accepted the revisions in December
+     1992, and transition to the new plan began.
+
+     One of the key effects of this change (known colloquially as the
+     "New World Order" or NWO) is to install a nominations process to
+     select new IAB and IESG members.  IAB and IESG members will serve 2
+     year terms, with half of the positions on each board subject to
+     re-selection each year.  The Internet Society Board of Trustees
+     will review and ratify the new IAB nominations, and the IAB will
+     review and ratify the new IESG nominations.
+
+     Following the November IETF meeting, a Nomination Committee was
+     selected by a random drawing from volunteering IETF attendees.
+     Jeff Case served as the chair. Roughly half of the existing members
+     of the IAB and IESG put their positions up for renomination; the
+     other half will continue to serve with a remaining term of one
+     year.
+
+     At the Thursday evening open plenary session of the IETF meeting in
+     Columbus Ohio, the Nomination Committee reported its results.  The
+     "old" IAB was able to caucus in person and by telephone, and
+     approved the new IESG nominations.  The ISOC Board of Trustees was
+     able to approve the new IAB members via email.  Hence, the NWO is
+     now fully in effect.
+
+

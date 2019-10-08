@@ -1,0 +1,26 @@
+IAB -- 11 August 1999 -- IETF-Announce
+--------------------------------------
+
+
+IETF interim members of PSO Protocol Council 
+
+
+Dear colleagues,
+
+As requested by Fred Baker on July 26, the IAB has now appointed 
+the IETF's two interim members of the ICANN PSO Protocol Council,
+following an open call for nominations. These members, who will 
+serve at least until a definitive selection mechanism is put in 
+place, are
+
+   Steve Bellovin 
+   Leslie Daigle
+
+and I thank them and the various other nominees for their
+willingness to serve.
+ 
+Regards
+
+   Brian E Carpenter (IAB Chair)
+
+

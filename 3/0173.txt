@@ -1,0 +1,23 @@
+Jon Postel -- 31 March 1986 -- TCP/IP
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8602.mm.www/0167.html
+-------------------------------------------------------------------------
+
+                         host.txt vs. domain servers
+
+Rick Adams:
+
+I agree that it is nice to have a way to figure out the real address
+when all you've got to go on is a nickname or a partial name. But,
+one of these days the host.txt file is going to die. So one of the
+things that needs to be done is to educate users to realize that when
+they tell other people to send them mail the have to give the full
+official name of their host. This is one motivation for using the
+full official name of the host on everything the host does. It gets
+the users used to seeing it, and using it. Local nicknames can be
+nice but they do have some disadvantages. So while using hosts.txt
+for figuring out what names should have been used when you get stuck
+with a nickname is a neat trick, also realize that it won't work
+forever.
+
+--jon.
+

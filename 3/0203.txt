@@ -1,0 +1,712 @@
+                      Internet Activities Board
+
+             Summary of Internet Architecture Discussion
+                          January 8-9, 1991
+
+  1. INTRODUCTION
+
+The Internet Activities Board (IAB) met with the Internet Engineering
+    Steering Group (IESG) on January 8-9, 1991 at the USC Information
+    Sciences Institute in Marina del Rey, CA. The meeting devoted the
+    afternoon of the first day and the morning of the second day to an
+    extended discussion of the future directions for Internet
+    architecture. This document reports on this architecture
+    discussion, which was led by Dave Clark. The minutes of the rest
+    of the meeting are reported elsewhere.
+
+  2. DEFINING THE PROBLEM
+
+The first afternoon was spent trying to define the problems to be
+    solved. Clark began the discussion with a presentation of his view
+    of the key issues; his slides are reproduced in Appendix A. Each
+    of his topic slides (7-12) were then discussed in turn.
+    2.1 The Multi-Protocol Internet [Slide 7]
+
+The discussion began by setting a timeframe for evolution of the
+    Internet and the TCP/IP protocol suite. This timeframe determines
+    the importance of several issues, in particular routing and
+    addressing. It was accepted that OSI is not yet here, and the
+    general feeling was that it will not be for some time. A question:
+    does OSI lead or follow current technology? Alternative scenarios
+    were:
+
+ 1. OSI and TCP/IP both live forever,
+ 2. TCP/IP fades,
+ 3. OSI fades,
+ 4. Next Generation replaces both.
+
+Debate ensued over the merit of evolving two protocol suites in
+tandem; some advocated friendly competition, while others called it a
+waste of effort which could lead to the demise of both.
+
+One alternative discussed was to redirect IAB/IETF efforts to
+emphasize OSI, devoting all our resources to making OSI a reality.
+Such actions could include profiling standards, merging standards, and
+fixing broken OSI standards. However, it was observed that the IAB can
+only have direct influence over protocols that it controls; an effort
+based on profiling other protocols is not likely to be successful.
+
+Here is a sample of comments on this topic, lightly paraphrased:
+  * "The answer will come from the grass roots; people won't switch
+    unless the old suite breaks or the new one has more features".
+  * "Are we asking the wrong question? We're facing really
+    heterogeneous networks, and must include variety in our thinking".
+  * "The IAB can exert more leadership over the (only) suite that it
+    controls".
+  * "Even productive competition may be a diversion of effort; we may
+    be getting too complex".
+  * "If the goal is interoperation, the world must agree on the
+    protocol basis; right now that means TCP/IP".
+  * "I prefer TCP/IP because
+  * prefer the [development and standardization] process [of the
+    IAB/IETF]".
+  * "I am sympathetic to the concern about dilution of effort, but
+  * doubt that there is really a tradeoff; it will be different
+    people".
+
+The concensus most nearly supported the continuation of parallel
+development of both TCP/IP and OSI suites.
+
+ 2.2 Routing and Addressing [Slide 8]
+
+The problems of routing and addressing may be strongly affected by the
+    rise of commercial common carrier networks. Some of the scaling
+    and topology problems we experience today will look different as
+    access control and topology become important aspects of the
+    interconnection of commercial service providers.
+    The target size of the Internet is an important consideration. One
+    viewpoint expressed was that commercial common carriers will
+    dominate, so we only have to wait for them to solve our problems
+    of routing and addressing. However, the more widely held viewpoint
+    was that, while the topology may eventually be whatever the common
+    carriers give us, we cannot count on their providing us the
+    complete service we want. The Internet must be seen as a large and
+    diverse system, and the evolving architecture must be able to deal
+    with combined public/private Internet with a very large address
+    space.
+    Currently there are many different grades of service, rather than
+    one uniform service. It was suggested that a package
+    transportation service is a better service analogy than the
+    telephone system. Thus, the telephone system offers a homogeneous
+    service, while planes, ships, trains all transport packages but
+    offer different grades of service. Such a diverse infrastructure
+    is needed in internetting.
+    It seemed likely that some policy-based routing will be necessary.
+    If we assume that the Internet architecture will continue in use
+    indefinitely, then we need flexibility.
+    Multicast was a controversial topic. Currently there are no
+    applications available that can make use of its facilities.
+    However, there are some future uses of multicast, including
+    routing, mailing lists, and mass distributions.
+
+ 2.3 Getting BIG [Slide 9]
+
+Getting big presents several obstacles. The IAB's past X.500
+    deployment planning effort was discussed as an example of the
+    problems that can arise. The problem was partly that X.500 is an
+    international standard, hard to adapt.
+    It was suggested that testing new services like X.500 in the
+    Internet can be very valuable, but it is possible only when there
+    is government funding: "For success in applications testing, you
+    need to find a sugar daddy". We need more tools for applications
+    -- IPC, RPC, authentication -- but unfortunately funding for
+    applications development is largely missing. It is important to
+    distinguish research from infrastructure development.
+
+ 2.4 Dealing with Divestiture [Slide 10]
+
+A number of points were made.
+
+  * The introduction of commercial services and the need for
+    accounting will impact the protocols.
+  * We need to develop a variety of means for measurement and
+    accounting; pricing can be determined later.
+  * Charging may lead to protocol changes to minimize costs, and the
+    consequences are unpredictable.
+  * There is no difference in the mechanics of accounting information
+    collection between a connection-oriented and a connectionless
+    network. However, billing on a per-packet basis in a datagram
+    network could lead to very high overhead.
+  * There is a need for authentication, to prevent fraud.
+  * The ability to share a common link between two or more
+    administrations is needed.
+
+ 2.5 New Services [Slide 11]
+
+Video is an important new service. Video is defined here as a point to
+    point frame-oriented delay-sensitive service. There is a need to
+    do this in a few years, just ahead of the 200MIPs multimedia
+    workstation.
+    Distributed computing and transaction protocols need to be
+    developed. There is an authentication problem in an operating
+    system when a transaction just appears at a host. One problem with
+    running real distributed applications in the Internet has been the
+    need to set up a lot of configuration information at each end.
+    It was also observed that even so simple a distributed application
+    as the DNS does not work very well, so we need to do a lot more
+    work on distributed application tools.
+
+ 2.6 Security [Slide 12]
+
+We need more sophistated models of authentication.
+    Application relays make it hard to build new applications.
+
+  3. ARCHITECTURAL SOLUTIONS
+
+It was intended that the second part of the discussion would home in
+    on some solutions. However, the group was far from a concensus on
+    most issues. Therefore, the time was spent in detailed viewpoint
+    presentations by a number of the participants.
+ 3.1 Vint Cerf
+
+Cerf opened with a list of assertions about the future of the
+    Internet.
+
+ 1. It is less important that a particular technical prediction
+    actually occurs than it is that the architecture makes it
+    POSSIBLE.
+ 2. All technologies are eventually overtaken by new ones. Must
+    accomodate PEAK requirements, and must also be prepared for some
+    technologies to linger long past their peak.
+ 3. The number of "terminations" (e.g., IP addresses) per person
+    varies from .001 to 1000.
+ 4. Total terminations ~ P/4 * 3 * 10, where P = number of persons =
+    250M, 3 corresponds to home + 2 workers, and the last factor of 10
+    is for safety. Implies terminations ~ 2*10**9 for US, 36*10**9 for
+    the world.
+    Note that the phone system has extremely high fan-out, Internet
+    fan-out is much lower. Can (will? should?) this change?
+ 5. The routing problem is a function of the number of networks and
+    the topology (hierarchy). Suppose we separate HOST# from NET#, and
+    place NET# into a hierarchical structure with provision for
+    "break-out". Would 32 bits of NET# be enough to cover the
+    administrative overhead of delegated assignment of address space?
+    Strawman:
+
+   NET#
+32    HOST#
+32
+    where NET# is hierarchical, and HOST# is perhaps globally unique.
+    [Debate on this was postponed.]
+ 6. Hosts incapable of supporting DNS and other core requirements must
+    ultimately be abandoned to their fate (when can we stop catering
+    to them?). Backward compatibility need not be absolute; a rational
+    window of new and old technology should be defined.
+    Within each protocol suite, there must be a "central, core" set of
+    protocols that defines the network architecture.
+    The question was raised: At what level should multi-protocols
+    exist: IP, Mail, Postscript?
+
+Cerf continued with a proposed list of requirements, and attempted to
+gather from the group a general sense of agreement or uncertainty
+about each one (noted in square brackets).
+
+ 1. Must support more than one protocol suite operating concurrently.
+    It is NOT required that they interwork with each other. Some
+    common applications might be usefully interworked.
+    [Much discussion].
+ 2. Must be able to accomodate transmission bandwidths 2.4Kbps (?) to
+    over 10 Gbps.
+    [Not universal agreement; perhaps lower end should be increased.]
+ 3. Must accomodate new switching and transmission media wherever
+    possible (e.g., SMDS; ISDN; BISDN; Frame Relay; optically-
+    switched networks; color-multiplexed, tuned-laser nets, and radio
+    technology).
+    [Agreed]
+ 4. Must accomodate an address space for 36*10**9 terminations,
+    1*10**9 networks.
+
+   NET#
+32    HOST#
+32
+    [Needs debate]
+ 5. Must accomodate private and public network components.
+    [Agreed]
+ 6. Must support (at least, not inhibit) collection of statistics for
+    accounting, billing.
+    [Agreed: need example billing and reconciliation scenarios, and
+    need reverse charging. Need debate: IP "charge code" option,
+    authenticable charge codes. Question: in what level of
+    architecture do these features show up??]
+ 7. Must support administratively-restricted connectivity.
+    May be at different layers.
+       + Security constraints (IPSO)
+       + Closed/partially open "user groups"
+       + DNS "tailoring" (non-uniform configuration)?
+       + Router configuration tables (e.g., NSFNET configuration)
+    [Needs discussion.]
+ 8. Must support several classes of service.
+    (Pick a few to start, e.g., "guaranteed bandwidth", "bounded
+    delay", and figure out how they might work. What if not
+    supportable by all networks?)
+    [General agreement]
+ 9. Must provide for end-to-end authenticated and/or secure (private)
+    communication.
+       + Application level, so that authentication/privacy survives
+         across application-level relay.
+       + Transport level?
+       + SNMP
+       + Routing Protocols
+       + DNS/X.500?
+       + Playback-immune authentication
+    [General agreement]
+10. Support host mobility.
+    Initiate communications FROM "mobile" host
+    => temporary binding of IP address (PPP, SLIP). EASY CASE (?).
+    Receive communications when mobile (or at destination)
+    => dynamic tracking of mobile address. HARD!
+    Would dynamic name/address binding suffice?
+    How to authenticate DNS update?
+    Delay and responsiveness?
+    (Some network technologies make it easy).
+    [Timescale is an issue. Maybe not at high speed? (Rate of change
+    of connectivity is the big issue). What about military
+    applications?]
+
+ 3.2 Christian Huitema
+
+Huitema saw the biggest problem in the Internet as one of getting big,
+    or rather, "getting wide". Topology is moving to multiple
+    backbones and multiple registries.
+    To scale to the sizes we are considering, a fully dynamic routing
+    process is impossible. What is needed is a directory of address to
+    network translations and routing info. Flooding of routing
+    information should be replaced by a route server, which can either
+    hold pre-computed routes or compute routes as needed.
+
+ 3.3 Noel Chiappa
+
+Security is the key to the future evolution of the Internet. The
+    solution to this problem will dictate the architecture of the rest
+    of the system.
+
+ 3.4 Bob Hinden
+
+Hinden commented on each of the topic slides.
+
+ 1. Multi-Protocol Internet
+    It would be nice to have one protocol suite, but we must live with
+    both TCP/IP and OSI.
+    A useful strategy might be to feed TCP/IP protocol developments
+    into OSI process (e.g., BGP -> IDRP).
+ 2. Routing and Addressing
+       + Need 1 to 2 orders of magnitude growth.
+       + Addresses should be identifiers, logically distinct from
+         routes.
+       + We will have to impose a hierarchical structure to handle
+         growth. A 3-tier topology (backbone, regional, private) is
+         sufficient, but it must provide for arbitrary
+         interconnections.
+       + Policy: Source controlled. Backbone, regional, private
+         networks will support distinct policies (where they provide
+         parallel service).
+       + Mobile host support would be desirable.
+       + Multicasting will not be useful until there are real
+         applications.
+ 3. Getting Big
+    Applications are badly needed.
+       + Make email good enough for commerce.
+       + Desktop conferencing with video.
+       + Bulletin board paradigm: it is powerful and should be
+         exploited more.
+       + Information collection (Knowbots?)
+       + Video retrieval and libraries.
+       + Distributed simulation.
+ 4. Divestiture
+       + Does not believe common carriers will provide universal
+         service ("the Cheriton conjecture"); we will still need to do
+         internetting.
+       + Need accounting, not billing.
+ 5. New Services
+    Video is very important.
+ 6. Security
+    The network needs to protect itself: control protocols need
+    security.
+    The network should provide an authentication service. All other
+    security needed by an application can be end-to-end.
+
+ 3.5 Russ Hobby
+
+Hobby emphasized the need for new applications. Tools are needed for
+    building distributed applications, including RPC and standard
+    presentation formats. Both personal communication and "virtual
+    computer" applications need work. There is a pressing need to
+    recruit a set of experts and secure funding for them.
+
+ 3.6 Joyce Reynolds
+
+Reynolds enumerated a list of needed user services. There is a need to
+    international coordination and for more publicity. A network
+    information services infrastructure and yellow pages are needed.
+    Issues of copyright and intellectual property need to be explored.
+
+ 3.7 Dave Crocker
+
+Crocker identified the need for upper layer development. There is a
+    missing skill set in the IETF, presentation and applications
+    development. There is a need to begin hiding the complexity of the
+    network.
+
+ 3.8 Tony Lauck
+
+Lauck presented many points.
+
+ 1. Architecture is more than the protocols, it is addressing.
+ 2. Relays are a necessary evil, because of history, pragmatics, and
+    especially corporate security policies. Better Internet security
+    will result in fewer relays. The IAB should work to limit the
+    growth of relays.
+ 3. There is not chance to constrain the development of multiple
+    protocol suites; they are here today. Beware of problems of
+    testing interoperability, with exponential combinations at various
+    layers.
+ 4. The size of the Internet is not a big issue. 10**9? 10**11?
+    10**12?
+ 5. In large networks, addresses, routes, and topology must be related
+    for reasonable performance -- log(n) vs. n. Hierarchy is
+    sub-optimal, but at least it is possible, and will allow the
+    construction of large networks.
+ 6. Policy routing is all solutions with no questions.
+ 7. Support for mobile hosts is needed, to make them more useful for
+    personal work.
+ 8. Multicast has marginal value, could be dangerous.
+ 9. Phase out fragmentation, it's a mistake in IP that OSI copied.
+10. The network should support devices ranging from small thermostats
+    to large supercomputers.
+11. Charging is important because without it there is little
+    motivation to develop new applications. The ban on commercial use
+    also restricts innovation.
+12. Must have controls for limited sharing of links. Hard problem is
+    to keep this simple.
+13. Transaction processing standards are complex and farther along in
+    OSI.
+14. Distributed processing is coming (slowly) in OSI. We should work
+    with existing efforts in these applications.
+15. End node cannot be the only point for security. Mis- configuration
+    is a real danger and the Internet should be able to defend itself.
+16. Global authentication is most important part of distributed
+    processing.
+
+ 3.9 Ross Callon
+
+Callon discussed the coexistence of multiple protocol suites, starting
+    from a series of questions:
+
+ 1. What is meta-architecture for a multi-protocol Internet?
+ 2. Does the concept of a "pure suite" exist? For example, the
+    Internet includes other defacto standards like NFS and Postscript.
+ 3. Might it make sense to fill the holes in one suite using protocols
+    from another suite?
+ 4. This does not break the notion of distinct TCP/IP and OSI protocol
+    suites, but it might be a good idea to break it.
+
+The idea of merely sharing the links and letting the rest of the
+protocol stack be different defeats interoperability. He proposed to
+chip away at the differences by sharing: routing, user agents,
+directories (DNS-X.500 merge), mail protocols (SMTP exchange of X.400
+format), ODA and RDI, and EDI. This sharing would unify the
+architecture, save some effort, and enhance interoperability.
+
+ 3.10 Lyman Chapin
+
+The Internet will change with the introduction of commercial carriers.
+    A multi-protocol-suite Internet is currently a necessity, although
+    this is not best architectural choice. OSI efforts really need the
+    input of the IETF community. There is the very real possibility
+    that the IETF can have profound impact on the course of OSI
+    protocols.
+    Chapin summarized the possibilities in the following diagram:
+
+
+
+                                 |
+
+      _______                    |
+
+     |  TCP  |---------------------->
+
+     |_______|         |         |
+
+                 ______|____     |
+
+                |"new stuff"|    |  "Future"
+
+                |___________|    |
+
+                       |         |
+
+      _______          V         |
+
+     |  OSI  |---------------------->
+
+     |_______|                   |
+
+
+
+ 3.11 Steve Kent
+
+Kent offered ideas on the internet security architecture.
+
+ 1. Do we put security in only the endpoints? "Hosts will always be
+    the best defense or the weakest link".
+ 2. Site administrators erect perimeter defenses; architecture needs
+    to include them. Now that hosts are being managed by users,
+    managers are increasingly unable to administer individual
+    computers, so they use using perimeter defense.
+ 3. Need both end security services and also some functions in
+    intermediate system, e.g., accounting and billing.
+ 4. Security is ultimately linked to routing and addressing.
+ 5. He dislikes application level relays, and there are also some
+    security problems. Where does security go in the protocol stack?
+    In the application there is too much duplication, and presentation
+    syntax is a problem if security is in the applications.
+ 6. Global authentication would be a Good Thing.
+
+  4. WRAP-UP
+
+Clark led a final high-level wrap up. He saw three alternative
+    futures:
+
+ 1. Relays dominate the world. X.400 becomes the only ubiquitous
+    protocol, while IP/CLNP are used only locally. X.400 and X.500
+    become generalized to accommodate other applications.
+    Clark rejects this as the "only" solution.
+ 2. Commercial carriers dominate. Routing is handled entirely inside
+    the common carriers; this is the "Cheriton Conjecture".
+    We must accept this as an ultimate possibility.
+ 3. Heterogeneity dominates. Can it be global?
+
+The group felt a need to build a future that accommodates these
+diverse visions, even if the complex solution ends up not being
+needed. The IAB is in a position to influence the future, and should
+work towards the preferable outcomes.
+
+The IAB felt that vision 1 is a nightmare. However, it will exist to a
+limited extent, so application level gateways should be architected
+into the system. Vision 2 is a possibility the IAB must deal with.
+Vision 3 is the most general, and constitutes the basis for a plan.
+
+Further discussion is needed, and the IAB planned an "architectural
+summit". There was lots of interest in an architecture summit.
+Participation will be limited to the IAB and IESG and all participants
+should come prepared with papers. This is tentatively scheduled for
+June 11-13, 1991.
+  _________________________________________________________________
+
+  APPENDIX A: Dave Clark Introduction
+
+Slide 1
+
+                        WHITHER THE INTERNET?
+
+                       OPTIONS FOR ARCHITECTURE
+
+                         IAB/IESG -- Jan 1990
+
+                            David D. Clark
+      _____________________________________________________________
+
+    Slide 2
+
+                   SETTING THE TOPIC OF DISCUSSION
+
+    Goals:
+
+  * Establish a common frame of understanding for IAB, IESG and the
+    Internet community.
+  * Understand the set of problems to be solved.
+  * Understand the range of solutions open to us.
+  * Draw some conclusions, or else "meta-conclusions".
+  _________________________________________________________________
+
+Slide 3
+
+                      SOME CLAIMS -- MY POSITION
+
+We have two different goals:
+  * Make it possible to build "The Internet"
+  * Define a protocol suite called Internet
+
+Claim: These goals have very different implications. The protocols are
+but a means, though a powerful one.
+
+Claim: If "The Internet" is to succeed and grow, it will require
+specific design efforts. This need will continue for at least another
+10 years.
+
+Claim: Uncontrolled growth could lead to chaos.
+
+Claim: A grass-roots solution seems to be the only means to success.
+Top-down mandates are powerless.
+  _________________________________________________________________
+
+Slide 4
+
+                       OUTLINE OF PRESENTATION
+
+1) The problem space and the solution space.
+
+2) A set of specific questions -- discussion.
+
+3) Return to top-level questions -- discussion.
+
+4) Plan for action -- meta discussion.
+
+Try to separate functional requirements from technical approach.
+
+Understand how we are bounded by our problem space and our solution
+space.
+Is architecture anything but protocols?
+  _________________________________________________________________
+
+Slide 5
+
+                      WHAT IS THE PROBLEM SPACE?
+
+Routing and addressing:
+How big, what topology, and what routing model?
+
+Getting big:
+User services, what technology for host and nets?
+
+Divestiture of the Internet:
+Accounting, controlling usage and fixing faults.
+
+New services:
+Video? Transactions? Distributed computing?
+
+Security:
+End node or network? Routers or relays?
+  _________________________________________________________________
+
+Slide 6
+
+                     BOUNDING THE SOLUTION SPACE
+
+How far can we migrate from the current state?
+  * Can we change the IP header (except to OSI)?
+  * Can we change host requirements in mandatory ways?
+  * Can we manage a long-term migration objective? - Consistent
+    direction vs. diverse goals, funding.
+
+Can we assume network-level connectivity?
+  * Relays are the wave of the future (?)
+  * Security a key issue; along with conversion.
+  * Do we need a new "relay-based" architecture?
+
+How "managed" can/must "The Internet" be?
+  * Can we mandage or constrain connectivity?
+
+What protocols are we working with? One or many?
+  _________________________________________________________________
+
+Slide 7
+
+                     THE MULTI-PROTOCOL INTERNET
+
+"Making the problem harder for the good of mankind."
+
+Are we migrating, interoperating, or tolerating multiple protocols?
+  * Not all protocol suites will have same range of functionality at
+    the same time.
+  * "The Internet" will require specific functions.
+
+Claim: Fundamental conflict (not religion or spite):
+  * Meeting aggressive requirements for the Internet
+  * Dealing with OSI migration.
+
+Conclusion: One protocol must "lead", and the others must follow.
+When do we "switch" to OSI?
+Consider every following slide in this context
+  _________________________________________________________________
+
+Slide 8
+
+                        ROUTING and ADDRESSING
+
+What is the target size of "The Internet"?
+  * How do addresses and routes relate?
+  * What is the model of topology?
+  * What solutions are possible?
+
+What range of policy routing is required?
+  * BGP and IDRP are two answers. What is the question?
+  * Fixed classes, or variable paths?
+  * Source controlled routing is a minimum.
+
+How seamless is the needed support for mobile hosts?
+  * New address class, rebind to local address, use DNS?
+
+Shall we push for Internet multicast?
+  _________________________________________________________________
+
+Slide 9
+
+                     GETTING BIG -- AN OLD TITLE
+
+(Addressing and routing was on previous slide...)
+
+What user services will be needed in the next 10 years?
+  * Can we construct a plan?
+  * Do we need architectural changes?
+
+Is there a requirement for dealing better with ranges in speed, packet
+sizes, etc.
+  * Policy to phase out fragmentation?
+
+What range of hosts (things != Unix) will we support?
+  _________________________________________________________________
+
+Slide 10
+
+                      DEALING WITH DIVERSTITURE
+
+The Internet is composed of parts separately managed and controlled.
+
+What support is needed for network charging?
+  * No architecture implies bulk charges and re-billing, pay for lost
+    packets.
+  * Do we need controls to supply billing id or routing?
+
+Requirement: we must support links with controlled sharing. (Simple
+form is classes based on link id.)
+  * How general?
+
+Is there an increased need for fault isolation? (I vote yes!)
+  * How can we find managerst to talk to?
+  * Do we need services in hosts?
+  _________________________________________________________________
+
+Slide 11
+
+                             NEW SERVICES
+
+Shall we support video and audio? Real time? What %?
+  * Need to plan for input from research. What quality?
+  * Target date for heads-up to vendors.
+
+Shall we "better" support transactions?
+  * Will TCP do? VMTP? Presentation? Locking?
+
+What application support veneers are coming?
+  * Distributed computing -- will it actuall happen?
+  * Information networking?
+  _________________________________________________________________
+
+Slide 12
+
+                               SECURITY
+
+Can we persist in claiming the end-node is the only line of defense?
+  * What can we do inside the network?
+  * What can ask the host to do?
+
+Do we tolerate relays, or architect them?
+Can find a better way to construct security boundaries? Do we need
+global authentication?
+
+Do we need new host requirements:
+  * Logging.
+  * Authentication.
+  * Management interfaces.
+       + Phone number or point of reference.

@@ -1,0 +1,54 @@
+NomCom Chair -- 24 January 2000 -- IETF-Announce
+------------------------------------------------
+
+Announcement of new IESG members
+
+
+After much review and deliberation, the following individuals
+have been selected as Area Directors and members of the IESG.
+This slate was chosen by the voting members of the NomCom and
+has been approved by the IAB.
+
+-------------------------------------------------------------
+
+Applications Area:
+Ned Freed is nominated for a 2 year term.
+
+Internet Area:
+Erik Nordmark was selected for an additional 2 year term.
+
+Operations and Management Area:
+Bert Wijnen was selected for an additional 2 year term.  
+
+Routing Area:
+Rob Coltun was selected for an additional 2 year term.
+
+Security Area:
+Marcus Leech was selected for an additional 2 year term.
+
+Transport Area:
+Allison Mankin was selected for a 2 year term.
+
+User Services Area:
+April Marine was selected for an additional 2 year term.
+
+-------------------------------------------------------------
+
+I want to thank all of the folks who were willing to be 
+nominated and were willing to go through the selection process. 
+I also would like thank all those with whom the NomCom 
+consulted in making its selections.  
+
+Note: the announcement of IAB members will be made in several 
+weeks.
+
+
+Chair, NomCom
+
+a.
+-----------------------------------
+avri doria
+Office: +1 781 993 4656
+Mobile: +1 781 308 7680                
+
+

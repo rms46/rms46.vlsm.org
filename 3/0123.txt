@@ -1,0 +1,74 @@
+OSI Bash -- April 1993
+----------------------
+
+Who was responsible for this quote?
+
+
+----------------------------------------------------------------------
+
+... I'd like to use it somewhere and I'd like to be able to properly
+attribute it correctly...:
+
+     "OSI: Same day service in a nanosecond world"
+
+-- Simon Hackett
+
+----------------------------------------------------------------------
+
+Van Jacobsen.  T-shirt he produced for an Interop, a few years ago.
+
+Not sure what the correct citation format is, to reference a t-shirt.
+
+-- Dave Crocker 
+
+----------------------------------------------------------------------
+
+Be careful how you use it. These days there are OSI stacks with the
+same or better performance than TCP :-)
+
+-- Eva Kuiper
+
+----------------------------------------------------------------------
+
+Maybe so. Would you care to name them?
+
+-- Steinar Haug
+
+----------------------------------------------------------------------
+
+Can we *please* not start this on the IETF list again?
+ 
+-- John C Klensin
+
+----------------------------------------------------------------------
+
+Before this gets too far along, maybe we should move this discussion 
+off the "ietf" list...
+
+And onto, say, "/dev/null"? :-)
+
+-- Frank T Solensky
+
+----------------------------------------------------------------------
+
+BTW, this weekly-based Acronym Serial Notation number 1
+(or ASN.1) system was chosen since we've been hearing such
+great things about seven layer models on this list
+recently....
+
+[* Okay, okay! I'll stop. But they started it!!! :-)  *]
+
+-- Peter Deutsch
+
+----------------------------------------------------------------------
+
+You know, it's too bad reality doesn't have a Fast-Forward button, or I'd
+sure as hell press it. Presumably, in 10 years, one protocol or the other
+will have clearly won, and we will all be spared any more of this constant
+bickering and whining. Too bad we have to suffer through the interim,
+though..... hibernation, anyone?
+
+-- Noel Chiappa
+
+----------------------------------------------------------------------
+

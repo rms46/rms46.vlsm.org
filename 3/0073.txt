@@ -1,0 +1,25 @@
+IESG Chair -- 7 November 1994 -- IETF-Announce
+----------------------------------------------
+
+Announcing the Chair's contest for the IETF Logo
+
+As part of the IETF's efforts to improve its image, the IETF logo
+contest opens today. Anyone, with the exception of the judges, may
+enter a design. Entries will be accepted until midnight December 2.
+
+Entries will be judged by the panel of Stev Knowles and Michael O'Dell,
+with ties being broken by the IETF chair. Entries become the property
+of the IETF. The winner will be announced at the Thursday plenary in
+San Jose.
+
+Entries must be suitable for use on the IETF home page and documents.
+Entries must be submitted to logo@cnri.reston.va.us. Entries may be
+PS or GIF, with other formats by prior agreement. Alternatively, you
+may send a location and file name for the judges to get via ftp.
+
+The prize will include a six pack of Jolt cola and T-shirts donated to
+the contest by an appreciative Internet community. We expect the
+T-shirts to be plentiful.
+
+----------------------
+From: Paul Mockapteris

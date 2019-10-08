@@ -1,0 +1,123 @@
+ISOC -- 27 April 1998 -- IETF-Announce
+--------------------------------------
+
+IETF Wins Norbert Wiener Award 
+
+
+
+For immediate release
+
+Contacts:
+
+Marsha Woodbury       Steve Coya           Martin Burack
+Chair, CPSR           IETF Exec Dir        ISOC Exec Dir 
+<mwoodbury@cpsr.org>  703-620-8990         703-648-9888
+                     <scoya@ietf.org>   <burack@isoc.org>
+
+
+                 Internet Engineering Task Force
+                 Wins Norbert Wiener Award 
+
+                                        
+April 27, 1998
+
+    The Internet Engineering Task Force (IETF) has been 
+chosen to receive the prestigious Norbert Wiener Award 
+for its tremendously positive role in the evolution of 
+the Internet.  The award, announced today by Computer 
+Professionals for Social Responsibility (CPSR), annually 
+honors an outstanding leader for personal dedication to 
+increasing the public awareness of the social and 
+political consequences of the uses of technology.  This 
+marks only the second time in the 12 year history of 
+CPSR's highest honor that it is being given to an 
+organization rather than to an individual. 
+
+    "We have chosen to recognize the IETF particularly 
+for the extremely open and democratic process with which 
+it has effected the evolution of the Internet," said CPSR 
+President Aki Namioka.  "CPSR believes that such open 
+processes are both extremely important and seriously 
+threatened, and have accordingly made Internet governance 
+the focus of our 1998 program year."  In looking at the 
+issues related to Internet governance, CPSR reviewed the 
+historically important and ongoing role played by the 
+IETF, and concluded that giving it the Wiener award is 
+particularly appropriate. 
+
+    "The IETF is gratified to be considered in this 
+light," said IETF Chair Fred Baker. "We conduct ourselves 
+the way we do because it works for us and facilitates 
+Internet enhancements based upon widespread support from 
+around the world. To our way of thinking, open democratic 
+dialog is the only practical way to make sure that 
+changing needs in the Internet are always in view. The 
+one certainty about the Internet is that it will continue 
+to change. The IETF's mission is to see that change 
+results in progress."
+
+    The Norbert Wiener Award was established in 1987 by 
+CPSR in memory of the originator of the field of 
+cybernetics, whose pioneering work was one of the pillars 
+on which computer technology was created.  Norbert Wiener 
+was among the first to examine the social and political 
+consequences of computing technology.  He devoted much of 
+his energy to writing articles and books that would
+make the technology understandable to a wide audience.  
+His books, The Human Use of Human Beings and God and 
+Golem, Inc., were among the earliest works that opened a 
+public discussion of computers and what they could do.  
+He was especially concerned that there not be a 
+mystification of the possibilities for computers, fed by 
+unrealistic optimism.
+
+    CPSR http://www.cpsr.org/was founded in 1981 by 
+computer professionals in the Silicon Valley concerned 
+about the use of computers in nuclear weapons systems. 
+CPSR has grown into a national public interest alliance 
+of computer scientists, information technology 
+professionals, and others concerned about the critical 
+choices facing society in the applications of computer 
+related technology.  CPSR has 22 Chapters throughout the 
+United States and is based in Palo Alto, CA. 
+
+    The Internet Engineering Task Force (IETF) 
+http://www.ietf.org/ is the principal body engaged in the 
+development of new Internet standard specifications.  It 
+is a large open international community of individuals 
+who make technical and other contributions to the 
+evolution and smooth operation of the Internet. There is 
+no formal membership in the IETF.  It is open to any 
+interested person. Anyone may register for and attend any 
+meeting.  The IETF is divided into eight functional 
+areas: Applications, Internet, IP: Next Generation, 
+Network Management, Operational Requirements, Routing, 
+Security, Transport and User Services. Each area has one 
+or two area directors.  Each area has several working 
+groups, which is where the actual technical work of the 
+IETF is done.  Working groups operate under a charter to 
+achieve a certain goal.  That goal may be the creation of 
+an Informational document, the creation of a protocol 
+specification, or the resolution of problems in the 
+Internet.  Many working groups disband once they have 
+achieved their goal, so the number and scope of working 
+groups varies at any point in time.  Much of the work is 
+handled via mailing lists. The IETF holds meetings three 
+times per year.  
+
+    The Internet Society (ISOC) http://www.isoc.org/ is a 
+non-profit, non-governmental international organization 
+providing leadership in the management of Internet 
+related standards, educational, and policy development 
+issues. It is the organizational home for the IETF.  
+ISOC's more than 6,000  individual and 120 organizational 
+members around the world make up a veritable who's who of 
+the Internet.  Its INET conferences are considered the 
+summit of the Internet, where the industry's movers and 
+shakers discuss the future of the Internet.
+
+
+-------------------
+From: Martin Burack
+
+

@@ -1,0 +1,102 @@
+NOMCOM Chair -- 6 April 1998 -- IETF-Announce
+---------------------------------------------
+
+Applications Area Director Vacancy - O&M Area Director Appointments 
+
+The Nominations Committee is seeking candidates for the position of
+Applications Area Co-AD to fill a one-year interim appointment replacing
+Harald Alvestrand.  If you are interested, or are interested in suggesting
+someone, please have the candidate fill out and return the attached  (at
+the end of this note) questionnaire NOT LATER THAN 13 April 98.
+
+I regret to announce that John Curran has resigned from his position as O&M
+Co-AD effective with this last IETF meeting.
+
+It is my pleasure to announce that the IAB approved last Thursday the
+appointment of Bert Wijnen, IBM to fill the unexpired 2-year term of Mike
+O'Dell as O&M Co-AD.
+
+[Bert's bio will follow]
+
+It is my pleasure to announce that the IAB approved last Thursday the
+appointment of Harald Alvestrand, Maxware to fill the 1 year remaining term
+of John Curran as O&M Co-AD.  Harald moves from his current position as
+Applications Area Co-AD.
+
+Harald Tveit Alvestrand is a consultant with Maxware, a Norwegian software
+house and consulting company. Alvestrand graduated from the Norwegian
+Institute of Technology in 1984, and has worked with communications ever
+since, first for Norsk Data with Email products, and from 1989 until 1997
+for UNINETT, the Norwegian university network, where he was in charge of
+network services. He has been actively involved with the IETF since 1991,
+chairing several working groups in the applications area and writing a
+number of RFCs (15 so far). He has been Area Director for Applications in
+the IETF since 1995.
+
+John, Mike, Bert and Harald will be working out the details of their
+transition over the next few months.  Please offer them any support you can
+give them in this transition period.
+
+As you can tell, its been an interesting couple of weeks.  If you've been
+approached by the Nomcom either within the last week or previously, and
+have not filled out the following form, please do complete it and forward
+it to the nomcom.  If you were approached previously to fill the other Apps
+vacancy (e.g. the one to which Keith was reappointed) and you are still
+interested in an Apps Co-AD position, please also fill out and forward the
+form so we know who to contact.
+
+Thanks - Mike
+
+______________________________________________
+
+Please forward the completed form to "nomcom98@corp.home.net" NLT than 0900
+PDT 13 April 1998.
+
+Each candidate is being sent this note requesting that he or she respond to
+the questions that follow.  We will be using your response to these
+questions and input from others in the community to aid us in our decisions
+the current Applications Co-AD opening.  Please respond as completely as
+possible to the questions that follow as this may provide us our most
+complete glimpse of who you are.  
+
+1.  Tell us about your current job and any other experience related to the
+Internet.  Especially describe any activities related to standards making,
+management of volunteer organizations.
+
+2.  Tell us about your educational and research background, especially any
+research related to networking, security, computer systems.
+
+3.  Tell us about your experience within the IETF/IAB?  Which working
+groups have you contributed to?  Any documents? Tell us if you've been a WG
+chair, document editor, area director and give us the details of when,
+which WG, etc. If you've been a WG Chair, IESG or IAB member, what would
+you consider your greatest achievements in those positions?
+
+4.  Tell us about your strengths.  What abilities would you bring to the
+IAB? In addition, tell us about any particular areas of expertise that may
+not be obvious from your previous answers.
+
+5.  Tell us about your weaknesses. 
+
+6.  Please comment on your ability to work within a consensus based
+organization.
+
+7.  What do you see as the biggest problems facing the IETF?  How would you
+resolve them?
+
+8.  What do you see as the biggest shortcomings of the IAB?  What would you
+do to fix them?  What would you have the IAB or the community at large do
+to fix them?
+
+9.  What do you see as the biggest problems facing the Internet?  What
+would you have the IETF, IESG or IAB do, if anything, to fix them?
+
+10. Tell us about your personal reasons for wanting to be on the IAB?  What
+would you want to be known for accomplishing after a 2 year term?
+
+11.  Is there anything else you'd like the Nomcom to consider?
+
+
+--------------------
+From: Mike St. Johns 
+

@@ -1,0 +1,196 @@
+InterNic -- 16 May 1995 -- CIDR
+-------------------------------
+
+Draft internic ip allocation doc
+
+
+
+Hi
+
+As you know, our past unwritten policy was to only dole out ip space
+to isps that were directly connected to major routing exchange points,
+or those whose requirements exceeded their upstream providers desire
+to allocate from their own space. After numerous discussions, we have
+developed the following document to be our new procedure for allocating space.
+We hope there is consensus amongst us.
+
+If there is not too much negative commentary, the InterNIC would like 
+to start allocating space in terms of this document very soon. Also, the 
+document below is an interim measure in lieu of the rfc1466bis document
+which is under construction.
+
+Thanks
+Mark and Kim
+
+                      INTERNIC IP ALLOCATION GUIDELINES
+
+                      FOR INTERNET SERVICE PROVIDERS (ISP)
+
+The InterNIC Registry, under the authority of the Internet Assigned Numbers
+Authority, allocates blocks of address space to Internet Service
+Providers (ISP) for the purpose of using that space with their customers.
+
+ISPs and others not located in the InterNIC's geographical area of
+responsibility should contact the appropriate Regional Registry for
+information on how to obtain IP addresses.  The following is a list
+of Regional Registries and National NICs that have authority to allocate
+IP addresses:
+
+Other Regional Registries
+  RIPE NCC  (European Registry)  hostmaster@ripe.net
+  APNIC (Asia Pacific Registry)  hostmaster@apnic.net
+
+InterNIC Delegated Registries within the Americas
+  CA*net (Canadian NIC)    ipregist@canet.ca
+  RNP (Brazilian Registry) gomide@fapq.fapesp.br
+
+To aid in the utilization of Classless Interdomain Routing (CIDR), ISPs
+are encouraged to request address space from their upstream provider,
+it must be noted that the upstream provider maintains control of the
+allocated block unless explicitly and contractually stated otherwise.
+However, CIDR blocks may be allocated directly from the InterNIC if
+necessary.
+
+The following guidelines have been established in an attempt to allocate
+address space to ISPs in a way that is fair but will address the issues
+of router table growth and IP address preservation.  This document
+also details procedures that must be followed by ALL ISPs receiving
+address space which is then leased to their customers.
+
+ISP GUIDELINES
+----------------------------------------
+
+Due to technical and implementation constraints on the Internet routing 
+system and the possibility of routing overload, certain policies may need 
+to be enforced by the major transit providers providers in order to reduce 
+the number of globally advertised routes.
+
+These potential policies may include setting of limits on the size
+of prefixes added to the routing tables, filtering of non-aggregated
+routes, etc.  Therefore, addresses obtained directly from the InterNIC
+(non-provider-based, also known as portable) are not guaranteed to
+be routable on the Internet.
+
+Therefore, if rich connectivity across the Internet is to be maintained, 
+follow these steps when requesting address space:
+
+1. Ask your provider
+
+2. Ask your provider's provider
+
+3. Ask the InterNIC registry as a last resort.
+
+Again note that if addresses are allocated directly from the InterNIC, they
+will be the least likely to be routable across the Internet.
+
+ISPs requesting address space from the InterNIC are required to complete
+the IP template reserved for ISPs.  The template can be found at
+rs.internic.net, ftp/templates/ISP-CIDR-block.txt.
+[URL = ftp://rs.internic.net/ftp/templates/ISP-CIDR-block.txt]
+
+Any request judged to be lacking sufficient details will be returned to
+the requestor for additional information.
+
+In an effort to ensure that CIDR is implemented and utilized as
+efficiently as possible, the InterNIC Registry issues blocks of
+addresses on appropriate "CIDR-supported" bit boundaries.
+Network Providers will also need to be aware of the procedures that define
+bit boundary IP address allocation, and utilize these procedures when
+assigning IP address space to their respective customers.
+The following documents contain important information related to CIDR:
+
+        RFC 1338 - Supernetting: an Address Assignment and Aggregation
+                   Strategy
+
+        RFC 1482 - Aggregation Support in the NSFNET Policy-Based Routing
+                   Database
+
+        RFC 1517 - Applicability Statement for the Implementation of
+                   Classless Inter-Domain Routing
+
+        RFC 1518 - An Architecture for IP Address Allocation with CIDR
+
+        RFC 1519 - Classless Inter-Domain Routing (CIDR) : an Address
+                   Assignment and Aggregation Strategy
+
+        RFC 1520 - Exchanging Routing Information Across Provider Boundaries
+                   in the CIDR Environment
+
+Determination of CIDR block allocation size is the responsibility of
+the InterNIC, this allocation is based on the ISP's 3 - 6 month requirement
+and other information the InterNIC deems necessary.  Please note,
+allocations are not based solely on a predicted customer base.
+
+Initial allocations will be relatively small.  Subsequent allocated blocks
+may be increased based on utilization verification supplied to the
+InterNIC.
+
+Subsequent allocations of CIDR block addresses will be based on need;
+this need will be demonstrated based on the number of reassignment actions
+that have been transmitted to the InterNIC Registry.  Reassignment
+information is to be forwarded to the InterNIC within 7 days of the
+assignment so that the WHOIS may be maintained efficiently.
+Transmission of reassignment information is also necessary for the
+following reasons:
+
+a) To ensure that a provider has exhausted, or is about to exhaust its
+     current CIDR allocation such that an additional allocation is
+     justified.
+b) To allow operational people to see which organization is using the
+     network and who to contact in the event of operational/security problems,
+     etc.
+c) To assist in IP allocation studies.
+
+There are two options available for tracking reassignment information:
+
+  1) Shared WHOIS Project (SWIP)
+
+     Reassignment actions can be submitted by utilizing the database
+     exchange format defined by the SWIP project.  Information regarding
+     SWIP may be obtained via anonymous FTP from rs.internic.net
+     (198.41.0.5).  The files may be found under the ftp/pub/swip directory.
+     [ URL = ftp://rs.internic.net/ftp/pub/swip ]
+
+  2) RWhois
+
+     RWhois is a distributed database for hierarchical information.
+     Information on RWHOIS can be found at rs.internic.net, ftp/pub/rwhois.
+     [ URL = ftp://rs.internic.net/ftp/pub/rwhois ]
+
+ALL ISPs, regardless of where they receive their CIDR blocks should
+either SWIP the reassignment information or establish an RWHOIS server.
+If SWIP is the chosen method, ISPs should register with the InterNIC
+as an ISP to receive a maintainer ID necessary to SWIP the reassignment
+information.
+
+ISPs are required to assign address space based on utilization
+efficiency. To this end, ISPs should have documented justification
+available for each assignment.  The InterNIC may at any time ask to
+see this justification, if not available, this could impact future allocations.
+
+Any ISP whose customer has a requirement of 64 Class C's or more
+should forward the template to the InterNIC for review.  The following
+information should accompany the request:
+
+    Network engineering plans, including subnets and host counts, and
+    hosts per subnet with projected utilization rates and associated
+    confidence levels of those projects for one and two years in the
+    future.
+
+    Deployment schedule for the network, including major milestones
+    for each subnet
+
+    Network topology diagrams
+
+All ISPs receiving /16 prefix blocks from the InterNIC will be responsible
+for maintaining all IN-ADDR.ARPA domain records for their respective
+customers.  The InterNIC Registry will only be responsible for the
+maintenance of IN-ADDR.ARPA domain records for those CIDR blocks with
+prefixes longer than /16 issued directly from the InterNIC.
+
+-- 
+
+Mark Kosters              markk@internic.net        +1 703 742 4795
+Software Engineer   InterNIC Registration Services
+
+

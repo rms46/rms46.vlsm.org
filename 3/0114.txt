@@ -1,0 +1,37 @@
+ISOC -- 13 January 1993 -- IETF
+-------------------------------
+
+Nominating Committee Chairman Selected
+
+
+
+Folks,
+
+I am pleased (and relieved) to report that Jeff Case has agreed
+to serve as the chair of the IAB and IESG Nominations Committee.
+He will undertake to organize this effort in accordance with the
+recommendations of the POISED working group and in the context of
+my earlier message on this subject.
+
+The IAB and IESG positions carry great responsibility so I
+want to impress on the nominations committee the necessity
+for care in the conduct of their work. Discussions about
+potential candidates and evaluation of their suitability to
+hold office must be kept private. This is simple, professional
+courtesy. I have impressed this view on Jeff and trust him to convey 
+the same to the voting and advisory members of the committee.
+
+Each of you should be giving thought to the needs of the IAB,
+IETF and Internet Society and should make known to the committee
+suggestions you may have as to candidates.
+
+I will send copies of all volunteer applications I have received
+thus far to Jeff for further processing.
+
+Jeff will be advising you shortly what email address to send
+further correspondence to. Please give him your best support
+in carrying out this important task.
+
+Vint
+
+

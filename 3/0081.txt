@@ -1,0 +1,60 @@
+NomCom Chair -- 19 January 1999 -- IETF
+---------------------------------------
+
+IAB/IESG Nominations Needed
+
+
+According to Steve Coya, the following IAB members are up for renewal:
+
+Bob Braden
++ Christian Huitema
++ Steve Kent
++ Barry Leiner
++ Tony Lauck
+Jon Postel
+
+According to same, the following IESG slots are up for selection:
+
++ Erik Huizer Applications
+Dave Piscitello Internet
+Open * Operations
++ Bob Hinden Routing
++ Steve Crocker Security
++ Joyce Reynolds User Services
+
+I haven't gotten all the answers back from the IESG (hence the noticable
+delay in this posting), but to my knowledge all of the above are interested
+in renewing their committments with the exception of Bob Braden, Jon
+Postel, and Dave Piscitello.
+
+The first order of business for the nominating committee is then:
+
+of those who wish to renew, whom do we accept?
+
+Those in the community who have strong opinions and weighty evidence should
+post it to the headhunt@nri.reston.va.us list. Note that I'm not looking
+here for "gee, I think he's a nice guy" or for flames; I'm looking for
+strong reasons that the person should or should not continue in office.
+
+The second order of business (and with respect to at least four positions,
+a very valid activity to get started on) is:
+
+whom shall we nominate to fill the positions that are vacant or which
+we make vacant?
+
+Those in the community who feel that a person is eminently qualified to
+fill an open position, either on the IAB or the IESG, should post that
+person's qualifications to the headhunt@ietf.cnri.reston.va.us list. Please
+do us a favor: check with the person first, and if possible convince
+him/her to make the posting.
+
+<From here on out, I am expecting to make few ietf@cnri postings on this
+subject; the matter will continue on the headhunt@cnri list.
+
+=============================================================================
+"In sound wisdom there are two sides"
+Zophar, Job 11:6
+
+
+-----------------
+-From: Fred Baker

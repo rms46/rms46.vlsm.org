@@ -1,0 +1,83 @@
+NomCom Chair -- 12 October 1998 -- IETF-Announce
+------------------------------------------------
+
+Nomcom Volunteer Pool and Selection Algorithm 
+
+
+42 persons volunteered to be in the pool from which the IETF Nomcom is
+to be selected and 41 of these were found to be eligible under the
+criteria in RFC 2282.  They are announced below.  If you think you
+should be on this list as an eligible volunteer but are not, contact
+me immediately.  The list will be frozen at midnight, Wednesday,
+October 14th.  Selection of the 10 voting nomcom members will be via
+the algorithm specified in draft-eastlake-selection-00.txt with inputs
+of (1) the closing price of IBM (NYSE-IBM) stock on Oct. 16th, (2) all
+seven Massachusetts State Lottery MassMillions numbers for Thursday,
+Oct 15, (3) the closing price of CyberCash (NASDAQ-CYCH) stock on Oct
+16th, (4) the Massachusetts State Lottery Daily Number for Oct 16th
+treated as a single four digit integer, and (5) the closing price of
+Compaq (NYSE-CPQ) stock on Oct 16h.  Anyone should be able to
+duplicate the selection calculation.  On Oct. 18th, I will announce
+those I believe to be selected.  Any questions as to the input values
+used or the faithful execution of the algorithm must get to me by
+midnight, October 20th.
+
+The right mailing list for discussions of these matters is
+<poised@tis.com>.
+
+Thanks,
+Donald
+
+(Although information on the volunteers below is probably no big
+secret, as a comrpomise between better identifying the volunteers and
+providing excess information, I have listed only their names and the
+last two labels in the domain name portion of their email address.)
+
+ 1. Noel Chiappa <@...mit.edu>
+ 2. Ted Hardie <@...nasa.gov>
+ 3. Bob Hinden <@...nokia.com>
+ 4. Paul Hoffman <@...imc.org>
+ 5. Matt Holdrege <@...ascend.com>
+ 6. Dorian Kim <@...blackrose.org>
+ 7. Alex Latzko <@...rutgers.edu >
+ 8. R A Lichtensteiger <@...meitca.com >
+ 9. Bob Mahoney <@...mit.edu>
+10. Michael Meallig <@...netsol.com>
+11. Pete Resnick <@...qualcomm.com>
+12. Marshall Rose <@...ca.us>
+13. Einar Stefferud <@...nma.com>
+14. Christopher Allen <@...consensus.com>
+15. Stephen R. Hanna <@...sun.com>
+16. James Luciani <@...baynetworks.com>
+17. Bill Manning <@...isi.edu>
+18. Surendra Reddy <@...oracle.com>
+19. Yakov Rekhter <@...cisco.com>
+20. Lixia Zhang <@...ucla.edu>
+21. James M. Galvin <@...elistx.com>
+22. Keith McCloghrie <@...cisco.com>
+23. John Tavs <@...ibm.com>
+24. Bernard Aboba <@...internaut.com>
+25. David Meyer <@...cisco.com>
+26. William Simpson <@...greendragon.com>
+27. Matt Crawford <@...fnal.gov>
+28. Tony Li <@...juniper.net>
+29. Dave Crocker <@...brandenburg.com>
+30. Neal McBurnett <@...bell-labs.com>
+31. Joerg Ottensmeyer <@...siemens.de>
+32. Maximilian Riegel <@...siemens.de>
+33. Robert Elz <@...oz.au>
+34. Randall Gellens <@...qualcomm.com>
+35. Scott Huddle <@...mci.net>
+36. Glen Zorn <@...microsoft.com>
+37. Leslie Daigle <@...bunyip.com>
+38. Alex Pilger <@...siemens.de>
+39. Allyn Romanow <@...cw.net>
+40. Bill Sommerfeld <@...mit.edu>
+41. Avri Doria <@...apocalypse.org>
+
+=====================================================================
+ Donald E. Eastlake 3rd   +1 978-287-4877    dee3@torque.pothole.com
+ 318 Acton Street         +1 978-371-7148(fax)       dee3@us.ibm.com
+ Carlisle, MA 01741 USA   +1 914 784 7913
+
+

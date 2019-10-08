@@ -1,0 +1,19 @@
+IESG -- 6 January 1999 -- IETF-Announce
+---------------------------------------
+
+Last Call: RFC1249 (OSI Connectionless Transport Services on top of UDP -
+           Version: 1) to Historic 
+
+The IESG has received a request to consider reclassifying RFC1240 'OSI
+Connectionless Transport Services on top of UDP - Version: 1' as an
+Historic document.  
+
+The IESG will also review OSI connectionless transport services on top
+of UDP Applicability Statement for Historic Status
+<draft-bradner-1240.his-00.txt> as an Informational RFC.
+
+The IESG plans to make a decision in the next few weeks, and solicits
+final comments on this action.  Please send any comments to the
+iesg@cnri.reston.va.us or ietf@ietf.org mailing lists by
+February 06,1999.
+

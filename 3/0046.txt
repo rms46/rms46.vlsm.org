@@ -1,0 +1,23 @@
+NomCom -- 2 December 1998 -- IETF-Announce
+------------------------------------------
+
+"Spotting" the NomCom at IETF43, NomCom mailing list 
+
+To make it easier to spot Nominations Committee members at the Orlando
+meeting, they will be identified by Orange spots on their badges.
+When mutually convenient, feel free to give them your input on filling
+the IESG and IAB slots whose terms are expiring, balancing the IAB and
+the IESG, etc.
+
+The nomcom mailing list is now ietf-nomcom@world.std.com.  The
+previously announced list address still works but please use this new
+one if you want to send mail to the nomcom.
+
+Thanks,
+Donald
+
+=====================================================================
+ Donald E. Eastlake 3rd   +1 978-287-4877    dee3@torque.pothole.com
+ 318 Acton Street         +1 978-371-7148(fax)       dee3@us.ibm.com
+ Carlisle, MA 01741 USA   +1 914 784 7913
+

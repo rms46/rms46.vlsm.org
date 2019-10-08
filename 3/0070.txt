@@ -1,0 +1,52 @@
+NomCom Chair -- 10 November 1999 -- IETF-Announce
+-------------------------------------------------
+
+Call for nominations and Process Milestones
+
+Members of the community are encouraged to contact the Nominating
+Committee (nomcom@ietf.org) with their recommendations and
+nominations for any of the IESG or IAB positions which are up for
+re-filling:
+
+IESG Terms ending in March, 2000:
+
+Keith Moore  Applications
+Erik Nordmark Internet
+Marcus Leech Security
+Bert Wijnen  Operations and Network Management
+Rob Coltun  Routing
+April Marine User Services
+Vern Paxson  Transport
+
+IAB Terms ending in March, 2000:
+
+Brian Carpenter
+Steve Bellovin
+Jon Crowcroft
+Ned Freed
+Tim Howes
+John Klensin
+
+While at IETF46, the members of the NomCom can be identified
+by the small orange dots on their badges.  People are encouraged to take
+advantage of the opportunity to talk to the members of the NomCom
+about nominations and other issues related to the IAB and IESG
+membership.  Remember: to do our job correctly, we need to hear
+from you. So please: stop us, talk to us, and help us to do our job
+well.
+
+When submitting a nomination, please include the person's email address
+if at all possible.
+
+The NomCom is chartered to have its candidate lists submitted and
+approved by the first IETF of 2000; i.e. IETF47 in Adelaide.  The
+schedule for doing this is as follows:
+
+10 November - Send Request for Nominees and Milestones
+03 December - End of Open Nomination period
+28 January -  Submit slates to confirming bodies:
+                       for IAB candidates: ISOC; for IESG candidates: IAB
+25 February - Complete selection and confirmation process
+27 March - Spring IETF
+
+

@@ -1,0 +1,47 @@
+IESG Chair -- 6 February 1997 -- IETF
+-------------------------------------
+
+Re: IETF Nominations Committee Report
+
+I want to thank Geoff Huston for the work of the Nominating Committee in
+selecting new Area Directors. I would like also to thank our three outgoing
+Area Directors for their efforts over the past several years. These Area
+Directors are:
+
+        Frank Kastenholz        Internet
+        Deirdre Kostick         Network Management
+        Allison Mankin          Transport & IPNG
+
+The new IESG, effective the evening of 4/10/96, will therefore be:
+
+Fred Baker          IETF Chair               <fred@cisco.com>
+Harald Alvestrand   Applications             <Harald.T.Alvestrand@uninett.no>
+Keith Moore         Applications             <moore+iesg@cs.utk.edu>
+Scott Bradner       Transport Services       <sob@harvard.edu>
+Allyn Romanow       Transport Services       <allyn@eng.sun.com>
+Jeffrey Burgan      Internet                 <jburgan@baynetworks.com>
+Thomas Narten       Internet                 <narten@raleigh.ibm.com>
+Mike O'Dell         Operations & Management  <mo@uunet.uu.net>
+John Curran         Operations & Management  <jcurran@bbnplanet.com>
+Joyce K. Reynolds   User Services            <jkrey@isi.edu>
+Jeff Schiller       Security                 <jis-iesg@big-screw.mit.edu>
+Joel Halpern        Routing                  <jhalpern@newbridge.com>
+Steve Coya          IETF Executive Director  <scoya@ietf.org>
+
+The new IAB chair and an IAB liaison will also be members of the IESG.
+
+The IESG is acting to effect a smooth switchover, by adding Tom Narten and
+John Curran to its mailing list and by inviting them to join the IESG in
+its activities at the Memphis IETF prior to their installation. We expect
+that they and Scott Bradner will join the sitting Area Directors in their
+duties during that meeting. However, as the installation of new Area
+Directors occurs during the Thursday evening plenary meeting, they will not
+actually have that authority until Thursday, and the sitting Area Directors
+will be authoritative until Thursday evening.
+
+The merger of the Operations and Network Management areas will be effective
+as of the beginning of that meeting.  For the duration of the meeting there
+will be three Area Directors: Mike O'Dell, Scott Bradner, and Deirdre
+Kostick.  After the meeting ADs for the O&M area will be Mike O'Dell and
+John Curran.
+

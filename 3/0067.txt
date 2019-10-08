@@ -1,0 +1,57 @@
+NomCom -- 5 October 1999 -- IETF-Announce
+-----------------------------------------
+
+Update to Call for 1999 Nominations Committee Volunteers 
+
+According to RFC2027 the call for volunteers must include
+the list of open positions with the solicitation to:
+
+        to facilitate community members choosing between 
+        volunteering for a open position and volunteering 
+        for the nominating committee.
+
+Since I neglected to include that in my first solicitation, I am making
+yet another call for volunteers.  But any excuse will do.  Several have
+volunteered, but nearly enough yet.
+
+In addition to being a great way to serve this community, volunteering
+for the NomCom is the best possible response to the urge most all of us
+have felt at some time or other:  'I would have picked someone else'.
+So, to anyone who has ever felt that way, I strongly recommend you send
+your name in as a member of the volunteer pool.  The more individuals
+in the pool, the better our chances of getting a NomCom which reflects
+the diversity of the IETF population.
+
+To qualify you must have attended 2 out of the last 3 IETF meetings.
+You must also not be interested in being nominated to replace any of
+the current office holders in the following positions:
+
+IESG Terms ending in March, 2000:
+
+Keith Moore             Applications
+Erik Nordmark           Internet
+Marcus Leech            Security
+Bert Wijnen             Operations and Network Management
+Rob Coltun              Routing
+April Marine            User Services
+Vern Paxson             Transport
+
+IAB Terms ending in March, 2000:
+
+Brian Carpenter
+Steve Bellovin
+Jon Crowcroft
+Ned Freed
+Tim Howes
+John Klensin
+
+Please Note: These people have not yet been polled on their
+              willingness to stand for renomination.
+
+Please send a note indicating your interest in being on the NomCom to
+avri.doria@nokia.com.  Please include your telephone number and list
+the subject as: NomCom Volunteer.
+
+The deadline for volunteers is: October 22, 1999.
+
+

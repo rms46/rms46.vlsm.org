@@ -1,0 +1,42 @@
+NomCom Chair -- 20 September 1997 -- IETF
+-----------------------------------------
+
+Nomcom Members
+
+Well, its that day.  Here's how it happened.
+
+The most active NASDAQ stock was Intel with sales in 100s of 113203.
+(all numbers in 100s)
+
+3203 mod 57 is 11 - starting point for the list.
+
+Apple (8476), Ascend (96516) is (476516 + 11) mod 57 which is 7.
+Congrats to Rik Drummond
+TCI (87601), MicroAge (3003) is (601033 + 7) mod 57 which is 2.
+Congrats to John Boudreaux
+Cisco (70804), Intuit (9633) is (804633 + 2) mod 57 which is 23.
+Congrats to Steve Hole
+Biogen(30216), Dell (62406) is (216406 + 23) mod 57 which is 0.
+Congrats to Bernard Aboba
+Excite (8843), UglyDuck (4769) is (843769 + 0) mod 57 which is 55.
+Congrats to Lixia Zhang
+Intel (113203), Qualcom (24328) is (20338 + 55) mod 57 which is 6.
+Congrats to Avri Doria
+MCI (80005), Adobe (66502) is (5502 + 6) mod 57 which is 36.
+Congrats to Keith McCloghrie
+Microsoft (96786), Infoseek (2565) is (786565 + 36) mode 57 which is 1.
+Congrats to Uri Blumenthal
+Netcom (1108), Cirrus (9534) is (108534 + 1) mod 57 which is 7.  7 is a
+duplicate, so the next non selected is 8.
+Congrats to Donald Eastlake
+Netscape (6462), Compuserve (2862) is (462862 + 8) mod 57 which is 30.
+Congrats to Steve Kent
+
+I believe I've done the math correctly, recorded the numbers correctly from
+the paper, and double checked all my entries,  but errors do happen.
+Unless I hear otherwise this list will become official and permanent at
+2359 PDT Tuesday 23 September.
+
+Would anyone on this list who hasn't yet provided me with their snail mail
+and phone numbers do so - thanks - Mike
+

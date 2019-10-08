@@ -1,0 +1,28 @@
+IAB-Chair -- 30 September 1998 -- IETF-Announce
+-----------------------------------------------
+
+IAB actions concerning the IANA 
+
+On September 4, 1998 the IAB issued a statement in general support
+of the third published draft by laws for the "new IANA" corporation.
+The IAB has briefly reviewed the fifth draft published on September
+28, and finds it to be broadly compatible with the third draft. 
+However, since all the issues surrounding the new corporation have not
+yet been fully resolved, the IAB has decided under the terms of
+RFC 1601 to prolong for three months the current designation of the 
+team under Jon Postel at ISI as the Internet Assigned Numbers Authority.
+We will work on an interim agreement with the IANA to define the
+specifics of this.
+
+Meanwhile the IAB will work with the IESG and the ISOC to prepare a
+proposal for the Protocol Supporting Organization likely to be required 
+by the new corporation. We will also work on a proposal for open
+procedures for the IETF appointments to this Organization and to the
+Board of the proposed new IANA corporation. Finally we will work on a
+proposal for a memorandum of understanding, or equivalent, between the
+IETF and the IANA. IETF consensus will be sought for these proposals, 
+most likely via the IETF process working group (the POISSON WG).
+
+    Brian Carpenter (IAB Chair)
+    September 30, 1998
+

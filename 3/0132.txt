@@ -1,0 +1,641 @@
+POSTEL@USC-ISIF -- 11 May 1984 -- namedroppers@SRI-NIC
+------------------------------------------------------
+
+DRAFT - Domain Requirements - New Version
+
+Hi.
+
+Here is a significantly revised version of the "Domain Requirements" memo.
+Comments are encouraged.  If you have public comments please send
+them only to "NAMEDROPPERS@SRI-NIC.ARPA" -  the authors are on the list.
+If you have private comments please send them to "JKREYNOLDS@USC-ISIF.ARPA".
+
+--jon & joyce.
+
+
+Network Working Group                                          J. Postel
+Request for Comments: DRAFT                                  J. Reynolds
+                                                                     ISI
+                                                                May 1984
+
+                          Domain Requirements
+
+
+Status of this Memo
+
+   This is a draft memo.  When the review is complete this memo will be
+   issued as an RFC with the following statement:
+
+      This memo is a policy statement on the requirements of
+      establishing a new domain in the ARPA-Internet and the DARPA
+      research community.  This is an official policy statement of the
+      ICCB and the DARPA.
+
+Introduction
+
+   This memo restates and refines the requirements on establishing a
+   Domain first described in RFC-881 [1].  It add considerable detail to
+   that discussion, and introduces the limited set of top level domains.
+
+The Purpose of Domains
+
+   Domains are administrative entities.  The purpose and expected use of
+   domains is to divide the name management required of a central
+   administration and assign it to sub-administrations.  There are no
+   geographical, topological, or technological constraints on a domain.
+   The hosts in a domain need not have common hardware or software, nor
+   even common protocols.  Most of the requirements and limitations on
+   domains are designed to ensure responsible administration.
+
+General Purpose Domains
+
+   While the initial domain name "ARPA" arises from the history of the
+   development of this system and environment, in the future most of the
+   top level names will be very general categories like "government",
+   "education", or "corporate".  The motivation is to provide an
+   organization name that is free of undesirable semantics.
+
+
+
+
+
+
+
+
+
+
+
+
+Postel & Reynolds                                               [Page 1]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+Initial Set of Top Level Domains
+
+   The initial set of top level domain names is:
+
+      ARPA =  The ARPA-Internet
+
+      DDN  =  The DDN-Internet
+
+      GOV  =  Government, any government related domains meeting the
+              second level requirements.
+
+      EDU  =  Education, any education related domains meeting the
+              second level requirements.
+
+      COR  =  Corporate, any corporate related domains meeting the
+              second level requirements.
+
+      PUB  =  Public, any other domains meeting the second level
+              requirements.
+
+Possible Examples of Domains
+
+   The following examples are fictions of the authors' creation, any
+   similarity to the real world is coincidental.
+
+   The UC Domain
+
+      It might be that a large state wide university with, say, nine
+      campuses and several laboratories may want to form a domain.  Each
+      campus or major off-campus laboratory might then be a subdomain,
+      and within each subdomain, each department could be further
+      distinguished.  This university might be a second level domain in
+      the education category.
+
+      One might see domain style names for hosts in this domain like
+      these:
+
+         LOCUS.CS.LA.UC.EDU
+         CCN.OAC.LA.UC.EDU
+         ERNIE.CS.CAL.UC.EDU
+         A.S1.LLNL.UC.EDU
+         A.LAND.LANL.UC.EDU
+         NMM.LBL.CAL.UC.EDU
+
+   The MIT Domain
+
+      Another large university may have many hosts using a variety of
+
+
+Postel & Reynolds                                               [Page 2]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+      machine types, some even using several families of protocols.
+      However, the administrators at this university may see no need for
+      the outside world to be aware of these internal differences.  This
+      university might be a second level domain in the education
+      category.
+
+      One might see domain style names for hosts in this domain like
+      these:
+
+         APIARY-1.MIT.EDU
+         BABY-BLUE.MIT.EDU
+         CEZANNE.MIT.EDU
+         DASH.MIT.EDU
+         MULTICS.MIT.EDU
+         TAC.MIT.EDU
+         XX.MIT.EDU
+
+   The CSNET Domain
+
+      There may be a consortium of universities and industry research
+      laboratories called, say, "CSNET".  This CSNET is not a network
+      per se, but rather a computer mail exchange using a variety of
+      protocols and network systems.  Therefore, CSNET is not a network
+      in the sense of the ARPANET, or an Ethernet, or even the Internet,
+      but rather a community.  Yet it does, in fact, have the key
+      property needed to form a domain; it has a responsible
+      administration.  This consortium might be a second level domain in
+      the education category.
+
+      One might see domain style names for hosts in this domain like
+      these:
+
+         CIC.CSNET.EDU
+         EMORY.CSNET.EDU
+         GATECH.CSNET.EDU
+         HP-LABS.CSNET.EDU
+         IBM-SJ.CSNET.EDU
+         UDEL.CSNET.EDU
+         UWISC.CSNET.EDU
+
+
+
+
+
+
+
+
+
+
+Postel & Reynolds                                               [Page 3]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+General Requirements on a Domain
+
+   There are several requirements that must be met to establish a
+   domain.  In general, it must be responsibly managed.  There must be a
+   responsible person to serve as an authoritative coordinator for
+   domain related questions.  There must be a robust name service, it
+   must be of at least a minimum size,  and the domain must be
+   registered with the central domain administrator (the Network
+   Information Center (NIC) Domain Registrar).
+
+   Responsible Person:
+
+      An individual must be identified who has authority for the
+      administration of the names within the domain, and who seriously
+      takes on the responsibility for the behavior of the hosts in the
+      domain, plus their interactions with hosts outside the domain.
+      This person must have some technical expertise and the authority
+      within the domain to see that problems are fixed.
+
+      If a host in a given domain somehow misbehaves in its interactions
+      with hosts outside the domain (e.g., consistently violates
+      protocols), the responsible person for the domain must be
+      competent and available to receive reports of problems, take
+      action on the reported problems, and follow through to eliminate
+      the problems.
+
+   Domain Servers:
+
+      A robust and reliable domain name service must be provided.  One
+      way of meeting this requirement is to provide at least two
+      independent domain name servers for the domain.  The database can,
+      of course, be the same.  The database can be prepared and copied
+      to each domain name server.  But, the servers should be in
+      separate machines on independent power supplies, et cetera;
+      basically as physically independent as can be.  They should have
+      no common point of failure.
+
+      Some domains may find that providing a robust domain name service
+      can most easily be done by cooperating with another domain where
+      each domain provides an additional server for the other.
+
+      In other situation it may be desirable for a domain to arrange for
+      domain name service to be provided by a third party, perhaps on
+      hosts located outside the domain.
+
+      One of the difficult problems in operating a domain name server is
+      the acquisition and maintenance of the data.  In this case, the
+
+
+Postel & Reynolds                                               [Page 4]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+      data are the host names and addresses.  In some environments this
+      information changes fairly rapidly and keeping up-to-date data may
+      be difficult.  This is one motivation for sub-domains.  One may
+      wish to create sub-domains until the rate of change of the data in
+      a sub-domain domain name server database is easily managed.
+
+      The responsible person or an identified technical assistant must
+      understand in detail the procedures for operating a domain name
+      server, including the management of master files and zones.
+
+      The operation of a domain name server should not be taken on
+      lightly.  There are some difficult problems in providing an
+      adequate service, primarily the problems in keeping the database
+      up to date, and keeping the service operating.
+
+      The concepts and implementation details of the domain name server
+      are given in RFC-882 [2] and RFC-883 [3].
+
+   Minimum Size:
+
+      The domain must be of at least a minimum size.  Several measures
+      of size may be used in combination with making this test.
+      Measures may include: (a) the number of host computers in the
+      domain, (b) the number of people with primary mailboxes in the
+      domain, (c) the amount of traffic that crosses the boundary of the
+      domain [packets/day or mail items/week].  Specific threshold
+      values for these measurements will be established before new
+      domains are authorized.
+
+      There is no requirement to form a domain because some set of hosts
+      is above the minimum size.
+
+      Top level domains must be specially authorized.  In general, they
+      will only be authorized for domains expected to have over 1000
+      hosts.
+
+      The current requirement for a second level domain is that it have
+      over 100 hosts.
+
+   Registration:
+
+      Top level domains must be specially authorized and registered with
+      the NIC domain registrar.
+
+      The administrator of a level N domain must register with the
+
+
+
+
+Postel & Reynolds                                               [Page 5]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+      registrar of the level N-1 domain.  This upper level authority
+      must be satisfied that the requirements are met before
+      authorization for the domain is granted.
+
+      The registration procedure involves answering specific questions
+      about the prospective domain.  A prototype of what the NIC Domain
+      Registrar may ask for the registration of a second level domain is
+      shown below.  These questions may change from time to time.  It is
+      the responsibility of domain administrators to keep this
+      information current.
+
+      The administrator of a domain is required to make sure that host
+      and sub-domain names within that jurisdiction conform to the
+      standard name conventions and are unique within that domain.
+
+      If sub-domains are set up, the administrator may wish to pass
+      along some of his authority and responsibility to a sub-domain
+      administrator.  Even if sub-domains are established, the
+      responsible person for the top-level domain is ultimately
+      responsible for the whole tree of sub-domains and hosts.
+
+         This does not mean that a domain administrator has to know the
+         details of all the sub-domains and hosts to the Nth degree, but
+         simply that if a problem occurs he can get it fixed by calling
+         on the administrator of the sub-domain containing the problem.
+
+Top Level Domain Requirements
+
+   There are very few top level domains, each of these may have many
+   second level domains.  Every top level domain must meet the general
+   requirements on a domain specified above.
+
+   An initial set of top level names has been identified.  Each of these
+   has an administrator.
+
+   The top level domains:
+
+      ARPA =  The ARPA-Internet
+
+         Administrator:  The Network Information Center
+         Mailbox:        DOMAIN-REGISTRAR@SRI-NIC.ARPA
+
+      DDN  =  The DDN-Internet
+
+         Administrator:  The Network Information Center
+         Mailbox:        DOMAIN-REGISTRAR@SRI-NIC.ARPA
+
+
+
+Postel & Reynolds                                               [Page 6]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+      GOV  =  Government
+
+         Administrator:  The Network Information Center
+         Mailbox:        DOMAIN-REGISTRAR@SRI-NIC.ARPA
+
+      EDU  =  Education
+
+         Administrator:  The Network Information Center
+         Mailbox:        DOMAIN-REGISTRAR@SRI-NIC.ARPA
+
+      COR  =  Corporate
+
+         Administrator:  The Network Information Center
+         Mailbox:        DOMAIN-REGISTRAR@SRI-NIC.ARPA
+
+      PUB  =  Public
+
+         Administrator:  The Network Information Center
+         Mailbox:        DOMAIN-REGISTRAR@SRI-NIC.ARPA
+
+Second Level Domain Requirements
+
+   Each top level domain may have many second level domains.  Every
+   second level domain must meet the general requirements on a domain
+   specified above, and be registered with a top level domain
+   administrator.
+
+Third through Nth Level Domain Requirements
+
+   Each second level domain may have many third level domains, etc.
+   Every third level domain (through Nth level domain) must meet the
+   requirements set by the administrator of the immediately higher level
+   domain.  Note that these may be more or less strict that the general
+   requirements.
+
+Impact on Hosts
+
+   What is a host administrator to do about all this?  For existing
+   hosts, already operating in the ARPA-Internet, the best advice is to
+   sit tight.  For a new host, careful thought should be given (as
+   discussed below).  Some guidance can be obtained by comparing notes
+   on what other hosts with similar administrative properties have done.
+
+   The owner of a host may decide which domain to join, and the
+   administrator of a domain may decide which hosts to accept into his
+
+
+
+
+Postel & Reynolds                                               [Page 7]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+   domain.  Thus the owner of a host and a domain administrator must
+   come to an understanding about the host being in the domain.  This is
+   the foundation of responsible administration.
+
+      For example, a host "XYZ" at MIT might possible be considered as a
+      candidate for becoming any of XYZ.ARPA, XYZ.CSNET.EDU, or
+      XYZ.MIT.EDU.
+
+         The owner of host XYZ may choose which domain to join,
+         depending on which domain administrators are willing to have
+         him.
+
+   The domain is part of the host name.  Thus if USC-ISIA.ARPA changes
+   its domain affiliation to DDN to become USC-ISIA.DDN, it has changed
+   its name.  This means that any previous reference to USC-ISIA.ARPA
+   are now out of date.  Such old references may include private host
+   name to address tables, and any recorded information about mailboxes
+   such as mailing lists, the headers of old messages, printed
+   directories, and peoples memories.
+
+   The experience of the DARPA community suggests that changing the name
+   of a host is somewhat painful.  It is recommended that careful
+   thought be given to choosing a new name for a host - which includes
+   selecting its place in the domain hierarchy.
+
+The Roles of the Network Information Center
+
+   The NIC plays two types of roles in the administration of domains.
+   First,  the NIC is the registrar of all top level domains.  Second
+   the NIC is the administrator of several top level domains (and the
+   registrar for second level domains in these).
+
+   Top Level Domain Registrar
+
+      As the registrar for top level domains the NIC is the contact
+      point for investigating the possibility of establishing a new top
+      level domain.
+
+   Top Level Domain Administrator
+
+      For the top level domains designated so far the NIC is the
+      administrator of each of these domains.  This means the NIC is
+      responsible for the management of these domains and the
+      registration of the second level domains or hosts (if at the
+      second level) in these domains.
+
+      It may be reasonable for the administration of some of these
+
+
+Postel & Reynolds                                               [Page 8]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+      domains to be taken on by other authorities in the future.  It is
+      certainly not desired that the NIC be the administrator of all top
+      level domains forever.
+
+Prototypical Questions
+
+   To establish a DOMAIN, the following information must be provided to
+   the NIC Domain Registrar (DOMAIN-REGISTRAR@SRI-NIC.ARPA):
+
+      Notes:  The key people must have computer mail mailboxes and
+      NIC-Idents.  If they do not at present please remedy the situation
+      at once.  A NIC-Ident may be established by contacting
+      NIC@SRI-NIC.ARPA.
+
+   1)  The name of the top level domain to join.
+
+      For example:  EDU
+
+   2)  The name, title, mailing address, phone number, and organization
+   of the administrative head of the organization.  This is the contact
+   point for administrative and policy questions about the DOMAIN.  In
+   the case of a research project, this should be the Principal
+   Investigator.  The online mailbox and NIC-Ident of this person should
+   also be included.
+
+      For example:
+
+         Administrator
+
+            Organization  USC/Information Sciences Institute
+            Name          Keith Uncapher
+            Title         Executive Director
+            Mail Address  USC/ISI
+                          4676 Admiralty Way, Suite 1001
+                          Marina del Rey, CA. 90292
+            Phone Number  (213) 822-1511
+            Net Mailbox   Uncapher@USC-ISIB.ARPA
+            NIC-Ident     KU
+
+   3)  The name, title, mailing address, phone number, and organization
+   of the technical contact.  The online mailbox and NIC-Ident of the
+   technical contact should also be included.  This is the contact point
+   for problems with the DOMAIN and for updating information about the
+   DOMAIN.  Also, the technical contact may be responsible for hosts in
+   this DOMAIN.
+
+      For example:
+
+
+Postel & Reynolds                                               [Page 9]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+         Technical Contact
+
+            Organization  USC/Information Sciences Institute
+            Name          Craig Milo Rogers
+            Title         Researcher
+            Mail Address  USC/ISI
+                          4676 Admiralty Way, Suite 1001
+                          Marina del Rey, CA. 90292
+            Phone Number  (213) 822-1511
+            Net Mailbox   Rogers@USC-ISIB.ARPA
+            NIC-Ident     CMR
+
+   4)  The name of the DOMAIN (up to 12 characters).  This is the name
+   that will be used in tables and lists associating the DOMAIN and the
+   domain name server addresses.  [While technically domain names can be
+   quite long (programmers beware), shorter names are easier for people
+   to cope with.]
+
+      For example:  ALPHA-BETA
+
+   5)  A description of the servers that provides the domain name
+   service for translating name to address for hosts in this DOMAIN, and
+   the date they will be operational.
+
+      A good way to answer this question is to say "Our server is
+      supplied by person or company X and does whatever their standard
+      issue server does".
+
+         For example:  Our server is a copy of the server operated by
+         the NIC, and will be installed and made operational on
+         1-June-84.
+
+   6)  A description of the server machines, including:
+
+      (a) hardware and software (using keywords from the Assigned
+      Numbers)
+
+      (b) addresses (what host on what net for each connected net)
+
+      For example:
+
+         (a) hardware and software
+
+            VAX-11/750  and  UNIX,    or
+            IBM-PC      and  MS-DOS,  or
+            DEC-1090    and  TOPS-20
+
+
+
+Postel & Reynolds                                              [Page 10]
+
+
+
+RFC DRAFT                                                       May 1984
+Domain Requirements
+
+
+         (b) address
+
+            10.9.0.193 on ARPANET
+
+   7)  An estimate of the number of hosts that will be in the DOMAIN
+
+      (a) initially,
+      (b) within one year,
+      (c) two years, and
+      (d) five years.
+
+      For example:
+
+         (a) initially  =   25
+         (b) one year   =   50
+         (c) two years  =  100
+         (d) five years =  500
+
+Acknowledgment
+
+   We would like to thank the many people who contributed to this memo,
+   including the participants in the Namedroppers Group, the ICCB, the
+   PCCB, and especially the staff of the Network Information Center,
+   particularly J. Feinler and K. Harrenstien.
+
+References
+
+   [1]  Postel, J., "The Domain Names Plan and Schedule", RFC-881, USC
+        Information Sciences Institute, November 1983.
+
+   [2]  Mockapetris, P., "Domain Names - Concepts and Facilities",
+        RFC-882, USC Information Sciences Institute, November 1983.
+
+   [3]  Mockapetris, P., "Domain Names - Implementation and
+        Specification", RFC-883, USC Information Sciences Institute,
+        November 1983.
+
+   [4]  Postel, J., "Domain Name System Implementation Schedule",
+        RFC-897, USC Information Sciences Institute, February 1984.
+
+
+
+
+
+
+
+
+
+
+Postel & Reynolds                                              [Page 11]
+
+

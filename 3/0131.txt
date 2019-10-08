@@ -1,0 +1,386 @@
+POSTEL@USC-ISIF -- 20 May 1984 -- namedroppers@SRI-NIC
+------------------------------------------------------
+
+re: comments on Domain Requirements
+
+
+Hi:
+
+I will attempt to comment on some of the discussion of the last week.
+
+Opening Remarks:
+
+   It certainly is interesting to find that there is a lot more 
+   discussion about what a name looks like and what it means than there 
+   is about the details of how the system is built.
+
+   It really would be nice if when people start using the language of 
+   the actual specifications or discussing details described there, that
+   they took the trouble to review the specifications.
+
+1)  Name-to-Address Lookup vs Directory Assistance
+
+   One concept that seems to have been widely misunderstood is that this
+   is a naming system, not a general directory assistance system.
+
+   This is supposed to be a system for finding specific types of 
+   information about exactly named things (with a few careful 
+   generalizations in the name  search).  This is not intended to be a 
+   system for finding partially described things.  The NIC WHOIS service
+   and the CSNET Mailbox Name Service are example of more generalized 
+   searching systems based on partial information.  The current IFIP WG 
+   6.5 work on directory assistance is different from the domain names 
+   system in this respect, too, it aims to find things based on partial 
+   information (this also makes it much harder to implement).
+
+   The notion that you don't want to worry about SRI being in EDU or GOV
+   or COR, is like saying that you don't want to worry about Los Angeles
+   being in California or Texas or Oregon.
+
+      SRI will choose to be in some domain and will advertise its 
+      address.
+
+   When you call me on the phone you have to know my phone number, you 
+   don't get to guess an area code, and some how expect all numbers to 
+   be known in all area codes.
+
+      I tell my number to people i expect to call me, and i have my 
+      number listed in directories.  I don't expect people to be able to
+      guess it.
+
+   With the current mailboxes and host name the same applies.  I tell 
+   people my mailbox name (POSTEL@USC-ISIF.ARPA), and i list it in 
+   directories (NIC WHOIS).  I expect the same practice to continue with
+   domains.  It is possible that some time in the future things will 
+   change and my mailbox might be "POSTEL@ISI.USC.EDU".  I wouldn't 
+   expect anyone to guess that that was my mailbox, i would tell some 
+   people and get the directory entry updated.
+
+2)  Unique Names
+
+   While it is possible for a host to have several (even many) names in 
+   the domain name system, that is not the general intent, and i don't 
+   think it is a good idea.
+
+   Think about the hosts names we have now, would you want your host to 
+   have several names?  If it did, what would your mailbox be?  How many
+   more duplicate messages would you receive?
+
+      Suppose my host was known as both USC-ISIF.ARPA and LA-47.ARPA.  
+      Then i could have mailboxes POSTEL@USC-ISIF.ARPA and 
+      POSTEL@LA-47.ARPA.  How is someone at another host supposed to 
+      know that these two mailbox addresses are the same person?  In 
+      general, they can't, and so i will get more duplicate mail than i 
+      do now (which is already too much).
+
+   Also think about the other side of it.  If my host has more than one 
+   name, which one should it fill in for me on the FROM line when i send
+   a message?  If there is some default that is used, that is the 
+   "preferred" name for the host.  Given that the host has a preferred 
+   name, why not use that name all the time?
+
+   It was suggested that since a host can be connected to more than one 
+   network and thereby can have more than one hardware address, it 
+   follows that it should have more than one name.  This is like saying 
+   that a city ought to be allowed different names for each type of 
+   transportation system (roads, rail, ship, air) that it is connected 
+   to.
+
+   It is certainly allowed for a host to have multiple names, and it if 
+   a host did have multiple names they could be associated with the 
+   networks the host was connected to.  I don't see any advantage in 
+   doing it.
+
+   Names have to be unique only with respect to their siblings.  There 
+   may be names like:
+
+      XYZ.PQR.ABC
+      WUV.PQR.ABC
+      XYZ.IJK.ABC
+      WUV.IJK.ABC
+
+   to name four different hosts.
+
+   Many people seemed to think the example in the DRAFT RFC was either 
+   confusing in itself or would lead to a confusing result.
+
+      For example, a host "XYZ" at MIT might possible be considered as a
+      candidate for becoming any of XYZ.ARPA, XYZ.CSNET.EDU, or 
+      XYZ.MIT.EDU.
+
+         The owner of host XYZ may choose which domain to join, 
+         depending on which domain administrators are willing to have 
+         him.
+
+   Some people seem to be upset that this could possibly result in a 
+   range of host names like:
+
+      APIARY-1.MIT.ARPA
+      DASH.MIT.CSNET.EDU
+      MULTICS.MIT.EDU
+
+   First, i doubt that MIT would let this happen, but one can't be sure.
+   Second, i am not sure what to be upset about.  The notion seems to be
+   that somehow i know that this MULTICS is an MIT computer but can't 
+   guess if it is in ARPA or EDU.  This is the kind of problem the IFIP 
+   system is supposed to solve, but the domain name system does not.  I 
+   think the real question here is more like "I want to send a message 
+   to Dave Clark of MIT, and i think his mailbox is on the Multics 
+   computer there, what is the exact string i should enter to send mail 
+   to him?".  This is a question for the NIC WHOIS service, not the 
+   domain name server.
+
+   The notion that "an organization name should be unique within the 
+   community that is likely to want to talk to it" is a bit strange.  
+   How is this uniqueness to be preserved?  What happens when some 
+   previously separate communities discover some common interests?  The 
+   whole point of domains is to subdivide the name assignment problem.  
+   To try to preserve some higher level uniqueness would require the 
+   very central coordination we are trying to eliminate!  It should be 
+   clear that there is no hope of such uniqueness in the long run, so 
+   let's not make any plans based on such a false hope.
+
+3)  Syntax vs. Semantics
+
+   It has been suggest that semantics to too political for us to deal 
+   with and that we ought to stick with syntax.
+
+   I agree that semantics seems to get more people with more points of 
+   view saying more outrageous things than one would expect or wish to 
+   cope with.
+
+   It would be nice to stick to syntax, except that we actually want to 
+   put this system into service, and to do that we have to have some 
+   real names to use.  It seems to me that we have to deal with the 
+   semantics now.
+
+   If we don't have the savy or clout to sort this out, we ought to 
+   forward the problem to those who do.  Any nominations?
+
+4)  The Top Level Domains
+
+   There is a great deal of discussion of these top level domain names. 
+   The general tone seems to be that it is a good idea to have only a 
+   few top level names but these are "too abstract".
+
+   I have not heard many suggestions for other top level names except 
+   for currently existing things.  I think that would lead to a lot of 
+   top level domains.
+
+   It was suggested that there be a standard top level name for use by 
+   isolated systems.  I am not sure that would be the best approach.  I 
+   would favor registering the names of isolated systems in some way.  
+   Experience shows that isolated systems tend to get connected.
+
+5)  Countries as Domains
+
+   Where does the UK domain go?  Good question.  We probably should 
+   allow countries to be top level domains.  I don't think this means 
+   that we should have only countries as top level domains.  There are 
+   quite a number of international entities that would be difficult to 
+   divide up into countries.
+
+6)  ARPA and DDN Domains
+
+   ARPA and DDN probably in an ideal world should not be top level 
+   domains.
+
+   At best they probably ought to be:  ARPA.DOD.GOV.USA and 
+   DDN.DOD.GOV.USA.
+
+      And the computer i use would be:  F.ISI.USC.ARPA.DOD.GOV.USA
+
+   However, for a while (probably a long while), they will be top level 
+   names.  This is a system that has to evolve into use.  We are not 
+   operating with a blank slate.  Right now we have all the hosts in the
+   ARPA & DDN Internets operating with domain style host names in the 
+   ARPA domain.
+
+   There have also been some comments about the requirements being 
+   designed to favor the DDN and DARPA communities, or to prevent groups
+   not working for DARPA or other military agencies from qualifying.  
+   This is not the case.  We are perfectly happy if this naming system 
+   is widely used.  This is clearly to DARPA's and DDN's advantage.  
+   Because of the history and the sponsorship of this effort DARPA and 
+   DDN will get some special treatment.  However the attempt here is to 
+   set a policy for using domain style names that is fair for everyone.
+
+7)  Top Level Administrators
+
+   It was noted that it is strange that all the top level domains are 
+   administrated by the NIC.  The NIC is the agent of the the DDN and of
+   DARPA for the administration of those two domains, as for the other 
+   domains the NIC does not want the job!  If we can find some 
+   reasonable alternatives for getting these domains administered we 
+   will gladly explore the possibilities.  Any volunteers?
+
+   It was suggested (in jest, i think) that the Corporate domain be run 
+   by the U.S. Chamber of Commerce.  It is not such a bad idea.  I would
+   like to see the administration of these domains move to appropriate 
+   responsible entities.  I would not push to get some organization to 
+   administer a domain until there was some indication that they knew 
+   what it was, though.
+
+   Actually, while right now it may look hopeless for ever finding 
+   appropriate administrations to take over the management of some of 
+   these domains, i expect there will in the not too distant future be 
+   several volunteers for each of these domains.
+
+   The NIC is not a "administration" in the sense used here.  The NIC is
+   the agent of both DDN and DARPA.  It would be inappropriate for there
+   to be a top level NIC domain.  The NIC is acting as DDN's or DARPA's 
+   agent when it registers and assigns host names.
+
+   One can be the administrator of a domain, or be the agent of the 
+   administrator of a domain without being in the domain.  For example, 
+   the NIC might be NIC.DDN even though it is the administrative agent 
+   for other domains as well.
+
+8)  Second Level Domains
+
+   100 Hosts.  Perhaps the most often voiced issue is that 100 hosts may
+   not be the right criteria for being big enough to be a second level 
+   domain.
+
+   We are open for suggestions for other criteria.
+
+   It was suggested that with this kind of criteria someone will count 
+   every PC as a host.  I think we should expect that in any case.  So 
+   the criteria should probably be different.  Maybe it should be in 
+   dollars of computer hardware (say $5,000,000 ?).  Or, maybe it should
+   be user accounts or mailboxes (say 25,000 ?).  Or, some formula 
+   combining several factors?  Any suggestions?
+
+   Try thinking of two cases: one you think should be a second level 
+   domain and one you think should not.  Try to make up a decision rule 
+   that separates them.  If you find some thing that works try it on 
+   some other cases.  If it still works tell me about it.
+
+   There was a suggestion to limit the operation of a name server to a 
+   large organization but allow any one to be a second level domain.  
+   This is just the opposite of the intent.  The requirement that a 
+   second level domain be some at least some threshold size is intended 
+   to it limit the number of such domains in some way.  If a much 
+   smaller organization can operate a name service (reliably and 
+   robustly) that is fine with me.  I encourage it.
+
+   There was a question about hosts at the second level.  If a top level
+   administration decides to it may allow hosts as second level names.  
+   This is now the case in the initial ARPA domain.  This is discouraged
+   in the future, but it is allowed.
+
+   The notion that a host is just that special case of a domain which 
+   has no subdomains and is a single machine still applies.  That is, a 
+   host is a leaf of the domain name tree.
+
+   An organization with a small number of hosts (or even just one) will 
+   probably be able to find some second level domain administrator will 
+   to take it in as a third level domain.
+
+9)  Number of Levels
+
+   Some feel that the current plan will result in too many levels.  I 
+   think that it is not actually a problem of how many levels but how 
+   long (in characters) names become.  I think user pressure will keep 
+   things reasonable.
+
+   There is some suggestion that the top level names do not add anything
+   significant while making the names longer.  I think the top level 
+   names are important because of their semantic neutrality.  I think it
+   is important to getting some agreement on how we are going to use 
+   this system, and i think it is so important to get this system into 
+   service that i am willing to pay the cost of an "extra" level.
+
+   Another concern expressed was that some organizations will create 
+   many levels with essentially no content.  For example, A.B.C.D.E, 
+   where B and C have no siblings.  I don't think that this will happen,
+   but i am prepared to let it.
+
+10) Name Length
+
+   There were three types of comments on this: 1) 12 characters too 
+   short, 2) 12 characters too long, and 3) 12 characters just right.
+
+   One should note that this was said in the context of one segment of a
+   domain style name (what the implementation specification calls a 
+   "label").
+
+   The implementation specification allows each label to be up to 63 
+   characters long.  Anyone writing a program to implement anything 
+   dealing with domain style names should plan for the possibility of 63
+   character labels.
+
+11) Aliases
+
+   While it is possible to set up aliases in the database (using the 
+   CNAME RRs), i don't think this should be used widely on a long term 
+   basis.  It may be a useful feature to use for a short time (a few 
+   months) when a host changes its domain style name.
+
+   I think that many hosts will want to establish private files of 
+   aliases for commonly used other hosts.  And i think that users would 
+   like to have private files of commonly used other mailboxes.  Such 
+   files should be easily coupled to applications programs (e.g., the 
+   users mail program).
+
+12) Names Servers
+
+   The information a name server can supply about a name is everything 
+   that is in the database.  There is no implication from the name that 
+   limits the information that can be returned.  The details of the 
+   query determine the information returned.  
+
+   For example, if one looked up UDEL.CSNET.EDU one could get back 
+   (depending on the details of the query) both the ARPA-Internet 32-bit
+   address and the MMDF phone number.
+
+   Please recall that name servers do not have to be one to one with 
+   domain names.  That is, several domains may go together to provide 
+   the robust and reliable name service.
+
+   There was some talk about "sanctioned" name servers.  It is true that
+   when a domain is set up some name servers must be registered so that 
+   information about this new domain can be accessed.  These name 
+   servers must have up to date information about the domain.  There can
+   easily be additional name servers set up for the domain.  I don't see
+   that these additional servers need be though of as second class 
+   citizens in any way.  There was also some concern about keeping the 
+   data consistent between these servers.  By using the data base zone 
+   and master file procedures defined in the specification there should 
+   be no problems with inconsistent data (except possibly very briefly 
+   when the master file is updated).  
+
+13) Database by Zones
+
+   The name servers implement the protocol to answer questions about 
+   data they hold.  The data is organized in to sections called zones.  
+   A zone may conveniently correspond to a low level domain.
+
+   For example, ISI might become a third level domain.  The information 
+   about the hosts at ISI might be a zone of the database.  This zone 
+   could be updated at ISI and provided to several name servers operated
+   by other organizations.
+
+   The part of the database that describes a top level domain and its 
+   second level domains (but not the third and lower level domains) 
+   might also be a zone.  This information might not change very often, 
+   and might be distributed to many name servers.
+
+14) Brick Wall
+
+   I don't respond well to being shouted at.
+
+   Try a calm and well reasoned presentation.
+
+Summary:
+
+I think the main point i want to make is that i want the mechanism to be
+general and capable of supporting a reasonably large and appropriately 
+structured naming system, and i want to start using it as soon as 
+possible.  This may result in the initial structure of names and 
+administrators being somewhat distorted from what we might have in an 
+ideal world.  Let's get on with the experiment and evolve toward that 
+ideal world.
+
+--jon.
+

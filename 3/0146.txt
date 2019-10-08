@@ -1,0 +1,57 @@
+IAB Chair -- 27 May 1997 -- IETF-Announce
+-----------------------------------------
+
+Call for POC Nominations
+
+IETF,
+
+The IAB has been requested to appoint two people to the Policy
+Oversight Committee (POC) established under the recently signed
+DNS Memorandum of Understanding. For full details please
+see http://www.iahc.org/gTLD-MoU.html
+
+Although there is continued discussion at the political level
+about these matters, the IAB has decided to proceed with these
+appointments to avoid loss of time if and when the POC starts up.
+
+One person is to be appointed for one year and a second person
+for three years, to allow for rolling replacements in future.
+The IAB has decided to appoint persons with strong technical
+expertise in DNS and Internet technology and with a strong claim
+to have an international outlook. The IAB has further decided
+to make an open call for nominations from the IETF community.
+
+Procedure:
+
+1. This message is the call for nominations, which should be sent
+to  pocnom@iab.org  by the closing date of 30 June 1997.
+
+** DO NOT SEND NOMINATIONS AS A REPLY TO THIS MESSAGE; SEND THEM
+   TO pocnom@iab.org **
+
+2. Each nomination must give the name, affiliation, email address
+and phone number of the nominee, plus a brief statement (maximum
+10 lines) about the nominee's technical and international credentials.
+
+3. Self-nominations are allowed.
+
+4. The IAB will verify each nominee's willingness to serve for one
+or three years.
+
+5. The list of willing nominees will be published by the IAB shortly
+after the closing date. Confidential comments from the community will
+be solicited. The IAB will then make its two appointments
+and announce them within one month.
+
+6. Apart from the above, the IAB will be guided in its deliberations
+by the procedures defined in RFC 2027.
+
+7. Nominees must accept that a recall procedure, analagous to that
+defined in RFC 2027, may be invoked at any time during their terms.
+
+Note - for future years, the IAB is considering delegating
+this task to the normal IETF Nominating and Recall Committee
+established under RFC 2027. Comments on this idea are welcome.
+
+  Brian Carpenter (IAB Chair)           brian@hursley.ibm.com
+

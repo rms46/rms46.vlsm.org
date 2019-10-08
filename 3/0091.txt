@@ -1,0 +1,250 @@
+Zheng Wang -- 12 June 1992 -- B-I
+---------------------------------
+
+               The Extended Internet Protocol (EIP)
+
+   So far, three proposals have been put forward as the long-term
+   solutions for Internet adressing and routing: Nimrod, Pip and CLNP.
+   All of the them require that the current IP to be replaced
+   by a completely new "IP". However, as I have said in a previous
+   message that IP really is the cornerstone of the current Internet,
+   replacing it with a new "IP" requires fundamental changes to all
+   aspects of the Internet (eg. routing, routers, hosts, ARP, RARP,
+   ICMP, TCP, UDP, DNS, FTP).  Migrating to a new "IP" in effect creates
+   a new "Internet".  The development and deployment of such a new
+   "Internet" would take a very large amount of time and effort.  To
+   ensure interoperability between old and new systems during the
+   transition period, the updated hosts and subnet routers have to run
+   two sets of protocols in parallel.  An updated host also has to
+   determine whether the destination host has been updated or not at the
+   beginning of a connection.
+
+   Here we present a solution called Extended Internet Protocol
+   (EIP). EIP does not propose any new addressing schemes but a
+   framework in which any addressing schemes, such as those proposed in
+   Nimrod, Pip,  NSAP, and CityCodes, can be accommodated.
+   The goal of EIP is to maintain maximum backward compatibility with
+   current IP. It can substantially reduce the modifications to current
+   systems and ease the difficulties in transition.  EIP has a number of
+   very desirable features:
+
+   1)   EIP expands the address space, yet maintains maximum backward
+        compatibility with current IP.
+
+   2)   EIP can accommodate different addressing and routing architec-
+        tures such as fixed or variable length addresses, multi-level
+        addressing, hierarchical routing and policy routing. It cane be
+        used as a vehicle for any new addressing and routing architec-
+        tures.
+
+   3)   EIP requires minor modification to the host IP software (ie. a
+        new option), to the DNS (ie. a new resource record type), and to
+        FTP (ie. a command).
+
+   4)   EIP requires no changes to all assigned IP addresses and subnet
+        structures in local are networks.
+
+   5)   EIP requires no modifications to ARP, RARP, ICMP, TCP/UDP check-
+        sum.
+
+   In the note, IP refers to the current Internet Protocol
+   and EIP refers to the Extended Internet Protocol (EIP is pronounced
+   as "ape" - a step forward in the evolution:-).
+
+   The goal of EIP is to provide maximum flexibility to accommodate
+   any new addressing scheme and at the meantime
+   maintain maximum backward compatibility with current IP. EIP can be
+   viewed as an extended version of IP. Before we describe the EIP
+   header format, let us first look at the evolution from IP to EIP.
+   EIP is developed from IP by:
+
+   1)   Creating a new IP option to hold the Source and Destination Net-
+        work IDs.
+
+   2)   Treating the current IP Source and Destination Addresses as the
+        Source and Destination Host IDs.
+
+   3)   Using Host IDs only for communications within the same network.
+
+   An EIP addresses have two parts: the EIP Host ID and the EIP Network
+   ID. The Network ID identifies a particular network and the Host ID
+   identifies a particular host on the network.
+
+   The current 32-bit IP address space is used for the Host ID only. A
+   new IP option called "EIP Option" is created to hold the Network ID.
+   Using an option to encode the Network ID is the key idea behind the
+   EIP; it provides a flexible way of accommodating arbitrary addressing
+   schemes while maintaining maximum backward compatibility. Because EIP
+   follows the syntax of IP, the modifications required to current
+   Internet systems are greatly reduced.
+
+   The semantics of the Network ID encoded in the EIP Option are deter-
+   mined by the addressing scheme used and is not discussed in this
+   paper. Since EIP Option has a variable length, the Network ID can
+   accommodate any addressing schemes.  It can be a fixed length node ID,
+   or a fixed length path ID, or a variable length backbone-oriented
+   hierarchical address, or a variable length policy source route, or a
+   routing directive.  In fact, it allows multiple addressing schemes
+   co-existence, which may be used for experimenting new addressing
+   schemes in the future.
+
+   The EIP Option format is illustrated in Figure 1.
+
+         COPY CLASS NUMBER LENGTH DESCRIPTION
+         ---- ----- ------ ------ -----------
+           1    0     10     var   EIP
+
+        EIP Option:  Type=138
+
+   +--------+--------+--------+--------//---------+----------//------------+
+   |10001010| length |  type  | Source Network ID | Destination Network ID |
+   +--------+--------+--------+--------//---------+----------//------------+
+
+                   Figure 1:  EIP Option Format
+
+   The field "type" specifies the addressing scheme used thus determines
+   how the Network IDs should be interpreted.  The fields "Source Net-
+   work ID" and "Destination Network ID" hold the Source Network ID and
+   the Destination Network ID.
+
+   The EIP packet header consists of the minimal IP header, the EIP
+   Option and other Options. The actual format is shown in Figure 2.
+
+
+       0                   1                   2                   3
+       0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |Version|  IHL  |Type of Service|          Total Length         |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |         Identification        |Flags|      Fragment Offset    |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |  Time to Live |    Protocol   |         Header Checksum       |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                       Source Host ID                          |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |                    Destination Host ID                        |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+      |              EIP Option             | Other Options | Padding |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+                    Figure 2: EIP Header Format
+
+   The EIP header differs from the IP header in only two aspects.
+   First, the EIP header has the EIP Option which always follows the
+   minimal IP header.  The "Source Network ID" and the "Destination Net-
+   work ID" fields in the EIP Option are used to identify the source and
+   the destination networks.  Second, the "Source Host ID" and "Destina-
+   tion Host ID" fields in the EIP header, which correspond to the
+   "Source Address" and "Destination Address" fields in the IP header,
+   are only used to identify the the source and the destination hosts on
+   the respective networks. Other fields in the EIP headers are identi-
+   cal to the corresponding fields in the IP header.
+
+   For communications within the same network, there is no need to
+   include the Network IDs in the packet. Therefore, the EIP Option
+   which contains the Source Network ID and the Destination Network ID
+   is included in the packet only when the packet is destined to a
+   remote network. In other words, in EIP, when the Source Network ID
+   and the Destination Network ID are omitted in the packet header, it
+   is assumed, by default, that they are both equal to the local net-
+   work.  This is an important feature of EIP which ensures the compati-
+   bility of IP and EIP within one network. When EIP is in place, an IP
+   host si able to communicate with any hosts within the same network
+   without any changes.  In fact, IP and EIP have a identical header
+   when they are used within one network. The IP header can be viewed as
+   a special case of the EIP header, ie. when communications take place
+   within one network.
+
+   A full EIP address consists of a Network ID and a Host.  However,
+   Network IDs and Host IDs are always manipulated in separate forms.
+   The clear separation of the Network ID and the Host ID in EIP has its
+   advantages:
+
+   1)   It maintains full compatibility between IP hosts and EIP hosts
+        for communications within one network. Any IP hosts can communi-
+        cate with any EIP hosts in the same network without any modifi-
+        cations
+
+   2)   It allows the Network IDs to be manipulated more easily When a
+        backbone-based hierarchical addressing scheme is used, a network
+        may have to change its Network ID when its higher level backbone
+        network has been changed and the hosts have to determine which
+        Network ID should be used when their networks have access to
+        more than one backbone network.
+
+   Now let us look at the modifications to the IP systems that
+   are needed for transition to EIP. Because of the similarity between
+   the EIP and IP, the amount of modifications needed to current systems
+   are substantially reduced.
+
+1)   Network Numbers: Each network has to be assigned a new EIP Network
+     ID based on the addressing scheme used. The mapping between the IP
+     network numbers and the EIP Network IDs can be used for translation
+     service (see below).
+
+2)   Host Numbers: There is no need for assigning EIP Host IDs.  All
+     existing hosts can use their current IP addresses as their EIP Host
+     IDs. New machines may be allocated any number from the 32-bit Host
+     ID space since the structure posed on IP addressing is no longer
+     necessary. However, during the transition, allocation of EIP Host
+     IDs should still follow the IP addressing rule, so that the EIP
+     Host IDs are still globally unique and can still be interpreted as
+     IP addresses.  This will allow a more gradual transition to EIP
+     (see below).
+
+3)   Translation Service: During the transition period when the EIP Host
+     IDs are still unique, an address translation service can be pro-
+     vided to IP hosts that need communicate with hosts in other net-
+     works. All IP hosts should use the translation server as their
+     default router to outside world. When the translation server
+     receives a packet, it obtains the Destination Network ID by looking
+     up in the mapping table between IP network numbers and EIP Network
+     IDs. The translation server then adds the EIP option with Source
+     and Destination Network IDs into the packet and forwards to the
+     border router. The translation service only applies to out-going
+     packets from IP hosts. There is no need for translation for any
+     in-coming packets. The border routers may act as the translation
+     servers (see below).
+
+4)   Border Routers: The new EIP Option has to be implemented and rout-
+     ing has to be done based on the Network ID in the EIP Option. The
+     border routers may be used to provide the translation service dur-
+     ing the transition period. When a border router receive a packet
+     without EIP Option, it looks up the Destination Network ID from the
+     mapping table between IP network numbers and EIP Network IDs.  The
+     border router then adds the EIP Option and forwards the packet.
+
+5)   Subnet Routers: No modifications are required during the transition
+     period when EIP Host IDs (which equals to the IP addresses) are
+     still globally unique. A subnet router can still determine, by
+     treating the EIP Host ID as the IP addresses, whether a packet is
+     destined to remote networks or not and forward correctly. However,
+     subnet routers eventually have to implement the EIP Option and
+     carry out routing based on Network IDs when EIP Host IDs are no
+     longer globally unique.
+
+6)   Hosts: The new EIP Option has to be implemented and routing has to
+     be done based on the Network ID in the EIP Option, or based on the
+     Host ID and subnet mask if subnetting is used.
+
+7)   DNS: A new resource record (RR) type "N" has to be added for EIP
+     Network IDs. The RR type "A", currently used for IP addresses, can
+     still be used for EIP Host IDs. RR type "N" entries have to be
+     added and RR type "PTR" to be updated.  All other entries remain
+     unchanged.
+
+8)   ARP/RARP: No modifications are required. The ARP and RARP are used
+     for mapping between EIP Host IDs and physical addresses.
+
+9)   ICMP: No modifications are required.
+
+10)  TCP/UDP Checksum: No modifications are required. The pseudo header
+     includes the EIP Source and Destination IDs instead of the source
+     and destination IP addresses.
+
+11)  FTP: The "DATA Port (Port)" command has to pass both the EIP Net-
+     work and Host IDs. This command, which specifies a data port other
+     than the default one, is not needed under normal circumstances thus
+     it may be possible to disable this command.
+
+

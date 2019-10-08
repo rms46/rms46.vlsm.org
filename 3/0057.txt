@@ -1,0 +1,48 @@
+IAB -- 18 May 1999 -- IETF-Announce
+-----------------------------------
+
+New IRTF Chair in September 
+
+During March, the IAB called for nominations for the position
+of Chair of the Internet Research Task Force (IRTF), since 
+Abel Weinrib expressed his desire to step down. We received 
+twenty excellent nominations by the closing date of April 15, 
+and had considerable diffculty choosing among those nominees 
+willing to serve. After careful discussion, the IAB is pleased 
+to announce the appointment of 
+
+            Erik Huizer 
+
+as Chair of the IRTF for two years starting in September 1999.
+A short biography is attached below.
+
+I would like to take this opportunity to thank Abel Weinrib for
+his years of service, to thank the unsuccessful candidates
+for their willingness to serve, and to wish Erik every success.
+
+   Brian Carpenter
+   IAB Chair
+
+==========
+
+Erik Huizer is the Managing Director of the SURFnet ExpertiseCentrum 
+bv, a company based in the Netherlands that does network development, 
+design, planning, support, training and consultancy for an 
+international customer base.
+
+>From 1988 till 1994 he worked as a Technical Manager at SURFnet bv, 
+the company that operates the Academic and Research network in The 
+Netherlands. 
+ 
+Huizer has extensive experience with Internet technology. He has
+been a member of the RARE (now Terena) Technical Committee from 
+1991-1994. He was an Area Director for the Applications area of the 
+Internet Engineering Task Force from 1990-1995. He was a member of 
+the Internet Architecture Board from 1995-1999. Huizer is currently 
+involved with the GigaPort project (http://www.gigaport.nl/), the
+Dutch national project for the Next Generation Internet.
+ 
+Huizer received his Ph. D. degree in Science and Technology from
+Delft University of Technology, The Netherlands, in 1987.
+
+

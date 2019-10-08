@@ -1,0 +1,103 @@
+NomCom Chair -- 23 August 2000 -- IETF-Announce
+===============================================
+2nd Call for nominations committee volunteers
+
+
+Hi -
+
+I've been selected to chair the 2000 IETF Nominations Committee,
+the committee that will select this year's nominees for the IAB and
+the IESG. The good news is that I don't have a vote. The bad news
+is that we need to find 10 volunteers to fill this year's
+NomCom. Details about the NomCom process can be found in RFC 2727.
+
+The NomCom is the IETF's way of choosing its leadership. Typically,
+half of the IAB and half of the IESG is selected each year. It is
+possible that the NomCom will have to fill more or fewer slots
+than this, due to the creation or elimination of positions by the
+IESG, resignations, transfers, etc. IESG members whose terms are
+up include Fred Baker, IETF Chair; Scott Bradner, Transport;
+Randy Bush, Operations & Management; Patrik Faltstrom, Applications;
+Thomas Narten, Internet; Dave Oran, Routing; and Jeff Schiller,
+Security. IAB members whose terms are up include: Harald
+Alvestrand, Ran Atkinson, Rob Austein, Steve Deering, Tony
+Hain and Geoff Huston.
+
+For the NomCom to work as it should, the pool from which the volunteers are
+chosen should be as large as possible. The more people who volunteer,
+the better chance we have of choosing a random yet representative cross
+section of the IETF population. Volunteering for the NomCom is also a
+good way of serving the IETF community. So please volunteer.
+
+NomCom members are barred from nomination during the year they serve,
+even if they later resign. Therefore being selected for the
+NomCom provides complete immunity against selection for the IAB or
+IESG during that year.
+
+People who volunteer should be sure they can the afford the time,
+several hours per week for the next 4-5 months.
+The task basically involves the following activities:
+  - Reading candidate's statements
+  - Participating in a weekly 2 hour conference call.
+  - Attending the IETF meetings held during the selection process.
+  - Doing several interviews.
+  - Speaking to IETF participants about the candidates, the job
+    requirements or the process.
+
+All NomCom deliberations and supporting information that relates
+to specific nominees, candidates, and confirmed candidates are
+confidential. The NomCom members will be exposed to confidential
+information as a result of their deliberations, their interactions
+with those they consult, and from those who provide requested
+supporting information. All members are expected to handle this
+information in a manner consistent with its sensitivity.
+
+To qualify as a volunteer, a person needs to have attended 2 out
+of the last 3 IETF meetings.  Anyone who meets this requirement is invited
+to volunteer by emailing your name, telephone number(s), and
+email address to aboba@internaut.com no later than September 3, 2000.
+Please put "NOMCOM VOLUNTEER" in the subject line.
+
+Once the list closes, I'll provide the list to the IETF secretariat
+for them to verify the eligibility of the each of the volunteers
+(e.g. has attended at least 2 of the last 3 IETFs).  I will also
+ask them to publish the list prior to verification for volunteers
+to confirm that I actually got their email volunteering.
+
+We will then run the selection process and announce the results
+the week of September 11, 2000. Ten (10) NomCom voting members
+will be chosen from the pool of volunteers according to the
+procedure described by Donald Eastlake in RFC 2777, "Publicly
+Verifiable Nomcom Random Selection". The source of randomness
+will be based on the shares traded number of 12 stocks
+selected by the NomCom chair.
+
+The official shares traded numbers (denoted in 000s)
+will be drawn from the September 8, 2000 Wall Street
+Journal which reports the sales figures from the previous
+day - September 7, 2000. If trading in any of the stocks
+is suspended, then the shares traded will be assumed to
+be 0.
+
+Please volunteer.
+Please convince your friends to volunteer.
+
+Thank you,
+
+Bernard Aboba <aboba@internaut.com>
+
+STOCKS USED IN THE NOMCOM SELECTION PROCESS:
+
+eBay, Inc. (EBAY)
+Merill Lynch & Company (DJM)
+Digex, Inc. (DIGX)
+Dreyer's Grand Ice Cream (DRYR)
+Pepsico, Inc. (PEP)
+Target Corp. (TGT)
+Applied Materials, Inc. (AMAT)
+Norsk Hydro AS (NHY)
+Colgate Palmolive Company (CL)
+Maxtor Corp (MXTR)
+Home Depot, Inc. (HD)
+Boise Cascade Corp (BCC)
+

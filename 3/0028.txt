@@ -1,0 +1,29 @@
+NOMCOM-Chair -- 30 April 1998 -- IETF-Announce
+----------------------------------------------
+
+
+Appointment of Applications Area Co-AD - 1 Year Interim
+
+It's my pleasure to announce that the Nomcom has completed its
+deliberations on the vacant Co-AD slot for the Applications area, 
+and that the IAB has approved our nomination.  The Nominations 
+Committee has selected Patrik Faeltstroem to fill the 1 year 
+interim vacancy position for Applications Area Co-AD.  His bio 
+follows.  Congratulations and good luck!
+
+Mike StJohns
+Nomcom '98 Chair
+
+Mr Faeltstroem is a senior researcher at Tele2/Swipnet in Stockholm, Sweden 
+working on  product implementation. Previous work has involved systems
+management at the Royal Institute of Technology in Stockholm as well as
+project manager at Bunyip Information Systems, Montreal, Canada. He was one
+of the people involved in the initial work which resulted in the MIME
+specification, and has been working with SMTP and MIME since. Other
+specialities include directory services (one of the designers of Whois++)
+and internationalization and localization issues. In the IETF, he has been
+the  co-chair of ASID and FIND which both work closely in the Applications
+Area with Directory Services. Patrik is currently also a member of the
+Policy Oversight Committee, appointed by IAB.
+
+

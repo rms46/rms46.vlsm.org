@@ -1,0 +1,37 @@
+NomCom Chair -- 05 March 1996 -- IETF-Announce
+----------------------------------------------
+
+Confirmation of new IAB Slate
+
+The IAB/IESG Nominating Committee is pleased to announce that its slate
+of new members for the IAB has recently been formally confirmed by the
+ISoc Board of Trustees.
+
+Although there will be a formal announcement at this Thursday's
+Plenary, we would like IETF members to be aware that the newly
+appointed IAB members are:
+
+Steve Bellovin
+Brian Carpenter
+Jon Crowcroft
+Robert Elz
+John Klensin
+Radia Perlman
+
+These six join the six whose terms are *not* expiring this year:
+
+J Allard
+Elise Gerich
+Erik Huizer
+Robert Moskowitz
+Yakov Rekhter
+Chris Weider
+
+Each of us should also extend our thanks to the outgoing IAB members,
+Steve Crocker, Phill Gross, Christian Huitema, and Lixia Zhang, for
+their contributions while serving on the current IAB.
+
+Regards,
+-- Guy
+Chair, NomCom
+

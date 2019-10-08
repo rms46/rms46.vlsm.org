@@ -1,0 +1,115 @@
+--------------------------------------------------
+http://info.internet.isi.edu:80/IAB/IABmins.950110
+
+(Letter re. who owns the address space)
+
+It was argued that the letter should avoid statements of "ownership" of the
+address space.  Instead, have the ISOC state that they endorse a particular
+management plan for the address space, and don't deal with issues of
+abandonment at all.  Also, the word "custodian" might be better than "owner."
+
+Really, we want the IANA to control the address space, which then allocates
+them according to guidance from the IAB and the IETF.  The issue is who has
+the ultimate responsibility when someone does not like what the IANA does.
+
+A proposal is to give ownership to ISOC at the same time that it delegates
+addresses, thus removing any bottlenecks.  However, this still does not
+answer the question of who owns and controls the reserve space.
+
+ - prepare 1466++. Should we send a letter to the IEPG? Should there be a
+   recommendation of the IAB? Should there be a public review?
+
+
+--------------------------------------------
+Christian Huitema -- 20 Apr 1995(1) -- CIDRD
+
+In fact, all this "what should the registry do" questions beg for one answer,
+i.e. a clear revision of 1466. We need to have written rules. We also need
+these rules to be well accepted, which implies public review, last call and
+all this sort of things.
+
+Christian Huitema
+
+
+----------------------------------------------
+Christian Huitema -- 20 April 1995(1) -- CIDRD
+
+=>> Well, I hope you did not take my message as implying that *I* intended to
+=>> write the rules. I may wish to contribute, but I would expect the actual text
+=>> to be the work of an open working group.
+=> 
+=> And in the interim, the registries should...?
+=> 
+=> Thanks,
+=> -drc
+
+David,
+
+You have a choice of three possibilities:
+
+1) consider that 1466 fully applies as long as the revision is not published,
+
+2) continue current practice, which involves 1466, 1597, 1626, IAB and IANA
+   statements and a lot of case by case discussions,
+
+3) ask "someone in charge" (e.g. IANA) to publish an interim amendment to
+   1466, pending its revision.
+
+My point is that the interim period should really be as short as possible.
+Whether (1), (2) or (3) is the right interim solution could well be discussed
+here.
+
+Christian Huitema
+
+
+-------------------------------------------
+http://www.isi.edu/in-notes/imr/imr9506.txt
+
+     Mark Kosters and Kim Hubbard attended the NANOG meeting in Ann Arbor,
+     Michigan on June 22-23, 1995.  Mark gave a presentation on the status
+     of the InterNIC and the draft IP allocation practices that has been
+     created in lieu of the general ip allocation document effort,
+     rfc1466bis. RFC1466bis was broken into sections and assigned at RIPE
+     in Jan 1995. Both the APNIC and InterNIC portions where completed. The
+     RIPE section has not yet been completed. Kim Hubbard has agreed to
+     complete the unfinished work in the RIPE section and pull the document
+     together for review.
+     Mark Kosters attended INET95 to give a presentation on the status of
+     the InterNIC.
+
+-------------------------------------------
+http://www.isi.edu/in-notes/imr/imr9604.txt
+
+           INTERNET REGISTRY IP ALLOCATION GUIDELINES
+           <draft-hubbard-registry-guidelines-01> for consideration as
+           a Best Current Practices RFC.
+
+-------------------------------------
+ftp://ftp.ietf.org/iesg/iesg.96-08-22
+
+    The IESG gave tentative approval of INTERNET REGISTRY IP ALLOCATION
+    GUIDELINES <draft-hubbard-registry-guidelines-05.txt> pending the
+    conposition of text for the IESG comment which will include a
+    sunset clause (point in future when document will reviewed. Once
+    the IESG note is written, and each of the dissenters convey their
+    acceptance, Steve will send announcement
+
+-------------------------------------
+ftp://ftp.ietf.org/iesg/iesg.97-12-18
+
+    There was some discussion on Reconsidering RFC2050 (INTERNET REGISTRY IP
+    ALLOCATION GUIDELINES. When published, an IESG note was included which
+    stated that this document would  be reconsidered in a year. The IESG
+    consensus was that it was premature to do that at this point due to the
+    significant ammount of activity in the US goverment in this area and in
+    the address registeries - the effect of these activties will become
+    more apparent in a few months. A target of March 1, 1998 was mentioned,
+    but it was noted that a response to the email query should be made
+    relatively soon.
+
+    The IESG agreed to work on the proper wording of the response via email.
+    As Scott received the initial query, he will send the response. May also
+    copy the IETF list as well.
+
+
+

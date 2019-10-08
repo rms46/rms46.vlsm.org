@@ -1,0 +1,74 @@
+IPng Area Directors  Thu, 7 Jul 1994 
+====================================
+
+IPng ADs Wish to Gauge Consensus on Address Length Requirements
+
+
+Hi, TUBA, SIPP, CATNIP, BIG-INTERNET, and IETF:
+
+This message is one last pre-Toronto recommendation 
+attempt to gauge the extent of consensus on one
+of the IPng issues.  We apologize for duplications.  We wanted
+to reach a wide audience.
+
+Steve Deering's message "Chicago Meeting -- Possible Changes
+to SIPP" to the SIPP list a while back elicited quite a bit
+of discussion on various lists (both SIPP and big-internet and
+in other venues) about the length of "address" required for an IPng. 
+We have also had considerable discussion within the directorate.
+
+At this time it would appear to us that there is considerable consensus
+that a fixed length, topologically structured, hierarchical
+address 16 bytes in length is reasonable for an IPng (that is
+meets the needs of the very very large-scale Internet).
+We understand that we are being a bit vague in using the term "address" in
+light of the question we asked two weeks ago.  For the purposes of this
+request, please assume that the transport level and internet level names
+are the same.  
+
+Some hold the view that 16 bytes is larger than would be required
+for any imaginable Internet structure in the future and that an 
+8 byte address is all that is required.
+
+There seems to be a stronger, but still minority, view that, for various
+reasons, a variable length address, one that could be smaller or larger
+than 16 bytes, would meet the needs better for the future of the 
+Internet.
+
+Much of the discussion on the lists has revolved around the relative
+efficiency of processing fixed and variable length addresses.  We would
+like to assess the consensus just on the length for the future Internet,
+instead of discussing efficiency any more at this time.  We want  
+to make sure that we have understood consensus on meeting the needs
+of the very very large Internet.  Therefore, this message is to
+ask people what present or future rationale they see for one of:
+
+  8 byte fixed length address.
+
+  16 byte fixed length address.
+
+  longer than 16 byte fixed length address now.
+
+  only 16 byte length addresses now but ability 
+  to lengthen the address later.
+
+To amplify a bit more, we are especially interested in your views
+on the address length's ability to offer:
+
+   routing aggregation power
+
+   topological flexibility 
+
+   adminstrative manageability
+
+At this point the consensus among the IPng directorate
+and on several of the mailing lists seems fairly clear
+(a 16 byte length address is good for those things).   
+This is a good time to bring forward your remaining views 
+about the requirements for address length for IPng.
+
+Thank you,
+
+Scott and Allison
+
+

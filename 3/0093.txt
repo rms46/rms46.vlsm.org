@@ -1,0 +1,43 @@
+Hans-Werner Braun -- 3 July 1992 -- B-I
+---------------------------------------
+
+I assume many of you remember the days, so many years ago, when
+the IAB was a group working on behalf of DARPA to give them input
+on things happening and on future research. A prominent Task
+Force (there were no working groups then), was the Gateway and
+And DataStructure (GADS, I *think* I got the name right) Task
+Force, then chaired by Dave Mills. Gosh, when was that? 84-85ish?
+I attended only their last meeting, by invitation of Dave Mills.
+Quite small group then, 15 to 20 people or so.
+
+The GADS was just about to split into the IETF (after having
+called INENG first) and the INARC (Internet Architecture Task
+Force). The INENG/IETF was chaired by Mike Corrigan, INARC by
+Dave Mills, both reporting directly to the IAB, and both quite
+small (still 15-20 or so people then, as there was alot of people
+overlap). Why was the GADS split then? There is a serious and
+everlasting controversy about immediate engineering concerns, as
+well as long term, research and architecture. The GADS tended to
+not work efficiently in both areas. Possibly because there are
+too many shades of gray? So, INENG/IETF were still quite small
+and fit into a small conference room. I remember even Scott Brim
+and myself taking a bit of a risk dragging Milo into his first of
+such meeting (conveniently happening at SRI at that time), as it
+was quite an invitation-only group.
+
+At some time it became clear that DARPA had some domestic
+constituents for networking, particularly from the NSFNET,
+including regional networks. I remember that I (and may be
+others) had a bit of a hard time to convince the IETF to allow
+the NSFNET constituents to be represented. It finally resulted in
+a small group of people meeting with Mike Corrigan in the
+Pentagon to discuss the issue to allow for the broadening of the
+INENG/IETF. I think this included (besides Mike Corrigan) Mike
+St.Johns (then with DCA), Phill Gross (then Mike C.'s assistant
+on INENG/IETF matters), Scott Brim and myself. Sorry if I left
+someone out here, but if at all, it could only have been one or
+two people more. After all the discussion before, I was surprised
+at how easy of a meeting this was. Mike C. essential just said
+ok, fine, or something like that.
+
+

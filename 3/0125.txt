@@ -1,0 +1,132 @@
+NomCom -- 6 April 1003 -- IETF-Announce
+---------------------------------------
+
+nomination letter for new IAB members 
+ 
+
+For the information of IETF members.  Here is a copy of the
+nominations committee's recommendations for IAB members that was sent
+to the ISOC trustees.
+=============================================================================
+Dear ISOC Trustees:
+
+    Attached is a list of the six nominees for the Internet Activities Board,
+along with a brief vita for each candidate.
+
+    These candidates were selected through a lengthy evaluation process
+that started in late January.  The committee formally and informally solicited
+suggestions and applications from throughout the Internet community.  As
+candidates were proposed for various positions, the committee determined if
+it felt the candidate was suitable for any position in IESG or IAB (not just
+those for which the candidate was nominated).  If candidate was felt to be
+suitable for one or more positions, the committee took the step of confirming
+the candidate would serve if asked.  The committee then deliberated over the
+resulting lists of candidates.
+
+    In the case of the IAB seats, the committee held a series of
+teleconferences (over eight hours in the week of March 22nd alone) during
+which the merits of each candidate and the special talents, strengths,
+and attributes she or he would bring to the IAB were carefully considered.  In
+cases where the candidate was not well-known to all committee members, a member
+of the committee was typically asked to present the candidate's
+qualifications.
+During late stages of discussion, after broad discussions including the
+liaisons, the committee met in executive session to make final decisions, with
+only the voting members of the committee plus the non-voting chair (no
+liaisons)
+to avoid even a hint of undue influence.  (The committee would like to
+emphasize that it has valued the participation of the liaisons from the ISOC,
+IAB and IETF.)  Even in the late stages of discussion, the committee solicited
+and considered new nominees as the committee determined that candidates with
+particularly desirable skills or experience were not reflected in the
+candidate pool.  All decisions were made in these highly interactive and often
+animated teleconferences rather than via electronic mail.  These decisions
+were made with as many committee members present and participating as
+possible.
+At no time were decisions made with fewer than five of the committee members
+(plus the non-voting chair) participating, i.e., no decisions were made with
+more than one active member missing.  All decisions were ratified with all of
+the six active committee members participating (plus the chair).
+
+     There were only six active participants because one individual selected
+for committee membership was unable to devote the time required to serve.  This
+was especially unfortunate because even modest participation would have added
+to the cultural and geographic diversity of the committee membership, hopefully
+improving our ability to identify potential European nominees and might have
+increased our success rate when we attempted to recruit those we selected.  The
+committee opted to continue with the membership as originally selected, in the
+hopes that his time pressures would ease and that he would be able to engage in
+the process.  Furthermore, the alternates selected at the outset would not have
+contributed to the committee's diversity.  Although he remained on our mail
+distribution list, much to the regret of the committee, neither electronic mail
+nor live telephone conversations were able to engage his active participation.
+
+    We have made an effort to ensure that the nominees reflect the broad
+spectrum of talents, responsibilities, and nationalities in the larger
+Internet community.  Choosing from among a diverse set of candidates was
+a tasking job and required us to make a number of difficult tradeoffs
+and choices as we considered the various candidates.  We believe this
+slate represents the best joint effort of the committee.
+
+    If you have any questions or concerns about the process or our selections,
+we encourage you to communicate them to me via e-mail to the address below and
+I will forward them to the Nominations Committee.  We do welcome your questions
+or further directions.
+
+For the IAB/IETF Nominations Committee,
+Jeff Case, Chair
+case@cs.utk.edu
+
+*****************************************************************************
+
+                NOMINEES FOR THE INTERNET ACTIVITIES BOARD
+
+Elise Gerich is a computer scientist MERIT, where she manages the
+    routing database and operations for the NSFnet backbone, and through
+    leadership in the Intercontinental Engineering and Planning Group (IEPG),
+    FEPG, and NAEPG has worked to extend routing coherence throughout the
+    world.  Elise is co-chair of the IEPG, and is currently working on
+    backbone upgrades for routing and addressing.
+
+Jun Murai directs the WIDE network at Keio University.  Previously he
+    was responsible for operating JUNET.  He has been active in developing
+    networking connectivity in Japan since 1984, and IP networking in Japan
+    and the Pacific region since 1986.
+
+Yakov Rekhter has been with IBM since 1984 and is currently a Research Staff
+    Member and a manager of a High-Performance Networking group at the
+    T.J. Watson Research Center.  He is one of the leading architects, as
+    well as the major software developer, of the NSFNET Backbone Phase II.
+    His contributions to the NSFNET project include areas of routing, network
+    management, and network topology design.  He is a noted expert in
+    routing, and a leading designer of BGP and IDRP.  He is a long time
+    member of the IETF, the author of several RFCs, and a member of the
+    ANSI X3S3.3 committee.
+
+John Romkey is a principal at ELF Communications, a startup firm producing
+    applications to make the Internet easier to use.  He formerly served
+    as a principal at Epilogue Technologies and FTP Software, Incorporated
+    where he applied his theoretical and practical network management
+    experience.  Previously, he was a member of a research group at MIT under
+    Dave Clark.  His particular area of expertise is in extending Internet
+    technology to the desktop, principally through his contributions to the
+    design and implementation of software which forms the core of many freely
+    available and commercial implementations of TCP/IP for MSDOS/PCDOS-based
+    personal computers.  He also designed the packet driver specification.
+
+Major Michael St. Johns is a Program Manager at Advanced Research Projects
+    Agency (ARPA).  He holds the MS degree in Information and Computer Science
+    from Georgia Tech.  He previously was assigned to the Air Force Data
+    Services Center, Defense Communications Agency as program manager for the
+    Defense Data Network managing the NIC and BBN network development.  He was
+    one of the initial members of the IETF and is the author of a number of
+    security-related RFCs.
+
+W. David Sincoskie is the Executive Director, Computer Networking Research,
+    at Bellcore, and is responsible for leading Bellcore's participation
+    in the Aurora gigabit testbed.  His particular area of expertise is
+    in the design and simulation of broadband packet switches.  He holds
+    a Ph.D. from the University of Delaware and is an Adjunct Associate
+    Professor at the University of Pennsylvania.
+
+

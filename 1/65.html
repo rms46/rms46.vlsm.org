@@ -1,0 +1,591 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head><title>
+WACANA DRAFT IKI-X092X: Topik Khusus dalam Metoda Distribusi dan 
+Pengelolaan Sistem Berbasis GNU/ Linux
+</title>
+<META name="description" 
+content="I am a real nowhere man, sitting in a nowhere LAN, making all my
+	nowhere .plans for nobody -1 -- Rahmat M. Samik-Ibrahim.">
+<META name="keywords" 
+content="RMS46, Rahmat, Samik-Ibrahim, Grounded-Theory, Research,
+Kompas, Kompas-Online, Analisis, Kwik-Kian-Gie, Internet, RFC, IETF"></head>
+<!--  Using STDLIB`(M4)' revision 9.X                         -->
+<!--  (C) 1996-2010 Rahmat M. Samik-Ibrahim under GPL terms.  -->
+<!--  http://vlsm.org/bin/std.m4.gz                           --> 
+     
+<body bgcolor="#ffffff" text="#000000" link="#0000d9" vlink="#000070" alink="#000040">
+<center><table bgcolor="#e6ebfe" width="80%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK1.html" target="_top"><img 
+src="png/LOCAL-LOGO1.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="center" valign="middle"><font color="#00008b" size=4><b>
+<b>WACANA -- DRAFT -- </b> IKI-X092X: Topik Khusus dalam 
+<br>Metoda Distribusi dan Pengelolaan Sistem Berbasis GNU/ Linux
+</b>
+<br><font size=2><b>Rahmat M. Samik-Ibrahim <br>DRAFT 2003</b></font></font>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK2.html" target="_top"><img 
+src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table></center>
+
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+<a name="isi"></a>
+<a href="../etc-new.html" target="_top"><font size=2 
+   color="red">WHAT&#39;s NEW</font></a> |
+<a href="../00-0.html" target="_top"><font size=2 color="red">HOME</font></a> |
+<a href="#bawah" target="_top"><font size=1 
+   color="blue">vv BOTTOM vv</font></a> |
+<a href="#1" target="_top"><font size=1 
+   color="blue">NEXT&gt;&gt;&gt;</font></a>
+<br>
+<font size="1" color="#00008b"><small><br>
+<form method="get" action="http://www.google.com/search">
+  <input type="text" name="q" size="30" maxlength=255 value="">
+  <input type="submit" name="btnG" value="Google Search">
+</form></small></font>
+<tr>
+<td align="center">
+<font size=3 face="arial, helvetica, sans-serif">
+
+<p>
+| <a href="60.html" target="_top">IKI-20230 Sistem Operasi</a>
+|
+<p>
+| <a href="#1" target="_top">Perhatian</a>
+| <a href="#1a" target="_top">Tempat</a>
+| <a href="#2" target="_top">Prasyarat</a>
+| <a href="#3" target="_top">Topik</a>
+| <a href="#4" target="_top">Rujukan</a>
+| 
+<br>
+| <a href="#5" target="_top">Penilaian</a>
+| <a href="#7" target="_top">Tata Tertib Ujian</a>
+| <a href="#8" target="_top">Rencana Kuliah</a>
+| <a href="#9" target="_top">Diskusi</a>
+| <a href="#10" target="_top">Rujukan</a>
+| <a href="#11" target="_top">Terimakasih</a>
+|
+</font>
+<p>
+<tr>
+<td align="right">
+<a name="1"></a>
+<font size=1 color="blue"><a href="65.html" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#1a" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>PERHATIAN</h2>
+<p>
+Tulisan ini merupakan WACANA  latihan akademis (<i>academic exercise</i>)
+semata. Tidak ada rencana tindak lanjut dalam jangka pendek ini.
+</font>
+<p>
+
+<tr>
+<td align="right">
+<a name="1a"></a>
+<font size=1 color="blue"><a href="#1" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#2" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Tempat dan Waktu</h2>
+<p>	
+	Selama 7 (tujuh) minggu, setiap hari
+	<b>Senin</b>, 
+	<b>Selasa</b>, 
+	<b>Rabu</b>, 
+	<b>Kamis</b> 
+	pada jam 
+	<i>09:00 hingga selesai</i>.
+	Kuliah akan diawali dengan diskusi singkat sebuah topik;
+	yang kemudian langsung dilanjutkan dengan praktikum di
+	laboratorium.
+</font>
+<tr>
+<td align="right">
+<a name="2"></a>
+<font size=1 color="blue"><a href="#1a" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#3" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Prasyarat dan Asumsi</h2>
+<p>
+	Mata kuliah ini berbobot <b>4</b> (<b>empat</b>) Satuan Kredit 
+	Semester (SKS), serta tidak cocok bagi yang mengharapkan sistem yang 
+	"<i>steril yang siap saji dari kaleng</i>".
+	Para peserta diharapkan telah memiliki pengetahuan dasar ilmu komputer
+	yang cukup dalam bidang Sistem Operasi dan mata kuliah prasyaratnya,
+	secara proaktif mengikuti kuliah dan laboratorium, serta dapat 
+	bekerja-sama dalam sebuah kelompok kerja.
+<p>
+	Kuliah ini hanya cocok jika diselenggarakan dalam kelompok
+	kecil dengan jumlah minimum empat (4), serta maksimum delapan (8) 
+	peserta. Prioritas diberikan kepada yang 
+	<b>BELUM</b>
+	mengambil mata kuliah tingkat akhir seperti "Kerja Praktek",
+	"Seminar", dan "Tugas Akhir".
+</font>
+<tr>
+<td align="right">
+<a name="3"></a>
+<font size=1 color="blue"><a href="#2" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#4" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Topik</h2>
+<p>
+	Mata kuliah ini akan membahas aspek-aspek yang terkait dalam
+	pendistribusian serta pengelolaan sebuah sistem berbasis GNU/ Linux.
+<p>
+	Setiap peserta diharapkan untuk memberikan sebuah kontribusi unik
+	yang bermanfaat khususnya bagi diri sendiri, serta umumnya bagi
+	masyarakat luas.
+	Hasil akhir dari kuliah ini akan berbentuk sebuah dokumen (buku
+	petunjuk) serta perangkat lunak pendukung yang terkait.
+</font>
+<tr>
+<td align="right">
+<a name="4"></a>
+<font size=1 color="blue"><a href="#3" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#5" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Rujukan</h2>
+<p>
+<ul>
+<li>	<b>PERHATIAN</b>:
+	Silabus ini dapat berubah dari waktu ke waktu.
+	Silakan memantau revisi terakhir di:
+<ul>
+<li>	Intranet JUITA: <a href="http://rmsui.vLSM.org/rms46/1/65.html" target="_top">http://rmsui.vLSM.org/rms46/1/65.html</a>
+<li>	Lainnya:
+	<a href="http://rms46.vLSM.org/1/65.html" target="_top">http://rms46.vLSM.org/1/65.html</a>
+	dan
+	<a href="http://vLSM.org/rms46/1/65.html" target="_top">http://vLSM.org/rms46/1/65.html</a>
+</ul>
+<li>	<a href="http://wiryana.pandu.org/Next-WINBI/" target="_top">Winbi... langkah selanjutnya</a>
+--	oleh <a href="../00-9.html" target="_top">Bli Made Wiryana</a>.
+<li>	<a href="http://sdn.vLSM.org/share/Debian-Doc/FAQ/index.en.html" target="_top">The Debian FAQ</a>.
+<li>	<a href="http://sdn.vLSM.org/share/HOWTO/" target="_top">Linux HOWTO</a> dan
+	<a href="http://sdn.vLSM.org/share/HOWTO/mini/" target="_top">mini HOWTO</a>.
+<li>	<a href="http://sdn.vLSM.org/share/LDP/sag/" target="_top">The Linux System Administrator&#39;s Guide</a>.
+<li>	<a href="http://sdn.vLSM.org/share/LDP/nag2/" target="_top">The Linux Network Administrator&#39;s Guide</a>.
+<li>	
+<a href="http://sdn.vLSM.org/share/Debian-Doc/manuals/debian-reference/reference.en.html" target="_top">Debian Reference</a>
+	dan
+	<a href="http://sdn.vLSM.org/share/Debian-Doc/manuals/debian-reference/examples/" target="_top">contoh konfigurasi</a>.
+<li>	<a href="http://sdn.vLSM.org/share/Debian-Releases/install.en.html" target="_top">Installing Debian GNU/Linux</a>.
+<li>	<a href="http://sdn.vLSM.org/share/Debian-Doc/manuals/maint-guide/index.en.html" target="_top">Debian New Maintainer Guide</a>.
+<li>	<a href="http://sdn.vLSM.org/share/FHS/" target="_top">Filesystem Hierarchy Standard</a>.
+<li>	<a href="http://sdn.vLSM.org/share/LDP/lfs/" target="_top">Linux From Scratch</a>.
+<li>	<a href="http://sdn.vLSM.org/share/LDP/lki/lki.html" target="_top">Linux Kernel 2.4 Internals</a>.
+<li>	<a href="http://sdn.vLSM.org/share/LDP/lkmpg/" target="_top">Linux Kernel Module</a>.
+</ul>
+</font>
+<tr>
+<td align="right">
+<a name="5"></a>
+<font size=1 color="blue"><a href="#4" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#7" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Penilaian</h2>
+<ul>
+<li>	Ujian (35%) - Midtest
+<li>	Tugas dan Quiz (65%)
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="7"></a>
+<font size=1 color="blue"><a href="#5" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#8" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Tata Tertib Ujian</h2>
+<p>
+Sejalan dengan Keputusan Dekan Fakultas Ilmu Komputer Universitas
+Indonesia no 1007/SK/PT02.H4.FASILKOM/PP/1/1998 tentang
+<b>Tata Tertib Peserta Ujian Tengah Semester dan Ujian Akhir Semester</b>,
+ketentuan mengikuti Ujian I dan Ujian II kuliah IKI20230 ini sebagai berikut:
+<ul>
+<li>	Hadir tetap waktu sesuai jadual yang telah ditetapkan.
+	Peserta terlambat tidak diperkenankan untuk mengikuti ujian.
+<li>	Sangat dianjurkan untuk tidak kebelakang (membuang air)
+	pada saat ujian berlangsung.
+<li>	Mengundurkan diri dengan alasan "tidak sehat" hanya dapat dilakukan
+	sebelum ujian dimulai.
+<li>	Menuliskan nama dan NPM pada setiap lembar soal, lembar jawaban, 
+	serta serta memo.
+	Berkas ujian hanya akan diperiksa, jika menandatangani kertas
+	"Tata tertib dan Petunjuk Ujian".
+<li>	Memperlihatkan kartu pengenal berfoto seperti KTM, SIM, 
+	atau KTP; pada saat menandatangani daftar hadir.
+<li>	Diperkenankan membawa satu lembar memo ukuran A4 (timbal balik),
+	serta semua perlengkapan alat tulis yang diperlukan.
+<li>	Tidak saling berbicara, atau saling meminjam peralatan tulis.
+<li>	Tidak diperkenankan membawa kertas tambahan, tempat pinsil,
+	tas, jaket, serta tidak membawa peralatan elektronis seperti
+	kalkulator, palm, komputer, telepon genggam, pager,
+	dan lain sebagainya.
+<li>	Pelanggaran ringan dapat berakibat pemotongan nilai ujian.
+<li>	Pelanggaran terhadap ketentuan tata tertib ujian lainnya
+	akan dilaporkan kepada Wakil Dekan I.
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="8"></a>
+<font size=1 color="blue"><a href="#7" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#9" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Rencana Kuliah (Tentatif)</h2>
+<p>
+<ul>
+<li>	Konsep Perangkat Lunak Bebas.
+<li>	Konsep penginstallan sistem 
+	GNU/Linux, 
+	X11R6, 
+	TCP/IP, 
+	EmailServer,
+	dan 
+	WebServer.
+<li>	Konsep editor vi dan stream editor sed.
+<li>	Konsep membuat kernel Linux dengan make-dpkg.
+<li>	Konsep scripting dengan bash, awk, dan sed.
+<li>	Konsep SGML DocBook-DTD .
+<li>	Konsep Boot dengan LILO.
+<li>	Konsep install, pinning, dan upgrade dengan apt et. al.
+<li>	Konsep DNS dan BIND.
+<li>	Konsep FHS.
+<li>	Konsep mirror dengan rsync.
+<li>	Konsep keamanan, MD5, dan shadow password.
+<li>	Konsep keamanan dengan ssh dan sshd.
+<li>	Konsep gnupg dan tandatangan digital.
+<li>	Konsep crontab.
+<li>	Konsep mengelola sistem.
+<li>	Konsep PPP/DialUp.
+<li>	Konsep pemaketan .deb dan meracik distro.
+<li>	Konsep membuat (dan membakar) CDROM dengan mkisofs.
+<li>	Konsep bootable CDROM.
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="9"></a>
+<font size=1 color="blue"><a href="#8" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#10" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Diskusi</h2>
+<p>
+	Wacana ini dapat saja dimulai dengan secara bertele-tele membahas 
+	karya pemikiran dari Thomas S. Kuhn 
+	
+	
+		[KUHN96]
+	   
+ 
+	atau pun Paul K. Feyerabend 
+	
+	
+		[FEYERABEND78]
+	   
+
+	sebagai landasan filosifisnya. 
+	Namun, latar belakang untuk menyelenggarakan kuliah 
+	<i>IKI-X092X Topik Khusus dalam Metoda Distribusi
+	dan Pengelolaan Sistem Berbasis GNU/ Linux</i> ini timbul 
+	berdasarkan beberapa butir berikut ini:
+<ul>
+<li>	Mengutip bagian Pendahuluan Buku Petunjuk 
+	<a href="http://vlsm.org/etc/kurikulum2002/00-INDEX.html" target="_top">Kurikulum 2002</a>
+	(<i>draft</i>), 
+	bahwa kurikulum tersebut dirancang untuk menampung <b>aspirasi</b> 
+	yang beragam --
+	baik dari para <i>staf pengajar</i> mau pun dari  para <i>mahasiswa</i>.
+	Kedua unsur ini sangat penting serta saling mengisi.
+	Pertama, diperlukan pihak yang bersedia untuk mempersiapkan serta
+	menyelenggarakan sebuah mata kuliah.
+	Tanpa pihak ini, eksistensi dari mata kuliah itu sendiri
+	menjadi tidak ada.
+	Kedua, diperlukan pihak yang tertarik atau bersedia untuk
+	mengambil mata kuliah tersebut.
+	Tanpa partisipasi dari pihak ini, dengan sendirinya, penyelenggaraan 
+	mata kuliah menjadi sia-sia.
+<li>	Topik ini belum pernah menjadi sebuah mata kuliah reguler.
+	Ketentuan buku petunjuk kurikulum 2002 tersebut di atas ialah:
+	sebuah mata kuliah topik yang baru, sebaiknya 
+	<i>diuji-cobakan</i> sebagai mata kuliah "<i>Topik Khusus</i>" 
+	selama beberapa semester, sebelum dipertimbangkan untuk dijadikan 
+	sebuah kuliah reguler.
+	Perlu ditekankan sekali lagi, bahwa tidak ada kejelasan kriteria 
+	untuk menetapkan sebuah sebuah mata kuliah reguler.
+	Namun terdapat kemungkinan, bahwa topik khusus berpotensi
+	untuk kadaluarsa lebih cepat, sehingga topik khusus tersebut
+	digantikan dengan topik khusus yang baru.
+<li>	Akhirnya 
+	-- <i>setelah bertahun-tahun mengajukan, 
+	terdapat sebuah kemungkinan bahwai</i> --
+	akan ada sebuah laboratorium mata kuliah 
+	<a href="60.html" target="_top">IKI-20230 Sistem Operasi</a> pada awal semester
+	ganjil 2003/2004 mendatang.
+	IKI-20230 diselenggarakan setiap semester (dua kali setahun),
+	sehingga laboratorium tersebut tidak akan digunakan pada saat 
+	liburan semester.
+<br>
+	Jadi, pemanfaatan laboratorium pada saat liburan tersebut seharusnya
+	dianggap sebagai upaya peningkatan utilitas laboratorium tersebut.
+<li>	Survei baru-baru ini mengungkapkan (diantaranya), bahwa para alumni 
+	semasa kuliah kurang mendapatkan "pengetahuan praktis" serta 
+	"pengalaman bekerja sama dalam sebuah kelompok kerja". Ini 
+	merupakan akibat dari kelangkaan mata kuliah yang berorientasi praktis.
+<br>
+	Kelangkaan ini akibat tidak adanya insentif jelas untuk 
+	menyelenggarakan mata kuliah praktis tersebut.
+	Seharusnya diadakan peninjauan kembali serta pembenahan 
+	aturan-aturan yang berpotensi/ atau pun yang telah 
+	menjadi kendala dari masalah ini.
+</ul>
+<p>
+	Tulisan ini telah beberapa kali direvisi, serta masih perlu
+	didiskusikan/ dimatangkan lebih lanjut. Silakan mengirimkan
+	usulan anda kepada penulis dengan alamat 
+	<a href="#bawah" target="_top"><b>E-CONTACT</b></a> di bawah ini.
+<ul>
+<li>	<b>SKS: 3 atau 4?</b>
+<p>
+	Satu SKS kuliah reguler ialah setara dengan kegiatan 14 jam tatap 
+	muka ditambah dengan sekitar 32 jam kegiatan mandiri.
+	Kegiatan praktikum biasanya memiliki porsi "praktek" sekitar
+	28 jam dengan tambahan 18 jam kegiatan mandiri.
+	Berdasarkan jumlah bahan yang akan diberikan, mata kuliah ini
+	seharusnya dipecah menjadi dua dengan masing-masing bobot
+	tiga (3) SKS.
+<p>
+	Agar menjadi sebuah kesatuan, bobot mata kuliah ini dipadatkan
+	menjadi empat (4) SKS tanpa memangkas hal-hal yang esensial.
+	Jika diselenggarakan dalam sebuah semester pendek,
+	kuliah akan berlangsung setiap hari (Senin hingga Kamis) 
+	selama tujuh (7) minggu berturut-turut.
+	Setiap pagi (umpama jam 09:00) kuliah dimulai dengan mendiskusikan
+	sebuah topik selama kurang lebih satu jam. Kemudian pada 
+	dua jam berikutnya, akan digunakan untuk mengimplementasikan
+	dan mengujicobakan hasil diskusi kelas tersebut.
+	Namun, sebetulnya para peserta tidak diharapkan untuk pulang 
+	sebelum mata hari tenggelam!
+<p>
+	Kalau pun kuliah ini hanya ingin diberikan bobot tiga SKS,
+	jumlah dan waktu yang diberikan akan tetap setara empat SKS.
+	Pemotongan lebih lanjut akan berakibat tujuan mata kuliah tidak
+	akan tercapai.
+<p>
+<li>	<b>Kuliah Praktis</b>
+<p>
+	Terdapat sekurangnya dua persepsi mengenai apa yang dimaksud dengan 
+	"<i>Mata Kuliah Praktis</i>". Pertama, dapat
+	diartikan sebagai kuliah yang berisi hal-hal (teori) yang
+	praktis secara konseptual. Kedua, dapat berarti kuliah
+	dengan banyak latihan praktis (<i>hands on</i>).
+	Dasar dari wacana ini ialah persepsi yang kedua, sehingga
+	tidak nyambung jika didiskusikan dengan kerangka kerja
+	persepsi yang pertama.
+<p>
+	Masalah yang timbul dari persepsi kedua tersebut ialah, 
+	apakah "Mata Kuliah Praktis" dapat disetarakan dengan 
+	"Mata Kuliah Teoritis/Reguler"?
+	Atau "Mata Kuliah Praktis" cukup untuk <i>dilecehkan</i> sebagai
+	hal nomor dua karena dianggap sekedar "Kursus Ekstra Kurikuler" 
+	yang tidak perlu diberi bobot akademis?
+	Apakah mata kuliah pilihan seperti umpamanya "Kajian Sastra Eskimo" 
+	dapat dianggap lebih bermanfaat?
+<p>
+	Sekurangnya dua pilihan alternatif yang dapat dijadikan pertimbangan.
+	Pertama, ini dijadikan sebuah kegiatan "extra kurikuler" tanpa
+	nilai akademis. Namun, apakah para peserta akan tetap serius 
+	mengikuti "kursus" tersebut? Lalu, apakah akan ada pengajar yang
+	bersedia?
+	Kedua, kegiatan ini ditawarkan di luar Fakultas sebagai program
+	semacam "<i>Linux Certified Engineer</i>".
+<p>
+<li>	<b>Biaya Tinggi</b>
+<p>
+	Dewasa ini, biaya untuk menyelenggarakan kuliah "normal" 
+	pada semester pendek ialah sekitar Rp. 80.000.- per SKS,
+	dengan asumsi bahwa kelas harus minimum berukuran 20 peserta.
+	Menyelenggarakan kuliah dalam ukuran kelas yang kecil berakibat 
+	pembengkakan biaya. Umpama, biaya untuk kelas dengan ukuran delapan 
+	(8) peserta ialah lebih dari Rp. 160.000.-. Ukuran kelas yang lebih 
+	kecil (umpama 4) akan menaikkan harga dua kali lipat, yaitu 
+	Rp. 320.000.- per SKS.
+	Menurut ketentuan yang berlaku; penyelenggaraan kuliah pada 
+	semester pendek tidak dapat disubsidi.
+	Jadi, siapa yang mau menanggung biaya tersebut?
+<p>
+<li>	<b>Proyek Mahasiswa</b>
+<p>
+	Mata kuliah ini mungkin lebih mirip dengan mata kuliah
+	"Proyek Mahasiswa" (<i>Student Project</i>).
+	Namun, terdapat beberapa perbedaan, karena "Proyek Mahasiswa":
+	<ul><li>	tidak ada kuliah regulernya.
+	<li>	tidak ada ujian tertulis.
+	<li>	membuat buku laporan.
+	<li>	hasil/ presentasi diuji oleh sebuah tim.
+	<li>	diselenggarakan pada semester terakhir sebelum lulus.
+	</ul>
+<p>
+	Sedangkan mata kuliah ini:
+	<ul>
+	<li>	lebih mengutamakan produk dari pada buku laporan
+	<li>	diutamakan bagi yang belum lulus lebih dari 100 SKS.
+	<li>	justru akan menjadi landasan untuk seminar, tugas akhir, proyek
+		mahasiswa, atau kerja praktek. Diharapkan, dengan mengikuti 
+		kuliah ini, tidak perlu mulai dari nol pada jika mengambil
+		mata kuliah proyek mahasiswa atau tugas akhir.
+	</ul>
+<p>
+<li>	<b>Waktu Pendek</b>
+<p>
+	Persepsi bahwa kuliah ini tidak cocok untuk diselenggarakan
+	pada saat semester pendek perlu dipertanyakan landasannya.
+	Mungkin ada yang dapat memberikan literatur yang mendukung
+	argumentasi tersebut.
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="10"></a>
+<font size=1 color="blue"><a href="#9" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#11" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Rujukan</h2>
+<p>
+<ul>
+<li>	
+	
+		[KUHN96]
+		<b>Kuhn, Thomas S</b>.
+		1996.
+		<i>The Structure of Scientific Revolutions</i>.
+		Univ. of Chicago Press, 3nd ed., pp. 212.
+		[Q175 Kuh, ISBN 0-2264-5808-3]
+	   
+
+<li>	
+	
+		[FEYERABEND78]
+		<b>Feyerabend, Paul K</b>.
+		1978.
+		<i>Against Method -- Outline of an Anarchistic Theory of Knowledge</i>.
+		Verso, pp. 339.
+		[Q175 Fey CLMS, ISBN 0-8609-1700-2]
+	   
+
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="11"></a>
+<font size=1 color="blue"><a href="#10" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a> |
+<a href="#bawah" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Terimakasih</h2>
+<p>
+Terimakasih kepada yang telah memberikan masukan secara
+langsung atau pun tidak langsung seperti
+<a href="../00-9.html" target="_top">Bli Made Wiryana</a>,
+M.H. Rayes,
+N.L.P.R. Arbhawa,
+Sjarif Abdat,
+Widiyanto S. Nugroho.
+</ul>
+</font>
+
+</table>
+</center>
+
+<a name="bawah"></a>
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+	<font size=1 color="blue"><a href="#11" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="65.html" target="_top">^^TOP^^</a></font>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e6ebfe" 
+width="80%">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK3.html" target="_top"><img 
+src="png/LOCAL-LOGO3.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="left">
+	<font size=2 color="#00008b">
+	Copyright &copy 2003-2014 <a href="../index.html" target="_top">Rahmat M. Samik-Ibrahim</a> .
+	Provided <b>AS-IS</b> with no <b>LIABILITY</b>.
+	
+	Permission is granted to copy, distribute, and/or modify
+	this webpage provided this notice is preserved.
+	<b>MIRRORS</b> of this site:
+<a href="http://rms46.vlsm.org/1/65.html" target="_top">BisnisWeb</a> -
+	<a href="http://rmsui.vlsm.org/rms46/1/65.html" target="_top">Fusilkom-UI</a>.
+
+	File revision: 9.18 2003/04/10 06:59:
+	-- <a href="mailto:vlsm.org@t-HAPUS-DELETE.gmail.com?subject=[RMS-Feedback]"><font color="blue">E-CONTACT</font></a>.
+	Special thanks for this <a href="LOCAL-LINK3.html" target="_top">webspace provider</a></font>.
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK4.html" target="_top"><img 
+src="png/LOCAL-LOGO4.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table>
+<table>
+<tr>
+<td height="600" valign="top">
+</table>
+</center>
+</body>
+</html>
+<!-- END -->
+
+

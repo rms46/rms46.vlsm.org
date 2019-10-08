@@ -1,0 +1,34 @@
+NomCom Chair -- 11 October 2000 -- IETF Announce
+================================================
+
+Announcing the 2000 Nominations Committee 
+
+We have completed selection of the 2000 
+Nominations committee. 
+
+Please welcome the voting members of this 
+year's Nomcom:
+
+Phil Roberts qa3445@email.mot.com
+Stuart Cheshire cheshire@apple.com
+Perry E. Metzger perry@piermont.com
+Bill Woodcock woody@zocalo.net
+Hadriel Kaplan hadriel@nortelnetworks.com
+Alain Durand alain.durand@eng.sun.com
+Vijay Srinivasan vijay.srinivasan@cosinecom.com
+Hal Sandick hsandick@nortelnetworks.com
+David Robinson david.robinson@ebay.sun.com
+David Allan dallan@nortelnetworks.com
+
+The non-voting members are:
+Bernard Aboba aboba@internaut.com
+Avri Doria avri@nortelnetworks.com
+Leslie Daigle leslie@thinkingcat.com
+Allison Mankin mankin@isi.edu
+
+Information on this year's selection 
+process is available at:
+http://www.drizzle.com/~aboba/internaut/nomcom-select.txt 
+
+The nomcom can be reached at nomcom2000@ietf.org. 
+

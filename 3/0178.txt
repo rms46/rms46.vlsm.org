@@ -1,0 +1,175 @@
+Running out of Internet addresses? -- TCP/IP list
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8813.mm.www/0121.html
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8813.mm.www/0144.html
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8813.mm.www/0156.html
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8813.mm.www/0178.html
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8813.mm.www/0180.html
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8813.mm.www/0237.html
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8813.mm.www/0244.html
+
+-------------------------------------------------------------------------
+Roy Smith (25 November 1988):
+
+        Has anybody made any serious estimates of how long it will be
+before we run out of 32-bit IP addresses? (Silly question; I'm sure a very
+great amount of thought has been given to it by many people.) With the
+proliferation of such things as diskless workstations, each of which has
+its own IP address (not to mention terminal multiplexors which eat up one
+IP address per tty line!), it seems like it won't be too long before we
+just plain run out of addresses.
+
+        Yes, I know that 2^32 is a hell of a big number, but it seems like
+we won't get anywhere near that number of assigned addresses before we
+effectively run out because most nets are sparsely populated. My little
+bit of wire, for example, has 256 allocated addresses yet I'm only actually
+using 30 or so.
+
+--
+Roy Smith, System Administrator
+Public Health Research Institute
+{allegra,philabs,cmcl2,rutgers}!phri!roy -or- phri!roy@uunet.uu.net
+"The connector is the network"
+
+-------------------------------------------------------------------------
+CERF (27 Nov 1988):
+
+Roy,
+
+As you noted, the allocations are often larger than the actual host count
+because of the way net numbers must be bound to a chunk of address space
+in the 32 bit formats available.
+
+We should be worried about this and should be thinking about how to expand
+the available address space. Possibilities include adopting ISO IP
+numbering (variable length - non-trivial), introducing a 64 bit
+format (a new IP version number would probably be needed), adding
+an extended address option (awkward, I suspect), others?
+
+Vint Cerf
+
+-------------------------------------------------------------------------
+Frank Kastenholz (28 Nov 88):
+
+A quick perusal of my copy of Internet Numbers indicates that there are a
+fair number of assigned addresses that are not connected to the Internet -
+perhaps these addresses could be reclaimed - there is one class A, about 40
+class B and I have not counted how many class C addresses that are not
+connected.
+
+This is not a long term solution, but if a crunch comes quickly then it may
+be a temporary solution that would last long enough to get a proper solution
+
+done.
+
+Frank Kastenholz
+Eastman Kodak
+
+-------------------------------------------------------------------------
+CERF (29 Nov 1988):
+
+Jon,
+
+The way I read it, there are 127 possible class A nets,
+16,383 class B nets, roughly 2M+ class C nets, and a
+bunch (2**28 - 1) of broadcast addresses.
+
+The large number of class C nets available should have been
+sufficient, but we are experiencing some difficulty dealing
+with large numbers of nets at the IP gateway level (table
+and routing update sizes). Subnetting works better with
+class B network format, because there is some room for subnet
+and host address space. Reparsing the class C address space
+might be a helpful step towards making more nets effectively
+available.
+
+Vint
+
+-------------------------------------------------------------------------
+postel (29 Nov 88):
+
+Vint:
+
+You are correct about the number of network numbers, 126 class A, 
+16K class B, and 2M class C. This small address space may be come a problem 
+in a few years, in the mean time is there going to be a solution to the 
+routing problem so that we can have gateways that will route to more 
+than 500 networks?
+
+--jon.
+
+-------------------------------------------------------------------------
+John Romkey (30 Nov 88, ToasterNet)
+
+In article <207@logicon.arpa> Makey@LOGICON.ARPA (Jeff Makey) writes:
+>With 4.2 million network numbers, 115 new network numbers could be
+>registered every DAY, and it would still take 100 years to exhaust
+>them all. It seems that there really isn't a problem in the
+>foreseeable future.
+
+Ah, they said that about addresses spaces so many times...it is to
+cry.
+
+I want to see a protocol address space large enough to handle a node
+in each household appliance, each piece of electronic equipment, and
+several extras per household, office and vehicle. Traffic lights on
+the Internet. Stray toasters. And enough addresses left over to
+scatter hosts across the inner solar system.
+
+I'm not very worried about IP running out of addresses here because
+I'm pretty sure that by the time we start doing all this we'll have
+learned enough new things about protocols and the devices we're
+communicating with that we'll have scrapped TCP/IP and gone on to new
+horizons. Same thing goes for ISO (which there is not a whole lot of
+'practical experience' in, anyway).
+
+I have a small piece of internet in my dining room. It's not connected
+to the rest of the world yet (give me another few months), but soon it
+will spread through the rest of the house. And you can buy a toaster
+with a microprocessor in it from Sears. No ethernet, yet.
+                                - john
+
+--
+                        - john romkey
+romkey@asylum.uucp      romkey@xx.lcs.mit.edu   romkey@asylum.sf.ca.us
+Find the cost of freedom, buried in the ground
+Mother Earth will swallow you, lay your body down.
+
+-------------------------------------------------------------------------
+Amanda Walker (1 Dec 88, Re: ToasterNet)
+
+In article <1010@asylum.sf.ca.us>, romkey@asylum.sf.ca.us (John Romkey)
+writes:
+> I want to see a protocol address space large enough to handle a node
+> in each household appliance, each piece of electronic equipment, and
+> several extras per household, office and vehicle. Traffic lights on
+> the Internet. Stray toasters. And enough addresses left over to
+> scatter hosts across the inner solar system.
+
+This reminds me of a remark Gurshuran Sidhu made at an Apple networking
+conference a couple years ago. He described Ethernet addresses as having
+been "designed to be intergalactically unique."
+
+The biggest problem, I think, is that 32 bits (or 48, or whatever) is
+certainly big enough to serve as a *physical* addressing scheme, but
+we keep chopping up addresses so that we can have a *logical* addressing
+scheme. I mean, we have a Class C address, and we've got a whopping
+four hosts. That's 1.5% utilization. Of course, it's nice to be able
+to add hosts as we get them, and subnetting makes contiguous blocks A
+Good Thing, but it still means that the address space is sparsely
+populated if you think of it as a physical address space.
+
+One advantage that I see IP having over OSI (from what I understand
+about OSI addressing, anyway), is that the encoding scheme is very
+simple, thus giving some of the advantages of both physical and
+logical addressing.
+
+I remember the NCP/TCP switchover. It will be a lot harder the next time...
+
+--
+Amanda Walker                   ...!uunet!lts!amanda / lts!amanda@uunet.uu.net
+                          InterCon, 11732 Bowman Green Drive, Reston, VA 22090
+--
+"The best way to predict the future is to invent it." -- N. Negroponte
+
+
+

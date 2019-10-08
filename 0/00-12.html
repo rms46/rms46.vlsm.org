@@ -1,0 +1,571 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head><title>
+Serbaneka DNS -- Domain Name System
+</title>
+<META name="description" 
+content="I am a real nowhere man, sitting in a nowhere LAN, making all my
+	nowhere .plans for nobody -1 -- Rahmat M. Samik-Ibrahim.">
+<META name="keywords" 
+content="RMS46, Rahmat, Samik-Ibrahim, Grounded-Theory, Research,
+Kompas, Kompas-Online, Analisis, Kwik-Kian-Gie, Internet, RFC, IETF"></head>
+<!--  Using STDLIB`(M4)' revision 9.X                         -->
+<!--  (C) 1996-2010 Rahmat M. Samik-Ibrahim under GPL terms.  -->
+<!--  http://vlsm.org/bin/std.m4.gz                           --> 
+     
+<body bgcolor="#ffffff" text="#000000" link="#0000d9" vlink="#000070" alink="#000040">
+<center><table bgcolor="#e6ebfe" width="80%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK1.html" target="_top"><img 
+src="png/LOCAL-LOGO1.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="center" valign="middle"><font color="#00008b" size=4><b>
+Serbaneka DNS -- Domain Name System
+</b>
+<br><font size=2><b>Rahmat M. Samik-Ibrahim -- vLSM.org</b></font></font>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK2.html" target="_top"><img 
+src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table></center>
+<p>
+<center>
+<table width="80%">
+<tr>
+<a name="next1"></a>
+<td align="right">
+<a href="etc-new.html" target="_top"><font size=2 
+   color="red">WHAT&#39;s NEW</font></a> |
+<a href="00-0.html" target="_top"><font size=2 color="red">HOME</font></a> |
+<a href="#bawah" target="_top"><font size=1 
+   color="blue">vv BOTTOM vv</font></a> |
+<a href="#mukadimah" target="_top"><font size=1 
+   color="blue">NEXT&gt;&gt;&gt;</font></a>
+<br>
+<font size="1" color="#00008b"><small><br>
+<form method="get" action="http://www.google.com/search">
+  <input type="text" name="q" size="30" maxlength=255 value="">
+  <input type="submit" name="btnG" value="Google Search">
+</form></small></font>
+<tr><td>
+<center>
+|
+<a href="#mukadimah">Mukadimah</a>|
+<a href="#nonteknis">Non Teknis</a>|
+<a href="#teknis">Teknis</a>|
+<a href="#arpa">IN-ADDR.ARPA</a>|
+<a href="#rujukan">Rujukan</a>|
+<a href="#terimakasih">Ucapan Terimakasih</a>|
+</center>
+
+<tr>
+<td align="right">
+<a name="mukadimah"></a>
+<font size=1 color="blue"><a href="#next" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="00-12.html" target="_top">^^TOP^^</a> |
+<a href="#nonteknis" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Mukadimah</h2>
+<p>
+Tulisan ini merupakan ilustrasi dari
+<a href="http://www.faqs.org/rfcs/rfc2181.html" target="_top">RFC-2181</a>
+(<i>Clarifications to the DNS Specification</i>),
+<a href="http://www.faqs.org/rfcs/rfc2182.html" target="_top">RFC-2182</a>
+(<i>Selection and Operation of Secondary DNS Servers</i>),
+dan
+<a href="http://www.faqs.org/rfcs/rfc2317.html" target="_top">RFC-2317</a>
+(<i>Classless IN-ADDR.ARPA delegation</i>).
+Contoh-contoh betulan, akan diambil dari situs si 
+<a href="http://dullatip.vlsm.org/" target="_top">Dullatip</a>
+yaitu
+<a href="http://dullatip.vlsm.org/0--zones.conf.txt" target="_top">zones.conf</a>,
+zone <a href="http://dullatip.vlsm.org/vlsm.org.txt" target="_top">vlsm.org</a>,
+dan
+<a href="http://dullatip.vlsm.org/0.168.192.in-addr.arpa.txt" target="_top">IN-ADDR.ARPA</a>.
+Sebagai kelanjutan
+<i><a href="http://ahbeng.vlsm.org/in-1.html" target="_top">Ah Beng Learns to Manage a Domain</a></i>,
+mudah-mudahan tulisan ini membantu untuk mengatasi beberapa kekeliruan
+dalam mengelola DNS (<i>Domain Name System</i>).
+Berikut ini akan dibahas perihal
+<b>Aspek Non Teknis</b>,
+<b>Aspek Teknis</b>,
+<b>Pendelegasian Classless IN-ADDR.ARPA</b>,
+serta 
+<b>Penggunaan RR PTR Majemuk</b>.
+</font>
+
+<tr>
+<td align="right">
+<a name="nonteknis"></a>
+<font size=1 color="blue"><a href="#mukadimah" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="00-12.html" target="_top">^^TOP^^</a> |
+<a href="#teknis" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Aspek Non-Teknis</h2>
+<p>
+Aspek non-teknis merupakan masalah utama dalam pengelolaan DNS.
+Mengingat banyak pihak/ institusi yang terkait, sering terjadi 
+ketidak-jelasan perihal siapa yang musti mengerjakan apa.
+Untuk itu, perlu dilakukan pencatatan dan pengarsip
+secara cermat perihal peranan pihak-pihak berikut:
+<ul>
+<li>	<b>pihak "pemilik" domain "<i>organisasi.dom</i>"</b>
+<br>	Pemilik organisasi merupakan "<i>pemilik</i>" 
+	-- atau lebih tepatnya "<i>penerima amanat</i>" --
+	dari domain tersebut.
+	Kepemilikan ini pada umumnya diurus oleh bagian 
+	<i>Sistem Informasi</i>.
+	Bagian ini kemudian menunjuk pihak yang akan menjadi kontak admin,
+	kontak teknis, mau pun kontak tagih.
+	<b>Kontak admin</b> merupakan pihak
+	yang memahami kebijaksanaan dari organisasi tersebut,
+	namun perlu pula memahami sedikit seluk-beluk teknis DNS. 
+	Kegiatan pengelolaan harian DNS, dapat diwakilkan kepada 
+	<b>kontak teknis</b>; sedangkan
+	hal-hal yang berhubungan dengan pembiayaan diwakilkan kepada
+	<b>kontak tagih</b>.
+
+<br>	Proses pendaftaran DNS dapat melibatkan beberapa pihak, 
+	seperti Penyelenggara Jasa Interent (PJI),	
+	atau Pengelenggara Jasa Web (PJW).
+	Namun, pihak-pihak tersebut <b>bukan</b> pemilik domain
+	yang sangkutan! 
+	Untuk itu, jangan mau dikadalin oleh pihak-pihak tersebut!
+	Demikian pula, tidak perlu mengganti nama domain.
+	jika mengganti PJI/PJW, 
+	
+<p>
+<center>
+<table width="70%" border=2>
+<tr><td>
+	Secara berkala (6-12 bulan) perlu dilakukan pemeriksaan
+	daftar kontak-kontak tersebut, 
+	mengingat sering terjadi mutasi kepegawaian.
+</table>
+</center>
+<p>
+
+<li>	<b>pihak penyedia DNS server dan <i>secondary</i>-nya</b>
+<br>	Informasi rinci perihal pemilihan secondary server
+	dapat dibaca di <a href="http://www.faqs.org/rfcs/rfc2182.html" target="_top">RFC-2182</a>.
+	Bagian 3.1 dari RFC tersebut menganjurkan agar
+	memilih secondary server yang tidak dalam satu segmen.
+	Inga... inga..., ini merupakan aspek yang
+	sering sekali terlupakan!!!
+<br>
+	Masalah menjadi lebih kompleks, mengingat secondary server 
+	eksternal tersebut biasanya dikelola oleh pihak/
+	organisasi lain. 
+	Untuk itu, perlu diyakinkan bahwa kedua belah pihak 
+	-- pemberi dan penerima -- amanat; menjalin kontak
+	secara teratur baik dalam tingkatan pribadi mau pun
+	dalam tingkatan resmi/ organisasi.
+
+<p>
+<center>
+<table width="70%" border=2>
+<tr><td>
+	Secara berkala (6-12 bulan) perlu dilakukan pemeriksaan
+	<i>secondary</i>, baik secara administratif mau pun secara teknis.
+	Apakah kontak <i>secondary</i> anda masih ingat amanat anda?
+	Apakah kontak <i>secondary</i> anda masih bekerja di sana?
+	Apakah <i>secondary</i> masih berfungsi, atau sudah jadi
+	<i>lamer</i>?
+	Lihat juga contoh <a href="http://dullatip.vlsm.org/0---README.txt" target="_top">catatannya</a>
+	Dullatip.
+</table>
+</center>
+
+<p>
+<li>	<b>pihak pendelegasi domain</b>
+<br>	Pendelegasian domain seperti "<b>.com</b>", "<b>.net</b>",
+	"<b>.org</b>", dst. berasal dari pihak yang ditunjuk
+	oleh para registri (seperti <a href="http://www.internic.net" target="_top">InterNIC</a>) 
+	dan lain sebagainya.
+	Tulisan ini tidak akan membahas aspek ini lebih lanjut.
+	Untuk informasi lebih lengkap, silakan hubungi sang
+	PJI/ PJW/ konsultan anda.
+<p>
+<center>
+<table width="70%" border=2>
+<tr><td>
+	Secara berkala (6-12 bulan) perlu dilakukan pemeriksaan
+	apakah terjadi perubahan alamat, tarif, serta kebijaksanaan 
+	lainnya dari pihak pendelegasi tersebut.
+</table>
+</center>
+
+<p>
+	Sekali lagi ditekankan bahwa pemilik domain berkewajiban dan
+	bertanggung-jawab untuk  <b>mencatat dan mengarsip</b> aspek ini.
+	Terutama, mengingat pengelolaan DNS sangat <b>jarang</b> dilakukan
+	(mungkin sekali setahun, bahkan lebih jarang lagi),
+	arsip tersebut harus mudah dapat ditemukan kembali pada saat dibutuhkan!
+<p>
+	Salah satu cara praktis pengarsipan ialah dengan membuat RR 
+	(<i>Resource Record</i>) "TXT" 
+	pada berkas konfigurasinya. Namun, cara ini hanya cocok
+	untuk pengelolaan berskala kecil.
+	Umpamanya, pada record "dns.vlsm.org"
+	(lihat juga <a href="http://dullatip.vlsm.org/vlsm.org.txt" target="_top">RR dns.vlsm.org</a>), 
+	diberikan catatan sebagai berikut:
+
+<font face="courier">
+<pre>
+dns	TXT	"DNS:RMS46:19990923:19991003:rms46@geocities.com"
+	TXT	"Percontohan DNS-101"
+</pre>
+</font>
+
+	Pada baris pertama, "RMS46" merupakan inisial dari pembuat record, 
+	"19990923" merupakan tanggal pembuatan,
+	"19991003" merupakan tanggal <i>update</i> terakhir, 
+	dan "rms46@geocities.com" ialah alamat dari yang dapat dihubungi
+	untuk keterangan lebih lanjut (belum tentu sama dengan
+	pembuat record).
+<p>
+	Sisipkan catatan anda sedekat mungkin dengan berkas zone anda
+	(umpama di direktori /var/named).
+	Lihat juga <a href="http://dullatip.vlsm.org/0---README.txt" target="_top">catatannya</a>
+	si Dullatip.
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="teknis"></a>
+<font size=1 color="blue"><a href="#nonteknis" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="00-12.html" target="_top">^^TOP^^</a> |
+<a href="#arpa" target="_top">NEXT&gt;&gt;&gt;</a></font>
+
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Aspek Teknis</h2>
+<p>
+	Penjelasan rinci dari aspek teknis dapat dibaca di
+	<a href="http://www.faqs.org/rfcs/rfc2181.html" target="_top">RFC-2181</a> 
+	(<i>Clarifications to the DNS Specification</i>).
+	Berikut ini merupakan ilustrasi dari RFC tersebut.
+
+<ul>
+<li>	<b>Log... log... log...</b>
+<br>	Banyak kesalahan dapat dihindari, jika para pengelola lebih rajin 
+	memeriksa log setelah melakukan perubahan DNS.
+	Lain Padang, lain Belawan, lain pula Lubuk Linggau:
+	Pemeriksaan ini dapat dilakukan dengan 1001 cara menurut kepercayaan
+	dan keyakinan masing-masing. 
+	Namun, yang mana dari pada,
+	oleh sebab maka dari itu, justru <b>musti dilakukan</b>!
+	Jadi, mengapa masih banyak yang tidak melakukan?
+	Survey menunjukkan, banyak <i>error</i> yang didiamkan selama
+	berbulan-bulan bahkan bertahun-tahun.
+<br>	Berikut merupakan sebuah <i>shell script</i> sederhana yang melakukan
+	restart "named" (<font size="+1" face="courier">ndc reload</font>)
+	pada sebuah sistem linux. Log named tersebut ada di
+	<font size="+1" face="courier">/var/log/named/default</font>.
+	Dengan menggunakan perintah "tail -f", silakan memantau
+	log untuk beberapa saat (10 - 120 detiks).
+<p>
+<font size="+1" face="courier">
+<pre>
+#!/bin/sh
+# Sat Apr 22 15:48:10 SGT 2000
+# RMS46
+# sudo       -- not directly using the superuser account
+# named log  -- /var/log/named/default
+# ndc reload -- "kill -1 named"
+
+PATH="/blah/blah/blah"
+
+sudo /etc/init.d/ndc reload
+tail -f /var/log/named/default
+
+exit 0
+exit 0
+</pre>
+</font>
+
+<p>
+<li><b>	Membaca Log... log... log...</b>
+<p>
+	Membaca log merupakan sebuah seni tersendiri.
+	Pada awalnya mungkin membingungkan, namun lama-lama 
+	(mudah-mudahan) bisa terbiasa.
+	Berikut merupakan sebuah ilustrasi log beneran, tapi nama
+	zone aslinya disamarkan.
+<p>
+
+<hr>
+<font size="+1" face="courier">
+<pre>
+22-Apr-2000 03:56:27.196 load: warning: Zone "error.dom" 
+    (file error.dom): No default TTL set using SOA minimum instead
+</pre>
+</font>
+<hr>
+<p>
+	Ini merupakan "<b>peringatan</b>" (<i>warning</i>) karena revisi 
+	<a href="http://www.isc.org/products/BIND/" target="_top">BIND</a>
+	belakang ini mengharapkan <i>directive</i> "$TTL"
+	pada awal berkas "error.dom".  Silakan mengintip baris 
+	awal dari berkas zone 
+	<a href="http://dullatip.vlsm.org/vlsm.org.txt" target="_top">vlsm.org</a> untuk contoh
+	penggunaan directive tersebut.
+<p>
+<hr>
+<font size="+1" face="courier">
+<pre>
+22-Apr-2000 03:56:27.198 db: info: error.dom  has CNAME 
+    and other data (invalid)
+22-Apr-2000 03:56:27.199 load: notice: 
+    error.dom:20:error.dom: CNAME and OTHER data error
+</pre>
+</font>
+<hr>
+
+<p>
+	Masalah CNAME (<i>Canonical NAME</i>) tersebut merupakan penyakit 
+	kronis
+<font size="+1" face="courier">:-(</font>.
+	Singkatnya, RR CNAME tidak boleh dicampur-adukkan dengan "MX", 
+	"NS", "TXT", apalagi "A"!
+	Silakan membaca bagian 10.1 dari 
+	<a href="http://www.faqs.org/rfcs/rfc2181.html" target="_top">RFC-2181</a>.
+	Sebagai ilustrasi, perhatikan bahwa RR "ahbeng" menunjuk ke CNAME,
+	serta RR berikutnya ialah "ahbengTXT";
+	pada <a href="http://dullatip.vlsm.org/vlsm.org.txt" target="_top">RR berikut</a>:
+
+<p>
+<font face="courier">
+<pre>
+abbeng		CNAME www-serv-base-nawala.net.
+ahbengTXT	TXT   ":RMS46:19990923:19991003:rms46@geocities.com"
+                TXT   "Tan Ah Beng -- Singaparna -- T-em-asikmalaya"
+</pre>
+</font>
+
+<p>
+	OK, walau pun berikut ini cuman "<i>warning</i>", tapi malu-malu-in lah!
+<p>
+<hr>
+<font face="courier">
+<pre>
+22-Apr-2000 03:56:27.199 load: warning: 
+    master zone "error.dom" (IN) rejected due to errors (serial 2000042200)
+</pre>
+</font>
+<hr>
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="arpa"></a>
+<font size=1 color="blue"><a href="#teknis" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="00-12.html" target="_top">^^TOP^^</a> |
+<a href="#rujukan" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Pendelegasian Classless IN-ADDR.ARPA</h2>
+<p>
+	Karena satu dan lain hal, pendelegasian <i>in-addr.arpa.</i> sering
+	kurang mendapatkan perhatian yang cukup. 
+	Berikut merupakan ilustrasi dari 
+	<a href="http://www.faqs.org/rfcs/rfc2317.html" target="_top">RFC-2317</a>
+	(<i>Classless IN-ADDR.ARPA delegation</i>), yaitu pendelegasian 
+	ke organisasi yang alamat IP yang kecil 
+	(dibawah /24 atau <i>class C</i>):
+<ul>
+<li>	zone <a href="http://dullatip.vlsm.org/vlsm.org.txt" target="_top">vlsm.org.</a>
+<font size="+1" face="courier">
+<pre>
+$ORIGIN dns.vlsm.org.
+coba1       A    192.168.0.1
+coba2       A    192.168.0.2
+...
+coba65      A    192.168.0.65
+coba66      A    192.168.0.66
+...
+</pre>
+</font>
+
+<li>	zone <a href="http://dullatip.vlsm.org/0.168.192.in-addr.arpa.txt" target="_top">0.168.192.in-addr.arpa.</a>
+<font size="+1" face="courier">
+<pre>
+$ORIGIN 0.168.192.in-addr.arpa.
+
+1           CNAME 1.0-26
+2           CNAME 2.0-26
+...
+65          CNAME 65.0-26
+66          CNAME 66.0-26
+...
+</pre>
+</font>
+
+<li>	zone <a href="http://dullatip.vlsm.org/0-26.0.168.192.in-addr.arpa.txt" target="_top">0-26.0.168.192.in-addr.arpa.</a>
+<font size="+1" face="courier">
+<pre>
+$ORIGIN 0-26.0.168.192.in-addr.arpa.
+
+1            PTR  coba1.dns.vlsm.org.
+2            PTR  coba2.dns.vlsm.org.
+...
+</pre>
+</font>
+
+<li>	zone <a href="http://dullatip.vlsm.org/64-27.0.168.192.in-addr.arpa.txt" target="_top">64-27.0.168.192.in-addr.arpa.</a>
+<font size="+1" face="courier">
+<pre>
+$ORIGIN 64-27.0.168.192.in-addr.arpa.
+
+64           PTR  coba64.dns.vlsm.org.
+65           PTR  coba65.dns.vlsm.org.
+...
+</pre>
+</font>
+</ul>
+<p>
+<h2>Penggunaan RR PTR Majemuk</h2>
+<p>
+Contoh terakhir ialah penggunaan RR PTR majemuk.
+<ul>
+<li>	zone <a href="http://dullatip.vlsm.org/vlsm.org.txt" target="_top">vlsm.org.</a>
+<font size="+1" face="courier">
+<pre>
+$ORIGIN vlsm.org.
+
+        A   207.106.122.248
+ftp     A   207.106.122.248
+mail    A   207.106.122.248
+www     A   207.106.122.248
+</pre>
+</font>
+<p>
+<li>	zone <a href="http://dullatip.vlsm.org/248-29.122.106.207.in-addr.arpa.txt" target="_top">248-29.122.106.207.in-addr.arpa.</a>
+<font size="+1" face="courier">
+<pre>
+$ORIGIN 248-29.122.106.207.in-addr.arpa.
+
+248	PTR   vlsm.org.
+        PTR   mail.vlsm.org.
+        PTR   ftp.vlsm.org.
+        PTR   www.vlsm.org.
+</pre>
+</font>
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="rujukan"></a>
+<font size=1 color="blue"><a href="#arpa" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="00-12.html" target="_top">^^TOP^^</a> |
+<a href="#terimakasih" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<tr>
+<td width="80%">
+<font size=3 face="arial, helvetica, sans-serif">
+
+<h2>	Rujukan</h2>
+<ul>
+<li>	<a href="http://www.faqs.org/rfcs/rfc2181.html" target="_top">RFC-2181</a>
+--	<i>Clarifications to the DNS Specification</i>
+<li>	<a href="http://www.faqs.org/rfcs/rfc2182.html" target="_top">RFC-2182</a>
+--	<i>Selection and Operation of Secondary DNS Servers</i>
+<li>	<a href="http://www.faqs.org/rfcs/rfc2317.html" target="_top">RFC-2317</a>
+--	<i>Classless IN-ADDR.ARPA delegation</i>
+<li>	<a href="http://dullatip.vlsm.org/" target="_top">Dullatip</a>
+--	and his <a href="http://dullatip.vlsm.org/0---README.txt" target="_top">README file</a>.
+<li>	<a href="http://dullatip.vlsm.org/0--zones.conf.txt" target="_top">zones.conf</a>
+--	a BIND configuration example.
+<li>	<a href="http://dullatip.vlsm.org/vlsm.org.txt" target="_top">vlsm.org</a>,
+      <a href="http://dullatip.vlsm.org/0.168.192.in-addr.arpa.txt" target="_top">0.168.192.in-addr.arpa</a>
+	zone examples.
+<li>	<a href="http://ahbeng.vlsm.org/in-1.html" target="_top">Ah Beng Learns to Manage a Domain</a>
+--	a bried introduction to DNS.
+<li>	<a href="http://www.isc.org/products/BIND/" target="_top">BIND</a>
+--	an implementation of the DNS protocol.
+<li>	<a href="http://www.internic.net" target="_top">InterNIC</a>
+--	to provide the public information regarding Internet
+	domain registration services.
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="terimakasih"></a>
+<font size=1 color="blue"><a href="#rujukan" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="00-12.html" target="_top">^^TOP^^</a> |
+<a href="#bawah" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<tr>
+<td width="80%">
+<font size=3 face="arial, helvetica, sans-serif">
+
+<h2>Ucapan Terimakasih</h2>
+<p>
+	Terimakasih kepada rekan-rekan seperti --
+	XYZZY,
+	et. al.
+	yang telah memberikan masukan secara langsung atau pun tidak langsung
+	atas tulisan ini.
+
+</font>
+</table>
+</center>
+
+<a name="bawah"></a>
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+	<font size=1 color="blue"><a href="#terimakasih" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="00-12.html" target="_top">^^TOP^^</a></font>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e6ebfe" 
+width="80%">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK3.html" target="_top"><img 
+src="png/LOCAL-LOGO3.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="left">
+	<font size=2 color="#00008b">
+	Copyright &copy 2000-2014 <a href="index.html" target="_top">Rahmat M. Samik-Ibrahim
+</a> .
+	Provided <b>AS-IS</b> with no <b>LIABILITY</b>.
+	
+	Permission is granted to copy, distribute, and/or modify
+	this webpage provided this notice is preserved.
+	<b>MIRRORS</b> of this site:
+<a href="http://rmsui.vlsm.org/rms46/00-0.html" target="_top">Fusilkom-UI</a> -
+	<a href="http://rms46.vlsm.org/00-0.html" target="_top">BisnisWeb</a>.
+
+	File revision: 9.3 2002/11/07 07:33:4
+	-- <a href="mailto:vlsm.org@t-HAPUS-DELETE.gmail.com?subject=[RMS-Feedback]"><font color="blue">E-CONTACT</font></a>.
+	Special thanks for this <a href="LOCAL-LINK3.html" target="_top">webspace provider</a></font>.
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK4.html" target="_top"><img 
+src="png/LOCAL-LOGO4.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table>
+<table>
+<tr>
+<td height="600" valign="top">
+</table>
+</center>
+</body>
+</html>
+<!-- END -->
+
+

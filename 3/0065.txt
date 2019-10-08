@@ -1,0 +1,35 @@
+IAB -- 14 September 1999 -- IETF-Announce
+-----------------------------------------
+
+
+Call for nominees for ICANN Board 
+
+
+IETF,
+
+The Protocol Council of the ICANN Protocol Supporting Organization will 
+shortly be called upon to elect three members to the Board of ICANN, 
+for one, two and three year terms respectively, in accordance with 
+the by-laws of ICANN and the PSO MOU. As a member of the PSO, the
+IETF is entitled to nominate candidates for these positions.
+As the IETF does not yet have a definitive procedure in place for this,
+the IAB will act as a nominating committee, as part of its
+chartered role of managing external liaisons for the IETF. 
+
+This is a call for nominations from the IETF at large for these
+three positions. Nominations (including self-nominations) should
+be sent to iab@iab.org by Friday September 24. If possible, please
+indicate whether the nominee would be willing to serve for one, two 
+or three years if appointed.
+
+The IAB intends to finalize the nominations as quickly as possible 
+after September 24, after which the PSO Council will appoint its three
+ICANN Board members from the pool of nominees submitted by all PSO
+members.
+
+Note that the responsibilities of ICANN Board Members are described
+at http://www.icann.org/general/bylaws.htm
+
+   Brian Carpenter
+   IAB Chair
+

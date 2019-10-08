@@ -1,0 +1,96 @@
+Dave Crocker -- 25 June 1992 -- B-I
+-----------------------------------
+
+IP Address Encapsulation
+
+Folks,
+
+Bob Hinden and I have been working with a few others to develop
+a proposal to support larger IP addresses while protecting the
+installed base of systems, software, training, etc., as
+much as possible.  We had planned to develop a complete first-draft
+specification before subjecting it to general community review, 
+but the metabolic rate of community discussion and pressure has
+increased too quickly.
+
+As a consequence, we've just submitted a draft of a preliminary
+proposal to the Internet Drafts directory.  It should be accessible
+tomorrow.  
+
+We feel that the proposal document contains the essential meat of
+the specification, although we all understand that it is the
+details that make a specification succeed or fail.  We hope to
+release a version of the full specification in less than 2 weeks.
+
+To whet your appetites, I am including the Summary section of the 
+proposal document.  The full document is about 20 pages:
+
+        draft-crocker-ip-encaps-00.txt.
+
+
+SUMMARY
+
+The Internet currently is seeking a means of providing for long-term 
+growth by increasing the amount of address space that is available for 
+hosts and by decreasing the amount of table storage that is required for 
+routers.  One solution to these problems is a direct upgrade to a new 
+version of IP.  Another is to switch to use of a new protocol such as 
+CLNP which has provisions for a larger and more hierarchical address 
+space.  Both require very substantial disruption to the IP installed 
+base.  This proposal describes an alternative which minimizes overall
+ disruption and, in fact, entirely eliminates a significant portion of 
+it.
+
+A current IP addresss is defined to be used within its own 32-bit IP 
+address space.  This proposal labels such a space an _IP Addressing 
+Commonwealth_.  The proposed extension specifies a means of connecting 
+such environments by using additional addressing bits, while retaining 
+current usage of the original 32-bit format.  
+
+The basic proposal is to define the addressing enhancements to IP so 
+that they are carried as IP data and therefore are invisible to all 
+current IP hosts and routers, except those that have been modified to 
+understand the new format.  Hence only participating end system hosts 
+and special routers at the borders of Addressing Commonwealths need to 
+understand the new formats.  This scheme is called _IP Address 
+Encapsulation_ (_IPAE_).  
+
+Key benefits of this proposal are:  
+
+        Routers interior to Addressing Commonwealths _never_ need 
+        to be modified.
+
+        Hosts do not have to change their 32-bit IP address _ever_. 
+
+        Hosts which communicate only within their local addressing 
+        commonwealth will require no changing _ever_.
+
+        _All_ IP-related functionality, such as multicasting, is 
+        retained without modification.
+
+        _All_ of the Internet's investment in staff training, including 
+        procedures, formats and terminology is retained.  Changes to 
+        support IPAE only require acquisition of small amounts of 
+        additional procedures, formats and terminology.
+
+        _All_ operational support software will continue to function 
+        within a commonwealth.
+
+        The current routing table size problems and routing computation 
+        problems are alleviated as soon as the first transition step is 
+        deployed.
+
+        Hosts are not required to support IPAE directly until the 
+        Internet is closer to running out of IP addresses, and then 
+        only for hosts wishing full Internet connectivity.   That is, 
+        existing hosts will be supported without any changes for a 
+        long time. 
+
+This document is in the form of a summary of a preliminary specification 
+and represents work-in-progress to describe the new protocols and the 
+changes needed to effect a transition to the new addressing and routing 
+scheme.  This version of the proposal is intended to provide detail 
+about goals and framework, with enough specification to make the basis 
+of the proposal concrete.  However, most of the formal specification 
+that ultimately will be required is left for a later version.
+

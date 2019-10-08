@@ -1,0 +1,60 @@
+NomCom Chair -- 07 September 2000 -- IETF Announce
+==================================================
+
+(Reminder) List of nomcom volunteers posted
+
+I would like to thank everyone who volunteered for the
+IETF nominations committee. The IETF secretariat has
+now checked the list of volunteers to verify eligibility
+(e.g. has attended at least 2 of the last 3 IETFs), and
+we have made some corrections.  
+
+To make sure that we have received email from everyone
+who volunteered, we have posted the list of volunteers
+at:
+http://www.drizzle.com/~aboba/internaut/nomcom2k.txt
+
+If you volunteered prior to the deadline of September 3, 2000,
+and have attended 2 of the last 3 IETFs, please check that
+your name appears on the list. If it does not, please send
+email to aboba@internaut.com IMMEDIATELY. This is the last
+reminder prior to running the selection process, so if you
+haven't checked the list yet, please do. 
+
+Based on the published list, we will run the selection process
+and announce the results the week of September 11, 2000. 
+Ten (10) NomCom voting members will be chosen from the 
+pool of volunteers according to the procedure described 
+by Donald Eastlake in RFC 2777, "Publicly Verifiable 
+Nomcom Random Selection". The source of randomness 
+will be based on the shares traded number of 12 stocks 
+selected by the NomCom chair.
+
+The official shares traded numbers (denoted in 000s) 
+will be drawn from the September 8, 2000 Wall Street 
+Journal which reports the sales figures from the previous 
+day - September 7, 2000. If trading in any of the stocks 
+is suspended, then the shares traded will be assumed to 
+be 0. 
+
+Thanks again,
+
+Bernard Aboba aboba@internaut.com
+
+
+STOCKS USED IN THE NOMCOM SELECTION PROCESS:
+
+eBay, Inc. (EBAY)
+Merill Lynch & Company (DJM)
+Digex, Inc. (DIGX)
+Dreyer's Grand Ice Cream (DRYR)
+Pepsico, Inc. (PEP)
+Target Corp. (TGT)
+Applied Materials, Inc. (AMAT)
+Norsk Hydro AS (NHY)
+Colgate Palmolive Company (CL)
+Maxtor Corp (MXTR)
+Home Depot, Inc. (HD)
+Boise Cascade Corp (BCC)
+
+

@@ -1,0 +1,83 @@
+IESG -- 7 April 1993 -- IETF-Announce
+-------------------------------------
+
+
+Announcement of new IESG members
+
+
+
+This message is to announce the new membership of the Internet Engineering
+Steering Group (IESG) of the IETF.
+
+To review briefly -- last Fall a specially chartered working group was formed
+to examine how the procedures and structure of the IAB/IETF should evolve
+to accommodate continued growth and new constituencies.  One of the key
+recommendations was to install a nominations process to select new IAB
+and IESG members.  The procedure would be for IAB and IESG members to serve
+2 year terms with half of the positions of the IAB and IESG subject to
+re-selection each year.  The Internet Society Board of Trustees would review
+and ratify the new IAB nominations, and the IAB would review and ratify the
+new IESG nominations.
+
+Following the November IETF meeting, a nominating committee was selected by
+a random drawing from volunteering IETF attendees.  Jeff Case served as the
+chair.
+
+At the Thursday evening open plenary session of last week's IETF meeting in
+Columbus Ohio, Jeff reported the results of the Nominations Committee.  I'm
+told Jeff will issue a fuller report regarding the committee's experience
+in carrying out this first-time process, and there will be other
+announcements regarding the IAB membership.  This message is to announce
+the new IESG members.
+
+First, let me give a some well deserved thanks and appreciation to the
+members who decided not to continue on the new IESG.  These are
+
+  Phil Almquist (Consultant) -- Internet Area
+  Dave Borman (Cray Research)  -- Transport Services Area
+  James (Chuck) Davin (Bellcore) -- Network Management
+  Russ Hobby (UC Davis) -- Applications Area
+
+Serving on the IESG is a volunteer job, and as these folks know all too
+well, it requires a serious investment of time.  I suspect they will be
+very glad to reclaim this large time and energy committment, but they
+have served us all well and will be missed.  They deserve our thanks.
+
+The new membership of the IESG is below.  The names marked with a "*" are
+those nominated by the Nominating Committee and confirmed by the IAB.
+
+Phill
+-----------------------------------------------------------------------------
+
+IETF/IESG Chair          *Phill Gross (Advanced Network & Services, Inc.)
+
+Applications             *Brewster Kahle (Wide Area Information Services, Inc.)
+                          Erik Huizer (SURFnet bv)
+
+Service Applications     *David Crocker (Silicon Graphics, Inc.)
+
+Transport                *Allison Mankin (Naval Research Lab)
+
+Network Management       *Marshall Rose (Dover Beach Consulting, Inc.)
+
+Routing                   Robert Hinden (Sun Microsystems, Inc.)
+
+Internet                 *Stev Knowles (FTP Software, Inc.)
+                          David Piscitello (Bellcore)
+
+User Services             Joyce Reynolds (USC-ISI)
+
+Operational Requirements *Scott Bradner (Harvard University)
+                          Bernhard Stockman (SUNET/NORDUnet/EBONE NOC)
+
+Security                  Stephen Crocker (Trusted Information Systems)
+
+Standards Management     *Lyman Chapin (Bolt Beranek and Newman)
+
+        * = new or reconfirmed by the Nominations Committee
+
+(Note: Prior to the Nominating Committee's deliberations, the IESG decided
+to divide the Transport Services Area into the Service Applications and
+Transport Areas.  Service Applications will include protocols used by other
+applications, and not directly by users. Examples include DNS and NTP.)
+

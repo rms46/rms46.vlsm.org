@@ -1,0 +1,98 @@
+Paul Francis (Tsuchiya) -- 19 May 1992
+--------------------------------------
+
+Pip: The `P' Internet Protocol
+
+Paul F. Tsuchiya
+Bellcore
+tsuchiya@thumper.bellcore.com
+May 19, 1992
+
+1.0  Purpose of this draft
+
+Pip is an IP protocol that scales, encodes policy, and is high speed. The 
+purpose of this draft is to explain the basic concepts behind Pip so that 
+people can start thinking about potential pitfalls. I am proposing Pip as an 
+alternative to the two "medium term" proposals that emerged from the 
+Road (Routing and Addressing) group to deal with the dual IP problems 
+of scaling and address depletion. Because this proposal, which represents 
+new ideas, is competing with old (and therefore well thought-out) ideas, I 
+wish to circulate it (and get the process started) as quickly as possible, 
+albeit in not as complete a form as I would like. I expect to have a 
+complete proposal by the beginning of September. There will be a plenary 
+presentation and a BOF covering this material at the Boston meeting of 
+IETF.
+
+2.0  Pip General
+
+Pip has the following features:
+
+1.      Pip carries multiple address types in a common format. As such, it is 
+beneficial for transition from one address to another, and for future 
+evolution (of routing techniques as well as of addressing schemes).
+
+2.      The Pip address is completely general (multiple levels of hierarchy, 
+expands to any number of systems).
+
+3.      The Pip address is compact-it grows with the number of systems.
+
+4.      The Pip address efficiently encodes policy (source-based) routes, both 
+in "long form" (explicit path) and "short form" (path identifier).
+
+5.      Because the Pip address can be a path identifier (multi-layer if de-
+sired, like the ATM VCI/VPI), Pip can be used in a connection-orient-
+ed fashion (this paper only briefly touches on mechanisms for 
+controlling connections).
+
+6.      The Pip address includes multicasting (potentially substantially more 
+sophisticated than what is for IP multicast numbers, for instance, hier-
+archical multicast).
+
+7.      Pip efficiently encodes QOS (Quality-of-Service) information.
+
+8.      The routing table lookup with Pip is well-bounded (by the depth of 
+the address hierarchy).
+
+9.      Pip accommodates "multiple defaults" routing from (multi-homed) 
+stub domains.
+
+10.     Pip allows intra-domain routing and hosts to operate with no notion 
+of the "inter-domain" parts of their address, if desired. This is equiva-
+lent to current IP hosts and intra-domain routers not needing to know 
+their own network number.
+
+11.     Pip accommodates tunneling across transit domains.
+
+12.     By virtue of 8 and 9, Pip accommodates separation of interior and ex-
+terior routing.
+
+13.     Pip simplifies handling mobile systems (by having flat network layer 
+identifiers).
+
+In short, Pip is a "next generation" protocol, intended to allow the internet 
+to evolve over the foreseeable future.
+
+One of the design philosophies behind Pip is that it encodes all "routing" 
+information (what is traditionally spread over the address and QOS fields) 
+in a single structure (the Routing Directive). The rules for parsing the 
+structure are simple on one hand, but provide a rich set of routing 
+functions. Therefore, it is possible to build a single forwarding engine that 
+will accommodate many different types of routing styles, including 
+traditional hierarchical addresses, policy, source route, and virtual circuit. 
+This way, the forwarding engine can be built in hardware and can remain 
+constant even while internet routing evolves.
+
+Another design philosophy behind Pip is that it delays the definition of 
+how internet packet should be composed and interpreted. The meaning of 
+addresses and QOS information are dynamically determined by 
+information in Directory Services, distributed protocols such as routing 
+protocols, and MIBs, rather than in a protocol specification. Current 
+internet protocols have continuously been moving towards this 
+philosophy, but with header formats that are not conducive to late 
+semantic definition. Pip facilitates late semantic definition of the internet 
+protocol header. This on one hand makes it easier to evolve the internet 
+incrementally, but requires that all systems (hosts, routers, and directory 
+servers) be a little smarter, and that algorithms be a little more complex. 
+This, in a nutshell, is the trade-off being made by Pip.
+
+

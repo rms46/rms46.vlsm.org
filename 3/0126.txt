@@ -1,0 +1,72 @@
+NomCom Chair -- 29 November 1999 -- IETF-Announce
+-------------------------------------------------
+
+
+Nominations Reminder 
+ 
+Hi,
+
+The NomCom for this year has started meeting, and
+has started receiving nominations.  The open nomination
+period is scheduled to end on 3 Dec 99 (any time zone).
+I would like to encourage the members of the community
+to contact the NomCom (nomcom@ietf.org) with their 
+recommendations and their nominations before that date.
+
+The positions to be re-filled are:
+
+IESG Terms ending in March, 2000:
+
+Keith Moore             Applications
+Erik Nordmark           Internet
+Marcus Leech            Security
+Bert Wijnen             Operations and Network Management
+Rob Coltun              Routing
+April Marine            User Services
+Vern Paxson             Transport
+
+IAB Terms ending in March, 2000:
+
+Brian Carpenter
+Steve Bellovin
+Jon Crowcroft
+Ned Freed
+Tim Howes
+John Klensin
+
+The members of the NomCom can be contacted individually or
+collectively at nomcom@ietf.org. 
+
+The voting members are:
+
+Basavaraj Patil   bpatil@nortelnetworks.com
+Bernard Aboba     aboba@internaut.com
+Bill Sommerfeld   sommerfeld@orchard.arlington.ma.us
+Greg Minshall     minshall@siara.com
+Jim Luciani       james_luciani@mindspring.com
+Michael W. Condry Michael.Condry@Eng.Sun.COM
+Paul Hoffman      phoffman@imc.org
+Walter Weiss      WWeiss@lucentctc.com      
+William B. Norton wbn@equinix.com
+Yakov Rekhter     yakov@cisco.com
+
+The Non Voting Members are:
+
+Geoff Huston - IAB Liaison  gih@telstra.net
+Thomas Narten - IESG Liaison narten@raleigh.ibm.com
+Donald E. Eastlake - Past Chair  dee3@us.ibm.com
+Avri Doria - Chair  avri.doria@nokia.com
+
+I am very encouraged by the response to the original call
+for nominations.  A lot of very fine and talented folk 
+have been nominated and, to their great credit, have 
+accepted the nominations and been willing to undergo the 
+selection process.
+
+Thanks,
+
+a.
+-----------------------------------
+avri doria
++1 617 678 9402
+

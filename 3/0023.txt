@@ -1,0 +1,30 @@
+ISOC-Chair -- 27 September 1999 -- IETF-Announce
+------------------------------------------------
+
+1999 IESG/IAB Nominations Committee Chair 
+
+
+I am pleased to report that Avri Doria of Nokia has agreed to serve as the
+1999 IAB/IESG nominations chairperson. Avri can be reached at
+avri.doria@nokia.com
+
+This is, as always, an ambitious undertaking and now it is your
+responsibility to accept your own professional responsibilities to assist
+in any way you can.
+
+A Call for Nominations will soon be sent to the IETF Announcement list.
+Persons who have attended at least 2 IETF meetings are eligible to
+volunteer to serve on the nominations committee. The list of volunteers
+will be verified as to qualification using the IETF Secretariat attendance
+records. A nominations committee will be formed from a randomly selected
+subset of the qualified volunteers. 
+
+A list of IESG positions to be filled and IAB positions to be reconsidered
+will be published shortly. Please give serious consideration to possible
+candidates to fill these posts and make these suggestions known to Avri,
+who will share them with the committee. 
+
+Don Heath
+President, Internet Society
+
+

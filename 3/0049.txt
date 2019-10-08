@@ -1,0 +1,23 @@
+NomCom -- 23 December 1998 -- IETF-Announce
+-------------------------------------------
+
+New Position in IESG 
+
+Seasons Greetings:
+
+The IESG has decided to create a co-Area Director position in the Routing
+Area to serve with Rob Coltun, current Routing Area Director. Please
+send nominations for this position to the nomcom at:
+
+        ietf-nomcom@world.std.com
+
+
+preferably before January 6th, 1999.
+
+Thanks,
+Donald, 1997/1998 nomcom chair
+===================================================================
+ Donald E. Eastlake 3rd   +1 914-276-2668   dee3@torque.pothole.com
+ 65 Shindegan Hill Rd, RR#1  +1 914-784-7913(w)     dee3@us.ibm.com
+ Carmel, NY 10512 USA
+

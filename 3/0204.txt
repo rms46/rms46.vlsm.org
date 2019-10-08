@@ -1,0 +1,63 @@
+IETF-Announce -- Thu, 01 Mar 2001 16:15:07 -0500
+IAB response to appeal : Bernstein - namedroppers mismanagement
+===============================================================
+
+This is the IAB's response to an appeal against IESG action lodged
+on Nov.  15, 2000.
+
+BACKGROUND
+
+Mr. Bernstein has voiced complaints about management of the
+namedroppers mailing list in the past, dating back to at least December
+1998. At that time the IESG discussed the issues being raised
+concerning the moderation of the namedroppers mailing list. That
+discussion reaffirmed previous IESG discussions that moderation of WG
+mailing list was a useful and appropriate tool in limited circumstances
+and that moderation of namedroppers was appropriate. Problems with
+moderation can be dealt with through normal IETF processes.
+
+
+PROCEDURAL MATTERS
+
+The IAB is not a court of law; in fact it has a very narrow scope of
+possible action under RFC 2026 (either annul an IESG decision and send the
+matter back to them, or simply make a recommendation to the IESG). In
+addition to that the IAB has the option of making suggestions about the IETF
+standards process.
+
+Two IAB members recused themselves from decision-taking on this appeal:
+Fred Baker (IESG Chair), and Brian Carpenter (Chair of the ISOC Board).
+
+The IAB received an initial complaint on Feb. 2, 2000, and Mr. Bernstein was
+informed the IAB was unable to act prior to an IESG decision. The IAB
+received a subsequent complaint on Nov. 15, 2000 pointing to a web page
+detailing the allegations of list mismanagement and his interpretation of
+the IESG response. The IAB sent a response to Mr. Bernstein on Dec. 13, 2000
+requesting confirmation on our interpretation of his complaint, or a
+succinct statement if we misunderstood. The same day, Mr. Bernstein
+responded that our interpretation was inaccurate, and again redirected us to
+the web page. The IAB received the IESG records of the case on Jan. 15,
+2001. Discussions were held over email and on the Feb. 12 teleconference.
+
+Not being a court of law, the IAB has not responded to the appeal point by
+point in detail, nor has it examined the working group record in exhaustive
+detail. However we checked the record of relevant IESG discussions.
+
+
+COMMENTS ON MAJOR CLAIMS
+
+As noted earlier, the IAB was not given a succinct list of issues by Mr.
+Bernstein therefore was left to address the issue of the appropriateness of
+the IESG handling of the original complaint. After reviewing the IESG
+record, the IAB has concluded that Mr. Bernstein was given ample opportunity
+to raise concerns with the relevant AD's, and that they were addressed in an
+appropriate manner. The IAB therefore concludes that there was no procedural
+breakdown in the manner of the handling of the appeal by the IESG, and does
+not find any action of the IESG which requires annulment or correction, or
+any other action that would be advisable for the IAB to take with respect to
+this matter.
+
+
+Tony Hain
+   for the IAB
+

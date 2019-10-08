@@ -1,0 +1,318 @@
+Daniel Karrenberg -- 17 May 1995 -- CIDRD
+-----------------------------------------
+
+
+   
+                                                        PI vs PA Address Space
+
+                                                             Daniel Karrenberg
+                        ______________________________________________________
+
+                                  Provider Independent
+
+                                           vs
+
+                                 Provider Aggregatable
+
+                                     Address Space
+
+                                   Daniel Karrenberg
+                                        RIPE NCC
+
+                                       Version 1
+
+          Scope
+
+                        This  memo is a contribution to the ongoing discussion
+                        about Provider Independent (portable)  address  space.
+                        It is intended to build consensus on practical address
+                        assignment policies to be  (re)defined  in  RFC1466bis
+                        and regional policies, most concretely ripe-104++.
+
+          Introduction
+
+                        One  can  currently  distinguish two kinds of globally
+                        unique, unicast IPv4 addresses:  provider  independent
+                        (PI) and provider aggregatable (PA) addresses.
+
+                        There  are  also non globally unique e.g. private uni-
+                        cast addresses as described in RFC1597 which are suit-
+                        able  for  many  applications.  These  are outside the
+                        scope  of this memo as are multicast addresses.
+
+          Provider Aggregatable Address Space
+
+                        With the introduction of classless interdomain routing
+                        (CIDR)  [RFC1519]  in  the  Internet, address space is
+                        typically assigned by  an  Internet  service  provider
+                        (ISP) to a customer. The service provider assigns this
+                        address space in such a way that  routing  information
+                        for  many  customers  can be aggregated once it leaves
+                        the provider's routing domain.  This keeps the  number
+                        of  routes  in  the  interdomain  routing system at an
+                        acceptable level. The number of aggregated  routes  is
+                        much  lower  than  the  number that would be needed if
+                        ______________________________________________________
+                        pispas.txt                                      Page 1
+                                                        PI vs PA Address Space
+
+                                                             Daniel Karrenberg
+                        ______________________________________________________
+
+                        each  end-site's  individual  routes  would need to be
+                        propagated throughout the  whole  interdomain  routing
+                        system.
+
+                        After  a  customer  leaves  the  service  provider who
+                        assigned the address space,  it  can  be  assigned  to
+                        another  customer.  As a consequence the customer will
+                        have to reconfigure all their  hosts  and  routers  if
+                        they  continue  to  require  globally  unique  address
+                        space.  This requires a clear, preferably contractual,
+                        understanding  between  the assigning service provider
+                        and the customer, that the assignment of  the  address
+                        space ends when the provider no longer provides Inter-
+                        net connectivity to the customer or soon thereafter.
+
+                        The reason for this arrangement is  the  load  on  the
+                        interdomain  routing system.  If the customer used the
+                        address space assigned to and  aggregatable  by  their
+                        previous  service  provider when connecting to another
+                        service provider, their routing information could  not
+                        be  aggregated  and  would have to be propagated sepa-
+                        rately throughout the whole interdomain  routing  sys-
+                        tem.
+
+          Provider Independent Address Space
+
+                        Contrary to PA address space, PI address space remains
+                        assigned to its user as long as the criteria  for  the
+                        original  assignment  are met independently of the use
+                        of a particular provider's  services.   Frequently  PI
+                        addresses  are  not  even assigned by providers but by
+                        other Internet registries. The apparent  advantage  of
+                        PI  address  space  is  that the user does not have to
+                        reconfigure their hosts and routers if they decide  to
+                        leave  a  particular  service  provider.   However, PI
+                        addresses are expensive to route because no use can be
+                        made  of aggregation. All early Internet address space
+                        assignments were provider  independent.  Many  assign-
+                        ments made by ISPs are also formally provider indepen-
+                        dent because they lack the clear  prior  understanding
+                        between  ISP and customer that the assignment will end
+                        with the termination of the service.
+
+          Current Issues
+
+                        At the time of this writing there is  growing  concern
+                        among  the  operators of major transit routing domains
+                        in the Internet that the number of  individual  routes
+                        and  their  associated  information  is growing faster
+                        than the deployed routing technology will be  able  to
+                        handle.  Parts  of  the interdomain routing system are
+                        already operating at capacity.
+                        ______________________________________________________
+                        pispas.txt                                      Page 2
+                                                        PI vs PA Address Space
+
+                                                             Daniel Karrenberg
+                        ______________________________________________________
+
+                        It  has  been  argued  that  PI addresses will quickly
+                        become be totally useless since the  Internet  routing
+                        system will not be able to support them any longer.
+
+                        Consequently  it  has been suggested that the regional
+                        IRs should immediately stop allocating  and  assigning
+                        PI  space  and  only  allocate  PA  space  to  service
+                        providers.
+
+                        The regional IRs cannot do  this  because  they  would
+                        face  determining who is a service provider and who is
+                        not as well as enforcing  minimum  sizes  for  address
+                        allocations.  This  would  amount to nothing less than
+                        the registries regulating Internet service  provision.
+                        So  far no practical policies for these determinations
+                        have been suggested let alone met with community  con-
+                        sensus.
+
+          Recommended Policy
+
+                        We therefore suggest that the Internet Registries con-
+                        tinue to register both PA  and  PI  address  space  to
+                        users until workable policies can be established.
+
+                        IRs  will  clearly  warn users about the issues w.r.t.
+                        their choice of a particular type  of  address  space.
+                        IRs  will  promote the use of private (RFC1597) and PA
+                        address space as much as possible. Assignment criteria
+                        for  both kinds of address space will be exactly iden-
+                        tical w.r.t. the amount of address space assigned, the
+                        registration  requirements  etc..   This  also implies
+                        that assigning PI space prefixes longer than  24  bits
+                        is  perfectly acceptable if the request does not merit
+                        24 bits of address space to be assigned.
+
+                        It should be  clear  from  the  address  range  itself
+                        whether the address concerned is PI or PA. Currently a
+                        registration of the fact at /16 level is deemed suffi-
+                        cient.
+
+                        It  is  then  up  to  the  service providers to decide
+                        whether they will route particular  prefixes  or  not.
+                        The way this determination is made is beyond the scope
+                        of this document, but we  expect  that  accepting  and
+                        charging routing announcements based on whether or not
+                        they can be aggregated is a distinct possibility.
+
+                        We therefore urgently recommand that service providers
+                        shall  inform  their current and prospective customers
+                        as clearly as possible about the  issues  involved  in
+                        using PI vs PA space with their service offerings.
+
+                        ______________________________________________________
+                        pispas.txt                                      Page 3
+                                                        PI vs PA Address Space
+
+                                                             Daniel Karrenberg
+                        ______________________________________________________
+
+          Detailed Recommendation
+
+                        The remainder of this document spells out some of  the
+                        details concerning the policy.
+
+          All IRs
+
+                        IRs  will give those requesting PA space the following
+                        warning:
+
+                             Assignment of this address space is valid as
+                             long   as  the  criteria  for  the  original
+                             assignment are still met and  only  for  the
+                             duration  of  the  service agreement between
+                             yourself and ISP  XXXX  who  will  have  the
+                             right  to  re-assign  the  address  space to
+                             another user upon termination of the  agree-
+                             ment  or  an agreed period thereafter.  This
+                             means that you will have to re-configure the
+                             addresses   of   all  equipment  using  this
+                             address space if  you  continue  to  require
+                             global  uniqueness  of those addresses. Note
+                             that some Internet services do  not  require
+                             globally   unique   addresses   if  accessed
+                             through a NAT  or  application  layer  gate-
+                             way/firewall.
+
+                        IRs  will give those requesting PI space the following
+                        warning:
+
+                             Assignment of this address space is valid as
+                             long   as  the  criteria  for  the  original
+                             assignment are still met.  However,  assign-
+                             ment  of  address  space does NOT imply that
+                             this address space will be ROUTABLE  ON  ANY
+                             PART  OF  THE  INTERNET. It is expected that
+                             users will have to pay a premium for  actual
+                             routing  of  PI  addresses  as opposed to PA
+                             addresses.  It may eventually become  impos-
+                             sible  to get relatively small amounts of PI
+                             space routed on most of  the  Internet.   We
+                             strongly suggest you contact any prospective
+                             service provider for information  about  the
+                             possibility  and  pricing  of  service  when
+                             using PI addresses.
+
+                        IRs will recommend that end-users use PA space as much
+                        as possible.
+
+                        ______________________________________________________
+                        pispas.txt                                      Page 4
+                                                        PI vs PA Address Space
+
+                                                             Daniel Karrenberg
+                        ______________________________________________________
+
+          Regional IRs
+
+                        Regional IRs will  introduce  an  address  space  type
+                        (PA/PI)   attribute   in  their  assignment/allocation
+                        databases.
+
+                        Regional IRs will from now on register clearly whether
+                        specific  /16 blocks contain only PI or only PA space.
+
+                        Regional IRS will make sure local IRs  understand  the
+                        difference  between  address  space  types and support
+                        local IRs in this issue.
+
+                        Regional IRs will work to make both types  of  address
+                        space available to users.
+
+          Local IRs
+
+                        Local  IRs may decide which kind they of address space
+                        they will register: PA, PI or both.
+
+                        Local IRs will refer requesters to an  appropriate  IR
+                        for the address space type not offered by the IR.  ISP
+                        IRs not offering PI space shall support  the  IR  that
+                        does  concerning assignments to their customers w.r.t.
+                        formatting request, furnishing background information,
+                        charging etc..
+
+                        Local  IRs  which do not normally assign large amounts
+                        of a particular type of address space need not hold an
+                        allocation  of  that type of  address space.  They can
+                        get it as needed from their parent  IR.          Local
+                        IRs  will  make  it  clear  to  the user which type of
+                        address space is assigned. Clear contractual  arrange-
+                        ments  are recommended in general and mandatory for PA
+                        space.
+
+                        IRs have assigned address space in the past  which  is
+                        de-facto  aggregated  but not formally PA type because
+                        there are no clear contractual arrangements about ter-
+                        mination  of the assignment. IRs will work to make the
+                        contractual arrangements for these addresses after the
+                        fact as much as possible.
+
+                        Local  IRs  will  clearly  mark all new assignments of
+                        address  space  in  the  assignment  database(s)  with
+                        either PA or PI as appropriate.
+
+                        Local  IRs  will  work to mark all past assignments in
+                        the assignment database(s) with either  PA  or  PI  as
+                        appropriate.
+                        ______________________________________________________
+                        pispas.txt                                      Page 5
+                                                        PI vs PA Address Space
+
+                                                             Daniel Karrenberg
+                        ______________________________________________________
+
+          ISPs
+
+                        It is recommended that ISPs  clearly  specify  present
+                        and  future  differences  in  their  service offerings
+                        w.r.t. usage of PI vs PA addresses.
+
+          Availability
+
+                        ftp://ftp.ripe.net/ripe/drafts/pispas.txt (ASCII)
+                        ftp://ftp.ripe.net/ripe/drafts/pispas.ps (PostScript).
+
+          Author's Addresses
+
+                        Daniel Karrenberg
+                        RIPE NCC
+                        Kruislaan 409
+                        NL-1098 SJ  Amsterdam
+
+                        +31 20 592 5065
+
+                        <Daniel.Karrenberg@ripe.net>
+
+                        ______________________________________________________
+                        pispas.txt                                      Page 6
+

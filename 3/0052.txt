@@ -1,0 +1,20 @@
+NomCom -- 4 February 1999 -- IETF-Announce
+------------------------------------------
+
+One year Internet co-AD Opening 
+
+Jeff Burgan will be leaving the IESG resulting in an opening for the
+remainder of his term as co-Area Director of the Internet Area.
+Please send suggestions to ietf-nomcom@world.std.com by February 18th.
+Persons who were previously suggested and wished to be considered for
+the two year term as Internet co-AD resulting from the end of Thomas
+Narten's term will automatically be considered and do not need to be
+suggested again.
+
+Thanks,
+Donald
+=====================================================================
+ Donald E. Eastlake 3rd   +1 914-276-2668     dee3@torque.pothole.com
+ 65 Shindegan Hill Road, RR#1  +1 914-784-7913(work)  dee3@us.ibm.com
+ Carmel, NY 10512 USA
+

@@ -1,0 +1,60 @@
+NOMCOM Chair 1998-1999 -- 14 September 1998 -- IETF-Announce
+------------------------------------------------------------
+
+Call for IETF Nominations Committee Volunteers 
+
+
+Hi,
+
+This is the annual call for volunteers to serve on the IETF Nominations
+Committee.  It's not only an important job, but by being on the
+nominations committee you can immunize yoursefl from being selected by
+it.
+
+To qualify, you must have attended at least two of the past three IETF
+meetings, be available for some fairly intense activity including a
+substantial number of telephone calls , including conference calls,
+probably for a period of about three months, and meet the other
+requirements in and agree to follow the procedures outlined in RFC
+2282. The ten voting members of the NomCom will be selected from the
+qualified volunteers by an independently verifiable fair process.
+
+IESG members whose terms are expiring, along with their areas, are as
+follows: 
+
+   Harald Alvestrand (Operations & Management),
+   Scott Bradner (Transport), 
+   Patrik Faltstrom (Applications), and 
+   Thomas Narten (Internet). 
+
+IABers whose terms are expiring are as follows: 
+
+   Steve Deering, 
+   Tony Hain, 
+   Erik Huizer, 
+   Cyndi Jung, 
+   Robert Moskowitz, and
+   Charlie Perkins.  
+
+It is possible that the NomCom will have to fill more or fewer slots
+than this list, due to the creation or elimination of positions by the
+IESG, resignations, transfers, etc.
+
+The nominations committee is a crucial part of the IETF.  Please
+volunteer if you are sure you can put in the time needed.
+
+If you wish to volunteer, please email your name, telephone number(s),
+and email address to <dee3@us.ibm.com> no later than Monday, October
+1st, 1998, and put "NOMCOM VOLUNTEER"in the subject line.
+
+Thanks,
+Donald E. Eastlake, 3rd
+non-voting Chair, upcoming NomCom
+
+Donald E. Eastlake, 3rd
+318 Acton Street, Carlisle, MA 01741 USA
+Internet: dee3@us.ibm.com
+Phone: +1-978-287-4877
+Fax  : +1-978-371-7148
+
+

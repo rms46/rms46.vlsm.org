@@ -1,0 +1,74 @@
+IETF Nov 1993
+-------------
+
+ftp://ftp.ietf.org/ietf-online-proceedings/93nov/area.and.wg.reports/ipng/area.ipng.93nov.txt
+
+P. Internet Protocol Working Group (PIP) and Simple Internet Protocol
+Working Group (SIP)
+
+The PIP and SIP Working Groups have combined their efforts and the
+working groups will be merged into a new working group called Simple
+Internet Protocol Plus (SIPP). The two working groups met in two
+combined sessions co-chaired by Steve Deering, Paul Francis, and Bob
+Hinden.
+
+At the first session Steve Deering presented an overview of the SIP/PIP
+Merger.  This included the motivation behind the merger, benefits of the
+merger, and described the new features of SIPP. The purpose of the
+merger is to keep the simplicity and transition features of SIP and to
+benefit from the advanced routing capabilities of Pip---while making
+them easier to use and to understand.
+
+----
+ftp://ftp.ietf.org/ietf-online-proceedings/93nov/area.and.wg.reports/ipng/pip/sip-pip-minutes-93nov.txt
+
+Nov 1993
+
+
+CURRENT_MEETING_REPORT_
+
+Reported by Robert Hinden/Sun Microsystems
+
+Minutes of the Joint Sessions of the SIP and PIP Working Groups
+
+These minutes are based on the notes taken by Christian Huitema and Bob
+Hinden.
+
+The Simple Internet Protocol Working Group (SIP) and the P. Internet
+Protocol Working Group held two joint sessions.  The first session was
+on Monday, November 1.  The second session was held on November 4.  Both
+sessions were carried on the Internet Multicast.
+
+The agenda distributed prior to the meeting was reviewed and updated for
+the meeting.
+
+
+SIPP Merger Overview (Steve Deering)
+
+The purpose of the merger is to keep the simplicity and transition
+features of SIP and the advanced routing capabilities of Pip---while
+making them easier to use and to understand.  The mailing lists have
+been merged, and Bob Hinden is writing a charter for the merged group.
+
+This has resulted in some changes in the specifications, and in some
+terminologies.  The changed terms are:
+
+SIP --> SIPP
+system --> node
+anyone address --> cluster address
+Source route header --> Routing header
+
+The new terminology:
+
+
+   o The uniqueness scope of an address; for example the uniqueness
+     scope of the loopback address is just one single node.
+
+   o The routing scope of an address, which is generally global to the
+     Internet, but can sometimes be restricted e.g., for a ``local use
+     address.''
+
+
+Routing scope is always less than uniqueness scope, but not necessarily
+equal to it.
+

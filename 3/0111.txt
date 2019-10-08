@@ -1,0 +1,58 @@
+IESG -- 29 August 1996 -- IETF-Announce
+---------------------------------------
+
+Protocol Action: INTERNET REGISTRY IP ALLOCATION GUIDELINES to BCP
+
+  The IESG has approved the Internet-Draft "INTERNET REGISTRY IP
+  ALLOCATION GUIDELINES" <draft-hubbard-registry-guidelines-05.txt> for
+  publication as a Best Current Practices RFC. This document is the
+  product of the CIDR Deployment Working Group. The IESG contact
+  persons are Scott Bradner and Michael O'Dell.
+
+Technical Summary
+
+ This document describes the registry system for the distribution of
+ globally unique Internet address space and registry operations.
+ Particularly this document describes the rules and guidelines
+ governing the distribution of this address space while keeping in mind
+ the requirements of IP address conservation and the need to distribute
+ globally unique Internet addresses in a hierarchical manner,
+ permitting the routing scalability of the addresses.
+
+ "Conservation" and "Routability" are often conflicting goals.  These
+ goals may sometimes be in conflict with the interests of individual
+ end-users or Internet service providers. Careful analysis and
+ judgement is necessary in each individual case to find an appropriate
+ compromise.
+
+ This document replaces RFC 1466, with all the guidelines and
+ procedures updated and modified in the light of experience.
+
+ This document can be considered the base set of operational guidelines
+ in use by all registries. Additional guidelines may be imposed by a
+ particular registry as appropriate.
+
+Working Group Summary
+
+ The working group strongly supported the publication of this document.
+ A text was added to the document during IESG review on the advice
+ of a legal review of anti-trust issues.
+
+Protocol Quality
+
+ This document has been reviewed for the IESG by Scott Bradner and Mike
+ O'Dell.
+
+NOTE TO RFC EDITOR:
+
+Please include the following text as an IESG Note:
+
+ By approving this document as a Best Current Practice,the IESG asserts
+ its belief that this policy described herein is an accurate
+ representation of the current practice of the IP address registries
+ with respect to address assignment. This does not constitute
+ endorsement or recommendation of this policy by the IESG. The IESG
+ will reevaluate its approval of this document in December 1997 taking
+ into consideration the results of the discussions that will be take
+ place in the IRE Working Group between now and then.
+

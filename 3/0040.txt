@@ -1,0 +1,68 @@
+IESG -- 12 October 1998 -- IETF-Announce
+----------------------------------------
+
+RFC1240 query 
+
+The IESG is try to find out if the technology described in RFC 1240 is
+actually in wide use.  This is in the context of trying to clean up some of
+the RFCs which have been stuck on the standards track, with the aim of
+advancing the RFCs which describe technology in current use and
+reclassifying the others to historic.
+
+If you have any information that indicates that there is a reason to
+advance RFC 1240 please send that information to Scott Bradner
+(sob@harvard.edu), the IESG member dealing with this RFC.
+
+thank you
+
+
+------
+
+Network Working Group                                            C. Shue
+Request for Comments: 1240                      Open Software Foundation
+                                                             W. Haggerty
+                                                 Wang Laboratories, Inc.
+                                                              K. Dobbins
+                                                 Cabletron Systems, Inc.
+                                                               June 1991
+
+
+          OSI Connectionless Transport Services on top of UDP
+                               Version: 1 
+
+1.  Introduction and Philosophy
+
+   The Internet community has a well-developed, mature set of layered
+   transport and network protocols, which are quite successful in
+   offering both connection-oriented (TCP) and connectionless (UDP)
+   transport services over connectionless network services (IP) to end-
+   users.  Many popular network applications have been built directly on
+   top of the TCP and UDP over the past decade.  These have helped the
+   Internet services and protocols to become widely-spread de facto
+   standards.  In the past few years, the ISO and CCITT have defined a
+   well-architected set of upper layer standards which include
+   connection-oriented and connectionless session, presentation, and
+   application layer services and protocols.  These OSI upper layer
+   standards offer valuable services to application developers (e.g.,
+   dialogue control, transfer syntax, peer authentication, directory
+   services, etc.) which are not currently offered by the TCP/IP
+   standards.
+
+   As indicated in RFC 1006, it is desirable to offer the OSI upper  
+   layer services directly in the Internet without disrupting existing
+   facilities.  This permits a more graceful convergence and transition
+   strategy from IP-based networks to OSI-based networks in the future.
+   Using the approach of RFC 1006, this memo specifies how to offer OSI
+   connectionless transport service using the User Datagram Protocol
+   (UDP) [RFC768] of the TCP/IP suite.
+
+   We will define a Transport Service Access Point (TSAP) which appears
+   to be identical to the services and interfaces defined in ISO 8072
+   and its Addendum 1, but we will in fact implement the ISO T-UNIT-DATA
+   protocol on top of UDP.  By this means, OSI TPDU's can be delivered
+   across the Internet network, and OSI connectionless upper layers can
+   operate fully without knowledge of the fact that they are running on
+   top of UDP/IP.  In essence, the OSI T-UNIT-DATA service will use UDP
+   as its connectionless network service provider.
+
+

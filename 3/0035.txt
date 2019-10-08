@@ -1,0 +1,93 @@
+IAB-Chair -- 04 September 1998 -- IETF-Announce
+-----------------------------------------------
+
+[Note: the draft of this statement was approved by acclamation
+at the IETF plenary meeting attended by approximately 1000 people
+on August 26, 1998. It was subsequently approved by a one-week
+electronic mail "last call" to the IETF, which generated more than
+80% favorable comments.] 
+
+IAB statement on New IANA
+
+In June 1998, the Internet Architecture Board (IAB) reviewed 
+the US Government White Paper at
+http://www.ntia.doc.gov/ntiahome/domainname/6_5_98dns.htm
+and welcomed it, especially the emphasis on self-administration
+for the Internet. In particular, the IAB believed then and 
+believes now that for stability of operation, the technical work 
+of the new corporation must be initially built out from the existing 
+IANA technical team hosted by the Information Sciences Institute of the 
+University of Southern California under the direction of Jon Postel.
+
+This week the IAB has considered the draft by-laws of the new
+IANA corporation as most recently revised and posted at 
+http://www.iana.org . While the IETF recognizes deficiencies in 
+the present draft and wishes that they be remedied, the IAB and 
+the IETF endorse the draft as the basis for the final by laws, 
+on the basis that:
+
+1. The IETF will be the "Protocol Supporting Organization"
+for the new IANA. 
+
+2. The IAB, consulting with the IESG, will be the "Protocol Council" 
+for the new IANA.
+
+3. The regular IETF nominations process will be modified to 
+incorporate the appointment of the three corresponding IANA Board 
+Members.
+
+The IAB is an oversight committee of the Internet Engineering Task
+Force (IETF), whose charter published as RFC 1601 includes the
+desgnation of the IANA. For further details, please see the Web sites
+http://www.iab.org/iab and http://www.ietf.org
+
+  
+  Brian Carpenter (IAB Chair)                September 4, 1998
+  in agreement with Fred Baker (IETF Chair)
+
+------------------------------------------------------------------------
+
+IAB-Chair -- 27 August 1998 -- IETF-Announce
+--------------------------------------------
+
+IAB Last Call on new IANA Statement 
+
+A special one week Last Call period has been initiated on the following 
+statement. This last call period runs until September 3, 1998.
+
+                 IAB statement on New IANA
+
+In June 1998, the Internet Architecture Board (IAB) reviewed 
+the US Government White Paper at
+http://www.ntia.doc.gov/ntiahome/domainname/6_5_98dns.htm
+and welcomed it, especially the emphasis on self-administration
+for the Internet. In particular, the IAB believed then and 
+believes now that for stability of operation, the technical work 
+of the new corporation must be initially built out from the existing 
+IANA technical team hosted by the Information Sciences Institute of the 
+University of Southern California under the direction of Jon Postel.
+
+This week the IAB has considered the draft by-laws of the new
+IANA corporation as most recently revised and posted at 
+http://www.iana.org . The IAB endorses this draft as the basis for
+the final by laws, on the basis that:
+
+1. The IETF will be the "Protocol Supporting Organization"
+   for the new IANA. 
+
+2. The IAB, consulting with the IESG, will be the "Protocol Council" 
+   for the new IANA.
+
+3. The regular IETF nominations process will be modified to 
+   incorporate the appointment of the three corresponding IANA Board 
+   Members.
+
+The IAB is an oversight committee of the Internet Engineering Task
+Force (IETF), whose charter published as RFC 1601 includes the
+desgnation of the IANA. For further details, please see the Web site 
+http://www.iab.org/iab .
+
+  
+  Brian Carpenter (IAB Chair)             August 26, 1998
+
+----------------------------------------------------------------------

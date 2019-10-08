@@ -1,0 +1,56 @@
+NOMCOM Chair 1999-2000 -- 29 September 1999
+-------------------------------------------
+
+Call for 1999 IETF Nominations Committee Volunteers 
+
+
+Hi,
+
+I have been selected to chair the 1999 IETF Nominations Committee.
+It is now time for me to appeal for volunteers to serve on the 
+committee that will select this year's nominees for the IAB and 
+the IESG. 
+
+The NomCom is the IETF's way of choosing its leadership.  For the
+NomCom to work as it should, the pool from which the volunteers are
+chosen should be as large as possible.  The more people who volunteer,
+the better chance we have of choosing a random yet representative cross 
+section of the IETF population.  Volunteering for the NomCom is also a very
+good way of serving the IETF community.  So please volunteer.
+
+Ten (10) NomCom voting members will be chosen from the pool of 
+volunteers according to the procedure described by Donald Eastlake 
+in draft-eastlake-selection-04.txt.  
+
+People who volunteer should be sure they can the afford the time,
+several hours per week for the next 4-5 months.  
+The task basically involves the following activities:
+  - Reading candidate's statements
+  - Participating in a weekly 2 hour conference call   
+  - Attending the IETF meetings held during the selection process
+  - Doing several interviews
+  - Speaking to IETF participants about the candidates, the job       
+    requirements or the process. Details about the NomCom process 
+    can be found in RFC2027.
+    
+People who volunteer should also be sure that they do not wish to 
+obtain a position in either the IAB or IESG this year, as NomCom
+members are barred from nomination during the year they serve.
+
+To qualify as a volunteer, a person needs to have attended 2 out 
+of the last 3 IETF meetings.  Anyone who meets this requirement is invited
+to volunteer by sending email to avri.doria@nokia.com.  
+Please put "NomCom Volunteer" in the header.  Volunteer statements 
+will be accepted until October 22.  The selection will be announced 
+the following week.
+
+Please volunteer.  
+Please convince your friends to volunteer.
+
+Thank you,
+
+a.
+
+----------------
+From: avri.doria
+

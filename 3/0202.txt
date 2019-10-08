@@ -1,0 +1,926 @@
+Link: http://www.postel.org/pipermail/internet-history/2003-January/
+List: internet-history at postel d org
+Subject: (Re:) Cluster Addressing and CIDR
+Date: 13 Jan 2003++
+Editor's note: "[...]" means cleaned/ deleted -- rms46
+
+--------------------------------------------------------------------
+[Rahmat M. Samik-Ibrahim]
+
+> "Internet Cluster Addressing Scheme", by Carl-Herbert Rokitanski/
+> Fern Uni-Hagen, August 1989 <draft-ietf-pdn-clusterscheme-00.txt>
+ 
+> "Application of the Cluster Addressing Scheme to X.25 Public Data 
+> Networks and Worldwide Internet Network Reachability Information 
+> Exchange", by Carl-Herbert Rokitanski/Fern Uni-Hagen, August 1989, 
+> <draft-ietf-pen=pdncluster-00.txt>
+
+> "Assignment/Reservation of Internet Network Numbers for the PDN-Cluster", 
+> by Carl-Herbert Rokitanski/Fern Uni-Hagen, July 1989, 
+> <draft-ietf-pdn-pdnclusternetassignm-00.txt>
+
+So, IDs could be as valuable as RFCs.
+Then, why imposing a 6 month limit for IDs, when diskspace is so
+cheap?
+
+regards,
+
+-- 
+Rahmat M.  Samik-Ibrahim -- vLSM.org  -- http://rms46.vLSM.org --
+-- Dear ALL: Enlarge your Peni^Hsion safely and naturally! ------
+
+
+--------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+> So, IDs could be as valuable as RFCs.
+> Then, why imposing a 6 month limit for IDs, when diskspace is so
+> cheap?
+
+The reason for ID disappearance has nothing to do with space.
+
+The IDs are deliberately ephemeral, intended to foster the open exchange 
+of partial ideas. Establishing them as archival from the start imposes a 
+hurdle that was percieved to inhibit this exchange.
+
+Some ideas do fall by the wayside, ideas which could have been archived 
+as Informational RFCs, technical reports, or published papers. In cases 
+where that has not been done, it was the authors' choice not to pursue 
+that route.
+
+FYI...
+
+Joe
+
+--------------------------------------------------------------------
+[Simone Molendini]
+
+> The reason for ID disappearance has nothing to do with space.
+> [...]
+
+You're right, but having a repository of the old drafts means saving 
+almost all the (good or bad) Internet research in a much more 
+complete manner than archiving the RFCs.
+
+IDs could be tagged as "WORK IN PROGRESS" and shifted to "HISTORICAL" 
+once they expire after 6 months; these drafts could be saved into two 
+different directories.
+
+I have a private collection of the drafts published in the last 
+years: looking at the evolution of a protocol (e.g. CIDR) is a very 
+useful exercise.
+
+BTW:
+Does the copyright prevent a site from allowng the access to old IDs 
+? Does a (non-official) repository of old drafts exist in the 
+Internet?
+
+regards,
+Simone
+
+--------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+> You're right, but having a repository of the old drafts means saving 
+> almost all the (good or bad) Internet research in a much more complete 
+> manner than archiving the RFCs.
+
+What this and several followups ignores is the impact on the authors.
+
+Authors will cease to present partially-complete ideas. There will be 
+fewer work-in-progress drafts. There will, in summary, be less of this 
+'good or bad' research to preserve.
+
+Once the IDs become archival, they end up being an undistinguished tech 
+report series. We already have them - all over the place.
+
+The thing that makes IDs unique is _exactly_ the fact that they are NOT 
+archived. Were that property to disappear, there would be a void.
+
+Consider the impact on the stream of published information, as well as 
+the fact that there are already other ways to publish archival information.
+
+Joe
+
+
+--------------------------------------------------------------------
+[Lloyd Wood]
+
+[...]
+> What this and several followups ignores is the impact on the authors.
+>
+> Authors will cease to present partially-complete ideas. There will be
+> fewer work-in-progress drafts. There will, in summary, be less of this
+> 'good or bad' research to preserve.
+[...]
+
+Yes, but the process becomes increasingly formalised - originally RFCs
+were informal and barriers to publication were low. Now RFCs are
+formal and the draft process formalises the documents while rasising
+the barrier to publication as an RFC.
+
+I've increasingly seen draft deltas go to a small off-WG audience
+before popping up when submitted as an 'official' draft just before a
+meet closing deadline; I'm not sure that this is good, since it limits
+on-list discussion before the meet.
+
+I'm worried that the process will even become more formal still, if:
+
+http://ftp.ietf.org/iesg/iesg.2002-12-12
+IP     o Thomas to write (or cause to be written) a draft on "how to
+         get to Draft"
+
+is anything to go by.
+
+L.
+
+oh, wait. Do they mean 'Draft Standard'? Stupid namespace collision.
+
+--------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+> Yes, but the process becomes increasingly formalised - originally RFCs
+> were informal and barriers to publication were low. Now RFCs are
+> formal and the draft process formalises the documents while rasising
+> the barrier to publication as an RFC.
+> 
+> I've increasingly seen draft deltas go to a small off-WG audience
+> before popping up when submitted as an 'official' draft just before a
+> meet closing deadline; I'm not sure that this is good, since it limits
+> on-list discussion before the meet.
+
+I'm not clear that the two are related. There are few barriers to 
+putting out an ID, except timing. Due to the manual processing 
+requirements and the desire for a modicum of sanity checking, it's 
+infeasible to handle the burst of submissions before each IETF meeting 
+without including a buffer period.
+
+This is the reason that many IDs submitted just before the deadline are 
+concurrently posted to newsgroups; it allows open discussion while 
+waiting for the burst to be processed. I agree that this isn't optimal - 
+IMO, any idea that isn't sufficiently solid a few weeks before the IETF 
+isn't sufficiently solid to warrant burning the $$ of people's time 
+discussing it ;-)
+
+> I'm worried that the process will even become more formal still, if:
+> 
+> http://ftp.ietf.org/iesg/iesg.2002-12-12
+> IP     o Thomas to write (or cause to be written) a draft on "how to
+>          get to Draft"
+
+It's generally useful to help people design drafts in a way that reduces 
+the repeated feedback from the RFC Editor. Most venues have some 
+publication guidelines; it's not clear they're aiming at formalizing the 
+process so much as providing editorial structure.
+
+Joe
+
+--------------------------------------------------------------------
+[John Day]
+
+>Authors will cease to present partially-complete ideas. There will 
+>be fewer work-in-progress drafts. There will, in summary, be less of 
+>this 'good or bad' research to preserve.
+
+This is not the case and has not been the case with other groups. 
+You can most other standards groups and find written contributions 
+suggesting changes to all or part of a draft under development along 
+with rationale as to why the change should be made.  In some groups, 
+you will even find a written record of how each comment or 
+contribution on a document underdeveloped was dealt with and why.
+
+I have not noticed that the fact this material is available in the 
+group's paper trail has any effect on the amount or quality of the 
+contributions.
+
+
+>Once the IDs become archival, they end up being an undistinguished 
+>tech report series. We already have them - all over the place.
+
+Depends on how they are dealt with.
+
+>The thing that makes IDs unique is _exactly_ the fact that they are 
+>NOT archived. Were that property to disappear, there would be a void.
+
+No the problem we have is there is a void.  To modify an old adage, 
+those who can not know history are doomed to repeat it.  Actually now 
+that you mention it that may explain alot.
+
+>
+>Consider the impact on the stream of published information, as well 
+>as the fact that there are already other ways to publish archival 
+>information.
+
+Huh?
+
+Take care,
+John
+
+--------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+> This is not the case and has not been the case with other groups.
+
+There are some people (myself included) who will cease to publish 
+drafts. That decreases (by definition) the set of what is published; to 
+the extent that others care, it will further decrease that set.
+
+> I have not noticed that the fact this material is available in the 
+> group's paper trail has any effect on the amount or quality of the 
+> contributions.
+
+That's nearly impossible to measure. We have no series that was 
+explicitly not archived then archived to compare. All we have are 
+different communities right now.
+
+...
+>> The thing that makes IDs unique is _exactly_ the fact that they are 
+>> NOT archived. Were that property to disappear, there would be a void.
+> 
+> No the problem we have is there is a void.  To modify an old adage, 
+> those who can not know history are doomed to repeat it.  Actually now 
+> that you mention it that may explain alot.
+
+There always was, and continues to be a path for publication that some 
+draft authors have chosen and others have not. Draft authors can always 
+submit documents for Informational RFC; some have, others have not. 
+Although there are some submissions which have been rejected (every 
+system has its minimum standards), overall we already have a solution to 
+this problem, and it doesn't involve archiving all drafts for historical 
+purposes.
+
+I agree that the world is less informed by not having the intermediate 
+forms of "the Shining", e.g. That is as it has been - the choice of the 
+author. All we do by archiving drafts is to take the ephemeral track away.
+
+Joe
+
+
+--------------------------------------------------------------------
+[John Day]
+
+>Yes, but the process becomes increasingly formalised - originally RFCs
+>were informal and barriers to publication were low. Now RFCs are
+>formal and the draft process formalises the documents while rasising
+>the barrier to publication as an RFC.
+
+That is more because for some Orwellian reason Requests for Comments 
+became Standards and Internet Draft (which sounds like a preliminary 
+standard) become comments.  But we have hashed that issue before 
+elsewhere.  It is still pretty informal.
+
+>I've increasingly seen draft deltas go to a small off-WG audience
+>before popping up when submitted as an 'official' draft just before a
+>meet closing deadline; I'm not sure that this is good, since it limits
+>on-list discussion before the meet.
+
+But it is typical behavior as committees age, the participation 
+broadens, and people participating are playing their own agendas. 
+This one of the oldest games in the book.
+
+>I'm worried that the process will even become more formal still, if:
+>
+>http://ftp.ietf.org/iesg/iesg.2002-12-12
+>IP     o Thomas to write (or cause to be written) a draft on "how to
+>          get to Draft"
+>
+>is anything to go by.
+
+My experience is that formality creeps in primarily as the process is 
+abused.  The more it is abused the more necessary it is to make rules 
+about things where it could be assumed that good and fair behavior 
+would prevail.  As the stakes increase, that becomes less the case. 
+The only way for it not to happen is to work on things that few 
+people care about!  Either because they don't know it is important or 
+because it isn't!
+
+Take care,
+John
+
+--------------------------------------------------------------------
+[David P. Reed]
+
+The long-term history of ideas is hurt by the non-preservation of ID's, 
+etc.   The ideas had influence, almost certainly, even if they turned out 
+to be weak or "wrong".
+
+One of the problems with scientific progress is the lack of documentation 
+of experiments that didn't pan out, because the authors are presumed to 
+have "failed" and want to avoid embarrassment.
+
+Most of us, if we are honest, have learned far more from making mistakes 
+and debugging them.  Why then, do we refuse to pass on our hard-won 
+knowledge?   This is not because of science, but because of ego-driven fear.
+
+[...]
+--------------------------------------------------------------------
+[Chris Edmondson-Yurkanan]
+
+	I absolutely agree with this thread (Rahmat/David/Simone's comments)
+	on preserving IDs to record the evolution of design, i.e. our
+	history.  The "path" can be more interesting than the "end result". 
+
+	Since my focus (this last year ) has been on the early Arpanet 
+	design issues, I have been aided by the abundance of RFCs which discuss
+	a specific design.  (of course, I still wish that more minutes of the
+	design meetings were preserved   -- if anyone has any non-published
+	minutes 1969-1974 please let me know ....;-) 
+
+------>	It's important to note that the early RFCs functioned in the role 
+	of both of the following: 
+		* today's Internet Drafts, and 
+		* email: some of the early RFCs would today just have been
+		  in today's email archives of the working groups. 
+
+	While current IETF working groups seem to be great about archiving
+	email, a similar issue of lost resources seems to be occurring when 
+	working groups conclude.   At this point, no email archive is linked 
+	into the IETF web pages that describe the work of the concluded 
+	groups...   http://www.ietf.org/html.charters/OLD/index.html
+
+	So, I suggest that the IETF web masters should archive
+	the concluded email as well. 
+
+	Thanks, Chris
+
+[...]
+
+-- 
+The University of Texas at Austin  TAY 4.136; 
+Chris Edmondson-Yurkanan           
+Computer Sciences Department      
+1 University Station C0500         URL:  http://www.cs.utexas.edu/users/chris/
+Austin, TX   78712-1188            Fedex: please send to Taylor Hall 2.124 
+
+
+--------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+> 	So, I suggest that the IETF web masters should archive
+> 	the concluded email as well. 
+
+I agree that archiving mail that was archived to begin with would be 
+useful. I'm opposed to archiving intermediate process when the authors 
+explicitly chose to provide a non-archival form.
+
+If authors want to archive their results, they are free to publish them 
+in more conventional venues, even in their intermediate form.
+
+When someone says "this is off the record" it is off the record. That's 
+what IDs are, very explicitly.
+
+Joe
+
+--------------------------------------------------------------------
+[Geoff Huston]
+
+>The thing that makes IDs unique is _exactly_ the fact that they are NOT 
+>archived. Were that property to disappear, there would be a void.
+
+This is a curious claim in so far as they _are_ archived,  all over 
+the world in thousands of locations. There is no concept in today's 
+world of being able to 'unpublish" anything, or to be able to 
+withdraw a document from the online public space. IETF meeting 
+proceedings publish and archive the drafts used by the WGs at 
+the time. Google has more than an significant number of hits for 
+expired drafts, and so on.
+
+Regardless of the merits of Joe's arguments, and I must admit that 
+there is considerable merit in his view of the role of drafts, the 
+harsh reality is that these documents do not and will not disappear 
+from public availability. Accordingly, It makes more sense
+to me to recognize and work within the  characteristics and 
+properties of the world we live in than to insist that somehow 
+something that is happening should not happen and that we should 
+behave as if it is not happening.
+
+But this is well beyond Internet History and I will not post further 
+on this topic to this mailer.  My apologies for the diversion.
+
+regards,
+
+   Geoff
+
+
+
+--------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+> This is a curious claim in so far as they _are_ archived,  all over the 
+> world in thousands of
+> locations.
+
+Agreed. Though personal use archives are different from "available for 
+others publicly", at least according to copyright law.
+
+> There is no concept in today's world of being able to 
+> 'unpublish" anything, or to
+> be able to withdraw a document from the online public space. IETF 
+> meeting proceedings
+> publish and archive the drafts used by the WGs at the time. Google has 
+> more than an
+> significant number of hits for expired drafts, and so on.
+
+And, as Geoff and I have discussed elswhere, there are those of us who 
+are glad to educate those who illegally post documents for which they do 
+not hold copyright.
+
+I.e., that there are archives and they are public does not make them 
+either legal or appropriate.
+
+> Regardless of the merits of Joe's arguments, and I must admit that there 
+> is considerable
+> merit in his view of the role of drafts, the harsh reality is that these 
+> documents
+> do not and will not disappear from public availability. Accordingly, It 
+> makes more sense
+> to me to recognize and work within the  characteristics and properties 
+> of the world we
+> live in than to insist that somehow something that is happening should 
+> not happen and
+> that we should behave as if it is not happening.
+
+The world we live in includes many things that are illegal and/or 
+inappropriate. I hope we strive to rise above and/or correct those 
+things, rather than admit defeat per se.
+
+Joe
+
+--------------------------------------------------------------------
+[David P. Reed]
+
+At 07:34 AM 1/14/2003 -0800, Joe Touch wrote:
+>Authors will cease to present partially-complete ideas. There will be 
+>fewer work-in-progress drafts. There will, in summary, be less of this 
+>'good or bad' research to preserve.
+
+This claim raises two issues:
+
+1. The assertion that "authors will cease..." unless things they write are 
+deleted from institutional memory (or at least not actively preserved) is 
+falsifiable by straightforward experimental evidence.  There is no need to 
+claim it without proof.   It does indeed remind me of the idea that the 
+POTUS and his office should be immune from sunlight in their contacts with 
+lobbyists, etc. lest those lobbyists be unwilling to share their true views.
+
+2. Shouldn't the authors be given the choice to preserve in an archival 
+form their thoughts, along with all other IDs, etc. in such a way that 
+makes it much less work for historians and students of design options to 
+understand old proposals?
+
+--------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+> This claim raises two issues:
+> 
+> 1. The assertion that "authors will cease..." unless things they write 
+> are deleted from institutional memory (or at least not actively 
+> preserved) is falsifiable by straightforward experimental evidence.  
+
+There are IDs which authors chose not to publish as RFCs or as tech 
+reports elsewhere.
+
+Thus concludes the contradiction of the falsification. By those 
+examples, removing all documents that authors never intended for 
+archival publication reduces the set of IDs.
+
+> 2. Shouldn't the authors be given the choice to preserve in an archival 
+> form their thoughts, along with all other IDs, etc. in such a way that 
+> makes it much less work for historians and students of design options to 
+> understand old proposals?
+
+They are - Informational RFCs. Note that not all IDs went that route. 
+Again, proof by example.
+
+IMO, the authors should continue to be given the choice they already 
+have - NOT to publish archivally. They already have the alternate choice 
+in spades.
+
+Joe
+
+--------------------------------------------------------------------
+[David P. Reed]
+
+Fair use is explicitly part of copyright law.   History is clearly a policy 
+goal of fair use.   IANAL, but I would expect that there is precedent 
+protecting people who share personal archives of documents for the purpose 
+of historical research.
+
+Just a reminder from someone dedicated to educating people that copyright 
+includes rights of fair use, as well as other exceptions.   Electronic 
+rights are complex, as well.  The Internet crosses jurisdictions, and 
+documents such as IDs are published in many locations at once, so the right 
+to "unpublish" is determined by jurisdiction.
+
+IMO, standing behind copyright really distorts the issue of desirable 
+dissemination of knowledge and scientific knowledge, in particular.
+
+--------------------------------------------------------------------
+[Joe Touch]
+
+David P. Reed wrote:
+> Fair use is explicitly part of copyright law.   History is clearly a 
+> policy goal of fair use.   IANAL, but I would expect that there is 
+> precedent protecting people who share personal archives of documents for 
+> the purpose of historical research.
+
+I cannot provide you with a photographic copy of copyrighted material 
+without the permission of the publisher. You can make one for yourself, 
+but you cannot distribute it. That precedent already exists for paper 
+works. IANAL either, but I would expect that this is a reasonable 
+analog, and that regardless of the "public good" of distributing those 
+copies "for historical purposes," it would still be a blatent violation 
+of copyright law.
+
+> Just a reminder from someone dedicated to educating people that 
+> copyright includes rights of fair use, as well as other exceptions.   
+> Electronic rights are complex, as well.  The Internet crosses 
+> jurisdictions, and documents such as IDs are published in many locations 
+> at once, so the right to "unpublish" is determined by jurisdiction.
+
+"unpublish" is a bit misleading. When IDs are published, they are 
+distributed by the IETF by authority of the author under explicit 
+time-limited terms. Once those terms cease, (again, IANAL), it seems 
+that further public distribution constitutes continued "publication", 
+and would be a violation of copyright law.
+
+I cannot remove it from everyone's personal archives, but I believe I 
+can prevent anyone from passing it on to anyone else, whether posting it 
+for the 'public good' or otherwise.
+
+> IMO, standing behind copyright really distorts the issue of desirable 
+> dissemination of knowledge and scientific knowledge, in particular.
+
+Doing things that violate private rights for the "public good," despite 
+the current fashion, are detestable.
+
+Joe
+
+--------------------------------------------------------------------
+[Ted Faber]
+
+> [...]
+> Doing things that violate private rights for the "public good," despite 
+> the current fashion, are detestable.
+
+You're posting angry again, Joe. :-)
+
+That statement is false on its face (and I think your earlier statements
+about your rights to stop publication were also a little too sweeping).
+Most laws are about balancing public goods and private rights, and I
+know you know it.  My private right to free speech is violated in
+crowded movie houses all over the country for the public good of
+avoiding mass tramplings.
+
+Maybe you'd like to unpublish this one. :-)
+
+--------------------------------------------------------------------
+[Ted Faber]
+
+On Tue, Jan 14, 2003 at 04:53:55PM -0500, David P. Reed wrote:
+> Fair use is explicitly part of copyright law.   History is clearly a policy 
+> goal of fair use.   IANAL, but I would expect that there is precedent 
+> protecting people who share personal archives of documents for the purpose 
+> of historical research.
+
+Fair use is deep water with dangerous currents.  I'm not a lawyer,
+either, but I wouldn't try to assert a fair use claim in the face of
+opposition without one either.
+
+I'd want to see that precedent before I'd rely on there being one.  More
+to the point, I'd want my laywer to see that precedent.
+
+Keeping a private collection of documents and allowing specific people
+access to them for historical puproses is one thing, making a collection
+of documents publically available is another.  Anything intended to be
+detected by Google feels more like the former than the latter to me.
+The UCLA film library can't start showing their copyrighted films to the
+general public on a regular basis no matter how noble or scholarly their
+intent.
+> 
+> Just a reminder from someone dedicated to educating people that copyright 
+> includes rights of fair use, as well as other exceptions.   Electronic 
+> rights are complex, as well.  The Internet crosses jurisdictions, and 
+> documents such as IDs are published in many locations at once, so the right 
+> to "unpublish" is determined by jurisdiction.
+
+It's not at all clear to me that the idea of unpublishing has been
+legally tested.  I don't know if there's any legal precedent at all.
+For all I know, the very idea of unpublishing something may well be a
+nonsense idea in the legal world.  I'd love to see a relevant legal
+citation.
+
+I'm just worrying about the US system, though you are correct that the
+Internet situation is even more complex.
+
+> 
+> IMO, standing behind copyright really distorts the issue of desirable 
+> dissemination of knowledge and scientific knowledge, in particular.
+
+Perhaps, but cranky ID authors are not the primary problem in this
+regard.  Many conferences and journals also enforce copyright on
+scientific knowledge.
+
+More practically, if people are concerned about keeping the majority of
+the IDs available, the simplest tack is not to futz with the lawyers,
+but to get the IDs, set up a website and make them available.  When an
+ID expires (a situation detectable with a perl script) mail the author
+(their e-mail address is also part of the ID) and request permission to
+archive the thing.  If the author says OK, you leave the copy up
+(perhaps appending a notice that the expired draft appears with the
+author's permission), otherwise you delete the draft.  The whole thing
+can be largely automated (including the author's reply for prolific
+authors).  I suspect that the negative responses would be very few.
+
+Results: ID's (other than authors who'd be a pain about it anyway)
+legally archived in the web for posterity, and I don't have to hear this
+argument for the one thousand and first time.
+
+-------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+> You're posting angry again, Joe. :-)
+> 
+> That statement is false on its face (and I think your earlier statements
+> about your rights to stop publication were also a little too sweeping).
+> Most laws are about balancing public goods and private rights, and I
+> know you know it.  My private right to free speech is violated in
+> crowded movie houses all over the country for the public good of
+> avoiding mass tramplings.
+> 
+> Maybe you'd like to unpublish this one. :-)
+
+Unpublishing isn't the issue, FWIW; the issue is permission to publish 
+for a finite period of time. That's fairly common. When the granted time 
+expires, the source is no longer permitted to publish.
+
+Putting things on web servers is publishing. I never said I could erase 
+things from archives, just prohibit them from being put on web servers 
+everyone could access.
+
+As to balancing public good, I agree. I said _violate_, not balance.
+
+Joe
+
+-------------------------------------------------------------------
+[John Day]
+
+> [...]
+>There are some people (myself included) who will cease to publish 
+>drafts. That decreases (by definition) the set of what is published; 
+>to the extent that others care, it will further decrease that set.
+
+Somehow I doubt that ;-)  but statistically I think you would find 
+that the number who would not submit contributions would be 
+insignificant.  And since no one person's ideas are so important that 
+the rest can not get on without them, it is doubtful they would be 
+missed.  This effort is not personal, it is stochastic.
+
+> [...]
+>That's nearly impossible to measure. We have no series that was 
+>explicitly not archived then archived to compare. All we have are 
+>different communities right now.
+
+Actually, not true.  If you look at IEEE, T1, ISO, ITU, ANSI, ABA, 
+IEC, and many other groups you will find that such paper trails exist 
+and perhaps not readily available they are available.
+
+> [...]
+>There always was, and continues to be a path for publication that 
+>some draft authors have chosen and others have not. Draft authors 
+>can always submit documents for Informational RFC; some have, others 
+>have not. Although there are some submissions which have been 
+>rejected (every system has its minimum standards), overall we 
+>already have a solution to this problem, and it doesn't involve 
+>archiving all drafts for historical purposes.
+>
+>I agree that the world is less informed by not having the 
+>intermediate forms of "the Shining", e.g. That is as it has been - 
+>the choice of the author. All we do by archiving drafts is to take 
+>the ephemeral track away.
+
+This is not at all the case.  Science is a much different process 
+than writing a novel.  The exploration of the domain of inquiry and 
+the process by which it takes place is as important as the final 
+answer.  More often than not the process may provide more 
+understanding for the next problem than the answer ever will.
+
+Take care,
+John
+
+-------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+> Somehow I doubt that ;-)  but statistically I think you would find that 
+> the number who would not submit contributions would be insignificant.  
+
+OK - so we disagree on what might happen.
+
+> [...]
+> Actually, not true.  If you look at IEEE, T1, ISO, ITU, ANSI, ABA, IEC, 
+> and many other groups you will find that such paper trails exist and 
+> perhaps not readily available they are available.
+
+That is not a metric. You are not citing groups that changed policies; 
+they were archival from the start. Agreed that they have open exchange, 
+but by design.
+
+> [...]
+> This is not at all the case.  Science is a much different process than 
+> writing a novel.  The exploration of the domain of inquiry and the 
+> process by which it takes place is as important as the final answer.  
+> More often than not the process may provide more understanding for the 
+> next problem than the answer ever will.
+
+That may be the case, but it is the authors' decision, absent a-priori 
+arrangements of a forum (e.g., this forum is archived, and that is known 
+by participants when they sign-up).
+
+IDs are a place where exploration comes without the threat of persistent 
+archives of proposals, _by design_. As mentioned before, there are 
+plenty of other archival forums, including RFCs themselves.
+
+Joe
+
+-------------------------------------------------------------------
+[Andrew Russell]
+
+>My experience is that formality creeps in primarily as the process 
+>is abused.  The more it is abused the more necessary it is to make 
+>rules about things where it could be assumed that good and fair 
+>behavior would prevail.  As the stakes increase, that becomes less 
+>the case. The only way for it not to happen is to work on things 
+>that few people care about!  Either because they don't know it is 
+>important or because it isn't!
+
+ From my research into the early institution-building of Internet 
+standards (ICCB, IAB, IETF), it seems that another reason for 
+building in formality is to allow open participation. As 
+participation and interest grow, so too must the governing 
+structures.  The history of ICCB, IAB, and IETF suggests that this 
+sort of scalable governance was a key to the growth of the Internet - 
+I've got a work-in-progress on some of this political and cultural 
+history, a paper is available from   http://aconcept51.com/arussell/. 
+I would love to hear comments, stories, etc if anyone's interested in 
+contributing.
+
+As for historians using Internet Drafts - anyone faithful to the 
+Guidelines for Internet Drafts 
+ftp://ftp.ietf.org/ietf/1id-guidelines.txt will note that the first 
+paragraph states:  "These documents should not be cited or quoted in 
+any formal document."  That's pretty clear.  On the surface, I don't 
+see any harm in looking up an old ID in a personal archive or on 
+google, especially if it helps the thinking process.  We'll know 
+things are getting out of hand when the lawyers come in and the IETF 
+begins a RIAA-style crackdown on distribution of old IDs....
+
+Andy
+http://ucsub.colorado.edu/~russelal/
+
+-------------------------------------------------------------------
+[John Day]
+
+> [...]
+>From my research into the early institution-building of Internet 
+>standards (ICCB, IAB, IETF), it seems that another reason for 
+>building in formality is to allow open participation. As 
+>participation
+
+I don't see how formality allows open participation.  Generally, the 
+minimal number of rules is best and then only to ensure fair 
+participation.  My experience has been that the number of rules and 
+the formality of the process increases either when fairness is abused 
+or one group attempts to maintain control of the process.  The first 
+is a case where without written rules some try to use the fact that 
+"there is no rule that says I can't" to abuse a fair and reasonable 
+process.
+
+Initially there were very few if any written rules.  My understanding 
+is that the rules in place came about when it became clear that the 
+IETF/IESG/IAB etc.  needed to be able to ensure that a process was 
+followed that would not subject it to law suits or claims of 
+anti-trust behavior.  The process was and always has been about as 
+open as you can get without formality.  Frankly, I think the current 
+process is so open that it provides the perfect disguise for 
+manipulation by anyone with the resources to play the game.
+
+Take care,
+John
+
+-------------------------------------------------------------------
+[Andrew Russell]
+
+>[...]
+>I don't see how formality allows open participation.  Generally, the 
+>minimal number of rules is best and then only to ensure fair 
+>participation.  My experience has been that the number of rules and 
+>the formality of the process increases either when fairness is 
+>abused or one group attempts to maintain control of the process. 
+>The first is a case where without written rules some try to use the 
+>fact that "there is no rule that says I can't" to abuse a fair and 
+>reasonable process.
+
+In this case I would think that the creation of rules is a healthy 
+development for preserving a fair and reasonable process.
+
+>Initially there were very few if any written rules.  My 
+>understanding is that the rules in place came about when it became 
+>clear that the IETF/IESG/IAB etc.  needed to be able to ensure that 
+>a process was followed that would not subject it to law suits or 
+>claims of anti-trust behavior.  The process was and always has been 
+>about as open as you can get without formality.  Frankly, I think 
+>the current process is so open that it provides the perfect disguise 
+>for manipulation by anyone with the resources to play the game.
+
+More formal structures allow a body to move away from a small 
+"council of elders," thus making leadership somewhat accountable to 
+the participants. Comparatively, the IETF has a minimum of rules and 
+institutional structures; but those rules keep the process 
+consistent, and therefore make the IETF more reliable as an 
+institution. Without formal rules, a small group of people could make 
+decisions that don't have broad support (such as was alleged of the 
+IAB with CLNP in 1992). It's a classic constitution-building question 
+- how much authority and structure is needed to preserve freedom? Is 
+it too easy to manipulate the system?
+
+Cheers,
+
+Andy
+
+-------------------------------------------------------------------
+[Mike Padlipsky]
+
+[...]
+
+-------------------------------------------------------------------
+[Joe Touch]
+
+> [...]
+
+There are two separate threads that I have promoted:
+
+	1) that the rules cannot be changed retroactively
+	2) that the current rules are desirable and provide
+	the characteristic uniqueness of the ID series,
+	and should be preserved.
+
+I accept that authors do, will, and have always had the chance to opt-in 
+to a public archive. Perhaps paradoxically, I have vigorously defended 
+my right to refuse permission to others to post my prior IDs (at least 
+the ones that I was primary author on), but continue to serve some on my 
+own website and have offered them without hesitation to individuals who 
+requested them.
+
+> granted, that might just make me a swine, before whom perls shldn't be 
+> dropped, but how about a simpler approach?  update whatever rfc [or 
+> other series] document it was that established the 6-month lifetime for 
+> 'id's', or write a new one if necessary, and, explicitly in light of the 
+> _possible_ 'historical' value of making the information available for 
+> more than 6 months, add a provision that when submitted, 'id's' may be 
+> declared by their authors to be archivable after 'expiration', iff [sic] 
+> the authors choose to make such declaration.  
+
+The ID "RFC" 'rules' state only that the IETF assures that it will serve 
+the drafts for 6 months, and that they are not to be cited as other than 
+work in progress.
+
+Authors could always declare their works in the public domain, thus 
+allowing anyone to serve them. It's simple - something akin to "Right is 
+hereby granted, in perpituity, for non-profit use and disemmination of 
+this document."
+
+I have issue only that this not be required as a condition of 
+publication of IDs, to ensure that the past character of the IDs as 
+ephemeral (when desired, as always) is retained.
+
+Joe
+
+-------------------------------------------------------------------
+[David P. Reed]
+
+At 03:16 PM 1/14/2003 -0800, Joe Touch wrote:
+>Doing things that violate private rights for the "public good," despite 
+>the current fashion, are detestable.
+
+Copyright exists ONLY for the public good.   If it fails to improve the 
+public good, and serves only private interests, the Government should no 
+longer provide it.  It's not a natural law, it is merely a synthetic 
+construct, constructed and enforced by the Government.
+
+There are no "private rights" to transmit information to others, but then 
+constrain what they do with it.
+
+The most interesting analogy is in the patent law.   Once you share an 
+invention with others, you lose the right to exclude, unless you use 
+patents, in which case you gain a purely synthetic right for a very limited 
+time, crafted entirely because of a public good argument.
+

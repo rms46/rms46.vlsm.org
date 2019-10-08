@@ -1,0 +1,31 @@
+NomCom Chair -- 16 March 1994 -- IETF
+-------------------------------------
+
+Nominations for Open IESG Slots
+
+
+Christian:
+
+It is my pleasure to inform you that the Nominating Committee recommends
+the following persons to fill the open slots on the IESG.
+
+Applications
+Erik Huizer
+
+Internet
+Claudio Topolcic
+
+Operations
+We will not fill this position at this time
+
+Routing
+Joel Halpern
+
+Security
+Jeff Schiller
+
+User Services
+Joyce Reynolds
+
+----------------
+From: Fred Baker

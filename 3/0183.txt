@@ -1,0 +1,75 @@
+IAB Chair -- 14 April 2000 -- IETF list
+=======================================
+Re: rfc-editor?
+
+> O.K., help me understand this. ISOC paid ISI a few hundred
+> thousand dollars (?) for the RFC-Editor functions (wasn't it
+> really funding for the entire IANA role?).
+
+No.  It is important to understand that the IANA role and the
+RFC Editor one were _always_ separate, although some of the same
+people were historically involved in both and, again
+historically, both operated under Jon Postel's management.
+
+> However, since
+> Joyce Reynolds is  now listed both as a staff member of ICANN
+> ("Manager of Publications")  at
+> http://www.icann.org/general/abouticann.htm and "liaison" to
+> the RFC editor on the IAB pages at
+> http://www.iab.org/members.html the ISOC funding seems to have
+> been used/absorbed for ICANN staff?
+
+Again, no.  Many of us find ourselves wearing multiple hats.  I
+don't know the financial arrangements between ISI and ICANN that
+support the two arrangements for Joyce's time, but she is less
+than full time on either of them.   I.e., part of her time
+involves RFC Editor work (and the related liaison to IAB),
+another involves some efforts on ICANN's part.  As described in
+the most recent IAB Charter, there is also provision for a
+liaison from the IANA: while that position is now vacant, we
+assume it will soon be filled and do not expect that Joyce be
+the person filling that role.
+
+> However, since there is a recent MoU between IETF and ICANN
+> "Concerning  the Technical Work of the Internet Assigned
+> Numbers Authority" at
+> http://www.icann.org/general/ietf-icann-mou-01mar00.htm, I'm
+> puzzled why the scope of this did not include the RFC-Editor
+> function? If the  the absence is supposed to indicate some
+> IETF independence from  ICANN, it's certainly not clear this
+> is reality if the IAB RFC-Editor  liaison contact is working
+> for ICANN.
+
+If she were working full time for ICANN, and not at all for ISI,
+or if the RFC Editor function consisted of ICANN (and not ISI)
+staff, this would be an interesting observation and conclusion.
+But neither is the case.
+
+Again, the RFC Editor and IANA functions are separate and always
+have been.  There are useful synergies between the two
+activites, which is why we have welcomed close coordination, but
+your confusion is due to assuming that the two are really the
+same.
+
+> The above MoU recognizes that the "IANA technical team is now
+> part  of ICANN" and that the "IAB is chartered to designate
+> the IANA on  behalf of the IETF". But isn't this agreement
+> only ad hoc recognition  of reality since the IAB really
+> doesn't have any ability to  (re)designate the IANA functions?
+> That's because there's this  strong rumour going around that
+> the US Department of Commerce  believes it is transferring the
+> IANA functions to ICANN....
+
+IANA has traditionally had several functions, and some of the
+boundaries periodically create confusion.  We are satisfied with
+the present relationships and hence see no prospect for having
+to change then.   However, we believe that there is a fairly
+general understanding among IAB, ICANN, and US DoC that the IAB
+could, indeed, transfer the portions of the IANA efforts that
+relate to IETF work elsewhere if that were necessary or
+desirable.
+
+ John Klensin
+ IAB Chair
+
+

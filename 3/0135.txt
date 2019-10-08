@@ -1,0 +1,40 @@
+NomCom Chair -- 16 January 1995 -- IETF-Announce
+------------------------------------------------
+
+1995 Request for IAB/IESG Candidates
+
+
+Hello Folks,
+
+The 1995 Nominations Committee, while off to a slow start, is now up
+and ready to work on all of your nominations for IAB and IESG positions.
+As always, half of the current positions have become available, and we
+now require your assistance in determine the best candidates for these
+positions.
+
+The following positions are up for consideration at the present time:
+
+o IESG Operations AD (Area Director)
+o IESG Transport AD
+o IESG Applications AD (Both AD's open)
+o IESG Network Management AD
+o IESG Internet AD
+o IAB Member
+o IAB Member
+o IAB Member
+o IAB Member
+o IAB Member
+o IAB Member
+
+If you know someone who would serve well in one of the above positions,
+or if you yourself would like to be considered for such a position, please
+send a email message indicating such to the nominating committee indicating
+the specific candidate and position.
+
+Thanks!
+/John
+
+p.s. Anyone who is currently up for renewal who would like to be considered
+for another term should drop us a message unless you've already received
+email confirmation that we're aware of your interest...
+

@@ -1,0 +1,109 @@
+NomCom Chair -- 13 January 1994 -- IETF
+---------------------------------------
+
+IAB/IESG Nominating Committee Selection Results
+
+
+Since the announcement of the IESG/IAB Nominating Committee on December 22,
+I have received messages from 58 individuals indicating an ability to work
+on the committee; of these, three fill liason positions (ex officio
+non-voting), and two persons were disqualified, having not attended at
+least two IETF meetings.
+
+Among these, I found men and women, people from three continents (four if
+one considers an Israeli living in the US to be Mid-eastern),
+representatives from vendors, transit and regional networks, research,
+educational institutions, and government. One of my first respondents
+(disqualified, unfortunately, because although he had attended the Kobe and
+San Francisco INET meetings, he had never attended an IETF meeting) was an
+official with the UN's World Health Organization.
+
+Last night, I powwowed with my pastor, Rick Ryan of Calvary Chapel Santa
+Barbara. I had a box with 53 names in it. Rob Laskin of CMC observed. From
+the box, Rick selected seven members and three alternates.
+
+Voting members of the IAB/IESG Nominating Committee:
+
+Alan Clegg
+abc@rock.concert.net
+Interpath
+Raleigh, NC 27605
+
+Andy Nicholson
+andyni@microsoft.com
+Microsoft
+Redmond, WA 98052-6393
+
+Daniel Karrenberg
+dfk@ripe.net
+RIPE Network Coordination Centre (NCC)
+Amsterdam, Netherlands
+
+Dr. Marshall T. Rose
+mrose@dbc.mtview.ca.us
+Dover Beach Consulting, Inc.
+Mountain View, CA 94043-2186
+
+Jeff Case
+case@snmp.com
+SNMP Research
+Knoxville, TN 37920
+
+Jeroen Houttuin
+houttuin@rare.nl
+RARE
+Amsterdam, Europe
+
+Noel Chiappa
+jnc@ginger.lcs.mit.edu
+Grafton, VA 23692
+
+Alternates (reserves in the event that a voting member is unable to continue):
+
+John Veizades
+veizades@ftp.com
+FTP Software, Inc
+San Francisco, CA 94103
+
+Martha Steenstrup
+msteenst@BBN.COM
+BBN
+Cambridge, MA 02138
+
+Tony Genovese
+Genovese@es.net
+Lawrence Livermore National Laboratory
+Livermore, California 94550
+
+Liasons (non-voting):
+
+IESG: Stev Knowles
+stev@ftp.com
+FTP Software
+North Andover, Mass. USA 01845
+
+IRSG: Jon Postel
+postel@isi.edu
+USC - ISI
+Marina del Rey, CA 90292-6695 
+
+IAB: Bob Braden
+braden@isi.edu
+USC - ISI
+Marina del Rey, CA 90292-6695 
+
+ISOC Trustees:
+Not currently assigned
+
+In addition, Paul Mockapetris has agreed to advise us on request, to assure
+continuity from the previous nominating committee.
+
+The non-voting chair, I suppose I should say for completeness, is myself:
+
+Fred Baker
+fbaker@acc.com
+Advanced Computer Communications
+Santa Barbara, California, 93117
+
+I am privileged to find myself in august company.
+

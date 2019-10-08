@@ -1,0 +1,525 @@
+IESG Chair -- 17 June 1992 -- B-I
+----------------------------------
+
+Internet-Draft                                                  Phill Gross
+June 1992                                                       IESG Chair
+
+
+
+                IESG Deliberations on Routing and Addressing
+
+
+
+                                CONTENTS
+
+
+1. ABSTRACT
+
+2. ACKNOWLEDGEMENTS
+
+3. BACKGROUND
+
+3.1 The IAB Architecture Retreat
+3.2 The Santa Fe IETF 
+3.3 The ROAD Group
+3.4 The San Diego IETF
+
+4. SETTING DIRECTIONS FOR THE IAB/IETF
+
+4.1 Course of Action for CIDR
+4.2 Regarding "Bigger Internet Addresses"
+4.3 Information and Criteria For "Bigger Internet Addresses"
+4.4 Milestones And Timetable For Making a Recommendation for
+"Bigger Internet Addresses"
+
+5. SUMMARY
+
+6. FOR MORE INFORMATION
+
+7. BIBLIOGRAPHY
+
+
+
+1. ABSTRACT
+
+This note gives preliminary results from IESG deliberations on Internet
+routing and addressing issues.  It provides a brief background of the ROAD
+group and related activities in the IETF.  It also provides a preliminary
+report on how the IESG will recommend various routing and addressing
+issues be pursued in the IAB/IETF.  A more complete IESG report and set of
+recommendations is in preparation.
+
+
+2. ACKNOWLEDGEMENTS
+
+This note draws principally from two sources: the output from the ROAD
+group, as reported at the San Diego IETF meeting, and on numerous detailed
+discussions in the IESG following the San Diego IETF meeting.  In
+particular, this preliminary note draws heavily from the fuller IESG report
+(in preparation, Philip Almquist Editor), which will serve as a
+recommendation to the IAB.  Bob Hinden supplied the original text for the
+"Criteria For Bigger Internet Addresses" section below.  I used an
+annotated bibliography prepared by Lyman Chapin as the basis for the
+bibliography in this note.  
+
+
+3. BACKGROUND
+
+3.1 The IAB Architecture Retreat
+
+In July 1991, the IAB held a special workshop to consider critical issues
+in the IP architecture.  Of particular concern were problems related to
+growth and scaling.  The IAB felt the issues were of sufficient concern to
+begin organizing a special group to explore the issues and to explore
+possible solutions.
+
+3.2 The Santa Fe IETF 
+
+At the November 1991 Santa Fe IETF meeting, the BGP WG began a
+concerted exploration of the issues of route aggregation using address
+masks in BGP.  The BGP WG decided to form a separate subgroup to pursue
+solutions.
+
+3.3 The ROAD Group
+
+At the Santa Fe IETF, the initially separate IAB and IETF activities were
+combined into a special effort, the "Routing and Addressing (ROAD) Group",
+to look at the key IP issues of scaling in routing and addressing.  
+
+In brief, the issues involved:
+
+        - Class B address exhaustion
+        - Routing table explosion
+        - IP address space exhaustion
+
+The ROAD group was instructed to report back to the IETF at the San Diego
+(March 1992).  The specific guidelines included minimizing changes to
+hosts, must be incrementally deployable, and must provide support for
+10^^9 networks.  
+
+The ROAD group was not a traditional open IETF working group.  It was
+always presumed that this one-time special group would lead to the
+formation of other IETF WGs after its report in San Diego.
+
+The ROAD group held several face-face meetings between the November
+1991 (Santa Fe) and March 1992 (San Diego) IETF meetings (including
+several times at the Santa Fe IETF meeting, December 1991 in Reston Va,
+January 1992 in Boston, and January 1992 in Arizona).  There was also
+much discussion by electronic mail.  
+
+The group produced numerous documents, which will be made available as
+Internet-Drafts or RFCs (see Bibliography below.  These documents are
+currently available by anonymous FTP from gated.cornell.edu in directory
+pub/road.).
+
+3.4 The San Diego IETF
+
+As follow-up, the ROAD co-chairs (Peter Ford/LANL and Phill Gross/ANS)
+reported to the IETF plenary in March 1992 in San Diego.  Plus, several
+specific ROAD-related activities took place during the IETF meeting that
+week.  
+
+The Ford/Gross presentation served as a preliminary report from the ROAD
+group, pending a more complete report still in preparation (Brim92).  The
+basic thrust was:
+
+
+1)  The Internet community needs a better way to deal with current
+addresses (e.g., hierarchical address assignments for routing aggregation
+to help slow class B exhaustion and routing table explosion).  Classless
+Inter-Domain Routing (CIDR; also called "supernetting") was
+recommended.  CIDR calls for:
+
+        - A plan for hierarchical IP address assignment for
+        aggregation in routing
+
+        - Enhanced "classless" Inter-domain protocols (i.e., 
+        carry address masks along with IP addresses)
+
+        - Inter-Domain routing "Usage documents" for using 
+        addressing and routing plan with the enhanced inter-
+        domain protocols, and for interacting with IGPs
+
+
+2)  The Internet community needs bigger addresses for the Internet to
+stem IP address exhaustion.  The ROAD group explored several approaches
+in some depth.  These included "Simple CLNP" (Callon92a), "IP Encaps"
+(Hinden92), "CNAT" (Callon92b), and "Nimrod" (Chiappa91).  Some of these
+approaches were discussed at the San Diego IETF.  However, a final
+recommendation of a single approach did not emerge.
+
+
+3)  The Internet community needs to focus more effort on future directions
+for Internet routing and advanced features.
+
+
+Other ROAD-related activities at the San Diego IETF meeting included:
+
+- Monday,  8:00 - 9:00 am,  Presentation by Peter Ford and Phill Gross,
+"Internet Routing and Addressing Considerations"
+
+- Monday,  9:30-12:00pm,  Geographical Addressing and Routing (during
+NOOP WG session)
+
+- Monday,  1:30-3:30pm,  Preliminary discussion of a CIDR routing and
+addressing plan  (during ORAD session)
+
+- Tuesday,  1:30-6:00pm,  Internet Routing and Addressing BOF (to discuss
+ROAD results and to explore approaches for bigger Internet address space)  
+
+- Wednesday,  1:30-3:30pm,  CIDR Supernetting BOF (joint with BGP WG)
+
+- Thursday,  4:00-6:00pm,  Summary of ROAD activities in San Diego (by
+Phill Gross), followed by open plenary discussion.
+
+The slides for the Monday presentation (Ford92), slides for the Thursday
+summary (and notes in the Chair's message) (Gross92), and notes for the
+other sessions are contained in the Proceedings of the Twenty-Third IETF
+(San Diego).
+
+
+4. SETTING DIRECTIONS FOR THE IAB/IETF
+
+4.1 Course of Action for CIDR
+
+The IESG accepted ROAD's endorsement of CIDR.  The IESG felt that other
+alternatives (eg, C#, see Solen92) not did provide both aggregation and
+Class B conservation at comparable effort.
+
+The IESG recommends the following course of action to pursue CIDR in the
+IETF:
+
+a. Publish the CIDR overview and guidance document (Fuller92)
+
+b. Hold a BOF at the Boston IETF meeting in July 1992 (and, if necessary,
+form a followup WG) to develop a plan for "IP Address Assignment
+Guidelines".
+
+The IESG considered the creation of an addressing plan to be an
+operational issue.  Therefore, the IESG asked Bernhard Stockman (IESG
+Operational Requirements Area Co-Director) to lead an effort to develop
+such a plan.  Bernhard Stockman is in a position to bring important
+international input (Stockman92) into this effort because he is a key
+player in RIPE and EBONE and he is a co-chair of the Intercontinental
+Engineering Planning Group (IEPG).  
+
+Stockman will lead a BOF at the July IETF.  This BOF will factor in
+discussions and proposals at prior RIPE and IEPG meetings.  
+
+A specific proposal (Rekhter92) has now become the focus of this effort.
+
+c. Pursue CIDR extensions to BGP in the BGP WG 
+
+This activity has already begun at the San Diego IETF meeting.  A document
+has been distributed on the BGP WG mailing list, and should be released as
+an Internet-Draft prior to the Boston IETF meeting.
+
+d. Form a new WG to consider CIDR-related extensions to IDRP (eg, specify
+how run IDRP for IP inter-domain routing)
+
+A proposal for this WG has already been submitted to the IESG.  The IESG
+expects this WG to be able to hold its first meeting at the Boston IETF.
+
+e. Give careful consideration to how CIDR will be deployed in the Internet
+
+This includes issues such as how to maintain address aggregation across
+non-CIDR domains and how CIDR and various IGPs will need to interact. 
+Some of these issues will be considered in the WGs already mentioned. 
+However, depending on the outcome of the combined CIDR activities at the
+Boston IETF, the IESG may recommend forming a "CIDR Deployment WG",
+along the same lines as the current BGP Deployment WG.
+
+4.2 Regarding "Bigger Internet Addresses"
+
+The IESG reviewed the various approaches described by the ROAD group --
+e.g., "Simple CLNP" (Callon92a), "IP Encaps" (Hinden92), "CNAT"
+(Callon92b), and "Nimrod" (Chiappa91).
+
+The "Simple CLNP" approach has potential advantages and perhaps enjoyed
+more support than other approaches.  However, the consensus view in the
+IESG was that the full impact of transition to "Simple CLNP" (or to any of
+the proposed approaches) had not yet been explored in sufficient detail to
+make a final recommendation at this time.  
+
+The feeling in the IESG was that such important issues as 
+
+- impact on operational infrastructure, 
+- deployment of new routing protocols, 
+- assignment of new addresses, 
+- effect of supporting new protocols, such as for addres resolution,
+- effect on network management and security, and 
+- the costs to network operators and network users who must be trained
+in the architecture and specifics of any new protocols 
+
+needed to be explored in more depth before a decision of this magnitude
+should be made.
+
+At first the question seemed to be one of timing.  At the risk of
+oversimplifying some very wide ranging discussions, many in the IESG felt
+that if a decision *had* to be made immediately, then "Simple CLNP"
+might be their choice, but they would feel much more comfortable if more
+detailed information was part of the decision.
+
+Then, after exploring Simple CLNP in more depth, an attempt to develop a
+better understanding, the IESG became concerned that the significant
+changes required in hosts would make the transition complex, not
+"simple".  For example, an ostensibly simple transition scheme has been
+proposed for Simple CLNP -- install dual stacks in all new hosts and
+eventualy decommision the IP stack.  But the IESG was concerned that this
+lack of support for the very large installed base of older unconverted IP
+hosts might lead to partitioning the Internet into 2 classes -- the newer
+CLNP-only hosts and older IP-only hosts.
+
+Given this limited understanding of the potential complexity, the IESG felt
+that additional information was needed about Simple CLNP.  During the
+period to gather more information about Simple CLNP, we felt that we
+have everything to gain by also exploring other alternatives than might, in
+fact, turn out to be simpler or longer lasting.
+
+We need to evaluate any proposed new routing and addressing architecture
+to insure that there is a thorough understanding of the impact to changing
+from the current IP architecture to a new one.  We need to be confident
+that we understand which approach has the most benefits for long term
+internet growth and the least impact on the current Internet.
+
+The IESG considered what additional information and criteria was needed
+to choose between alternative approaches.  We also considered the time
+needed for gathering this additional information and the amount of time
+remaining before it was absolutely imperative to make this decision (i.e.,
+how much time do we have before we are in danger of running out of IP
+addresses *before* we could deploy a new architecture?).
+
+This led the IESG to propose a specific course of action for choosing the
+approach for bigger Internet addresses by the November IETF meeting.  
+
+The next section describes the selection criteria, and the following
+section describes the milestones and timetable for making an IESG
+recommendation at the November 1992 IETF.
+
+4.3 Information and Selection Criteria For "Bigger Internet Addresses"
+
+This section describes the information and criteria which the IESG felt
+that any new routing and addressing proposal should supply.
+
+4.3.1 Description of Proposed Scheme
+
+A complete description of the proposed routing and addressing
+architecture should be supplied.  This should be at the level of detail
+where the functionality and complexity of the scheme can be clearly
+understood.
+
+4.3.2 Changes Required
+
+All changes to existing protocols should be documented and new protocols
+which need to be developed and/or deployed should be specified and
+described.  This should enumerate all protocols which are not currently in
+widespread operational deployment in the Internet.
+
+Changes should also be grouped by the devices and/or functions they
+affect.  This should include at least the following:
+
+        - Host Changes
+        - Exterior Router Changes
+        - Interior Router Changes
+        - Domain Name System Changes
+        - Network Management Changes
+        - Operations Tools Changes
+
+4.3.4 Performance Impact
+
+The performance impact of the new routing and addressing architecture
+should be evaluated.  It should be compared against the current state of
+the art.  The performance evaluation for routers and hosts should include
+packets-per-second and memory usage projections, and bandwidth usage
+for networks.  
+
+Performance should be projected based on the following projected data
+points:
+
+-Domains        10^^3      10^^4      10^^5      10^^6      10^^7      10^^8
+-Networks       10^^4      10^^5      10^^6      10^^7      10^^8      10^^9
+-Hosts          10^^6      10^^7      10^^8      10^^9      10^^9      10^^10
+
+4.3.5 Large Internet Support
+
+The proposal should describe how it will scale to support a large internet
+of 10^^9 networks.  It should describe how the proposed routing and
+addressing architecture will work to support an internet of this size. 
+This should include, as appropriate, a description of the routing hierarchy,
+how the routing and addressing will be organized, how different layers of
+the routing interact (e.g., interior and exterior, or L1, L2, L3, etc), and
+relationship between addressing and routing.
+
+The addressing proposed should include a description of how addresses
+will be assigned and who owns the addresses (e.g. user or service
+provider). 
+
+4.3.6 Support for TCP/IP hosts than do not support the new architecture
+
+The proposal should describe how hosts which do not support the new
+architecture will be supported -- whether they receive full services and 
+can communicate with the whole internet, or if they will receive limited
+services. 
+
+4.3.7 Deployment Plan Description
+
+The proposal should include a deployment plan.  It should include the steps
+required to deploy it.  Each step should include the devices and protocols
+which are required to change and what benefits are derived at each step.
+
+A schedule should be included, with justification showing that the
+schedule is realistic.
+
+4.4 Milestones And Timetable For Making a Recommendation for "Bigger
+Internet Addresses"
+
+The IESG recommends that a call for proposals be made, with initial
+activities to begin at the July IETF and with a very strict timetable for
+reaching a recommendation coming out of the November IETF meeting.
+
+A working group will be formed for each proposed approach.  The charter
+of each WG will be to explore the criteria described in section 4.3 and
+develop a detailed plan for IESG consideration.  
+
+The WGs will have their first meeting at the July 1992 IETF meeting in
+Boston.  The WGs will be asked to submit an Internet-Draft prior to the
+November IETF, and to make presentations at the November IETF.  The IESG
+and the IETF will review all submitted proposals and then the IESG will
+make a recommendation to the IAB by December 1992. 
+
+Therefore, the firm milestones and timetable for the IESG to reach a
+recommendation on bigger Internet addresses are:
+
+  June 1992 -- Issue a call for proposals to form working groups to
+explore separate approaches for bigger Internet addresses.  Distribute the
+"selection criteria" for public review.
+
+  July 1992 -- Convene proposed WGs at the Boston IETF meeting.  The
+"selection criteria" will be discussed publicly, and modified as
+appropriate.
+
+  July-November 1992 -- WGs continue deliberations by email and/or face-
+face meetings.
+
+ October 1992 -- Each WG will be required to submit a written description
+of the approach and how the criteria are satisfied.  These documents must
+be distributed as Internet-Drafts for public review 30 days prior to the
+November IETF meeting to be considered.
+
+ November 1992 -- Each WG will be given an opportunity to present its
+findings in detail at the November 1992 IETF meeting.
+
+ December 1992 -- Based on the written documents, the presentations,
+and public discussions (by email and at the IETF), the IESG will forward a
+recommendation to the IAB.
+
+
+5. SUMMARY
+
+The problems of Internet scaling and address exhaustion are
+fundamentally important to the continued health of the Internet, and to
+the long-term success of such programs as the U.S. NREN and the European
+EBONE.  Finding and embarking on a course of action is critical.  However,
+the problem is so important that we need the depth of information
+described in section 4.3 before a decision is made.
+
+Pending the outcome of further discussion of this note (eg, in the IESG, the
+big-internet list, and in the IAB), the IESG will move CIDR forward as
+described in section 4.1, and will issue a call for proposals for a bigger
+Internet address space with the intent to begin immediately implementing
+the timetable in section 4.4.
+
+
+6. FOR MORE INFORMATION
+
+To become better acquainted with the issues and/or to follow the
+progress of these activities:
+
+ - Please see the documents in the Bibliography below (the ROAD group
+documents will soon be issued as Internet-Drafts or RFCs).
+
+ - Join the Big-Internet mailing list 
+(big-internet-request@munnari.oz.au), where the general issues have been,
+and will continue to be, discussed.
+
+ - Each separate new WG formed will have an open mailing list.  Please
+feel free to join each as they are announced on the IETF mailing list.  
+
+- Attend the July IETF in Boston (where the WGs will first meet) and the
+November IETF in Washington DC (where the WGs will report and the IESG
+recommendation will be formulated).  
+
+
+Note: In order to receive announcements of:  
+
+        - future IETF meetings and agenda,
+        - new IETF working groups, and 
+        - the posting of Internet-Drafts and RFCs,
+
+please send a request to join the IETF mailing list (ietf-request@isi.edu).
+
+
+7. BIBLIOGRAPHY
+
+
+-Documents and Information from IETF/IESG:
+
+
+[Ford92] "Routing And Addressing Considerations", Peter Ford and Phill
+Gross, Proceedings of the Twenty-Third IETF, March 1992.
+
+[Gross92] Chair's Message and Minutes of the Open IETF Plenary, Phill
+Gross, Proceedings of the Twenty-Third IETF, March 1992.
+
+[Almq92] "IESG Recommendations on Routing and Addressing", IESG (Philip
+Almquist editor), in preparation, (current draft May 3, 1992)
+
+
+-Documents directly resulting from the ROAD group
+
+
+[Fuller92] "Supernetting:  an Address Assignment and Aggregation
+Strategy", Vince Fuller, Tony Li, Jessica Yu, and Kannan Varadhan (March 9,
+1992).
+
+[Hinden92] "New Scheme for Internet Routing and Addressing (ENCAPS)",
+Bob Hinden (March 16, 1992).
+
+[Callon92a] "A Simple CLNP-based Proposal for Internet Addressing and
+Routing", Ross Callon (April 2, 1992).
+
+[Deering92] "City Codes:  An Alternative Scheme for OSI NSAP Allocation
+in the Internet", Steve Deering (January 7, 1992).
+
+[Brim92] "Summary Report from the Routing and Addressing (ROAD) Group",
+Scott Brim (Editor), preliminary draft (April 3, 1992)
+
+[Callon92b] CNAT
+
+
+-Related Documents
+
+
+[Stockman92] "A Proposal for a Global Internet Addressing Scheme", Daniel
+Karrenberg and Bernhard Stockman, Internet-Draft (May 28, 1992).
+
+[Rekhter92] "Guidelines for IP Address Allocation", Y. Rekhter and T. Li,
+Internet-Draft (May 1992).
+
+[Solen92]  "A Revision to IP Address Classifications", F. Solensky and F.
+Kastenholz (March 1992).
+
+[Wang92]  "A Two-Tier Address Structure for the Internet:  A Solution to
+the Problem of Address Space Exhaustion", Z. Wang and J. Crowcroft, RFC
+1335 (May 1992).
+
+[Callon91]  "Guidelines for OSI NSAP Allocation in the Internet", Ross
+Callon, Ella Gardner, and Richard Colella, RFC 1237 (July 1991).
+
+[Tsuchiya92a]  NAT, Internet-Draft
+
+[Tsuchiya92b]  "The P Internet Protocol (PIP)", Internet-Draft.
+
+[Chiappa91]  "NIMROD", Internet-Draft
+
+

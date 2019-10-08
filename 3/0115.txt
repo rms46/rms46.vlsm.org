@@ -1,0 +1,39 @@
+NomCom Chair -- 18 January 1993 -- IETF-Announce
+------------------------------------------------
+
+IESG/IAB Nominations Committee
+
+
+As you should have already seen in a note from Vint Cerf, I am now
+serving as the chair of the IAB and IESG Nominations Committee.  One of
+my first responsibilities is to staff the committee, randomly selecting
+the seven members from a pool of individuals meeting the guidelines set
+forth by the POISED Working Group.
+
+Consequently, we need a pool.  Vint started the process on January 8th
+and I have received the list of those who responded to that call.
+However, the pool is still too small.  I am therefore extending the
+deadline for you to volunteer to be a part of the pool.  This means
+that if you have attended at least two IETF plenary meetings and are
+willing to work on this task over the next 4-6 weeks, then you should
+send a mailgram to me at
+
+        ietfnom@cs.utk.edu
+
+stating that you are interested in serving.  Do it now -- if you are
+like me, you'll forget if you put it off again.
+
+There are at least two good reasons why you should give serious
+consideration to this call for volunteers.  First, it is a civic
+responsibility -- some of us must make investments in the system if it
+is going to be successful.  Second, failure to volunteer should result
+in forfeiture of your right to complain about any results not to your
+liking.  No matter what your motivation is, if you'll be willing to
+serve, I'll do my best to keep this task from being onerous.
+
+Thanks in advance for your willingness to volunteer.
+
+
+Jeff Case
+IAB and IESG Nominations Committee Chair
+

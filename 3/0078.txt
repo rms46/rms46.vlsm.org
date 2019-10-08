@@ -1,0 +1,35 @@
+ISOC President -- 17 November 1994 -- IETF-Announce
+---------------------------------------------------
+
+IAB and IESG Nominations Chair - John Curran/BBN
+
+
+I am pleased to report that John Curran at BBN's Internet Services
+Company has agreed to serve as the 1995 IAB/IESG nominations
+chairperson.
+
+This is, as always, an ambitious undertaking and now it is your
+professional responsibility to assist in any way you can.
+
+Persons who have attended at least 2 IETF meetings are eligible to
+volunteer to serve on the nominations committee. Volunteers should send
+email to:
+
+nomcom@bbn.com
+
+with appropriate contact information (email address, work telephone,
+work fax, home telephone, home fax, postal address for any
+correspondence). The list of volunteers will be verified as to
+qualification using the IETF secretariat attendance records at CNRI. A
+nominations committee will be formed from a randomly selected subset of
+the qualified volunteers.
+
+A list of IESG positions to be filled and IAB positions to be
+reconsidered will be published shortly. Please give serious
+consideration to possible candidates to fill these posts and make these
+suggestions known to John, who will share them with the committee.
+
+Vint Cerf
+President, Internet Society
+
+

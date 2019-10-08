@@ -1,0 +1,29 @@
+ISOC Chair -- 09 August 2000 -- IETF-Announce
+=============================================
+2000 IESG/IAB Nominations Committee Chair
+
+
+I am pleased to report that Bernard Aboba, of Microsoft, has agreed to
+serve as the 2000 IAB/IESG nominations chair.  Bernard can be reached at
+aboba@drizzle.com
+
+This is, as always, an ambitious undertaking and now it is your obligation
+to accept your own professional responsibilities to assist in any way you can.
+
+A Call for Nominations will soon be sent to the IETF Announcement
+list.  Persons who have attended at least 2 IETF meetings are eligible to
+volunteer to serve on the nominations committee.  The list of volunteers
+will be verified as to qualification using the IETF Secretariat attendance
+records.  A  nominations committee will be formed from a randomly selected
+subset of the qualified volunteers.
+
+A list of IESG positions to be filled and IAB positions to be reconsidered
+will be published shortly.  Please give serious consideration to possible
+candidates to fill these posts and make these suggestions known to Bernard,
+who will share them with the committee.
+
+Thank you,
+Don Heath
+President and CEO
+Internet Society
+

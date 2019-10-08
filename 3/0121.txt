@@ -1,0 +1,25 @@
+NomCom -- 24 March 1993 -- IETF
+-------------------------------
+
+IAB/IETF Nominations Committee
+
+
+the purpose of this note is to provide a brief status report
+
+we're still working
+we're not done yet
+we hoped to have been done by last friday but that wasn't possible
+
+the pressure to finish is high
+the pressure to produce quality candidates is high
+we are dealing with these competing pressures
+
+we met by teleconference yesterday and plans to meet again later today
+
+we hope to finish the IAB nominations today and the IESG nominations shortly
+thereafter (barring a miracle, it is almost certainly too much to hope that
+we can finish everything today)
+
+regards,
+jdc
+

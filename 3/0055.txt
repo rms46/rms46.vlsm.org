@@ -1,0 +1,29 @@
+NomCom -- 15 March 1999 -- IETF-Announce
+----------------------------------------
+
+NOMCOM IAB Results 
+
+This year, over 45 persons were suggested to the nominations committee
+and considered for the IAB.  Many would have been excellent choices
+and it was hard to narrow it down to the number of openings available.
+
+The nominations committee is pleased to announce that the following
+slate has been nominated and confirmed for the open positions on the
+Internet Architecture Board.  They take their seats at the end of the
+IETF meeting next week in Minneapolis.  All are for regular two year
+terms.
+
+        Harald Alvestrand
+        Ran Atkinson
+        Rob Austein
+        Steve Deering
+        Tony Hain
+        Geoff Huston
+
+Thanks,
+Donald, chair, 1998-1999 nomcom
+=====================================================================
+ Donald E. Eastlake 3rd   +1 914-276-2668     dee3@torque.pothole.com
+ 65 Shindegan Hill Road, RR#1  +1 914-784-7913(work)  dee3@us.ibm.com
+ Carmel, NY 10512 USA
+

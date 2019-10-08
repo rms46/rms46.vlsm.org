@@ -1,0 +1,64 @@
+IAB Chair -- 14 February 1997 -- IETF
+-------------------------------------
+
+IETF,
+
+I wish to thank Geoff Huston for the work of the Nominating Committee in
+selecting new IAB members. The four outgoing members are:
+
+        J Allard                          
+        Elise Gerich
+        Yakov Rekhter                             
+        Chris Weider
+
+I'd like specifically to thank Elise for her contributions to
+operational issues the IAB has dealt with, Chris for his contributions
+towards internationalization, and Yakov for his contributions on     
+IP addressing and routing issues. 
+
+Thanks are also due to Allison Mankin, who is leaving the the
+IESG, for being an effective liaison from the IESG to the IAB.
+
+The new IAB elects its chair annually upon taking office.
+The new IAB, effective the evening of April 10, 1997, will be:
+
+Nominated by NomCom and approved by ISOC:
+=========================================
+
+Steve Bellovin *            [US]
+Brian Carpenter *           [UK]
+Jon Crowcroft *             [UK]
+Steve Deering               [US]
+Robert Elz *                [AU]
+Tony Hain                   [US]
+Erik Huizer                 [NL]
+Cyndi Jung                  [US]
+John Klensin *              [US]
+Bob Moskowitz               [US]
+Charlie Perkins             [US]
+Radia Perlman *             [US]
+
+* term expires in Spring 1998. Others expire in Spring 1999.
+
+Others:
+=======
+
+TBD               (IESG liaison)
+Fred Baker        (IETF chair)
+Jon Postel        (IANA/RFC Editor)
+Abel Weinrib      (Executive Director/IRTF Chair)
+Don Heath         (ISOC liaison)
+
+For general information about the IAB, please see
+http://www.iab.org/iab
+
+You can send mail to the IAB at iab@isi.edu
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  Brian E Carpenter (IAB Chair)           brian@hursley.ibm.com
+  IBM United Kingdom Laboratories         phone: +44 1962 816833
+  MP 185                                  fax:   +44 1962 818101
+  Hursley Park
+  Winchester
+  Hampshire SO21 2JN, UK
+

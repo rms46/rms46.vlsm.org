@@ -1,0 +1,38 @@
+NomCom Chair -- 6 December 1994 -- IETF-Announce
+------------------------------------------------
+
+Establishment of the 1995 IAB/IESG -- Nominations Committee
+
+
+Folks,
+
+I am pleased to report that members of the 1995 IAB/IESG Nominations
+Committee have been selected. I received 30 volunteers for a total of 
+ten positions on the nominating committee and the Rev. Charles Hume of 
+the Mansfield Congregational Church drew forth 10 names by random drawing.
+
+The resulting Nominations Committee membership is as follows:
+
+Marshall Rose 
+Fred Baker
+Tony Genovese 
+Paul Traina
+Roxana Bradescu 
+Greg Ruth 
+Peter S. Ford
+Michael Mealling 
+Steven Waldbusser 
+Charlie Perkins 
+
+The Nominations Committee will also have several non-voting liaisons from 
+the IESG, the IAB, the IRSG, and the ISOC Trustees. Jon Postel will serve 
+as the IRSG liaison, and other liaisons are being assigned at this time.
+All commitee members may be reached via the mailing list "nomcom@bbn.com".
+
+An announcement of the IAB and IESG positions to be filled will be made 
+shortly along with information on how to send suggestions to the committee.
+
+Thank you,
+John Curran
+Chair, 1995 IAB/IESG Nominations Committee
+

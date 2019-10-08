@@ -1,0 +1,34 @@
+NomCom Chair -- 11 January 1996 -- IETF-Announce
+------------------------------------------------
+
+IESG/IAB Nominations Committee Web Page
+
+As chair of the IAB/IESG NomCom, I'd like to invite and encourage the
+broadest participation by the entire IETF community in the nominations
+process.
+
+For details, please review the web page at
+
+http://www.advanced.org/Almes/nomcom-top.htm
+
+which includes:
+<> status of the nominations process for the IAB
+<> status of the nominations process for the IESG
+<> information on how to contact the NomCom itself.
+
+The NomCom reviews all open positions. It may re-nominate the current
+occupant of a position or may nominate a replacement, based on comments
+and suggestions from the community. The members of the NomCom strongly
+request the participation of the entire IETF community in the
+nominating process. Each member of the IETF should feel free to
+nominate individuals for any of the open IAB or IESG positions. Each
+member of the IETF should also feel free to make suggestions to the
+NomCom, including comments about possible nominees.
+
+-- Guy
+=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Guy T Almes <almes@advanced.org> Advanced Network & Services
+200 Business Park Drive Voice: 914/273-7863
+Armonk, NY 10504 Fax: 914/273-1809
+=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+

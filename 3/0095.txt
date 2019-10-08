@@ -1,0 +1,33 @@
+IESG -- 5 September 1991 -- ftp://ftp.ietf.org/iesg/iesg.91-09-05
+-----------------------------------------------------------------
+
+Mailinglist vs Face To Face Meetings
+
+[...]
+Minutes
+-------
+[...]
+
+5. Technical Management Issues
+
+Several issues have been raised on the IETF mailing list in the past
+week.  Among these issues was the difficulty of reaching consensus on
+electronic mailing lists.
+
+A discussion triggered in part by discord in the SMTP extensions
+working group has been brought to the IETF mailing list.  Often there
+is a dis-continuity between the apparent consensus on a mailing list
+and the apparent consensus in a face to face meeting.  Because these
+two groups may be composed of different actor, it is often difficult
+to reach closure.  The question asked was: "Can the IETF use
+electronic mail as a means to do business and reach consensus?". The
+IESG found the discussion interesting and reached the following
+tentative position.
+
+POSITION: Mailing lists are vital for input and participation of the
+IETF working groups, however, face to face meetings are more efficient
+at negotiating and reaching consensus.  When a conflict arises on a
+mailing list which cannot be resolved in a face to face meeting due to
+the inability of a principle to travel, the chairman has the
+obligation to act as the mediator and break the impasse.
+

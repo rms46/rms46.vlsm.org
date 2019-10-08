@@ -1,0 +1,27 @@
+NomCom -- 6 March 1999 -- IETF-Announce
+---------------------------------------
+
+NOMCOM IESG Results 
+
+The IETF Nominations Committee is pleased to announce its slate for
+the open IESG positions.  These candidates have been nominated and
+confirmed and take their positions at the end of the March IETF
+meeting in Minneapolis.  There were many excellent candidates
+considered and it was frequently difficult to make the final choice.
+
+For two year terms as Area co-Director except as othewise indicated:
+
+        Scott Bradner - Transport
+        Randy Bush - Operations and Management
+        Patrik Faltstrom - Applications
+        Thomas Narten - Internet
+        Erik Nordmark - Internet - 1 year
+        Dave Oran - Routing
+
+Thanks,
+Donald, 1998-1999 nomcom chair
+=====================================================================
+ Donald E. Eastlake 3rd   +1 914-276-2668     dee3@torque.pothole.com
+ 65 Shindegan Hill Road, RR#1  +1 914-784-7913(work)  dee3@us.ibm.com
+ Carmel, NY 10512 USA
+

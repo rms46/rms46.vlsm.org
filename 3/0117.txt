@@ -1,0 +1,35 @@
+NomCom Chair -- 24 January 1993 -- IETF
+---------------------------------------
+
+
+IAB/IESG Nominations Committee status
+report and final volunteer call
+
+
+The list of volunteers to serve of the IAB/IESG nominations committee has been
+shaping up nicely.  Thanks to all who have volunteered thus far.
+
+I have been holding the period to receive additional volunteers open until
+the first of the week because private e-mail tells me that we may pick up a
+bit more European representation for the pool of names if we do so.  However,
+we do need to get started on our work, so this is your last chance:  any
+additional volunteers should identify themselves by sending email to 
+ietfnom@cs.utk.edu to be received by the close of business (east coast USA
+time) on Monday Jan 25th.  We'll let everyone know the results of the random
+selection later in the week.
+
+Anyone who is interested in serving should be willing to spend about 5 hours
+per week for about 4-6 weeks (these are only estimates -- your mileage may vary)
+and should have attended at least two IETF plenaries.
+
+Each person who thinks they volunteered should have received a confirmation --
+if you volunteered and if you have not received a confirmation, please contact
+me.
+
+
+regards,
+jdc
+-----
+Jeff Case
+IAB/IESG Nominations Committee Chair
+

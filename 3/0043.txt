@@ -1,0 +1,40 @@
+NomCom Chair -- 19 October 1998 -- IETF-Announce
+------------------------------------------------
+
+Nomcom Membership 
+
+
+The selection procedure previously announced at
+<http://www.ietf.org/mail-archive/ietf-announce/msg01893.html> has
+been run selecting the ten voting members of the next nominations
+committee and the required appointed members have also been selected.
+Any objections that the parameters were not properly entered or the
+selection algorithm was not properly run with regard to voting members
+must reach me by midnight Wednesday, October 21.  Baring changes due
+to such objections, the next Nominations Committee is as listed below.
+The nomcom mailing list and milestones will be posted shortly.
+
+Non-Voting
+ Donald Eastlake 3rd (chair) <dee3@us.ibm.com>,<dee3@torque.pothole.com>
+ Michael St Johns (previous nomcom) <stjohns@corp.home.net>
+ Steven Bellovin (IAB) <smb@research.att.com>
+ Bert Wijnen <IESG) <wijnen@vnet.ibm.com>
+
+Voting:
+ 3. Bob Hinden <hinden@iprg.nokia.com>
+ 8. R A Lichtensteiger <rali@meitca.com>
+ 9. Bob Mahoney <bobmah@mit.edu>
+15. Stephen R. Hanna <steve.hanna@sun.com>
+20. Lixia Zhang <lixia@cs.ucla.edu>
+22. Keith McCloghrie <kzm@cisco.com>
+25. David Meyer <dmm@cisco.com>
+34. Randall Gellens <randy@qualcomm.com>
+36. Glen Zorn <gwz@pinky.microsoft.com>
+41. Avri Doria <avri@apocalypse.org>
+
+=====================================================================
+ Donald E. Eastlake 3rd   +1 978-287-4877    dee3@torque.pothole.com
+ 318 Acton Street         +1 978-371-7148(fax)       dee3@us.ibm.com
+ Carlisle, MA 01741 USA   +1 914 784 7913
+
+

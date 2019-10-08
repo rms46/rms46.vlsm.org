@@ -1,0 +1,70 @@
+Phill Gross -- 28 March 1994 -- IETF
+------------------------------------
+
+IETF transition
+
+
+
+IETF'ers,
+
+In January of this year, I joined MCI's new Data Services Division as 
+the Director of Broadband Engineering. As the title implies, I will 
+be responsible for broadband projects, including those relating
+to the Internet. (Sorry to be so vague, but no product press 
+releases here. :-) I will be reporting to Lance Boxer, VP of Data
+Engineering, and I will be working closely with Vint Cerf, in his new
+role as MCI's Sr VP of Data Architecture.
+
+My first 2 months at MCI have been action packed - it's been a fun, 
+hectic, and challenging ride so far in which we are already planning 
+a range of new data services. 
+
+When I decided to join MCI, they promised full support for my 
+committment as IETF Chair. MCI has been a strong Internet supporter
+over the years, and I would have expected no less.
+
+However, chairing the IETF is not exactly a small commitment, and 
+after only a short period of being onboard, it became clear that I 
+would not be able to give full measure to either IETF or MCI, if I 
+continued to try to do both. 
+
+Therefore, in February, I notified the current nominations committee
+that I would be stepping down as IETF Chair after this week's meeting
+in Seattle. (My term would have ended in 1995. Last year, in the 
+first round of IETF nominations under the new POISED process, I was 
+appointed to a new two year term as IETF chair.) 
+
+As one of the founders of the IETF, I have often put the IETF first, 
+ahead of my own professional career. I've been Chair of the IETF for 
+seven years of crucial growth. We've gone from an initial meeting of 
+15 people in January 1986 to regular meetings of 500-700 attendees with 
+50-70 working groups. During this time, and with the extensive help 
+and support of too many to even begin to list here, I established such 
+IETF institutions as Proceedings for every meeting, Internet-Drafts, 
+and the notion of working groups with charters. I created the IESG 
+(with technical areas and Area Directors) which is now responsible for 
+all Internet standardization. 
+
+It's been a good run, but now it's time for me to accept a new set of 
+challenges.
+
+I certainly don't need to tell this audience that our young industry 
+is entering an important new phase, with new services, new players, 
+and new paradigms. I look forward to my new position, and the new 
+challenges it presents, as an important part of my personal growth in
+this new phase. 
+
+However, I certainly intend to remain a close part of this community.
+The IETF has meant too much to me not to remain closely involved. 
+(Besides, the nominating committee has forwarded my name as a candidate 
+on the new IAB. :-) 
+
+Plus, I'm the only person who has attended *every* IETF meeting since 
+that initial 15 person meeting in 1986. That's not a record I'm about 
+to break!
+
+Let me conclude with sincere thanks for the support and assistance over
+the years of all those who really made it possible. I thank you.
+
+Phill Gross
+

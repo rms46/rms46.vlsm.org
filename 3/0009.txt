@@ -1,0 +1,43 @@
+Scott Bradner --  Sun, 26 Jun 1994 -- B-I
+=========================================
+
+IPng ADs request
+
+
+        Picking up on something that Noel mentioned in a posting a while
+back, we would like to request that a particular issue be discussed.
+
+        One thing that seems to have been missing in the recent extensive
+discussions about address size options is a understanding of
+whether the transport level 'name'  should be the same as the internetwork
+level 'name', as they are with the current IPv4 "address",  or be different
+in some way.
+
+        In IPv4 the transport name is:
+                <src port, src IPaddress, dst port, dst IP address>
+        The question referrs to the two IP address fields.
+
+        Different people seem to often be making different assumptions
+about the answer to this question in recent notes, with the result that a
+lot of the discussion was not as productive as it could have been, due to
+inconsistant terminology.
+
+        If it is possible to reach consensus on this issue, it will almost
+certainly make it easier to reach consensus on some of the other open
+issues regarding "addresses".
+
+        Note that it is not necessary to assume that the names in question
+are either fixed or variable length. Obviously, whether you have one or two
+is related to the details of what each would look like, but it should be
+possible to consider this without getting diverted by the contentious issue
+of fixed/variable.
+
+        Please address the following questions:
+
+1/ are the transport and internetwork level names the same thing?
+
+2/ if not, are they totally different or is the transport level name
+        part of the internetwork level name?
+
+
+Scott & Allison

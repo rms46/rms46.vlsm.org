@@ -1,0 +1,111 @@
+http://www.drizzle.com/~aboba/internaut/nomcom2k.txt
+====================================================
+
+FINAL Nomcom 2000 Volunteers List (Verified)
+
+1. Matt Holdrege, <matt@ipverse.com>
+2. John Tavs, <tavs@packeteer.com>
+3. Paul Hoffman, <phoffman@imc.org>
+4. William B. Norton, <wbn@umich.edu>
+5. Craig Metz, <cmetz@inner.net>
+6. Don Fedyk, <dwfedyk@nortelnetworks.com>
+7. Debanjan Saha, <debanjan@tellium.com>
+8. Bing Liu, <bliu@chiaro.com>
+9. Abha Ahuja, <ahuja@merit.edu>
+10. John Loughney, <john.loughney@nokia.com>
+11. Ian Duncan, <iduncan@nortelnetworks.com>
+12. Theodore Ts'o, <tytso@mit.edu>
+13. Cheng-Yin Lee, <leecy@nortelnetworks.com>
+14. Scott Hahn, <scott.hahn@intel.com>
+15. Tom Hiller, <tom.hiller@lucent.com>
+16. David T. Perkins, <dperkins@dsperkins.com>
+17. Mark Gaynor, <gaynor@eecs.harvard.edu>
+18. Doug Royer, <Doug.Royer@software.com>
+19. Max Riegel, <maximilian.riegel@icn.siemens.de>
+20. Graham Travers, <graham.travers@bt.com>
+21. Marshall T. Rose, <mrose@dbc.mtview.ca.us>
+22. Michael Mealling, <michaelm@netsol.com>
+23. Greg Vaudreuil, <gregv@lucent.com>
+24. John Leong, <johnleong@research.bell-labs.com>
+25. Alec Brusilovsky, <abrusilovsky@lucent.com>
+26. Danny McPherson, <danny@tcb.net>
+27. Dorian Kim, <dorian@blackrose.org>
+28. Bob Hinden, <hinden@iprg.nokia.com>
+29. Igor Faynberg, <faynberg@bell-labs.com>
+30. Hui-Lan Lu, <huilanlu@lucent.com>
+31. Harish Bhatt, <harish@ieee.org>
+32. Patricia Egen, <pregen@egenconsulting.com>
+33. Spencer Dawkins, <spencer.dawkins@fnc.fujitsu.com>
+34. David Robinson, <david.robinson@ebay.sun.com>
+35. James Luciani, <james_luciani@mindspring.com>
+36. Matt Crawford, <crawdad+nomcom@fnal.gov>
+37. Andrew G. Malis, <andy.malis@vivacenetworks.com>
+38. Georg Carle, <carle@fokus.gmd.de>
+39. Elwyn B Davies, <elwynd@nortelnetworks.com>
+40. John Hawkinson, <jhawk@genuity.net>
+41. Lixia Zhang, <lixia@cs.ucla.edu>
+42. Jaap Akkerhuis, <jaap@sidn.nl>
+43. Tove Madsen, <tove.madsen@nortelnetworks.com>
+44. Stuart Cheshire, <chesire@apple.com>
+45. Hadriel Kaplan, <hadriel@nortelnetworks.com>
+46. David Durham, <david.durham@intel.com>
+47. Robert L. Fink, <fink@es.net>
+48. Kevin Dubray, <kdubray@ibnets.com>
+49. Claudio Allocchio, <claudio.allocchio@garr.it>
+50. Lyndon Ong, <long@nortelnetworks.com>
+51. Tom Taylor, <taylor@nortelnetworks.com>
+52. M. Scott Corson, <mscorson@ix.netcom.com>
+53. Chris Apple, <capple@ecal.com>
+54. Eliot Lear, <lear@cisco.com>
+55. Morteza Ansari, <morteza@eng.sun.com>
+56. Carl-Uno Manros, <manros@cp10.es.xerox.com>
+57. W. Mark Townsley, <townsley@cisco.com>
+58. George Swallow, <swallow@cisco.com>
+59. Perry E. Metzger, <perry@piermont.com>
+60. Pete Resnick, <presnick@qualcomm.com>
+61. Alain Durand, <alain.durand@eng.sun.com>
+62. Basavaraj Patil, <basavaraj.patil@nokia.com>
+63. Sean Doran, <smd@ebone.net>
+64. Jon Saperia, <saperia@mediaone.net>
+65. Steve Hanna, <steve.hanna@sun.com>
+66. Radia Perlman, <radia.perlman@east.sun.com>
+67. Alex Conta, <aconta@txc.com>
+68. Vern Paxson, <vern@aciri.org>
+69. John Drake, <jdrake@calient.net>
+70. Robert M. Enger, <enger@seka.erols.net>
+71. Bala Rajagopalan, <braja@tellium.com>
+72. Randall P. Stewart, <randall@stewart.chicago.il.us>
+73. Edward Lewis, <lewis@tislabs.com>
+74. Ron da Silva, <ron@aol.net>
+75. Vijay Srinivasan, <vijay.srinivasan@cosinecom.com>
+76. Dave Allan, <dallan@nortelnetworks.com>
+77. Phil Roberts, <qa3445@email.mot.com>
+78. Pat Calhoun, <Pat.Calhoun@eng.sun.com>
+79. Rodney Thayer, <rodney@tillerman.to>
+80. Roger Kermode, <Roger.Kermode@motorola.com>
+81. James A. Benedict, <grunt@nortelnetworks.com>
+82. Joseph T. Klein, <jtk@titania.net>
+83. William Allen Simpson, <wsimpson@greendragon.com>
+84. Suzanne Woolf, <woolf@isi.edu>
+85. Stephen Ng, <sfwng@nortelnetworks.com>
+86. Fiffi Hellstrand, <fiffi@nortelnetworks.com>
+87. Jamal Hadi Salim, <hadi@nortelnetworks.com>
+88. Hal Sandick, <hsandick@nortelnetworks.com>
+89. Will Leland, <Wel@research.telcordia.com>
+90. Jozef Babiarz, <babiarz@nortelnetworks.com>
+91. Nathan Lane, <ndlane@wal-mart.com>
+92. Mauricio Arango, <mauricio.arango@sun.com>
+93. Chris Burke, <chris.burke@motorola.com>
+94. Nancy M. Greene, <ngreene@nortelnetworks.com>
+95. Johnny Eriksson, <bygg@cafax.se>
+96. Randall Gellens, <randy@qualcomm.com>
+97. Kwok Ho Chan, <khchan@nortelnetworks.com>
+98. Barbara Fraser, <byfraser@cisco.com>
+99. James Seng, <james@seng.cc>
+100. Mark Allman, <mallman@grc.nasa.gov>
+101. Bill Woodcock, <woody@zocalo.net>
+102. Hilarie Orman, <horman@novell.com>
+103. Dan Romascanu, <dromasca@avaya.com>
+104. Erik Guttman, <erik.guttman@sun.com>
+
+

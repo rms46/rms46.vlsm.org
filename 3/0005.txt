@@ -1,0 +1,36 @@
+Phill Gross  --  Thu, 14 Oct 1993 -- IETF-Announce
+==================================================
+
+IESG Handling of IPng documents
+
+
+The IESG has determined how documents from the IPng candidates will be
+treated when they are submitted to the IESG for publication as RFCs.
+
+ 1. All IPng-related documents will be submitted for publication as
+    RFCs in normal fashion; that is, as soon as the working group and
+    the area directorate recommends that the IESG review them for
+    publication. All IPng-related RFCs will be published with
+    Experimental status. All IPng-related RFCs will remain in
+    Experimental status until a single IPng is selected.
+
+2. At some point, one IPng shall be selected, and it will be moved onto
+   the standards track as defined in RFC1310 (or its successor). An
+   Applicability Statement will be prepared to assign a status of
+   "Recommended" as the Common IPng for Internet interoperability.
+
+3. Once a "Common IPng" protocol has been selected, the other (former)
+   IPng candidates will be treated in normal fashion.  That is, they
+   may eventually be moved to Historic status, or, if recommended by
+   the working group and area directorate, they may be moved onto the
+   standards track. However, because there can be only one level three
+   protocol with a status of "Recommended as the Common IPng for
+   Internet interoperability", an Applicability Statement must be
+   prepared that clearly distinguishes between the subject protocol and
+   the "Recommended Common IPng".
+
+
+Phill Gross
+IETF Chair
+
+

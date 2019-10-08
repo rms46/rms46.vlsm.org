@@ -1,0 +1,229 @@
+NomCom Chair -- 04 February 1997 -- IETF-Announce
+-------------------------------------------------
+
+IETF Nominations Committee Report
+
+The  IETF  Nominations  Committee  has  now  completed its work in
+selecting candidates for the positions in the IESG and IAB whose term
+expires  at  the April 1997 IETF meeting.
+
+The candidates have been selected following extensive consultation
+regarding the consensus view of the IETF community's perceptions of the
+qualifications appropriate  for  these positions, and the Nominations
+Committee has adhered strictly to the process described in the document
+RFC  2027  throughout  its schedule.
+
+The  Nominations  Committee's  activities  commenced in mid-October
+1996, so this concluding report is being passed to the IETF somewhat
+earlier than has been the case in previous years. We were aware that
+in  the  course  of  the committee's  work  many  highly  qualified
+individuals, and their employers, were willing to make  an  open
+commitment  of  the  individuals'  time  and energies  to  levels in
+excess of 1 - 2 working days per week for a two year period. We felt
+that we could not request the many individuals  involved  to hold
+open  this  generous  commitment for more than a few weeks, so we have
+worked diligently to bring the process through to this stage within a
+timely fashion, to ensure that we did not abuse their generosity any
+further  than was strictly necessary.
+
+Four  IESG  positions  are  to  be filled by the IETF Nominations
+process in 1997. These positions are Transport, Internet, Applications
+and  Operations and Management.
+
+The  following  individuals  have  been  selected  as  candidates  for
+these positions, and their candidature confirmed by the IAB:
+
+Applications Co-Area Director
+
+Harald T. Alvestrand  Harald.T.Alvestrand@uninett.no
+
+  Harald  is  the  incumbent  in this position and the committee has noted a
+  very high level of confidence in Harald's carriage of this position within
+  the IETF.
+
+  Harald is employed at UNINETT, the  Norwegian  academic  network,  in  the
+  position  of  "services  manager".  This  entails  oversight  over UNINETT
+  application-level services, and initiation  and  monitoring  of  UNINETT's
+  development  activities  in the applications area. Harald is also actively
+  in TERENA activities in addition to his IETF activities. He high level  of
+  acitivity in the IETF includes autorship of 7 curently active drafts and 7
+  RFCs.  UNINETT  management  has committed to continue to support Harald in
+  his IESG role.
+
+
+Internet Co-Area Director
+
+Thomas Narten narten@raleigh.ibm.com
+
+  Thomas  brings a high level of technical depth and breadth to the
+  Area and to the IESG. Thomas has a very high level of understanding
+  of the Internet Area, and also has a strong  working  knowledge  of
+  routing  end  to  end transport  and security. The committee is of
+  the view that this will be of assistance on the IESG in understanding
+  how the activities of various  WGs impact each other.
+
+  Thomas  currently  is  employed  by IBM, TCP/IP Technologies, and
+  prior to this was an Adjunct Assistant Professor in the Computer
+  Science Department at Duke University. He has authored RFCs 1970 and
+  1971 as well as numerous research publications.
+
+
+Operations and Management Co-Area Director
+
+John Curran  jcurran@bbnplanet.com
+
+  John  is  a  well respected IETF member, currently Co-chair of the
+  Uniform Resource Name WG (APP), a participant in the Application Area
+  Directorate, a past participant in the Ops Area Directorate and the
+  IPNG  Directorate.  He was also the 1995 IETF NomCom Chair.
+
+  He  is  the  Chief  Technical  Officer, BBN Planet, and brings a
+  wealth of direct operational experience to the IETF. He has a
+  thorough understanding of the operational and management
+  requirements  posed  by  complex  large scale  networks,  and  is
+  highly  respected wthin the Internet operations community.
+
+Transport Co-Area Director
+
+Scott Bradner  sob@harvard.edu
+
+  Scott  is  also  a  well  respected  IETF  member,  and  has served
+  as the Operations Area Director  for  the  past  5  years.  He  has
+  authored  an extensive number of RFCs.
+
+  Scott  has been selected as the candidate for the Transport Area
+  following much consultation within the IETF community over the status
+  of  this  Area and  its  direction. The Nominations Committee did
+  consider very carefully the merits of continuing with a purely
+  transport-oriented direction,  with an admitted high component of
+  activity which borders of research activity, and  weighed  this
+  against the introduction of operational expertise into the Area at
+  the Area Director level. The  committee  formed  the  distinct
+  impression  from  their  consultation that the latter course of
+  action, of the nomination of an indivdual with extensive operational
+  expertise,  was necessary  at  this point in time, although some
+  potential difficulties in undertaking this were noted. Scott is
+  perhaps the  most  experienced  Area Director  the  IETF  has,  and
+  certainly acknowledged to be a very capable Area manager as well as a
+  contributor to the IETF, and  there  is  a  very high  level  of
+  confidence  in  Scott  to work with the Transport Co-Area Director
+  (who was appointed relatively recently) and  the  Transport  Area
+  members  to  provide  a  level of leadership to the Area's activites
+  which will  assist  in  harmonising  Internet  operational
+  considerations  with technology development.
+
+
+Six IAB positions are to be filled by the IETF Nominations process in 1997.
+
+The  following  individuals  have  been  selected  by  the  IETF Nominations
+Committee as candidates for these positions, and the  candidature  confirmed
+by the ISOC Board of Trustees:
+
+Steve Deering  deering@parc.xerox.com
+
+  For  the  past  five  years,  Steve  has  been employed as a Member
+  of the Research Staff at Xerox PARC, engaged in  research  on
+  advanced  internet technologies,   including   multicast   routing,
+  mobile  internetworking, scalable addressing, and support  for
+  multimedia  applications  over  the Internet.  Steve has recently
+  joined the Gigabit Switching Group at Cisco, where he is continuing
+  his involvement in internet protocol  research  and contributing  to
+  the  design  of  very  high  speed  routers.  Steve  has co-chaired a
+  significant number of IETF Working Groups in areas  of  Ipv6,
+  routing,  multicast  and  mobile  IP during his extensive involvement
+  with IETF activities.
+
+Tony Hain  tonyhain@microsoft.com
+
+  Tony  Hain  has  had  extensive  operational  experience  as the
+  Associate Manager at ESNET in the period 1990 - 1995. Tony is
+  currently employed  at Microsoft in the position of Internet
+  Architect MSN.
+
+  Tony  has  been  an  active member of various Internet Operational
+  groups, including the FEPG, the  IEPG  and  NANOG,  and  has  also
+  had  extensive involvement  at  the  IETF,  focussing  on  feedback
+  about the operational impact of design suggestions and early
+  implementation  testing.  In  this role  Tony  is  currently
+  co-chairing  the  IPv6 transition tools working group.
+
+Erik Huizer  Erik.Huizer@sec.nl
+
+  Erik Huizer is Managing Director of the SURFnet Expertise Center.
+  Erik has perviously  worked  as  a network development project
+  manager with SURFnet bv, the company that operates the Academic and
+  Research  network  in  The Netherlands. He manages various national
+  and international projects on the Internet, security, E-mail,
+  Information services and Directory services.
+
+  Erik  has  been  a member of the RARE (now Terena) Technical
+  Committee for three years. He is an active IETF member and  has
+  chaired  and  acted  as editor  for  a  number  of  IETF Working
+  Groups. He has also been the Area Director for the Applications Area
+  of the Internet Engineering Task Force, and as such a member of  the
+  Internet  Engineering  Steering  Group  from 1990-1995. He is
+  currently a member of the Internet Architecture Board.
+
+Cyndi Jung  cmj@3Com.com
+
+  Cyndi  is  the  protocol  architect  and  software development
+  manager for 3Com's router products. Cyndi has  had  extensive
+  experience  in  routing architectures  from  the  perspective  of
+  vendor  implementation for many years.
+
+  She has been involved in the IETF routing working groups and also
+  in  the IPv6  activity  domain, most recently working on technical
+  aspects of IPv6 transition.
+
+Robert Moskowitz  rgm3@chrysler.com
+
+  Robert  is  employed  by  the  Chrysler  Corporation  in  Internet
+  related activities, including email architecture, Intranet
+  developments  and  EDI over  TCP, and is well aware of the corporate
+  requirements with respect to the directions of Internet technologies.
+  He is also a  member  of  the  US Federal  Networking Council
+  Advisory Committee (appointed April 96 for a 3 year term), a body
+  which advises  the  US  federal  research  networks  on policy
+  issues. He is the co-chair of the FNCAC security committee.
+
+  Robert  is  currently a member of the Internet Architecture Board,
+  and has been active in the IETF, particularly within the Applications
+  Directorate, for many years.
+
+Charlie Perkins  charliep@watson.ibm.com
+
+  Charlie  works  at  the  IBM T. J. Watson Research Center. Charlie
+  has had extensive involvement in the development of various Internet
+  technologies, and is principally known for  his  efforts  within
+  the  MobileIP  Working Group. He has also been involved with Dynamic
+  Host Configuration, IPV6 and Service  Location  protocol development
+  work. He is also serving on the US National Research Council
+  committee and a US Cross-Industry  Working  Team (XIWT) group
+
+
+It  has been a challenging task for the committee, and I'd like to take
+this opportunity to thank the committee members for their diligence in
+this work, and also to thank all other members of the IETF who
+participated in the 1997 Nominations process in various capacities.
+
+Thanks,
+
+  Geoff Huston
+
+for IETF Nominations Committee:
+
+  Guy Almes
+  Jim Bound
+  Matt Crawford
+  Phill Gross
+  Bob Hinden
+  Dorian Kim
+  Bill Manning
+  Marshall Rose
+  Mike StJohns
+  Glen Zorn
+  Geoff Huston      (chair)
+  Joyce Reynolds    (IESG liaison)
+  Radia Perlman     (IAB liaison)
+  Christian Huitema (ISOC liaison)
+

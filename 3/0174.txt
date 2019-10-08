@@ -1,0 +1,58 @@
+TCP/IP: Cisco
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8602.mm.www/0319.html
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8602.mm.www/0324.html
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8602.mm.www/0327.html
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8602.mm.www/0334.html
+
+-------------------------------------------------------------------------
+Scott Brim (7 May 86):
+
+I have an introductory blurb from Cisco, a company marketing an IP
+gateway developed at Stanford. Does anyone have a phone number for the
+company? Any detailed information on how the product behaves, what its
+advantages and shortcomings are, what interfaces it supports, etc.?
+                                                Thanks very much,
+                                                        Scott
+
+-----------------------------------------------------------------------
+Bill William (8 May 1986):
+
+        cisco Systems, Inc
+        PO Box 475
+        Menlo Park, CA, 94026
+        (415) 326-1941
+        5106016967 (telex)
+
+They sell the IP gateway, a terminal server (talks TCP), and the MEIS,
+a massbus ethernet interface (eg for 20's). The gateway supports
+"Sun" 3Mb ethernet interfaces, 3com 10Mb interfaces, Interlan/micom
+10Mb interfaces, ACC 1822 interfaces, and 56Kbps serial links, and
+others (up to 4 at once). The box is multibus based, so other
+interface support is feasible. Full support of IP, TCP, ICMP, EGP,
+ARP, Subnets, etc, and "IGP" (Internal Gateway Protocol (supports
+multipath routing, etc)).
+
+Stanford has about 25 of the "non-production" version linking together
+their 60 odd cable segments, along with about 60 of the "terminal
+servers". It all works quite well.
+
+Disclaimer: I dont for for cisco, but my boss does. I DO work for Stanford.
+
+BillW
+
+-----------------------------------------------------------------------
+J. Noel Chiappa (9 May 86):
+
+        Are there working examples of the EGP and ARPANet interface,
+or is that merely an announced product?
+
+        Noel
+
+-----------------------------------------------------------------------
+Doug Faunt (10 May 86; info on cisco)
+
+
+Phone number is 415-326-1941. IP gateway is 1-4 way, currently supports
+IP/TCP and V.35. Coming soon is T1 and DECNET-IP. Price is $7950 for
+
+-----------------------------------------------------------------------

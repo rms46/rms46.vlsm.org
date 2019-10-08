@@ -1,0 +1,239 @@
+Einar Stefferud -- June 1997 -- DOMAIN-POLICY
+---------------------------------------------
+
+History of the Internet
+
+
+These "off the top of the head" history incantations are getting
+pretty wild, and it is very distressing to see so much inaccurate
+stuff broadcast as fact...
+
+Let me try to quickly summarize a few things from my own observations
+and understandings from long experience.  I have been involved in the
+center of these developments since 1975, in one strategic role or
+another.  And, I was hanging around with people who were directly
+involved for many years before that (i.e., since 1962).
+
+The ARPANET was not built to survive Nuclear Bombs, or equivalent.  It
+was simply built to interconnect ARPA Contractors for the purpose of
+sharing whatever resources could be shared by being Network Connected.
+
+Originally, the entire ARPANET was owned, lock, stock, and barrel, by
+ARPA, and anyone connecting to it or using a computer account on an
+ARPANET connected host, was required to have ARPA Information
+Processing Technology Office (IPTO) approval, either direct or
+indirect.  In the berginning, there was a central authority.
+
+Thus, all names and numbers were assigned by ARPA Contracted
+Administrators.  Up to and for a while after the time that the
+Internet began to arise after ARPANET converted to TCP/IP in 1983,
+this admin function was provided by the SRI NIC, until IANA
+established at ISI.  Then ISI and SRI shared responsibility for
+assignment of various names and numbers.  I am cloudy on the dates and
+facts of this NIC/IANA transition and relationship, but the basic
+point is that all of it was done under the understanding that ARPA
+owned control the entire ARPANET.
+
+Thus, the ARPANET inhabitants tended to be genuine academics, though I
+would hesitate to call BBN "academic", considering how they took
+serious proprietary entrepreneurial interests in all the technology
+that they developed.  So did some others in the community.  My point
+here is to debunk this notion that academics had some kind of
+stranglehold on the ARPNET to assure that it would not work for
+business purposes.  What a quaint idea;-)...  Actaully, a lot of
+people made very good livings out of working on the Internet, and many
+of them were not academics.
+
+Over that early time period, lots of business was transacted among the
+ARPA Contractors, and among various other US Government agencies and
+contractors.  Some business was also transacted across international
+boundaries among ARPA approved contractors outside the US.  I clearly
+recall sending some of my Consulting Invoices over the ARPANET to
+Government Contractors, and negotiating Government Contracts with
+Government Agencies.  All of this was clearly in an experimental mode,
+but we were doing it.  I even had clauses in my contracts that
+required me to use the ARPANET in performance and administration of
+the contracts.
+
+So, I fear that Simon's basic premises (see below) are off the mark,
+and we all know that A False Premise can be used to Prove Anything.
+
+Now, after TCP/IP was deployed by ARPA on the ARPANET, it became
+possible to create what became the Internet because it was no longer
+necessary for ARPA to control everything in all IP connected networks,
+so autonomous systems were born and most of us knew that we were
+embarking on a very new kind of infrastructure development, where-in a
+Whole Internet would not be Wholly Owned by a Single Administration.
+
+This was a truly major paradigm shift, in that no such beast had ever
+existed on the earth before.  But, all the existing administrative
+functions and responsibilities of the nascent Internet were formed
+around ARPA's original Singular Sole Ownership infrastructure, so
+nothing was ever changed until it became obvious that change was
+needed.  Among these changes were conversion from a Government
+Provided Backbone, to our current multi-competitor Open Commercial
+Internet Backbone.
+
+As the Internet took shape, the original admin functions and
+operations began to change to accommodate distributed ownership and
+distributed responsibility.  In part, DNS was created to solve the
+problem of naming hosts with distributed authority while maintaining
+network-wide integrity for name-to-address resolution.  But, of
+course, the TLD space needed someone to administer the root, and that
+job automatically defaulted to IANA as the obvious administrator.
+
+Some of you might remember back to the fight over control that
+occurred during this paradigm shift in the Infrastructure;-)...  It
+was a proper prelude to the current DNS War.  Go read the COM-PRIV
+archives if you want to see a really good fight.  Really big bucks
+were at stake there, along with the whole future of the Internet.
+
+Over time, IANA did a sufficiently good (some say excellent) job of
+administration to hold almost total respect from the whole Internet
+community, and until the mid 1990's, no one thought much about whether
+the root should be administered by a czar, or whether it should be
+more open, or totally open, or whatever...
+
+In my view, the authority of IANA derived simply from the fact that
+IANA properly provided TLD ROOT server administration, to the
+satisfaction of all concerned.  No one questioned the apparent IANA
+authority as long as things went along smoothly.
+
+But, long before the community became aware of the need, Jon Postel
+and IANA were working on the idea of expanding the TLD namespace, just
+because the long term future need was obvious.  This thinking
+naturally lead to other people becoming interested, in terms of both
+the community benefits of enlargement and the potential for earning
+revenue.
+
+This brings us up to the present mess where suddenly it becomes clear
+that there is no clear line of authority for IANA or anyone else to
+Czar the DNS TLD ROOT, and we are in a big fight about whether there
+must or must not be a clear line of authority for deciding what names
+can be used in the DNS TLD ROOT.
+
+Some of us say YES, and some of us say NO!  And there is no obvious
+source of authority to decide the question for us.  The IANA autority
+was derived from community acceptance of administrative actions taken,
+but that community consensus authority did not extend to an IANA hand
+over of it this same community consensus authority to someone else.
+To take it over from IANA, the new authority must earn the respect and
+the trust of the Internet community at large, just as IANA earned it
+by providing satisfactory administration over many years.
+
+This is because the Internet is like the Economy...  No one owns the
+whole thing, while different parties own each separate part.  We have
+in this century killed millions of people over the great question of
+who should "own" the various economies of the world, and the answer is
+"No One Should Own An Economy!"
+
+Furthermore, almost everyone who ever owned an economy has come to
+wish they didn't.  I predict that in due course, we will all come to
+the same conclusion about the Internet and the great question of who
+should own the DNS TLD ROOT.  At least we are not actually killing
+anyone in this DNS war, yet, though we are assasinating characters all
+over the place, and regularly pitting old friends and colleagues
+against each other in vicious arguments where there appear to be no
+holds barred.  Many old relationships have been torn asunder.
+
+None the less, I predict that in the end we will discover that the DNS
+ROOT does not need a Czar to select TLD names for the DNS any more
+than other parts of the Internet need a Czar.  It only needs to avoid
+naming collisions and maintain resolution coherency.  Neither of these
+are really hard problems;-)...  Just need some common sense.
+
+I note that some new TLDs have somehow been snookered into the
+official root servers, and I must say that I see lots of distraught
+complaints about the impropriety, but I see absolutely no indication
+that any aspect of root service was diminished in any way, so I am
+convinced that it is indeed harmless to add new TLDs to the root.  If
+it can be done without permission without damage, then it should be
+safe to do it with permission;-)...
+
+So, all these social theories about a class war between academia, the
+military, and business are just so much foolishness.  What is really
+happening is just that the DNS ROOT is the last of the original
+ARPANET vestigial tails to fall off the Internet skeleton.
+
+What seems to be missed by everyone so far in this DNS Control War is
+that the real controlling power in the system lies with the NAME
+Resolvers, not the Name Servers;-)...  It is in the resolvers that
+operational software under distributed control of myriad router and
+host administrators decide what root servers to point to.  The fact
+that BIND is delivered with defaults selected by Paul Vixie does not
+mean that Paul is the Czar, and his statements that he gets his
+instructions from IANA does not make IANA the Czar either.  The fact
+that lots of administrators accept Paul's defaults is the critical
+key, and when administrators stop accepting those defaults and
+choosing others, we will all see that the servers do not have the
+ability to control anything about what TLD names are "in the ROOT"
+
+The fact is that all name resolver administrators have the power to
+point at whatever root servers that want to point to, no matter who
+says otherwise, since they are the people who know the passwords, and
+who know their own personal needs, and know the needs of their
+customers.  So, their personal needs and the needs of their customers
+will take control in due course.
+
+Someday it will become easy to reset those defaults, and then the
+router administrators will take back control of the DNS ROOT, and that
+will be that;-)...
+
+In the meantime, I hope you all are enjoying the war.
+
+Cheers...\Stef
+
+PS: I hope that from this little essay, you might see that no one has
+    a monoply on remembering and interpreting the history of the
+    Internet, and it should be abundantly clear that Dave Crocker
+    speaks only for Dave Crocker, and I speak only for myself.
+    Neither of us can speak for the Internet, though I will claim to
+    be a student of the historical paradigm shifting that the Internet
+    has brought to us all.  The fact is that there is indeed, no
+    singular person or agency, that can speak for the Internet,
+    anymore than there is some singular person or agency that can
+    speak for all the customers in the global economy.
+
+    So, our only available solution is to learn to be civil with each
+    other and learn to collaborate in making the Internet work for all
+    of us, without requiring any singular central authority.
+
+    ...\s
+
+> From Simon Higgs:
+
+}  Dave Crocker / IMC wrote: 
+}> And apparently it's only Tony who would be paying attention to that
+}> history.  No chance that those of us who have actually done the WORK of
+}> creating and building the Internet might actually use that history as a
+}> basis for careful evaluation of present behavior and might even be able
+}> to do that competently.
+
+}  Far be it from me to disagree with that statement, but you're missing a
+}  critical piece of the equation. The "old academic" internet that you
+}  built was only supposed to withstand a nuclear war. It was never
+}  designed to withstand the economic warfare that goes on everyday in the
+}  business world (nor was it designed to withstand AOL users :). While
+}  the internet's design is adequately robust in an academic and military
+}  environment, it continues to display an extremely poor design with
+}  regard to supporting today's commerce. Why? Because commercial
+}  activities were unacceptable on the internet up until a few years ago.
+}  The current state of the top level domains is a key area where the old
+}  design is very obviously broken. Another is spam filter standards
+}  (which are still in their infancy).
+
+}  Your attempts, within the IAHC, to apply an academic band-aid "patch"
+}  the top level space are admirable but very much incomplete for today's
+}  real world usage. This is exemplified by the fact that you don't even
+}  acknowledge any of the real work that has been done in providing
+}  complete and viable working models of alternative DNS structures. This
+}  is, of course, akin to chopping your legs off before you run a
+}  marathon. An unwise choice at best.
+
+}  This isn't your father's internet anymore.
+
+}  Best Regards,
+
+}  Simon
+
+

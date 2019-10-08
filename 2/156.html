@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head><title>
+Set De2.UI
+</title>
+<META name="description" 
+content="I am a real nowhere man, sitting in a nowhere LAN, making all my
+	nowhere .plans for nobody -1 -- Rahmat M. Samik-Ibrahim.">
+<META name="keywords" 
+content="RMS46, Rahmat, Samik-Ibrahim, Grounded-Theory, Research,
+Kompas, Kompas-Online, Analisis, Kwik-Kian-Gie, Internet, RFC, IETF"></head>
+<!--  Using STDLIB`(M4)' revision 9.X                         -->
+<!--  (C) 1996-2010 Rahmat M. Samik-Ibrahim under GPL terms.  -->
+<!--  http://vlsm.org/bin/std.m4.gz                           --> 
+     
+<body bgcolor="#ffffff" text="#000000" link="#0000d9" vlink="#000070" alink="#000040">
+<center><table bgcolor="#e6ebfe" width="80%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK1.html" target="_top"><img 
+src="png/LOCAL-LOGO1.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="center" valign="middle"><font color="#00008b" size=4><b>
+Set De2.UI
+</b>
+<br><font size=2><b><a href="http://rms46.vlsm.org/" target="_top">Rahmat M. Samik-Ibrahim</a>
+	<br><a href="http://vlsm.org/" target="_top">vLSM.org</a></b></font></font>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK2.html" target="_top"><img 
+src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table></center>
+
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+<a name="isi"></a>
+<a href="../etc-new.html" target="_top"><font size=2 
+   color="red">WHAT&#39;s NEW</font></a> |
+<a href="../00-0.html" target="_top"><font size=2 color="red">HOME</font></a> |
+<a href="#bawah" target="_top"><font size=1 
+   color="blue">vv BOTTOM vv</font></a> |
+<a href="#0" target="_top"><font size=1 
+   color="blue">NEXT&gt;&gt;&gt;</font></a>
+<br>
+<font size="1" color="#00008b"><small><br>
+<form method="get" action="http://www.google.com/search">
+  <input type="text" name="q" size="30" maxlength=255 value="">
+  <input type="submit" name="btnG" value="Google Search">
+</form></small></font>
+<tr>
+<td align="center">
+<font size=3 face="arial, helvetica, sans-serif">
+| <a href="#0" target="_top">rmsbase</a>
+| <a href="#1" target="_top">server</a>
+| <a href="#2" target="_top">touchpad</a>
+| <a href="#3" target="_top">OpenOffice.org</a>
+| <a href="#4" target="_top">JAVA deb</a>
+| <a href="#5" target="_top">SPAMASSASIN</a>
+| <a href="#6" target="_top">Minix</a>
+<br />
+| <a href="#7" target="_top">Loop</a>
+| <a href="#100" target="_top">DLL</a>
+|
+</font>
+<tr>
+<td align="right">
+<a name="0"></a>
+<font size=1 color="blue"><a href="156.html" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a> |
+<a href="#1" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>rmsbase.vLSM.org</h2>
+<p>
+Prosedur <b>backup</b>:
+<ul>
+<li> Backup: {/home /etc /usr/local /root} &ndash;&gt; /extra/homebak
+<li> RSYNC: /home/ &ndash;&gt; /extra/home/
+<li> Backup: dpkg --get-selections > deb.txt
+</ul>
+Prosedur <b>re-install</b>:
+<ul>
+<li> Resize Konsole: 80x25 Font DejaVu Sans Mon 15pt.
+<li> Setup passwd: root
+<li> Restore: /extra/home/ to /home/
+<li> Setup: ntp.ui.ac.id
+<li> Setup root/rms46: .bash_aliases
+<li> Setup: /etc/apt/sources.list
+<li> Setup: IP static eth0 152.118.28.88 (non Network Manager)
+<li> Setup: /etc/wgetrc (proxy)
+<li> INSTALL:
+	cabextract
+	cvs
+	dmsetup
+	dpkg-dev
+	dselect
+	fuse-utils
+	gawk
+	gcc
+	gimp
+	m4
+	manpages-dev
+	mutt
+	ntfs-3g
+	openoffice.org
+	rcs
+	ttf-mscorefonts-installer
+	openssh-server
+	postfix
+	rcs
+	sshguard
+	sun-java6-bin 
+	sun-java6-demo
+	sun-java6-fonts
+	sun-java6-jdk
+	sun-java6-jre 
+	sun-java6-plugin
+	vim
+	wine
+	xsltproc
+	xpaint 
+</li>
+<li> Setup firefox: proxy; 16 MB; font 16pt
+<li> Setup: tune2fs -c300 -i150 /dev/X
+<li> Setup: /etc/fstab  (/dev/sda4 /extra)
+<li> Restore: {/root, /usr/local}
+<li> Copy & Secure: {/etc} &ndash;&gt; /home/etc
+<li> Restore: /etc/[passwd|group|shadow|gshadow]
+<li> Restore: /etc/hosts (rmsbase) /etc/hosts.[allow|deny]
+<li> Restore ~/.ssh/ ~/bin/ (OLD~rms46/)
+<li> Setup: rsync {/etc/default/rsync /etc/rsyncd.conf /etc/txtrsync.conf
+     /etc/init.d/rsync stop|start }
+<br />  RSYNC_NICE=19
+<br />  RSYNC_ENABLE=true
+</li>
+<li> setup network printer
+<br />  http://147:631/
+</li>
+<li> modif /usr/lib/xulrunner/components/nsProxyAutoConfig.js:133 (?)
+</li>
+</ul>
+<p>
+</font>
+</tr>
+
+<tr>
+<td align="right">
+<a name="1"></a>
+<font size=1 color="blue"><a href="#0" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a> |
+<a href="#2" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Server</h2>
+<p>
+Prosedur <b>backup</b>:
+<ul>
+<li> Backup: {/var/www/cvs/ /home /etc /usr/local /root} 
+<li> RSYNC: /home/ &ndash;&gt; /extra/home/</li>
+<li> Backup: dpkg --get-selections > deb.txt</li>
+</ul>
+Prosedur <b>re-install</b>:
+<ul>
+<li>-</li>
+</ul>
+</font>
+</td>
+</tr>
+
+<tr>
+<td align="right">
+<a name="2"></a>
+<font size=1 color="blue"><a href="#1" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a> |
+<a href="#3" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Touchpad</h2>
+<p>
+<ul>
+<li> 	Cara modifikasi /etc/X11/xorg.conf agar touchpad tidak sensitif;
+	ubah MaxTapTime dan MaxTapMove menjadi 0.
+<tt><pre>
+Section "InputDevice"
+   Identifier "Synaptics Touchpad"
+   Driver "synaptics"
+   Option "SendCoreEvents" "true"
+   Option "Device" "/dev/psaux"
+   Option "Protocol" "auto-dev"
+   Option "HorizScrollDelta" "0"
+   Option "MaxTapTime" "0"
+   Option "MaxTapMove" "0"
+EndSection
+</pre></tt>
+</ul>
+</font>
+</tr>
+
+<tr>
+<td align="right">
+<a name="3"></a>
+<font size=1 color="blue"><a href="#2" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a> |
+<a href="#4" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Set Default A4 untuk OpenOffice.org</h2>
+<p>
+<ul>
+<li>JALANKAN: ooffice</li>
+<li>SET: CTRL-N</li>
+<li>SET: [Default] [Nimbus Sans L] [12]</li>
+<li>SET: Format:Page_Style:Page:A4</li>
+<li>SET: Printer Setting:Properties:A4</li>
+<li>SET: File:Templates:Save</li>
+<li>SET: File:Templates:Organise[My Templates/Commands:Save As Default]</li>
+</ul>
+</font>
+</tr>
+
+<tr>
+<td align="right">
+<a name="4"></a>
+<font size=1 color="blue"><a href="#3" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a> |
+<a href="#5" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>J2SE: Java 2 Standard Edition</h2>
+	<a href="http://java.sun.com/j2se/" target="_top">J2SE</a> 
+	(<a href="http://java.sun.com/j2se/1.5.0/download.jsp" target="_top">download</a>
+	&ndash;	jdk-1_5_0_01-linux-i586.bin)
+<ul>
+<li>	apt-get install java-package</li>
+<li>	make-jpkg jdk-1_5_0_01-linux-i586.bin</li>
+<li>	dpkg -i sun-j2sdk1.5_*i386.deb</li>
+<li>	update-alternatives --config java</li>
+</ul>
+</font>
+</tr>
+
+<tr>
+<td align="right">
+<a name="5"></a>
+<font size=1 color="blue"><a href="#4" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a> |
+<a href="#6" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Disable SPAMASSASIN di POSTFIX</h2>
+<ol>
+<li>stop postfix
+<pre><tt>/etc/init.d/postfix stop</tt></pre></li>
+<li>stop spamassassin daemon
+<pre><tt>/etc/init.d/spamassassin stop
+<li>update /etc/postfix/master.cf
+<pre><tt>tutup baris smtp yang mengandung spamassassin
+buka baris smtp yang tidak mengandung spamassassin</tt></pre></li>
+<li>update /etc/default/spamassassin
+<pre><tt>ubah nilai
+ENABLED=1
+menjadi
+ENABLED=0</tt></pre></li>
+<li>jalankan ulang postfix
+<pre><tt>/etc/init.d/postfix check ; untuk cek saja
+/etc/init.d/postfix start ; startup postfix</tt></pre></li>
+<li>requeue antrian
+<pre><tt>postsuper -r ALL</tt></pre></li>
+</ol>
+</font>
+</tr>
+
+<tr>
+<td align="right">
+<a name="6"></a>
+<font size=1 color="blue"><a href="#5" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a> |
+<a href="#7" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Qemu di Minix</h2>
+<ol>
+<li>buat disk 512MB dengan perintah
+<pre><tt>qemu-img create disk.img 1GB</tt></pre></li>
+<li>jalankan
+<pre><tt>(nice -2 qemu -localtime -m 128 -no-kqemu -hda disk.img \
+  -cdrom minix3_1_2a_ide.iso -boot d -net user -net nic )& </tt></pre></li>
+<li>setelah install dengan setup dan shutdown, jalankan
+<pre><tt>qemu_pci=1</tt>
+<tt>save</tt></pre></li>
+</ol>
+</font>
+</tr>
+
+<tr>
+<td align="right">
+<a name="7"></a>
+<font size=1 color="blue"><a href="#6" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a> |
+<a href="#100" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>LOOP</h2>
+<ol>
+<li>-</li>
+</ol>
+</font>
+</tr>
+
+<tr>
+<td align="right">
+<a name="100"></a>
+<font size=1 color="blue"><a href="#7" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a> |
+<a href="#bawah" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>DLL</h2>
+<p>
+<ul>
+<li> <b>Apache2</b>   
+<br />&ndash; agar daftar isi nggak dipotong, tambahkan pada conf:
+<pre><tt>IndexOptions FancyIndexing NameWidth=*</tt></pre>
+&ndash; pastikan konsistensi antara:
+<pre>"<tt>NameVirtualHost XX.YY.ZZ.KK:LL"</tt>; dan "<tt>&lt;VirtualHost XX.YY.ZZ.KK:LL&gt;</tt>";</pre></li>
+<li> <b>bridge-utils</b> &ndash; packet virtual bridge, dst.</li>
+
+<li> <b>deborphan</b> &ndash; untuk mencari lib nganggur.</li>
+<li> <b>debfoster</b> &ndash; untuk mencari ketergantungan paket.</li>
+
+<li> <b>ISOLINUX SPLASH</b>
+<pre><tt>pngtopnm -o splash.ppm splash.png
+ppmtolss16 "#000000=0" "#ffffff=7" < splash.ppm > splash.rle</tt></pre></li>
+<li> <b>JIGDO-LITE</b>
+<pre><tt>nice -20 jigdo-lite --noask --scan /extra/iso/iso/
+     XX.jigdo</tt></pre></li>
+<li> <b>KDE</b>: Add Applet to Panel: "Show Desktop" + "Lock/Logout".</li>
+<li> <b>VIM</b> Disable color: Add "syntax off " to .vimrc.</li>
+<li> <b>X11</b>: ''X Error: BadDevice, invalid or uninitialized input device 167''
+<br /> Error ini dengan mudah dihilangkan dengan memberi komentar device terkait
+      pada berkas /etc/X11/xorg.conf:
+<pre><tt># Section "InputDevice"
+#       Driver          "wacom"
+#       [...]
+#
+Section "ServerLayout"
+#       [...]
+#       InputDevice     "stylus"        "SendCoreEvents"
+#       InputDevice     "cursor"        "SendCoreEvents"
+#       InputDevice     "eraser"        "SendCoreEvents"</tt></pre></li>
+</ul>
+</font>
+</tr>
+
+</table>
+</center>
+
+<a name="bawah"></a>
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+	<font size=1 color="blue"><a href="#100" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="156.html" target="_top">^^TOP^^</a></font>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e6ebfe" 
+width="80%">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK3.html" target="_top"><img 
+src="png/LOCAL-LOGO3.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="left">
+	<font size=2 color="#00008b">
+	Copyright &copy 2007-2014 <a href="../index.html" target="_top">Rahmat M. Samik-Ibrahim</a> .
+	Provided <b>AS-IS</b> with no <b>LIABILITY</b>.
+	
+	Permission is granted to copy, distribute, and/or modify
+	this webpage provided this notice is preserved.
+	<b>MIRRORS</b> of this site:
+<a href="http://rms46.vlsm.org/2/156.html" target="_top">BisnisWeb</a> -
+	<a href="http://rmsui.vlsm.org/rms46/2/156.html" target="_top">Fusilkom-UI</a>.
+
+	File revision: 9.30 2010/09/02 15:39:
+	-- <a href="mailto:vlsm.org@t-HAPUS-DELETE.gmail.com?subject=[RMS-Feedback]"><font color="blue">E-CONTACT</font></a>.
+	Special thanks for this <a href="LOCAL-LINK3.html" target="_top">webspace provider</a></font>.
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK4.html" target="_top"><img 
+src="png/LOCAL-LOGO4.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table>
+<table>
+<tr>
+<td height="600" valign="top">
+</table>
+</center>
+</body>
+</html>
+<!-- END -->
+
+

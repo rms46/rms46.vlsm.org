@@ -1,0 +1,29 @@
+IETF -- 26 July 1999 -- IETF-Announce
+-------------------------------------
+
+Regarding the PSO 
+
+The Poisson Working Group, in discussion Wednesday morning, advised me to
+sign the Memorandum of Understanding among ICANN, IETF, ETSI, ITU-T, and
+W3C, forming the initial PSO. We did that during the plenary meeting
+Wednesday evening, and afterwards had a very informal initial discussion
+among the leaders of those parties about how to proceed from here.
+
+It is now incumbent on the IETF to supply two members to the Protocol
+Council and nominate one or more potential Directors of the ICANN Board to
+come from the PSO. The near term objective is to have PSO representation on
+ICANN's board by November.
+
+For the long term, it would be best for Poisson to decide how that should
+be done - there are good arguments for having the nominating committee do
+that job; there are also good arguments (RFC 1601 section 2(e)) for having
+the IAB make those choices. In the short term, I believe and request that
+the IAB should make interim selections, to stand until that discussion and
+process has taken its course.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Fred Baker      |       519 Lado Drive
+IETF Chair      |       Santa Barbara, California 93111
+                |       +1 (805) 886-3873
+
+

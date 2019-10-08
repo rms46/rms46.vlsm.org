@@ -1,0 +1,125 @@
+Scott Bradner and Allison Mankin, Co-Area Directors October 1993
+========================================================== B-I =
+
+IPNG Area Report
+
+     sob@harvard.edu
+     mankin@cmf.nrl.navy.mil
+
+The IPNG Area is a temporary area in the IESG charged with
+managing the "IP the next generation" process.  
+This is the first of area reports we will issue approximately
+monthly to keep the IETF informed about our progress.
+
+We will give a presentation describing the Area and the
+IPng process that we will be pursuing.  This is scheduled for 
+Monday morning of the Houston IETF.  We will make the 
+announcement of the directorate membership before then
+(soon), and we hope that many of the directorate
+members will be around during that plenary session.  A 60 minute
+time period is reserved for questions and discussion following 
+the presentation.  Following the question session will be 10-minute
+updates on each of the IPng proposals.
+
+We invited a group of internetters to meet with us for an 
+"advice meeting".  This took place at SIGCOMM, in San Francisco,
+on September 17.  The purpose of this IPNG meeting
+was to give us a kind of focus group, to let us discuss the
+IPNG area and the potential IPNG directorate informally and in
+a preliminary manner.  The group that met was purposely not an
+early version of the IPNG directorate, nor was the
+meeting conducted in as structured a way as we expect of
+the directorate meetings, i.e. no minutes were taken.
+
+Several results came from this meeting:
+
+-  The directorate should not include IESG or IAB members.
+
+-  An IETF WG, Address Lifetime Expectations (ALE), was formed,
+   whose mission is to quantify the lifetime of internet
+   address space.  Frank Solensky will chair.
+
+-  Our generalized task is to develop a plan for the
+   Internet future--it will have milestones at different
+   times depending on the actual growth that occurs.
+
+The participants were:
+
+Scott Bradner, Harvard University
+Ross Callon, Wellfleet
+Jon Crowcroft, University College London
+John Curran, NEARnet
+Steve Deering, Xerox PARC
+Paul Francis, Bellcore
+Dave Katz, Cisco
+Tony Li, Cisco
+Allison Mankin, Naval Research Lab
+Greg Minshall, Novell
+Craig Partridge, BBN/Stanford University
+Frank Solensky, FTP Software
+Lixia Zhang, Xerox PARC
+
+The agenda we started with follows:
+
+draft agenda - IPng think session Sept. 17 1993
+
+introductions
+
+review charge to IPng area
+
+additions to charge?
+
+mergermania
+    SIPP...
+
+white papers
+    < 10 page views from various people
+    on IPng proposals & views of problems
+    Noel, John Curran, TUBA, SIPP ...
+
+
+FYI for the community:  IPng area procedures
+    directorate meetings
+           on and off record (minutes or not)
+        telechats
+        face to face
+            at ietf
+            special meetings
+    mailing list
+        public vs private
+        archives
+
+standards sequence
+    advance all to experimental when ready
+    after decision, advance one onto track as recommended
+               (move to required eventually?)
+        after delay, others can move to elective
+        parts can move to recommended if good AS
+
+directorate issues/suggestions
+    how about IESG members?
+
+what WGs are needed? chair suggestions, warnings
+    CIDR issues
+        who knows BSD code?
+    address assignment procedures
+    var length subnets
+    timeframe
+    scope
+    criteria
+    decide
+
+consensus building/outreach
+
+factors to look at if the sky is not falling
+    flow 
+    congestion
+    accounting
+    security
+    advanced policies
+    
+presentation at IETF in Nov.
+
+report to ietf mailing list?
+
+

@@ -1,0 +1,55 @@
+IAB Chair -- 26 May 1998 -- IETF-Announce
+-----------------------------------------
+
+Call for POC nominations 
+
+IETF,
+
+Last August, the IAB appointed two people to the Policy Oversight
+Committee (POC) established under the gTLD Memorandum of Understanding
+(see http://www.gtld-mou.org ). One of these appointments (Rob Austein)
+was for one year. The other one (Patrik Faltstrom) was for three
+years, but Patrik has recently resigned from the POC following his
+appointment to the IESG. The POC Chair, David Maher, has requested
+the IAB to appoint two new people, one to complete Patrik's term
+until August 2000, the other for a three year term until August 2001.
+
+The appointees are expected to act as individual experts, not
+as delegates or representatives of the IAB or the IETF. As last
+year, the IAB has decided to appoint persons with strong technical
+expertise in DNS and Internet technology and with a strong claim
+to have an international outlook. The IAB has further decided
+to make an open call for nominations from the IETF community.
+
+Procedure:
+
+1. This message is the call for nominations, which should be sent
+   to pocnom@iab.org  by the closing date of 24 June 1998.
+
+** DO NOT SEND NOMINATIONS AS A REPLY TO THIS MESSAGE; SEND THEM
+   TO mailto:pocnom@iab.org **
+
+2. Each nomination must give the name, affiliation, email address
+   and phone number of the nominee, plus a brief statement (maximum
+   10 lines) about the nominee's technical and international credentials.
+
+3. Self-nominations are allowed.
+
+4. The IAB will verify each nominee's willingness to serve for two
+   or three years.
+
+5. The list of willing nominees will be published by the IAB shortly
+   after the closing date. Confidential comments from the community will
+   be solicited. The IAB will then make its two appointments as quickly
+   as possible, and announce them at or before the August IETF.
+
+6. Apart from the above, the IAB will be guided in its deliberations
+   by the procedures defined in RFC 2282.
+
+7. Nominees must accept that a recall procedure, analagous to that
+   defined in RFC 2282, may be invoked at any time during their terms.
+
+
+Brian Carpenter (IAB Chair)           brian@hursley.ibm.com
+
+

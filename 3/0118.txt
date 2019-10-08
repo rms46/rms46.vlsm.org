@@ -1,0 +1,57 @@
+NomCom -- 29 January 1993 -- IETF-Announce
+------------------------------------------
+
+
+IAB/IESG Nominations Committee
+
+
+
+The following will be serving as the 1993 IAB/IESG Nominations Committee:
+
+Jack Brown                              jbrown@huachuca-emh8.army.mil
+Jeff Case, Chair                        ietfnom@cs.utk.edu
+Peter S. Ford                           peter@goshawk.lanl.gov
+Erik Huizer, IESG Liasion, Ex-officio   huizer@surfnet.nl
+Geoff Huston, ISOC Liasion, Ex-officio  G.Huston@aarnet.edu.au
+Steve Kent                              kent@bbn.com
+Barry Leiner, IAB Liasion, Ex-officio   leiner@nsipo.nasa.gov
+Paul Mockapetris                        pvm@DARPA.MIL
+Craig Partridge                         craig@aland.bbn.com
+Jon Postel, IRSG Liasion, Ex-officio    postel@isi.edu
+Jim Romaguera                           romaguera@cosine-mhs.switch.ch
+Claudio Topolcic                        topolcic@CNRI.Reston.VA.US
+
+Alternates (in case one or more of the 7 are unable to serve)
+
+Steve Waldbusser, 1st alternate         sw0l+@andrew.cmu.edu
+Bill Norton, 2nd alternate              wbn@merit.edu
+Bill Manning, 3rd alternate             bmanning@rice.edu
+
+
+The random selection was performed as follows:
+
+I took a stack of identical business cards and printed the name of a volunteer
+on each.  The names were then placed in a basket, and shuffled well.  Cards
+with names were then drawn by Dr. David Eubanks, President, Johnson
+Bible College.  He was selected because he is one of the most honest men I
+know, has an unblemished reputation, has no vested interest in the outcome,
+and was gracious enough to humor my request.  The first seven selected will
+staff the committee, and the eighth, ninth, and tenth were identified at the
+1st, 2nd, and 3rd alternates, respectively.
+
+The names were checked to see that they meet the selection criteria of
+attendance at two or more IETF plenaries, and all do.
+
+We will be getting started to work almost immediately.  While our deliberations
+will be confidential, we will be providing status reports from time-to-time
+to keep you informed.  Vint Cerf will soon be posting a message that summarizes
+the jobs to be filled.
+
+Finally, I'd like to thank all of those who volunteered for offering to serve.
+I hope you will do so again the next time volunteers are sought.
+This chair appreciated it and I'm sure the next one will too.
+
+regards,
+jdc
+ietfnom@cs.utk.edu
+

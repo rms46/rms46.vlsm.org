@@ -1,0 +1,16 @@
+IAB -- 22 December 1998 -- IETF-Announce
+----------------------------------------
+
+IANA Designation 
+
+The IAB notes that constructive discussions concerning
+ICANN and its relationships with various parts of the
+community are continuing.  In order to avoid either
+preempting those discussions or leaving a gap in coverage 
+of the IANA function, the IAB has decided to renew the 
+current designation of ISI to execute the IANA function 
+for a further three months, until the end of March 1999.
+
+   Brian Carpenter
+   IAB Chair
+

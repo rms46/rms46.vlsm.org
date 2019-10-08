@@ -1,0 +1,14 @@
+Inside ISOC February 2000 Vol. 3, No. 2
+---------------------------------------
+
+ISOC Signs Contract for RFC Editor
+
+Since the U.S. government ceased funding IANA, ISOC has 
+been funding the RFC Editor function for the IETF. We have had a 
+one-year contract with the University of Southern 
+California from 1 October 1998; we signed an extension until we could 
+complete a three-year contract effective 1 October 1999 
+through 30 September 2002. This a major additional 
+commitment of ISOC to the IETF ($1,295,517) another we are 
+happy to provide.
+

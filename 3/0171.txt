@@ -1,0 +1,23 @@
+Jon Postel -- 6 October 1984 -- TCP/IP
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8402.mm.www/0189.html
+-------------------------------------------------------------------------
+
+                          Domain Servers Available
+
+Hi. Yes, three instances of a Domain Server are up and running. They
+are on SRI-NIC.ARPA, USC-ISIB.ARPA, and USC-ISIF.ARPA. These are TOPS-20
+systems, the implementation is written in pascal. We are most interested
+in having people write resolvers and test against these servers. If you
+do plan to write some code please check in with Paul Mockapetris at ISI to
+get the details of some small differences from the initial specifications
+(RFCs 882 & 883). Paul is (RFCs 882 & 883). Paul is
+MOCKAPETRIS@USC-ISIF.ARPA. A revised spec is
+planned soon.
+
+Work is also under way on a new implementation schedule for putting the
+full domain name system into use. That schedule should also appear
+in the next few weeks.
+
+--jon.
+
+

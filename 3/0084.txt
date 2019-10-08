@@ -1,0 +1,36 @@
+NomCom Chair -- 10 March 1994 -- IETF
+-------------------------------------
+
+Nominations for IAB Membership
+
+
+Vint:
+
+It is my pleasure to inform you that the Nominating Committee has decided
+to recommend six persons to sit on the IAB. It is up to you and the ISOC
+Trustees to ratify our selections, which I encourage you to do posthaste.
+
+the following IAB members are continuing:
+
+Elise Gerich
+Jun Murai
+Yakov Rekhter
+John Romkey
+Dave Sincoskie
+Mike St. Johns
+
+We accept the following as new or continuing IAB members
+
+Christian Huitema
+Phill Gross
+
+Robert Elz
+Brian Carpenter
+Lixia Zhang
+Steve Crocker
+
+=============================================================================
+Fred Baker (fbaker@acc.com)
+Advanced Computer Communications
+
+

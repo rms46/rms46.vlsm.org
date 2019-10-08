@@ -1,0 +1,26 @@
+ISOC Chair -- 20 January 1993 -- IETF
+-------------------------------------
+
+IESG and IAB Nominations committee
+
+
+Folks,
+
+just a week ago, I sent out a brief message to advise you
+that Jeff Case had agreed to serve as chairman of the
+IAB and IESG nominations committee for the 1993 nominations
+cycle. He has set up a mailbox: ietfnom@cs.utk.edu  and
+is accepting volunteers.
+
+The list of volunteers is growing, but the collective interest
+would be served by having a large field of qualified talent
+to select from. If you haven't volunteered and can meet the
+criteria (attendance at two IETFs), please give serious 
+consideration. The work is vital to the future of the Internet
+and your participation is needed.
+
+I thank those of you who have already made this commitment;
+encourage your colleagues to join you.
+
+Vint Cerf
+

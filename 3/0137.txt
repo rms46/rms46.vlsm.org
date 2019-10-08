@@ -1,0 +1,25 @@
+ISOC -- 30 March 1995 -- IETF-Announce
+--------------------------------------
+
+New IAB Members Confirmed by ISOC Trustees
+
+The Internet Society Board of Trusteees has concluded its IAB deliberations
+and is pleased to confirm the following nominations for service on the IAB:
+
+Yakov Rekhter
+Elise Gerich
+Jay Allard
+Robert Moskowitz
+Erik Huizer
+Chris Weider
+
+On behalf of the Board of Trustees, I congratulate the new or
+returning IAB members and thank the nominating committee chair,
+John Curran, members and assorted liaisons for their commitment
+to maintaining the high quality of the Internet Architecture Board
+and the Internet Engineering Steering Group.
+
+Vint Cerf
+President
+Internet Society
+

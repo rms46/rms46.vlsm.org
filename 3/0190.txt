@@ -1,0 +1,150 @@
+IESG Chair -- 11 October 2000 -- IETF-Announce 
+----------------------------------------------
+
+Appeal
+
+On January 27, 2000, the IESG received a complaint from
+"D. J. Bernstein" djb@cr.yp.to concerning the management of the
+namedroppers mailing list. This note is a response to that complaint.
+
+Background: Mr. Bernstein has voiced complaints about management of
+the namedroppers mailing list in the past, dating back to at least
+December, 1998. At that time the IESG discussed the issues being
+raised concerning the moderation of the namedroppers mailing
+list. That discussion reaffirmed previous IESG discussions that
+moderation of WG mailing list was a useful and appropriate tool in
+limited circumstances and that moderation of namedroppers was
+appropriate. Problems with moderation can be dealt with through normal
+IETF processes.  The Internet Area Directors received a formal
+compliant on January 15, 2000. The ADs responded to the complaint on
+January 26 (attached below). Mr. Bernstein's January 27th complaint to
+the IESG cites dissatisfaction with the AD response.
+
+Mr. Bernstein's basic complaint is:
+
+> In short, to use the language of RFC 2026 section 6.5.1: Mismanagement
+> of the namedroppers mailing list is preventing the IETF DNSEXT working
+> group from adequately considering the views of its participants, and is
+> placing the quality and integrity of the working group's decisions in
+> jeopardy.
+
+The IESG has reviewed the facts at its disposal concerning this
+complaint and concludes that the overall complaint lacks
+merit. Specifically, the IESG reaffirms that the moderating of mailing
+lists is a useful and appropriate WG tool, and the IESG supports such
+moderations in some circumstances. In the specific case of
+namedroppers, a moderated mailing list, the IESG does not find the the
+moderation policy to be inappropriate. Nor does the IESG find that the
+specific incidents cited taken as a whole constitute mismanagment of
+the mailing list as indicated.
+
+A more detailed description of the IESG's policy with regards to
+moderated mailing lists can be found at
+http://www.ietf.org/IESG/STATEMENTS/moderated-lists.txt.
+
+Mr. Bernstein also asks:
+
+> I also demand that the IESG immediately answer the following specific
+> factual questions:
+
+>    (1) Before my December 1998 complaint, had the IESG already
+>        considered and approved Bush's methods of controlling the
+>        namedroppers mailing list?
+
+The IESG had talked about moderated lists prior to the 1998 complaint,
+but does not recall if namedroppers was specifically discussed prior
+to the 1998 complaint. Moderation of namedroppers was discussed by the
+IESG in 1998.
+
+>    (2) Before my December 1999 complaint, had the IESG already
+>        considered and approved Bush's methods of controlling the
+>        namedroppers mailing list?
+
+Yes.
+
+>    (3) If the answer to #1 or #2 is yes: Why did the IESG not say so in
+>        response to my complaint?
+
+The IESG should have responded to your 1998 complaint.
+
+>    (4) If the answer to #1 or #2 is yes: Exactly what methods did the
+>        IESG approve, and when?
+
+It is OK to moderate in order to reject SPAM & other postings
+unrelated to WG.  Posters should be notified whenever a posting is
+rejected (unless obvious SPAM).
+
+>    (5) If the answer to #1 or #2 is yes: What steps did the IESG take to
+>        subject its action to public review?
+
+The IESG is unable to subject every one of its decisions to public
+review. In this case, it was felt that moderation of mailing lists in
+limited circumstances was consistent with standard IETF processes.
+
+Fred Baker
+IETF Chair
+
+===========================
+From: Thomas Narten narten@hygro.adsl.duke.edu
+To: "D. J. Bernstein" djb@cr.yp.to
+cc: nordmark@eng.sun.com, randy@psg.com (Randy Bush),
+    Olafur Gudmundsson ogud@tislabs.com, namedroppers@internic.net
+Date: Wed, 26 Jan 2000 23:01:00 -0500
+Subject: Re: namedroppers mismanagement 
+
+On January 15, 2000, the Internet ADs received a complaint from
+D. J. Bernstein entitled "namedroppers mismanagement". This note is
+our response.
+
+The jist of the complaint was summarized by Mr. Bernstein as:
+
+> In short, to use the language of RFC 2026 section 6.5.1: Mismanagement
+> of the namedroppers mailing list is preventing the IETF DNS working
+> groups from adequately considering the views of their participants, and
+> is placing the quality and integrity of the working group's decisions in
+> jeopardy.
+
+The Internet ADs do not agree with this assertion. In particular:
+
+1) The Internet ADs are aware that the mailing list is moderated and
+   support the chairs efforts in keeping WG activities focussed on WG
+   chartered deliverables.
+
+2) The specific 7 incidents cited include:
+
+   - 3 that occurred more than a year ago, [not considered due to
+     statue of limitations considerations]
+   - 1 involving lack of timely approval of a posting, [inevitable
+     with a moderated list] 
+   - 1 involving what was clearly a problem with the mailing list
+     software [a message posted at the same time by one of the ADs was
+     also caught in the same timewarp] 
+   - 1 involving a message that  was rejected as off-topic (with a
+     note suggesting a different mailing list)
+   - 1 involving a message that was forwarded to dnsop, rather than
+     being posted to namedroppers, without the author being told this
+     was being done.
+
+   We do not see any evidence that one of the WG chairs, Randy
+   Bush's moderating activities "actively and deliberately bias the
+   mailing list discussions". (As a side note, namedroppers is
+   actually co-moderated by Randy Bush and Mark Kosters.) However, we
+   have sent a reminder to the chairs/moderators that all rejected
+   postings (including messages forwarded to a more appropriate list
+   instead) should result in an explanatory note being sent to the
+   author.
+
+Finally, in your note:
+
+> P.S. Is there an email address for the Internet Society Board of
+> Trustees? I have the individual addresses of the current members but
+> would prefer to use a group address if one exists.
+
+We feel compelled to point out that in the event that further appeals
+are deemed necessary, the process to follow is outlined in RFC
+2026. Specifically, the next place to appeal this response is the
+IESG, followed by (if necessary) the IAB. Note that appeal to the ISOC
+is specifically mentioned in section 6.5.3 of 2026.
+
+Thomas & Erik
+

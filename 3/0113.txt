@@ -1,0 +1,38 @@
+POISED Chair -- 9 January 1993 -- IETF
+--------------------------------------
+
+
+Re: Volunteers sought for IAB and IESG Nominating Committee
+
+
+
+As Vint said, volunteers are now sought to recruit and nominate people
+for half of the IESG and half of the IAB positions.
+
+The goal is to have the selection complete by the end of February,
+preferably, and in any case by early March.  This will give the ISOC
+and IAB time to approve the selections, and it will provide a few days
+for the selected people to prepare.  The terms for these offices begin
+with the end of the next IETF meeting at the *end* of March.  (I think
+Vint misstated the date in his message.)
+
+As chair of the POISED effort, I will be happy to assist in whatever
+way I can.  (My job as Area Director for Security is *not* one of the
+jobs up for selection this year.)
+
+The committee will have its work cut out for it.  Roughly a dozen
+positions need to be filled.  Of course, many have incumbents who wish
+to serve again, but the committee must still consider all the options.
+Representatives from the various official bodies will participate on a
+non-voting basis, and the committee can consult with whomever it
+wishes.
+
+To make this work, we need volunteers who are knowledgeable and
+committed to seeing the IAB and IESG continue their fine service to
+the community.  There will be a frenetic month to six weeks of
+activity, and then the committee gets to disband.  Give it some
+thought and volunteer if you think you can do the job.
+
+
+Steve
+

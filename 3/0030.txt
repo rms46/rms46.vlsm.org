@@ -1,0 +1,19 @@
+IESG -- 14 May 1998 -- IETF-Announce
+------------------------------------
+
+Last Call: 
+Some Thoughts on the Importance of Modesty and Decorum and the Need 
+for an IETF Code of Conduct to BCP 
+
+The IESG will consider publication of Some Thoughts on the Importance
+of Modesty and Decorum and the Need for an IETF Code of Conduct
+<draft-odell-code-of-conduct-02.txt> as a BCP.  This has been reviewed
+in the IESG, but is not the product of an IETF Working Group.
+
+The IESG plans to make a decision in the next few weeks, and solicits
+final comments on this action.  Please send any comments to the
+iesg@ietf.org or ietf@ietf.org mailing lists by June 13, 1998.
+
+Files can be obtained via
+ftp://ftp.ietf.org/internet-drafts/draft-odell-code-of-conduct-02.txt
+

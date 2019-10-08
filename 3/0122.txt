@@ -1,0 +1,28 @@
+ISOC Trustees -- 27 March 1993 -- IETF
+--------------------------------------
+
+Status of IAB nominations
+
+
+The nominating committee has provided to the Internet Society
+Trustees its results for the IAB positions and the Trustees have
+requested additional background information prior to completing
+their evaluation.
+
+The Trustees will work diligently to complete their part, but
+the procedures for meetings other than face to face typically
+allow two weeks at least and possibly more, if needed, to complete
+this work. It is hoped it will take less time than that.
+
+Under the procedures adopted for this first implementation of
+the POISED recommendations, the entire process is considered
+private, given that it pertains to personal information and
+evaluation (for the same reason, the work of the nominating
+committee is also considered private).
+
+As soon as the new IAB can be seated, the nominating committee
+is expected to present to it recommendations for IESG positions.
+
+Vint Cerf
+for the Internet Society Trustees
+

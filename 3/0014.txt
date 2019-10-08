@@ -1,0 +1,18 @@
+IAB -- 20 October 1999
+----------------------
+
+IETF Nominees for PSO seats on ICANN Board 
+
+Following the call for nominations issued by the IAB
+on September 14, I am pleased to announce the IETF 
+nominees for ICANN Board seats, which we have submitted to 
+the Council of the ICANN Protocol Supporting Organization. 
+That Council will now proceed to choose the final nominees
+from those submitted by the various members of the PSO.
+
+The IETF nominees are
+
+   Vint Cerf
+   Patrik Faltstrom
+   Geoff Huston
+

@@ -1,0 +1,399 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head><title>
+RSYNC:    Fasilitas  Salin  Data  Skala  Raksasa
+</title>
+<META name="description" 
+content="I am a real nowhere man, sitting in a nowhere LAN, making all my
+	nowhere .plans for nobody -1 -- Rahmat M. Samik-Ibrahim.">
+<META name="keywords" 
+content="RMS46, Rahmat, Samik-Ibrahim, Grounded-Theory, Research,
+Kompas, Kompas-Online, Analisis, Kwik-Kian-Gie, Internet, RFC, IETF"></head>
+<!--  Using STDLIB`(M4)' revision 9.X                         -->
+<!--  (C) 1996-2010 Rahmat M. Samik-Ibrahim under GPL terms.  -->
+<!--  http://vlsm.org/bin/std.m4.gz                           --> 
+     
+<body bgcolor="#ffffff" text="#000000" link="#0000d9" vlink="#000070" alink="#000040">
+<center><table bgcolor="#e6ebfe" width="80%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK1.html" target="_top"><img 
+src="png/LOCAL-LOGO1.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="center" valign="middle"><font color="#00008b" size=4><b>
+RSYNC:    Fasilitas  Salin  Data  Skala  Raksasa
+</b>
+<br><font size=2><b><a href="http://rms46.vlsm.org/" target="_top">Rahmat M. Samik-Ibrahim</a>
+	<br><a href="http://vlsm.org/" target="_top">vLSM.org</a></b></font></font>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK2.html" target="_top"><img 
+src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table></center>
+
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+<a name="isi"></a>
+<a href="../etc-new.html" target="_top"><font size=2 
+   color="red">WHAT&#39;s NEW</font></a> |
+<a href="../00-0.html" target="_top"><font size=2 color="red">HOME</font></a> |
+<a href="#bawah" target="_top"><font size=1 
+   color="blue">vv BOTTOM vv</font></a> |
+<a href="#0" target="_top"><font size=1 
+   color="blue">NEXT&gt;&gt;&gt;</font></a>
+<br>
+<font size="1" color="#00008b"><small><br>
+<form method="get" action="http://www.google.com/search">
+  <input type="text" name="q" size="30" maxlength=255 value="">
+  <input type="submit" name="btnG" value="Google Search">
+</form></small></font>
+<tr>
+<td align="center">
+<font size=3 face="arial, helvetica, sans-serif">
+| <a href="#0" target="_top">Pendahuluan</a>
+| <a href="#1" target="_top">Ilustrasi</a>
+| <a href="#2" target="_top">Anonymous</a>
+| <a href="#3" target="_top">Setting</a>
+| <a href="#4" target="_top">Rujukan</a>
+|
+</font>
+
+<tr>
+<td align="right">
+<a name="0"></a>
+<font size=1 color="blue"><a href="97.html" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="97.html" target="_top">^^TOP^^</a> |
+<a href="#1" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Pendahuluan</h2>
+<p>
+
+Pengambilan berkas melalui Internet dapat dilakukan dengan berbagai cara.
+Cara mudah dan interaktif dapat dilakukan memanfaatkan browser seperti 
+"Galeon", "Konqueror", "Mozilla", "Opera", dan sejenisnya. Apa bila 
+mengambil beberapa berkas, dapat menggunakan shell atau perl script yang 
+berbasis protokol ftp/http.  Namun, semua metoda tersebut di atas tidak 
+dirancang untuk penyalinan data skala besar sebuah mirror-server. 
+Penyalinan data pada Mirror Server biasanya memanfaatkan "rsync".
+<p>
+Program "rsync" dapat dimanfaatkan untuk berbagai keperluan. Namun perlu 
+diingat bahwa "rsync" rakus sumber daya seperti memori dan CPU. Jadi, 
+janganlah menggunakan ini secara masal yang hanya mengambil satu atau dua 
+berkas.
+</font>
+
+<tr>
+<td align="right">
+<a name="1"></a>
+<font size=1 color="blue"><a href="#0" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="97.html" target="_top">^^TOP^^</a> |
+<a href="#2" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Ilustrasi sederhana: menyalin isi direktori</h2>
+<p>
+Menyalin utuh sebuah direktori (umpama /sumber/ ) ke direktori lain (umpama
+/tujuan/ ) dapat dilakukan dengan perintah "cp":
+<p>
+<font face="courier">
+<pre>
+	cp -a /sumber/* /tujuan/
+</pre>
+</font>
+<p>
+Perintah "rsync" yang setara ialah:
+<p>
+<font face="courier">
+<pre>
+	rsync -av /sumber/ /tujuan/
+</pre>
+</font>
+<p>
+Perbedaan akan terasa, jika melakukan perubahan/penambahan isi direktori  
+/sumber/. Perintah "cp" akan menyalin ulang SEMUA berkas, namun "rsync"
+lebih cepat karena hanya akan menyalin berkas yang ditambah/diubah. Apa 
+bila ingin menghapus berkas di /tujuan/ yang tidak ada di /sumber/,
+gunakan:
+<p>
+<font face="courier">
+<pre>
+	rsync -av --delete /sumber/ /tujuan/
+</pre>
+</font>
+<p>
+Jika penghapusan hanya boleh setelah penyalinan sukses:
+<p>
+<font face="courier">
+<pre>
+	rsync -av --delete --delete-after /sumber/ /tujuan/
+</pre>
+</font>
+<p>
+Terkadang ada berkas yang kita tidak ingin salin (umpama *.bak):
+<p>
+<font face="courier">
+<pre>
+	rsync -av --exclude '*.bak' /sumber/ /tujuan/
+</pre>
+</font>
+<p>
+Tentu saja, silakan menggabungkan opsi-opsi seperti "--delete" dan
+dan "exclude" tersebut di atas.
+</font>
+
+<tr>
+<td align="right">
+<a name="2"></a>
+<font size=1 color="blue"><a href="#1" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="97.html" target="_top">^^TOP^^</a> |
+<a href="#3" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Menyalin "Anonymous" Dari Situs Jaringan</h2>
+<p>
+Walau pun perintah dapat digunakan untuk keperluan lokal seperti contoh di
+atas, lazimnya perintah "rsync" digunakan antar komputer melalui jaringan.
+Tentunya, ini hanya dapat dilakukan, jika komputer tersebut dikonfigurasi
+untuk keperluan tersebut! Cara mengkonfigurasi, akan dijabarkan pada
+bagian akhir tulisan ini.
+<p>
+Melihat daftar modul yang tersedia pada situs ibiblio.org:
+<p>
+<font face="courier">
+<pre>
+	rsync ibiblio.org::
+</pre>
+</font>
+<p>
+Maka akan muncul "Message of today" dan daftar-daftar modul.
+<p>
+<font face="courier">
+<pre>
+-------------------------------------------------------------------------
+  Welcome to the ibiblio rsync server!
+  [SISA "MESSAGE OF TODAY" DIHAPUS]
+
+pub            	EVERYTHING in our FTP tree (use this only for subdirectories)
+chinese-music  	Chinese music collection
+CPAN           	CPAN
+distros        	Linux Distributions (use this to get at particular distros)
+Docsouth       	Documenting the American South
+Dr-Fun         	Doctor Fun
+freedos        	FreeDOS
+gentoo         	Gentoo Linux Distribution
+ggi            	GGI
+gnome          	Gnome stable tree
+gnu            	GNU software
+grass          	GRASS mirror
+gutenberg      	Project Gutenberg
+htdig          	htdig mirror
+iupac          	iupac downloads
+kde            	our KDE mirror (complete)
+kernel.org     	the kernel.org mirror
+ldp_mirror     	Linux Documentation Project
+Linux          	ibiblio linux archive
+maven          	maven
+mutopia        	mutopia archive
+obp            	Open Book Project
+pld            	PLD Linux Distribution
+rpmhelp        	rpmhelp
+sourcemage     	sourcemage
+sun-info       	Sun Info
+sun-packages   	Sun Solaris Packages
+-------------------------------------------------------------------------
+</pre>
+</font>
+<p>
+Untuk mencari kernel linux terakhir, silakan melihat dengan perintah:
+<p>
+<font face="courier">
+<pre>
+	rsync ibiblio.org::kernel.org/pub/linux/kernel/
+</pre>
+</font>
+<p>
+Untuk menyalin isi direktori kernel tersebut ke /tujuan/
+<p>
+<font face="courier">
+<pre>
+	rsync -av --delete ibiblio.org::kernel.org/pub/linux/kernel/ /tujuan/
+</pre>
+</font>
+<p>
+Silakan menyimak kembali, opsi-opsi yang dijabarkan pada butir dua di atas.
+</font>
+
+<tr>
+<td align="right">
+<a name="3"></a>
+<font size=1 color="blue"><a href="#2" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="97.html" target="_top">^^TOP^^</a> |
+<a href="#4" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Setting "rsync"</h2>
+<p>
+Langkah pertama ialah menginstall program "rsync" ke direktori "/usr/bin/"
+(atau direktori lainnya). Jika tidak tersedia paket tersebut, silakan
+mengkompail source yang dapat diambil di "http://samba.anu.edu.au/rsync/"
+atau mirror dekat anda.
+<ul>
+<li> rsync bisa digunakan sebagai rsyncd, serta dipanggil
+   melalui "/etc/inetd.conf". Jadi, silakan menambahkan ke
+   berkas "/etc/inetd.conf" baris berikut ini:
+<p>
+<font face="courier">
+<pre>
+# ----------------------------------------------------------
+# /etc/inetd.conf
+
+rsync stream tcp nowait root /usr/bin/rsync rsyncd --daemon
+
+# asumsi, "rsync" ada di "/usr/bin/"
+#-----------------------------------------------------------
+</pre>
+</font>
+<p>
+<li> silakan membuat berkas text (ASCII) "/etc/rsyncd.motd" yang 
+   berisi pesan "Message of today" yang sesuai dengan selera anda.
+<p>
+<li> silakan membuat berkas konfigurasi "/etc/rsyncd.conf" dengan isi:
+<p>
+<font face="courier">
+<pre>
+# ----------------------------------------------------------------
+# /etc/rsyncd.conf
+
+# nama berkas "message of the day" yang dibuat di atas
+motd file = /etc/rsyncd.motd
+
+# berapa concurrent connections?
+max connections = 2
+
+# syslog ke mana?
+syslog facility = local3
+
+# Alamat atau blok IP mana yang diizinkan mengakses "rsync"? 
+#                     /32 --&gt; satu host; 
+#                     /16 --&gt; 64k host; dst.
+hosts allow =          \
+	10.118.0.0/16  \
+	192.168.1.2/32 \
+	127.0.0.0/8
+
+# labelmodul:
+[labelmodul]
+	comment = Komentar ini dapat dibaca dengan perintah "rsync nama.host::"
+	path = /var/dir/yang/mau/di/sync
+	read only = yes
+	use chroot = yes
+	list = yes
+	uid = nobody
+	gid = nogroup
+
+#---------------------------------------------------------------
+</pre>
+</font>
+<p>
+Harap  mengganti "labelmodul" dengan nama modul, dan
+"/var/dir/yang/mau/di/sync" dengan direktori tempat modul
+<p>
+<li> Agar "rsyncd" dapat berfungsi, silakan restart "initd" anda.
+<p>
+<font face="courier">
+<pre>
+
+		kill -1 "PID_INITD"
+</pre>
+</font>
+<p>
+   (mungkin juga menggunakan "initd restart"; tergantung variasi
+   linux anda).
+<p>
+<li> Silakan mencoba rsyncd dengan perintah:
+<p>
+<font face="courier">
+<pre>
+	rsync localhost::
+</pre>
+</font>
+<p>
+   Seharusnya akan keluar pesan "Message of today" yang diikuti dengan
+   daftar modul yang ada.
+<p>
+<li>Rsync anda siap digunakan!
+</ul>
+<p>
+<b>Catatan</b>: Versi awal tulisan ini diterbitkan di Koran Tempo,
+17 Desember 2003, halaman B8.
+</font>
+
+<tr>
+<td align="right">
+<a name="4"></a>
+<font size=1 color="blue"><a href="#3" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="97.html" target="_top">^^TOP^^</a> |
+<a href="#bawah" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Rujukan</h2>
+<p>
+<ul>
+<li> <a href="http://samba.anu.edu.au/rsync/" target="_top">http://samba.anu.edu.au/rsync/</a>
+	-- info rsync.
+
+</ul>
+</font>
+</table>
+</center>
+
+<a name="bawah"></a>
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+	<font size=1 color="blue"><a href="#4" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="97.html" target="_top">^^TOP^^</a></font>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e6ebfe" 
+width="80%">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK3.html" target="_top"><img 
+src="png/LOCAL-LOGO3.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="left">
+	<font size=2 color="#00008b">
+	Copyright &copy 2003-2014 <a href="../index.html" target="_top">Rahmat M. Samik-Ibrahim</a> .
+	Provided <b>AS-IS</b> with no <b>LIABILITY</b>.
+	
+	Permission is granted to copy, distribute, and/or modify
+	this webpage provided this notice is preserved.
+	<b>MIRRORS</b> of this site:
+<a href="http://rms46.vlsm.org/1/97.html" target="_top">BisnisWeb</a> -
+	<a href="http://rmsui.vlsm.org/rms46/1/97.html" target="_top">Fusilkom-UI</a>.
+
+	File revision: 1.1 2006/04/12 03:29:5
+	-- <a href="mailto:vlsm.org@t-HAPUS-DELETE.gmail.com?subject=[RMS-Feedback]"><font color="blue">E-CONTACT</font></a>.
+	Special thanks for this <a href="LOCAL-LINK3.html" target="_top">webspace provider</a></font>.
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK4.html" target="_top"><img 
+src="png/LOCAL-LOGO4.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table>
+<table>
+<tr>
+<td height="600" valign="top">
+</table>
+</center>
+</body>
+</html>
+<!-- END -->
+
+

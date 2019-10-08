@@ -1,0 +1,107 @@
+Karen L. Bowers  -- 8 September 1989 -- TCP/IP list
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8908.mm.www/0131.html
+-------------------------------------------------------------------------
+
+                On-Line Directories: IETF and Internet-Drafts
+
+Several months ago the Internet Engineering Task Force (IETF)
+announced the availability of two newly revised directories
+installed at NIC.DDN.MIL: "IETF:" and "Internet-Drafts:". This
+message repeats the brief description of those directories and
+provides a NEW list of the most recently installed Internet-Drafts.
+
+The IETF directory has been established as an aid to both veteran IETF
+members and newcomers. It comprises files containing: a general
+description of the IETF (history, organization, goals); a description
+of the Internet Activities Board; a summary of active Working Groups
+within the IETF; IETF meeting dates/locations; upcoming meeting
+information and an associated RSVP form; the upcoming meeting
+agenda; and a README file with an overview of directory contents. In
+addition, individual files have been dedicated to each Working Group
+and their particular activities. These files contain respective Charters,
+Status Updates and Current Meeting Reports. The WG files are named in
+the following fashion:
+
+                <WG NAME>.charter
+                <WG NAME>.status
+                <WG NAME>.report
+
+The Internet-Drafts directory presents drafts for review and comment.
+It contains documents that will be submitted to the RFC Editor for
+consideration, or will be simply discarded when their purpose has been
+served. Comments are welcomed and should be addressed to the responsible
+persons whose names and email addresses are listed on the first page of
+each draft. Each Internet-Draft is placed in a separate file; the following
+standard naming scheme is used:
+
+File Format Naming Scheme
+
+ascii text DRAFT-<TFNAME>-<WGNAME>-<ABBREVTITLE>-<REVNO>.TXT
+Postscript DRAFT-<TFNAME>-<WGNAME>-<ABBREVTITLE>-<REVNO>.PS
+unix compressed ascii DRAFT-<TFNAME>-<WGNAME>-<ABBREVTITLE>-<REVNO>.TXTZ
+unix compressed DRAFT-<TFNAME>-<WGNAME>-<ABBREVTITLE>-<REVNO>.PSZ
+  Postscript
+
+If the document is not being authored in a Task Force, then the author's
+name
+will be substituted for the Working Group name (WGNAME) and an
+organizational
+affiliation will be submitted for the Task Force name (TFNAME). Example:
+
+         DRAFT-<ORG>-<AUTHORNAME>-<ABBREVTITLE>-<REVNO>.TXT
+
+DRAFTS RECENTLY INSTALLED INCLUDE THE FOLLOWING:
+
+<DRAFT-IETF-ALERTMAN-ASYNCALERTMAN- Managing Asynchronously Generated
+ 00.TXT> Alerts
+
+<DRAFT-IETF-AUTH-IPOPTION-00.TXT> The Authentication of Internet
+                                        Datagrams
+
+<DRAFT-IETF-OSPFIGP-SPEC-07.PS> Draft OSPF Specification
+
+<DRAFT-IETF-PDN-CLUSTERSCHEME-00.TXT> Internet Cluster Addressing Scheme
+
+<DRAFT-IETF-PDN-PDNCLUSTER-00.TXT> Application of the Cluster Addressing
+                                        Scheme to X.25 Public Data Networks
+                                        and Worldwide Internet Network
+                                        Reachability Information Exchange
+
+<DRAFT-IETF-PDN-PDNCLUSTERNETASSIGNM- Assignment/Reservation of Internet
+ 00.TXT> Network Numbers for the PDN-Cluster
+
+<DRAFT-IETF-PERFCC-GWCC-00.TXT> Gateway Congestion Control Policy
+
+<DRAFT-IETF-PPP-REQ-00.TXT> Requirements for an Internet Standard
+                                        Point-to-Point Protocol
+
+<DRAFT-IETF-PPP-IPDATAGRAMSTX-01.TXT The Point-to-Point Protocol(PPP):
+                                        A Proposed Standard for the
+                                        Transmission of IP Datagrams over
+                                        Point-to-Point Links
+
+<DRAFT-UCL-KILLE-UUCPMAPPING-00.TXT> Mapping between Full RFC 822 and
+                                        RFC 822 with Restricted Encoding
+
+<DRAFT-UCL-KILLE-X400RFC822-01.TXT Mapping between X.400 (1988) and\
+                                        RFC822
+
+The Internet-Draft directory also contains a README file and an
+Index-Abstract file to aid the reader in locating drafts of interest.
+
+As stated earlier, both the IETF and Internet-Drafts directories are
+available on-line at NIC.DDN.MIL (west coast). The directory names
+are: "IETF:" and "Internet-Drafts:". By the end of September shadow
+directories will be installed at NNSC.NSF.NET for the convenience
+of the east coast Internet community. (The directory names will not be
+quite the same: "IETF" and "Internet-Drafts". The colon is placed in the
+NIC.DDN.MIL-installed directories' names to accommodate the TOPS 20
+system employed.)
+
+The current directories can be accessed by anonymous ftp. The "ls" or
+"dir" command will permit a review of what files are available and the
+specific naming scheme to use for a successful anonymous ftp action.
+For more information, please contact:
+
+        ietf-request@venera.isi.edu.
+

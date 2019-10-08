@@ -1,0 +1,51 @@
+NomCom Chair -- 29 November 1994 -- IETF-Announce
+-------------------------------------------------
+
+1995 IAB/IESG Nominations Committee - Request for Volunteers
+
+Hello Folks,
+
+Whenever there are open positions in the IESG or IAB, it is the
+role of the Nominations Committee ("nomcom") to nominate candidates
+to fill such vacancies. 
+
+The nomination committee is selected by a random drawing among 
+experienced IETF attendees. Persons who have attended at least 2 
+IETF meetings are eligible to volunteer to serve on the nominations
+committee. The nominations committee remains active for one year,
+although the vast majority of the work is performed during the initial
+5 months during the IAB and IESG transition period. Nomination 
+Committee members are expected to participate in biweekly conference
+calls thoughout this period, as part of the ongoing process of forming
+the best recommendation possible for filling the open IAB and IESG
+positions.
+
+Clearly, the quality of the IETF leadership depends on two factors:
+
+1) Establishment of a knowledgable nominations committee
+
+2) An abundance of qualified candidates for the open positions
+
+At this time, I am asking for everyone's assistance with the first item:
+the establishment of a knowledgable nominations committee. If you have 
+attended two (2) IETF meetings and have an interest in participating in 
+the nominations committee, please send email to:
+
+nomcom@bbn.com
+
+with appropriate contact information (including name and contact phone #s). 
+The list of volunteers will be verified as to qualification using the IETF 
+secretariat attendance records at CNRI. A nominations committee will be 
+formed from a randomly selected subset of the qualified volunteers.
+
+We hope to have the nominations committee selected prior to the upcoming
+IETF, so please respond as soon as possible, and in any case no later than
+Wednesday, November 30th. If anyone (who has volunteered) has not received
+confirmation mail, please contact me directly via email to "jcurran@bbn.com".
+
+Thanks!
+/John
+
+-----------------
+From: John Curran
+

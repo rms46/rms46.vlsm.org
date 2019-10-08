@@ -1,0 +1,66 @@
+IAB Minutes -- http://info.internet.isi.edu:80/IAB/IABmins.911010
+-----------------------------------------------------------------
+
+                       Internet Activities Board
+
+                  Meeting Minutes -- October 10, 1991
+
+
+                                FOREWORD
+
+This document contains minutes of the meeting of the Internet Activities
+Board (IAB) held on October 10, 1991 at the Fairmont Hotel (during the
+Interop '91 conference) in San Jose, CA.
+
+The meeting agenda will be found in Appendix A.  The attendees were:
+
+    IAB Members:
+        Bob Braden, ISI            Hans-Werner Braun, SDSC
+        Vint Cerf, CNRI            Lyman Chapin, BBN
+        David Clark, MIT           Phill Gross, ANS
+        Steve Kent, BBN            Tony Lauck, DEC
+        Barry Leiner, ADS          Dan Lynch, Interop
+        Jon Postel, ISI
+
+    IESG Members:
+        Robert Hinden, BBN         D. Crocker, DEC
+        Russ Hobby, UC, Davis      Phil Almquist, Barrnet
+
+    Guests:
+        Bob Aiken, NSF
+        Paul Mockapetris, DARPA
+        Steve Hardcastle-Kille, UCL
+        Yakov Rekhter, IBM
+
+    Scribe:
+        Kim Claffy, SDSC/UCSD
+
+
+[...]
+
+2.  ARCHITECTURAL RETREAT  -- RESULTS AND PLANS
+
+   2.1  Routing and Addressing
+
+      Cerf: There is a critical need to put together a small task group
+      to generate at least one feasible proposal for large-scale Routing
+      and Addressing in the Internet.  Its output will be a contribution
+      to an anticipated IETF WG, which will review the issues and
+      converge on a plan for updating Internet routing and addressing.
+
+      The group specified that minutes from this task group's meetings
+      must be freely available, and its work results would be available
+      as an Internet Draft.  The target of this group would be to define
+      a feasible solution by March 1992, in time for the San Diego IETF.
+
+      After some discussion on the structure and makeup of the task
+      group and the division of the leadership responsibilities, the
+      consensus was that there should be three specific separate
+      leadership roles:  meeting chairperson, document editor, and
+      "floor manager" to coordinate the activities.
+
+         NEW ACTION: Cerf: Talk to principals and convene first meeting
+            of Routing & Addressing task group.
+
+[...]
+

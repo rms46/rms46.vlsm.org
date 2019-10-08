@@ -1,0 +1,28 @@
+IESG Chair -- 7 December 1994 -- IETF-Announce
+----------------------------------------------
+
+IESG Positions
+
+The IESG Chair believes that the following slots are or will be vacant:
+
+Operations: Scott Bradner
+Applications: John Klensin
+Internet: Stev Knowles
+Transport: Allison Mankin
+Net Mgmt: Marshall Rose
+Standards: Lyman Chapin (resigned)
+
+The chair wishes to thank all of these Area Directors who have served
+capabably under often difficult circumstances. The IETF and IESG all owe
+them a vote of thanks.
+
+After consulting with the IESG, I would ask that the Nominations Committee
+select nominees for these positions, with the exception of the Standards
+Area which has no active WGs. No new areas or directors are suggested.
+Standards liasions have been dispersed into the appropriate areas and WGs.
+
+Respectfully submitted,
+
+Paul Mockapetris
+IETF and IESG Chair
+

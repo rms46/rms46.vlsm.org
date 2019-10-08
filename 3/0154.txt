@@ -1,0 +1,156 @@
+NomCom Chair -- 20 February 1998 -- IETF-Announce
+-------------------------------------------------
+
+IESG '98
+
+It gives me great pleasure to announce that the following slate of Nominees 
+recommended by this years Nominations Committee have been confirmed by the IAB 
+and will begin (or continue) their terms effective with the LA IETF.  
+Cngratulations!
+
+Mike StJohns, Chair
+Nomcom '98
+
+
+IETF Chair - Fred Baker, Cisco, 3 year term.
+Security Co-AD, Jeff Schiller, MIT, 3 year term.
+Security Co-AD, Marcus Leech, NorTel
+Routing AD, Rob Coltun, FORE
+User Services AD, April Marine, CSC/NASA
+Transport Co-AD, Vern Paxson, LBL
+Applications Co-AD, Keith Moore, UTenn
+O&M Co-AD, Mike O'Dell, UUNET
+Internet Co-AD, Jeff Burgan, @Home
+
+
+Fred Baker, Cisco
+
+Fred is the current chair of the IESG/IETF and has served in that position
+for the last 2 years.    He is a Senior Software Engineer for Cisco.  Fred
+Baker has worked in the telecommunications industry since 1978, building
+statistical multiplexors, terminal servers, bridges, and routers.  At Cisco
+Systems, his primary interest area is the management of congestion for best
+effort and real time traffic. In addition to product development, as a
+Cisco Fellow, he advises senior management of industry directions and
+appropriate corporate strategies. His principal standards contributions
+have been to the IETF, but he has contributed to ITU's H.323, and to such
+industry consortia as WINSOCK II and the ATM Forum. In the IETF, he has
+contributed to Network Management, Routing, PPP and Frame Relay, the
+Integrated Services architecture, and the RSVP signaling protocol. 
+
+
+Jeff Schiller, MIT
+
+Jeff is the current AD of the Security Area and has served in that position
+for the last 4 years.  He is the manager of Systems and Operations for
+MIT's network system. Jeff is an internationally known security expert
+having gotten his start at MIT with such projects as Multics and Kerberos.
+Over the years he has been involved in various privacy and security
+activities including the early PGP efforts. He was one of the early members
+and contributors to the IETF. He regularly teaches network security at the
+Interop conferences.   He was also a founding member of NearNet.
+
+
+Marcus Leech, NT
+
+Marcus Leech has been a Security Architect at Nortel for the past seven
+years.  He has been involved with the IETF for the past 2 years working on
+applications based security as well as the related public key
+architectures.  He is the chair of the Authenticated Firewall Traversal
+working group, and the author/editor of  2 RFCs on SOCKS.  He was a
+contributor at the recent  IAB  workshop on security.
+
+
+Rob Coltun, Fore
+
+Rob is employed by Fore working on ATM related switching and routing. Rob
+has been involved with the IETF since its early days, first as a staff
+member at MITRE supporting the Defense Data Network, later at UMaryland,
+Rainbow Bridge and Fore.  Over the years he has been involved in
+implementing and testing various routing protocols including one of the
+first Unix OSPF implementations.  He substitute chairs the OSPF working
+group.   He has implemented versions of RIP v1 & v2, IGMP v1, IDRP, BGP
+(with RPSL policy), and MOSPF and has architected PNNI, DVMRP and PIM-SM
+implementations.  He is the co-author of the OSPF over IPv6 drafts, and has
+authored the OSPF MIB and OSPF NSA RFCs and has authored other drafts
+related to routing and switching
+
+
+April Marine, CSC/NASA
+
+April Marine is currently the lead for the NASA Network Information Center,
+part of the NASA Integrated Services Network (NISN).  The NASA NIC
+concentrates on information infrastructure issues and collaborates to
+improve the user's interface to NASA's online information.  She is also
+manager of the GLOBE Help Desk, a first-level user support service that
+serves teachers involved in the Global Learning and Observations to Benefit
+the Environment (GLOBE) Program, an international "K-12" environmental
+studies program that relies heavily on the Internet.  She has worked for
+Sterling Software at NASA Ames Research Center for the past five years;
+previously she worked for several years at the SRI Network Information
+Center.  She is the co-author of several RFCs dealing with a variety of
+topics relevant to network users and user support organizations.
+
+
+Vern Paxson, LBL
+
+Vern Paxson is a staff scientist with the Lawrence Berkeley National
+Laboratory's Network Research Group.  He received his M.S. and Ph.D.
+degrees from the University of California, Berkeley. His research primarily
+concerns Internet measurement, and has given talks and taught tutorials at
+SIGCOMM, NANOG, IETF and other meetings.  He also does research on building
+network intrusion detection systems.  He co-chairs IETF working groups on
+IP Performance Metrics and TCP Implementation, and is a member of the IETF
+Transport Area directorate.   He's been the recipient of awards for SIGCOMM
+and USENIX papers; a co-recipient of two USENIX lifetime achievement
+awards, for contributions to BSD Unix and the Software Tools project; and
+won best-of-show in the 1992 International Obfuscated C Code Contest.  
+
+
+Keith Moore, UTenn
+
+Keith Moore has been active in IETF since early 1991.  He is currently
+Co-AD for Applications.  He has been  active in several working groups
+dealing with electronic mail and  the world wide web.  He has authored or
+co-authored several RFCs,  including portions of MIME, SMTP extensions, and
+delivery status notifications.  He served as chair of the DRUMS working
+group.  He is currently employed as a Research Associate  at the University
+of Tennessee, where his work focuses on improving accessibility of Internet
+information resources through replication and name resolution; and in
+general on scalable distributed systems.
+
+
+Mike O'Dell, UUNET
+
+Mike is currently  the Co-AD for the O&M Area and has held that position
+for 2 years. Mike is a Vice President at UUNET, a major ISP. Prior to
+joining UUNET Technologies, Mr. O'Dell was a Senior Member of Technical
+Staff at Bellcore (Morristown, NJ) where he worked on distributed systems,
+a major OSS re-engineering effort, and  served as chief engineer for an
+"RBOC of the Future" project.  Before Bellcore, he was Chief Computer
+Scientist and Director of Operating Systems Development for Prisma
+Computers.   While at the Lawrence Berkeley Laboratory where he was
+"ARPAnet IMP Liaison" for LBL's ARPAnet connection, he built his first
+TCP/IP network circa 1982 . He was a contributor to very early Berkeley
+UNIX network implementations and installed the first local area network at
+LBL using prototype MIT/Proteon token-ring  hardware. His research studies
+of real-world behavior of that network produced an award-winning paper
+presented at the IEEE Network Symposium.    Mr. O'Dell received  his BS and
+MS degrees in Computer Science from the University of Oklahoma in 1976 and
+1980, respectively. 
+
+Jeff Burgan, @Home Network
+
+Jeff is currently the Co-AD for the Internet Area and has held that
+position for 2 years.  He  manages the Backbone Engineering Group at @Home
+Network where he's responsible for the overall design and architecture for
+the backbone network. Previous jobs include Bay Networks for nearly two
+years where  he formed and managed the software engineering group
+responsible for the software base specific to ISP use of Bay equipment, and
+ six years at the NASA Ames Research Center where he was responsible for
+the management of the NASA Science Internet network.  He has  been an
+active member of the IETF since 1989 working in the areas of routing
+protocols and network operations.  Jeff graduated with a B.S. in Computer
+Science from the University of Maryland. 
+
+

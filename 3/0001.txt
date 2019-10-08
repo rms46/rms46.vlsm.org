@@ -1,0 +1,85 @@
+Lyman Chapin: Wed, 1 Jul 1992
+====================== B-I ==
+
+A summary of the IAB's proposals in response to the work of the ROAD group
+
+
+During its meeting in Kobe, Japan on June 18 and 19, the IAB
+reviewed the draft report of the ROAD group concerning the
+problems of "running out of IP network numbers" and "Internet
+routing table size explosion", and a companion report from
+the IESG of "IESG Deliberations on Routing and Addressing".
+
+The IAB's analysis of the many possibilities suggested by these
+two reports led it to the following conclusions, which are docu-
+mented in an internet-draft entitled "IP Version 7":
+
+1)  The ROAD group's work, compiled over a period of four months,
+    makes it very clear that the problems of too few IP addresses
+    and too many Internet routes are real and immediate, and represent
+    a clear and present danger to the future successful growth of the
+    worldwide Internet.  The IAB was therefore unable to agree with the
+    IESG recommendation to pursue an additional six-month program of
+    further analysis before deciding on a plan for dealing with the
+    ROAD problems.  The detailed design, engineering, and deployment
+    work must begin now, and it is therefore imperative that the
+    efforts of the Internet community be focussed on a common goal.
+
+2)  The IETF should aggresively pursue the work to engineer CIDR
+    ("classless inter-domain routing", described in RFC 1338),
+    including the extensions to the inter-AD routing protocols to
+    support variable-length masks/prefixes, and the associated
+    address administration paradigm.
+
+3)  Since CIDR postpones, but does not prevent, the eventual
+    exhaustion of the 32-bit IP address space, the IETF should
+    also aggressively pursue a detailed technical and organizational
+    plan for using CLNP (the OSI internetwork protocol defined by the
+    ISO 8473 standard, which uses 160-bit addresses) as the basis for
+    a new version of IP (which we have dubbed "IP version 7"), succeeding
+    over time the current version of IP (version 4) in the Internet.  An
+    initial description of how CLNP could be used for this purpose within
+    the current TCP/IP architecture and with the existing Internet
+    applications is described in RFC 1347.
+
+4)  CLNP has larger addresses than IP, but like IP it lacks features
+    that are expected to be necessary to support future Internet appli-
+    cations and services.  The IAB therefore also encourages the
+    pursuit of research in areas such as policy-based routing, route
+    preallocation and cacheing, and deterministic end-to-end QOS mainten-
+    ance (for real-time and other delay-variance sensitive traffic).
+
+It is important to understand that (3) above does NOT mean "adopting
+OSI" or "migrating to OSI" or "converting the Internet to use GOSIP
+protocols".  The IAB recommends only that a new version of IP (IPv7),
+with much wider addresses and a more extensible header, be based on the
+existing CLNP.  IPv7 is intended to be deployed within the current Internet
+TCP/IP architecture, not as part of an "OSI stack".
+
+There are, of course, many issues that must be resolved before CIDR and
+IPv7 can actually be deployed in the operational Internet.  No one should
+imagine that there is not still a great deal of work to be done, notwith-
+standing the efforts that have already been expended by several of the
+IETF working groups and by the members of the ROAD group over the past
+year.
+
+In recommending that the ROAD problems be addressed by a combination of
+CIDR, IPv7, and further research, the IAB has deliberately chosen NOT to
+recommend any of the possible alternatives, so as to present a single
+focal point for the community consisting of what we believe to be the
+best technical solutions to the problems.  This should not be construed
+as a blanket "condemnation" of the alternative proposals that have been
+floated in various parts of the IETF.  However, we believe that the normal
+IETF process of "let a thousand [proposals] bloom", in which the "right
+choice" emerges gradually and naturally from a dialectic of deployment and
+experimentation, would in this case expose the community to too great a
+risk that the Internet will drown in its own explosive success before
+the process had run its course.  The IAB does not take this step lightly,
+nor without regard for the Internet traditions that are unavoidably
+offended by it.  We look forward to a lively discussion of these
+conclusions during the upcoming IETF meeting in Boston.
+
+
+- Lyman Chapin
+  IAB chair
+

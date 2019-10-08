@@ -1,0 +1,107 @@
+Jon Postel -- 4 August 1987 -- TCP/IP
+-------------------------------------
+
+
+the namedroppers list policy
+
+
+                        NAMEDROPPERS POLICY 
+
+Scope: 
+
+This NAMEDROPPERS mailing list is to be used for discussion of the 
+concepts, principles, design, and implementation of the domain style 
+names. The main focus of this group is the review of documents 
+describing domain style name system (currently RFCs 882, 883, 973, 974) 
+and discussion of the implementation of the system. 
+
+The scope is limited to the technical aspects of the system. It does 
+not include discussion of the actual names selected, or the semantics of 
+those names. There are other forums for those discussions (for example, 
+HEADER-PEOPLE, and ARPA-MHS). 
+
+Policy: 
+
+While one of the advantages of computer mail and mailing lists 
+mechanisms is fast response, in this list we prefer to go a little slow 
+to ensure thoughtful discussion. In general, one should let some time 
+go by (a day) between first reading a message and composing a response. 
+Even during periods of intense activity on this list one should not send 
+more than one message per day. Typically this would allow one to 
+discuss several other contributions in one message. 
+
+      * Wait a day between reading and sending. 
+
+      * Send at most one message per day. 
+
+On the other hand, this is a list for participants in a discussion, not 
+observers. Everyone on the list is expected to contribute from time to 
+time. 
+
+To get on or off NAMEDROPPERS send your request to 
+NAMEDROPPERS-REQUEST@SRI-NIC.ARPA. 
+
+Related mailing lists: 
+
+HEADER-PEOPLE 
+
+This group is for the discussion of issues in the design and 
+implementation of the Internet community Text mail system (based on RFCs 
+821 and 822). Comments are welcome from any community that uses these 
+conventions. This may include the interaction of the domain style names 
+with the operation of this mail system. 
+
+To get on or off HEADER-PEOPLE send your request to 
+HEADER-PEOPLE-REQUEST@MIT-MC.ARPA. 
+
+ARPA-MHS 
+
+This group is explicitly focused on the development of means for 
+interoperation and interconnection of the Internety community Text mail 
+system and the international standards community X.400/MHS mail systems. 
+This includes developing a mapping between the naming procedures used in 
+these two systems. 
+
+To get on or off ARPA-MHS send your request to 
+ARPA-MHS-REQUEST@BRL.ARPA. 
+
+MMM-PEOPLE 
+
+This group is exploring the issues in multimedia computer mail (i.e., 
+mail that includes text, bitmap, voice, graphics, and other special data 
+types). This is based on work that has gone on for several years under 
+both DARPA and NAVY sponsorship. There is consideration in this group 
+of the use of X.400/MHS as a basis for further work on multimedia mail. 
+
+To get on or off MMM-PEOPLE send your request to 
+MMM-PEOPLE-REQUEST@C.ISI.EDU. 
+
+Multiple Addresses: 
+
+Nearly everyone in NAMEDROPPERS is also on HEADER-PEOPLE. There is no 
+need to send a message to both NAMEDROPPERS and any other list. 
+
+People are pretty careful about which lists they are and are not on. It 
+is really best to send your message to exactly one list. If it was the 
+wrong one, someone will let you know. Sending a message to more than 
+one list will surely waste a significant amount of both computer and 
+people time and resources. 
+
+In fact, when sending to NAMEDROPPERS the only address needed is 
+NAMEDROPPERS@SRI-NIC.ARPA. If you are responding to a particular 
+comment by someone he or she will get the message without being 
+explicitly addressed, and you will get a copy back too. 
+
+History: 
+
+All of the previous discussion of the NAMEDROPPERS can be found in the 
+files 
+
+      <NAMSER>NAMEDROPPERS.YYYY on SRI-NIC.ARPA, 
+
+where YYYY is the year. There are currently files for 1983, 1984, and 
+1985. <NAMSER>NAMEDROPPERS.MAIL contains the most current
+NAMEDROPPERS dialog. These files can be accessed via anonymous FTP. 
+New member of NAMEDROPPERS may which to copy and read these archives 
+before joining the discussion.
+

@@ -1,0 +1,86 @@
+ISOC -- 31 January 1993 -- IETF
+-------------------------------
+
+IAB and IESG Positions Open for 1993
+
+
+Dear Internauts:
+
+A number of positions on the IAB and IESG are now open and
+are to be filled for the 1993-1994 period by the nominations 
+committee, led by Jeff Case. As you know, we are trying a new 
+process for filling these positions and I am grateful to IAB 
+and IESG members who volunteered their positions for this 
+initial round of renewal and to Jeff Case and his committee
+for their commitment. All appointments are for two years of 
+service. 
+
+
+
+Internet Architecture Board 
+--------------------------- 
+ 
+  The following positions are open: 
+ 
+     Position        Current Occupant      Candidate for 1993 (Y/N) 
+     ---------       ---------------       ------------------------ 
+ 
+     Chair           Lyman Chapin            Y 
+     Member          Hans-Werner Braun       N 
+     Member          Vint Cerf               N 
+     Member          Phill Gross             Y 
+     Member          Dan Lynch               N 
+     Member          <empty>                 - 
+ 
+  Members who continue to serve through 1994 on the IAB include: 
+ 
+     Position        Current Occupant 
+     --------        ---------------- 
+     Exec Dir        Bob Braden 
+     Member          Christian Huitema 
+     Member          Steve Kent 
+     Member          Tony Lauck 
+     Member          Barry Leiner 
+     IANA/RFC Ed     Jon Postel 
+ 
+ 
+Internet Engineering Steering Group 
+-----------------------------------
+ 
+  The following positions are open: 
+ 
+     Position       Current Occupant      Candidate for 1993 (Y/N) 
+     ---------       ---------------       ------------------------ 
+     Chair           Phill Gross              Y 
+     Standards       Dave Crocker             Y 
+     Applications    Russ Hobby               Y 
+     Internet        Stev Knowles             Y 
+                     Phil Almquist            N 
+     Operations      Phill Gross              N 
+     Service Apps    <empty>                  - 
+     Transport       Dave Borman              N 
+ 
+  Members who continue to serve until 1994 include: 
+ 
+     Position        Current Occupant 
+     --------        ---------------- 
+     Applications    Erik Huizer 
+     Internet        Dave Piscitello 
+     Management      Chuck Davin 
+     Operations      Bernhard Stockman 
+     Routing         Robert Hinden 
+     Security        Steve Crocker 
+     User Services   Joyce K. Reynolds 
+ 
+ 
+I encourage each of you to give serious consideration to  
+identifying qualified candidates for all open positions and 
+to convey your thoughts to the nominating committee promptly 
+at ietfnom@cs.utk.edu. 
+ 
+Warmest regards, 
+ 
+ 
+Vint Cerf 
+President, Internet Society
+

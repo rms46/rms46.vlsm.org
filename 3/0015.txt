@@ -1,0 +1,231 @@
+IAB -- 5 October 1999
+---------------------
+
+RESPONSE TO APPEAL TO IAB BY MR W A SIMPSON 
+
+This is the IAB's response to an appeal against IESG action lodged
+on May 1, 1999 by William Allen Simpson. The appeal (accessible
+at http://www.ietf.org/appeal ) specifically concerns the IESG's
+rejection on March 1, 1999 of Mr Simpson's appeal to the IESG 
+summarised in his words as
+
+>> Pursuant to the process detailed in RFC-2026 sections 6.5.1 and 6.5.2,
+>> and ultimately 6.5.3, I appeal the IESG decision to publish
+>> draft-ietf-ipsec-ciph-cbc-03.txt and all documents referencing it,
+>> together with the failure to publish draft-simpson-cbc-01.txt,
+>> draft-simpson-desx-02.txt and draft-simpson-des3v2-03.txt (or earlier
+>> versions thereof).
+
+PROCEDURAL MATTERS
+
+The IAB is not a court of law; in fact it has a very narrow
+scope of possible action under RFC 2026 (either annul an IESG
+decision and send the matter back to them, or simply make
+a recommendation to the IESG). In addition to that the IAB has
+the option of making suggestions about the IETF standards process.
+
+In this case, the IAB followed as closely as possible the procedure 
+adopted for previous appeals - a call for comments on the IETF list,
+short speaking slots in an open hearing, and then a private
+discussion within the IAB. The open hearing was held during the
+Oslo meeting of the IETF, on July 15, 1999. 
+
+Four IAB members recused themselves from decision-taking on this appeal:
+Fred Baker (IESG Chair), Harald Alvestrand (IESG member at the time),
+Ran Atkinson (former IPSEC WG co-chair) and Geoff Huston (Chair of the 
+ISOC Board).
+
+Prior to the hearing the IAB received written comments from Bodo Moeller,
+Ozan Yigit, and requests to speak from Bill Simpson, Ted T'So,
+Eric Brunner, and Donald Eastlake. All of these requests to speak
+were granted, subject to a time limit of ten minutes for Mr Simpson
+and five minutes for the others. Mr Simpson spoke by telephone
+connected to the open hearing, since he was unable to be present
+in person. Mr Simpson provided additional
+detailed arguments and on-line references. Additional speakers
+at the hearing were Paul Lambert and Scott Bradner.
+
+Not being a court of law, the IAB has not responded to the appeal
+point by point in detail, nor has it examined the working group
+record in exhaustive detail. However we checked the record
+of relevant IESG discussions. 
+
+We have specifically not responded to Mr Simpson's claim of "plagiarism 
+and misappropriating copyright" as this is clearly outside our competence.
+
+COMMENTS ON MAJOR CLAIMS
+
+Mr Simpson's appeal to the IAB makes the following major claims:
+
+>  1) The decision was not timely.  The documents had already been published.
+>    The RFC Editor had promised not to publish the documents until the
+>    issues had been resolved.
+
+The response from the IESG (dated March 1, 1999) to Mr Simpson's appeal
+(dated October 22, 1998) was indeed delayed until about four months
+after the IESG's minuted decision to approve publication of the
+contested documents. However, RFC 2026 explicitly avoids setting a time
+limit for the response to appeals, nor does it forbid publication of
+documents during the course of an appeal, so there is no process
+violation here. It does require appeal responses to be communicated
+"within a reasonable period of time" which was not respected in this
+case.
+
+   Even though there was no process violation here, the IESG response
+   SHOULD have been sent within a few days of the decision to reject
+   the appeal.
+
+
+> 2) The answers by the IESG are non-responsive; particularly to points
+>    #9, #14, #15, #17, #18.  The appeal explicitly listed "other
+>    documents" in its subject, and explicitly addressed issues of cross
+>    reference.
+
+The appeal was very complex but clearly centered around four specific
+documents. The IESG restricted its response to those four documents,
+which are the nub of the matter. We consider this restriction
+reasonable and do not find the IESG's answers to be non-responsive.
+
+> 3) The answers contain numerous false statements, unsupported by the
+>    WG record.
+
+The allegedly false statements primarily relate to spoken communications
+that were not transcribed.  There is,
+therefore, no basis upon which to review Mr. Simpson's claims.
+We note, though, that the allegedly false statements 
+concern matters which we would not expect to be on the written record.
+The comments made in the open hearing confirm a continuing disagreement
+about these matters between Mr Simpson and other members of the IPSEC WG.
+
+> 4) The answer concludes with an ad hominem attack on appellant.
+
+Since the appeal was personal in nature, it would have been hard to
+respond to it in completely impersonal language.  However, the nature
+of the WG and appeal processes is such that it is always easier to
+arrive at reasonable and reasoned decisions if all parties involved can
+maintain a spirit and tone of calm and professional discourse. That
+said, it is clear that regrettable, intemperate and pejorative language
+has been used over a period of years by several of the participants in
+the process.
+
+   Pejorative language SHOULD never be used in communications from WG
+   chairs or IESG members.
+
+TECHNICAL ISSUES
+
+Technical issues are settled in the IETF by WG rough consensus as judged by
+the WG chair(s). We find no process violation here, merely the fact that
+Mr Simpson did not agree with the rough consensus.
+
+On the point of key length, formal decisions in the IETF are taken according 
+to RFC 2026, not by the IETF plenary. The clear preference of the Danvers 
+plenary for strong keys was embodied in RFC 1984 and has certainly not
+been ignored, but the mandatory requirements of a Proposed Standard
+are matters in the purview of the WG and the IESG. We do not find a process 
+violation here.
+
+We agree that the sentence referring to 40 bit keys is poorly phrased and
+might be subject to the misunderstanding that all cited ciphers allow 40 bit
+keys, which the table shows is not the case. 
+
+   This sentence SHOULD be clarified when RFC 2451 is next revised. In light 
+   of recent technical developments, even 56 bit keys SHOULD be deprecated in 
+   such a revision.
+
+We agree that the reference to "ECB" is misleading. 
+
+   This SHOULD be corrected, and a reference to recently published work on 
+   differential cryptanalysis should be added, when RFC 2451 is next revised.
+
+On the other technical issues raised in the appeal we see no grounds
+to revisit the WG rough consensus approved by the IESG. 
+
+   We have DECIDED not to annul the IESG decision to approve RFC 2451 as Proposed Standard. 
+
+However, the general quality of the text of RFC 2451 is unsatisfactory.
+We also note that it confuses two topics: a general framework for ESP with CBC
+mode, and the specification of how certain ciphers should be used within
+that framework.
+
+   We RECOMMEND a thorough technical and editorial review of
+   RFC 2451 before it is considered for advancement on the
+   standards track.  We believe that significant editorial
+   revision will be necessary to clarify the issues identified
+   in the appeal and probably some others.  It may even be
+   desirable to split the document in two. If the revision
+   process alters the underlying protocol, rather than merely
+   the descriptive text, the document will, of course, have to
+   be recycled at Proposed Standard level rather than being
+   promoted to Draft Standard. We ENCOURAGE the IESG to
+   carefully consider the content and nature of changes in
+   making that decision.
+
+
+FREE FLOW OF TEXT AND IDEAS
+
+As noted above we take no position on the claim of "plagiarism and
+misappropriating copyright". However, we note that the long-standing
+tradition in the IETF, understood by all regular participants, is the
+free flow of text and ideas between drafts and RFCs, as required by
+progress in the working groups.  This principle is embodied in RFC
+2026, which provides (10.2) that "[n]o contribution that is subject to
+any requirement of confidentiality or any restriction on its
+dissemination may be considered in any part of the Internet Standards
+Process ...." and  (10.3.1.1) that "to the extent that the submission
+is or may be subject to copyright, the contributor ... grant[s] an
+unlimited perpetual, non-exclusive, royalty-free, world-wide right and
+license to the ISOC and the IETF under any copyrights in the
+contribution", including the right to prepare derivative works.
+
+Clearly such free flow requires due acknowledgment, but does not
+automatically imply formal authorship. We find the acknowledgements of
+Mr Simpson's contributions in the IPSEC document set to correspond
+generally to the IETF tradition. We note that particpants in the
+original conception of IPSEC have differing recollections about the
+sequence of ideas, which we find unsurprising.
+
+   We RECOMMEND that as and when documents in the IPSEC document set
+   are revised, a careful check for all missing acknowledgements to Mr
+   Simpson and others, and all missing references to earlier work,
+   should be made.
+
+We also find the multiple gradations of levels of acknowledgement in
+RFC 2451 (and other IPSEC documents) to be confusing and uncalled for.
+
+   We RECOMMEND that as and when IPSEC documents are revised, all those
+   in addition to the document editor(s) should simply be acknowledged
+   at the same level in alphabetical order.
+
+In the process of reviewing this, we have better understood that some further
+clarification of the IETF standards process is needed with respect to free flow of
+text between documents. We intend to make a separate recommendation
+to the POISSON WG about this and other matters raised by the appeal.
+
+Finally we note that Mr Simpson has a pending request for the
+publication as RFCs of draft-simpson-cbc-01.txt,
+draft-simpson-desx-02.txt and draft-simpson-des3v2-03.txt which has
+never been handled by the IESG. We understand that the IESG did not
+wish to see them published prior to RFC 2451, but that is long past. In
+our opinion these documents are now overtaken by events, but their
+status needs to be resolved. In general the IESG should make clear its
+position on pending documents as soon as reasonably possible.
+
+   We RECOMMEND the IESG to make a recommendation on these drafts to
+   the RFC Editor within a matter of weeks. We SUGGEST that if the
+   recommendation is against publication, Mr Simpson considers
+   submitting an up to date summary of his critique of the WG consensus
+   for publication as an Informational RFC.
+
+
+REQUEST FOR ORAL ARGUMENT
+
+Mr. Simpson asked for the opportunity to appear before the IAB to
+personally argue each point in detail.  As we observed before, the IAB
+is not a court of law.  Furthermore, RFC 2026's procedures for conflict
+resolution and appeals (6.5) do not call for or anticipate that the IAB
+should be required to hold hearings or receive oral argument.  Although
+the IAB would have discretion in an appropriate case to hold such
+proceedings, we do not believe that they are necessary here.
+
+---
+

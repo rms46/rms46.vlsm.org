@@ -1,0 +1,76 @@
+NomCom Chair -- 29 August 1997 -- IETF-Announce
+-----------------------------------------------
+
+IETF Nomcom  - Volunteer List
+
+As of 1600 PDT 29 August I had received volunteer messages from the following 
+people (57).  If you are not listed and believe you should be, please contact 
+me by next Friday (5 August) with some evidence that you had emailed me ahead 
+of the deadline. 
+
+I want to thank all of you who have volunteered.  Stay tuned for the selection 
+lottery on the 20th of September.  Mike
+
+
+[Steve, please reflect to the IETF-Announce list and you can start your 
+eligibilty confirmation process - thanks]
+
+Alex Conta <AConta@Lucent.com>
+Avri Doria <adoria@esun19.gdc.com>
+Bernard Aboba <aboba@internaut.com>
+Bill Manning <bmanning@ISI.EDU>
+Bill Sommerfeld <sommerfeld@apollo.hp.com>
+Bob Fink <RLFink@lbl.gov>
+Borje Ohlman <Borje.Ohlman@etx.ericsson.se>
+Bruce Greenblatt <BRUCE_GREENBLATT@novell.com>
+Charlie Kaufman <Charlie_Kaufman@iris.com>
+Chris Newman <Chris.Newman@innosoft.com>
+Dave Crocker <dcrocker@brandenburg.com>
+David M. Meyer <meyer@network-services.uoregon.edu
+David Perkins <dperkins@scruznet.com>
+Deirdre Kostick <kostick@qsun.ho.att.com>
+Derya Cansever <dcansever@gte.com>
+Donald E. Eastlake 3rd <dee@cybercash.com>
+Dorn Hetzel <dorn@atl.eni.net>
+E. Paul Love <epl@sover.net>
+Einar Stefferud <stef@nma.com>
+Eric W Gray <ewgray@lucent.com>
+Evi Nemeth <evi@rupertsberg.cs.colorado.edu>
+Glen Zorn <glennz@microsoft.com>
+John Boudreaux <johnb@jbx.com>
+John Tavs <tavs@raleigh.ibm.com>
+Keith McCloghrie <kzm@cisco.com>
+Lixia Zhang <lixia@CS.UCLA.EDU>
+Manu Kaycee <mjk@nj.paradyne.com>
+Marshall Rose <mrose@dbc.fv.com>
+Matt Holdrege <matt@ascend.com>
+Michael Mealling <michael@bailey.dscga.com>
+Miriam Kadansky <Miriam.Kadansky@East.Sun.COM>
+Neal McBurnett <nealmcb@lucent.com>
+Ned Freed <Ned.Freed@innosoft.com>
+Olafur Gudmundsson <ogud@tis.com>
+Ole J. Jacobsen <ole@csli.Stanford.EDU>
+Paul Ferguson <pferguso@cisco.com>
+Paul Hoffman <paulh@imc.org>
+Paul Mockapetris <Paul.Mockapetris@Software.com>
+Perry E. Metzger <perry@piermont.com>
+Pete Resnick <presnick@qualcomm.com>
+Philip J. Nesser II <pjnesser@martigny.ai.mit.edu>
+Randall Gellens <Randy@qualcomm.com>
+Rik Drummond <drummond@OnRamp.NET>
+Scott Huddle <huddle@mci.net>
+Sig Handelman"<handel@watson.ibm.com>
+Stephen Kent <kent@bbn.com>
+Steve Hanna <shanna@bcn.East.Sun.COM>
+Steve Hole <steve@esys.ca>
+Ted Wolf Jr <ted@usa.net>
+Theodore Y. Ts'o <tytso@MIT.EDU>
+Tony Genovese <tonyg@microsoft.com>
+Tony Li <tli@juniper.net>
+Uri Blumenthal <uri@watson.ibm.com>
+Vab Goel <vgoel@sprint.net>
+Vito P. Jokubaitis <vjokubaitis@att.com>
+William Allen Simpson <wsimpson@greendragon.com>
+William B. Norton <wbn@merit.edu>
+
+

@@ -1,0 +1,52 @@
+NomCom -- 21 October 1999 -- IETF-Announce
+------------------------------------------
+
+NomCom Reminder 
+
+Hello,
+
+I wanted to remind people that the deadline for volunteering for the
+NomCom is October 22, 1999.  The volunteer pool is growing,
+and I am grateful to those who have already volunteered.  Please
+remember that the more people we have in the volunteer pool,
+the better chance we have of selecting a NomCom which represents
+the diversity of populations and opinions to be found in the IETF. 
+
+To qualify you must have attended 2 out of the last 3 IETF meetings.  
+You must also not be interested in being nominated to replace any of the 
+current office holders in the following positions:
+
+IESG Terms ending in March, 2000:
+
+Keith Moore             Applications
+Erik Nordmark           Internet
+Marcus Leech            Security
+Bert Wijnen             Operations and Network Management
+Rob Coltun              Routing
+April Marine            User Services
+Vern Paxson             Transport
+
+IAB Terms ending in March, 2000:
+
+Brian Carpenter
+Steve Bellovin
+Jon Crowcroft
+Ned Freed
+Tim Howes
+John Klensin
+
+Please Note:   These people have not yet been polled on their 
+willingness to stand for renomination.
+
+Please send a note indicating your interest in being on the NomCom to 
+avri.doria@nokia.com.  Please include your telephone number and list 
+the subject as: NomCom Volunteer.
+
+Thanks
+
+a.
+-----------------------------------
+avri doria
++1 617 678 9402
+
+

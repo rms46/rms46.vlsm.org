@@ -1,0 +1,19 @@
+Christian Huitema, Steve Deering, Bob Hinden, Dave Crocker: Fri, 4 Jun 1993 
+==================================================================== B-I ==
+
+SIP & IPAE groups to merge and shuffle chairs 
+
+
+With Christian Huitema's election as IAB chair and the extra workload that
+that entails, he has decided to resign as co-chair of the SIP Working Group.
+With the approval of the Internet Area ADs, Bob Hinden will be taking his
+place as co-chair (with Steve Deering) of the SIP group.
+
+This also seems an appropriate time to terminate the separate IPAE
+Working Group, chaired by Dave Crocker, and have its work taken over by
+the SIP group, since IPAE has evolved into being the SIP transition and
+implementation group. This will require a modification of the SIP WG
+charter, which will be submitted to the IESG for approval.
+
+Christian, Steve, Bob, and Dave
+

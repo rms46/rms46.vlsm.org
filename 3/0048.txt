@@ -1,0 +1,41 @@
+IETF -- 18 December 1998 -- IETF-Announce
+-----------------------------------------
+
+The IAB and the IESG deplore the recent changes to the Wassenaar
+Arrangement (http://www.wassenaar.org) that further limit the
+availability of encryption software by including it in the Wassenaar
+agreement's list of export controlled software (section 5.A.2.a.1
+of the list of dual-use goods, WA LIST 98 (1)).  As discussed in
+RFC 1984, strong cryptography is essential to the security of the
+Internet; restrictions on its use or availability will leave us
+with a weak, vulnerable network, endanger the privacy of users and
+businesses, and slow the growth of electronic commerce.
+
+The new restrictions will have a particularly deleterious effect
+on smaller countries, where there may not be enough of a local
+market or local expertise to support the development of indigenous
+cryptographic products.  But everyone is adversely affected by
+this; the Internet is used world-wide, and even sites with access
+to strong cryptographic products must be able to talk to those who
+do not.  This in turn endangers their own security.
+
+We are happy that the key size limit has been raised in some cases
+from 40 bits to 64; however, this is still too small to provide
+real security.  We estimate that after a modest capital investment,
+a company or criminal organization could crack a 64-bit cipher in less
+than a day for about $2500 per solution.  This cost will only drop
+in coming years.  A report released about three years ago suggested
+that 90-bit keys are the minimum for long-term security.
+
+We are happy that the key size limit has been raised in some cases
+from 40 bits to 64; however, this is still too small to provide
+real security.  We estimate that after a modest capital investment,
+a company or criminal organization could crack a 64-bit cipher in less
+than a day for about $2500 per solution.  This cost will only drop
+in coming years.  A report released about three years ago suggested
+that 90-bit keys are the minimum for long-term security.
+
+   Brian Carpenter (IAB Chair)
+   Fred Baker (IESG and IETF Chair)
+
+

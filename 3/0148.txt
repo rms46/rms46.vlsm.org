@@ -1,0 +1,132 @@
+NomCom Chair -- 27 August 1997 -- IETF-Announce
+-----------------------------------------------
+
+Third and last call for volunteers - Nominations Committee.
+
+*****LAST CALL!!!!!!! LAST CALL!!!!!!!!*****
+
+*****List closes 1600 PDT 29 August 1997****
+
+
+[Steve - please reflect onto the IETF-Announce list]
+
+[This document has some changes from prior announcements, note the change in 
+the list of stocks for the selection process, also includes list of people 
+with expiring terms. - Mike]
+
+Hi -
+
+
+As you may or may not know I've been tapped to head this years IAB/IESG 
+nominating committee.  This is the second call for volunteers to participate 
+as members of that committee.  If you would like to volunteer, please send me 
+email (to stjohns@corp.home.net) with the phrase "NOMCOM VOLUNTEER" (yes - all 
+caps) in your subject line indicating your desire to participate.  Please 
+include your snail mail and phone numbers in the body of the message.  To be 
+eligible to serve on the NOMCOM, you must have attended 2 of the last 3 IETFs.
+
+Please make sure you can spend the time required to serve.  Although there 
+won't be any face to face meetings except for the December IETF, you will have 
+to spend about 2 hours a week on the phone during the 12 active weeks of the 
+nominations process (starting around the December IETF) in teleconferences 
+with the entire nominations committee.  You'll also be assigned various 
+candidates to interview as part of the nominations process.  
+
+Third and last call for volunteers will be next Wednesday, the 27th of August. 
+ Cutoff for accepting volunteers will be as of 1600 PDT on the 29th of August 
+- specifically, they have to be in my email box at that time. 
+
+Once I've got the complete list of volunteers, I'll post it and also ask that 
+the Secretariat verify eligibility.  The 10 members will be selected by lot 
+based on the sales volume of 11 stocks as of the NASDAQ market close on 19 
+September as reported in the San Jose Mercury News on 20 September 1997.
+
+The procedure is as follows:
+
+1) The Secretariat will provide the final list of eligibles listed in 
+alphabetical order and numbered from 0 sequentially increasing and will mail 
+this to the IETF and IETF-Announce list on or before the 17th of September.  
+
+2) The sales volume figure for the NASDAQ most active stock on the 19th of 
+Sept will be used to provide an initial offset into the list.  The 10,000s and 
+1,000s digit from the volume figure will be used to generate a "random" number 
+from 00 to 99 (e.g. if the sales figure is 345,009,234 shares, the number is 
+09).  The actual offset into the list is calculated as  volnumber**5 mod the 
+length of the list.  So if the volume number is 9, the length of the list is 
+47, the offset would be 17.  
+
+3) Each stock in turn will then be used to select a nomcom member from the 
+list by using the same procedure of extracting the 10,000 and 1000 digits, 
+raising them to the 5th power, adding that to the current position number and 
+then taking that mod the length of the list.  So if the first of the listed 
+stocks sales figure was 45,923,213 and the length of the list were 47 as 
+above, then the volume number would be 23, and the final position on the list 
+would be (17 + 23**5) mod 47 or 39.  The person with the number 39 
+(remembering that the list is numbered from 0 this is actually the 40th 
+person) would become the first member.
+
+4) Step three is repeated continuing from the current position on the list 
+until all 10 members are selected.
+
+5) In the event that there is a duplicate selection,simply continue down the 
+list sequentially until you find a person who has not been selected.  Continue 
+the process from that position on the list.
+
+6) If the most active stock is also one of the stocks I list for the 
+selection, it will be used twice, once for the initial offset, and once for 
+selecting a member.
+
+7) The figures as reported in the SJMercury News are the official figures.  In 
+the event of a disagreement between the numbers in the SJMercury and any other 
+publication, the SJMercury figures will be considered correct.
+
+8) If any stock is not listed in the 20 September 1997 edition of the paper, 
+OR HAS LESS THAN 100,000 in sales for the day, 
+it will be replaced in order by one of the alternate stocks IN ITS PLACE - 
+e.g. the other stocks on the list will retain their specific positions, rather 
+than having the stock deleted and having the alternate stock added to the end 
+of the list.
+
+9) The list of stocks is as follows:
+
+Member 1) Apple Computer (reported as AppleC)
+	2) TCI Incorporated - Ticker: TCOMA (Replaces @Home)
+	3) Cisco Systems (reported as Cisco)
+	4) Cyber Cash 	(reported as CybrCsh)
+	5) Excite	(reported as Excite)
+	6) Intel	(reported as Intel)
+	7) MCI	(reported as MCI)
+	8) Microsoft (reported as Microsft)
+	9) Netcom (reported as Netcom)
+	10) Netscape 	(reported as Netscpe)
+
+Alternate 1) Quantum 
+	2) 3Com
+	3) Yahoo
+
+Expiring Terms:
+
+I believe these are the folks who's terms expire in March '98
+
+In the IESG:
+
+Fred Baker		IETF Chair
+Jeff Burgan		Internet
+Joel Halpern		Routing	
+Keith Moore		Applications
+Mike O'Dell		Operations & Management
+Joyce K. Reynolds	User Services
+Allyn Romanow		Transport
+Jeff Schiller		Security
+
+
+In the IAB:
+
+Brian Carpenter
+Steve Bellovin
+Jon Crowcroft
+Robert Elz
+John Klensin
+Radia Perlman
+
+

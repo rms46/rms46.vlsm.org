@@ -1,0 +1,23 @@
+NomCom Chair -- 25 January 1994 -- IETF
+---------------------------------------
+
+Deadline for nominations
+
+The nominating committee has asked me to impose a deadline on nominations
+for IAB and IESG positions. All submissions should be made to the
+headhunt@ietf.cnri.reston.va.us list (eg, the nominating committee) by
+February 18, 6:00 PM PST. They should include:
+
+the nominee's name, address, phone number, and e-mail handle
+position being recommended
+breif resume highlighting why they would be good for the job.
+
+Ideally, nominations would in fact be self-nominations
+
+=============================================================================
+"In sound wisdom there are two sides"
+Zophar, Job 11:6
+
+----------
+Fred Baker
+

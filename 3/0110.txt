@@ -1,0 +1,1102 @@
+IESG -- 1 August 1996 -- CIDRD
+------------------------------
+
+
+IESG review of draft-hubbard-registry-guidelines-03.txt
+
+The Internet-Draft draft-hubbard-registry-guidelines-03.txt was forwarded
+to the IESG for consideration as a BCP after working group last-call within
+the cidrd working group and IETF Last-Call.  The IESG had a spirited
+discussion about this document.  What follows are comments by three IESG
+members which detail their specific thoughts on the document.  As you can
+see by these examples, a number of IESG members put significant effort into
+their reviews (this includes a number of IESG members who support the
+document as-is)
+
+As the sponsoring AD for this document I favor its acceptance but I do
+agree with a number of the comments made here and feel that a stronger
+document would result from the consideration of some of the points.  (it
+should be noted that I do not agree with all of the comments though)
+
+At this point I think there are 4 options:
+
+1/ The authors of the document create a revised version taking some or all
+of the following comments into account.
+
+2/ The working group &/or the authors withdraws the request for the
+document to be published as a BCP and requests publication as an
+Informational RFC (with or without changes).
+
+3/ The document is withdrawn and published outside of the IETF. 
+
+4/ The document is withdrawn and not published.
+
+I think the working group should review and discuss the IESG comments then
+decide on a course of action.
+
+My own feelings:
+
+As I said above, I think that revisions based on some of the comments would
+make a better document whatever the publication decision.
+
+Some of the issues raised in the IESG and during the IETF Last-Call about
+this draft are made more confusing by a vague (or explicit) feeling on the
+part of some IESG members, and some others in the community, that the IETF
+should not be trying to play a role in reviewing or helping formulate
+operational-type documents like this draft.  
+
+I feel that if the IETF were to forgo the opportunity to be involved in
+this sort of thing it would not (nor should not) stop the development of
+such documents but that the resulting documents would not get as wide a
+community review and would tend to be more directly reflective of the
+specific concerns of those who develop the documents and less likely to
+take into account wider issues.  I also feel that the interplay between the
+type of people involved in Internet operations and those in the IETF that
+attempt to deal with developing protocols is very important.  If the IETF
+were to abdicate its role in discussing operational issues there might be
+less reason for some of the operations specific people to involve
+themselves in the IETF and the IETF would be much the poorer for that.
+
+So I guess what I'm arguing for is that the working group & authors review
+& discuss these comments (rather than saying 'the hell with them') and
+produce a revised document.  At that point, while I'd rather the document
+be resubmitted as a BCP I could understand and support a move to just
+publish an Informational RFC and get the process over with.
+
+--------
+
+From: "Jeffrey I. Schiller" <jis@mit.edu>
+
+Looks like I am going to be voting "discuss" on
+draft-hubbard-registry-guidelines-03.txt. Let me explain why.
+
+                                General
+
+The document is written from a very one-sided point of view, namely that
+of "those in charge" dictating policy to "those who must do what we
+say." The fact that the registry system is an effective monopoly doesn't
+help.
+
+One key missing component is accountability of the registry system to
+the community. There are a lot of words in the document about the
+registry's right to audit and verify the correct use of address space on
+the part of end-user organizations and ISPs.  However there are no words
+subjecting the registries to any audit to demonstrate that they are in
+fact allocating address space according to this document (or any other)
+or that the registries are being fair in any way.
+
+I know that in the arena of domain name allocations, requests for
+information regarding statistics on the number of names being revoked
+are answered with "none of your business" or "we must protect the
+privacy of the community" or something similar.
+
+The problem of IP address space allocation is real and we should not
+ignore it. However mechanisms and methods of controlling the allocation
+should be fair and take into account the requirements of ISP's and end
+user organizations.  This one doesn't (I'll point out some examples
+below):
+
+                             Some Specifics
+
+[This list of problems isn't complete, but should give you the feel
+of where I am at...]
+
+> ISPs who exchange routing information with other ISPs at multiple loca-
+> tions and operate without default routing may request space directly
+> from the regional registry in its geographical area.
+
+Why multiple locations? A large regional ISP might still be default-free
+and exchange routing at one major NAP in their area. Why should they be
+disqualified?
+
+> ISPs with no
+> designated regional registry may contact any regional registry and the
+> regional registry may either handle the request or refer the request to
+> an appropriate registry.
+
+This isn't good, it can lead to a run around as one regional registry
+refers the ISP to another and another... A clearer procedure (which will
+converge) is really needed.
+
+> 3.     ISPs are required to utilize address space in an efficient
+>        manner.  To this end, ISPs should have documented
+>        justification available for each assignment.  The regional
+>        registry may, at any time, ask for this information.  If the
+>        information is not available, future allocations may be impacted.
+
+"at any time"? How about "given reasonable notice." Most sane
+organizations do not agree to contracts with clauses like this. There
+needs to be a statement of reasonableness and a limit on how often such
+intrusions may be made.
+
+>        In extreme cases, existing loans may be impacted.
+
+This might effect uninvolved third parties (like the ISP's customers,
+who are blameless). THIS LANGUAGE IMPLIES THAT THE REGISTRIES *OWN* THE
+IP ADDRESS SPACE AND MAY REVOKE ALLOCATIONS BASED ON SUBJECTIVE
+JUDGMENTS.  THIS SHOULD SIMPLY NOT BE!!!
+
+The Registries should also be prepared to sign a Non-disclosure
+agreement with any party that they demand information (of any kind)
+from. Perhaps the prototype agreement should be part of this document. I
+know that later in the document it states that Registries should keep
+customer (ISP or end-user) information confidential.
+
+> An assignment is the delegation of authority over a block of IP
+> addresses to an end enterprise.   The end enterprise will use addresses
+> from an assignment internally only; it will not sub-delegate those
+> addresses.
+
+Why? Where is the line drawn? Can an end-user organization provide IP
+addresses to unaffiliated parties who might use its PPP dialup service?
+Who decides what is reasonable here?
+
+I can go on, but I think you get the idea...
+
+                                -Jeff
+
+-------------
+>From mankin@ISI.EDU Wed Jul 31 08:04:10 1996
+
+I want to add to Jeff's
+concerns (these are just the comments that I think should be
+sent back with the document.  I too think the restrictions in here
+could drive most organizations and ISPs to never try to get IPv4 addresses
+again, whatever that means they have to do...).
+
+Grandfathering needed:
+
+There's no clear presentation of the status of
+reassignments and registration for addresses that were
+obtained from the IANA and for addresses that were
+obtained from registries before this document.  
+
+Legal responsibility and entities:
+
+Do I recall correctly that this document had a legal review
+by our counsel?  I think they slipped.  Please redouble Jeff's
+point that the comments about organizations not-redelegating
+are bizarre, because this means that the registries are in
+control of both who can be a sub-registry and who can be an ISP.
+
+Legal responsibility seems to be punted in an ingenuous way.
+If this document passes IESG review, I will insist on an IESG
+hold-harmless message.  Example of the ingenuous:  the registry
+makes the determination that the address isn't required, but
+IANA does the invalidation.  Who's responsible?
+
+> Invalidation:
+
+> IANA reserves the right to invalidate any IP assignments once it is
+> determined the the requirement for the address space no longer exists.
+
+Appeal:
+
+The IANA is an author of these guidelines, therefore, there isn't
+a neutral appeal path available.  Since IANA reports to IAB, the IAB
+should be the appellate of last resort.  
+
+-------------
+>From moore@cs.utk.edu Tue Jul 30 17:10:48 1996
+
+General comments on the document:
+
+I corresponded with lots of people in trying to review this document.
+I made a special attempt to talk with people who run small ISPs, since
+it seemed that they were the most likely to be unfairly injured by the
+policies proposed here.  
+
+*Everyone* that I talked to agreed on the need to conserve address
+space and to assign address blocks so as to minimize the number of
+routing table entries and the number of routing updates.  However,
+there was also considerable feeling that the particular policy 
+recommended here was designed to favor large ISPs even more than 
+necessary to meet its stated goals.
+
+I asked these people for concrete, technical suggestions to make the
+proposal less discriminatory.  I got the following suggestions:
+
+a. make it easier for startup ISPs to get initial chunks of address
+   space while building a customer base.  one suggestion was to give 
+   them their own address space which would be taken away if they did 
+   not meet the minimum requirements within six months or a year.
+
+b. force RRs to be less capricious in address assignment.  One ISP
+   complained to me that he had difficulty getting address blocks
+   from the Internic even though he was multi-homed, did not do
+   default routing, and did connect to multiple exchange points --
+   even though he was paying the price for portable addresses,
+   he was still told to go to his "upstream" ISP.
+
+My own feeling is that any policy that favors some ISPs over others
+must have strong technical justification.  I recognize that natural
+economic laws (e.g. economies of scale) may favor large ISPs over
+small ones, but we must be careful that we do not further tip the
+scales without a good reason.  Fixing this may require only
+clarification or slight changes to the policies described in the
+draft, but I believe it's worth considering more radical changes
+(if the ideas haven't already been considered by the WG).
+
+In addition to these concerns, I have concerns about the wording of
+the document.  The policies described here may well determine whether
+particular businesses will succeed or fail, whether people keep or
+lose their jobs, and perhaps even whether fortunes are won or lost.
+In other words, this document seems particularly likely to be
+scrutinized by judges and lawyers.  
+
+We thus have a strong interest in:
+
++ stating the policy in the clearest way possible (to avoid varying
+  interpretations that must be settled in court), 
+  
+   (for instance, the distinction between "allocation" and
+   "assignment", the definition of an ISP, whether an ISP
+   can also be an "end enterprise", the requirements for 
+   justification of space requirements and for appeals,
+   all need to be made very clear and explicit)
+
++ making sure that there's strong and explicit technical
+  justification for the decisions made (to minimize the possibility of
+  having the decisions overturned by an uninformed court),  and
+
++ explicitly stating the assumptions that led to the policy (to better
+  inform any court which considers whether to second-guess the
+  judgement of the IETF).
+
+  (for instance, it could explicitly state that we don't have the
+  authority to force the ISPs to spend money on bigger routers, thus the 
+  need to choose a policy that was technically sound given that IETF
+  could not require such expenditures )
+
+What follows is a markup of the document with my comments interspersed.
+
+------------------------------------------------------------------------------
+
+>  Status of this Memo
+>  
+>     "This memo provides information for the Internet community.  This
+>     memo does not specify an Internet standard of any kind.  Distribution
+>     of this memo is unlimited."
+
+If this memo is going to be a BCP, it needs a different paragraph
+here.  
+
+Another point re Status of this memo: BCPs are new, and we're still
+figuring out how to handle them.  One feature of the Internet
+Standards track is that a Proposed Standard document is subject to
+additional review as it progresses.  There is no such provision for
+BCPs, even though they are considered "current".  A "current practice"
+is presumably not "best" forever, yet we have not defined any
+mechanism by which BCPs are abandoned, or superceded.
+
+While many feel that the guidelines defined in this document are
+necessary, the eventual effect of these guidelines cannot be reliably
+predicted.  These guidelines are at least as "experimental" as any new
+protocol (whether on the standards track or not), and they will almost
+certainly need to be modified based on experience.
+
+I therefore believe that every BCP (including this document) should be
+automatically re-evaluated by IESG at some pre-determined time from
+the time of adoption, and that it be deemed to have expired if IESG
+has not re-confirmed or replaced it within six months of its
+re-evaluation date.  For this document, I'd suggest a re-evaluation
+date of six months.  This is not a long time, but at current Internet
+growth rates, the number of addresses assigned during that time should
+a signifcant portion of the total number of addresses then in use.
+
+>  Abstract
+>  
+>  This document describes the registry system for the distribution of
+>  globally unique Internet address space and registry operations.
+
+"Internet" should be "Internet Protocol version 4" for clarity.  IPv6
+should afford more flexibility in address assignment, even if it
+doesn't alleviate the routing problems.  These assignment policies
+should certainly be reconsidered for IPv6.
+
+>  Particularly this document describes the rules and guidelines
+>  governing the distribution of this address space.
+>  
+>  This document replaces RFC 1466, with all the guidelines and
+>  procedures updated and modified in the light of experience.
+>  
+>  This document does not describe private Internet address space and
+>  multicast address space.  It also does not describe regional and local
+>  refinements of the global rules and guidelines.
+>  
+>  This document can be considered the base set of operational guidelines
+>  in use by all registries.  Additional guidelines may be imposed by a
+>  particular registry as appropriate.
+
+>  
+>                              1. Introduction
+>  
+>  The addressing constraints described in this document are
+>  largely the result of the interaction of existing router
+>  technology, address assignment, and architectural history.
+>  After extensive review and discussion, the authors of this
+>  document, the IETF working group that reviewed it and the IESG
+>  have concluded that there are no other currently deployable
+                       ***************************************
+>  technologies available to overcome these limitations. 
+   ****************************************************
+
+I disagree with this statement.
+
+The policy described here is not inherently forced by limitations of
+existing technology.  It is an engineering, economic, and perhaps
+even political, compromise.
+
+We could recommend a policy that expects everyone to install more
+expensive routers with more memory and faster cpus.  This would cost a
+certain amount of money per router, and might also force
+earlier-than-expected replacement of a lot of deployed hardware.
+
+We could recommend a policy that anticipates the building of regional
+interconnection points, with blocks of addresses delegated to those
+connection points rather than to ISPs.  Such addresses would then be
+portable to any ISP that connected at that connection point.  This
+would provide additional flexibility for customers but would cost
+money for ISPs (and thus increase service cost).  It would also have
+some impact on the reliability of the net.
+
+The policy recommended here forces small ISPs to either pony up for
+larger routers and more connections, or be vulnerable to rate changes
+and variations in the service quality from their upstream provider,
+which in turn penalizes the customers of those small ISPs.
+
+I've haven't seen any cost analysis to justify these design choices.  I
+can well believe that some of them are inherently cheaper -- for
+everyone -- than others.  But it appears that the choice here
+is based not only on how much it costs to keep the network running,
+but (at least partially) on who bears that cost.
+
+Of course, a large part of the policy choice is based on the
+assumption of what can be controlled.  If we dictated that large ISPs
+had to install new links or routers, there's a good chance that they
+would balk.  We can at least hope to exercise some control over
+address assignment.  It probably wouldn't hurt to make such
+assumptions explicit in the document.
+
+The goal of this policy should be to try to make a reasonable balance
+between the needs of customers, small ISPs, and large ISPs, given the
+technology available today and the relative costs of different
+solutions.  This document should explain how it attempts to acheive
+these goals.
+
+> In the
+>  event that routing or router technology develops to the point
+>  that adequate routing aggregation can be achieved by other
+>  means or that routers can deal with larger routing and more
+>  dynamic tables, it may be appropriate to review these
+>  constraints.
+>  
+>  Internet address space is distributed according to the following
+>  three goals:
+>  
+>  1) Conservation: Fair distribution of globally unique Internet address
+>  space according to the operational needs of the end-users and Internet
+>  Service Providers operating networks using this address space.
+>  Prevention of stockpiling in order to maximize the lifetime of the
+>  Internet address space.
+
+It is very difficult to justify use of the term "fair" to describe a
+policy that inherently favors some competitors over others, unless
+there is strong technical justification for the policy.  Such
+justification is not present in this document.
+
+>  2) Routability: Distribution of globally unique Internet addresses
+>  in a hierarchical manner, permitting the routing scalability of
+>  the addresses. 
+
+There seems to be an implicit decision to build the "hierarchy" with
+big ISPs at the top, little ones in the middle, and customers at the
+bottom, rather than using geographic divisions even at the topmost
+levels.  This decision, and the reasons for it, should be made
+explicit. 
+
+> This scalability is necessary to ensure proper
+>  operation of Internet routing, although it must be stressed that
+>  routability is in no way guaranteed with the allocation or
+>  assignment of IPv4 addresses.
+>  
+>  3) Registration: Provision of a public registry documenting address
+>  space allocation and assignment.  This is necessary to ensure
+>  uniqueness and to provide information for Internet trouble shooting
+>  at all levels.
+>  
+>  It is in the interest of the Internet community as a whole that the
+>  above goals be pursued.  However it should be noted that
+>  "Conservation" and "Routability" are often conflicting goals.  All
+>  the above goals may sometimes be in conflict with the interests of
+>  individual end-users or Internet service providers.  Careful analysis
+>  and judgement is necessary in each individual case to find an
+>  appropriate compromise.
+
+The policy described here pursues these goals for the short- or
+medium- term only.  The topology of the net can be expected to change
+considerably in a few years' time, especially as competition
+between ISPs forces them to optimize routes to minimize costs, or (for
+instance) as user populations shift from traditional urban areas to
+"edge cities".  For routing to remain efficient over such a period,
+changes in address assignment should follow changes in topology.  But
+the policy as written encourages well-connected ISPs (and presumably,
+their customers) to keep their address assignments even though
+less-well-connected ISPs are forced to change theirs.  
+
+The policy described here assumes aggregation of routes based on
+provider, rather than aggregation of routes based on network topology.
+It thus encourages a "route to recipient's provider" strategy rather
+than a "route to recipient's neighborhood" strategy.  While this might
+make sense in today's world (particularly in the absence of any
+inter-provider settlement mechanisms), it doesn't necessarily make
+sense in the long term, especially from a customer's point-of-view.
+
+Perhaps a short-term or medium-term policy is appropriate if one
+assumes that IPv4 is dying anyway, and that we will all be running
+IPv6 in a few years.  But a more reasonable policy might be one that
+loaned *all* addresses on a fixed-term, temporary basis.  This would
+require everyone (not just small ISPs and their customers) to change
+addresses periodically (presumably every few years), or when they
+change providers.  This would appear to:
+
+- encourage the development of renumbering tools (and, perhaps 
+  unfortunately, also increase the demand for address translation devices).
+  Either way, the tools will make it easier for customers to renumber,
+  and thus easier to switch providers as they deem necessary.
+
+- allow changes in address assignment to reflect then-current topology
+
+- allow coalescing of initial fragmentary allocations 
+
+- allow more robust routing strategies if settlements are ever worked out
+
+- be "fair" in that it doesn't force some people to renumber and not
+  others
+
+- allow address allocations to adapt to actual usage rather than to reflect
+  anticipated usage.
+
+- extend the life potential of IPv4 (by allowing more efficient assignment), 
+  but also make it easier to transition to IPv6 (since people would have 
+  to renumber anyway).
+
+- extend the life potential of currently deployed routing equipment
+
+Perhaps there are drawbacks to this that I'm not aware of, but I have
+a difficult time understanding the justification for a policy that
+says "it's okay to force small ISPs and their customers to renumber,
+but not to to the same to large ISPs and their customers"
+... particularly when the renumbering technology has to be developed
+anyway, when such a policy *does* appear to be within the bounds of
+what we can dictate (as opposed to, say, capital expenditures of
+ISPs), and when there appear to be significant technical benefits to
+forcing everyone to renumber occasionally.
+
+>  The Internet Registry system
+>  
+>  In order to achieve the above goals the Internet Registry (IR) hierarchy
+>  was established.
+>  
+>  
+>  
+>  Hubbard                                                         [Page 3]
+>  
+>  Internet Draft                                                 July 1996
+>  
+>  
+>  The Internet Registry hierarchy consists of the following levels of
+>  hierarchy as seen from the top down: IANA, Regional IRs, Local IRs.
+>  
+>  IANA
+>  
+>  The Internet Assigned Numbers Authority has authority over all number
+>  spaces used in the Internet.  This includes Internet Address Space. IANA
+>  allocates parts of the Internet address space to regional IRs according
+>  to its established needs.
+>  
+>  Regional IRs
+>  
+>  Regional IRs operate in large geopolitical regions such as continents.
+>  Currently there are three regional IRs established; InterNIC serving
+>  North America, RIPE NCC serving Europe, and AP-NIC serving the Asian
+>  Pacific region.  Since this does not cover all areas, regional IRs also
+>  serve areas around its core service areas.  It is expected that the
+>  number of regional IRs will remain relatively small.  Service areas will
+>  be of continental dimensions.
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  
+>  Hubbard                                                         [Page 4]
+>  
+>  Internet Draft                                                 July 1996
+>  
+>  
+>  Regional IRs are established under the authority of the IANA.  This
+>  requires consensus within the Internet community of the region.  A con-
+>  sensus of Internet Service Providers in that region may be necessary to
+>  fulfill that role.
+>  
+>  The specific duties of the regional IRs include coordination and
+>  representation of all local IRs in its respective regions.
+>  
+>  Local IRs
+>  
+>  Local IRs are established under the authority of the regional IR and
+>  IANA.  These local registries have the same role and responsibility as
+>  the regional registries within its designated geographical areas.  These
+>  areas are usually of national dimensions.
+>  
+>                          2.  Allocation Framework
+>  
+>  2.1  Guidelines for Internet Service Providers (ISPs)
+
+The document really needs some up-front definitions for key terms such as:
+
++ ISP (i.e. does anybody who resells IP service qualify as an ISP?),
++ customer,
++ end enterprise,
++ upstream provider (what if there is more than one?)
++ assignment
++ allocation
++ delegation
+
+>  This document makes a distinction between the allocation of IP addresses
+>  and the assignment of IP addresses.  Addresses are allocated to ISPs by
+>  regional registries to assign to its customer base.
+>  
+>  ISPs who exchange routing information with other ISPs at multiple loca-
+>  tions and operate without default routing may request space directly
+>  from the regional registry in its geographical area.  
+
+> ISPs with no
+>  designated regional registry may contact any regional registry and the
+>  regional registry may either handle the request or refer the request to
+>  an appropriate registry.
+>  
+>  To facilitate hierarchical addressing, implemented using Classless
+>  Inter-Domain Routing (CIDR), all other ISPs should request address space
+>  directly from its upstream provider.  ISPs only request address space
+>  directly from regional registries if their immediate requirement, when
+>  satisfied with a contiguous block allocation, has a reasonable probabil-
+>  ity of being routable on the Internet, and they meet one or more of the
+>  following conditions.
+>  
+>         a)  the ISP is directly connected to a major routing exchange
+>             (for purposes of this document, a major routing exchange
+>              is defined as a neutral layer 2 exchange point connecting
+>              four or more unrelated ISPs.)
+>
+>         b)  the ISP is multi-homed, that is, it has more than one
+>             simultaneous connection to the global Internet and no
+>             connection is favored over the other
+
+There is a slight conflict between the language here and the language above
+At first, the requirements for an ISP to get its own allocation appear to be:
+
+a1. exchange routing information with other ISPs at multiple locations, and
+b1. operate without default routing
+
+then they are stated to be
+
+a2. be directly connected to a "major" routing exchange
+b2. be multi-homed
+
+Although these are very similar, they are not equivalent.  An ISP
+could connect to 'other' ISPs (does 'other ISPs' imply 'multiple
+ISPs') at multiple locations, without being connected to a major
+routing exchange.  An ISP could also be multi-homed and still do
+default routing (though one wonders why they would bother).
+
+My point is that this is going to be a very important criterion;
+it needs to be absolutely clear whether an ISP qualifies or not.
+Having two sets of slightly different criteria makes this muddy,
+and invites capricious decision-making on the part of the IRs.
+
+Also, there's a bit of a bias here toward assignment of addresses to
+"ISPs", that I have a hard time finding a technical basis for.  For
+example, why couldn't two or more ISPs in an area set up a common
+exchange point and ask for an allocation on behalf of that exchange
+point and the aggregated needs of their customers?  That would allow
+routing to that exchange point for any of the member ISPs; it could
+also allow customers of those ISPs to switch to any of the other
+member providers without changing addresses.  
+
+>     Note that addresses issued directly from the IRs, (non-provider
+>  based), are the least likely to be routable across the Internet.
+
+This glosses over an important point which should be made explicit.
+I'd say it much more like so:
+
+While ISPs are presumably willing to route traffic for addresses that
+they assign, this does not necessarily mean that they will be willing
+to route traffic for addresses not obtained from the ISP.  Routing
+table entries, and especially the memory and bandwidth required to
+process routing table updates, are scarce and valuable resources.  In
+other words, it costs money for an ISP to route a block of addresses,
+and ISP A might well choose to recover that cost by billing other ISPs
+for the service of routing addresses not assigned to ISP A.
+
+In any event, assignment of a block of addresses by an IR does not
+imply that the addresses will be routed by other ISPs.  The assignee
+of a block of addresses must separate arrangements with other ISPs if
+it wishes them to route that block of addresses.
+
+>  The following are the IP allocation guidelines for ISPs:
+
+This heading needs to be clearer.  
+
+There are at least three cases which should be considered in detail:
+
++ "assignment" of IP addresses by RRs (or IRs!) to ISPs,
++ "allocation" from "upstream" ISPs to ("downstream"?) ISPs, and
++ "allocation" from an ISP to its non-ISP customers
+
+The document needs to be very clear which recommendations and/or rules
+address which cases; the rules for each case should be listed
+separately.  The difference between the words "allocation" and
+"assignment" isn't sufficient to cover the cases, and the meanings of
+the words are so similar that the two are very easily confused.
+Neither is it clear whether "customers" which are also ISPs are to be
+treated the same as "customers" which are not ISPs.
+
+>  1.     CIDR addresses are allocated to ISPs in blocks.  It is
+>         recommended that those blocks remain intact.  Fragmentation of
+>         CIDR blocks is discouraged.  More specifically, ISPs are
+>         encouraged to treat address assignments as loans for the
+>         duration of the connectivity provision.  At the termination
+>         of the Internet connectivity contract, e.g., the customer
+>         moves to another service provider, it is recommended the
+>         customer return the network addresses currently in use and
+>         renumber into the new provider's address space.  The ISP
+>         should allow sufficient time for the renumbering process to be
+>         completed before the IP addresses are reused.
+>  
+>  2.     To ensure efficient implementation and use of Classless
+>         Inter-Domain Routing (CIDR), the Regional Registries issue
+>         address space on appropriate "CIDR-supported" bit boundaries.
+>  
+>  3.     ISPs are required to utilize address space in an efficient
+>         manner.  To this end, ISPs should have documented
+>         justification available for each assignment.  The regional
+>         registry may, at any time, ask for this information.  If the
+>         information is not available, future allocations may be impacted.
+>         In extreme cases, existing loans may be impacted.
+
+As others have pointed out, these requirements are too vague.  There
+should at least be: an amount of time which the ISP has to respond; a
+list of information the ISP has to provide (i.e. how must it justify
+giving a /18 to Podunk Auto Supply?); and a requirement that the RR
+not use this information for its own commercial gain, or disclose the
+information to third parties.
+
+Perhaps the ISP should be allowed to present this information in
+summary form; the details to be verified by a third-party auditor of
+the ISP's choosing.  Also, there's probably some need for public
+review of this data to make sure ISPs aren't cheating, but how much of
+the ISP's customer data should be disclosed to the public?  Should
+ISPs be required to reveal the size of their customers (say, in terms
+of # of workstations), and doesn't this reveal information that their
+customers might consider sensitive?
+
+Obviously this isn't going to be fixed for this version of the
+document. It will take many months to work these things out, and we
+need this document sooner than that.  But it should definitely be
+taken up in the next version, and we probably need some
+quick-and-dirty interim policy.
+
+>  4.     IP addresses are allocated to ISPs using a slow-start
+>         procedure.  New ISPs will receive a minimal amount based
+>         on immediate requirement.  Thereafter,  allocated blocks may be
+>         increased based on utilization verification supplied to the
+>         regional registry.  The parent registries are responsible for
+>         determining appropriate initial and subsequent allocations.
+>         Additional address allocations will provide enough address space
+>         to enable the ISP to assign addresses for three months
+>         without requesting additional address space from its parent
+>         registry.  Please note that projected customer base has little
+>         impact on the address allocations made by the parent registries.
+
+I'm sure that this is here for a good reason, but I find it hard to
+believe that if (say) Big Telco Inc. decided to go into the ISP
+business, that it would not get a bigger chunk of address space than
+Nets 'R Us of East Lower Slobbovia, based on its larger projected
+customer base.
+
+>         Initial allocation will not be based on any current or future
+>         routing restrictions but on demonstrated requirements.
+
+This is also very vague. *Whose* "routing restrictions" -- the
+internal ones of the ISP requesting the allocation or of his upstream
+providers, or both?  What is meant by "current or future routing
+restrictions"?  Does this mean that the limitations of the current
+IPv4 routing infrastructure don't affect an ISP's initial IP
+allocation?  (it could easily be taken to mean that)
+
+Is this provision intended to require ISPs to use classless routing?
+If so, we should say so.  If not, what is it here for?
+
+>   5.    Due to the requirement to increase the utilization efficiency
+>         of IPv4 address space, all assignments are made with the
+>         assumption that sites make use of variable length subnet mask
+>         (VLSM) and classless technologies within their network. 
+
+Okay, this is under the heading "allocation framework" but it's
+talking about assignment.  (I'm not trying to be difficult; I really
+did have a hard time sorting all of this out, and I'm still not sure I
+understand what is intended.)
+
+>  Any
+>         request for address space based on the use of classfull
+>         assumptions will require a detailed justification.  The use of
+>         classfull technologies for the purposes of administrative
+>         convenience is generally insupportable due to the limited
+>         availability of free IPv4 address space.
+
+If this is what the last part of #4 is supposed to say, perhaps that
+part of #4 could be deleted.
+
+>   6.    Regional registries may set a maximum limit on assignment sizes
+>         such that a second opinion of the regional registry is required.
+
+Who issues the second opinion?  This looks like the regional registry
+issues its own second opinion; surely that's not what was intended?
+
+>   7.    Due to constraints on the available free pool of IPv4 address
+>         space, the use of static IP address assignments (e.g., one
+>         address per customer) for dial-up users is strongly discouraged.
+>         While it is understood that the use of static addressing may
+>         ease some aspects of administration, the current rate of
+>         consumption of the remaining unassigned IPv4 address space does
+>         not permit the assignment of addresses for administrative ease.
+>         Organizations considering the use of static IP address assignment
+>         are expected to investigate and implement dynamic assignment
+>         technologies whenever possible.
+>  
+>  2.2  Submission of Reassignment Information
+>  
+>   It is imperative that reassignment information be submitted in a prompt
+>   and efficient manner to facilitate database maintenance and ensure
+>   database integrity.  Therefore, assignment information must be
+>   submitted to the regional registry immediately upon making the
+>   assignment.  The following reasons necessitate transmission of the
+>   reassignment information:
+>  
+>         a)  to provide operational staff with information on who is using
+>             the network number and to provide a contact in case of
+>             operational/ security problems,
+
+To whom is this information to be made available?
+
+>         b)  to ensure that a provider has exhausted a majority of its
+>             current CIDR allocation, thereby justifying an additional
+>             allocation,
+>  
+>         c)  to assist in IP allocation studies.
+>  
+>   Procedures for submitting the reassignment information will be
+>   determined by each regional registry based on its unique requirements.
+>  
+>   All sub-registries (ISPs, Local registries, etc.) must register with
+>   their respective regional registry to receive information regarding
+>   reassignment guidelines.  No additional CIDR blocks will be
+>   allocated by the regional registry or upstream providers until
+
+is this "allocation" or "assignment" or both?
+
+>   approximately 80% of all reassignment information has been submitted.
+>  
+>                          3. Assignment Framework
+>  
+>  An assignment is the delegation of authority over a block of IP
+>  addresses to an end enterprise. 
+
+This seems to be a different use of the word "assignment" than in section 2.1.
+
+>   The end enterprise will use addresses
+>  from an assignment internally only; it will not sub-delegate those
+>  addresses.  This section discusses some of the issues involved in
+>  assignments and the framework behind the assignment of addresses.
+>  
+>  In order for the Internet to scale using existing technologies, use of
+>  regional registry services should be limited to the assignment of IP
+>  addresses for organizations meeting one or more of the following condi-
+>  tions:
+>  
+>        a)  the organization has no intention of connecting to
+>            the Internet-either now or in the future-but it still
+>            requires a globally unique IP address.  The organization
+>            should consider using reserved addresses from RFC1918.
+>            If it is determined this is not possible, they can be
+>            issued unique (if not Internet routable) IP addresses.
+>  
+>        b)  the organization is multi-homed with no favored connection.
+>  
+>        c)  the organization's actual requirement for IP space is
+>            very large, for example, the network prefix required to
+>            cover the request is of length /18 or shorter.
+>  
+>   All other requestors should contact its ISP for address
+>   space or utilize the addresses reserved for non-connected networks
+>   described in RFC1918 until an Internet connection is established.
+>   Note that addresses issued directly from the IRs,(non-provider based),
+>   are the least likely to be routable across the Internet.
+
+It appears that an "end enterprise" or "organization" can get its own
+chunk of IP address space merely by being multi-homed, as long as it
+does not delegate that space to others.  Can an ISP get such a chunk
+for use by its own machines and dialin customers?  (after all, these
+are not really delegated to anyone besides the ISP.)
+
+>  3.1  Common Registry Requirements
+>  
+>  Because the number of available IP addresses on the Internet is limited,
+>  the utilization rate of address space will be a key factor in network
+>  number assignment.  Therefore, in the best interest of the Internet as a
+>  whole, specific guidelines have been created to govern the assignment of
+>  addresses based on utilization rates.
+>  
+>  Although topological issues may make exceptions necessary, the basic
+>  criteria that should be met to receive network numbers are listed below:
+>  
+>                  25% immediate utilization rate
+>                  50% utilization  rate within 1 year
+>  
+>  The utilization rate above is to be used as a guideline, there may be be
+>  occasions when the 1 year rate does not fall exactly in this range.
+>  Organizations must exhibit a high confidence level in its 1 year utili-
+>  zation rate and supply documentation to justify the level of confidence.
+>  
+>  
+>  
+>  Hubbard                                                         [Page 8]
+>  
+>  Internet Draft                                                 July 1996
+>  
+>  
+>  Organizations will be assigned address space based on immediate utiliza-
+>  tion plus 1 year projected utilization.  A prefix longer than /24 may be
+>  issued if deemed appropriate.  Organizations with less than 128 hosts
+>  will not be issued an IP address directly from the IRs.  Organizations
+>  may be issued a prefix longer than /24 if the organization can provide
+>  documentation from a registry recognized ISP indicating the ISP will
+>  accept the long prefix for injection into the global routing system.
+>  
+>  Exceptions to the criteria will not be made based on insufficient equip-
+>  ment without additional detailed justification.  Organizations should
+>  implement variable length subnet mask (VLSM) internally to maximize the
+>  effective utilization of address space.  Address assignments will be
+>  made under the assumption that VLSM is or will be implemented.
+>  
+>  IP addresses are valid as long as the criteria continues to be met. The
+>  IANA reserves the right to invalidate any IP assignments once it is
+>  determined the the requirement for the address space no longer exists.
+>  In the event of address invalidation, reasonable efforts will be made by
+>  the appropriate registry to inform the organization that the addresses
+>  have been returned to the free pool of IPv4 address space.
+>  
+>  3.2  Network Engineering Plans
+>  
+>  Before a registry makes an assignment, it must examine each address
+>  space request in terms of the requesting organization's networking
+>  plans.  These plans should be documented, and the following information
+>  should be included:
+>  
+>        1.  subnetting plans, including subnet masks and number of
+>            hosts on each subnet for at least one year
+>  
+>        2.  a description of the network topology
+>  
+>        3.  a description of the network routing plans, including the
+>            routing protocols to be used as well as any limitations.
+>  
+>   The subnetting plans should include:
+>  
+>        a)  a tabular listing of all subnets on the network
+>  
+>        b)  its associated subnet masks
+>  
+>        c)  the estimated number of hosts
+>  
+>        d)  a brief descriptive remark regarding the subnet.
+>  
+>  If subnetting is not being used, an explanation why it cannot be imple-
+>  mented is required.  Care must be taken to ensure that the host and
+>  
+>  
+>  
+>  Hubbard                                                         [Page 9]
+>  
+>  Internet Draft                                                 July 1996
+>  
+>  
+>  subnet estimates correspond to realistic requirements and are not based
+>  on administrative convenience.
+>  
+>  3.3  Previous Assignment History
+>  
+>  To promote increased usage of address space, the registries will require
+>  an accounting of address space previously assigned to the enterprise, if
+>  any.  In the context of address space allocation, an "enterprise" con-
+>  sists of all divisions and/or subsidiaries falling under a common parent
+>  organization.  The previous assignment history should include all net-
+>  work numbers assigned to the organization, plus the network masks for
+>  those networks and the number of hosts on each (sub-)network.  Suffi-
+>  cient corroborating evidence should be provided to allow the assigning
+>  registry to be confident that the network descriptions provided are
+>  accurate.  Routing table efficiency will be taken into account by the
+>  regional registries and each request will be handled on a case by case
+>  basis.
+>  
+>  
+>  3.4  Network Deployment Plans
+>  
+>  In order to assign an appropriate amount of space in the required time
+>  frame, a  registry  may request deployment plans for a network.  Deploy-
+>  ment plans should include the number of hosts to be deployed per time
+>  period, expected network growth during that time period, and changes in
+>  the network topology that describe the growth.
+>  
+>  3.5  Organization Information
+>  
+>  A registry may request that an organization furnish a published descrip-
+>  tion verifying that the organization is what it claims to be.  This
+>  information can consist of brochures, documents of incorporation, or
+>  similar published material.
+>  
+>  3.6  Expected Utilization Rate
+>  
+>  As stated in the foregoing text, one of the key factors in determining
+>  how much address space is appropriate for an organization is the
+>  expected utilization rate of the network.  The expected utilization rate
+>  is the number of hosts connected to the network divided by the total
+>  number of hosts possible on the network.  In addition, the estimated
+>  number of hosts should be projected over a reasonable time frame, i.e.,
+>  one in which the requesting enterprise has a high level of confidence.
+>  The minimal utilization rate is set by the IANA and may be changed at
+>  any time.  New utilization rates may be enforced by the regional regis-
+>  tries prior to updating the written policy.
+>  
+>  
+>  
+>  
+>  
+>  Hubbard                                                        [Page 10]
+>  
+>  Internet Draft                                                 July 1996
+>  
+>  
+>                 4.  Operational Guidelines For Registries
+>  
+>  1.     Regional Registries provide registration services as its
+>         primary function.  Therefore, regional registries may charge some
+>         fee for services rendered, generally in relation to the cost of
+>         providing those services.
+>  
+>  2.     Regardless of the source of its address space, sub-registries
+>         (Local IRs, ISPs, etc.) must adhere to the guidelines of its
+>         regional registry.  In turn, it must also ensure that its
+>         customers follow those guidelines.
+>  
+>  3.     To maximize the effective use of address space, IP addresses need
+>         to be assigned/allocated in classless blocks.  With this in mind,
+>         assignments will not be made in Class Cs or Bs but by prefix
+>         length.  Consequently, an organization that would have been
+>         assigned a Class B in the past will now be assigned a /16 prefix,
+>         regardless of the actual address class.
+>  
+>  4.     All IP address requests are subject to audit and verification
+>         by any means deemed appropriate by the regional registry.
+>         If any assignment is found to be based on false information,
+>         the registry may invalidate the request and return the
+>         assigned addresses back to the pool of free addresses for
+>         later assignment.
+>  
+>  5.     Due to technical and implementation constraints on the Internet
+>         routing system and the possibility of routing overload, major
+>         transit providers may need to impose certain restrictions to
+>         reduce the number of globally advertised routes.  This may
+>         include setting limits on the size of CIDR prefixes added to
+>         the routing tables, filtering of non-aggregated routes, etc.
+>         Therefore, addresses obtained directly from regional registry
+>         (provider-independent, also known as portable) are not
+>         guaranteed routable on the Internet.
+>  
+>  6.     Information provided to request address space is often considered
+>         sensitive by the requesting  organization.  The assigning
+>         registry must treat as confidential any and all information
+>         that the requesting organization specifically indicates as
+>         sensitive.  When a requesting organization does not have
+>         assurance of privacy, the parent of the assigning registry may
+>         be required to do the assignment.  In such cases, the parent
+>         registry will provide the assigning registry with information
+>         regarding the appropriate amount of address space to allocate.
+>  
+>  7.    The transfer of IP addresses from one party to another must be
+>        approved by the regional registries.  The party trying to obtain
+>  
+>  
+>  
+>  Hubbard                                                        [Page 11]
+>  
+>  Internet Draft                                                 July 1996
+>  
+>  
+>        the IP address must meet the same criteria as if they were
+>        requesting an IP address directly from the IR.
+>  
+>                    5.  In-ADDR.ARPA Domain Maintenance
+>  
+>  The regional registries will be responsible for maintaining IN-ADDR.ARPA
+>  records only on the parent blocks of IP addresses issued directly to the
+>  ISPs or those CIDR blocks of less than /16.  Local IRs/ISPs with a pre-
+>  fix length of /16 or shorter will be responsible for maintaining all
+>  IN-ADDR.ARPA resource records for its customers.
+>  
+>  IN-ADDR.ARPA resource records for networks not associated with a
+>  specific provider will continue to be maintained by the regional regis-
+>  try.
+>  
+>                            6.  Right to Appeal
+>  If an organization feels that the registry that assigned its address has
+>  not performed its task in the requisite manner, the organization has the
+>  right of appeal to the parent registry.
+>  
+>  In such cases, the assigning registry shall make available all relevant
+>  documentation to the parent registry, and the decision of the parent
+>  registry shall be considered final (barring additional appeals to the
+>  parent registry's parent).  If necessary, after exhausting all other
+>  avenues, the appeal may be forwarded to IANA for a final decision.  Each
+>  registry must, as part of their policy, document and specify how to
+>  appeal a registry assignment decision.
+
+

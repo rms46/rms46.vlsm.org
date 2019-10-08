@@ -1,0 +1,71 @@
+NomCom -- 09 November 1998 -- IETF-Announce
+-------------------------------------------
+
+Nomcom mailing list, call for nominations 
+
+The job of the Nominations Committee is to come up with the best
+willing candidates, either incumbent or new, for the IAB and IESG
+positions whose term expires in the Spring of 1999, and to fill any
+other openings that might occur.  In particular, the following persons
+terms have expired:
+
+IAB Members (for complete list see
+<http://www.isi.edu/iab/members.html>):
+        Steve Deering,
+        Tony Hain,
+        Erik Huizer,
+        Cyndi Jung,
+        Robert Moskowitz, and
+        Charlie Perkins.
+
+IESG members, along with their areas (for complete list see
+<http://www.ietf.org/iesg.html>):
+        Harald Alvestrand (Operations & Management),
+        Scott Bradner (Transport),
+        Patrik Faltstrom (Applications), and
+        Thomas Narten (Internet).
+
+The current nomcom committee mailing list has been set up at
+
+        <ietf-nomcom@raleigh.ibm.com>
+
+Please send to the Nominations Committee any suggestions for persons
+to fill these IAB and IESG slots (with their qualifications and why
+you think they would be a good candidate), any praise or complaints
+about the incumbents, and any comments as to the effectiveness of the
+IAB or IESG and particularly the type of member who you think would
+make them more effective or other factors you think the nomcom should
+take into account. The Nominations Committee expects to do most of its
+work between November 12th 1998 and February 12th 1999 and, while
+input can always be provided, it would be desireable to receive
+nominations by Friday, December 11th. You may wish to seek out members
+of the nomcom who are at the December IETF meeting to discuss your
+views.  Persons are permitted to nominate themselves.
+
+Submissions to and proceedings of the nomcom are confidential.
+
+Thanks,
+Donald
+
+PS: Other membes of the Nominations Committee are:
+
+        Steven Bellovin <smb@research.att.com>
+        Avri Doria <avri@apocalypse.org>
+        Randall Gellens <randy@qualcomm.com>
+        Steve Hanna <steve.hanna@sun.com>
+        Bob Hinden <hinden@iprg.nokia.com>
+        R A Lichtensteiger <rali@meitca.com>
+        Bob Mahoney <bobmah@mit.edu>
+        Keith McCloghrie <kzm@cisco.com>
+        David Meyer <dmm@cisco.com>
+        Michael St Johns <stjohns@corp.home.net>
+        Bert Wijnen <wijnen@vnet.ibm.com>
+        Lixia Zhang <lixia@cs.ucla.edu>
+        Glen Zorn <gwz@acm.org>
+
+=====================================================================
+ Donald E. Eastlake 3rd   +1 978-287-4877    dee3@torque.pothole.com
+ 318 Acton Street         +1 978-371-7148(fax)       dee3@us.ibm.com
+ Carlisle, MA 01741 USA   +1 914 784 7913
+
+

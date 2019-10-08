@@ -1,0 +1,189 @@
+J. Noel Chiappa -- 18 Jun 1992
+------------------------------
+
+
+                        An Introduction To NAT
+
+                           J. Noel Chiappa
+
+
+
+        NAT (network address translator) refers to a class of schemes for
+solving 2 of the three problems of Internet routing and addressing, as laid
+out in [Chiappa90]. The two in question are the exhaustion of class B IP
+network numbers, and the eventual exhaustion of the IP 32-bit address space
+itself.
+        In considering NAT, it is necessary to bear in mind that when the
+second happens, there are only two possible solutions: switch to a larger
+addresses, which means a different packet format (which might be CLNP), or
+make the addresses non-globally unique, which is NAT.
+        This note contains a general discussion of NAT, and an etymology
+of potential NAT variants.
+
+        There are many, many different variations on the NAT idea. The
+common theme in all of them is that the each packet no longer contains,
+throughout the lifetime of the packet, a single, globally unique, network
+address. In other words, the IP address in the packet is no longer globally
+unique, but has to be interpreted in some local context.
+        The general idea is that the IP address space is partitioned into a
+"local" and "global" portions, the meaning of addresses within each being
+local to any given AS. In any given AS, physical networks and hosts inside
+the AS are assigned addresses from the local portion in the existing way,
+and existing IGP's route traffic among them. Hosts outside the AS which
+need to communicate with hosts inside the AS are temporarily assigned
+addresses within the global portion on a demand basis.
+        Border routers on the boundary of each AS must contain mapping
+tables which translate from the address assignments in one AS to those in
+the neighbouring addresses; these translations must be made not only on
+addresses in packet headers, but in addresses carried as data in packets (a
+moderately long list of cases). The mechanism whereby these mapping tables
+get created is not discussed here, but usually involves wire-tapping DNS
+transactions and modifying the contents.
+
+        However, all this low level mechanism is far from a complete
+solution to the problem, and must be accompanied by yet more mechanism at a
+higher level, as pointed out in [Chiappa90]. Given a system consisting of a
+large number of AS's, there must still be some way to pass around
+information as to the topological relationship of these AS's, and to make
+choices as to how to route traffic through the mesh of AS's. This system
+is what we call routing.
+        Large routing systems generally need structured names for the
+places where hosts can be attached to the network; we call these names
+addresses. They need the names for obvious reasons; it's hard to get
+traffic to a place if you don't have some way of indicating which place you
+want the traffic to go to. The structure is necessary to make the job of
+routing easier in a large network. [Chiappa91]
+        Thus, it is clear that a large scale routing and addressing system
+must exist above the NAT boxes in order to make them actually useful in a
+large system. Many of the different variations in the basic NAT idea come
+from the different routing and addressing systems that people 'mix in' to
+come up with a workable overall system.
+
+
+        There are several axes along which NAT schemes can be divided.
+
+        In one, what is important is whether the addresses are local only in
+the end-AS's (i.e. where the hosts are), or in all AS's, including transit.
+Divided this way, there are two main classes of NAT schemes. In the first, the
+packets contain a locally significant address only in the end-AS, and contains
+(somewhere in the packet) a globally significant one elsewhere (i.e. in the
+backbones). In the second, none of the addresses in the packet is globally
+unique, but only local to each AS (even where the packet only transits three,
+a source, long-haul and destination).
+        I call these the "end-map" and "hop-map" variations. Some schemes
+could be deployed in either variant, and are called "all-map". From the
+security aspect, end-map is preferable, since for all of its lifetime
+outside the source AS, the packet contains a globally unique ID, which
+security mechansims will find extremely useful.
+
+        Another important dividing line is whether what the 32-bit address in
+the end-AS's is mapped into in transit AS's is the same size or not. The
+importance here is obvious; if it is the same length, all addresses in the
+packet, including those carried as data, can be modified in situ; if the
+length is different, a more complex scheme is needed.
+        Systems which map straight across from 32 bits to 32 bits I will call
+"flat-map", systems which map into a larger space are called "large-map", and
+systems which can use either scheme are called "vari-map".
+        An apparent advantage of doing large-map is that it removes the 32-bit
+limit on the maximum number of destinations that can be simultaneously active
+in a transit AS. Realize, however, that if the mappings operate on
+source-destination pairs, instead of source and destination separately, then
+this effectively increases the address space to 64 bits [actually, the size is
+(64 - log2(average_number_destinations_active_per_source))], removing the
+32-bit limit.
+        However, large-map is almost certainly required for end-map variants,
+since 32-bit addresses will soon be non-globally unique, and global dynamic
+allocation of 64-bit pairs is probably infeasible. For hop-map, flat-map is
+easier, particularly since the 64-bit pair system would make large transit
+nets feasible, albeit probably at the cost of making aggregation more
+difficult.
+
+
+        The following is a brief survey of all the variants I have been able
+to think up, broken down into the three classes mentioned in the first
+classification scheme; i.e. end-map, hop-map, and all-map.
+        Some include the routing and high level addressing architecture which
+would go with them, others do not. Those which do not would obviously need
+one.
+        Note also that these are simply general classifications; many
+contain sub-variations, usually of flat-map and large-map. Time does not
+permit exploring the subvariants in detail at this point.
+
+
+End-Map Variants
+
+E-NAT:
+        Class E addresses are introduced, and assigned to various networks
+in the system. Clearly, within AS's which contain these numbers, the hosts
+have to be able to deal with them. In other AS's, however, these class E
+addresses may prove a problem to some hosts; a NAT box could translate them
+into a range of acceptable addresses within the existing A, B or C space.
+        The overall routing and addressing uses the existing system.
+
+A-NAT:
+        Very similar to the one above, but the new address type introduced
+is the A# variant. This variant is probably not useful, since all hosts can
+already deal with A# addresses, and only old internal routers, a negligible
+population, would benefit.
+
+M-NAT:
+        Another similar variant, where the overall routing system is modified
+to use either arbitrary masks, or kempei addresses, or any system where the
+allocation of addresses does not conform to the existing A, B and C classes.
+
+S-NAT:
+        In this variant, introduced by Paul Tsuchiya, each local AS boundary
+router attached to the backbone is assigned a static piece of the global part
+of the address space, and inbound addresses for traffic to this end-AS uses
+addresses in that reserved space.
+
+C-NAT:
+        This is one possible way CLNP might be deployed. There is a clear
+deployment path for CLNP with straight mapping between IP addresses and
+CLNP addresses, but when the IP address space is used up this variant would
+map from locally assigned IP addresses to globally unique CLNP addresses.
+
+I-NAT:
+        This variant would use the Open Routing routing protocol to route
+among AS's; the high level addressing structure would simply be AS number,
+and the high level address scheme would simply be the local IP address
+extended by the AS number.
+
+
+Hop-Map Variants
+
+L-NAT:
+        In this variant, introduced by Van Jacobsen, the global unique
+identifier is the domain name. Since this identifier is not a topological
+address, suitable for routing, perhaps another address might also be defined
+which takes over this role. As the packet passes from AS to AS, the bottom
+bits of the asssigned address in the destination AS remain the same, allowing
+aggregation of translations, reducing the potential for 'hot-spots' in
+32-bit translation tables.
+
+
+All-Map Variants
+
+N-NAT:
+        This version was postulated in [Chiappa91]. The existing IP address
+field explicitly becomes a host identifier, and an entirely new routing and
+addressing system is deployed. When the 32-bit identifier space is used up,
+NAT translations are used to make the 32-bit identifiers local.
+        There are two sub-variants; one flat-map and one large-map. In the
+flat-map variant, the mapping would probably be be from end-end, as opposed
+to hop by hop, and in the middle the packet would be identified by a mapping
+from the source-destination pair to a flow. In the large-map variant, the
+local 32-bit identifer would map into a larger (perhaps 64-bit)
+
+B-NAT:
+        This is very similar to the system above, except instead of using
+Nimrod for the routing system, BGP (or ISO descendant thereof) is used.
+An extended address format would have to be defined.
+
+U-NAT:
+        Again, very similar to the system above, except instead of using
+Nimrod for the routing system, the Unified Routing scheme of Estrin, et al
+would be used. As that document defines no extended address, an extended
+address format would have to be defined.
+
+

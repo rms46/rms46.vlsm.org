@@ -1,0 +1,32 @@
+NomCom Chair -- 30 January 1995 -- IETF-Announce
+------------------------------------------------
+
+1995 Request for IAB/IESG Candidates - Nominations to close 1/31
+
+
+Hello Folks,
+
+The 1995 Nominations Committee is in the process of considering
+candidates for open IAB and IESG positions. As previously mentioned,
+the following positions are under consideration:
+
+o IESG Operations AD (Area Director)
+o IESG Transport AD
+o IESG Applications AD (Both AD's open)
+o IESG Network Management AD
+o IESG Internet AD
+o IAB Member
+o IAB Member
+o IAB Member
+o IAB Member
+o IAB Member
+o IAB Member
+
+We intend to close nominations on Jan 31st, so if you know someone who
+would serve well in one of the above positions, please send email as
+soon as possible to "nomcom@bbn.com" with the position to be filled and
+your suggested candidate (name and email address).
+
+Thanks again!
+/John
+

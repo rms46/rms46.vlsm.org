@@ -1,0 +1,109 @@
+NOMCOM Chair 1997-1998 -- 16 March 1998 -- IETF-Announce
+--------------------------------------------------------
+
+1998 IAB Members 
+
+I have been informed that the Internet Society Board of Trustees has
+confirmed the Nominations Committee's nominees for the Internet
+Architecture Board as of March 9th, 1998.  It is my pleasure to announce
+this years list of appointees to the IAB: 
+
+Ned Freed, Innosoft
+Tim Howes, Netscape
+Steve Bellovin, ATT
+Brian Carpenter, IBM
+Jon Crowcroft, UCL
+John Klensin, MCI
+
+Mike StJohns, Chair
+Nomcom '98
+
+
+Ned Freed, Innosoft
+
+Ned Freed has been active in the IETF since 1990. He has authored or
+co-authored many RFCs in the application and security areas, including the
+MIME specification, various SMTP extensions, and the MIME security
+multiparts specification.  He has co-chaired several IETF working groups,
+among them NOTARY and NNTPEXT.  Ned is co-founder, Chief Development
+Officer, and Chairman of the Board of Innosoft International, Inc., a
+company specializing in electronic mail and messaging software. Ned
+graduated with a B.S. in Engineering from Harvey Mudd College.
+
+
+Tim Howes, Netscape
+
+Tim Howes received his Ph.D. and M.S.E. degrees in Computer Science and
+Engineering from the University of Michigan. He also holds a B.S.E. in
+Aerospace Engineering. He co-authored the Lightweight Directory Access
+Protocol (LDAP) specifications, LDAP Application Program Interface
+specification, numerous other Internet RFCs and papers, as well as a book
+on LDAP programming.  He led the team of programmers responsible for the
+first and still widely-used implementation of LDAP, from the University of
+Michigan, as project director and principal investigator for the National
+Science Foundation-sponsored WINX grant.  He is an active member of the
+IETF, co-chairing the LDAP Extensions working group, and is former co-chair
+of the Access and Searching of Internet Directories (ASID) working group
+and the Integrated Directory Services working group. He is currently
+Management, Security, and Directory Architect for Netscape Communications
+Corp. in Mountain View, California.
+
+
+Steve Bellovin, ATT Labs
+
+Steven M. Bellovin received a B.A. degree from Columbia University, and an
+M.S. and Ph.D. in Computer Science from the University of North Carolina at
+Chapel Hill. While a graduate student, he helped create netnews; for this,
+he and the other perpetrators were award the 1995 Usenix Lifetime
+Achievement Award. He joined AT&T Bell Laboratories in 1982; given the
+vagaries of corporate divestitures, he is now at AT&T Labs, where he does
+research in networks, security, and why the two don't get along. Bellovin
+is the co-author of the recent book ``Firewalls and Internet Security:
+Repelling the Wily Hacker''.  He has been a member of the IAB since 1996.
+
+
+Brian Carpenter, IBM
+
+Brian E.  Carpenter  is Program Director, Internet Standards and
+Technology, in the Internet Division of IBM, based at Hursley Park in the
+UK. Previously he led the networking group at CERN, the European Laboratory
+for Particle Physics, in Geneva, Switzerland, from 1985 to 1996. This
+followed ten years' experience in software for process control systems at
+CERN, which was interrupted by three years teaching undergraduate computer
+science at Massey University in New Zealand. He holds a first degree in
+physics and a Ph.D. in computer science, and is an M.I.E.E. He is the
+current Chair of the Internet Architecture Board.
+
+
+Jon Crowcroft, UCL
+
+Jon Crowcroft is a professor of networked systems in the Department of
+Computer Science, University College London, where he is responsible for a
+number of European and US funded research projects in Multi-media
+Communications. He has been working in these areas for over 17 years. He
+graduated in Physics from Trinity College, Cambridge University in 1979,
+and gained his MSc in Computing in 1981, and PhD in 1993. He is a member of
+the ACM, the British Computer Society and the IEE and a senior member of the
+IEEE. He is a current member of the IAB  and is general chair for the ACM
+SIGCOMM.  He is also on the editorial team for the ACM/IEEE Transactions on
+Networks. With Mark Handley, is the co-author of WWW:Beneath the Surf (UCL
+Press); he also authored Open Distributed Systems (UCL Press/Artech House).
+
+
+John Klensin, MCI
+
+Dr. John C. Klensin is Distinguished Engineering Fellow in MCI's Internet
+Architecture Department.  His activities there include both product design
+and evaluation for MCI's Internet offerings, especially for Internet
+applications, and providing advice and leadership on a wide range of
+Internet-related policy and strategy issues.   In the IETF, he has served
+as chair, co-chair, or document editor for working groups in electronic
+mail area and for exploratory BOFs includings ones on mailing list
+management and unsolicited email.  He served two terms as Area Director for
+Applications and is completing a term on the IAB.   His involvement with
+what is now the Internet began in 1969-70, when he participated in the
+working group that created the file transfer protocol and made the decision
+to include electronic mail capability in the network's design.
+
+
+

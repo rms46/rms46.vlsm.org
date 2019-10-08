@@ -1,0 +1,26 @@
+NomCom Chair -- 20 February 1998 -- IETF-Announce
+-------------------------------------------------
+
+O&M Vacancy Announcement.
+
+I have been notified by Mike O'Dell that he will be resigning from the IESG 
+effective with the LA IETF.  I have been asked to re-convene the Nominations 
+Committee to fill this vacancy.
+
+The Nominations Committee is soliciting suggestions for candidates for the O&M 
+Co-AD.  If you are interested in this position or know of someone who is 
+interested and capable, please email "nomcom98@corp.home.net" with your 
+suggestions.  The Nomcom will be re-considering those candidates we evaluated 
+during the annual nominations process, but would appreciate an indication of 
+continued interest from those candidates to ensure we don't miss anyone on 
+this round.  
+
+The Nominations Committe hopes to begin deliberations on the O&M candidates 
+not later than 3 March to try and complete the process prior to the LA IETF - 
+please try and forward your suggestions to the above email address prior to 
+that date.
+
+Thanks!
+
+Mike StJohns, Chair
+Nomcom '98

@@ -1,0 +1,419 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head><title>
+UNINET: An Inter-University Computer Network
+</title>
+<META name="description" 
+content="I am a real nowhere man, sitting in a nowhere LAN, making all my
+	nowhere .plans for nobody -1 -- Rahmat M. Samik-Ibrahim.">
+<META name="keywords" 
+content="RMS46, Rahmat, Samik-Ibrahim, Grounded-Theory, Research,
+Kompas, Kompas-Online, Analisis, Kwik-Kian-Gie, Internet, RFC, IETF"></head>
+<!--  Using STDLIB`(M4)' revision 9.X                         -->
+<!--  (C) 1996-2010 Rahmat M. Samik-Ibrahim under GPL terms.  -->
+<!--  http://vlsm.org/bin/std.m4.gz                           --> 
+     
+<body bgcolor="#ffffff" text="#000000" link="#0000d9" vlink="#000070" alink="#000040">
+<center><table bgcolor="#e6ebfe" width="80%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK1.html" target="_top"><img 
+src="png/LOCAL-LOGO1.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="center" valign="middle"><font color="#00008b" size=4><b>
+UNINET: An Inter-University Computer Network
+</b>
+<br><font size=2><b>Jos Luhukay and Bagio Budiardjo
+	<br>Computer Science Center - University Indonesia
+	<br>1983</b></font></font>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK2.html" target="_top"><img 
+src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table></center>
+
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+<a name="isi"></a>
+<a href="../etc-new.html" target="_top"><font size=2 
+   color="red">WHAT&#39;s NEW</font></a> |
+<a href="../00-0.html" target="_top"><font size=2 color="red">HOME</font></a> |
+<a href="#bawah" target="_top"><font size=1 
+   color="blue">vv BOTTOM vv</font></a> |
+<a href="#0" target="_top"><font size=1 
+   color="blue">NEXT&gt;&gt;&gt;</font></a>
+<br>
+<font size="1" color="#00008b"><small><br>
+<form method="get" action="http://www.google.com/search">
+  <input type="text" name="q" size="30" maxlength=255 value="">
+  <input type="submit" name="btnG" value="Google Search">
+</form></small></font>
+<tr>
+<td align="center">
+<font size=3 face="arial, helvetica, sans-serif">
+  <a href="#0" target="_top">Abstract</a>
+| <a href="#1" target="_top">Introduction</a>
+| <a href="#2" target="_top">Design Philosophy</a>
+| <a href="#3" target="_top">Network Architecture</a>
+<br>
+  <a href="#4" target="_top">Institutional Framework</a>
+| <a href="#5" target="_top">Implementation Plans</a>
+| <a href="#6" target="_top">References</a>
+| <a href="#7" target="_top">EndNote</a>
+</font>
+<tr>
+<td align="right">
+<a name="0"></a>
+<font size=1 color="blue"><a href="55.html" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a> |
+<a href="#1" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Abstract</h2>
+<p>
+        This paper discusses UNINET, a proposed inter-University 
+	computer network in Indonesia. The network is intended to 
+	provide network service and access mainly for educators and 
+	researches in the computer field, and for administrators of 
+	state universities/ institutes. Combining computer technology
+	telecommunication facilities, it is a logical network 
+	utilizing the services of several physical networks.
+	Nodes can be in the form of local-area networks (LAN&#39;s) 
+	and single-host nodes. The network&#39;s architecture and 
+	functions are discussed and the implementation plans briefly 
+	laid out.
+</font>
+
+<tr>
+<td align="right">
+<a name="1"></a>
+<font size=1 color="blue"><a href="#0" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a> |
+<a href="#2" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Introduction</h2>
+<p>
+        The dependency of modern man upon the computer is getting 
+	increasingly irrevocable. Computer technology, both hardware 
+	and software, is expanding and improving faster than most of 
+	us can keep pace. Much of our work is done by computers, 
+	from keeping track of bank accounts, process control in 
+	industry to adjusting the fuel mixture in automobile 
+	carburetors. Some major industries, such as banking, process 
+	such vast volumes of data that their task of information 
+	management would be impossible without computers. On
+	university campuses, the realization that numerical tasks 
+	can not be completed without computers is deeply rooted. 
+	The control of library facilities, maintenance of student 
+	record and management of entrance examinations are but a 
+	few of the potential computer applications in these environments.
+<p>
+        This paper focuses on one particular facet of computer 
+	technology - that of computer networking between university 
+	environments. The term "computer network" is used to include 
+	any hardware/software entity that may serve to link computer 
+	systems in an orderly manner so as to establish inter-computer
+	communications. The network only concern the exchange of 
+	information between systems, and not the internal functioning of 
+	each individual system. This information transfer is performed 
+	by means of physical media for systems interconnection.
+<p>
+        The Next sections describe the proposed network architecture 
+	and its underlying design philosophy, the institutional frame 
+	work and a brief discussion of the technical aspects. For 
+	practical purposes, the term "inter-university computer network" 
+	is abbreviated to UNINET in this paper. However, this is by no
+	means the official name by which the network will actually be 
+	known.
+</font>
+
+<tr>
+<td align="right">
+<a name="2"></a>
+<font size=1 color="blue"><a href="#1" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a> |
+<a href="#3" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Design Philosophy</h2>
+<p>
+        UNINET is intended to provide educators and researchers 
+	in the computer field with resource sharing and communication 
+	capabilities. Administrators will benefit from the remote 
+	data access feature which supports integrated processing 
+	activities among various organizations.
+<p>
+        The design of the network is guided by three main principles 
+<ol type="a">
+<li>	UNINET is to be available first to any state university/ institute 
+	and the Ministry of Education and Culture. To promoted the 
+	cooperation in computer-oriented education and research, and 
+	administrative data processing.
+<li>	Second, it is also to be available to other interested 
+	post-secondary educational institution active in the computer 
+	field, and to any industrial and government organization in 
+	Indonesia which is engaged in computer-related education and 
+	research, and special-purpose databases.
+<li>	Third, it should be capable of utilizing the various existing 
+	(and planned) physical communication facilities in order to 
+	attain the best (i.e. the most economical) network configuration.
+</ol>
+</font>
+
+<tr>
+<td align="right">
+<a name="3"></a>
+<font size=1 color="blue"><a href="#2" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a> |
+<a href="#4" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Network Architecture</h2>
+<p>
+        By serving the user community with network facilities and access, 
+	UNINET will enable institution to participate trough a network 
+	interface. It is a logical network utilizing the services of 
+	various physical networks. Figure I shows UNINET&#39;s  
+	logical architecture. Participating nodes will consist of 
+	local-area-networks(LAN&#39;s) and single-host systems. This 
+	implies that UNINET will not accommodate direct terminal hookups. 
+	Instead, nodes are required to possess a certain level of 
+	intelligence, which can be implemented through "gateways", if the 
+	node is itself a network or, in the case of single-host nodes,
+	through a network interface. Practically this gateways are similar 
+	to the network interfaces, in that they both must interface the 
+	local communication characteristics to the attributes of the 
+	physical network (for example: X.25 ) used by UNINET. They can 
+	thus both be based on the same microcomputer, but configured 
+	(and programmed) differently.        
+<p>
+<center>
+	<img src="png/uninet.png" width="577" height="366" alt="UNINET">
+</center>
+<p>
+	Figure 1: Logical Network Architecture
+<p>
+        A Layered architecture is proposed to achieve systems modularity 
+	and improve compatibility. The proliferation of machines and 
+	communication protocols have made it necessary to maintain and 
+	architecture versatile enough interface properly with various 
+	systems. The open systems Interconnection scheme [ISO 79] lends 
+	itself nicely into this requirement. Although there my be some 
+	disadvantages to be gained far outweigh the problems.
+<p>
+	The LAN&#39;s will conceivably be a collection of Ethernet 
+	systems [MeBo76], high-speed fiber-optics systems such as 
+	described for example in [CRKL81], and other LAN architecture.
+<p>
+        Four types of nodes will exist, categorized by the level of 
+	services rendered. The first is the common user (CU) node, 
+	which pertains to nodes whose participation in the network 
+	mainly consists of the exchange of mail message and the 
+	submittal of computing jobs to other (remote) nodes (The various
+	functions that UNINET will serve are discussed later). The 
+	second is the regional service center (RCS) node, which is 
+	capable of performing network services for CU&#39;s in 
+	its "region" in addition to being a user itself. An RSC is 
+	planned to have more computing power than the CU&#39;s in its 
+	(geographic) region. At the national level UNINET will have 
+	four national service centers (NSC&#39; s), each with ample 
+	computing power to support requests originating from any RSC or CU.
+	These four NSC&#39;s will be located in Bandung, Jakarta,
+	Yogyakarta and Surabaya. The fourth type of node is the 
+	special service centers (SSC&#39; s).These nodes will
+	render support to the network in the form of access to 
+	specialized databases, bibliographic services, cartographic 
+	data accesses, etc. It is also conceivable to have a powerful 
+	number cruncher as an SSC.
+</font>
+
+<tr>
+<td align="right">
+<a name="4"></a>
+<font size=1 color="blue"><a href="#3" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a> |
+<a href="#5" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Institutional Framework</h2>
+<p>
+        The planning and development activities of UNINET will be 
+	sponsored by and conducted under the auspices of the Directorate 
+	General of Higher Education, Department of Education and Culture. 
+	For main tasks are identified, namely the overall management of 
+	the project, policy support, organizational  support and technical 
+	support. The last three tasks tackle the details of the 
+	development process while the first task includes cooperation 
+	with other organizations  outside the Department.
+</font>
+
+<tr>
+<td align="right">
+<a name="4"></a>
+<font size=1 color="blue"><a href="#3" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a> |
+<a href="#5" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Network Functions</h2>
+<p>
+        A user interfacing with a computer network may want to 
+	perform any combination of the usual network functions, namely:
+<ul>
+<li>	Send/receive electronic mail 
+<li>	Transfer files Submit a batch-job 
+	to a remote computer Interactively logon a remote system
+<li>	Perform distributed processing 
+<li>	Access a distributed database
+</ul>
+	Of these functions, the first three constitute the most favorable 
+	candidates for initial implementation in UNINET. They are 
+	relatively easy to implement, and will develop a level of 
+	familiarity among the user community which in turn will promote 
+	a conducive climate for further cooperation.
+<p>
+        In developed countries, electronic mail is widely use for communication among individuals in a
+given organization and more recently, among peers belonging to different organizations. In the past few
+years a number of such mail systems became operational, among others MAILNET [HeLL82] it uses a star
+topology with dial-up polling during reduced-rate periods (I .e night time). A user can create, send, and
+receive messages and documents on his/her own local system even if the correspondent is a user of a totally
+different system. A computer located at the hub of the network performs all of the functions a post-office
+clerk, viz. Dealing with different envelope formats, sorting of letters, making decisions about how to
+deliver the letter, and how respond to a variety of errors. In addition to this, MAILNET&#39; s electronic
+clerk makes the necessary copies of messages sent to multiple recipients.
+<p>
+        The proposed initial phase for UNINET is an electronic mail system very much like MAILNET. While
+waiting for s public packet switching network for Indonesia, dial-up facilities can be utilized, albeit at
+a quite high cost. A computer In Jakarta or Bandung can be used as the hub where post master functions are
+implemented. Development  of the necessary software will be a very valuable experience in implementing
+subsequent phases of the network. Files can be transferred and handled by the mail system just like
+ordinary messages, although size limitations need to be implemented. Batch jobs specified with the required
+control statements can be submitted to the queue handler at remote site, providing that necessary
+permissions (and accounting information) are secured beforehand. In this manner files and batch jobs are
+processed similar to common mail messages. The different being that files are sent to the files handler at
+the target computer, and the batch jobs are sent with the queue handler as the recipient.
+</font>
+
+<tr>
+<td align="right">
+<a name="5"></a>
+<font size=1 color="blue"><a href="#4" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a> |
+<a href="#6" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Implementation Plans</h2>
+<p>
+        Rather than tackling the physical problems of network development, it is proposed to concentrate on
+the higher layer protocol and software problems. Experience gained in the initial stage will not only
+improve the confidence of the developers, but more importantly, promote a positive attitude towards
+resource sharing among universities / institutes, and possibly other organizations as well. It is
+conceivable to have an electronic mail system among the four NSC&#39; s by the end of the first year. It is
+hope that may that time a working packet switching network exists, so that gateway and interface units can
+be designed and tested. This will bring us well into the third year of implementation, by which time LAN&#39; s
+will be implemented at some of the nodes. The fourth and final year of the five-year plan can then be
+dedicated to the development of the other network functions.
+</font>
+
+<tr>
+<td align="right">
+<a name="6"></a>
+<font size=1 color="blue"><a href="#5" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a> |
+<a href="#6" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>References</h2>
+<p>
+<ul>
+<li> [CRKL81]
+	W.Y. Cheng, S. Ray, R.Kolstad, J. Luhukay, R.Campbell and 
+	J.W-S. Liu, "<em>ILLINET = A 32 Mbits/sec Local - Area Network</em>", 
+	Proc. National Computer Conf. 1981, pp 209-214.
+<li> [HeLL82]  P.  Heller, "<em>MALLNET: A Convenient Inter-Campus 
+	Electronic Mail Service</em>", ACM-SIGUCC Newsletter 12/4, 
+	Winter &#39;82, pp. 12-16.
+<li> [ISO79]   International Standards Org., "<em>Reference model for 
+	Open System Architecture</em>", ISO/TC97/SC16/N227 revised, 1979.
+<li> [MeBo76]  R.M. Metcalfe and D.R. Boggs, "<em>ETHERNET: Distributed 
+	Packet Switching for Local Computer Networks</em>", Communications 
+	ACM 19/7, July&#39;76, pp. 395 -404.
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="7"></a>
+<font size=1 color="blue"><a href="#6" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a> |
+<a href="#bawah" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>EndNote</h2>
+<p>
+	The original paper was written for the "<em>Asia Electronics 
+	Symposium</em>", Jakarta, 19-20 October 1983.
+	This reproduction was typed in by <em>Rika Novita</em> and
+	HTML-ized by <a href="../index.html" target="_top">Rahmat M. Samik-Ibrahim</a>.
+</font>
+</table>
+</center>
+
+<a name="bawah"></a>
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+	<font size=1 color="blue"><a href="#7" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="55.html" target="_top">^^TOP^^</a></font>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e6ebfe" 
+width="80%">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK3.html" target="_top"><img 
+src="png/LOCAL-LOGO3.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="left">
+	<font size=2 color="#00008b">
+	Copyright &copy 1983-2014 <a href="http://www.ui.edu/" target="_top">Joseph F.P. Luhukay and Bagio Budiardjo</a> .
+	Provided <b>AS-IS</b> with no <b>LIABILITY</b>.
+	
+	Permission is granted to copy, distribute, and/or modify
+	this webpage provided this notice is preserved.
+	<b>MIRRORS</b> of this site:
+<a href="http://rms46.vlsm.org/1/55.html" target="_top">BisnisWeb</a> -
+	<a href="http://rmsui.vlsm.org/rms46/1/55.html" target="_top">Fusilkom-UI</a>.
+
+	File revision: 9.3 2002/11/07 07:36:4
+	-- <a href="mailto:vlsm.org@t-HAPUS-DELETE.gmail.com?subject=[RMS-Feedback]"><font color="blue">E-CONTACT</font></a>.
+	Special thanks for this <a href="LOCAL-LINK3.html" target="_top">webspace provider</a></font>.
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK4.html" target="_top"><img 
+src="png/LOCAL-LOGO4.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table>
+<table>
+<tr>
+<td height="600" valign="top">
+</table>
+</center>
+</body>
+</html>
+<!-- END -->
+
+

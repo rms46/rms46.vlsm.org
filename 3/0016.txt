@@ -1,0 +1,835 @@
+Daniel J. Bernstein -- 26 Jun 1992 -- IETF
+------------------------------------------
+
+
+Informal notice of two IESG decisions
+
+
+
+This message has 25 sections, each quite short but together a lot to
+take in. Sorry for the length. Why so much? Because I'm exposing a
+year-long pattern of corruption within the IESG. I now have a large
+collection of electronic, verbal, and written evidence that the IESG has
+blatantly violated several requirements in RFC 1310. These abuses are
+documented below. (Skip to pattern ^25 for the quick summary.)
+
+
+1. Reason for the informal notice
+
+RFC 1310 states that anyone can submit a standardization proposal to the
+IETF Chairman or an appropriate IETF Area Director, who in turn lets the
+IESG review the proposal. RFC 1310 outlines a few procedures for dealing
+with tricky proposals---for example, commissioning a special review
+committee, or creating a working group for ``evaluation and refinement''
+of the protocol spec. It then says: ``The IESG shall determine whether a
+specification satisfies the applicable criteria for the recommended
+action (see Sections 3.2 and 3.3 of this document) and shall communicate
+its findings to the IETF to permit a final review by the general Internet
+community.'' RFC 1310 goes on to say that the notification is by email
+to the IETF list.
+
+
+2. The informal notice
+
+On 15 July 1991 I submitted a protocol specification to Steve Crocker,
+requesting that it be published as a Proposed Standard RFC. At the time
+the protocol in question, which came into existence in early 1990 and
+was derived from a much older protocol, did not have a distinguishing
+name; I have recently begun calling the protocol ``TAP.'' (This, like
+``TELNET,'' is a capitalized name, not an abbreviation for some official
+name.) Anyway, Crocker is the IETF Security Area Director. Phill Gross,
+the IETF Chairman, informed me in May that Crocker had rejected my
+request in March.
+
+On 18 April 1992 I requested of Gross that a newer, pruned-down TAP
+specification be published as a Proposed Standard RFC (or at least that
+a working group be created to discuss it). Gross informed me in mid-May
+that the IESG had just rejected my request, primarily because TAP has
+the same function as a still-not-yet-defined protocol named Ident,
+currently stuck in the Ident WG. (It is worth noting that the Ident WG
+chairman, Mike StJohns, has refused to allow discussion of TAP on the
+Ident list, although he does not deny that TAP is within the Ident
+charter.)
+
+
+3. Comments about the notice
+
+According to RFC 1310, the IESG was required to notify the IETF mailing
+list of the two decisions listed above, to permit community review. It
+appears that the IESG failed to do so, hence violating both the letter
+and the spirit of this rule. If in fact the IESG sent out timely
+notifications which I missed, I'm sorry; I asked the IESG recently
+whether such notifications had been sent, and I received no response.
+
+The remainder of this message gives you further information about the
+protocol in question and its history within the IAB. Everything I say
+here (except, in some cases, my comments about what I was thinking at a
+given time) can be verified from the transcripts of my dealings with the
+IAB, which I plan to publish in SIGCOMM CCR, or from other objectively
+verifiable sources. You will be forced to wonder, as you read through
+these progressively more and more damning pieces of evidence, whether
+the IESG is attempting to take control of the IAB standards series away
+from the community. Why else would it keep its decisions secret, and
+violate RFC 1310 in the many other ways documented below?
+
+
+4. Chronology I: early history
+
+TAP came into existence in February 1990. I took the dead protocol
+documented in RFC 931 and implemented a variant of it. I distributed the
+result in my ``auth'' package, which never really caught on. A year
+later I distributed ``authd,'' a new TAP implementation which did catch
+on because of various technical features. authd serves TCP port 113; in
+effect it announces ``username shmoe connected from this host's TCP port
+12345 to host H's TCP port 7654'' to anyone on host H who asks about
+those port numbers. (It can be used for things other than usernames,
+though, just as finger can be used to transmit weather information.)
+
+Three client TAP implementations (for BSD talk, NNTP, and SMTP) were
+distributed in early 1991. I began to worry about ways to guarantee
+future interoperability. In June I documented the TAP protocol, along
+with the existing applications and some suggested applications, in RFC
+format. I also commented extensively on the exact security added by TAP.
+On 15 July, as noted above, I submitted the document to Crocker for
+publication as a Proposed Standard RFC.
+
+
+5. Chronology II: Delay Period 1 (15 July to 14 September)
+
+After my submission I was told nothing for two months. I sent Crocker a
+list of some sites running TAP. Then Crocker wrote back: ``Naw, two
+months is not unreasonable. The time has been used for coordination...
+There is moderate agreement that this should indeed go on the standards
+track. However, the wording about the relationship to security needs to
+be changed. It's one thing for hosts to supply information about the
+user associated with a particular connection, but it's another matter to
+assert that this information supplied is particularly trustworthy or
+strongly related to security. You get first crack at fixing up the
+document. If you need clarification of the issues, we can set up a
+dialog.'' That was 14 September.
+
+Nowhere in the security section did I assert that the information
+supplied was in particularly trustworthy or strongly related to
+security, and I did not understand what changes Crocker wanted me to
+make, or who the ``we'' was. I told Crocker so on 15 September. I asked
+exactly what wording he considered inaccurate, misleading, or
+incomplete, and said: ``Since I don't understand which statements you're
+objecting to, I guess I need clarification. Dialogue with whom?'' (As I
+learned later, ``we'' meant some subset of the SAAG group.)
+
+
+6. Chronology III: Delay Period 2 (15 September to 20 November)
+
+Crocker did not respond to my request for further information, and
+didn't come through on ``we can set up a dialog.'' I sent messages to
+him on 3 October and 19 October attempting to elicit a response. He
+didn't respond until 20 November, more than four months after my
+submission. In those four months, the ball was in Crocker's court every
+day except 14 September.
+
+In the meantime the world continued to turn. Peter Eriksson wrote a new
+implementation; unfortunately there was an interoperability problem. I
+heard about the problem from Simon Leunen. By 4 November, Peter had
+fixed the problem and read through the TAP specification. The
+specification would not have permitted the problem if it had been
+available to Peter.  In mid-November I created the rfc931-users list
+``for people who want to use RFC 931 to solve problems.'' The list
+quickly swelled past 100 subscribers, and Peter's ``pauthd'' continued
+to grow in popularity.
+
+
+7. Chronology IV: technical discussion
+
+On 20 November Crocker finally gave me some indication of what he (and
+apparently some SAAG members) didn't like about the document. I
+responded with a list of ten issues, on most of which we seemed to
+agree. Crocker responded on 22 November: ``I think we're in basic
+agreement, modulo detailed discussion over what words are in the RFC
+regarding security and the name of the protocol.'' (He had mentioned
+that the current name---``Authentication Server,'' just like RFC 931---
+was, in the eyes of the SAAG, inappropriate; this was one of the issues
+I listed.)
+
+At the end of November I sent some initial messages to the rfc931-users
+list. Discussion ensued on the security section of my document. This
+discussion continued, in various threads on rfc931-users and the SAAG
+list, through the beginning of January. During that time I produced
+several revisions of my document in response to SAAG criticism.
+
+On 2 January Jim Galvin of SAAG sent me a message, reminding me of the
+name-change issue raised in late November. ``It is the opinion of those
+SAAG members who have been carefully tracking this effort that the
+protocol should be renamed as the "Identity Server" (or something
+similar)... If you agree you will need to revise your document
+accordingly, after which we will push it on to the "standards track" as
+expeditiously as possible.''
+
+I asked rfc931-users whether the name change would be okay, and how we'd
+deal with the problems of changing the name of an established protocol.
+The answers were satisfactory, so I agreed.
+
+On 4 January I made a new draft available; it had the new name
+``Identity Server'' and addressed various security concerns. There was
+no further discussion. I waited for Galvin to live up to his statement
+``we will push it on to the "standards track" as expeditiously as
+possible.''
+
+
+8. Chronology V: Delay Period 3 (4 January to 8 March)
+
+There was no discussion after my 4 January draft. On 15 January, six
+months after the submission, I sent Crocker, Galvin, Jeff Schiller, and
+StJohns a message. I pointed out that I had addressed the issues raised.
+I reminded them of Galvin's 2 January promise. Galvin immediately wrote
+back and promised a response within a week.
+
+On 22 January Galvin wrote back saying two things. ``First, the
+reviewers have not reached consensus on how to respond to the review.
+Until we do there is nothing that can be said at this time.'' Second, he
+told me about the existence of Internet-Drafts and recommended that I
+submit my document as an I-D. On 25 January I wrote back complaining
+about the delay and the lack of feedback. But there was nothing I could
+do: the ball was in ``the reviewers'' court and the reviewers weren't
+telling me anything.
+
+I wrote to Galvin on 6 February. ``You have stretched my patience beyond
+its limits. Are there any remaining problems with my RFC 931 revision?
+If so, then for the last month you've been concealing them from me. Is
+my RFC 931 revision going to be published, NOW? If not, then you are
+censoring a supposedly open document series. Is my RFC 931 revision
+going to be published as a proposed standard protocol, to become a
+recommended standard by December if there is no objection from the
+community? If not, then the IETF is costing thousands of system
+administrators many thousands of hours of time and effort tracking
+system crackers. Is my RFC 931 revision going to be published as is,
+with none of the insane editing that marred RFC 1143? If not, then the
+IETF is violating copyright.''
+
+I asked for a quick response. I quoted the section of RFC 1200 where the
+IAB ``strongly recommends'' that people use its standards process ``to
+maximize interoperability.'' I implied that this was a lie: ``When push
+comes to shove, the IAB doesn't want to even begin standardizing a
+protocol which isn't its own pet project---even if hundreds of sites
+around the Internet are using that protocol.''
+
+I hoped that if I reminded Galvin of the IAB's promises to the community
+then he would wake up and start acting in accordance with those
+promises. I received no response. Around this time I found Vint Cerf's
+December draft of what is now RFC 1310. I was pleased to see that the
+draft made quite a few statements about the IAB standards process which
+were in line with how I thought the process should work.
+
+So on 9 February I sent an informal complaint to Vint Cerf about SAAG's
+handling of TAP. I emphasized how, according to his draft of RFC 1310,
+TAP was in perfect shape to become a Proposed Standard. Cerf
+acknowledged receipt of my message but didn't respond. I complained to
+him again on 2 March. I didn't receive any other messages from the IAB
+or its suborganizations in the meantime---except for a private e-mail
+exchange with Steve Kent in mid-February which confirmed my beliefs
+about why the SAAG was censoring TAP. (In the exchange Kent admitted
+that his comments were out of date; he didn't raise any specific
+objections to my document; and he didn't come through on any of the
+IAB's promises. He did imply that he considers himself an ``important
+individual'' [his words] in the standardization process.)
+
+Summary of the three two-month delay periods: For a total of six months
+out of eight, people acknowledged my messages, promised responses, even
+admitted that the ball was in their court, but didn't tell me anything
+and didn't live up to their explicit promises---let alone the promises
+in RFC 1200 and RFC 1310. During this time the IAB accomplished nothing.
+
+
+9. Chronology VI: post-Cerf summary
+
+On 8 March Vint Cerf finally responded to my complaints. ``It would be a
+loss if you gave up at this point since I had thought progress was being
+made at last.'' (Huh? It had been two months since Galvin had promised
+to move TAP along the standards track. Absolutely no progress was made,
+and Galvin didn't come through.) ``The impression I have is that the
+fundamental questions revolve around how to characterize the services of
+the protocol proposed. In particular, the degree to which one could or
+should trust the results from any particular host that responds.''
+(Absolutely. No disagreement here.)
+
+Although Cerf wasn't formally running the IAB at that point, it was
+amazing how quickly things moved once he got involved. Days after Cerf
+``thought progress was being made at last'' Mike StJohns sent out an
+extensive revision of the TAP spec, claiming that his rewrite reflected
+SAAG's concerns (which had been kept completely hidden since 4 January).
+After this things got very complicated, and I won't try to give a
+complete play-by-play account of what's happened between then and now.
+The following sections have just a few highlights.
+
+
+10. Historical summary: the pure TAP spec
+
+On 12 March it struck me that there had been essentially no disagreement
+on the technical aspects of TAP. So, I thought, why not split the
+document into two pieces: a pure TAP protocol description, and a
+discussion of security and applications?
+
+The next day I distributed the pure (``wimpy'') TAP spec. I stated my
+high hopes that the pure spec would be acceptable to SAAG---after all,
+it didn't make any claims about security and didn't talk about any
+applications. It just defined the protocol. The new security section
+said essentially ``This document makes absolutely no guarantees about
+security.''
+
+Beyond minor wording changes and a couple of extra technical notes that
+spec hasn't changed. Several people (including Vint Cerf) have stated
+their comfort with the document. The only technical objection raised is
+that the (ridiculously simple) grammar is expressed verbally rather than
+with a BNF; I've stated that I'd be glad to include a BNF if someone
+wants to do the work of writing one, but apparently nobody's seen a real
+need to do this.
+
+It is this spec which was the subject of my 18 April request to the
+IESG. (You can get the most recent published revision as
+draft-bernstein-tap-00.txt from any I-D directory.) As noted in
+section 2, Gross informed me in mid-May that the IESG had just rejected
+my request, primarily because TAP has the same function as Ident.
+
+
+11. Historical summary: cutting me out of the process
+
+As you will recall, there was my draft from 4 January, then StJohns's
+11 March rewrite with a radically different security section, then my
+13 March pure revision with the security section removed entirely.
+
+On 16 March Steve Crocker sent me a message: ``You said in your note to
+Vint that you want your latest revision to be considered an official
+submission. I think we skipped a step. I saw Mike's draft and I saw
+your response, but I didn't see any dialog indicating discussion and
+reconciliation. It's not evident to me that your submission meets the
+requirement for consensus.''
+
+What a load of crap. First of all, except in the security section,
+StJohns's draft was essentially the same as mine; and the whole point of
+my rewrite was that we should split off the security section into a
+separate document. So what exactly was there the lack of consensus on?
+The only person who's refused to admit that splitting off the security
+section is a good idea is Ted Ts'o, who also refuses to admit that TAP
+has a constituency or that Kerberos is less than 100% secure. (Will the
+sun rise tomorrow, Ts'o?) Given that StJohns's changes were in sections
+that no longer appeared in the document, what was there to discuss?
+
+Second, every accusation that I had ``skipped a step'' can be thrown
+back at StJohns. To imitate Crocker: ``I saw my January draft and I
+saw Mike's extensive rewrite, but I didn't see any dialog indicating
+discussion and reconciliation.'' It is StJohns who didn't check his
+rewrite with anybody, who didn't have any history of agreement on his
+document. Why can IAB flunkies make any changes they want without
+checking with the community, then accuse *me* of not seeking out
+consensus?
+
+To make a long story short, by 18 March Steve Crocker had announced that
+Mike StJohns was now running ``the effort.'' He excused this exercise of
+dictatorship---which he didn't even check with SAAG---by saying ``It has
+become evident that these discussions are not converging.''
+
+I leave it to you, my readers, to evaluate the truth of Crocker's
+statement. The technical discussions which weren't converging were the
+security discussions---and it wasn't my fault that, after January 4,
+nobody in SAAG could find a single thing to complain about in my draft.
+At this time the discussions still haven't converged; Mike StJohns has
+adopted the policy of ignoring them entirely, on the grounds that I am
+supposedly the only one disagreeing with SAAG. Other people have
+explicitly stated the same disagreements but StJohns still has the same
+policy.
+
+Anyone involved in those first eight months of TAPgate knew that the
+security section was the only thing holding TAP back. Nearly every
+message dealing with technical aspects of TAP was on security issues.
+My solution was to let the TAP protocol specification proceed by
+admitting that we didn't know what to say about security. Crocker's
+``solution'' was to cut me out of the process---and use StJohns's
+security section, which certainly isn't anywhere near consensus.
+
+On 18 April, immediately after my second formal request to the IESG
+(actually, right after I denied Crocker's right to exercise his personal
+authority and reject the request, since it was directed at Phill Gross),
+Crocker removed me from the SAAG mailing list. I hadn't sent any
+messages to the SAAG list in a while; outside the TAP efforts I had
+contributed an idea (which I think was accepted) to a mail-checking
+protocol and hadn't said much else on the list. Yet Crocker came up with
+a lie and threw me off the list. (``Open processes depend on the good
+will of the participants. There is a line between pursuit of honest
+differences of opinion and determination to interfere with the work of
+the group. In my opinion, your efforts are not constructive, and I have
+removed you from the SAAG mailing list.'')
+
+I requested to be put back on. I had thought that the SAAG was an open
+list---an official IETF list, in fact. But Crocker refused. It turned
+out that Galvin, who had added me to the list originally, works for
+Crocker. What excuse is there for such an exercise of personal control
+over IAB business? Why do these people think they have the God-given
+right to run the Internet any way they damn well please? I never
+interfered with SAAG business, and I have five SAAG mailing list
+recipients willing to swear to this in court, in case personal SAAG
+archives aren't enough.
+
+
+12. Historical summary: copyright issues
+
+I had mentioned copyright on 6 February. RFC 1143 had been extensively
+modified immediately before publication, in violation of copyright law;
+I didn't want this to happen again. In March, after an attempt by a
+certain IAB flunky to steal my writing, I pointed out once again the
+automatic existence of copyright. On 29 March I offered to place my
+document into the public domain; several times before that I offered to
+transfer copyright to IAB the moment after my document was published.
+
+
+13. Historical summary: tone issues
+
+Cerf and Crocker complained about the ``tone'' of the first pure
+revision of the TAP spec. I asked them repeatedly exactly what they were
+talking about. They didn't say for over a week, though I did hazard a
+guess which turned out to be correct. After they told me I removed the
+statements in question. Why weren't they specific in the first place?
+
+Kent and Ts'o have thrice stated that certain passages are not in
+conformance with ``RFC style.'' I---and others---have asked what this
+style is and where it's documented, as well as for examples of the
+style, as well as for some explanation of how the passages would have to
+be changed so that they have the proper style. Neither Kent nor Ts'o has
+elaborated---yet they continue to claim that various passages are
+inconsistent with ``RFC style.''
+
+
+14. Historical summary: mailing list issues
+
+I created the rfc931-users mailing list in November, chartered to serve
+the users of the protocol. (I now regret my mistake in not choosing the
+name TAP last year and creating a tap-users list.) During March Crocker
+and others sent messages to the list which, in my judgment and in the
+judgment of various readers of the list, were not appropriate for the
+list. I repeatedly told Crocker to stop abusing the list.
+
+Crocker stated in mid-March that rfc931-users was the ``official mailing
+list'' for ``this effort.'' Yet he didn't explain how the effort had
+suddenly become official, or how it had suddenly acquired a mailing
+list---in particular, a mailing list with an entirely different charter.
+I thought that official IAB actions were announced on the IETF list. He
+also stated for the first time that he ``required'' a mailing list ``for
+every effort.'' He had never brought up this requirement before.
+
+
+15. Historical summary: cutting TAP out of the process
+
+By late March, in response to my complaints about the abuse of the
+rfc931-users list, Crocker had created an official list: ident. For a
+few days after that people on both sides of the issues were happily
+discussing the TAP spec. I kept a public list of open issues; a few
+minor issues were raised and a few were resolved. (The character set
+issue, for example, was brought up for the first time.) I estimate that,
+with a week more of work, we would have had a perfectly satisfactory
+spec which nobody would have objected to.
+
+Then the floor fell out. On 29 March Mike StJohns sent a message to the
+rfc931-users and ident lists. ``The "ident" protocol - where we are and
+where we're going... Attached at the end of this note is a redraft of
+rfc931, hopefully reflecting the current implementation state of the
+protocol. This draft with subsequent changes if any is what will be
+moved onto the standards track... Mr Bernsteins draft has been removed
+from consideration for cause - primarily due to his threats to assert
+copyright. His draft will not be considered further as a contribution to
+the standards process... we had come to an impasse with Dan and this
+looks like the only way to get the effort moving.'' (This, after six
+months of inexcusable delay on Crocker's part.)
+
+Again, I leave it to you, my readers, to judge StJohns's actions. I
+recently ran a survey of the ident list: apparently StJohns didn't check
+with *anybody* in the group before cutting TAP out.
+
+After StJohns' exercise of dictatorship the Ident group was created as a
+formal IETF WG, chartered to ``define a protocol'' to transmit certain
+information. It's been going for nearly three months now. There's still
+a security section, and there are still huge open issues surrounding
+that section. StJohns recently took it upon himself to invent extensions
+to the protocol, as usual without checking with anybody. (According to
+his much more complex, and implementation-free, protocol definition,
+UNIX usernames are limited to 8 characters. What a surprise for users of
+UNIX systems allowing longer usernames. Why would someone add this sort
+of idiotic limitation to a protocol, if not in an attempt to damage the
+protocol irreparably?)
+
+
+16. Standards process issue: perversion of requests
+
+On 15 July 1991 I requested that the IAB move a protocol along the
+standards track. As indicated above, the request was (apparently)
+refused in March by Steve Crocker, though this refusal was not announced
+for review by the IETF community, in clear violation of RFC 1310.
+Anyway, Crocker sent me at least two messages along these lines: ``You
+asked that we move this protocol forward. We are doing that, via the
+Ident effort. What are you complaining about?'' He tried to act
+similarly in response to my April 18 request, though he had no right to
+do so, as my request was directed at the IETF Chairman.
+
+It's easy to answer Crocker's question. Many of TAP's users believe that
+the current Ident draft (1) does not reflect current practice; (2) has
+not achieved consensus, or even come close; (3) is far too complex; (4)
+has some unacceptable restrictions in the security section; (5) contains
+false and misleading information. If it weren't for these flaws we
+probably wouldn't be complaining.
+
+But the larger issue is that Crocker has perverted my requests into
+something other than what they are. When I ask, following RFC 1310, that
+something be moved along the standards track, I expect my request to be
+evaluated the way RFC 1310 says it should be, and either accepted or
+denied on that basis. I'm not asking that some vague ``effort'' be set
+up to standardize a roughly similar protocol, or even the same protocol;
+I'm asking that this protocol spec be standardized right now. It is a
+perversion of the request to interpret it as something other than what
+it is.
+
+I believe that RFC 1310 should explicitly deny the IESG the right to
+pervert requests. If the IESG wants to say ``We deny your request, on
+the basis of the following criteria in RFC 1310: ... By the way, you
+might want to set up a working group to try to put together a better
+protocol definition,'' then that's fine. But the IESG should not have
+the right to wilfully misinterpret requests in pursuit of its own goals.
+If it has no reason to refuse a request then it must accept the request.
+
+In the meantime we should all recognize that Crocker's actions were not
+sanctioned by RFC 1310.
+
+
+17. Standards process issue: copyright
+
+The copyright issue is, from a factual point of view, a non-issue in
+this case. I've offered to put my document into the public domain. We
+should all recognize that Crocker and StJohns are lying when they claim
+anything like ``There are unacceptable copyright restrictions on this
+document.''
+
+But there's a larger issue here. RFC 1310 does not list copyright
+transfer as a condition for standards to be published. In fact, it
+doesn't mention it even as something to be considered. After all, the
+IAB has never required copyright transfer before, and under the Berne
+convention (which is now U.S. law) there are some hundreds of RFCs which
+are automatically copyrighted. So how can the IESG make decisons on the
+basis of copyright? RFC 1310 simply does not condone the way that TAP
+was removed from consideration.
+
+I'm happy to see that copyright is now listed as an issue to be dealt
+with in future RFC 1310 revisions. Certainly, although Crocker and
+StJohns were overstepping their authority, there was a grain of reason
+behind their incompetent handling of the copyright issue: the IAB can't
+be expected to publish standards for the community if the community
+doesn't have the right to revise the standard later. Perhaps the IAB
+should require that every RFC be placed into the public domain the
+moment it's published. The IAB can protect the sanctity of its document
+series by trademarking the name ``RFC.''
+
+
+18. Standards process issue: IETF notice
+
+This deserves repetition: The IESG has, twice, violated RFC 1310's
+explicit requirement that its decisions be announced for review by the
+entire IETF. I believe that the IESG's failure demands further
+requirements. The IESG should be required to summarize each and every
+request it receives, immediately, for the IETF's information. We as a
+community cannot permit the IESG to escape public review. TAP was
+handled incompetently, including more than half a year of inexcusable
+delay; why did the IESG try to keep its actions secret?
+
+
+19. Standards process issue: the job of the IESG
+
+Let's review the RFC 1310 quote on the IESG's job. ``The IESG shall
+determine whether a specification satisfies the applicable criteria for
+the recommended action (see Sections 3.2 and 3.3 of this document) and
+shall communicate its findings to the IETF to permit a final review by
+the general Internet community.''
+
+Notice that the IESG is commissioned quite explicitly to decide whether
+the request at hand satisfies certain criteria. The criteria in sections
+3.2 and 3.3 are quite specific and quite short. They simply say what a
+Proposed Standard is, what a Draft Standard is, and so on.
+
+The IESG does *NOT* have the job of deciding between two competing
+protocols: if both protocols fit the criteria in RFC 1310 sections 3.2
+and 3.3 then both *MUST* be recommeded by the IESG. But I have Gross
+recorded as saying that the IESG refused my 18 April request exactly
+because, in the IESG's opinion, TAP would compete with Ident.
+
+The IESG does *NOT* have the job of deciding things on the basis of its
+hidden thoughts about what's good for the community. But that's exactly
+what Steve Kent and Ted Ts'o say it should be doing: they say, for
+example, that TAP should not be standardized because it does not have
+security as strong as cryptographic protocols.
+
+RFC 1310 does *NOT* sanction the IESG considering *ANY* criteria other
+than those listed. But Crocker's refusal of my July 15, 1991 request was
+explicitly based on such issues as copyright. And Gross stated that
+``duplication of effort'' was the primary reason for the IESG's refusal
+of my 18 April request. Even worse, Kent has implied that, even if the
+IESG recommends that TAP become a Proposed Standard, he personally will
+reject the TAP spec because of its ``style.''
+
+I don't have any suggestions for how RFC 1310 should be modified to
+handle these problems. The IESG has violated RFC 1310's rules so
+blatantly that I see no recourse other than direct appeal to the
+community.
+
+
+20. Factual notes
+
+The current TAP specification is stable and well-understood: about 85%
+of it is word-for-word the same as a draft which has been available
+since last June, and the rest is formality; also, the protocol which it
+describes has not changed since February 1990. The spec and protocol are
+technically competent: to put it simply, they *work*, and the spec says
+exactly what's necessary to guarantee future interoperability. There are
+multiple independent interoperable implementations with considerable
+operational experience: for example, my authd, Peter Eriksson's pauthd,
+and the popular wuarchive ftpd. The spec and protocol enjoy some public
+support: I have published a list of literally hundreds of IP addresses
+running the server, and I have statements from nine people asking the
+IAB to get the spec published as an RFC. TAP is not only recognizably
+useful in some parts of the Internet; it's being *used*---the statistics
+for the NSFNET T1 backbone show many tens of thousands of TCP port 113
+packets per month.
+
+
+21. Is TAP appropriate for the standards track?
+
+RFC 1310 states: ``In general, an Internet Standard is a specification
+that is stable and well-understood, is technically competent, has
+multiple, independent, and interoperable implementations with
+operational experience, enjoys significant public support, and is
+recognizably useful in some or all parts of the Internet.''
+
+So, given the facts noted in the last section, the TAP spec seems to
+satisfy the characterization of Internet Standards in RFC 1310.
+Certainly one could argue that ``only'' a couple hundred sites doesn't
+constitute ``significant public support,'' or that the spec isn't
+perfectly stable. But then again, I'm not asking that TAP become a
+Standard yet---all I've been asking since last July is that this be
+published as a Proposed Standard. RFC 1310 imposes nearly another year
+delay before a Proposed Standard can advance through Draft Standard to
+Standard; that'll be more than enough time for the public support and
+stability and so on to become obvious.
+
+
+22. Does TAP embody the goals of the standards process?
+
+RFC 1310 identifies four goals of the procedures of the standards
+process: high quality, prior implementation and testing, openness and
+fairness, and timeliness. The first two goals were met in this case by
+people working outside the IAB---but the goals of openness and fairness
+and timeliness can be met only by the IAB. In this case the IAB fell
+flat. Steve Crocker claimed in March that he requires a mailing list for
+``every'' effort: so what was he doing between July and March with the
+TAP effort? Delay Periods 1, 2, and 3 add up to six whole months during
+which Crocker did nothing.
+
+
+23. Does TAP need a working group?
+
+RFC 1310 states: ``In most cases, a specification resulting from an
+effort that took place outside of an IETF Working Group context will be
+submitted to an appropriate Working Group for evaluation and refinement;
+if necessary, an appropriate Working Group will be created.'' This isn't
+always applicable, and I don't think there's any need for a TAP group;
+but I still suggested this as an option in my 18 April request. The IESG
+didn't take this option.
+
+Remember the request perversion issue. If the IESG does create a working
+group for TAP then it had better be in conformance with RFC 1310---it
+had better be a group to ``evaluate and refine'' the TAP spec. Another
+group like Ident, chartered to ``define a protocol,'' simply doesn't cut
+it. Ident does not satisfy the IESG's obligations towards TAP.
+
+
+24. Does TAP satisfy RFC 1310's criteria for being a Proposed Standard?
+
+The IESG's job was to answer the question of this section's title. It
+didn't live up to its duties so I'll address the question. RFC 1310
+states: ``The entry-level maturity for the standards track is "Proposed
+Standard". A Proposed Standard specification is generally stable, has
+resolved known design choices, is believed to be well-understood, has
+received significant community review, and appears to enjoy enough
+community interest to be considered valuable.'' It also states one extra
+criterion: ``A Proposed Standard should have no known technical
+omissions with respect to the requirements placed upon it.''
+
+The TAP spec---and the protocol it documents---are, as noted above,
+quite stable and well-understood, and enjoy more than enough community
+interest to be considered valuable. It has received far more community
+review than the vast majority of IAB standards efforts, by virtue of
+having been incorporated into a number of widely distributed programs.
+I resolved all design choices a year ago, and the protocol I defined
+then has not been shown to have any technical problems. (I don't claim
+that every decision I've made is necessarily optimal, though on the
+basis of the last year of protocol development and discussion I do
+believe I made good decisions; I claim only that the choices have been
+resolved. That's the criterion listed in RFC 1310.) As for technical
+omissions, the TAP spec omits nothing. It contains all features
+necessary to satisfy the requirements placed on it by its users. (And
+there are no requirements placed on this protocol from the outside; it's
+not as if TAP was designed to fill the IAB's stated need for a protocol
+to do anything in particular. It just transmits uninterpreted octet
+strings from one host to another.)
+
+So TAP meets every single criterion in RFC 1310 for being published as a
+Proposed Standard. I see no excuse for the IESG to have failed to accept
+it---if, that is, the IESG had actually considered the criteria it was
+supposed to consider, rather than shirking its duties in violation of
+RFC 1310.
+
+RFC 1310 goes further. ``Usually, neither implementation nor operational
+experience is required for the designation of a specification as a
+Proposed Standard. However, such experience is highly desirable, and
+will usually represent a strong argument in favor of a Proposed Standard
+designation.''
+
+So not only does TAP meet the criteria for being a Proposed Standard. It
+also has both an implementation and operational experience. So if the
+IESG had any doubts about TAP, it should have been swayed by the
+strong argument that TAP is a protocol *in use*! In fact, TAP has
+*multiple* interoperable implementations---more implementations than
+most existing Proposed Standards. How strong does this argument have to
+be before the IESG gives in?
+
+Note that the TAP spec is, at this point, solely a Technical
+Specification, with only a very broad statement of its domain of
+applicability. It does not include an Applicability Statement. So it
+gets only a maturity level like ``Proposed Standard,'' not a requirement
+level like ``Recommended.'' I didn't realize this until I read RFC 1310.
+
+
+25. What now?
+
+TAP is fully ready to be published as a Proposed Standard. The current
+draft is technically sound; now that the security discussions have been
+replaced by a disclaimer, there's little if any argument over the
+document. Yet---for almost twelve whole months---SAAG and IESG have
+refused to let TAP proceed through the standards process.
+
+Permit me to speculate a bit. I think I know why Crocker, Kent, et al.
+don't like TAP. They have a shining vision of global cryptographic
+authentication. If we had that sort of security on the Internet then
+nobody would find TAP useful. But exactly the opposite is true: TAP is
+the best in its class right now, and hundreds of people are using it.
+Crocker et al. don't like being reminded that their vision is little
+more than a far-off dream. If they let TAP be standardized then they'd
+be admitting to the whole Internet community that it'll be years before
+their vision becomes reality.
+
+Unfortunately for them they weren't able to find any good reason to hold
+TAP back. So they started acting unfairly. Let's review the examples
+documented above, in roughly increasing order of unfairness:
+
+(A) During a total of six months---Delay Periods 1, 2, and 3---Crocker
+and friends did nothing in public and said nothing.
+
+(B) Crocker cut me out of the process, with the excuses that I was
+supposedly ignoring a document (which had appeared less than a week
+before), and that the discussions weren't converging (as if that were my
+fault).
+
+(C) StJohns has adopted the policy of ignoring my objections to the
+security section of his document, with the excuse that I am supposedly
+the only one raising objections (although other people have supported my
+position).
+
+(D) Crocker suddenly declared in March that the rfc931-users list was an
+``official mailing list'' for ``this effort''; what a surprise for the
+readers of the list. How can something be ``official'' if it hasn't even
+been announced on the IETF list?
+
+(E) Crocker claimed in March that he ``required'' a mailing list ``for
+every effort''; he had never brought up this requirement in the eight
+months before that.
+
+(F) StJohns threw the TAP spec out of consideration at the end of March,
+despite the fact that people on both sides of the issues were discussing
+it at the time. His excuse was copyright.
+
+(G) The Ident group, which was supposedly created in response to my
+request from eight months before, was not chartered to handle that
+request.
+
+(H) According to Phill Gross, Crocker refused my 15 July 1991 request
+sometime in March. He didn't announce this on the IETF list for
+community review.
+
+(I) The IESG refused my 18 April 1992 request in May. They did not
+announce this on the IETF list for community review.
+
+(J) The IESG decided between two competing protocols (and then decided
+in favor of the vapor protocol).
+
+(K) Crocker's refusal of my July 1991 request was based on such issues
+as copyright, not on any technical issues. (And it was a personal
+refusal, not one espoused by the relevant working groups.)
+
+(L) The IESG's refusal of my April 1992 request was based primarily on
+the issue of ``duplication of effort.''
+
+Scary list, isn't it? To support these unfair actions they engaged in
+lies, some of which are documented above (examples: ``we can set up a
+dialog'' [Crocker], ``we will push it on to the "standards track" as
+expeditiously as possible'' [Galvin, speaking for SAAG], the response
+``within a week'' in January [Galvin], ``your efforts are not
+constructive'' [Crocker]), and petty exercises of personal power (e.g.,
+throwing me off the SAAG list [Crocker]). But words don't hurt; what
+hurts is that the IESG has, for a year, censored a perfectly good
+protocol, and caused documented cases of interoperability problems and
+loss of time and money.
+
+Fortunately I have two weapons to combat the unfair actions of the IESG.
+My first weapon is RFC 1310, the IAB's official documentation of its
+standards process. With RFC 1310 I can stop shouting ``unfair'' and
+start shouting ``fraud.'' RFC 1310 describes exactly what the IESG
+*should* have done in response to my requests, and what criteria the
+IESG should have considered. By those criteria TAP passes with flying
+colors---it's got a larger constituency, more public review, better
+consensus, better technical development than the vast majority of
+existing Proposed Standards, and multiple interoperable implementations
+to boot. Although it's tricky to use e-mail as evidence, I'm seriously
+considering suing the IAB for fraud on the basis of the IESG's flagrant
+violations of RFC 1310.
+
+My second weapon, my much more powerful weapon, is the will of the
+community. Some of you out there must be shaking your heads in
+disbelief, saying ``I never thought the IESG would betray the community
+in this way!'' We all lose when the IESG doesn't follow its own rules,
+ignores its own criteria, and then tries to hide its mistakes from the
+community---especially when the result is outright censorship of a
+protocol which *needs* to be documented in the standard series to
+prevent interoperability problems.
+
+I beg you, my reader: Say what you think. You don't have to trust my
+summaries: the transcripts of TAPgate are a matter of public record. You
+can do an incredible amount of good by raising your voice in outrage at
+the IESG's attempt to wrest control of the standards series away from
+the community. Pass around copies of this message, tell other people to
+read it, send your opinions or suggestions to the tcp-ip or ietf lists,
+talk about TAPgate at IETF meetings, tell me what you think (and please
+say if you wouldn't mind my quoting you---every bit helps). Pick up the
+TAP spec (draft-bernstein-tap-00.txt) and read it. FTP some of the
+implementation work (thanks to Peter Eriksson) from ftp.lysator.liu.se.
+And remember that this is a long message: just because you've made it
+through doesn't mean other people will, even though they might be very
+interested. Summarize, quote, complain. (Also make sure that Crocker
+can't get away with denying what happened---please publicize any
+relevant behind-the-scenes claims by summarizing them on the IETF list.)
+
+It is time to force the IESG back into the position of serving the
+Internet community rather than secretly directing its future. RFC 1310
+makes clear that the Internet Engineering Steering Group must always
+check its actions with the community, and derives its power from the
+will of the community. *We* have final say. We can start by giving TAP
+the fair and open treatment it deserves. I wish we hadn't lost a year---
+we'll still have to wait another year for TAP to advance from Proposed
+Standard to Standard. But maybe it'll be worth it if we make sure that
+these abuses don't happen again.
+
+---Dan Bernstein, [e-mail] 26 June 1992 
+(These are personal opinions. I have no official affiliation with NYU.)
+
+

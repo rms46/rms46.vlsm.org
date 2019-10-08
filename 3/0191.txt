@@ -1,0 +1,81 @@
+NomCom Chair -- 16 October 2000 -- IETF Announce
+================================================
+
+Call for nominations
+
+Now that the NomCom has been selected, we are
+opening the call for nominations. This includes
+a request for comments regarding the past
+performance of incumbents, which will be considered
+during the deliberations of the nominating committee.  
+
+Members of the community are encouraged to 
+nominate candidates for any of the positions 
+which are up for re-filling: 
+
+IESG Terms ending in March, 2001: 
+
+Fred Baker              IETF Chair
+Scott Bradner           Transport
+Randy Bush              Operations & Management
+Patrik Faltstrom        Applications
+Thomas Narten           Internet
+Dave Oran               Routing
+Jeff Schiller           Security
+
+IAB Terms ending in March, 2001: 
+
+Harald Alvestrand 
+Ran Atkinson
+Rob Austein
+Steve Deering
+Tony Hain 
+Geoff Huston
+
+Members of the community are encouraged to contact the
+nomcom to nominate someone for any of these positions, 
+or to provide input relating to potential candidates. 
+Self-nominations are accepted. The deadline for
+nominations is midnight Monday, December 16, 2000. 
+Early input is desirable so that candidates may be 
+interviewed during IETF 49. 
+
+The members of the NomCom can be contacted individually  at
+the addresses below or collectively at nomcom@ietf.org.  
+Additionally, the members of the NomCom will be identified 
+at the IETF by a marker (as yet undetermined) on their name 
+tags.  People are encouraged to take advantage of the 
+opportunity to talk to the members of the NomCom about 
+nominations and other issues related to the IAB and IESG 
+membership. 
+
+The 2000 Nominations Committee
+
+Phil Roberts qa3445@email.mot.com
+Stuart Cheshire cheshire@apple.com
+Perry E. Metzger perry@piermont.com
+Bill Woodcock woody@zocalo.net
+Hadriel Kaplan hadriel@nortelnetworks.com
+Alain Durand alain.durand@eng.sun.com
+Vijay Srinivasan vijay.srinivasan@cosinecom.com
+Hal Sandick hsandick@nortelnetworks.com
+David Robinson david.robinson@ebay.sun.com
+David Allan dallan@nortelnetworks.com
+
+Non-voting members:
+Bernard Aboba aboba@internaut.com (Chair)
+Avri Doria avri@nortelnetworks.com (Past Chair)
+Leslie Daigle leslie@thinkingcat.com (IAB liason)
+Allison Mankin mankin@isi.edu (IESG liason)
+
+The role of non-voting members (from RFC 2727)
+
+The nominations committee comprises at least a non-voting 
+Chair, 10 voting volunteers, and 3 non-voting liaisons.
+The sitting IAB and IESG members each appoint a non-voting
+liaison to the nominating committee from their current
+membership who are not sitting in an open position.
+The Chair of the prior year's nominating committee also 
+serves as a non-voting liaison.
+
+

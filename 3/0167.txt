@@ -1,0 +1,31 @@
+Joyce K. Reynolds -- 19 March 1993 -- IETF-Announce
+---------------------------------------------------
+             World-Wide Web BOF (www)
+
+
+Folks,
+
+I am sending this WWW BOF announcement on behalf of Tim Berners-Lee,
+who is on travel.
+
+Thanks, Joyce
+
+========================================================================
+
+                World-Wide Web BOF (www)
+                Chairperson: Tim Berners-Lee/CERN
+                Timeslot: Tuesday, March 30th - 4-6pm
+
+The World-Wide Web (WWW) is a distributed information access system
+providing facilities from simple campus-wide systems to multimedia
+hypertext information delivery and search.  WWW has an established
+user base, many compatible implementations, and many new ideas.  This
+BOF will discuss how the current WWW standards should be put into the
+RFC process, and discuss future directions for the Web.
+
+Required reading:
+
+                ftp://info.cern.ch/pub/www/doc/html-spec.{ps,txt}
+                ftp://info.cern.ch/pub/www/doc/http-spec.{ps,txt}
+                ftp://info.cern.ch/pub/ietf/url.{ps,txt}
+

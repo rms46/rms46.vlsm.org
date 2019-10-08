@@ -1,0 +1,20 @@
+IAB Chair -- 22 March 1999 -- IETF-Announce
+-------------------------------------------
+
+Call for nominations for IRTF Chair 
+
+To: all IRTF members, and other interested parties
+
+Abel Weinrib has indicated his desire to step down as IRTF and IRSG
+Chair. It falls to the IAB to appoint his successor, in accordance
+with RFC 1601 and RFC 2014. The IAB is considering several
+candidates, but solicits further nominations or self-nominations.
+These should be addressed IN CONFIDENCE to me,
+mailto:brian@hursley.ibm.com , by April 15, 1999.
+
+I would like to take this opportunity to thank Abel for his
+efforts over the last several years.
+
+     Brian Carpenter
+     IAB Chair
+

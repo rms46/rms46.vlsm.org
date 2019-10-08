@@ -1,0 +1,987 @@
+William Allen Simpson -- 1 May 1999 -- IAB
+------------------------------------------
+
+This is a formal appeal of the IESG decision of 01 Mar 1999.
+
+ 1) The decision was not timely.  The documents had already been published.
+    The RFC Editor had promised not to publish the documents until the
+    issues had been resolved.
+
+ 2) The answers by the IESG are non-responsive; particularly to points
+    #9, #14, #15, #17, #18.  The appeal explicitly listed "other
+    documents" in its subject, and explicitly addressed issues of cross
+    reference.
+
+ 3) The answers contain numerous false statements, unsupported by the
+    WG record.
+
+ 4) The answer concludes with an ad hominem attack on appellant.
+
+ 5) Specific responses are indicated in the body of the included message.
+
+ 6) Appellant desires the opportunity to argue each point in detail
+    before the IAB, and answer any questions the IAB might have,
+    presumably in conference call.
+
+
+> Date: Mon, 01 Mar 1999 18:00:00 -0800
+> To: William Allen Simpson <wsimpson@GREENDRAGON.COM>
+> From: Fred Baker <fred@cisco.com>
+> Subject: Re: Appeal draft-ietf-ipsec-ciph-cbc-03.txt and all documents
+>   referencing it
+> Cc: ietf@ietf.org, ipsec@tis.com
+>
+> This is my formal reply to your appeal, dated October 22. I want to tell
+> you that the IESG considered your grounds carefully, reviewed the evidence
+> that you submitted and investigated for itself, and made a decision. My
+> note to you has been unnecessarily delayed; for that I apologize.
+>
+> >Pursuant to the process detailed in RFC-2026 sections 6.5.1 and 6.5.2,
+> >and ultimately 6.5.3, I appeal the IESG decision to publish
+> >draft-ietf-ipsec-ciph-cbc-03.txt and all documents referencing it,
+> >together with the failure to publish draft-simpson-cbc-01.txt,
+> >draft-simpson-desx-02.txt and draft-simpson-des3v2-03.txt (or earlier
+> >versions thereof).
+> >
+> >I have exhausted the usual discussion with (and written protests to) the
+> >WG chairs and the reviewing Area Director, either before and/or after
+> >the Last Call period.
+>
+> >I repeat my earlier statement of Wed, 30 Sep 1998, that "I intend to
+> >take every avenue to prevent the publication of this document in
+> >anything like its current form."
+> >
+> >Please take note that publication of the -ciph-cbc- document may subject
+> >the author/editors, WG Chairs, IESG, RFC-Editor, and ISoc to financial
+> >penalties based on a claim of plagiarism and misappropriating copyright.
+>
+> Duly noted.
+>
+> >There are numerous technical errors in draft-ietf-ipsec-ciph-cbc-03.txt,
+> >that also have interactions with process errors.  In this list, the
+> >technical errors are generally mentioned first, followed by the process
+> >issues.  However, the results are often interdependent.
+>
+> > 1) The most egregious technical error is the statement [ciph-cbc page 4]:
+> >
+> >     "The reader should note that the minimum key size for all of the
+> >      above cipher algorithms is 40 bits, and that the authors strongly
+> >      advise that implementations do NOT use key sizes smaller than 40
+> >      bits."
+> >
+> >    One of the algorithms specified is Triple DES.  The sole purpose of
+> >    3DES is to increase the effective key length beyond 112-bits.  This
+> >    statement is technically incompatible with the specification of 3DES.
+> >
+> >    There are other algorithms specified, several of which are intended
+> >    to have an effective key length of at least 128 bits.
+> >
+> >    The AD statement on this issue is both incorrect and incompetent.
+> >
+> >    While "any cipher can be abused in this manner", such abuse is
+> >    contrary to the technical specifications and requirements of the
+> >    cipher.  It is not technically competent for the IETF to
+> >    "standardize" an abuse of the cipher.
+> >
+> >    It should be noted that there was considerable WG resistance on the
+> >    mailing list to specifying 40 bits.  Never-the-less, the WG Chairs
+> >    "declared" consensus.
+> >
+> >    Wide technical review is for the express purpose that we prevent
+> >    such mistakes, regardless of the "decisions" of a Working Group.
+>
+> To address this complaint we need to look at more of the context of the
+> paragraph. Below I reproduce the entire relevant section (with embedded
+> page breaks removed):
+>
+> 2.2 Key Size
+>
+>    Some cipher algorithms allow for variable sized keys, while others
+>    only allow a specific key size.  The length of the key correlates
+>    with the strength of that algorithm, thus larger keys are always
+>    harder to break than shorter ones.
+>
+>    This document stipulates that all key sizes MUST be a multiple of 8
+>    bits.
+>
+>    This document does specify the default key size for each cipher
+>    algorithm.  This size was chosen by consulting experts on the
+>    algorithm and by balancing strength of the algorithm with
+>    performance.
+>
+>    +==============+==================+=================+==========+
+>    | Algorithm    | Key Sizes (bits) | Popular Sizes   | Default  |
+>    +==============+==================+=================+==========+
+>    | CAST-128 [1] | 40 to 128        | 40, 64, 80, 128 | 128      |
+>    +--------------+------------------+-----------------+----------+
+>    | RC5          | 40 to 2040       | 40, 128, 160    | 128      |
+>    +--------------+------------------+-----------------+----------+
+>    | IDEA         | 128              | 128             | 128      |
+>    +--------------+------------------+-----------------+----------+
+>    | Blowfish     | 40 to 448        | 128             | 128      |
+>    +--------------+------------------+-----------------+----------+
+>    | 3DES [2]     | 192              | 192             | 192      |
+>    +--------------+------------------+-----------------+----------+
+>
+>    Notes:
+>
+>    [1] With CAST-128, keys less than 128 bits MUST be padded with
+>    zeros in the rightmost, or least significant, positions out to 128
+>    bits since the CAST-128 key schedule assumes an input key of 128
+>    bits.  Thus if you had a key with a size of 80 bits '3B5D831CFE',
+>    it would be padded to produce a key with a size of 128 bits
+>    '3B5D831CFE000000'.
+>
+>    [2] The first 3DES key is taken from the first 64 bits, the second
+>    from the next 64 bits, and the third from the last 64 bits.
+>    Implementations MUST take into consideration the parity bits when
+>    initially accepting a new set of keys.  Each of the three keys is
+>    really 56 bits in length with the extra 8 bits used for parity.
+>
+>    The reader should note that the minimum key size for all of the
+>    above cipher algorithms is 40 bits, and that the authors strongly
+>    advise that implementations do NOT use key sizes smaller than 40
+>    bits.
+>
+> The chart makes it pretty clear that 3DES is not intended to be used with
+> 40 bit keys. However other ciphers may be used with 40 bit keys. The
+> purpose of this section is to make it clear how to pad keys if an
+> implementor chooses to use less then the "nominal" number of key bits. This
+> document is about how to use the ciphers and not about what key lengths are
+> appropriate. Nothing prevents an implementor from using longer keys which
+> have only limited entropy (and thus only have the strength of a shorter
+> key). In fact Netscape's SSL/TLS cipher suite of EXP-RC4-40 uses the RC4
+> cipher with 128 bits. The key is the result of an MD5 hash (which always
+> produces 128 bits) over a quantity that contains only 40 bits which are
+> unknown to an eavesdropper.
+>
+> You argue that we shouldn't make any statement here about key lengths less
+> then the natural key lengths of the cipher(s) (though some ciphers
+> naturally accept a key of variable length and have no natural lower bound).
+> However this is a discussion that was had by the working group, and you do
+> not agree with the resulting consensus position.  Our processes permit this
+> form of "rough" consensus.
+>
+> The IESG does not believe that this issue has sufficient merit to hold up
+> progression of this document by remanding it to the working group to
+> "correct" this position.
+>
+> The publication of this document as a Proposed Standard does not close out
+> the potential for future discussion within the working group that might
+> lead to a change in the document in this area. However that is for the
+> working group to decide and deal with.
+>
+I can find no evidence to support the IESG position that the WG decided
+at any time to support key lengths of 40 bits.  Indeed, there are a
+preponderance of messages opposing the 40-bit recommendation.
+
+The discussion of entropy has already been addressed in earlier RFCs.
+
+It has long been the formal position of the IETF that the minimum number
+of unknown bits for IP Security keys was at least 56 bits.  This was the
+subject of an open plenary that specifically discussed an IBM hashing
+proposal for 40 bits.  It is not in the purview of a WG (nor the IESG)
+to override the express decision of the IETF as a whole without
+substational justifcation, and open discussion.  This was raised in the
+Last Call.
+
+
+> > 2) Another blatant error is the statement [ciph-cbc page 9]:
+> >
+> >     "To avoid ECB encryption of very similar plaintext blocks in
+> >     different packets, implementations MUST NOT use a counter or other
+> >     low-Hamming distance source for IVs."
+> >
+> >    This document purports to be about CBC (not ECB) operation of block
+> >    mode ciphers.
+> >
+> >    Moreover, none of the ciphers presented are susceptable to an ECB
+> >    attack.  Such an attack would require a minimum of 2**64 64-bit
+> >    blocks of memory, which is generally considered impractical, and an
+> >    average search time on order of 2**32 per block, which is generally
+> >    considered impractical.  For these ciphers, when used with keys
+> >    longer than 64-bits, the result of such a search would not reveal
+> >    the key, and the same search would be needed for every block.
+> >
+> >    Furthermore, since this document specifies "explicit" IVs, rather
+> >    than the "derived" IVs of earlier RFCs, the IV is known.  Anyone
+> >    that actually understands how IVs work knows that the same 2**64
+> >    64-bit blocks would be used in any case, no matter what method is
+> >    used for generating the explicit IV.  For decryption, the known IV
+> >    is XOR'd _after_ applying the block search mentioned above.
+> >
+> >    Thus, this statement is both incorrect and incompetent.  It really
+> >    shows how much the purported author/editors really understand about
+> >    the subject material.
+> >
+> >    For examples of documents that completely prevent an ECB attack,
+> >    using a derived IV, see:
+> >
+> >         draft-simpson-ipsec-enhancement-01.txt
+> >         draft-simpson-cbcs-01.txt
+>
+> Many packets begin with similar or identical bit patterns; for example, the
+> difference in headers between two successive segments in a TCP data stream
+> may be as little as the IP checksum and packet identifier, and the TCP
+> Sequence number of the TCP segments. Consider the simple case of two IV's
+> (for two consecutive packets) where the first IV is the value "0" and the
+> second IV is the value "1" (yes this is very simple, but it is an
+> illustration). The only difference between these two IVs is one bit. If the
+> two packets begin with the same 64 bits (for DES), then the input to the
+> first round of DES would differ in only one bit. It is this type of
+> difference that is exploited by Eli Biham in his differential cryptanalysis
+> of DES. (see the document for how IV's are used).
+>
+> A worse case occurs where the one bit difference between the IV's happens
+> to fall on a location where there is a one bit difference between the two
+> packets. In this case the differences will cancel out and the first block
+> of cipher text for the two packets will be identical. This will certainly
+> leak information to an attacker (given that the attacker will know the IVs).
+>
+> The document gives sound advice as to how to avoid this problem, and it
+> comes at very little implementation cost. It is the judgement of the
+> Security ADs and the working group that you are incorrect in your assertion
+> here.
+>
+This IESG answer is technically incompetent, and just plain silly.
+Differential cryptanalysis has been a known attack for many years.
+
+The designers of DES (early 1970s) admit having designed it to be
+resistant against this attack.  The designers of every other algorithm
+listed in this document have designed their algorithms to be resistant
+to this attack.  Indeed, most claim that the attack is _impossible_
+against their algorithms.
+
+As stated, such an attack is "impractical".  While this is a term of
+art, its implications should be discernable to the IESG.  For a more
+complete discussion, see the references in RFC-1829 and RFC-1851.
+
+I remind the IAB that "Deep Crack" was successful using brute force,
+rather than differential cryptanalysis.
+
+
+> > 3) There are other minor technical errors in the document, that would
+> >    be more clear had the document conformed to roadmap requirements.
+> >    Some of these errors may be due to lack of clarity by combination of
+> >    multiple algorithms in the same document.
+>
+> This may be the case. The question to the IESG is whether the document was
+> developed by correct processes, and represents the consensus of the working
+> group. The question for the working group is whether the clarifications are
+> necessary.
+>
+> I don't need to remind you of the long and tortured process that the IPSEC
+> working group went through in getting these documents to where they are
+> today. This is one case where a combination of human failures and business
+> interests contrived to make reaching any agreement extremely difficult.
+> Besides being argued over in detail by the working group, the documents
+> iterated between the working group and the area directors.
+>
+> It is our understanding that the Proposed Standard step is a trial
+> deployment. We publish documents which may be imperfect, believing that the
+> combination of deployment experience and implementation experience will
+> bring to light not only remaining imperfections that may be known at the
+> time of document publishing but imperfections that are latent and will only
+> show up with use. Therefore we deem that "other minor technical errors" are
+> acceptable in a proposed Standard document, and it is more useful to the
+> community to publish the document than to wrangle out these last few
+> glitches. We have every confidence that the documents will require future
+> editing, and these can be worked out at that time.
+>
+While I agree that a proposed standard may be immature, I do not believe
+that publishing a document with _known_ technical errors is appropriate.
+
+And as it is admitted by the IESG that the document does not conform to
+the adopted and approved "roadmap", that alone would qualify it for
+return to the WG.
+
+This document was a late addition, not included in the original last
+call.  I had submitted appropriate edits to the last call documents that
+would eliminate references to this document, so that it would not need
+to be published until it was fixed.
+
+The IESG chose to ignore the edits, which is inappropriate process.
+
+
+> > 4) The document does not meet the WG document roadmap requirements,
+> >    which have been through last call.  In particular, the document
+> >    fails to adequately discuss:
+> >
+> >     a) the weaknesses of various key sizes [roadmap page 6],
+> >
+> >     b) key refreshment [roadmap page 6],
+> >
+> >     c) performance [roadmap pages 6-7],
+> >
+> >     d) interaction with other aspects of ESP [roadmap page 7],
+> >
+> >     e) explicit explanations of why fixed key sizes and other values
+> >        and methods should not be used [roadmap pages 7-8], and
+> >
+> >     f) security considerations [roadmap pages 6-8].
+> >
+> >    For examples of well-specified and complete documents that meet the
+> >    roadmap requirements, see:
+> >
+> >        draft-simpson-desx-02.txt
+> >        draft-simpson-des3v2-03.txt
+> >
+> >    The AD statement on this issue is both incomplete and unspecified:
+> >    "I believe Ted Ts'o and others have already addressed this issue."
+> >
+> >    I am not aware of any substantive and credible response that has
+> >    been made upon this issue.
+>
+> Both of these points are assertions on your part. Your opinions of whether
+> or not the document conforms to the requirements (set out by the working
+> group itself) of the road map document are not shared by the rest of the
+> working group. Point by Point:
+>
+> >     a) the weaknesses of various key sizes [roadmap page 6],
+>
+> This we have already discussed.
+>
+But the document does not.  That's the point.
+
+
+> >     b) key refreshment [roadmap page 6],
+>
+> If we were talking about a document defining a particular cipher and that
+> cipher required that keys be changed more often then would normally be
+> anticipated in normal application of IPSEC, it would make sense to provide
+> a warning and appropriate advice. However the document in question does not
+> define any ciphers. It merely discusses how to use ciphers in the CBC mode
+> of operation.  A discussion of re-keying requirements is not necessary here
+> (and may even be out of order).
+>
+This illustrates the failure of the IESG to understand the purpose of
+the roadmap.
+
+RFC-1829 and RFC-1851 (and RFC-2405) are examples of "cipher" documents.
+They do not define ciphers, they define how ciphers are to be used in
+the IP Security environment.
+
+This is either a "cipher" document, subject to roadmap requirements, or
+it is not a "cipher" document.  If it is not a cipher document, then it
+must be informational, rather than a proposed standard.
+
+
+> >     c) performance [roadmap pages 6-7],
+>
+> This document is about how to use the ciphers and does not discuss the
+> performance of them.
+>
+Again, this illustrates the failure of the IESG to understand the purpose
+of the roadmap.
+
+
+> >     d) interaction with other aspects of ESP [roadmap page 7],
+>
+> This would be a issue for a cipher definition document, not this
+> document. In addition, for the ciphers described here, there are no known
+> issues as mentioned in the roadmap document.
+>
+Again, this illustrates the failure of the IESG to understand the purpose
+of the roadmap.
+
+
+> >     e) explicit explanations of why fixed key sizes and other values
+> >        and methods should not be used [roadmap pages 7-8], and
+>
+> This is an issue for a cipher definition document.
+>
+Again, this illustrates the failure of the IESG to understand the purpose
+of the roadmap.
+
+
+> >     f) security considerations [roadmap pages 6-8].
+>
+> The IESG considers that the Security Considerations section in the document
+> is acceptable, and the IESG and Working Group believe that it conforms to
+> the document roadmap.
+>
+This is an appealable judgement call.  Unlike RFC-1829 and 1851, the
+security considerations do not discuss known analysis of the algorithms,
+and fails in many other respects to the requirements of the roadmap.
+
+
+> > 5) Several algorithms are proprietary and/or have intellectual property
+> >    problems.  These problems are supposed to be listed, according to
+> >    the roadmap, but are not sufficiently detailed.
+> >
+> >    Other algorithms may be freely used, but this is not explicitly
+> >    stated.
+> >
+> >    For examples of well-specified and complete documents that meet the
+> >    roadmap requirements, see:
+> >
+> >        draft-simpson-desx-02.txt
+> >        draft-simpson-des3v2-03.txt
+> >
+> >    I am not aware of any substantive and credible response that has
+> >    been made upon this issue.
+>
+> We do not prohibit the use of proprietary ciphers. We prohibit the use of a
+> proprietary cipher as mandatory to implement.  That isn't happening here.
+> The IESG considers the AD's response in this case to be a substantive and
+> credible response.
+>
+I am still unaware of any substantive and credible response, and the
+answer does not reference any particular response.
+
+Moreover, if the CBC document does not meet the roadmap cipher
+requirements, but there exist substantive documents that do, why have
+the substantive documents _not_ been published?
+
+
+> > 6) Several of the ciphers are not likely to be widely implemented,
+> >    making it impossible to advance to Draft or Full Standard.
+> >
+> >    The requirement for at least two independent and interoperable
+> >    implementations applies to all of the options and features of the
+> >    specification.  [RFC-2026 section 4.1.2]
+> >
+> >    The AD statement on this issue is both technically and procedurally
+> >    incorrect: "Describing how to use proprietary ciphers is completely
+> >    reasonable as long as those ciphers are not mandatory. As to whether
+> >    or not they are mandatory is an issue for a different document, not
+> >    this one."
+> >
+> >    The AD has confused mandatory implementation for conformance to a
+> >    specification with implementation requirements for advancement in
+> >    the standards process.
+> >
+> >    A product would have to have an "independent" implementation of all
+> >    (not just some) of these algorithms.  This is not possible with the
+> >    patented algorithms.  Inclusion of even the "shim" to these
+> >    proprietary algorithms should be specified in separate
+> >    "Informational" RFCs, as we have done in other WGs!
+> >
+> >    For example, see RFC-1974 and RFC-1993.
+> >
+> >    The IETF has a long-standing practice in this matter, after long
+> >    discussion and broad consensus, that should not be brushed aside
+> >    without considerable rationale.
+>
+> In this, you assume that patented algorithms will never have more then one
+> implementation. This is not true. Multiple (licensed) implementations of
+> patented algorithms can and do exist. For example, there exist at least
+> three independent implementations of IDEA (2 in "C" and 1 in Java). IDEA is
+> patented, but the patent itself is available for licensing. It is true that
+> RSA Data Security has traditionally avoided licensing the RSA patent,
+> encouraging people to license a software toolkit. However RSA is only
+> patented in the US and other implementations exist outside of the US, such
+> as SSLeay. RSA is not mentioned in the document, but it may have lent to
+> your confusion on this point.
+>
+> When it comes time to advance this document to Draft Standard we will have
+> to determine whether or not multiple implementations of all of the ciphers
+> exist and we will remove those for which we fail to find multiple
+> implementations, as we do with other documents.
+>
+> This objection is not valid for preventing a document from becoming a
+> Proposed Standard.
+>
+It is never-the-less a process issue, as the long-standing IETF practice
+is not followed, and this was taken without considerable rationale.
+
+
+> > 7) Including multiple ciphers in the document makes it difficult or
+> >    impossible to advance.  We have often had this problem with "kitchen
+> >    sink" options documents in other WGs.
+> >
+> >    The AD statement on this issue is both incorrect and incompetent:
+> >    "Your comments here are anecdotal based on experiences with
+> >    unrelated documents."
+> >
+> >    Any philosopher can tell you that intellect, reason, and proof of
+> >    existence itself are all "anecdotal based on experiences".
+> >
+> >    The documents are all related, in that they have been IETF WG
+> >    documents.  The advancement processes have been related, in that
+> >    they have been IETF processes.
+> >
+> >    And probably more importantly, I have a heck of lot more experience
+> >    in writing and advancing IETF documents than the AD.
+>
+> This is your opinion, one not shared by the working group consensus. A
+> trade-off had to be made between having many similar documents (one for
+> each cipher) or one slightly more complicated document for all. Given that,
+> the whole area of how to perform CBC for a cipher is not at all
+> controversial. The working group decided to combine them into one document.
+>
+> It is well within the purview of the working group to decide to do this.
+>
+This answer is unsupported by the record.  At what time was this
+decided?
+
+
+> > 8) The document should not be advanced as a Proposed Standard, as
+> >    several of the algorithms have insufficient analysis to be "blessed"
+> >    by the IETF standardization process.  Some are less than 2 years
+> >    old, and have no independent analysis.
+> >
+> >    This is especially important in that Triple DES [RFC-1851] was not
+> >    published as a Proposed Standard, but instead was Experimental,
+> >    expressly because the WG and IESG could not agree that there had
+> >    been enough analysis and that implementations would be done.
+> >
+> >    Moreover, DESX was not published even as Experimental.
+> >
+> >    Yet, 3DES was proposed over 19 years ago, and has numerous
+> >    independent analyses and is the basis for several international
+> >    banking standards; while DESX was proposed over 15 years ago, and
+> >    has a couple of independent analyses, and has been implemented in
+> >    numerous products.
+> >
+> >    Both 3DES and DESX have been awaiting publication as Proposed
+> >    Standards for over 3 years.
+>
+> This is not an issue for optional ciphers. This document is about how to
+> use CBC for these ciphers and does not include in its mission a discussion
+> of cryptographic analysis or strength.
+>
+This answer is non-responsive.  3DES and DESX are both "optional", and
+were refused Proposed Standard status.  If it is no longer an issue,
+then 3DES and DESX are overdue.
+
+Explicitly included in this appeal were the failure to publish 3DES and
+DESX as Proposed Standards.  See the first paragraph (of the original
+appeal language).
+
+
+> > 9) Much of the figures, formatting, quotations, and text in this
+> >    document is plagiarized, without my permission, from
+> >    non-standards-track RFCs, internet-drafts and other contributions
+> >    that I have written and for which I retain copyright.  There has
+> >    been no express nor implied grant of rights to create derivative
+> >    works by any other author.
+> >
+> >    Specifically, sections 2.1, 2.3 (3DES), and 2.6 (3DES) must be
+> >    removed in their entirety.
+> >
+> >    I noted this to the current WG Chairs on the very day that draft
+> >    -00 was posted, but they have chosen to ignore this complaint.
+> >
+> >    This is especially important to me in that the technical errors in
+> >    this document, including those listed in (1), (2), and (3), are
+> >    completely contrary to the purpose and use of 3DES.
+> >
+> >    RFC-2026 does not permit inclusion by reference of works that exist
+> >    only as drafts.
+> >
+> >    RFC-2026 does not permit derivative works until RFC publication; and
+> >    even then, the ISoc Copyright notice only applies to
+> >    "standards-related" documents.
+> >
+> >    It would be likely to garner legal attention to "derive" a new
+> >    IETF standard from a proprietary protocol posted as an
+> >    internet-draft, and/or published as Informational, by taking the
+> >    text in its entirety and making minor modifications to the
+> >    authorship and acknowledgements.
+> >
+> >    Both 3DES and DESX have been awaiting publication as Proposed
+> >    Standards for over 3 years.
+> >
+> >    If you don't publish them as Proposed Standards, then you don't get
+> >    to use them in other works.
+> >
+> >    Why is it that so many folks like my writing so much, that they take
+> >    my words in their entirety, but my work isn't good enough to be
+> >    published with my own name on it?
+>
+> You are concerned about authorship and acknowledgement; I am charged by the
+> IETF with the administration of process. The output of a working group,
+> according to IETF tradition as codified in RFC 2026 and its predecessors,
+> must be a document which reflects the consensus of the participants, and
+> must be edited by its author or editor in accordance with their comments.
+> You specifically refused to do this,
+
+I interject that this is a malicious and egregiously false statement,
+unsupported by the record.
+
+
+>                                      and as a result your draft was
+> rejected by the working group via its chair and replaced with one which
+> adhered to our process. Your contribution to that is acknowledged in the
+> published RFC:
+>
+> 8. Acknowledgments
+>
+>    Much of the information provided here originated with various ESP-DES
+>    documents authored by Perry Metzger and William Allen Simpson,
+>    especially the Security Considerations section.
+>
+>    This document is also derived in part from previous works by Jim
+>    Hughes, those people that worked with Jim on the combined DES-
+>    CBC+HMAC-MD5 ESP transforms, the ANX bakeoff participants, and the
+>    members of the IPsec working group.
+>
+>    Thanks to Rob Glenn for assisting with the nroff formatting.
+>
+> Let's discuss the allegedly plagiarized text. You provided the text to us
+> to review, roughly the equivalent of a page, and in addition Vern Paxson
+> used wdiff to independently extract it. It consists of two parts: a number
+> of general statements about CBC and triple DES, and an ASCII art depiction
+> of the outer-CBC three-key triple-DES diagram.
+>
+> We observe that equivalent diagrams show up in standard references on the
+> subject, such as Bruce Schneier's "Applied Cryptography: Second Edition",
+> Figure 15.1. The diagram in this book is the same as the one in the
+> -ciph-04 document, with the exception that the -ciph-04 diagram is in
+> ASCII.  There aren't really too many ways to visually represent the
+> concept. We therefore consider that the diagram does not represent
+> intellectual property on your part.
+>
+> We further observe that the observations in the allegedly plagiarized text
+> are not earth-shaking. Yes, the language is very similar to your drafts
+> (though not quite identical). But we do not believe that the observations
+> represent intellectual property on your part, only the specific set of
+> words in which they are set forth.
+>
+I interject that the "words" are the issue.
+
+Why is it that so many folks like my writing so much, that they take my
+words in their entirety, but my work isn't good enough to be published
+with my own name on it?
+
+
+> We can and do reference non-RFC documents when we refer to outside work;
+> consider the plethora of documents referencing ITU, ISO, and journal
+> publications. The IETF certainly did not invent or define 3DES nor DESX.
+>
+> And finally, we observe that your opinion on the matter of text re-use
+> among Internet Drafts differs from common IETF practice. Yes, RFC 2026
+> makes a specific statement about republication of RFCs. However, it is
+> essentially silent on temporary working group documents such as email and
+> internet drafts. It has been the standing practice of the IETF to edit
+> documents together, divide documents into pieces, incorporate pieces from
+> email and private submissions into working group drafts, and otherwise
+> freely move text around to achieve the working group objectives. This,
+> indeed, is *your* long-standing practice;
+
+I interject that there has always been an important difference.  I have
+always included an extensive list of contributors, cited specific
+contributions, and where the contributions were substantial, invited the
+writers as co-authors.  That is, followed academic practice.  Contrast
+what has happened with this and the other appealed documents.
+
+
+>                                           it would take quite a while to
+> list the documents where I have been the working group chair, you have been
+> the working group editor, and you have done this at the direction of the
+> working group, or the other working group documents that have been written,
+> updated, or revised in this manner. Virtually every output of a working
+> group is a compilation of words from various sources, and the usual way
+> this is acknowledged is to simply list the names of the contributors -
+> which is prominently done in your case in this document.
+>
+> It is our considered opinion that since you up until this point followed
+> common IETF practice regarding text, and indeed followed it with your
+> documents up to this point, and then started demanding that your documents
+> *not* be treated in this way, that you are aware of IETF practice and
+> condone it in the cases of other documents. This fact goes to the heart of
+> the question of plagiarism and misappropriation of copyright.
+>
+> As a result of your appeal, however, we have made a minor change to the
+> internet draft boilerplate. We now require that internet drafts have, when
+> submitted, a sentence indicating whether the author/editor claims exclusive
+> copyright or permits the re-use of the text, so that we don't have to
+> address this in the future; we thank you for this service to the community.
+>
+You are welcome.
+
+
+> >10) Other sections include material taken from my Standards Track
+> >    documents without attribution, citation, and reference.  This is
+> >    not permissible even under RFC-2026 "standards-related" documents.
+> >
+> >    In particular, where existing RFCs are extracted, I require the
+> >    formulae that I used in RFC-1331, and every later RFC:
+> >
+> >       "Much of the text in this document is taken from ... RFCs 1171
+> >        & 1172, by Drew Perkins of Carnegie Mellon University, and by
+> >        Russ Hobby of the University of California at Davis."
+> >
+> >    The AD response is ill informed:  "You received acknowledgement as
+> >    have others who contributed to the document. It is common and
+> >    accepted practice in the IETF for authors and editors to borrow work
+> >    from previous documents. It is customary to acknowledge the previous
+> >    document authors and editors. You appear to be asking for special
+> >    treatment."
+> >
+> >    On the contrary, it was common and accepted practice for IETF drafts
+> >    to be published as RFCs within a few months of their inception.
+> >    Derived works were made from the RFCs.  Full citation and credit was
+> >    given for authorship.  I am asking for the same treatment.
+> >
+> >    The IETF has a long-standing practice in this matter, after long
+> >    discussion and broad consensus, that should not be brushed aside
+> >    without considerable rationale.
+>
+> You have not identified the RFCs involved. It also is not clear that
+> specific wording is required for an acknowledgement; you are acknowledged
+> as a previous editor of the document.
+>
+This answer is manifestly and egregiously false and misleading.  In an
+earlier message, during last call, I submitted detailed language to the
+IESG.  And see #17 below.
+
+
+> >11) The purported "authors" are merely editors, exclusively using
+> >    others' work, but taking primary credit for it.
+> >
+> >    Note that the technical errors show that they lack even a basic
+> >    understanding of the technical details.
+> >
+> >    The listed persons should clearly be labeled "editors".
+>
+> It is true that the authors used some text from other sources; they say
+> that they did in the acknowledgements. However, they also wrote a
+> significant portion of the text. It seems to me that we are arguing about
+> what shade of gray is dark enough to constitute black or light enough to
+> constitute white.
+>
+I disagree that the acknowledgements are sufficient.  Moreover, I am
+unaware of the "significant portion" that was written by the editors.
+
+
+> >12) I further object that such a flawed document would be expedited,
+> >    when other documents that _are_ referenced (3DES and DESX and CBCS
+> >    and others) have not been issued for Last Call after _years_ of
+> >    waiting!
+>
+> The working group is within its purview to advance this document. This is
+> an example of you differing with the consensus. By the way, neither the
+> working group nor the IESG is required to last call your documents at all,
+> as they are not working group documents.
+
+This is a serious process violation.  The documents must either be last
+called, or rejected.  Neither has happened.  And that is a subject of
+this appeal that is not addressed.
+
+
+>                                          You claim exclusive rights to your
+> documents, and have refused to change them even though the working group
+> consensus disagreed with your opinion.
+
+I interject that this is a malicious and egregiously false statement,
+unsupported by the record.
+
+
+>                                        Both of these are inconsistent with
+> our process and expectation regarding working group documents. Due to your
+> actions, the working group was long ago forced to discontinue considering
+> your documents for standardization.
+>
+> Many of your objections are cases where you disagree with the consensus.
+> In the absence of clear technical evidence of error, our process recognizes
+> such objections, but those objections do not prohibit advancement.
+>
+There was clear technical evidence of error submitted during last call
+and again during the appeal (see above).
+
+
+> >13) One sentence in "Document Roadmap" should be changed to
+> >      "the [DES-Detroit] and [3DES] documents."
+> >
+> >    (The grammer should be fixed, too.)  This was the only reference to
+> >    [CBC], and thus it can be eliminated from the References:
+> >
+> >      Authentication Algorithm documents.  Examples of this document are
+> >      the [DES-Detroit] and [CBC] documents.
+> >
+> >    The 3DES reference, currently in the Acknowledgements, should be
+> >    fixed (the <> changed to draft-simpson-esp-des3v2 or its RFC number)
+> >    and moved to the References section, or all references to 3DES should
+> >    be eliminated:
+> >
+> >     .  3DES: this is <the Triple-DES shim document>.
+> >
+> >    Some other citations in the Acknowledgements are never referenced in
+> >    the body, and should be deleted:
+> >
+> >      .  CAST: this is draft-ietf-ipsec-esp-cast-128-cbc-00.txt, as revised
+> >         to relate to this document.
+> >
+> >      .  HUGHES: this is draft-ietf-ipsec-esp-des-md5-03.txt
+> >
+> >    The remaining references in the Acknowledgements are duplicative of
+> >    the References, and should be removed.
+> >
+> >    The roadmap acknowledgements and references are completely out of
+> >    date.  The original outline of this document was written by Rodney
+> >    and Naganand and I, with some input by others at the Detroit ANX
+> >    workshop.  Indeed, I came to the workshop to work on this document!
+> >
+> >    The so-called "hughes" draft of December 1996 was principally based on
+> >    my text from earlier drafts, including the Simpson+Wagner that is
+> >    still awaiting publication.  Jim Hughes was tapped by Lambert (after
+> >    several others turned him down) to "take over" editing my documents
+> >    without my permission.
+> >
+> >    The term "shim" was mine, as were the original DES and 3DES shim
+> >    internet-drafts.
+> >
+> >    The CAST document (and others) was in turn based on my shim drafts.
+> >
+> >    I would like the acknowledgements to be re-written, along these
+> >    lines:
+> >
+> >        Layering the documents was originally proposed by William Allen
+> >        Simpson, and the contents of this document corresponds to the
+> >        sections and requirements in RFC-1828, RFC-1829, RFC-1850 and
+> >        RFC-1851, and includes wording from later "shim" drafts for DES,
+> >        3DES, and DESX.  Additional wording was suggested by Hugh
+> >        Daniel, Cheryl Madson, Roy Periera, ....
+> >
+> >        [all references to unpublished or work in progress documents
+> >        should be deleted].
+>
+> A historical note:
+>
+> The Hughes draft reference above was explicitly written to replace your
+> work at the direction of the working group chairs after you refused to edit
+> your document to make changes required by the working group.
+
+I interject that this is a malicious and egregiously false statement,
+unsupported by the record.
+
+>                                                              You asserted
+> then that you owned the copyright on your document and therefore reserved
+> change control to yourself.
+>
+Note that the answer is non-responsive.
+
+
+> >14) The [ESPCBC] references in "Domain of Interpretation for ISAKMP"
+> >    are all in a section (4.4.4) that should be moved to IANA
+> >    Considerations.  The numbers should all be referenced as listed for
+> >    other "reserved" values, such as: 4.4.4.10 "The ESP_RC4 type is
+> >    reserved for RC4."  (there is a trailing "p" on that line that
+> >    should be eliminated.)
+> >
+> >    Indeed, this type of document is precisely the kind that IANA
+> >    Considerations was intended to affect!
+> >
+>
+> This is an editorial comment about a different document.
+>
+Note that the answer is non-responsive.  The appeal explicitly concerned
+more than one document.
+
+
+> >15) ...-ciph-null-00.txt
+> >    Actually, it is a matter of record that on May 15, 1997, I named the
+> >    "null encryption" cipher, and insisted that it not be included in
+> >    the base set.  But as you may note in that message, I quoted
+> >    previous messages, and encryptionless ESP had been under discussion
+> >    in the WG.  The acknowledgements in the document giving credit to a
+> >    later workshop are completely bogus.
+> >
+> >    I request that the first paragraph be changed to:
+> >
+> >        Encryptionless ESP was suggested at various times by Steve
+> >        Bellovin and William Allen Simpson.  Steve Bellovin provided the
+> >        text for ....
+> >
+>
+> Again, this isn't about the CBC document.
+>
+Note that the answer is non-responsive.  The appeal explicitly concerned
+more than one document.
+
+
+> >16) ...-ciph-des-expiv-02.txt should not be published.  DES has been
+> >    cracked.  It is not of sufficient strength for "blessing" as an IETF
+> >    Standard, and should not advance on the standards track.
+> >
+> >    There is strong consensus in the security community for retiring
+> >    DES, and recommending only those ciphers that have a minimum of 75
+> >    bits of strength.
+> >
+> >    Instead, publish:
+> >        draft-simpson-des-as-00.txt
+> >        draft-simpson-cbc-01.txt
+> >        draft-simpson-desx-02.txt
+> >        draft-simpson-des3v2-03.txt
+>
+> Again not relevant to the CBC document, and not justified. The IETF has not
+> made the decision to not publish standards that make use of DES. A
+> suggestion has been made to consider the use of DES historical in view of
+> the EFF's DES-cracking experiment a year or so ago, but no formal action
+> has resulted.
+>
+Note that the answer is non-responsive.  The appeal explicitly concerned
+more than one document.
+
+
+> >17) ...-ciph-des-expiv-02.txt
+> >    The Security Considerations bracketed [aside] should be removed.
+> >
+> >    And it always pisses me off that Phil Karn, the founder of the IPSec
+> >    WG, is forgotten!
+> >
+> >    The Acknowledgements should use the same formula that we agreed on
+> >    long ago for RFC-1331, to wit:
+> >
+> >        Much of the text in this document is taken from RFC-1828,
+> >        RFC-1829, RFC-1851 and RFC-1852, by Phil Karn, Perry Metzger,
+> >        and William Allen Simpson, especially ....
+> >
+>
+> Not relevant to the CBC document.
+>
+Note that the answer is non-responsive.  The appeal explicitly concerned
+more than one document.
+
+
+> >18) ...-auth-hmac-md5-...
+> >    ...-auth-hmac-sha1-...
+> >    Sure enough, the credit for my text, much of which is unchanged from
+> >    RFC-1828 and RFC-1851, is now attributed to Hughes.
+> >
+> >    The Acknowledgements should use the same formula that we agreed on
+> >    long ago for RFC-1331, to wit:
+> >
+> >        Much of the text in this document is taken from RFC-1828,
+> >        and RFC-1851, by Perry Metzger and William Allen Simpson.
+> >        Special thanks to the people that worked with Jim Hughes on the
+> >        combined ....
+>
+> Not relevant to the CBC document.
+>
+Note that the answer is non-responsive.  The appeal explicitly concerned
+more than one document.
+
+
+> Bill, you desire a prominent place in the history of the IPSEC standards.
+> However, the IESG believes that you do not deserve such a prominent place
+> simply because you wrote a paragraph here or coined a term there. Your
+> behavior in the IPSEC working group has been in general reprehensible, and
+> has contributed very much to the difficulty in getting this standard
+> published.  Some of the documents that were written that mirrored work
+> originally done by you were commissioned (particularly the Hughes
+> documents) after and because you submitted drafts but then refused to edit
+> them to meet the needs of the working group. You have used - and in this
+> appeal you use - the threat of legal action where the other several
+> thousand people contributing to the IETF's work use reason and debate to
+> achieve a result.
+>
+> The IESG does not condone this, and sees no reason to give you special
+> credit here.
+>
+I was one of the 4 founders of the IP Security WG.  The first drafts of
+the packet design that are now ESP were written in my hotel room -- that
+I shared with Fred Baker -- in 1992.  I was present at the early
+luncheon meetings, the BOFs, and most WG meetings.  I wrote most of the
+early text, including contributions to other authors' works.
+
+I object to the unsubstantiated ad hominem attack, and false history.
+
+I object to the removal of references to my (and others) work, and
+deprecation of my contributions.
+
+WSimpson@UMich.edu
+    Key fingerprint =  17 40 5E 67 15 6F 31 26  DD 0D B9 9B 6A 15 2C 32
+

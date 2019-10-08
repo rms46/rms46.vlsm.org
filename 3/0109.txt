@@ -1,0 +1,33 @@
+IANA -- 14 January 1996 -- CIDRD
+--------------------------------
+
+Policy Statement on Address Space Allocations
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Regional Internet Registries (APNIC, InterNIC, RIPE NCC) refer
+organizations requesting IP address space to their Internet service
+providers (ISPs).  This is done for various reasons, the main reason
+being that IP addresses need to be assigned heirarchically to allow
+aggregation of routing information (CIDR).  Customers are warned of
+possible routing restrictions if addresses are not received from an
+ISP's CIDR block.  Since some ISPs are presently restricting the length
+of prefixes they route, it is even more important for end users to
+receive IP addresses from their Internet service provider. 
+
+Regional Internet registries have no control over the routing policies
+of any ISP.  The IANA has instructed the Internet registries not to
+assign IP addresses based on any ISP's particular routing policy, rather
+on specific criteria including utilization efficiency.  An organization
+will be assigned the number of IP addresses it can justify.  If this
+number is not fully routable, that is an issue that should be taken up
+with the ISP(s) concerned. 
+
+Regional Internet Registries inform ISPs about allocation and assignment
+policies.  This enables ISPs to take these policies into account when
+setting their routing policies.
+
+s/ IANA, Internic, RIPE-NCC, AP-NIC.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

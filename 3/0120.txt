@@ -1,0 +1,44 @@
+NomCom Chair -- 1 February 1993 -- IETF-Announce
+------------------------------------------------
+
+Info on IAB/IESG Nomination Committee
+
+
+
+
+NOTE: Some of you may have already received this message, but many did
+      not due to our mailer encountering a problem requiring retransmission.
+      My apologies for any problems this may cause.
+===========================================================================
+
+I have been asked to address two questions about the pool of volunteers for
+staffing the IAB/IESG Nominations Committee for 1993.
+
+1.  Q:  How many names were in the pool?
+    A:  33 plus or minus.  I say plus or minus because there were 4 names in
+        the pool that would have required extra attention.  One was
+        questionable with respect to the attendance criteria -- the resolution
+        of differences between their recollections and the Secretariat's
+        attendance records was not completed before the appointed time for the
+        drawing.  Three others volunteered after the deadline -- just before
+        the drawing.  I placed these names "into the hat" (actually a basket)
+        for the drawing, postponing any difficult decisions about the correct
+        way to handle these exceptional cases.  My life was made easier when
+        none of these four were drawn thereby avoiding the need to make any
+        difficult decisions or to seek guidance from others.
+
+2.  Q:  Why are there no women on the committee?
+    A:  Answering this is as easy as gettin' up after sittin' down on a thumb
+        tack.
+        Only one woman volunteered to serve.  Over 30 men volunteered to
+        serve.
+        Seven names were drawn, and they were all men, which is
+        probabilistically correct, even if it is not politically correct.
+
+regards,
+jdc
+-----
+Jeff Case
+IAB/IESG Nominations Committee Chair
+ietfnom@cs.utk.edu
+

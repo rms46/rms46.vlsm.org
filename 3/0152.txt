@@ -1,0 +1,75 @@
+NomCom Chair -- 3 November 1997 -- IETF-Announce
+------------------------------------------------
+
+Call for Nominations
+
+The Nominations Committee is beginning its process of building a slate of
+nominees to fill IESG and IAB positions whose current appointee's terms
+have expired. This is a process we expect to take approximately 3 months
+from start to finish. The members whose terms are expiring are:
+
+In the IESG:
+
+Fred Baker              IETF Chair
+Jeff Burgan             Internet
+Joel Halpern            Routing
+Keith Moore             Applications
+Mike O'Dell             Operations & Management
+Joyce K. Reynolds       User Services
+Allyn Romanow           Transport
+Jeff Schiller           Security
+
+
+In the IAB:
+
+Brian Carpenter
+Steve Bellovin
+Jon Crowcroft
+Robert Elz
+John Klensin
+Radia Perlman
+
+The IESG is still in discussions about its organization which may result in
+more or less positions being open for nominations.
+
+In general, terms on the IAB and IESG are for a 2 year period.  However, as
+the result of the most recent Poised process, we've been asked to consider
+nominating as many as four IESG members 3 year terms to even out the number
+of members up for appointment each year.
+
+What the Nominations Committee needs from the IETF membership are three
+things:  1) Comments (good or bad) on the incumbents for various positions
+and whether the nomcom should nominate them for reappointment; 2)
+suggestions for other candidates for appointment to the various positions;
+and 3) and most importantly - volunteers to fill these positions.
+
+Email addressing any of the above can be sent to the Nomcom at
+nomcom98@corp.home.net.  Alternatively, if you'd like to make relatively
+anonymous comments you may send them to me at stjohns@corp.home.net and
+I'll forward them without attribution to the rest of the nomcom.  Most of
+us will also be at the December IETF and will be happy to take your
+comments there as well.
+
+The nominations committee for this year is:
+
+Michael StJohns (chair, non-voting) stjohns@corp.home.net
+Scott Bradner (IESG liason, non-voting) sob@harvard.edu
+Tony Hain (IAB liason, non-voting), tonyhain@microsoft.com
+Geoff Huston (past Chair, non-voting), gih@telstra.net
+
+Voting Members:
+Bernard Aboba <aboba@internaut.com>
+Uri Blumenthal <uri@watson.ibm.com>
+John Boudreaux <johnb@jbx.com>
+Avri Doria <adoria@esun19.gdc.com>
+Rik Drummond <drummond@OnRamp.NET>
+Donald Eastlake <dee@cybercash.com>
+Steve Hole <steve@esys.ca>
+Steve Kent <kent@bbn.com>
+Keith McClogrie <kzm@cisco.com>
+Lixia Zhang <lixia@CS.UCLA.EDU>
+
+
+Thank you in advance for your assistance!  Mike
+
+

@@ -1,0 +1,53 @@
+IAB -- 15/18/30 Jun 1999 -- IETF-Announce
+-----------------------------------------
+
+Final reminder: Simpson Appeal 
+
+IETF,
+
+Please note that written comments and requests for speaking
+slots in the appeal hearing are due *now*.
+
+     Brian E Carpenter (IAB Chair)
+
+Brian E Carpenter (IAB Chair) wrote:
+
+> Further to the attached, please note that the hearing will be
+> held on Thursday evening, July 15, at 19:30 (Oslo time). The
+> room will be announced in the regular IETF agenda.
+ 
+> As in previous appeal hearings, the appellant will be given a
+> 5 minute speaking slot to introduce his appeal. Any other persons
+> who wish to speak should request a 5 minute slot in advance
+> by email to iab@iab.org.
+ 
+> Three IAB voting members have recused themselves from decision
+> taking on the appeal: Fred Baker (as IESG Chair), Harald Alvestrand
+> (as an IESG member at the time of the events concerned by the appeal),
+> and Ran Atkinson (as a former WG co-chair). They will however observe
+> our discussions and be called upon for factual clarifications.
+ 
+>    Brian E Carpenter (IAB Chair)
+ 
+>> This is to inform the IETF that the IAB is considering an
+>> appeal against IESG action lodged by William Allen Simpson. The text
+>> of the appeal may be found at http://www.ietf.org/appeal.txt
+>> Succinct written comments on the appeal should be sent to iab@iab.org
+>> by the end of June 1999. Please note that all such comments may be made
+>> public. The IAB plans to hold an open hearing on the appeal during the
+>> Oslo IETF meeting. More details of this hearing will be announced
+>> shortly.
+
+>> N.B. The appeal text includes the full explanation, but the essence
+>> of the appeal is in these words written by Bill Simpson
+>> and extracted from the full text:
+
+>>>> Pursuant to the process detailed in RFC-2026 sections 6.5.1 and 6.5.2,
+>>>> and ultimately 6.5.3, I appeal the IESG decision to publish
+>>>> draft-ietf-ipsec-ciph-cbc-03.txt and all documents referencing it,
+>>>> together with the failure to publish draft-simpson-cbc-01.txt,
+>>>> draft-simpson-desx-02.txt and draft-simpson-des3v2-03.txt (or
+>>>> earlier versions thereof).
+
+>> Brian E Carpenter (IAB Chair)
+

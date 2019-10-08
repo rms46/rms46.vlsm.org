@@ -1,0 +1,119 @@
+IAB Chair -- 15 July 1998 -- IETF-Announce
+------------------------------------------
+
+POC appointments 
+
+
+IETF,
+
+The IAB is pleased to announce that it has appointed two new
+members to the gTLD-MOU Policy Oversight Committee following
+the call for nominations described in the attached messages.
+
+Pindar Wong will immediately take up the seat vacated by
+Patrik Faltstrom, which runs until August 2000.
+
+Lars-Johan Liman will take up the seat to be vacated by 
+Rob Austein at the end of August 1998, for three years until
+August 2001.
+
+I wish to take this opportunity to thank Patrik and Rob for
+their able contributions, and the other candidates for their
+willingness to stand.
+
+Regards,
+   Brian Carpenter (IAB Chair)
+
+--------- earlier messages ---------
+IETF,
+
+None of us are unique, it seems. To avoid any confusion here are
+the attributions of the previously announced candidates:
+
+
+    Dan Cohen             Clear Thinking Technology, Inc.
+                          (not Danny Cohen at Myricom)
+    Lars-Johan Liman      Ebone/NORDUnet/SUNET Operations Centre
+    John-Francis Mergen   GTE Internetworking
+    Rick Wesson           StockPower, Inc.
+    Pindar Wong           VeriFi (Hong Kong) Limited
+
+Regards,
+   Brian Carpenter (IAB Chair)
+
+-------------------------------
+
+Subject: List of POC candidates
+   Date: Mon, 06 Jul 1998 14:16:15 -0400
+   From: Brian E Carpenter <brian@hursley.ibm.com>
+    
+IETF,
+
+The following candidates were nominated for the POC by the closing 
+date (see attached call for nominations) and are willing to serve 
+if appointed. The IAB intends to reach a decision on the two
+appointments shortly. Any comments should be sent to 
+pocnom@iab.org by July 13th. Such comments will be treated
+as confidential.
+
+    Dan Cohen              
+    Lars-Johan Liman    
+    John-Francis Mergen    
+    Rick Wesson            
+    Pindar Wong
+
+ -- Brian Carpenter (IAB Chair)
+
+--------------- original call for nominations -------------
+
+
+IETF,
+
+Last August, the IAB appointed two people to the Policy Oversight
+Committee (POC) established under the gTLD Memorandum of Understanding
+(see http://www.gtld-mou.org ). One of these appointments (Rob Austein)
+was for one year. The other one (Patrik Faltstrom) was for three
+years, but Patrik has recently resigned from the POC following his
+appointment to the IESG. The POC Chair, David Maher, has requested
+the IAB to appoint two new people, one to complete Patrik's term
+until August 2000, the other for a three year term until August 2001.
+
+The appointees are expected to act as individual experts, not
+as delegates or representatives of the IAB or the IETF. As last
+year, the IAB has decided to appoint persons with strong technical
+expertise in DNS and Internet technology and with a strong claim
+to have an international outlook. The IAB has further decided
+to make an open call for nominations from the IETF community.
+
+Procedure:
+
+1. This message is the call for nominations, which should be sent
+   to pocnom@iab.org  by the closing date of 24 June 1998.
+
+** DO NOT SEND NOMINATIONS AS A REPLY TO THIS MESSAGE; SEND THEM
+   TO mailto:pocnom@iab.org **
+
+2. Each nomination must give the name, affiliation, email address
+   and phone number of the nominee, plus a brief statement (maximum
+   10 lines) about the nominee's technical and international credentials.
+
+3. Self-nominations are allowed.
+
+4. The IAB will verify each nominee's willingness to serve for two
+   or three years.
+
+5. The list of willing nominees will be published by the IAB shortly
+   after the closing date. Confidential comments from the community will
+   be solicited. The IAB will then make its two appointments as quickly
+   as possible, and announce them at or before the August IETF.
+
+6. Apart from the above, the IAB will be guided in its deliberations
+   by the procedures defined in RFC 2282.
+
+7. Nominees must accept that a recall procedure, analagous to that
+   defined in RFC 2282, may be invoked at any time during their terms.
+
+
+Brian Carpenter (IAB Chair)           brian@hursley.ibm.com
+
+

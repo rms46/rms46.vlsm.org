@@ -1,0 +1,144 @@
+IAB -- 15 March 1996 -- IETF
+----------------------------
+
+[This text will be included in the minutes of the open
+IAB meeting during the LA IETF.]
+
+IAB CONCLUSIONS ON SMI APPEAL BY DAVID PERKINS
+----------------------------------------------
+
+David Perkins <dperkins@scruznet.com> has appealed to the IAB as follows:
+
+"This appeal asks the IAB to review the decision of the IESG to
+elevate RFCs 1902, 1903, and 1904 to DRAFT level.
+
+"This appeal asks that these specifications have their status
+level changed back to PROPOSED until ALL THE REQUIREMENTS as
+specified in RFC 1602 (and clarified in the poised WG draft)
+are met."
+
+1. The IAB decided to accept this appeal although a close
+reading of RFC 1602 shows that there is no provision for
+appealing IESG decisions.
+
+RECOMMENDATION 1: The IAB recommends that the
+replacement for RFC 1602 should clarify and broaden
+the possible grounds for appeal, as already covered in the
+relevant poised'95 WG draft.
+
+The IAB notes that the RFCs were published despite an appeal
+being under way, there being no provision for delaying publication
+in RFC 1602. The IAB believes this was correct, in the interests
+of timeliness.
+
+2. The appeal was notified to the IAB on January 10, 1996 and to the
+IETF list on January 23. On January 30 the IAB requested email
+submissions by February 10, and received some 25 messages. The
+appeal was discussed in the IAB teleconference on February 13,
+in the IAB's face-to-face meeting at the LA IETF, and
+in the Open IAB meeting at the LA IETF where final verbal
+submissions were made by David Perkins, Dierdre Kostick and others.
+
+3. One issue in the appeal is whether the interoperability
+requirement of the IETF standards process is limited to
+interoperability of different implementations "over the wire"
+or whether its scope is wider. The IAB has concluded that
+the general understanding of "interoperability" in the IETF
+is limited to "over the wire" but this may be too narrow
+in some cases, such as the present one.
+
+RECOMMENDATION 2: The IAB recommends that the
+replacement for RFC 1602 should clarify the meaning
+of "interoperable implementations", as already
+covered in the relevant poised'95 WG draft.
+
+4. A related issue is that RFC 1602 does not make clear
+who is responsible for documenting demonstrations of
+interoperability, and who is reponsible for making this
+documentation available to the community.
+
+RECOMMENDATION 3: The IAB recommends that the
+relevant WG chair should be responsible for
+documenting interoperability demonstrations, and
+for providing this information to the IESG via the
+Area Director. The IETF Secretariat should be responsible
+for making this material available to the community.
+The replacement for RFC 1602 should specify these
+responsibilities.
+
+5. A technical issue in the appeal is whether the SNMP
+usage of ASN.1 is viewed as usage of an SNMP "dialect" of
+ASN.1 or strict formal usage of one of the formal
+standard versions of ASN.1. In the former case,
+conformance requirements can be treated more loosely
+than in the latter. The IAB has concluded that
+the general understanding in the IETF is that SNMP uses
+a dialect of ASN.1-1988 and does not conform strictly to
+either ASN.1-1988 or ASN.1-1994. However the dialect of
+ASN.1-1988 used is not properly documented.
+
+RECOMMENDATION 4: The IAB recommends that the NM AD
+charters a short-lived WG (or a BOF, if that is
+sufficient) to document this ASN.1 dialect.
+
+6. D. Perkins appears to claim that
+
+(a) the interoperability requirement extends to ASN.1
+compilers
+
+(b) that ASN.1 discrepancies in the SMI definitions
+lead to non-interoperability
+
+(c) that the IESG has ignored this in its decision to
+approve RFC 1902, 1903 and 1904 as Draft Standard
+
+7. Other comments received by the IAB claim that
+
+(a) there is massive demonstrated interoperability
+between SNMP agents and managers using MIBs based
+on the incriminated ASN.1
+
+(b) that an informal "IETF" interpretation of ASN.1
+is appropriate
+
+(c) that the SMI inconsistencies pointed out by D. Perkins
+have no practical importance
+
+(d) that these issues have been extensively discussed
+in the SNMPv2 WG where D. Perkins was clearly
+in the minority.
+
+8. The IAB notes that in its "protocol action" referring to
+the SMI documents, the IESG noted that some editorial changes
+are needed prior to full Standard status. However we also
+note that the messages from the WG Chair to the NM AD,
+that asked for the documents to be progressed, did not
+specifically address the interoperability issue. It seems
+to have been assumed that since the interoperability of SNMPv2
+managers and agents was common knowledge, that was
+sufficient. Indeed, as noted above, RFC 1602 does not specify
+who should be responsible for documenting interoperability.
+
+9. The IAB concludes that
+
+- regardless of which interpretation of interoperability
+is used, in a formal sense the interoperability
+requirements of RFC 1602 were not documented in
+this case.
+
+- the main reason for this is that RFC 1602 does not
+either precisely define interoperability, nor
+specify who is responsible for documenting it.
+Our recommendations 2 and 3 above address this.
+
+- the technical ambiguity arises from the history
+of ASN.1, and our recommendation 4 above addresses
+this.
+
+- we see no advantage to the community in reversing
+the IESG decision to advance the documents to
+Draft Standard, but they must not be further advanced
+until recommendation 4 has been followed and
+until appropriate interoperability documentation
+has been provided to the IESG and the community.
+

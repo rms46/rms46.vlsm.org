@@ -1,0 +1,37 @@
+NomCom Chair -- 06 March 1996 -- IETF-Announce
+----------------------------------------------
+
+Confirmation of the New IESG Slate
+
+The IAB/IESG Nominating Committee is pleased to announce that its slate
+of new members for the IESG has recently been formally confirmed by the
+IAB.
+
+Although there will be a formal announcement at this Thursday's
+Plenary, we would like IETF members to be aware that the newly
+appointed IESG members are:
+
+Chair: Fred Baker
+Applications AD: Keith Moore
+Internet AD: Jeffrey Burgan
+Operational Requirements AD: Mike O'Dell
+Routing AD: Joel Halpern
+Security AD: Jeff Schiller
+User Services AD: Joyce Reynolds
+
+These seven join the five whose terms are *not* expiring this year:
+
+Applications AD: Harald Alvestrand
+Internet AD: Frank Kastenholz
+Network Management: Deirdre Kostick
+Operational Requirements AD: Scott Bradner
+Transport AD: Allison Mankin
+
+Each of us should also extend our thanks to the outgoing IESG members,
+John Klensin, Paul Mockapetris, and Susan Thomson, for their
+contributions while serving on the current IESG.
+
+Regards,
+-- Guy
+Chair, NomCom
+

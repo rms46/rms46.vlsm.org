@@ -1,0 +1,16 @@
+#!/bin/bash
+
+for NS in `host -t ns vlsm.org | gawk '{print $4}' | sort`
+do
+   echo "  === $NS ============="
+   host -t soa vlsm.org $NS | gawk '
+   /^Using/ { next }
+   /^Aliases/ { next }
+   /^$/ { next }
+   {print}
+   '
+done
+
+
+exit 0
+

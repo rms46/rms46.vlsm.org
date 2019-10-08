@@ -1,0 +1,35 @@
+IAB -- 24 March 1995 -- IETF
+----------------------------
+
+Nominations for the open IESG positions
+
+The 1995 Nominating Committee submitted the following nominations for
+confirmation by the IAB:
+
+Operations AD (2 yr term) Scott Bradner
+
+Transport AD (2 yr term) Allison Mankin
+
+Network Management AD (2 yr term) Deirdre Kostick
+
+Application AD (1 yr term) John Klensin
+
+Application AD (2 yr term) Harald Alvestrand
+
+Internet AD (1 yr term) Sue Thompson
+
+Internet AD (2 yr term) Frank Kastenholz
+
+The IAB has confirmed these nominations, which will be effective Thursday
+April 6, after the end of the IETF open plenary.
+
+I would like to thank the new IESG members who volunteered for nomination or
+renomination, those whose turn of service terminate on April 6, and indeed
+also John Curran and the members of the nominating committee, who did a
+brilliant job. All our process relies on the work of volunteers, and I am
+glad
+that we could find such a brilliant set of personnalities to volunteer for
+those demanding positions.
+
+Christian Huitema
+

@@ -1,0 +1,58 @@
+IAB Chair -- 24 March 1994 -- IETF
+----------------------------------
+
+Nominations for Open IESG Slots
+
+
+Fellow Internauts,
+
+You have all seen on this list the announce of nominations for IESG positions
+from the nomination committee. These nominations have now been approved by
+the IAB, and are now official:
+
+Applications AD: Erik Huizer
+
+Internet AD: Claudio Topolcic
+
+Security AD: Jeff Schiller
+
+User Services AD: Joyce Reynolds
+
+Routing AD: Joel Halpern
+
+I would like to present my best wishes to the new and continuing IESG
+members. I would also like to thank the outgoing IESG members, Dave Crocker,
+Steve Crocker and Bob Hinden, for all the work they did for the community. I
+am sure that they will continue to contribute to the constant progress of the
+Internet.
+
+You may also have noticed that Phil Gross has been nominated for an IAB
+position. This does indeed imply that Phil, after chairing the IETF from 1987
+to 1994, has decided to step down. That was certainly a tough job - it is
+under Phil's leadership that the IETF grew to its present size! I think that
+Phil deserves a lot of admiration for this.
+
+The nominating committee has proposed, and the IAB has approved, the
+nomination of a new chair for the IETF:
+
+IETF Chair: Paul Mockapetris
+
+Congratulations, Paul.
+
+Christian Huitema
+----------------------------------------------------------------------
+(25 March 1994 To: David Piscitello)
+
+Dave,
+
+I sent the announcement message of IESG nominations yesterday at 7 pm, just
+before leaving office. And during the night, I awake in a bad dream - just
+realized I had done a serious mistake, thanking Dave Crocker, Steve Crocker
+and Bob Hinden, and forgetting you. I am very sorry of this - there is
+certainly nothing personal there, and I certainly do not mean that co-chairing
+the Internet area was a lesser accumplishment than application services,
+security or routing!
+
+Christian Huitema
+
+

@@ -1,0 +1,584 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head><title>
+Bofcana Teknologi UUCP
+</title>
+<META name="description" 
+content="I am a real nowhere man, sitting in a nowhere LAN, making all my
+	nowhere .plans for nobody -1 -- Rahmat M. Samik-Ibrahim.">
+<META name="keywords" 
+content="RMS46, Rahmat, Samik-Ibrahim, Grounded-Theory, Research,
+Kompas, Kompas-Online, Analisis, Kwik-Kian-Gie, Internet, RFC, IETF"></head>
+<!--  Using STDLIB`(M4)' revision 9.X                         -->
+<!--  (C) 1996-2010 Rahmat M. Samik-Ibrahim under GPL terms.  -->
+<!--  http://vlsm.org/bin/std.m4.gz                           --> 
+     
+<body bgcolor="#ffffff" text="#000000" link="#0000d9" vlink="#000070" alink="#000040">
+<center><table bgcolor="#e6ebfe" width="80%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK1.html" target="_top"><img 
+src="png/LOCAL-LOGO1.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="center" valign="middle"><font color="#00008b" size=4><b>
+Bofcana Teknologi UUCP
+</b>
+<br><font size=2><b>Rahmat M. Samik-Ibrahim<br>(editor doang)</b></font></font>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK2.html" target="_top"><img 
+src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table></center>
+
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+<a name="isi"></a>
+<a href="../etc-new.html" target="_top"><font size=2 
+   color="red">WHAT&#39;s NEW</font></a> |
+<a href="../00-0.html" target="_top"><font size=2 color="red">HOME</font></a> |
+<a href="#bawah" target="_top"><font size=1 
+   color="blue">vv BOTTOM vv</font></a> |
+<a href="#mukadimah" target="_top"><font size=1 
+   color="blue">NEXT&gt;&gt;&gt;</font></a>
+<br>
+<font size="1" color="#00008b"><small><br>
+<form method="get" action="http://www.google.com/search">
+  <input type="text" name="q" size="30" maxlength=255 value="">
+  <input type="submit" name="btnG" value="Google Search">
+</form></small></font>
+<tr>
+<td align="center">
+| <a href="#mukadimah" target="_top">Pendahuluan</a>
+| <a href="#1" target="_top">Potensi Pasar</a>
+| <a href="#2" target="_top">Dukungan</a>
+| <a href="#3" target="_top">Tindak Lanjut</a>
+| <a href="#4" target="_top">Alternatif</a>
+| <a href="#5" target="_top">Tabemakasih</a>
+| <a href="#6" target="_top">Referensi</a>
+| <a href="#7" target="_top">Milis</a>
+|
+<tr>
+<td align="right">
+<a name="mukadimah"></a>
+<font size=1 color="blue"><a href="#isi" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="34.html" target="_top">^^TOP^^</a> |
+<a href="#1" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<h2>Pendahuluan</h2>
+<P>
+Berikut ini merupakan <i>BOFCANA</i> perihal teknologi UUCP.
+Bofcana merupakan kombinasi antara 
+<i>Bird Of a Feather</i> dan Wacana.
+Hasil akhir diharapkan berupa rekomendasi <i>TETE</i> (Tertulis dan Terbuka).
+Tulisan ini merupakan hasil <em>cut and paste</em> dari beberapa milis;
+sehingga <b>bukan</b> sepenuhnya merupakan karya dari editor.
+<p>
+Tak kenal, maka tak sayang; kalau sudah kenal, maka jadi benci:
+"<b>Seberapa dalam kita sebetulnya mengenal teknologi UUCP ini?</b>" 
+Apakah pembahasan berikut ini berdasarkan "DATA" dan pengalaman sendiri, 
+ataukah hanya berdasarkan "<em>katanya</em>" yang tidak jelas asal usul 
+informasinya?
+Pembahasan UUCP ini dapat saja berdasarkan <em>FANTASI</em>, seperti halnya
+yang biasa dilakukan oleh yang terhormat para 
+<a href="28.html" target="_top">pakar selebritis</a> kita.
+Atau pun bisa berdasarkan <em>INFORMASI</em> yang berasal dari 
+<b>D</b>ata, <b>C</b>ommunications, dan <b>K</b>nowledge.
+Pendekatan kedua ini masih sangat kurang lazim di Indonesia.
+<P>
+<a href="http://www.uucp.org/papers/" target="_top">UUCP</a> (<em>Unix to Unix Copy</em>)
+merupakan sebuah keluarga protokol 
+untuk menyalin berkas dari satu mesin ke mesin lainnya.
+Anggota keluarga UUCP ini termasuk program "<em>UUCICO</em>"
+(<em>Unix to Unix Copy In Copy Out</em>) yang bertugas
+memindahkan berkas antar komputer yang berbeda.
+Sistem UUCP ini memiliki beberapa keunggulan yang
+boleh diadu dengan teknologi lainnya:
+<ul>
+<li>	beroperasi pada berbagai sistem, dari DOS, Windows, Linux,
+	dan kawan-kawan.
+<li>	dapat memanfaatkan berbagai fasilitas komunikasi yang ada;
+	seperti modem dial-up langsung, internet publik (melalui ISP),
+	paket radio, dan kawan-kawan lainnya.
+	Dengan kata lain, di mana saja, kapan saja, oleh siapa saja,
+	-- tanpa atau dengan internet --
+	dapat mengoperasikan UUCP.
+<li>	pengamanan transfer data dapat ditingkatkan dengan memanfaatkan 
+	fasilitas <a href="http://taz.net.au/postfix/uucp/" target="_top">SSL pada TCP/IP</a>.
+<li>	dapat mengkompresi berkas yang akan ditransfer.
+	Hal ini membutuhkan <em>script</em> tambahan.
+<li>	dapat melanjutkan transfer, jika komunikasi putus ditengah
+	jalan. Ini sangat cocok untuk wilayah dengan fasilitas
+	"<em>byar-pet</em>".
+	Untuk daerah udik yang konektivitas internet jelek, uucp bisa jadi
+	alternatif. Sayangnya, biaya sambungan jarak jauh tidak lebih murah
+	dibanding biaya sambungan lokal ke ISP yang 'jelek' tadi.
+<li>	teknologinya telah mapan, sehingga sangat handal.
+</ul>
+<p>
+<a href="http://www.ui.edu/" target="_top">Universitas Indonesia</a> 
+pernah memanfaatkan teknologi tersebut 
+-- operasional 24 jam sehari, 7 hari seminggu -- 
+selama bertahun-tahun sejak 1986.
+Selain itu, memang ada 
+<a href="28.html" target="_top">selebritis</a>
+yang mengaku pernah menjalankan sistem email di tahun 1980-an;
+namun sebagian besar merupakan sistem demo yang dioperasikan secara
+insidensial. 
+<p>
+Bahkan ditahun 1990-an yang lalu, UI tetap memanfaatkan
+teknologi UUCP untuk link Salemba - Depok. 
+Secara teknis, transfer email Salemba Depok dengan uucp:
+<ul>
+<li> via TCP/IP -- (<i>microwave</i> 8 Mbps).
+<li> via TCP/IP -- (dial-up PSTN biasa).
+<li> via dial-up PSTN langsung.
+<li> <em>bahkan</em> pernah disiapkan mekanisme "last resort"
+  yaitu menggunakan disket untuk dikirim ke/dari
+  Salemba - Depok. Mekanisme ini pernah dicoba
+  secara manual: menyalin spool UUCP ke disket, lalu
+  dipindahkan dan di-<em>uuxqt</em>-kan 
+  pada spool UUCP sistem lainnya.
+  Namun, mekanisme tersebut belum 
+  pernah diujicobakan secara operasional...
+</ul>
+<P>
+
+<tr>
+<td align="right">
+<a name="1"></a>
+<font size=1 color="blue"><a href="#mukadimah" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="34.html" target="_top">^^TOP^^</a> |
+<a href="#2" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<h2>Potensi Pasar</h2>
+<p>
+Pilihan apa saja yang dapat dilaksanakan, jika tinggal di sebuah 
+negara yang nyata-nyata merupakan "<em>a hopeless piece of sh*t</em>"??
+Pilihan yang paling mudah ialah dengan hengkang, lalu
+memilih 
+"<i>padang rumput yang lebih hijau</i>" dekat saluran OC-192,
+dan berbahagia <em>happily ever after</em>.
+Pilihan alternatif, umpamanya tetap bertahan dengan memikirkan cara 
+mengoptimasi semua teknologi yang ada. Teknologi UUCP ini masih 
+memiliki daya pikat yang cukup untuk:
+<ul>
+<li> wilayah yang fasilitas telepon dan listriknya masih
+  "byar pet", terutama instalasi teleponnya tidak jernih.
+   Kecepatan 1200 bps pun masih OK.
+   Perlu diketahui, bahwa justru wilayah yang baru memiliki
+   instalasi telepon biasanya justru sanggup menghasilkan kecepatan
+   34 kbps.
+<li> wilayah yang fasilitas internetnya masih lambaaaaaat.
+<li> komunitas multi-account (seperti LSM) yang membutuhkan
+  fasilistas email murah meriah
+<li> SoHo di perkotaan yang hanya mampu membayar biaya
+  internet instan sekitar beberapa menit per hari.
+<li> Pelaku <em>e-commerce</em> kecil-kecilan yang menerima
+	order via email.
+<li> Warnet yang menyediakan mailbox gratis?
+	Katakanlah, <em>email only service provider</em>,
+	bisa bekerja sama dengan warnet (Awari?) atau yang lain 
+	untuk menyediakan layanan ini. Layanan ini dapat amat 
+	sangat murah sekali. bahkan bisa dipasang di kantor
+	kelurahan/RW/RT 1 komputer yang bisa dipakai penduduknya untuk
+	saling kirim email. Kalau perlu, cabang-cabang isp di daerah,
+	yang ditutup karena buntung (bukannya untung), bisa dibuka
+	dan diremajakan kembali.
+</ul>
+<p>
+Sebaliknya, perlu dipertimbangkan matang-matang; apakah masih
+belum terlambat, jika memulai pengkajian baru setelah awal
+abad 21 ini? Selain itu, yang berkenaan dengan marketing UUCP ada 2 issue, 
+yaitu;
+<ul>
+<li> Apakah pasar betul-betul menghendaki kehadiran UUCP?
+     Ataukah ini hanya sekedar pemenuh syahwat para pakar UUCP
+     bernostalgia? 
+     Daya pikat tertulis di atas, perlu dikaji lebih mendalam.
+<li> Bagaimana caranya melawan persepsi negatif dari UUCP:
+     "Kuno", "Tidak Bisa Web", dst.?
+<li> menunggu pengimplementasian ATRN/ODMR (yang 'free'). Jelas untuk
+ini diperlukan dukungan infrastruktur yang kuat berupa kondisi
+jaringan telepon yang *bagus* (karena via tcp/ip, jadi kendala
+yang berlaku untuk pengimplementasian tcp/ip secara umum juga akan
+berlaku pada uucp via tcp/ip, tentunya). 
+<li> bila dukungan infrastruktur ini belum ada, maka uucp over dial-up adalah
+satu-satunya alternatif *terbaik*.
+</ul>
+
+<tr>
+<td align="right">
+<a name="2"></a>
+<font size=1 color="blue"><a href="#1" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="34.html" target="_top">^^TOP^^</a> |
+<a href="#3" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<h2>Dukungan, Dukungan, dan Dukungan</h2>
+<p>
+Teknologi UUCP ini cukup realistik. Namun besar kemungkinan, 
+proyek UUCP ini hanya akan berakhir di Bofcana ini. 
+<a href="../00-1.html" target="_top">Dibutuhkan sekurangnya 4 aktivis</a>
+dengan waktu luang yang cukup, plus sekitar 12 penggembira 
+agar proyek ini dapat direalisasikan.
+<p>
+Langkah pertama kegiatan proyek ini ialah menghimpun 
+dan mengkemas program-program yang terkait dengan UUCP 
+tersebut. Perlu ada petunjuk praktis "langkah demi
+langkah" untuk menginstallnya. Dan yang penting,
+"user agent" sebaiknya perangkat lunak yang biasa
+digunakan, umpama Netscape, atau Pegasus Mail.
+Para user tidak boleh direpotkan dengan kerumitan
+teknologi UUCP tersebut.
+<p>
+Paralel dengan langkah tersebut ialah menyusun
+strategi marketing usaha (minimum) nirlaba.
+Target utama ialah LSM di daerah, agar mereka
+ikut berpartisipasi memberdayakan masyarakat
+dengan teknologi murah ini. Jika, target potensial
+ialah instansi pemerintah yang sekarang ini
+masih "satu yahoo mail rame-rame".
+<p>
+Masalah hosting merupakan hal penting, namun tidak
+genting. Tentu saja, langkah ini tidak dapat diabaikan;
+namun pelaksanaannya dapat ditunda.
+<P>
+Yang perlu disiapkan ialah set disket "plug and play";
+dan langsung "boom" (jadi inget disketnya 
+<a href="http://www.dialix.oz.au" target="_top">Dialix</a>
+).
+Mungkin juga bisa memanfaatkan paket <a href="http://www.kew.com" target="_top">UUCP</a>.
+MUA bisa pakai pegasus dengan (tidak harus) atau tanpa taxis
+<a href="http://www.wcape.school.za" target="_top">School Networking</a>.
+Yang ini bahkan pernah coba via dial-up
+line, lagi-lagi dari mesin sendiri.
+<p>
+Orang nggak paham UUCP, SMTP juga bisa langsung pakai..  padahal di
+dalamnya pakai UUCP, NNTP dan mbuh apa lagi.. 
+dengan tools MTA seperti rmail atau rsmtp (untuk
+batched/half-baked smtp).
+<P>
+
+<tr>
+<td align="right">
+<a name="3"></a>
+<font size=1 color="blue"><a href="#2" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="34.html" target="_top">^^TOP^^</a> |
+<a href="#4" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<h2>Tindak Lanjut</h2>
+<p>
+Jika persyaratan 4/12 dipenuhi, bisa dilanjutkan
+dengan membuat pokja UUCP dan milisnya. Tentunya,
+setelah itu, bukan lagi menjadi wacana milis DICK 
+dan MDGR.
+Secara teknis, UUCP lewat TCP udah kelar tuh. dialin-nya 
+sebentar lagi akan dipasang modem.
+<P>
+Hal ini dapat menarik, jika beginian dapat menggantikan
+peranan <em>maildrop</em> atawa <em>serialmail</em> atawa <em>mdaemon</em> 
+yang memusingkan.
+Akan tetapi sungguh menggetarkan jiwa jikalau ada
+program dari dua sisi (client/server) yg sudah langsung bisa jalanken
+fungsi tsb <i>out of the box</i>. 
+<P>
+Katanya <a href="http://mdamt.net" target="_top">MD@MT</a>,
+mari kita bikin aja deh kalo ga ada dan bila ada waktu 
+yangg luang dan mungkin akan ikut daftar di list
+oknum2 yg terlibat deh.
+Yang bikin semangat mau ikutan jadi oknum proyek ini.
+Kerasa kalau si klien langganan isp yang routingnya sering
+main dampu (loncat2) sdgkan mailboxnya ada di tempat yang
+agak lelet, lalu ditimpa tangga berupa kiriman kado SirCam.
+koneksi putus, reconnect lagi, nge-POP lagi, tengah2 putus lagi
+ulang lagi. sungguh bikin pusingpala
+<p>
+Asal jangan disuruh nulis, kemungkinan besar ada punya tenaga untuk
+'proyek' ini. OK, tulis-menulis menjadi urusan 
+<a href="http://vlsm.org/" target="_top">vLSM.org</a>
+:-).
+<P>
+Untuk uucp via ssl. Ada yang sudah berencana memberikan service ini.
+Bila ada yang berminat mengetahui bisa via japri.
+<p>
+UUCP sempat "ditawarkan" dibeberapa wilayah luar Jakarta.
+Tapi, yang didapatkan justru pertanyaan: "uucp bisa dipakai buat 
+browsing gak?"
+<p>
+Apakah UUCP dapat dibisniskan?
+Apakah perlu milis khusus? Atau untuk sementara cukup menggunakan 
+<a href="http://groups.yahoo.com/group/mdgr/" target="_top">MDGR</a>?
+Yang perlu dibahas diantaranya:
+<ul>
+<li> model bisnis
+<li> masalah legalitas 
+    (misalkan kasih access dial-up)
+</ul>
+
+<tr>
+<td align="right">
+<a name="4"></a>
+<font size=1 color="blue"><a href="#3" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="34.html" target="_top">^^TOP^^</a> |
+<a href="#5" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<h2>Teknologi Alternatif</h2>
+<p>
+Sebagian besar bagian ini ditulis oleh
+P.Y. Adi Prasaja
+dan 
+Haydin Syafrudin.
+<p>
+Teknologi tepat guna alternatif UUCP, untuk
+sesuatu yang mungkin bisa disebut "Email Perintis", yang punya ciri:
+<ul>
+<li>	layanan email untuk satu domain, bukan per user.
+<li>	transfer email dengan dial-up, kecepatan rendah (&lt; 28.8 kbps).
+<li>	transfer email secara batch, dalam arti email tidak langsung dikirim,
+	  diantrikan dulu di server ISP untuk email yang akan masuk, diantrikan
+	  di server lembaga untuk email yang akan keluar.
+<li>	inisiatif transfer selalu dari server lembaga (kirim maupun ambil
+	  antrian), server ISP bersifat pasif.
+<li>	jalur pengiriman dari server lembaga ke internet bisa berubah seperti
+	  hari ini lewat ISP A besok memutar lewat ISP B, atau hari ini lewat
+	  modem, besok lewat leased-line. Atau bahkan mungkin pakai Disket.
+<li>	langganan milis populer dilakukan oleh satu alamat di server lembaga
+	  untuk kemudian baru diedarkan ke segenap pelanggan di lembaga melalui
+	  satu sublist.
+<li>	dll.
+</ul>
+<p>
+Seberapa jauh, MX + SMTP ETRN dapat menggantikan UUCP?
+SMTP + ETRN jalan disembarang TCP/IP, jadi jalan bisa di atas Dial-Up PPP
+atau Dial-Up SLIP, cuma saya belum seberapa kalah hemat dibanding UUCICO
+via Dial-Up langsung. Perlu dihitung berapa overhead header PPP + header SMTP
+dibanding "header" / control file-nya UUCICO.
+<P>
+ETRN bisa menggantikan UUCP bila, client (server lembaga) selalu
+mendapat ip statik (syarat ini *penting*). Dan ini berarti *tidak*
+bisa berpindah-pindah ISP. Dan sejauh masih 'speak SMTP' belum ada
+implementasi compression on the fly seperti yang bisa dilakukan via
+uucp.
+<P>
+ETRN menyaratkan ip static. Justru ini kelebihan transfer mail
+dengan UUCP (via tcp/ip), karena yang perlu memiliki ip static
+hanyalah 'server'.
+Penantang kuat metode trasnfer mail via uucp (alternatif) adalah
+ESMTP ATRN/ODMR.  Yang sampai saat ini pun jarang dipakai orang.
+<p>
+Dalam soal keluwesan antrian, antrian SMTP pada dasarnya juga bisa kita
+miripkan seperti antrian UUCP, yaitu dibagi ke beberapa direktori menurut
+ke host mana antrian tersebut akan dikirim (belum tentu ini alamat akhir),
+tergantung kepada MTA yang digunakan. Saya kira untuk postfix ini bisa
+dilakukan dengan relatif mudah. Namun memang perlu diuji apakah mungkin
+misalnya antrian tadi untuk jalur A kita pindahkan ke jalur B, hal yang
+sudah teruji di UUCP.
+<P>
+By design, SMTP *tidak* mengimplementasikan per host/domain
+queue directories. Setidaknya dari implementasi yang ada (sendmail,
+zmailer, smail, exim, qmail, postfix, mmdf), tidak melakukan queue
+per destination/hostname/domain. Adanya queue directory semata-mata
+sebagai jaminan bahwa mail sudah safe sebelum smtp receiver
+announce OK ke smtp sender.
+<P>
+Memindahkan queue dir di postfix tidak mungkin. Hal ini hanya mungkin
+dilakukan pada qmail, bukan pada queue directory per se (tentu,
+karena nama disesuaikan dengan inode), tapi bisa pakai serial mail.
+Tapi implementasi AutoTURN+serialmail ini tidak jauh berbeda dengan
+ETRN dalam soal syarat yaitu: perlu ip statik.
+<p>
+Mestinya, sendmail dan exim lebih 'mudah' dipindahkan. Tentunya tidak
+dengan, misalnya 'cp' atau 'mv' karena ini memungkinkan terjadinya
+colliosion ID (mail bisa hilang).
+<p>
+Barangkali yang mau dipindahkan adalah spool mail yang sudah
+merupakan proses deliver *terakhir* (sebelum dibaca langsung oleh MUA
+atau melalui POP3/IMAP atau yang lain).
+Biar tidak capek merevisi, ETRN lebih tepat diganti ATRN/ODMR.
+(ATRN = authenticated TURN, ODMR = On Demand Mail Relay).
+<P>
+
+<tr>
+<td align="right">
+<a name="5"></a>
+<font size=1 color="blue"><a href="#4" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="34.html" target="_top">^^TOP^^</a> |
+<a href="#6" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<h2>Tabemakasih</h2>
+<p>
+Bung P.Y. Adi Prasaja memulai membahas bofcana ini di milis 
+<a href="http://groups.yahoo.com/group/dick/" target="_top">DICK</a> 
+(Data Information Communications Knowledge) pada tanggal 5 Agustus 2001.
+Selanjutnya, didiskusikan di milis
+<a href="http://groups.yahoo.com/group/mdgr/" target="_top">MDGR</a> 
+(Masyarakat Digital Gotong Royong).
+Sebetulnya, tulisan ini merupakan rangkuman hasil pengeroyokan  dari
+oknum-oknum berikut ini:
+Abdullah Koro,
+<a href="http://people.WebIndonesia.com/dullatip/" target="_top">Abdul Latip</a>,
+Haydin Syafrudin,
+<a href="http://wiryana.pandu.org/" target="_top">I Made Wiryana</a>,
+Judhi Prasetyo,
+<a href="http://angin.com/" target="_top">Louis Larry</a>,
+<a href="http://mdamt.net/" target="_top">MD@MT</a>,
+Muhamad Carlos Patriawan,
+P.Y. Adi Prasaja,
+<a href="../index.html" target="_top">Rahmat M. Samik-Ibrahim</a>,
+Wahyu Kelik Cahyadi,
+terimakasih yang mana dari pada, yang lainnya yang
+nggak sengaja belum kesebut.
+
+<tr>
+<td align="right">
+<a name="6"></a>
+<font size=1 color="blue"><a href="#5" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="34.html" target="_top">^^TOP^^</a> |
+<a href="#7" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<h2><a href="http://rms46.vlsm.org/citations-ref1.html" target="_top">Referensi</a>:</h2>
+<p>
+<ul>
+<li>	<a href="http://www.uucp.org" target="_top">Proyek UUCP</a>
+--	Situs Utama, beserta beberapa 
+	<a href="http://www.uucp.org/papers/" target="_top">babacaan protokol</a>.
+<li>	<a href="http://www.airs.com/ian/uucp-doc/" target="_top">Taylor UUCP</a>
+--	oleh Ian Lance Taylor.
+
+<hr>
+
+<li>	<a href="http://webindonesia.com/uucp/free.html" target="_top">Gratis</a>
+--	akses UUCP dari WebIndonesia Group 
+	(<a href="http://webindonesia.com/uucp/promo.html" target="_top">Promosi</a>).
+
+<hr>
+
+<li>	<a href="http://wiryana.pandu.org/Indo-UUCP/" target="_top">Indo UUCP</a>
+--	oleh Bli Made.
+<li>	<a href="http://wiryana.pandu.org/LINK/UUCP.html" target="_top">LINK</a>
+--	Kumpulan link Bli Made.
+<LI>	<a href="http://www.sdnp.undp.org/rc/areas/tech/uucp/" target="_top">Catatan SDNP</a>
+--	dari UNDP.
+<li>	<a href="http://LinuxFocus.vLSM.org/English/September2001/article215.shtml" target="_top">Email over UUCP</a>
+--	The professional solution for dialup users).
+
+<hr>
+
+<li>	<a href="http://jimsun.linxnet.com/jdp/uucp_over_tcp/" target="_top">JIMSUN UUCP-over-TCP: 
+	Overview</a>
+-- oleh James S. Seymour.
+<li>	<a href="http://docs.freebsd.org/info/uucp/uucp.info.UUCP_Over_TCP.html" target="_top">UUCP Over TCP</a> <i>for systems with either Berkeley style socket
+	libraries or System V style TLI interfaces</i>.
+<li>	<a href="http://www.internatif.org/bortzmeyer/uucp-over-ssh/" target="_top">Setting up UUCP over SSH</a>
+--	oleh Stephane Bortzmeyer.
+<li>	<a href="http://aksi.mdamt.net/art/bzipuucp.html" target="_top">Konfigurasi UUCP Yang 
+	Terkompresi</a> 
+--	silakan membaca artikel ini jika ingin mengkompresi data anda
+--	oleh MDAMT.
+<li>	<a href="http://taz.net.au/postfix/uucp/" target="_top">UUCP over SSL</a>
+--	<i>SSL-encrypted uucp-over-tcp using stunnel</i>.
+<li>	<a href="http://www.wizzy.com/wizzy/mail.html" target="_top">Custom Mail Delivery Solutions</a>
+--	oleh Andy Rabagliati.
+<li>	<a href="http://www.faqs.org/rfcs/rfc2645.html" target="_top">RFC-2645</a>
+--	ODMR: On-Demand Mail Relay: SMTP over Dynamic IP Address.
+
+<hr>
+
+<LI>	<a href="http://eqcitybbs.tripod.com/uucp.htm" target="_top">EARTHQUAKE CITY BBS .UUCP</a>
+--	cara konfigurasi dari Linux box - BBS.
+<li>	<a href="http://www.kew.com" target="_top">UUCP</a>
+--	uupc dari kendra.
+<li>	<a href="http://www.wcape.school.za" target="_top">School Networking</a>.
+
+<hr>
+
+<li>	<a href="../00-7.html" target="_top">UUCP Map</a>
+--	Tempo Doeloe.
+<li>
+<a href="http://www.foebud.org/archiv/zamir/docs/zamir_wired9511_gessen_balkanOnline.html" target="_top">Balkan Online</a>.
+<li>	<a href="http://www.wcape.school.za/software/thurn.htm" target="_top">TURN MS-DOS UUCP</a>
+--	menggabungkan Pegasus Mail, UUPC/extended, dan Tabloid.
+<LI>	<a href="ftp://ftp.psg.com/pub/uucp-for-pc/" target="_top">UUCP Klasik</a>
+<li>	<a href="http://www.wcape.school.za/taxis/" target="_top">Taxis Mailis</a>
+--	UUCP berbasis win32 dan menggunakan Pegasus Mail.
+<li>	<a href="http://www.dbox.handshake.de/" target="_top">dBOX</a>
+--	BBS dengan dukungan UUCP.
+
+
+</ul>
+
+<tr>
+<td align="right">
+<a name="7"></a>
+<font size=1 color="blue"><a href="#6" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="34.html" target="_top">^^TOP^^</a> |
+<a href="#bawah" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<h2>MILIS</h2>
+<p>
+<ul>
+<li>	<b>MILIS</b>:
+	<em>indo-uucp</em> &lt;<b>@T</b>&gt; <em>mangga.padinet.com</em>
+<li>	<b>GABUNG</b>:
+	<em>listar</em> &lt;<b>@T</b>&gt; <em>mangga.padinet.com</em>
+	<br>&lt;<em>email-body</em>&gt;:join indo-uucp
+</ul>
+
+</table>
+</center>
+
+<a name="bawah"></a>
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+	<font size=1 color="blue"><a href="#7" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="34.html" target="_top">^^TOP^^</a></font>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e6ebfe" 
+width="80%">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK3.html" target="_top"><img 
+src="png/LOCAL-LOGO3.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="left">
+	<font size=2 color="#00008b">
+	Copyright &copy 2001-2014 <a href="../index.html" target="_top">Rahmat M. Samik-Ibrahim</a> .
+	Provided <b>AS-IS</b> with no <b>LIABILITY</b>.
+	
+	Permission is granted to copy, distribute, and/or modify
+	this webpage provided this notice is preserved.
+	<b>MIRRORS</b> of this site:
+<a href="http://rms46.vlsm.org/1/34.html" target="_top">BisnisWeb</a> -
+	<a href="http://rmsui.vlsm.org/rms46/1/34.html" target="_top">Fusilkom-UI</a>.
+
+	File revision: 9.10 2002/11/07 07:36:
+	-- <a href="mailto:vlsm.org@t-HAPUS-DELETE.gmail.com?subject=[RMS-Feedback]"><font color="blue">E-CONTACT</font></a>.
+	Special thanks for this <a href="LOCAL-LINK3.html" target="_top">webspace provider</a></font>.
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK4.html" target="_top"><img 
+src="png/LOCAL-LOGO4.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table>
+<table>
+<tr>
+<td height="600" valign="top">
+</table>
+</center>
+</body>
+</html>
+<!-- END -->
+
+
+

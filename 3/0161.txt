@@ -1,0 +1,45 @@
+NomCom -- 08 February 2000 -- IETF-Announce
+-------------------------------------------
+
+Announcement of new IAB members
+
+
+The ISOC has accepted NomCom's recommended slate for the IAB. 
+The following individuals have been selected:
+
+-------------------------------------------------------------
+
+	Brian Carpenter
+	Henning Schulzerine
+	Jon Crowcroft
+	John Klensin
+	Leslie Daigle
+	Steve Bellovin
+
+-------------------------------------------------------------
+
+I want to thank all of the folks who were willing to be 
+nominated and were willing to go through the selection process. 
+I also would like thank all those with whom the NomCom 
+consulted in making its selections. 
+
+With the conclusion of this year's task for the NomCom,
+I also want to thank the members of the committee for their work
+and their attention to the task we had.  Additionally I want to 
+thank the secretariat and the current IAB and IESG for their 
+frequent help. 
+  
+Finally, it was a pleasure working with the IETF community as
+NomCom chair.
+
+
+Best Regards,
+
+Chair, NomCom
+
+a.
+-----------------------------------
+avri doria
+Office: +1 781 993 4645
+Mobile: +1 781 308 7680                
+ 

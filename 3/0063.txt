@@ -1,0 +1,21 @@
+IAB -- 27 July 1999 -- IETF-Announce
+------------------------------------
+
+Call for PSO candidates 
+
+
+IETF,
+
+As explained in Fred Baker's recent message, the IAB will appoint two
+interim members to the Protocol Council of the ICANN Protocol
+Supporting Organization. This is a call for nominations for these
+two positions. Nominations (including self-nominations) should
+be sent to iab@iab.org by August 6, 1999.
+
+Note: an almost-final version of the PSO memorandum of understanding
+is available at
+http://www.ietf.org/internet-drafts/draft-ietf-poisson-pso-bl-02.txt
+
+   Brian Carpenter
+   IAB Chair
+

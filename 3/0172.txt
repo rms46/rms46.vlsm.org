@@ -1,0 +1,18 @@
+Jon Postel -- 30 March 1985 -- TCP/IP
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/8501.mm.www/0170.html
+-------------------------------------------------------------------------
+
+
+                            domain name resolvers
+
+Two different domain name resolvers were developed and experimented with
+for Berkeley Unix. The DRUID system was developed by Peter Karp at
+Stanford University. The BIND system was developed by Doug Terry at
+Berkeley. The Unix support group at Berkeley is preparing a major revision
+of the BIND system for inclusion in the next release of Berkeley Unix.
+These systems (both DRUID and BIND) are not just the resolver, but include
+servers as well.
+
+--jon.
+-------
+

@@ -1,0 +1,76 @@
+IAB -- 11 January 2000 -- IETF-Announce
+---------------------------------------
+
+APPEAL AGAINST IESG INACTION ETC. BY WILLIAM ALLEN SIMPSON
+dated 23 October 1999
+
+This is the final text of the response given verbally
+during the open plenary session of the 46th IETF.
+
+The IAB has reviewed this appeal.  We note that an appeal was
+made by Mr. Simpson covering the same general area and topics
+some months ago, that a public hearing was held on them at the
+previous (45th) IETF and that this appeal addresses some of the
+same issues.  Plenary time is a scarce resource, and IAB and
+IESG time only slightly less so.  The IAB is sensitive to the
+risk of denial of service attacks on the community by repeated
+appeals, and believes that second and subsequent members of a
+sequence of appeals should be held to a significantly higher
+standard of clarity and precision than an initial one might
+reasonably be.
+
+Additionally we are not aware that this new appeal has been
+duly considered and rejected by the IESG prior to being
+brought to the IAB.
+
+Consequently, the IAB has concluded that:
+
+(i) Many of the issues raised were, as noted in the appeal
+text, addressed in the appeal on which a hearing was held at
+the 45th IETF and a decision announced by the IAB on 1 October
+1999. The IAB will not review that decision under the
+guise of a new appeal.
+
+(ii) Some of the issues raised apparently involve a claim that
+IESG failed to move immediately (or quickly enough to suit Mr.
+Simpson) to make a decision, or to adequately explain the
+decision, about documents covered by the previous appeal. The times
+involved were actually very short (October 1 to 23, 1999). The IAB
+recognizes the many demands on the IESG's schedule in the last few
+weeks before an IETF meeting and the IESG's need to respond to
+overall community priorities, and will not second-guess the IESG's
+decisions about those priorities during that period.  In
+addition, the IESG has never been obligated to provide specific
+rewrites to documents or otherwise to provide an essentially
+line-by-line explanation of its objections to a document or
+reasons for its decisions.  We do not believe that it would be
+in the best interests of the community to try to force the IESG
+to do so; in any event, a proposal for such a requirement
+should be raised through procedural mechanisms, not via an
+appeal.
+
+(iii) The fraction of the appeal letter that appears to fall
+into the above categories is sufficiently large that the IAB
+has been unable to identify new issues of substance.
+Items 1 through 8 appear to be a rehash of items dealt
+with in the previous appeal. Items 9 and 10 are ones that
+we expect the IESG to deal with in a routine way and with
+routine priority.
+
+(iv) If there are in fact new issues of substance, it should be
+Mr. Simpson's responsibility to identify them.  If the IAB
+attempted to determine what new issues were actually being
+appealed, it would open itself and the community up to yet
+another appeal on its conclusions. Consequently, we are dismissing
+this latest appeal summarily. If there actually are issues of
+substance that have not been previously addressed, we are willing
+to examine them if we receive an appeal of well-defined, separate
+new matters that have gone properly through the appeal sequence
+(i.e., have already been addressed and rejected by area
+directors, the IETF chair, and the IESG) and if that appeal addresses
+only those new and substantive issues.
+
+  Brian Carpenter
+  IAB Chair
+  January 11, 2000
+

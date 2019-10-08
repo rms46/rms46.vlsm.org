@@ -1,0 +1,376 @@
+Steve Deering  -- Tue, 22 Sep 1992 -- B-I
+=========================================
+
+SIP
+
+I'd like to offer another candidate for IPv7.  It's called SIP (Simple
+Internet Protocol), or CLNPv2 :-).
+
+One philosophy behind SIP is that the IP model of globally-unique
+addresses, hierarchically-structured for efficient routing, is
+fundamentally sound.  IP addressing and routing works fine, but the
+addresses aren't quite long enough and not quite hierarchical enough
+to scale the Internet up to, say, thousands of internet-addressable
+devices in every office, every residence, and every vehicle in the world.
+SIP addresses are 64 bits long, and are sufficient for an internet that big.
+
+Another philosophy behind SIP is the RISC philosophy: the SIP header
+is much simpler than the IP header (not to mention the CLNP header or the
+Pip header), to facilitate high-performance implementation and to increase
+the likelihood of correct implementation.
+
+Here are some excerpts from the draft SIP specification (currently under
+construction), that describe the basic features of SIP.  Information on
+how to fetch the current draft are given at the end of this message.
+
+------------------------------------------------------------------------
+
+SIP Header Format
+-----------------
+
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |   Hop Limit   |  Payload Type |         Payload Length        |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   +                         Source Address                        +
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   +                      Destination Address                      +
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+    Hop Limit           8-bit unsigned integer.  Decremented by 1 by
+                        each system that forwards the packet.  Packet
+                        is discarded if Hop Limit is decremented to
+                        zero.
+
+    Payload Type        8-bit selector.  Identifies the type of payload,
+                        e.g., TCP.
+
+    Payload Length      16-bit unsigned integer.  Length of payload,
+                        i.e., the data following the SIP header, in
+                        octets.
+
+    Source Address &    64 bits each.  See "SIP Addressing" section.
+    Destination Address
+
+
+  Notes:
+
+    - The SIP header is the same size (20 octets) as the IPv4 header without
+      options.
+
+    - There are no SIP options.  Additional information that must be conveyed
+      to routers in special cases, such as security label information, may be
+      inserted between the SIP header and the next-higher-layer header
+      (e.g., TCP), using a distinguished Payload Type value to indicate the
+      presence of the additional information.  (As part of the additional
+      information, there must be included another Payload Type field, to
+      identify the next-higher-layer protocol.  See the "Source Routing
+      Protocol" section, below, for an example.)
+
+    - Still undecided: whether or not an additional 32-bit field should be
+      added to the SIP header to achieve 64-bit alignment (as it is, the
+      two address fields can be 64-bit aligned by making sure the packet
+      starts at an odd-word address, where word = 32 bits).  The extra
+      32 bits, if added, would be used for classifying packets deserving
+      of special handling, e.g., non-default quality of service or
+      real-time service.  On the other hand, the transport-layer port
+      fields may be adequate for performing any such classification.
+      (One possibility would be simply to remove the port fields from
+      TCP & UDP and put them in the SIP header, like XNS.)
+
+
+Packet Size Issues
+------------------
+
+  SIP requires that every link in the internet have an MTU of 500 octets or
+  more.  On any link that cannot convey a 500-octet packet in one piece,
+  link-specific fragmentation and reassembly must be provided at a layer
+  below SIP.
+
+  From each link to which a system is directly attached, the system must be
+  able to accept packets as large as that link's MTU.
+
+  SIP systems are expected to implement Path MTU Discovery [RFC-1191], in order
+  to discover and take advantage of paths with MTU greater than 500 octets.
+  However, a minimal SIP implementation (e.g., in a boot ROM) may simply
+  restrict itself to sending packets no larger than 500 octets, and omit
+  implementation of Path MTU Discovery.
+
+  Path MTU Discovery requires support both in the SIP layer and in the
+  packetization layers.  A system that supports Path MTU Discovery at the
+  SIP layer may serve packetization layers that are unable to adapt to changes
+  of the path MTU.  Such packetization layers must limit themselves to sending
+  packets no longer than 500 octets, even when sending to destinations that are
+  on the same subnet.
+
+  (Note: Those parts of the RFC-1191 procedures that involve use of a table of
+  MTU "plateaus" do not apply to SIP, because the SIP version of the "Datagram
+  Too Big" message always identifies the exact MTU to be used.)
+
+
+SIP Addressing
+--------------
+
+  SIP addresses are 64 bits (8 octets) long.  The notation for writing SIP
+  addresses is 16 hexadecimal digits, with a dot after the 4th digit and
+  optional dots after any subsequent digit.  Examples:
+
+        1234.56789ABCDEF0
+
+        1234.56789ABC.DEF0
+
+        1234.567.89AB.CDE.F0
+
+  There are two classes of address: unicast and multicast.  Multicast
+  addresses are identified as such by hex FF in the high-order octet;
+  unicast addresses have values other than hex FF in the high-order octet.
+
+  Unicast Addresses
+
+  Unicast addresses are globally unique within a SIP internet, i.e., no
+  two interfaces have the same address.  A single interface may have
+  multiple unicast addresses.
+
+  With each of a system's unicast addresses, the system associates a
+  "subnet mask" that indicates which part of the address is the subnet
+  prefix (those bits with a 1 in the corresponding position in the mask)
+  and which part is the interface identifier within the subnet (those
+  bits with 0 in the corresponding position in the mask).  Hosts are
+  ignorant of any further structure in the address.  Routers may be
+  aware of shorter prefixes of an address that identify higher-level
+  clusters in the hierarchical addressing plan; that knowledge is
+  in the form of additional masks (with fewer 1 bits), rather than any
+  "wired-in" knowledge of what bit boundaries are significant in the
+  addressing hierarchy.
+
+  Within any hierarchical component of a unicast address, the value zero
+  is reserved to mean "unspecified".
+
+  This specification does not further constrain the structure of unicast
+  addresses.  Appendix A suggests one possible structure.
+
+
+SIP Source Routing Protocol
+---------------------------
+
+  A Payload Type of 3 in a SIP header indicates the presence of this Source
+  Routing header, immediately following the SIP header:
+
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                            Reserved                           |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |    Reserved   |  Payload Type |   Num Addrs   |   Next Addr   |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   +                           Address[1]                          +
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   +                           Address[2]                          +
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   .                               .                               .
+   .                               .                               .
+   .                               .                               .
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               |
+   +                       Address[Num Addrs]                      +
+   |                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+  Note that this header is not examined until the packet reaches the system
+  identified in the SIP Destination Address field (unlike the IP source
+  route options).
+
+  The 32-bit Reserved field is present to make the source route addresses
+  have the same 64-bit alignment as the addresses in the SIP header.
+
+  loose source routing only -- can't enforce strict source routing if
+  subnets are allowed to transparently span multiple links.
+
+  description to be done
+
+
+Design Rationale
+----------------
+  ...
+
+  Fields present in IPv4, but absent in SIP:
+
+  Version          Not needed; SIP identified by new link-layer type code.
+
+  Header Length    Not needed; SIP header length is fixed (no options).
+
+  Precedence &
+  Type of Service  Not used; transport-layer Port fields (or perhaps an
+                   additional to-be-defined 32-bit field in the SIP header)
+                   may be used for classifying packets at a granularity finer
+                   than host-to-host, as required for special handling.
+
+  Identification,
+  Flags, and
+  Fragment Offset  Not needed; SIP does not do fragmentation.
+
+  Time to Live     SIP uses Hop Limit instead, to provide protection
+                   from routing loops.  Transport protocols are expected
+                   to provide their own protection against long-lived
+                   packets.
+
+  Header Checksum  Not used; transport pseudo-header checksum
+                   protects destinations from accepting corrupted
+                   packets.
+
+  ...
+
+Transport and Upper-Layer Issues
+--------------------------------
+
+        - bigger addresses
+        - must include the basic SIP header, excluding Hop Limit, in
+          transport-layer checksums
+        - if a source routing header is present, the originating transport
+          layer must use last address in source route, rather than SIP
+          destination address, in its checksum
+        - UDP checksum is no longer optional
+        - transport must do own enforcement of max packet lifetime
+          (or rather, recognize and tolerate very old packets)
+        - must do path-MTU discovery, and be capable of adapting
+          outgoing packet size in response to changes of PMTU
+          (or always send packets <= 500 octets)
+        - change of ICMP error report format
+        - no TOS, Ident, or options to be passed across IP service interface
+        - need new SIP+TCP header compression algorithm
+        - DNS changes: new address type
+        - need a SIP MIB
+
+
+
+Appendix A - Suggested Unicast Address Structure
+------------------------------------------------
+
+  The following two hierarchical formats are suggested for SIP unicast
+  addresses:
+
+  (1) metro-based addresses
+
+   +-------+-------+-------+-------+-------+-------+-------+-------+
+   |   country +   |            site ID            |   intra-site  |
+   |   metro ID    |                               |      part     |
+   +-------+-------+-------+-------+-------+-------+-------+-------+
+        2 octets                4 octets                2 octets
+
+     country +         Identifies a metropolitan area.  Internally
+     metro ID          structured into a country part and a metro part,
+                       with a varying boundary between those two parts.
+                       (Each country gets a power-of-two sized and aligned
+                       block of metro IDs, sufficient for the projected
+                       number of metro areas in that country.)
+
+     site ID           Flat identifier of a site within or near a metro area,
+                       where a "site" may be, for example, a corporate or
+                       government site, a campus, or household.  A site ID
+                       "belongs" to the administrators of a particular site,
+                       rather than to a particular SIP service provider, so
+                       that it does not change if the site changes its
+                       provider, as long as the change is within the same
+                       metro area.
+
+     intra-site part   Identifies an interface within a site.  Internally
+                       structured into a subnet ID and an interface ID,
+                       with a varying boundary between those two parts.
+                       (Each subnet gets a power-of-two sized and aligned
+                       block of interface IDs, sufficient for the projected
+                       number of interfaces in that subnet.)  Large sites
+                       may obtain multiple site IDs, if needed.
+
+  The subnet mask for a metro-based address has 1 bits covering all positions
+  from the high-order bit of the country ID to the low-order bit of the subnet
+  ID within the intra-site part.
+
+  The details and consequences of metro-based addressing and routing are
+  described in a separate document.
+
+  (2) provider-based addresses
+
+   +-------+-------+-------+-------+-------+-------+-------+-------+
+   |   country +   |         subscriber ID        intra-subscriber |
+   |  provider ID  |                                   part        |
+   +-------+-------+-------+-------+-------+-------+-------+-------+
+        2 octets                        6 octets
+
+     country +         Identifies a SIP service provider.  Internally
+     provider ID       structured into a country part and a provider
+                       part, with a varying boundary between the two
+                       parts. (Each country gets a power-of-two sized and
+                       aligned block of provider IDs, sufficient for the
+                       projected number of providers in that country.)
+                       Trans-national providers obtain a separate provider
+                       ID in each country that they serve.
+
+     subscriber ID     Identifies a subscriber of a particular provider.
+                       Internally hierarchically structured for efficient
+                       routing within the provider's facilities.
+
+     intra-subscriber  Identifies an interface within a subscriber's
+     part              facilities.  Internally hierarchically structured for
+                       efficient routing within the subscriber's facilities.
+                       The last two components of the intra-subscriber part
+                       are a subnet ID and an interface ID, with a varying
+                       boundary between those two parts.  (Each subnet gets
+                       a power-of-two sized and aligned block of interface
+                       IDs, sufficient for the projected number of interfaces
+                       in that subnet.)  The boundary between the subscriber
+                       ID and the intra-subscriber part is a private matter
+                       between the provider and the subscriber.
+
+  The subnet mask for a provider-based address has 1 bits covering all
+  positions from the high-order bit of the country part to the low-order
+  bit of the subnet ID within the intra-subscriber part.
+
+  Both country + metro IDs and country + provider IDs are assigned from the
+  same 16-bit space, so that both metro-based and provider-based addressing
+  may be supported in the same internet.
+
+------------------------------------------------------------------------
+(end of excerpts)
+
+The current draft-in-progress may be fetched by anonymous FTP from host
+parcftp.xerox.com, file pub/net-research/sip-spec.  It includes
+information on:
+
+        - the format of SIP multicast addresses.
+
+        - changes required to ICMP and IGMP for SIP.
+
+        - a scheme for tunneling (encapsulation) in SIP, which is
+          intended to support delivery to mobile hosts and to
+          re-homed domains, among other purposes.  Since encapsulation
+          increases the size of a SIP packet, possibly exceeding the
+          path MTU, the tunneling protocol includes a simple fragmentation
+          and reassembly capability.
+
+(Be warned that the document does not yet have page numbers, pretty
+formatting, or much in the way of explanation/justification of the
+design choices.)
+
+Regarding transition from IPv4 to SIP, the technical issues are basically
+the same as transitioning to CLNP, as described in the TUBA document
+(RFC-1347).  Thus, if the costs of the TUBA approach (adding a new
+internet layer in parallel with IP on all hosts and routers) does not
+rule out CLNP as a candidate for IPv7, nor should it rule out SIP.
+
+I believe that SIP occupies a significantly different point in the solution
+space than IPAE, CLNP, PIP, or NAT.  (It is somewhat similar to the
+proposal by R. Ullmann, published as draft-ullmann-ipv7-00.txt in the
+internet-drafts repositories.  For some reason, that proposal has not
+seen much, if any, discussion on this list.)  I would very much appreciate
+your comments on SIP.
+
+Steve Deering
+
+

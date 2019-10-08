@@ -1,0 +1,13 @@
+#!/bin/bash
+# $Revision: 214 $
+# $Date: 2012-06-27 20:11:05 +0700 (Wed, 27 Jun 2012) $
+# svn propset svn:keywords "Date Revision HeadURL Id Author"
+
+[ -f .shsh ] && {
+	/bin/bash .shsh $*
+	exit 0
+}
+echo "No .shsh file :( ..."
+exit 1
+
+

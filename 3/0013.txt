@@ -1,0 +1,13 @@
+IAB -- 22 October 1999 -- IAB Announce
+--------------------------------------
+
+IAB support for statement on IPv6 Address Privacy 
+
+The IAB endorses the statement on IPv6 Address Privacy published by 
+the Co-Chairs of the IETF's IP Next Generation Working Group at
+
+http://playground.sun.com/ipng/ipv6-address-privacy.html
+
+    Brian Carpenter
+    IAB Chair
+

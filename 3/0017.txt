@@ -1,0 +1,280 @@
+Frank and Frank -- 5 August 1991 -- B-I
+---------------------------------------
+
+Network Working Group                                        F. Solensky
+INTERNET-DRAFT                                             F. Kastenholz
+                                               Clearpoint Research Corp.
+                                                            August, 1991
+
+
+                   Definition of Class E IP Addresses
+
+
+Status of this Memo
+
+   This Internet Draft document will be submitted to the RFC editor for
+   a standards document.  Comments and suggestions are welcome and may
+   be sent to the authors.  Distribution of this memo is unlimited.
+
+Abstract
+
+   This memo presents an extension to the method of classifying and
+   assigning IP network numbers.  It is intended to provide an temporary
+   work-around to the imminent exhaustion of Class B network numbers
+   until new architectures are developed [1].  It is a product of a
+   "birds-of-a-feather" discussion held on July 21, 1991 at the twenty-
+   first IETF conference held in Atlanta, GA.
+
+   It should be noted that this document does NOT address the
+   limitations inherent in the current routing architectures and
+   technology.  Specifically, the issue of scaling is not addressed.
+
+Background
+
+   During the latter part of the 1980's, an ever-increasing number of
+   organizations came to realize the advantage and importance of
+   allowing their computer systems to interconnect with other systems
+   and networks around the globe.  While this is usually seen as a
+   positive trend, it has not been without its drawbacks.
+
+   One of the more immediate problems that this sudden growth has
+   presented is a continuing heavy demand for Class B network numbers.
+   While there are still a very large number of Class C addresses
+   available, few organizations expect that their connectivity needs
+   will be satisfied within the limitations of 254 IP addresses.
+
+   The level of demand for Class B addresses can be illustrated by a
+   short analysis of the data available.  In the period between August
+   1990 and June 1991, the number of assigned Class B network numbers
+   grew from 2533 to 5654 [2,3].  This averages out to an annual growth
+   rate of over 123%.  If this trend were to continue, the pool of
+   available Class B network numbers would be depleted by October 1992.
+
+
+
+Solensky, Kastenholz                                            [Page 1]
+
+INTERNET DRAFT                                              AUGUST, 1991
+
+
+   While the authors acknowledge that a logistic or "s-shaped" curve
+   would be a more realistic model, a projection based on this assmption
+   would not be realistic until we have clearly passed the inflection
+   point on the curve - the point at which the curve starts to climb
+   less rapidly towards its upper limit.  The data available at this
+   time suggests that this leveling off has not yet occured: the annual
+   growth rate in the allocation of Class B network numbers between 1983
+   and mid-1990 was only 78% [4], indicating that the growth rate is
+   continuing to increase.
+
+Class E Network Numbers
+
+   The entire Class E address space will be used for the assignment of
+   new IP network numbers.  Within the 28 bits available in Class E
+   addresses, the first sixteen will define the network number and the
+   remaining twelve will be the local address, as illustrated below.
+
+                          1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |1 1 1 1|            NETWORK            |     Local Address     |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                               Class E address
+
+   This approach has the advantage of allowing a more practical network
+   size than the Class C address space (4094 addresses as compared to
+   254) while reducing the probability that large amounts of numbers
+   would remain unused within the network.
+
+   The network number 255.255.240.0 is reserved so that it does not
+   conflict with the address reserved for IP broadcasts
+   (255.255.255.255).
+
+Revisions to IP Address Classes A and C.
+
+   The space for both Class A and C network numbers will be reduced.
+   The low half of these address ranges - network number fields starting
+   with "0" - will continue to be used in their present form, as
+   illustrated.
+
+                          1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |0 0|  NETWORK  |                 Local Address                 |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                          Revised Class A address
+
+
+
+
+
+Solensky, Kastenholz                                            [Page 2]
+
+INTERNET DRAFT                                              AUGUST, 1991
+
+
+                          1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |1 1 0 0|                NETWORK                | Local Address |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                          Revised Class C address
+
+   The upper half of these classes will be redesignated as classes F and
+   G.  These are illustrated below.
+
+                          1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |0 1|                         reserved                          |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                              Class F address
+
+                          1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |1 1 0 1|                        reserved                       |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                              Class G address
+
+   This reduces the number of networks in each class to 126 and 1048574
+   respectively.  It should be noted, however, the demand for numbers in
+   these network classes has not been nearly as great as that for Class
+   B.
+
+   The reason for this is that by reserving the upper half of these
+   address ranges, there will be sufficient numbering space available to
+   develop alternative network number classifications should the need
+   arise in the near future.  This may include the restoration of their
+   prior interpretations.
+
+   For the sake of completeness, Class B and D addresses are also
+   illustrated.  The use of Class D or multicast addresses is specified
+   in [5].
+
+                          1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |1 0|          NETWORK          |         Local Address         |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                              Class B address
+
+
+
+
+
+
+Solensky, Kastenholz                                            [Page 3]
+
+INTERNET DRAFT                                              AUGUST, 1991
+
+
+                          1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |1 1 1 0|                   multicast address                   |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                              Class D address
+
+Conclusions
+
+   It must be emphasized that this is intended only to be a work-around
+   to the problem.  It is by no means a "solution".  While it defines a
+   network classification that is four times the size of the original
+   Class B space, this will only survive only two years if current
+   growth rates continue.  By that time, it is expected that the
+   increased amount of network connectivity which has been exhibiting
+   similar growth rates [4,6] will cause the computational intensity of
+   keeping track of these routes to require an entirely different
+   routing and addressing architecture for the Internet such as the one
+   described in [5].
+
+References:
+
+   [1] "A New IP Routing and Addressing Architecture", J. Noel Chiappa.
+
+   [2] "Internet Numbers", S. Kirkpatrick, M. Stahl, M. Recker, RFC
+       1166, SRI International, July 1990.
+
+   [3] Internet Monthly Report, A. Westine [ed], June, 1991.
+
+   [4] "Continued Internet Growth", Frank Solensky, Proceedings of the
+       Eighteenth Internet Engineering Task Force, July 30-August 3,
+       1990.  pages 59-61.
+
+   [5] "Host Extentions for IP Multicasting", S. Deering, RFC 1112, SRI
+       International, August 1989.
+
+   [6] "Growth of the Internet", Mike St. Johns, Proceedings of the
+       Thirteenth Internet Engineering Task Force, April 11-14, 1989,
+       pages 244-248.
+
+
+
+
+
+
+
+
+
+
+
+
+Solensky, Kastenholz                                            [Page 4]
+
+INTERNET DRAFT                                              AUGUST, 1991
+
+
+Authors' Address:
+
+   Frank Solensky
+   Frank Kastenholz
+   Clearpoint Research Corp.
+   35 Parkwood Drive
+   Hopkinton, MA  01748
+
+   Phone: (508) 435-2000
+
+   Email: solensky@clearpoint.com,
+          kasten@clearpoint.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solensky, Kastenholz                                            [Page 5]
+

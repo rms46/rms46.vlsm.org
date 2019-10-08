@@ -1,0 +1,18 @@
+IAB -- 30 June 1999 -- IETF-Announce
+------------------------------------
+
+IANA Designation 
+
+The IAB notes that constructive discussions concerning
+the relationship between ICANN and the IETF are continuing.
+In order to avoid either preempting those discussions or 
+leaving a gap in coverage of the IANA function, the IAB has 
+decided to renew the designation of the current IANA team
+in Marina del Rey, California to execute the IANA function 
+for a further three months, until the end of Sepetember 1999.
+We anticipate a longer term outcome based on a Memorandum
+of Understanding to be concluded within this period.
+
+   Brian Carpenter
+   IAB Chair
+

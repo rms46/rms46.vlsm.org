@@ -1,0 +1,27 @@
+IAB-Chair -- 25 June 1998 -- IETF-Announce
+------------------------------------------
+
+        IAB statement on US Government White Paper
+
+The Internet Architecture Board (IAB) has reviewed the US Government
+White Paper at
+
+http://www.ntia.doc.gov/ntiahome/domainname/6_5_98dns.htm
+
+and welcomes it, especially the emphasis on self-governance 
+for the Internet. In our view it is rather urgent to build 
+international consensus around the new IANA corporation, and 
+the IAB will strive to do so as quickly as possible. In particular,
+the IAB believes that the new corporation must be built out 
+from the existing IANA function hosted by the Information Sciences
+Institute of the University of Southern California under the 
+direction of Jon Postel.
+
+The IAB is an oversight committee of the Internet Engineering Task
+Force (IETF). For further details, please see the Web site 
+http://www.iab.org/iab .
+
+  
+  Brian Carpenter (IAB Chair)             June 15, 1998
+
+

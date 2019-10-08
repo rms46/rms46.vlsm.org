@@ -1,0 +1,85 @@
+ISOC -- 8 January 1993 -- IETF
+------------------------------
+
+
+Volunteers sought for IAB and IESG Nominating Committee
+
+
+Folks,
+
+It is time to populate the nominating committee which will make
+recommendations to fill positions on the IAB and IESG for 1993-1994
+terms. Roughly half of the positions on both of these groups is
+up for consideration now and the other halves will be considered
+in Jan 1994. Normally the chair of the nominating committee would
+be sending you this message, but I have had some difficulty
+identifying a chairperson, so have elected to work on that in
+parallel with establishing the list of volunteers willing to 
+serve on this committee.
+
+There will be 7 members on the committee selected at random from
+a list of qualified volunteers. The committee will have a chair
+appointed by me and liaison representatives (one each from the
+IAB, IESG, IRSG and ISOC Board of Trustees). The liaison reps
+do not have votes but are there to be of assistance.
+
+The objective of this committee is to identify (recruit, if
+necessary, and it will be) qualified candidates to serve in
+the open IAB and IESG positions. Persons nominated to fulfill
+these roles must have demonstrable qualifications (previous
+IETF experience, WG experience, RFC publications, other 
+publications, other experience in Internet technology, 
+experience in data communications, for example). IESG candidates
+will be managing the affairs of a number of working groups
+and should have some demonstrated ability to manage. 
+
+The POISED working group, whose recommendation has led to this
+particular formula for filling these posts, expects and hopes
+that the nominations committee will identify appropriate and
+qualified candidates (one per open slot). If consensus on such
+nominations cannot be reached within the committee, multiple
+candidates for a given slot may be offered. If this happens,
+the IAB will make the determination for the IESG positions
+and the ISOC trustees for the IAB positions. The IAB has the
+authority not to concur in any particular nomination as does
+the ISOC Board. However, this would certainly be a serious
+matter, so I hope it doesn't happen. If it does, the committee
+would be asked to reconsider its recommendation.
+
+Since service on the IAB and the IESG entails a substantial
+time commitment, candidates should confirm that they can
+assure they can serve at least 25% time and that their 
+employers are in agreement with such a commitment.
+
+Candidates should be drawn internationally - the objective is
+to have the best qualified candidates from as broad a geographic
+base as possible.
+
+With regard to volunteers to serve on the nominations committee.
+they should have attended at least two IETF meetings (the
+secretariat should be able to verify this). If you volunteer,
+keep in mind that you will be working hard for the next month or
+so since the recommendation of the POISED working group is that
+the candidates be submitted to IAB or ISOC in time for ratification
+before the March 8-12 IETF meeting in Columbus, Ohio. This means
+the nominating process has to produce recommendations by the
+last week of February.
+
+If you are prepared to work hard on this and have the requisite
+qualifications, please send a SHORT bio to: vcerf@cnri.reston.va.us.
+I will accumulate these until January 15 at 5 PM EST at which point
+a random selection of 7 candidates will be made among those who
+meet the ietf attendance qualifications.
+
+I would ask that Steve Crocker, the POISED working group chair,
+make any comments he feels appropriate concerning the outline
+given above - particularly if I appear to have misunderstood 
+the procedure or charter recommended. Of course, anyone else can
+make comments, too - but consider making them privately to me
+if that's sufficient and save mailbox bandwidth for the ietf members.
+
+Sorry for the length, but this seemed the best way to kick this
+process off.
+
+vint
+

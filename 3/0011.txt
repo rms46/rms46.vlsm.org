@@ -1,0 +1,266 @@
+Crocker vs. IESG 4-5 April 1995 Source:
+ftp://ftp.ietf.org/ietf-online-proceedings/95apr/area.and.wg.reports/gen/iab/iab-minutes-95apr.txt
+----------------------------------------------------------------------------------------------------------------
+
+IAB Open Meeting
+
+Reported by Abel Weinrib/Intel
+
+An on-line copy of these and other IAB minutes are available from
+ftp.isi.edu:pub/IAB.
+
+
+First Session -- 4 April
+
+The following IAB members were present:
+
+
+     Brian Carpenter
+     Steve Crocker
+     Robert Elz
+     Elise Gerich
+     Phill Gross
+     Christian Huitema
+     Paul Mockapetris
+     Jon Postel
+     Yakov Rekhter
+     John Romkey
+     Dave Sincoskie
+     Abel Weinrib
+
+
+This meeting was devoted to an open investigation into Dave Crocker's
+appeal of activities, or lack of activities, by the IESG in relation to
+the work of the ONCRPC Working Group of the IETF. At the start,
+Christian Huitema described the scope of the inquiry -- in particular,
+that the technical merits of ONC/RPC or other technologies is not being
+addressed here.  He then described the format, which included 10-minute
+statements from the involved parties who had been invited to submit a
+written statement in advance followed by questions from IAB members.
+After all of the statements, comments were taken from the floor, limited
+to two minutes and without repeat speakers.  Christian also announced
+that the IAB would present its finding at the open IAB meeting scheduled
+for 5 April.
+
+Dave Crocker, the initiator of the appeal, went first.  See his slides
+included with these minutes.  He closed with three recommendations:
+
+
+  1. Open accountability of the IESG, including having the IESG held to
+     the same reporting and tracking discipline as working groups and
+     ready availability of the minutes of IESG meetings.
+
+  2. Procedure and rule problems should be addressed by allowing the
+     IETF community to grant exceptions by consensus.
+
+  3. Policy change:  the IESG should do more open consultation with the
+     IETF community.
+
+
+Questions from the IAB:
+Robert Elz:  How should the IESG consult the IETF, when should it have
+happened in this case, and what effect would it have had on RFC 1602?
+Answer:  When process hit a brick wall, the IESG should have come to the
+community via e-mail or an open meeting at IETF. The community should
+have fixed RFC 1602 on the fly -- it was a broken specification.
+
+Bob Hinden, who was employed by Sun till January of 1995 and was the
+negotiator on Sun's side until then, spoke next.  See his slides.  Bob
+suggested that we need to fix the specification (RFC 1602) regarding
+Intellectual Property procedures.  He also asked where was the relevant
+area director during the negotiations and why didn't ISOC provide
+liability insurance in a timely fashion?
+
+Questions from the IAB:
+Robert Elz:  What might the IESG have done to move this along?  Answer:
+The problem was a lack of ownership on the IESG side and too much
+handing around of the problem.  Also, whoever is doing the negotiation
+really needs to also have the signing authority.
+
+Christian Huitema:  Should Sun simply have ``abandoned'' it via a public
+statement?  Answer:  Perhaps; Sun has been giving this technology away
+for a long time.
+
+Steve Crocker:  It is open ended as to why there needs to be a signed
+agreement.  What did Sun need the agreement for?  Answer:  To meet
+procedures of RFC 1602, and also to transfer rights to the trademarks.
+
+Next, Steve Nahm from Sun who took over the negotiations from Bob Hinden
+was invited to speak.  He declined the opportunity to present a formal
+talk, and reported that the agreement is likely to be signed this week.
+
+Question from the IAB:
+Christian Huitema:  Is Sun trying to maintain Intellectual Property
+Rights (IPR)? Answer:  Sun retains the IPR but licenses to ISOC the
+exclusive right to make it an Internet standard, to evolve it.  Sun will
+license the technology for free once it gets to Proposed Standard
+status.
+
+Dave Sincoskie:  Would Sun have been happy to send a letter regarding
+IPR, rather than negotiating a contract with ISOC? Answer:  Sun would
+not like to totally give away the technology; it would prefer to license
+it.
+
+Dave Sincoskie:  Would there have been a way to do it without anyone
+from ISOC signing anything, but instead simply sending a letter to the
+standards body?  Answer:  Sun was following RFC 1602, but would
+definitely have looked at some other way of doing it.
+
+Steve Crocker:  The essence is where has the time gone.  How much time
+has been consumed by Sun, early on and more recently?  Answer:  The time
+gap between original suggestion and working group formation was Sun's
+and the Area Director's problem.  The working group first met at the
+March 1994 IETF and was done with their work in May 1994.  Since then,
+the time has been spent in trying to figure out what process to go
+through to complete it.
+
+Raj Srinivisian, who works for SunSoft and was chair of the ONCRPC
+Working Group declined to present a formal statement.  He commented that
+the ``problem word'' in the IPR section of RFC 1602 is ``warrant.''
+
+Question from the IAB:
+Brian Carpenter:  The question has been raised whether two competing
+technologies can both be IETF standards -- what does Raj think about
+this?  Answer:  There is a place for competing standards.  His hope is
+that there will be a boilerplate contract that can make the process
+fast.
+
+Vint Cerf, ISOC President, was not present.  His prepared statement was
+read aloud.
+
+The final presenter was Paul Mockapetris, IESG chair since March 1994.
+He observed that each legal iteration takes about three months, and
+outlined the time line for the ONCRPC effort.  See his slides.  He also
+observed that everyone is one ``rule exception'' away from happiness,
+but the question is who decides.
+
+Question from the IAB:
+Christian Huitema:  Do you want to be forced to abide by RFC 1602?  Does
+RFC 1602 document rules, guidelines or history?  Answer:  We need to
+make a template agreement that will be acceptable to both sides in the
+future.  The final Sun agreement might provide a model for this.  We
+also need ways to deal with patent owners.  Finally, we need someone
+chartered to do negotiations based on these.
+
+Elise Gerich:  Do we need some sort of documents other than
+Informational RFCs to describe binding rules?  Answer:  Too much corner
+cutting was a problem.
+
+Dave Sincoskie:  Would a unilateral statement be enough?  Answer:  Yes,
+as long as the working group can use its judgment and we have a form
+that sets precedent.
+
+Christian Huitema:  Was the existence of competing technologies slowing
+things down?  Answer:  No.  In fact, Paul was involved in no technical
+aspects of this matter.
+
+There followed a series of statements from the floor:
+
+Bill Noichian, editor of the original Informational RFCs about Sun RPC:
+At that time, Sun pretty much left it on the street corner.  We need Sun
+RPC on the standards track so can base other work on it.
+
+William Simpson listed the conclusions he would like to see:
+
+
+   o The IESG did not know when it was not making forward progress -- it
+     should have reported this to the community.
+
+   o The IESG is not getting the support, including legal advice, from
+     the Secretariat that it needs to be a decision making body.
+
+   o Bilateral agreements are not what we want.  We strongly prefer
+     technologies that do not have IPR constraints, so the owners should
+     unilaterally release the IPR rights before it becomes a Standard.
+
+
+Stev Knowles:
+The IESG made a bad decision when it decided it wanted to be a standards
+body, requiring things like insurance, lawyers, etc., -- and requiring
+rules.  The problem is that RFC 1602 was known to be broken a year ago,
+but no one stepped up to fix it.
+
+John Stewart:
+It is a bad model for the IETF to own anything, and for ISOC to be a
+holding company for this.  We need a clear definition of the rules.
+
+John Tavs, addressing Mobile IP and patent issues:
+``Fair and nondiscriminatory'' is difficult to describe.  Cookie cutter
+agreements are not going to be sufficient because different technologies
+have different values and every case is different.
+
+
+Second Session -- 5 April
+
+   o Review of this IAB's accomplishments.  (See slides)
+
+   o Reviving the IRTF. (See slides)
+
+   o Announce signing of ISO/SC6/JTC1 liaison agreement.
+     The liaison agreement has been signed.
+
+   o Findings on ONC inquiry.
+     The following statement was read:
+
+
+     The IAB has been asked to review and respond on the timeliness
+     of the procedures followed for forwarding RPC/XDR to the
+     standards track.
+
+     The IAB invited representatives of the IESG, SUN, and ISOC to
+     submit statements documenting their perception of what
+     transpired.  Then, during an open session at the IETF, the
+     representatives were invited to present their positions to the
+     IAB and the IETF membership.  In addition, the IETF membership
+     was invited to address this topic after the representatives had
+     presented their positions.
+
+     After reading the submissions and listening to the
+     presentations and comments made at the open meeting, it seems
+     like the fundamental question being asked is:
+
+     (To quote D. Crocker)
+
+     ``Does the process represent reasonable prudence or
+     institutional paralysis?''
+
+     The conclusion of the IAB, and apparently of all the speakers,
+     is that the defined process led to institutional paralysis.
+     The text of RFC 1602, which defines how the IETF/IESG should
+     operate, has a procedure for adopting external technologies
+     which is unimplementable.
+
+     The process defined in RFC 1602 has raised deeper issues which
+     warrant consideration.  RFC 1602 is intended to specify the
+     process to be followed by the IETF and related bodies.  On the
+     other hand, it was assumed that the procedures might require
+     modification over time.
+
+     The working group process is the appropriate place to propose
+     modifications to the procedures, with revisions appearing as
+     Internet-Drafts, undergoing the Last Call procedure, and
+     finally being adopted.  This is necessarily a slow process and
+     as such may result in an unnecessary obstruction of IETF
+     business.
+
+     There must be a mechanism by which the IESG can obtain
+     dispensation from the rules stated in RFC 1602 (or the next
+     version) when documented procedures introduce unnecessary
+     obstruction of business.
+
+     The IAB supports the recommendations of many of the speakers
+     who proposed revisions to RFC 1602 which would:
+
+      a) designate an owner of the intellectual property rights
+         process
+      b) specify a procedure to negotiate variations
+
+     The IAB also supports the recommendation to the POISED group,
+     that the working group review other standards' bodies'
+     procedures prior to revising those of the IETF.
+
+     Since the specific reason for this appeal appears to be
+     resolved, it is unnecessary for the IAB to request any action
+     by the IESG or any other bodies.
+
+

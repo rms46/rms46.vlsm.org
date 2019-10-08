@@ -1,0 +1,44 @@
+The RFC Editor -- 2 Feb 1990 -- TCP/IP list
+http://www-mice.cs.ucl.ac.uk/multimedia/misc/tcp_ip/9002.mm.www/0177.html
+-------------------------------------------------------------------------
+
+                     About RFCs in Postscript and Ascii
+
+Hi:
+
+RFCs have been traditionally published in ASCII text.
+
+The IAB has decided that RFCs may be published in PostScript. This
+decision is motivated by the desire to include diagrams, drawings, and
+such in RFCs. It also allows authors that normally work with document
+production tools that produce PostScript output to use their normal
+tools. PostScript documents (on paper, so far) are visually more
+appealing and have improved readability.
+
+PostScript was chosen for the fancy form of RFC publication over other
+possible systems (e.g., impress, interpress, oda) because of the
+perceived wide spread availability of PostScript capable printers.
+
+It has been pointed out that many RFC users read the documents online
+and use various text oriented tools (e.g., emacs, grep) to search
+them. Often, brief excerpts from RFCs are included in e-mail. These
+practices are not yet practical with PostScript files.
+
+Therefore, the IAB has also decided that when ever an RFC is published
+in PostScript a secondary version of that RFC is to be made available
+in ASCII text. This secondary version may be missing some elements of
+the primary version (e.g., diagrams), and be formatted differently.
+
+Work is in progress to provide the secondary versions of the
+PostScript RFCs already published.
+
+It has also been pointed out that PostScript is less standard that has
+been assumed and that several of the document production systems that
+claim to produce PostScript actually produce nonstandard results.
+
+It may be necessary to identify a set of document production systems
+authorized for use in production of PostScript RFCs, based on the
+reasonableness of the output files they generate.
+
+--jon. (The RFC Editor)
+

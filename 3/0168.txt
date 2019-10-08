@@ -1,0 +1,139 @@
+Tim Berners-Lee -- 5 April 1993 -- IETF-Announce
+------------------------------------------------
+
+                       World Wide Web (WWW) BOF Minutes
+                        Chaired by : Tim Berners-Lee
+                           (timbl@nxoc01.cern.ch)
+
+
+This is a summary of the discussion at the WWW BOF at the 26th IETF.
+
+     Status
+
+            Tim Berners-Lee mentioned a few recent
+            developments:
+
+                  + NCSA's "Mosaic" WWW client for  X11
+                    agreed by the meeting to be the best
+                    information access tool to date.  This
+                    is at an advanced beta state (version
+                    0.12).  FTP pickup rate for this product
+                    now excedes that for NCSA telnet.
+
+                  + A Windows client for MS-DOS machines
+                    exists, the equivalent of XMosaic but
+                    for PCs.  It is user configurable and
+                    looks good.  A problem with release is
+                    that a runtime licence is needed for the
+                    TCP stack used (Distinct).
+
+                  + The growth rate of access to the CERN
+                    server has continued to double every
+                    four months for the last two years with
+                    no sign of tapering off.
+
+     Man pages on the web
+
+          Steve Romig of Ohio State was congratulated on
+          his server server for unix manual pages.  This is
+          a good example of an automatic server (a perl
+          script in this case) which provides a powerful
+          data access.  Steve agreed to make his tools
+          available on the web.
+
+     Web Agenda
+
+          There was a discussion of things which should be
+          done to make it easier for the web to spread.
+          These include:
+
+                  + Better packaging of CERN software, in
+                    particular the server: simpler
+                    installation, irrelevant file hiding,
+                    etc.
+
+                  + Licencising of CERN software:  There was
+                    deep concern expressed that investment
+                    by others in WWW related projects would
+                    be jeopardized later by CERN's licencing
+                    conditions, in the way that the
+                    University of Minnesota have pulled the
+                    rug out from under the Gopher project.
+                    The General Public (Gnu-style) licence
+                    was not so acceptable as pure public
+                    domain code.  The meeting was quite
+                    intent that this be solved very quickly.
+
+                  + A better vt100 full-screen browser is
+                    needed for a large dial-up user base.
+
+          NCSA are likely to bring out a public domain
+          very simple to install server, as a partial
+          solution to the first two issues issues.
+
+          There was a proposal to create a small group  to
+          implement the vt100 client, which formed and  aims
+          to implement the product for public release.
+          vt100 client
+
+          [Note: Minutes after the BOF we received an
+          announcement of the "Lynx" 2.0 beta release by Lou
+          Montulli.  This may solve the problem or at least
+          provide a base.  Lynx is a vt100 full screen
+          hypertext WWW client.  Check it out by telnetting
+          to ukanaix.cc.ukans.edu and logging in as www.
+          Source and binaries are available by anon FTP from
+          acs220.cc.ukans.edu]
+
+     Standards
+
+          The three standards important for WWW at this
+          stage are:
+
+          The Universal Resource Locators spec defines the
+          addressing syntax used by WWW.  This is to be
+          released immediately as an Internet Draft for the
+          standards track.
+
+          The Hypertext Markup Language (HTML) specification defines
+          the transport format for menus, hypertext and general online
+          documentation.  This must be specified at RFC standards
+          track level in order to be submitted as a MIME content-
+          type.  This in turn is necessary as HTTP uses MIME
+          format for returned multimedia messages, and we
+          want it to stay MIME-compliant.  HTML will
+          therefore be released as an Internet Draft as soon
+          as possible.
+
+          HTTP is the access protocol used by WWW servers.
+          An extended (back-compatible) version is in use
+          in the 2.0 and above CERN software.  This is quite
+          open to extension and so any comment on the
+          protocol should be discussed on the www-talk list.
+
+          It was agreed to put these documents through the
+          IIIR working group whose chairman, Chris Weider, has
+          agreed to oversee their passage.  The BOF will
+          not, therefore, meet again or propose a WWW working
+          group.
+
+     Mailing lists and newsgroup
+
+            To join the technical mailing list, send a mail
+            message to the address
+
+                    www-talk-request@info.cern.ch
+
+          for human attention.  There is a newsgroup
+          currently being formed.  Its name is
+          comp.infosystems.www.  To vote on its creation,
+          please mail either
+
+                    www-yes@msen.com
+            or
+                    www-no@msen.com
+
+          depending whether you wish the group to be
+          formed or not.
+
+

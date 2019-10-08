@@ -1,0 +1,262 @@
+Allison Mankin -- Wed, 27 April 1994 -- B-I
+===========================================
+
+IPng Update
+
+
+This is a quick update on the status of the IETF IPng effort.
+
+Since the creation of the IPng area late last year we have been focused on
+two primary tasks; developing a reasonable estimate of the projected
+lifetime for the IPv4 address space and producing a draft requirements
+document.
+
+The IPv4 Address Expectations Working Group (ALE), chaired by Frank
+Solensky and Tony Li reported during a session held at the IETF meeting in
+Seattle that their current estimate was that the IPv4 address supply would
+be exhausted in the year 2008 ( plus or minus 3 years), assuming no changes
+in the basic rate of growth in the demand for addresses.  Clearly, if there
+were a request for a very large block (many millions) of addresses, it
+would affect this estimate.
+
+The Transition and Coexistence Including Testing (TACIT) working group,
+chaired by Atul Bansal and Geoff Huston had its first meeting in Seattle.
+This group will focus on the long term transition and coexistence issues
+and will define recommendations for testing IPng specifications and
+implementations.
+
+Of course, the working groups for each of the IPng candidates have been
+busy and did meet in Seattle to further refine the details of their
+proposals.
+
+The IPng Requirements BOF, chaired by Frank Kastenholz and Jon Crowcroft,
+has produced a draft of an IPng requirements document.  The current draft
+is a refinement of an initial document by Frank Kastenholz and Craig
+Partridge.  It reflects input from a number of the white papers that the
+IPng area solicited with RFC1550 and comments from the IPng directorate. 
+
+The requirements draft is ready for public comment.  It has been published
+as an internet-draft (draft-kastenholz-ipng-criteria-01.txt).  We need
+as many comments as possible by May 10.  All interested
+persons (that should be just about all reading this message)
+should take a look at this document and, if you have comments or
+suggestions, send them to the big-internet list. (Send a note to
+big-internet-request@munnari.oz.au to subscribe.)  You should also take a
+look at the RFC1550 white papers, they have been published as internet
+drafts.  Look for any internet draft with "ipng" in its filename.  All of
+these documents are available at you favorite internet-drafts site and from
+hsdndev.harvard.edu in pub/ipng/wp for anonymous ftp.  Hsdndev also allows
+gopher access.
+
+The IPng directorate mailing list archives and directorate teleconference
+minutes are also available from hsdndev.
+
+We urge you to take a look at these documents and records.  Let us know on
+the big-internet list or in private mail what you think.  This is an effort
+that will effect us all and anyone who can help make the result better or
+the transition easier is encouraged to participate.
+
+Appended to this update is the area status report from the Seattle IETF
+meeting.
+
+Scott & Allison
+
+
+
+
+                             IETF 29
+                  IP: Next Generation Area Report
+                        Seattle, Washington
+                   Scott Bradner <sob@harvard.edu>
+                Allison Mankin <mankin@cmf.nrl.navy.mil>
+
+
+Meetings of 4 IP: Next Generation working group, 3 BOFs, and an
+open IPng directorate meeting  were held during the 29th IETF meeting 
+in Seattle, Washington.
+
+
+Address Extension by IP Option Utilisation BOF (AEIOU) 
+
+        Reported by Peter Ford
+
+                Chair Brian Carpenter <brian@dxcoms.cern.ch>
+
+Brian Carpenter presented the aeiou proposal (draft-carpenter-aeiou-00.txt) 
+and there was a lively discussion. Most people felt that aeiou would work
+and could, with effort, be developed into a viable stop-gap solution. 
+There was one significant technical issue, the impact of option analysis 
+on local router performance. The main debate was whether the savings in 
+work and time to implement and deploy aeiou compared to a full IPng 
+solution were significant and worthwhile. There was a range of views on
+this. The conclusion was not to propose an aeiou working group at this 
+time, but to document the proposal (possibly as an Informational RFC) 
+to keep it in reserve for future eventualities. Interested people
+should contact brian@dxcoms.cern.ch.
+
+
+Address Lifetime Expectations WG (ALE)
+
+        Reported by Tony Li
+
+        Chairs: Tony Li <tli@cisco.com>, Frank Solensky  <solensky@ftp.com>
+
+
+The ALE WG met to discuss its projections and future mechanisms for
+improving the lifetime of the address space.  Our current projections
+were presented and subsequent discussion ensued.  As a result, ALE
+will also begin to track routing table sizes.  We have volunteers to
+collect data for us.  We discussed address efficiency and have a
+volunteer to produce a document on improving address space efficiency.
+RFC 1597 was presented, and was thought to be very helpful.  We
+discussed the timetable for IPng, but were unable to come to any
+reasonable conclusions due to uncertainty about the deployment of CIDR
+and the explosion of the routing tables.
+
+
+
+Common Architecture for Next-Generation IP WG (CATNIP)
+
+        Reported by Robert Ullmann
+
+        Chair (pro tem) Robert Ullmann <robert_ullmann@lotus.com>
+
+WG meeting was chaired pro-tem by Robert Ullmann, as Vladimir
+Sukonnik was unable to attend. Robert did a small soapbox on
+the proper scope of the IPng proposals. This was followed by
+discussion of a number of minor technical issues identified 
+recently on the CATNIP list. Several IPX related issues were
+left uncertain. The issue of TUBA TCP and UDP checksums to be
+discussed with the TUBA WG. DNS issues to be resolved in a near
+future revision of the Collela/Manning draft which will be used
+by both TUBA and CATNIP. Fragment translation was discussed, with
+the differring semantics between CLNP, IPv4, and SIPP making it
+less useful than would be expected.
+
+
+IPNG Requirements WG (NGREQS)
+
+        Reported by Frank Kastenholz
+
+        Chairs Jon Crowcroft <J.Crowcroft@cs.ucl.ac.uk>,
+                Frank Kastenholz <kasten@Research.Ftp.Com>
+
+The working group had a number of presentations from members of the
+community who are experts in particular technical areas. These included
+Mike StJohns on Security, Greg Minshall on Mobility, Dave Clark on Network
+Services, Lixia Zhang on RSVP, Mark Handly on AVT, Peter Ford on
+Backbones, and John Curran on Market Needs. The intent was to give the
+group background information on these particular areas and their specific
+needs -- similar to the White Papers solicited by the Directorate. 
+
+The working group then proceeded into a lively and spirited debate on the
+various criteria. The community suggested many significant improvements
+which are still being digested by the chairs and authors. One important
+improvement that seemed to have great support from the community was that
+the requirements should be strengthened amd made firmer -- fewer "should
+allows" and the like and more "musts". 
+
+
+
+SIPP WG
+
+        Reported by Bob Hinden
+
+                Chair Bob Hinden <Bob.Hinden@eng.sun.com>
+
+March 1994 IETF
+
+The SIPP working group held a implementors meeting on Sunday afternoon
+and two working group sessions on Wednesday and Thursday.
+Bob Hinden presented a summary of recent working group activities.  This
+included that the SIPP charter had been approved, the SIPP Whitepaper had
+been completed on time, a summary of the SIPP specifications which had
+been completed since the last IETF meeting, and the SIPP specifications
+which were submitted to the IPng area directors for publication as
+experimental RFC's.  Also presented was the announcement that Mosaic
+pages had been created for the SIPP working group.  These can be found at
+http://town.hall.org
+
+Jim Bound presented a summary of the implementors meeting.  A number of
+SIPP implementors had attended and several refinements had been made to
+some of the SIPP options based on implementation experience.  These
+changes will be documented in an update to the SIPP specification.
+Steve Deering presented an overview of the changes from last fall's SIP
+spec to the current SIPP specification.  This included details on the
+layout of the Flow ID.  Ramesh Govindan and Sue Thompson presented the 
+current approach for dealing with auto configuration and discovery.  This 
+resolved the issues that were outstanding with the current drafts.  New 
+specifications will be published.
+
+Bob Gilligan presented an overview of IPAE.  This resulted in a
+discussion of some of the details of IPAE and uncovered a bug.  There was
+general agreement that IPAE needs to be simplified.  This will be worked
+on and the specification will be updated.
+
+
+The Transition and Coexistence including Testing (TACIT) BOF
+
+        Reported by Geoff Huston
+
+        Chairs: Geoff Huston <G.Huston@aarnet.edu.au>
+                Atul Bansal  <bansal@lkg.dec.com>
+
+
+The BOF discussed the issues relating to transition and coexistence 
+in general terms as they relate to the constituency of the Internet, and 
+also discussed the specific issues relating to potential IPng transition 
+environments. The view was expressed that the characteristics and potential 
+timeframe of transition, coexistence and testing processes will be greatly 
+influenced through the interplay of market forces within the Internet, and 
+that any IPng transition plan should recognise these motivations and provide 
+ample levels opportunity identification to encourage the broad Internet 
+constituency to subscribe to the transition process (and therefore undertake 
+to meet the associated deployment costs of such transition). 
+
+The group decided to recommend to the IPNG Area Directoriate to form a 
+Working Group to explore the generic issues of the IPng transition process 
+and gather experience from previous technology transition that have occured 
+both within the Internet and within related networking technologies. A draft 
+charter was reviewed, with the view that this Working Group work would 
+contribute to the IETF IPng process by identifying these issues and reviewing 
+IPng transition plans at the appropriate phase of the IPng process.
+
+
+TCP and UDP with Big Addresses (TUBA) WG
+
+        Reported by Peter Ford
+
+        Chairs Peter Ford <peter@goshawk.lanl.gov>
+                Mark Knopper <mak@aads.com>
+
+Dave Marlow presented an update on the status of CLNP multicast. His 
+Internet Draft is intended to be multicast routing protocol independent, 
+and was presented from the ES viewpoint. Discussion ensued as to whether 
+the complexity of the network-to-data-link address mapping protocol was 
+worthwhile. The "extra hop" problem is widely viewed as being a 
+show-stopper and  Dave presented an approach to address this problem and will 
+be updating the ID to reflect this.
+
+Lyman Chapin updated the group on the electronic availability of the
+pertinent ISO standards.  Lyman is now comfortable
+posting these documents as I-Ds and the network layer protocols (CLNP, 
+IS-IS, ES-IS and IDRP) will all be published by the end of the Seattle
+IETF.  
+
+Dino Farinacci gave a short presentation on the status of Protocol
+Independent Multicasting (PIM) in the IDMR working group.  He noted there
+would be little difficulty in using PIM for multicast routing of CLNP.
+
+Ross Callon presented his work on flows in CLNP.  In this scheme the
+source NSEL is used to demultiplex flows between a single host pair.
+The size of this field (eight bits) was a source of controversy and there 
+was concern that using the Source NSEL might cause to non-TUBA CLNP 
+entitities.
+
+Dave Piscitello gave an overview of the current TUBA transition document.
+
+Bob Brenner from GTE gave an overview of Cellular Packet Data Network
+(CDPD).  CDPD is using CLNP as an underlying protocol, but it can support
+mobile hosts that are either CLNP or IP speakers.
+
+

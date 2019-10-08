@@ -1,0 +1,1255 @@
+Jill.Foster -- 5 January 1993 
+http://www.w3.org/Conferences/IETF25/JillFosterTripReport.html
+--------------------------------------------------------------
+
+                        IETF Trip Report
+
+ This report is about 1000 lines long - but is structured to allow you
+ to skip over bits not of interest to you.  I started to edit out bits
+ that weren't "NIR" specific - but found bits in discussions of NISI
+ etc that were of potential interest to some of you.  You'll probably
+ want to skip most of the Plenary stuff.
+
+ Best wishes for a constructive year in NIR!
+
+ -- Jill
+
+ IETF - Washington: Nov 16-20, 1992
+ ==================================
+
+ Trip Report:
+ Jill Foster - Newcastle University, UK
+ Chairman: RARE Information Services and User Support Working Group
+
+
+ Introduction
+ ============
+
+ The 25th IETF (Internet Engineering Task Force) Meeting took place in
+ Washington DC from 16th-20th November and was hosted by SPRINT.
+ Silver coloured "25th IETF" buttons were on sale to mark the occasion.
+ The attendance was just under 600, which was down slightly on the
+ Boston IETF.
+
+ My main reasons for attending (thanks to funding from RARE) were to:
+
+ o    represent RARE Information Services and User Support Working
+      Group (which I chair)
+      [RARE is the Association of European Research Networks]
+
+ o    join in the User Services and associated WG sessions.
+
+ o    co-chair a WG session on networked information retrieval tools.
+
+ o    co-chair a BOF session on network training materials.
+
+ The following informal report is in note form and deals mainly with
+ the areas of User Support and Networked Information Retrieval,
+ although reports of the plenary sessions are also included.  Whilst
+ it is as accurate as I can make it, it is naturally a personal account
+ and may be inaccurate due to lack of background information or
+ misinterpretation of what I heard.  Corrections of fact are welcome,
+ but any discussion of items contained here would be best directed to
+ the appropriate mailing lists.  Minutes of individual sessions are
+ also available via anonymous ftp from nri.reston.va.us
+
+ This report will be stored on the UK Mailbase Server.  To retrieve a
+ copy, email to Mailbase@mailbase.ac.uk with the following command in
+ the body of the message:
+
+      send wg-isus ietf.11.92
+
+ Alternatively use anonymous ftp to:  mailbase.ac.uk
+
+ file:  pub/wg-isus/ietf.11.92
+
+ Note: in general I have not expanded acronyms as those readers
+ involved in a particular topic should know them whilst those who
+ aren't familiar with the acronyms should still be able to get a
+ reasonable overview of the topic.
+
+ All addresses quoted in the report are in internet (rather than UK)
+ order.
+
+ Each section has a double underlined heading - to enable you to skip
+ sections not of interest.
+
+
+ Plenary
+ =======
+
+ The plenary sessions and some of the working group (WG) sessions were
+ broadcast (audio and video) over the network.  My impression was that
+ this did not go as well as it had done in Boston.  There seemed to be
+ more problems - but this was almost certainly because they were being
+ more ambitious.  There were many more sites involved and they were
+ attempting to broadcast two parallel sessions simultaneously.
+
+ Phil Gross welcomed attendees to the IETF and spoke about the problems
+ we're facing with regard to Internet Routing and Addressing.  This was
+ the major technical issue at this IETF.
+
+ These problems are:
+
+ o    scaling issues
+
+ o    Class B exhaustion
+
+ o    Routing table growth
+
+ o    Overall IP address exhaustion.
+
+ The IESG (Internet Engineering Steering Group) had written an RFC
+ (Request For Comment) giving milestones for addressing the various
+ issues.  The goal for the November IETF was to narrow the field of
+ IPv7 candidates if possible; to establish firm criteria; to give
+ specific feedback on each candidate based on the selection criteria.
+
+ Milestones:
+
+      By December 15:
+           Publish firm selection criteria as RFC and post constructive
+           feedback on candidates.
+
+      February 12:
+           At least two multiple interoperable implementations.
+
+      February 26:
+           Second draft of the protocol report (from each candidate)
+           indicating how each of these meets selection criteria.
+
+ There were technical presentations on the various contenders.
+
+ PIP (P Internet Protocol) using EIP (Extended Internet Protocol)
+ ----------------------------------------------------------------
+ - by Paul Tsuchiya  (Bellcore).
+
+      Paul felt that PIP was not mature enough to be chosen at this
+      time.  It really needed a year of design/implementation and
+      testing.  The question was "was it worth waiting for?".  It is a
+      very general protocol that copes with all known
+      routing/addressing paradigms and is relatively efficient - and
+      more importantly - easy to evolve.  Various sections of the
+      design had been been specified and there were already some simple
+      implementations of PIP hosts and routers.
+
+      PIP has been linked with EIPIP (see above).  The PIP header would
+      be placed in what looks like an IP option field.
+
+ TUBA
+ ----
+ Peter Ford (LANL) and Mark Knopper (MERIT).
+
+ TCP/UDP over CLNP addressed network.
+
+      The basic problem is that we're running out of IP address space.
+      We need to allow for >10**7 networks and >2**32 end systems.  We
+      need more effective management of the IP address space to expand
+      the lifetime.  (The CIDR addressing plans are already going into
+      effect.) TUBA is TCP and UDP with >32 bit addresses.  This would
+      allow a hierarchical "sparsely populated" address space.
+
+      The TUBA transition will focus on the network layer.  TCP and UDP
+      will be made to work over CLNP network layer.  This will allow
+      the TUBA work to build on the existing CLNP experience.
+
+ SIP
+ ---
+ Simple Internet Protocol - Steve Deering (Xerox Parc)
+
+      This is a new version of IP building on the lessons learned from
+      IPv4.  SIP uses 64 bit hierarchical addresses.  It is more
+      efficient than IPv4 in that it is only examined by identified
+      routers.
+
+ IP Address Encapsulation: Bob Hinden
+ ------------------------------------
+
+      IPAE is intended as a transition mechanism for the new Internet
+      Protocol.  They have been working with the SIP WG.  Unlike with
+      TUBA - the host software does not need changing.
+
+ These issues are also discussed in Nov 1992 Vol 6 No.  11 of
+ "Connexions - The Interoperability Report" (ISSN 0894-5926)
+ (Email contact: connexions@interop.com)
+
+ NISI - Networked Information Services Infrastructure WG
+ =======================================================
+
+ Chair: Pat Smith (Merit)
+
+ This  group  is concerned with co-ordinating NICs (network information
+ centres) and improving the service they provide.
+
+ NIC Profile:
+
+      In  order  to  aid  NICs  talking  to  each other, a NIC Profile
+      template had been produced.  Chris Weider at Merit had set  up  a
+      server,  which  would  accept completed NIC Profile Templates and
+      put them into X.500.
+
+      To  find  out  how  to  submit  a NIC Profile, NIC co-ordinators
+      should email to: X500test@merit.edu
+                       Subject: help
+
+      They  will  receive  the  template  and  instructions  on  how to
+      complete it.  The server auto-adds completed templates emailed to
+      it.
+
+      The  Providers would be responsible for updating the information.
+      Several volunteers agreed to look at up-date  mechanisms  and  to
+      decide on the intended audiences.
+
+ NETHELP:
+
+      The idea is that a user will type "nethelp" and be presented with
+      information on how to use the network.  This would initially
+      simply be a pointer to local contacts and more information.
+
+      I  again  expressed  my  reservations.   (Apart  from the obvious
+      problem that the user  has  to  know  to  type  "nethelp"  -  not
+      terribly   intuitive.)  The  group  seemed  to  assume  that  the
+      technical people would be able to come up with a  solution  -  so
+      long  as  NISI  could  specify  what it wanted from nethelp.  The
+      vague idea was that maybe this  would  be  some  software  to  be
+      installed  on every PC or Mac etc (a daunting task in itself).  I
+      felt  we  should  be  bringing  the  technical  people  into  the
+      discussion and to try something.  Ed Krol volunteered to knock up
+      a  "straw  person".   This  seemed  a  sensible course of action,
+      especially as NISI has been discussing nethelp for  well  over  a
+      year.
+
+ Mailing list:   nisi@merit.edu
+
+ To join, mail to nisi-request@merit.edu
+
+ Also:
+
+ Mailing list:   nic-forum@merit.edu
+
+ To join, mail to nic-forum-request@merit.edu
+
+ The  latter  list is little used.  Pat suggested it would be useful to
+ get all NIC personnel on to this list.
+
+ IAFA:  Internet Anonymous File Archive WG
+ =========================================
+
+ Chairs:  Peter Deutsch and Alan Emtage (BUNYIP)
+
+ This  was  probably the last meeting of this Working Group.  The draft
+ version of the IAFA document(s):
+
+ Part I: A Guide to FTP site administration
+
+ Part II: Publishing Information on the Internet with anonymous ftp
+
+ had been discussed extensively on the IAFA mailing list.  It was
+ agreed that the document should be put forward as a draft RFC.  The
+ second of these documents suggests additional information that should
+ be made available on files (etc) in an archive (and about the archive
+ itself).  The aim is to provide more information about the purpose and
+ content of files in an archive (other than simply the often
+ meaningless file name) for use by indexing tools such as archie.
+
+ It was agreed that in parallel several volunteers should look at
+ "iafa-ising" their file archives.  It will only be when we try to put
+ these documents into practice that we will see where (if any) the
+ problems are.  The next problem will then be convincing new archive
+ sites to provide the additional IAFA information about their archive
+ and individual files - and to add this information for the vast
+ existing base of file archives.
+
+ Simon  Spero  volunteered to add IAFA information to the SUN site file
+ archive (sunsite.unc.edu telnet to port 43).
+
+ Someone said they felt that the first IAFA document was "guidance
+ free" and suggested it needed to outline some "good things to do".
+ These would be recommendations for good practice rather than
+ requirements.  Ellen Hoffman (Merit) said that when they put up their
+ anonymous ftp archive they looked around at several others and found
+ that some were definitely easier to navigate around than others.  As a
+ result of this they have a check list of good points for archives
+ which they will make available.
+
+ April Marine (who was unable to attend due to lack of funding) had
+ written an introductory document to anonymous ftp.  This had been
+ discussed on the mailing list and was well received.  Other
+ suggestions for improvements were made at the meeting.
+
+ The IAFA document is available from:
+ archives.cc.mcgill.ca          in the directory pub/iafa
+
+ Mailing list
+               iafa@cc.mcgill.ca
+ to join, mail to iafa-request@cc.mcgill.ca
+
+ POISED (Plenary)
+ ================
+
+ POISED = Process Organisation for Internet Standards and Developments
+ Steve  Crocker
+
+ This group was set up as a result of the Boston "unpleasantness" and
+ to answer the questions: who is in charge?  who has the right to
+ determine policy and make decisions?  etc.  According to Steve, it had
+ resulted from the:
+
+ o    IPv7 debate in particular
+ o    Poised WG
+ o    Real problems
+ o    Scaling
+ o    Delay in getting things done
+ o    Communication difficulties
+ o    Surprise
+ o    Focus
+ o    Burn out
+
+ Requests to join the mailing list for associated discussion to:
+
+      poised-request@cnri.reston.va.us
+
+ The WG will produce an internet draft.
+
+ There were to be three meetings - this plenary, a working group
+ session and the plenary on the last evening of the IETF.  A
+ presentation to the Internet Society trustees was planned for December
+ 10th.
+
+ Various proposals had been put forward.  Maintaining the status quo
+ was an option.  POISED Working Group was suggesting that a
+ redefinition and tightening up of the existing structure was now
+ needed.  The IETF had grown to the point where a certain amount of
+ rethinking of the structure and procedures was required.
+
+ The draft proposal was for an Internet Technical Task Force (ITTF)
+ which integrated the IETF, IRTF and IESG back into one community.
+
+ The Working Groups would continue to remain the main focus and would
+ act as open forums.  There would be different types of Working Group:
+ engineering, research and architectural.  Working Groups would contain
+ self selecting design teams - which would go away and come up with
+ proposals and bring them back to the main group.  This is recognising
+ what happens now in practice.  The ITTF leadership would be provided
+ by a Technical Board (consisting of area chairs, ITTF Chair and
+ architects and performing the same role as the current IAB and IESG)
+ an Editor, Process Board and The Internet Society.  Procedures for
+ selection of the officials and their acountability needed to be drawn
+ up and there needed to be mechanisms for removing members if
+ necessary.
+
+ The  full  details  are  in the POISED draft RFC.  This needed further
+ discussion and if there was concensus in the IETF on it  a  transition
+ period would see the selection of the various officials.
+
+ User Services Working Group      Chair: Joyce Reynolds
+ ===========================
+
+ US-WG is the umbrella WG for the various user services area WGs.  This
+ is the group which spawns new WGs and coordinates the work in this
+ area.
+
+ Mailing list for this group:   us-wg@nnsc.nsf.net
+ To join, mail to:           us-wg-request@nnsc.nsf.net
+
+ As an aside:
+
+      two new books written by IETF us-wg people had just hit the book
+      sellers and were very well received.  Both are in a very readable
+      format.
+
+      Ed Krol:
+
+           The Whole Internet User Guide and Catalog
+
+      Tracey La Quey Parker:
+
+           The Internet Companion
+
+      the latter has a foreword by Al Gore.
+
+ Newcomers Guide
+ ---------------
+
+      According to Steve Coya (IETF Secretariat), approximately 40% of
+      attendees at IETF meetings are first-timers.  This means that for
+      a significant proportion, getting up to speed is a vital concern.
+      For the first time ever there was a Newcomer's orientation
+      session on the Sunday afternoon before the IETF.  There had been
+      much discussion amongst "old" IETF-ers as to what should be
+      included and what needed documenting.  Gary Malkin had written a
+      draft FYI RFC for newcomers.  (Internet draft:
+      draft-malkin-newcomers-guide-00.txt) This document "Tao of the
+      IETF" was seen to be very useful - and was distributed at the
+      newcomers session.  I attended the session out of interest (along
+      with about 100 others).  The session was felt to be of use - but
+      was a little pedantic in parts.  I felt there was too much
+      emphasis on how to register for an IETF (which most attendees had
+      managed to do!) and not enough on what the various Working Groups
+      were about.
+
+      This was borne out by the comments of the first-timers at the
+      US-WG meeting.  It was suggested that the titles of Working
+      Groups were often not clear enough and that there should be short
+      descriptions of each group and what files were available and
+      where.  This information would be best circulated prior to the
+      meeting to give people a chance to get up to speed.  Perhaps a
+      pointer to "where to get information" could be given in the IETF
+      meeting announcement.
+
+      Steve Coya said they were considering doing a survey of the new
+      attendees and this would ask them what their expectations were,
+      etc.  Comments on the newcomers session should be sent to:
+
+        ietf-info@cnri.reston.va.us
+
+      US-WG also suggested that a guide for new working group chairs
+      would be useful.
+
+ Internet "Quick and Dirty" Document: Peter Deutsch
+ --------------------------------------------------
+
+      Peter had posted a copy of his revised document to the us-wg on
+      the Saturday evening before the IETF.  Most people had not had a
+      chance to read it.  Suggested title: "A user's catalogue of
+      internet tools".  It was currently 8 pages long.  It should be
+      reduced to about 2 pages and should contain an
+      overview/introduction.
+
+      It would be split into:
+
+      Taxonomy:
+
+        - The basics (telnet, email, ftp)
+
+        - Mailing lists and Bulletin Boards (Listserv, Mailbase, usenet)
+
+        - Interactive Information Delivery (gopher and World Wide Web)
+
+        - Directory Services (WHOIS, X.500)
+
+        - Indexing Services (archie, WAIS, online-libraries)
+
+      Where to go next?
+
+        - References to other FYIs and books
+
+      The draft document may be retrieved via anonymous ftp from:
+
+      archives.cc.mcgill.ca
+
+      file: pub/uswg/quickanddirty.doc
+
+      Comments to:
+
+      Mailing list
+
+           us-wg@nnsc.nsf.net
+
+      and to join, mail to:    us-wg-request@nnsc.nsf.net
+
+ RIPE Report:  Joyce Reynolds
+ ----------------------------
+
+      Joyce mentioned that she'd attended the last RIPE meeting
+      (Association of European IP Networks).  She said that the Eastern
+      Europeans in particular are very keen to get all they can in the
+      way of RFCs and Internet Documentation.  Some of the RFCs (in
+      particular the FYIs) had been translated into Czechoslovakian.
+
+ Eastern Europe
+ --------------
+
+      Alan Emtage (bajan@bunyip.com) talked about the initiative to
+      send unwanted old editions of computing and networking text books
+      to eastern Europe.  The Internet Society is acting as a
+      repository for donations.  Alan suggested that individual sites
+      might like to act as network "buddies" to eastern European or 3rd
+      World sites which are just embarking on networking.
+
+ RARE ISUS WG Report: Jill Foster
+ --------------------------------
+
+      The RARE Information Services and User Support WG met in Pisa at
+      the beginning of November, immediately preceding the European
+      Network Services Conference.  An "electronic meeting" had also
+      been held in September.  I had previously circulated a report to
+      the us-wg mailing list prior to the IETF.  The main points
+      covered were:
+
+      o    formation of joint IETF/RARE/CNI WG on networked information
+           retrieval (see later in this report).
+           [CNI - Coalition for Networked Information]
+
+      o    co-ordination and registration of European gophers.
+
+      o    formation of joint IETF/RARE network training materials
+           group.
+
+      o    starting to get librarians involved (very important -
+           particularly in NIR work).
+
+      o    need for a 'Total solution user information' - access to all
+           network services via one GUI as the ultimate goal.
+
+      o    update (Nov) of RARE Technical Report 1 on information
+           services and user support in RARE community
+           [available via anonymous ftp from: mailbase.ac.uk
+                         file: pub/rare-wg3-usis/rtr-usis-92    ]
+
+      There is a need for collaboration and co-operation on user
+      support in Europe and the world.  Users can roam the global
+      network so we have
+
+        "Le 'user' sans frontieres"
+
+      What we need now is
+
+        "Le 'user support' sans frontieres"
+
+      i.e.  co-operation on a global scale without worrying about
+      whether we're members of RIPE, EARN, RARE, IETF, etc.
+
+      Mailing list of ISUS:  wg-isus@rare.nl
+
+      To join, mail to:  mailserver@rare.nl
+
+      the command (in the text of the message):
+
+      subscribe  wg-isus  firstname lastname
+
+      (substituting your own first and last name)
+
+ FYI 4 and 7 (FAQ): Gary Malkin
+ ------------------------------
+
+      FYI  7  "FYI  on Questions and Answers: Answers to Commonly Asked
+      'Experienced Internet User' Questions", (Also RFC 1207), February
+      1991.
+
+      FYI  4  "FYI  on Questions and Answers: Answers to Commonly Asked
+      'New Internet User' Questions", (Also RFC 1325), May 1992.
+
+      Gary wanted to update the new user and experienced user
+      Frequently Asked Questions (FAQ) RFCs.  He suggested "creating"
+      questions for FYI 4.
+
+      FIY 7 contains actual questions.
+
+      FYI 4 is RFC 1177, 1206, 1325:  The latest version being RFC 1325
+      - May 1992.
+
+      Now need to look at experienced user FAQ (FYI 7).  He wanted
+      volunteers to monitor lists and mail in FAQs to quail discussion
+      list.
+      To join the list, mail to:  QUAIL-request@XYLOGICS.COM
+
+      It was suggested that people who had to answer user questions
+      should send in their own "top 5" frequently asked questions.
+
+ Document: What is the Internet?  Ellen Hoffman
+ ----------------------------------------------
+
+      Ed Krol had had permission from his publisher to put this
+      together from his book.  The draft document was circulated for
+      comment.
+
+ RFC 1359/FYI16: Connecting to the Internet
+ ------------------------------------------
+
+      FYI  16 "Connecting to the Internet: What Connecting Institutions
+      Should Anticipate", (Also RFC 1359), August 1992.
+
+      This RFC explains what is required to get connected to the
+      Internet and whom to contact.  Joyce felt it needed to be
+      expanded and should move away from being US centric.  Pat Smith
+      said that the RFC is a good start but that it currently aims at
+      the university community and the Internet is now broader than
+      this.  The RFC needs separate sections for universities, schools,
+      individuals at home etc.  European input from RIPE and RARE was
+      requested.
+
+ User Document 2: Ellen Hoffman and Lenore Jackson
+ =================================================
+
+ FYI on Introducing the Internet
+ -------------------------------
+
+      This was a short bibliography for a complete newcomer on where to
+      get more information on getting connected, etc.  The draft will
+      be revised following comments and then recirculated on the user
+      doc mailing list.
+
+ Comments on Documentation
+ -------------------------
+
+      In the past US-WG has kept away from providing end user
+      documentation.  Ed Krol said we should stop writing technical
+      documents supposedly for end users.  It was suggested (by someone
+      else) that US-WG should not in fact be writing documents for end
+      users - we should leave that to those in the community who write
+      professionally.
+
+      The fact is that over the last year we have seen documents being
+      produced that are being used by real users.  They were all they
+      had - and so better than nothing.  There are some good books now
+      written - but it still remains a worthwhile effort to write short
+      end-user oriented jargon-free documents that are freely available
+      - and which could be taken and incorporated into a site's set of
+      end user documents.  I personally feel that us-wg should not
+      spend effort in typesetting documentation (as discussed) - but
+      should spend time collecting good short descriptions in ascii
+      text - that a site can take and format in its own house style.
+      We've only made a start in this area and have a long way to go
+      before the documents produced are suitable for end users.  Some
+      of the documents overlap and the content and audience are not
+      always obvious from the title.  Some rationalisation is required
+      here.  Meanwhile sites such as Merit (on nis.nsf.net) are setting
+      up directories called
+
+        introducing.the.internet
+
+      with some of these articles which end users are consuming
+      hungrily.
+
+ Mailing list:   user-doc@merit.edu
+ To join the list, mail to: user-doc-request@merit.edu
+
+ Information Infrastructure: lunch meeting
+ =========================================
+
+ The  chairs  of  the  Working Groups concerned with various aspects of
+ information retrieval and tools (IIIR, NIR, WNILS, URI, URL) met  over
+ lunch  to  discuss  co-ordination  of  the  work  of  these groups.  A
+ statement is to be drawn up to show how these groups inter-relate  and
+ what  parts  of  the puzzle they are intended to cover.  Note that the
+ NIR Group was set up explicitly to help track  the  various  different
+ groups and projects in this area.  It was decided to draw up a list of
+ areas,  so  that  if  for  example  a  new  tool  was  developed which
+ effectively indexed information resources - then  it  would  be  dealt
+ with  by  a generic "indexing tool working group" rather than set up a
+ new working group for that application.
+
+ I personally feel that there needs to be some tightening up of the
+ descriptions and scope of the various working groups.  It is not at
+ all obvious to new members (or old!) as to which group deals with
+ what.  Some of the descriptions are very similar and some quite
+ misleading.  For example: NISI - Network Information Services
+ Infrastructure sounds like it should be concerned with information
+ architecture - whereas it was set up primarily to improve the dialogue
+ between NIC personnel.
+
+ Training Materials BOF: Ellen Hoffman and Jill Foster
+ =====================================================
+
+ The  proposal  was  to form a joint IETF/RARE Working Group on network
+ training materials and the problems associated with network training.
+
+ The main objectives are:
+
+ o    to  provide  a  comprehensive package of "mix and match" training
+      materials for the broad academic community.
+
+ o    to provide a catalogue of existing training materials.
+
+ I briefly described the UK NISP/ITTI Training Materials Project (which
+ has very similar aims) and circulated a print out of the catalogue of
+ training materials collected so far.  The fields used were based on
+ the TopNode Data Elements - but some more discussion is needed.  (Pete
+ Percival and Craig Summerhill of TopNode were at the IETF.)
+
+ The members of the BOF (Birds Of a Feather) introduced themselves and
+ described their training activities.  Many gave presentations to their
+ users on using the network and the networked services, but only a few
+ provided hands on training.  Those that were noted that this was very
+ popular and successful.  The group agreed to help to produce a
+ catalogue of training materials on using the network (using the
+ TopNode Data elements).  CNIDR volunteered to host that database.  The
+ group plan to evaluate existing training materials and to identify
+ materials to be produced.  Problems related to network training were
+ also discussed.  The charter was agreed (with some changes for
+ clarification) and it was proposed that a Training Materials WG be
+ formed.
+
+ Discussion  is  to  take  place  initially  on  the us-wg list.  Other
+ "network training" lists are:
+
+ o    the "Internet/BITNET Network Trainers" list
+
+           NETTRAIN@ubvm.cc.buffalo.edu
+
+      (which is quite "noisy" but nontheless useful)
+
+      To join, mail to:  listserv@ubvm.cc.buffalo.edu
+
+           the command (in the text of the message):
+
+           subscribe  nettrain firstname lastname
+
+           (substituting your own first and last name)
+
+ o    the UK ITTI Network Training Materials Project email list
+
+           itti-networks@mailbase.ac.uk
+
+      To join, mail to:  mailbase@mailbase.ac.uk
+
+           the command (in the text of the message):
+
+           subscribe  itti-networks firstname lastname
+
+           (substituting your own first and last name)
+
+ The Merit/NSFnet Training Sessions included presentations followed by
+ informal hands on workshops.  Their Internet Cruise (disk based
+ presentation) was also well known.  It had been translated into
+ Spanish:
+
+        "El Cruso!"
+
+ Also mentioned were:
+
+ o    The Internet Hunt (a monthly set of questions, the answers to
+      which can be found scattered across the Internet)
+
+ o    Mining the Internet: UC Davis - a hands on workshop
+
+ o    Navigating the Internet.  An Interactive Workshop.  (Made
+      available over the network and which closed subscriptions at
+      15,000!).
+
+ Some  sites  put information on disk for training session attendees to
+ take away.  This information ranged from:  Zen  and  the  Art  of  the
+ Internet to the various directories of information and mailing lists.
+
+ Networked Information Retrieval WG
+ ==================================
+
+ Co-chairs: Jill Foster, George Brett
+
+ This is a joint working group between the IETF, RARE ISUS WG and CNI.
+
+ George Brett reported on the $1.2M funding from NSF for a new Clearing
+ House for Networked Information Discovery and Retrieval (CNIDR).
+ George Brett is Director, Jane Smith is Assistant Director.  Jim
+ Fullton will be working as their programmer.  Given the current
+ concerns about the reliance of the community on software tools
+ developed by volunteer effort and the pressure being brought to bear
+ on some of these volunteers by their employers - the setting up of a
+ centre for support was welcomed.
+
+ I reported on the RARE ISUS WG meeting and the sessions concerned with
+ NIR.  The Pisa conference had sessions on WAIS, WWW, gopher, archie,
+ Soft Pages and Hyper-G.  ISUS WG members have agreed to co-ordinate
+ informally the European gophers and to work on subject specific
+ gophers.  This work and discussion is progressing in co-operation with
+ the IETF/CNI groups and TopNode Project, Library of Congress and some
+ Australian gopher people.
+
+ Since  the  Boston  NIR BOF, the templates, for collecting information
+ about groups involved in NIR work and about the various NIR tools  and
+ applications,   had   been  agreed  on  the  nir  mailing  list.   The
+ information on most of the groups and tools had  been  collected  from
+ the  appropriate  contacts  and  had been edited together into a draft
+ document which had been made available prior to the IETF.
+
+ Access details: anonymous ftp from mailbase.ac.uk
+
+ file name:  pub/nir/consumer.report
+
+ At the meeting the draft of the "Consumer Report" on NIR Tools was
+ reviewed and discussed at length.  There was discussion about the
+ tools and the groups that have been included in the report.  It was
+ suggested that Hyper-G and Soft Pages should not be in the main part
+ of the report.  An appendix of "Forthcoming Attractions" was suggested
+ and it was felt that a short description of Hyper-G and Soft Pages and
+ WHOIS++ would be appropriate there.  A number of other appendices were
+ recommended to provide a broader base of information for the users and
+ providers of the information.  The templates and the report were well
+ received.  It is planned to update the templates on a quarterly basis.
+
+ The working group also discussed future plans to evaluate the tools,
+ and the general usefulness of this report.  This "evaluation" was seen
+ more as completing a matrix of characteristics on each tool - so that
+ the "consumer" could check for the features required and see which
+ tools provided them.  The evaluation would therefore be an objective
+ checklist rather than of the "best buy" variety.  The working group
+ concluded its work with a discussion about future dissemination of the
+ report in varied media.  There was consensus that the report will have
+ to be made available across the many networked information retrieval
+ tools and that we will have to be prepared to ensure that the form of
+ the information accommodates these tools.  One of the first online
+ archives for the "Consumer Report" on NIR Tools will be hosted at
+ CNIDR.  The working group will continue to collect and verify
+ information for the templates.
+
+ The nir list is currently hosted at McGill and needs to be moved.  All
+ subscribers should now subscribe to the list on the UK Mailbase server.
+
+        list:   nir@mailbase.ac.uk
+
+        to join:  mail to:  mailbase@mailbase.ac.uk
+
+           the command (in the text of the message):
+
+           subscribe  nir firstname lastname
+
+           (substituting your own first and last name)
+
+           For example:  subscribe nir Jill Foster
+
+        archives in directory:   pub/nir       on mailbase.ac.uk
+
+ An announcement will also be made on the existing nir list.
+
+ Uniform Resource Indicator WG: Peter Deutsch, Alan Emtage
+ =========================================================
+
+ URI is now the union of Uniform Resource Location and Uniform Resource
+ Indicator.  The idea is to identify information resources uniquely and
+ to allow the location of these by navigational tools.
+
+ Tim  Berners Lee (who was unable to attend due to lack of funding etc)
+ had adapted one of his WWW documents to discuss URIs.  There was  some
+ discussion  of  this (which was a little one sided as Tim wasn't there
+ to defend it).  There was some objection to the use of "name"  in  the
+ document  and  some discussion on "fragmentation" and whether to allow
+ partial form URIs.
+
+ The group felt the document should have an overview section that could
+ be read on its own.  This should define the various acronyms (URI,
+ URL, URN, URSN, etc).  It was felt that there should be the
+ Berners-Lee document and then a document putting the counter
+ arguments.  Input from the library community is needed and the
+ overview document will be circulated widely - including to the CNI.
+
+ mailing list:          ietf-url@merit.edu
+ to join, mail to:      ietf-url-request@merit.edu
+
+ [I'm not sure which list is currently being used - but mail to
+ ietf-url-request and ask to be put on the list for URI discussion!]
+
+ WHOIS  and  Network  Information Look Up Service Working Group: WNILS:
+ ======================================================================
+ Joan Gargano
+
+ This  group  had  met as a BOF at the last IETF.  It had been a stormy
+ meeting with the X.500 set saying why re-implement X.500  features  in
+ WHOIS  when  X.500  does  it  all and the WHOIS set saying - "why not?
+ Maybe we can do it quicker and with less overheads."
+
+ Since  the  last  IETF  Jim  Fullton,  Peter Deutsch, Chris Weider and
+ others had  worked  on  implementing  a  WHOIS++ Server  and  had  some
+ prototype software working.
+
+ The WHOIS++ project aims to develop a lightweight useful Internet
+ Directory Service using simple technology.
+
+ Features
+
+ o    template oriented data model
+ o    simple command syntax
+ o    database technology selected by operator
+ o    "centroids" system allows summary information to be easily
+      propagated
+
+ Advantages
+
+ o    Easy to use
+ o    Servers easy to create, install and maintain
+ o    database  maintenance separate from server (allows using existing
+      database)
+ o    clients easy to write
+ o    centroids simplify the task of finding suitable servers
+
+ Structure of WHOIS++ database (logical)
+
+       Template type 1               type 2             type 3 etc
+
+             ---------              ----------             ----------
+            | 1       |            |          |           |          |
+          ---------   |          ----------   |         ----------   |
+         | 2       |  |         |          |  |        |          |  |
+       ---------   |--        -----------  |--       -----------  |--
+      | 3       |  |         |           | |        |           | |
+      |         |--          |           |-         |           |-
+      |         |            |           |          |           |
+       ---------              -----------            -----------
+
+ Every  item  and  each  database  has  a  unique WHOIS database handle
+ (issued by IANA).
+
+ Search terms: "handle", template type, attribute.
+
+ The work the sub-group was doing was a proof of concept piece of
+ work.
+
+ Architecture:
+
+ Client  --->  Front End
+                      |
+                      V
+                     Search Engine  ----> optional gateway
+                                    \
+                                     \
+                                      --> database
+
+ Centroid:
+
+ Centroid information propagates up the tree.  Clients can query parent
+ servers to find servers with given keywords.
+
+ Keywords  stored  only once and just hold pointers.  Can search at any
+ level.  Bottom up driven approach to finding information.
+
+ Command Set:
+
+ o    Template oriented
+ o    backwards compatible with WHOIS
+ o    system commands and search commands
+ o    search command: Attribute, Value, Template or Handle, Search All
+ o    Constraints on searches
+
+ Status since Boston:
+
+ o    Bar BOF in Boston
+ o    Joan Gargano's overview document
+ o    Peter Deutsch's basic architecture
+ o    Chris Weider etc centroids architecture
+      (sent to list - are in archive)
+ o    WNILS working group now formed
+ o    Centroids propagating: 2 running now, more to come.
+ o    Public domain version.  Then supported by BUNYIP.  Clients -
+      X-Windows, etc.
+ o     Centroid code written
+
+ Chris Weider:
+
+      Centroids: "forward" information propagated around.
+
+      A poll mechanism allows the server to get forward information
+      from below.  Servers know what it is being polled by and can let
+      server "above" know when information is changed.  So a user can
+      query any level in the mesh and the query is passed to the point
+      in the tree where it is most likely to be answered.  Don't need
+      to know where or how servers/data distributed in order to be able
+      to prune search tree and find information want/looking for.  With
+      a distributed mesh it is easy to build Yellow Pages services.  A
+      server can specialise on a particular attribute.
+
+ Having got a rough prototype - what's next?
+
+ They talked about privacy and security issues, replication of servers
+ etc.  There are currently 100 WHOIS servers which don't talk to each
+ other.  WHOIS++ would help to provide some glue between their servers
+ and encourage new servers.
+
+ It started to sound all too familiar: Problems of replication and
+ security; The massive problem of getting the data in the database -
+ All problems X.500 has been faced with.  We'll have to see whether
+ WHOIS++ fares any better.  Peter Deutsch likes to talk about Darwinian
+ selection!
+
+ Integration  of  Internet  Information Resources Working Group (IIIR):
+ ======================================================================
+ Chris Weider
+
+ The purpose of this working group was to start to pull together some
+ of the applications (WAIS, gopher, archie) and to work on
+ interoperability issues, what new tools should do and to discuss
+ gateway protocol design.
+
+ Several people were asked to report on the work they were doing in
+ this area.
+
+ Tim Howes and gopher/X.500 gateway:
+
+      This was proving popular with some 2000 queries/day to the
+      UMichigan directory via the gopher/X.500 gateway.  (This is
+      2000/day out of 15000/day total queries at U Michigan).  Various
+      other sites are running such gateways too.
+
+      Tim said people don't want WAIS, archie, gopher or X.500 - they
+      want information and they don't want to flip clients to get
+      different information.  [Agreed!  Neither do they want to swop
+      tools to change from searching to browsing.]
+
+ Peter Deutsch: WHOIS++
+
+      Peter talked about WHOIS++ (see above) and the possible use of
+      Prospero to provide user centred views of the information (as
+      Prospero currently does for archie).
+
+ Jim Fullton: WAIS
+
+      Jim had been working with NASA.  They have satellite data
+      accessible via WAIS.  A user can choose the format for display.
+      Gopher has no concept of different formats.  The main problem was
+      gatewaying from the "maximal" WAIS server to the "minimal" gopher
+      world.
+
+ The group decided to write an Internet draft on: Gateway Protocol,
+ common exchange format and query routing protocol.  A registry of
+ gateways would be useful too.
+
+ We need to avoid an explosion of protocols that are basically the
+ same.  (One of the aims of the NIR report is to help contain this
+ explosion by disseminating information about what is already
+ available.) We need "classes" of protocols - with one working group
+ per class.  It was stated that we're not a closed community and that
+ we should bring in the information retrieval people, the IRTF group on
+ information retrieval (Mike Schwartz etc) and the librarians.
+
+ A mailing list was not mentioned for this group.  However enquiries
+ could be sent to ietf-url-request@merit.edu
+
+ Concluding Remarks
+ ==================
+
+ This IETF seemed more hectic than normal with more Working Groups and
+ meetings over dinner and lunch.  There was unfortunately little time
+ for general conversations or (for me) to attend the Mail and
+ Directories Working Group meetings.  Shortly before the IETF - the
+ closure of the Automatic Mailing List Server WG was announced.  I had
+ understood it had been put on hold, so was disappointed to hear this.
+
+ On a positive note: the CNI held their meetings near Washington at the
+ end of the same week as the IETF.  Several key CNI members attended
+ the IETF and there was to be cross representation at the CNI meetings
+ too.  George Brett and Alan Emtage had set up meetings at the Library
+ of Congress.  OCLC and the Library of Congress are working on
+ classifying or cataloguing networked information resources.  The
+ TopNode Project is looking at doing this too - but are, I believe,
+ taking a different approach.  This was an opportunity for these people
+ to get together and to start mutual discussions.
+
+ So  -  I feel that this IETF and the events surrounding it saw another
+ significant milestone on the road to bringing order to  the  chaos  as
+ far  as  networked information is concerned.  We still have a long way
+ to go in satisfying end users of course.  We still have  the  plethora
+ of  different  tools  -  but  at  least  we're all starting to pull in
+ approximately the same direction.
+
+
+ Finally, a reminder that these notes are my view of the IETF.  They
+ may not be an accurate view, and certainly do not cover the wide range
+ of topics discussed at the workshop.  Apologies for the delay in
+ getting this report out.  I went straight from the IETF to Australia
+ to take part in their Networkshop and to look at some of their network
+ training, returning shortly before Christmas; but that's another
+ story....
+
+ Jill Foster         (Jill.Foster@newcastle.ac.uk)
+ 28.12.92
+
+
+>From nir-request@kona.cc.mcgill.ca Tue Jan  5 11:51:34 1993
+Received: from kona.CC.McGill.CA by othello.admin.kth.se (5.65+bind 1.8+ida 1.4.2/4.0b)
+        id AA28539; Tue, 5 Jan 93 11:51:32 +0100
+Received: by kona.cc.mcgill.ca (5.65a/IDA-1.4.2b/CC-Guru-2b)
+        id AA24001  on Tue, 5 Jan 93 04:41:40 -0500
+Received: from cheviot.ncl.ac.uk by kona.cc.mcgill.ca with SMTP (5.65a/IDA-1.4.2b/CC-Guru-2b)
+        id AA23997  (mail destined for /usr/lib/sendmail -odq -oi -fnir-request nir-out) on Tue, 5 Jan 93 04:41:36 -0500
+Received: from eata.ncl.ac.uk by cheviot.ncl.ac.uk id <AA29650@cheviot.ncl.ac.uk>
+  (5.65cVUW/NCL-CMA.1.35 for <nir%cc.mcgill.ca@newcastle.ac.uk>) with SMTP; Tue, 5 Jan 1993 09:41:33 GMT
+Date:     Tue, 05 Jan 93  09:41:30 GMT
+From: Jill.Foster@newcastle.ac.uk
+Subject:  NIR list moving
+To: nir@cc.mcgill.ca
+Cc: nir@mailbase.ac.uk
+Message-Id: <emu-ct08.1993.0105.094130.njf@eata.ncl.ac.uk>
+Status: RO
+
+ Attention all list members!!
+
+ Way back in November - Alan Emtage, Peter Deutsch and I discussed
+ moving the nir list from McGill to Mailbase at Newcastle.  This was
+ agreed at the IETF meeting in Washington.  (I've been on the road or
+ on holiday since - so have only just got back to it.)
+
+ The McGill list should be used until an announcement that the new list
+ is operational.
+
+ The reasons for moving;
+
+ o    McGill may not be willing to host the list now that Alan and
+      Peter have "moved" to BUNYIP.
+
+ o    Members had to be added to the list by hand and therefore when
+      Alan or Peter were busy/travelling this could cause delays.
+
+ o    There was no way of seeing who else was on the list.
+
+ The list is now "global" - so hosting it in the UK rather than Canada
+ isn't a problem.
+
+ Mailbase is an automatic mailing list server.  It requires your name
+ as well as your email address (taken from your message header) in
+ order to produce a meaningful list of members.  As the McGill list
+ does not have your names (only email addresses) - you will need to
+ subscribe to the new list. Apologies for the hassle!
+
+        to join:  mail to:  mailbase@mailbase.ac.uk
+
+           the command (as the only text of the message):
+
+           subscribe  nir firstname lastname
+
+           (substituting your own first and last name)
+
+           For example:  subscribe nir Jill Foster
+
+ Message archives and files associated with nir will be in directory:
+
+      pub/nir on mailbase.ac.uk
+
+ They may be retrieved via email or anonymous ftp.
+
+ Please subscribe now while you remember.
+
+ Mail for NIR should be sent to the McGill list until you see an
+ announcement on the two lists saying that the move is complete.
+
+ Mail to the new list should then be sent to: nir@mailbase.ac.uk
+
+ Thanks for your patience and cooperation.
+
+ -- Jill Foster (NIR WG chair)
+
+>From nir-request@kona.cc.mcgill.ca Tue Jan  5 21:00:54 1993
+Received: from kona.CC.McGill.CA by othello.admin.kth.se (5.65+bind 1.8+ida 1.4.2/4.0b)
+        id AA10382; Tue, 5 Jan 93 21:00:47 +0100
+Received: by kona.cc.mcgill.ca (5.65a/IDA-1.4.2b/CC-Guru-2b)
+        id AA27629  on Tue, 5 Jan 93 12:24:13 -0500
+Received: from att-out.att.com by kona.cc.mcgill.ca with SMTP (5.65a/IDA-1.4.2b/CC-Guru-2b)
+        id AA27623  (mail destined for /usr/lib/sendmail -odq -oi -fnir-request nir-out) on Tue, 5 Jan 93 12:23:57 -0500
+Message-Id: <9301051723.AA27623@kona.cc.mcgill.ca>
+From: egrimmelmann@attmail.com
+Date: 5 Jan 93 16:51:16 GMT
+To: com-priv@uunet.uu.net, disi@merit.edu, members@farnet.org,
+        ietf@cnri.reston.va.us, nir@cc.mcgill.ca, nisi@merit.edu,
+        osi-ds@cs.ucl.as.uk, wais-talk@think.com
+Cc: london@attmail.com (Shelly London ),
+        estradas@nic.cerf.net (Susan Estrada ),
+        scottw@nic.ddn.mil (Scott Williamson ),
+        dmitchel@nsf.gov (Don Mitchel ), steve@nsf.gov (Steve Wolff )
+Received: from egrimmelmann by attmail; Tue Jan  5 17:16:05 GMT 1993
+Phone: 908-234-6798
+Fax-Phone: +1 908 234 7655
+Subject: NSF Directory/Database Award
+Content-Type: Text
+Status: RO
+
+We apologize if you receive multiple copies of this announcement; it is posted
+to several news groups
+======================================================
+AT&T PRESS RELEASE
+
+For further information:
+
+Shelly London 908 221-4355
+
+FOR RELEASE JANUARY 5, 1993
+
+AT&T Will Provide Directory & Database Services to the National Science
+Foundation NSFNET
+
+Basking Ridge, NJ--AT&T announced today that it has signed a cooperative
+agreement with the National Science Foundation to provide directory and
+database services for NSFNET, the National Science Foundation national data
+network that is part of the Internet.  The Internet is comprised of more
+than 5,000 computer networks that facilitate  collaboration among members
+of the research and education community.  The Internet, and in particular
+NSFNET, is projected to serve as a basis for evolution to the National
+Research and Education Network (NREN).
+
+Under the terms of the agreement, AT&T will develop and maintain a
+Directory of Directories which will serve as a pointer to numerous
+resources on the Internet.  It will include lists of FTP (File Transfer
+Protocol) sites, lists of various types of servers available on the
+Internet, lists of white and yellow pages directories, library catalogs
+and data archives.  The Directory of Directories will enable even novice
+users to obtain references to information they need through simple,
+easy to use interfaces.  AT&T also will provide white and yellow pages
+type directory services, such as names of users, organizations and
+resources on the Internet, using X.500 technology, the current standard
+specification for distributed information storage and retrieval.
+
+As part of its database services, AT&T will establish database servers to
+extend and supplement the resources of the NSFNET, including databases of
+contributed materials of common interest to the user community and
+communications documents.  AT&T also will offer database design,
+management and maintenance services to organizations and groups for
+inclusion in the Internet.
+
+Initially, access to all services will be provided through several
+currently popular in-use interface methods; with time, it is anticipated
+that X.500 will become the primary method of access.
+
+In providing these services, AT&T will work cooperatively with two other
+organizations:  CERFNet, a General Atomics project, which was awarded a
+similar agreement for information services, and with Network Solutions,
+Inc.(NSI), which was awarded a similar agreement for registration
+services.  The three corporations will collaborate under a common
+concept called INTERNIC.
+
+"We all feel intuitively that the domestic Internet and the distributed
+collaboration that it facilitates are rapidly creating a national
+'workplace without walls'", said Steve Wolff, Director, Division of
+Networking and Communications Research and Infrastructure, NSF.  "These
+three awards to geographically dispersed organizations for Network
+Information Services will both exploit and demonstrate the success of the
+network in enabling  distributed collaboration."
+
+"These directory and database services are essential components of the
+emerging national information infrastructure," said Erik Grimmelmann,
+Marketing Director, Internet/NREN, AT&T Data Communications Services.
+"This agreement marks an important step for the Internet as well as for
+AT&T because services such as these and the related ones to be provided
+by our INTERNIC collaborators will make the Internet even more useful
+than it is today."
+
+The cooperative agreement is for a five-year period, with annual reviews.
+It is expected that the NSF will contribute approximately one third of the
+costs, with another third provided by AT&T and the remainder recovered in
+user fees. The user fees, which have been proposed for maintenance of
+special databases and extensive directory listings, are consistent with
+Federal Networking Council (FNC) cost recovery guidelines.  The user fees
+were part of AT&T's proposal, which was evaluated by an NSF review panel
+and approved by the NSF. The full text of the NSF statement on INTERNIC
+user fees is included at the end of this release.
+
+The agreement is a natural extension of AT&T's strong commitment to
+education, research and the advancement of high-speed data networking.
+For example, AT&T operates XUNET (Experimental University Network), a
+high speed experimental research network for the academic community, and
+is a key participant in the CNRI (Corporation for National Research
+Initiative) sponsored BLANCA gigabit testbed.  AT&T also supports
+collaborative applications research projects of direct relevance to the
+Internet, including  an information retrieval service, an image retrieval
+service and a newly developed directory concept called "nomenclator" that
+has been shown to improve response time tremendously when searching large
+directories.
+
+##
+
+Text of NSF statement on user fees:
+
+Consistent with FNC guidelines on obtaining reasonable cost recovery from
+users of NREN networks, the NSF has determined that the INTERNIC
+Information Services provider may charge users beyond the U.S. research
+and education community for any services provided.  Also, the INTERNIC
+Directory and Database Services provider may charge a fee for maintenance
+of special databases, for extensive directory listings and may charge
+users beyond the U.S. research and education community.  Finally, because
+the registration function provided by the INTERNIC Registration Services
+applies to domestic and international, commercial and individual users in
+addition to research and educational users, it is expected that an
+appropriate registration fee structure will take time to develop.
+NSF expects to engage in an extensive discussion with the domestic and
+international Internet community on the motivation, strategy and tactics
+of imposing fees for these services during the next fifteen months.
+Decisions will be implemented only after they have been announced in
+advance and an opportunity given for additional public comment.
+
+

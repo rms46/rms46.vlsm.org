@@ -1,0 +1,55 @@
+IESG -- 15 September 1998 -- IETF-Announce
+------------------------------------------
+
+Protocol Action: IETF Working Group Guidelines and Procedures to BCP
+
+
+The IESG has approved the Internet-Draft IETF Working Group Guidelines
+and Procedures <draft-ietf-poisson-wg-guide-04.txt> as a BCP.  This
+document is the product of the Process for Organization of Internet
+StandardS ONgoing Working Group. The IESG contact person is Fred
+Baker.
+
+
+Technical Summary
+
+   The Internet Engineering Task Force (IETF) has responsibility for
+   developing and reviewing specifications intended as Internet
+   Standards. IETF activities are organized into working groups (WGs).
+   This document describes the guidelines and procedures for formation
+   and operation of IETF working groups. It also describes the formal
+   relationship between IETF participants WG and the Internet
+   Engineering Steering Group (IESG) and the basic duties of IETF
+   participants, including WG Chairs, WG participants, and IETF Area
+   Directors.
+
+Working Group Summary
+
+   The working group process was, as always, involved and heavily
+   discussed, but on few points was there major disagreement. This
+   document essentially tells us how most IETF working groups work
+   today.
+
+Document Quality
+
+   The specification was edited by Scott Bradner and reviewed by Fred
+   Baker, IETF Chair.
+
+Note to RFC Editor: Please replace Item #3 in Section 2.2 with the
+following clarifying text:
+
+  3. The location of the mailing list archive. A message archive
+     MUST be maintained in a public place which can be accessed via FTP
+     or via the web.
+
+     As a service to the community, the IETF Secretariat operates a
+     mailing list archive for working group mailing lists. In order to
+     take advantage of this service, working group mailing lists MUST
+     include the address "wg_acronym-archive@lists.ietf.org" (where
+     "wg_acronym" is the working group acronym) in the mailing list in
+     order that a copy of all mailing list messages be recorded in the
+     Secretariat's archive. Those archives are located at
+     ftp://ftp.ietf.org/ietf-mail-archive.  For robustness, WGs SHOULD
+     maintain an additional archive separate from that maintained by
+     the Secretariat.
+

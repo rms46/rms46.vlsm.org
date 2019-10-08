@@ -1,0 +1,26 @@
+Nomcom Chair -- 5 Jan 1994 -- IETF
+----------------------------------
+
+IAB/IESG Nominating Committee
+
+
+As of this morning, I have 41 nominating committee volunteers and two
+liason contacts. Of the volunteers, the POISED document (RFC 1396) says I
+must draw seven names. The stochastic event will happen on Monday, January
+10.
+
+If you wish to volunteer, please drop me a note with your name, business
+address, and business and home telephone and FAX numbers. You must have
+attended two IETF meetings and not want a job on the IESG or the IAB.
+
+Many have asked as to the scope of the work involved. By April at the
+latest (and realistically, by March) we must propose persons to replace six
+current IAB and six current IESG members. Many of the incumbents are
+interested in continuing in service, but not all. I expect that somewhere
+between 40 and 80 hours of effort will be asked of each nominating
+committee member over the next three months.
+
+
+----------------
+From: Fred Baker
+

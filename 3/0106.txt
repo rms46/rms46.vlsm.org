@@ -1,0 +1,553 @@
+KRE -- 13 August 1995 -- CIDRD
+------------------------------
+
+draft-ietf-cidrd-ownership-01.txt to a BCP
+
+
+
+No.
+
+I am very glad that Simon Poole got in ahead of me with this
+opinion - in fact, I have been deliberately delaying sending it,
+as I'm not sure I'm really brave enough to express a contrary
+opinion in the cidrd wg - and in particular, on the list.  This
+seems to be something that is just not tolerated.
+
+Anyway, prepare yourselves for a long message, and just
+remember, writing this is a lot more work than reading it!
+
+First, as a BCP, I say no, as what the document describes are
+by no means current practices.   They may be desireable
+practices, on which I will comment layer, but current practices
+are not what is being described.   This may be more a problem
+with the label (BCP) than anything else, but we have what we
+have.
+
+More importantly, I would not support this doc even as an
+informational RFC.
+
+As Simon said, there's no doubt that, whatever the doc attempts
+to say, what its attempting to achieve is a change in de facto
+address allocation policy.   Whatever has, or has not, been said
+about the question of address ownership in the past, there is
+absolutely no question but that it has been assumed that
+addresses once allocated may be retained indefinitely.  Its not
+even necessary to seek anecdotal evidence for this - its clear
+from the design of protocols like SNMP, where addresses are used
+as OIDs that addresses have been assumed to be comparatively
+stable objects in IPv4.   Products also assume this - IP
+addresses are used in product licence validation, they're
+configured into access lists, they're basically treated as
+something upon which the stability is possible to rely.
+
+Changing the address stability policy (let's forget meaningless
+words like "ownership") without suggesting at least possible
+solutions to the problems caused by the change is simply not
+good enough.   Please explain in the doc how one deals with
+a licence based on the IP address for a product whose vendor
+has gone out of business, and no new licence can be issued.
+
+Next, for such a fundamental change, alternative proposals for
+solving the problem the change is intended to overcome must be
+considered.  If they can be shown to be inadequate, leaving
+only one solution remaining, fine, but to act as if there is
+only one possible solution, and nothing else needs to be
+considered at all is not adequate for a policy change of this
+magnitude.
+
+Of course, its not good enough for me to simply say that there
+must be other possible solutions that should have been
+considered in the draft, and leave it at that - I have to
+show some other possibilities that should have been considered,
+so that's what I will do.   I didn't say this message was going
+to be short, did I?
+
+First, just a couple of days ago, a suggestion was made, perhaps
+not very seriously, that was labelled at the time hot potatoe
+routing (which of course it wasn't).  That was that rather than
+handling bigger routing by simply building bigger routers, it
+can be handled by simply using more and more routers.  Making
+routers bigger & bigger is not sustainable, but adding more of
+them is comparatively easy.  Of course, its expensive.
+
+Not only does this scheme allow the size of the routing table
+per router to be kept smaller, it also keeps the CPU load of
+the routing calculations smaller, as there's less routes to
+deal with in each router.
+
+This was described in a couple of messages as creating a choke
+point in the internet.  That's silly - all that's been done is
+to replace each (and every) single router with a full routing
+table with a group of routers instead.   Other than an extra
+hop or two as packets pass through these clusters of routers,
+and consequent small increases in propogation delays, there's
+nothing much that can be said about the generic properties of
+such a scheme.   Whether forwarding capacity would be greater,
+or less, when packets may need to traverse an interconnection
+between routers, rather than just the backplane of a single
+router, is not something about which blanket statements can be
+made.  That would depend upon the nature of the interconnect,
+and what percentage of all packets actually need to traverse it.
+
+A comment was made that this scheme also does nothing about router
+cache sizes.   I'm not sure that's quite true, as if fewer
+packets are traversing each router, I'd have expected the cache
+requirements to be a little smaller.   Also, and probably showing
+my total lack of understanding of current router cache designs,
+I'd have thought the dest addr was the cache tag (or part of
+it), meaning that none of this would have much effect, it being
+the number of destination addresses, not destination net
+prefixes, that really matters.
+
+What this scheme is, of course, as has been noted already, is
+just heirachical routing, which is what the draft is favouring.
+However it's hierarchical routing implemented entirely in the
+backbone nets, without requiring any assistance by the end
+user sites, who can continue moving the net numbers from
+provider to provider without causing any particular problems.
+
+As if that weren't enough, another way that the backbone (that
+is, all those areas where default routing isn't used) can
+impose hierarchical routing, without requiring the end users to
+participate, would be to simply do their own "renumbering" on
+the fly.   This isn't a new idea - its very similar to Noel's
+"IP addresses as identifiers rather than addresses", but without
+going quite so far.
+
+When a packet arrives at a no-default router, one of three
+cases exist.   Either there is no route to the destination at
+all, which is not an interesting case; or the destination is
+"local", and there's a known route; or the packet needs to
+be transmitted across the backbone to some other area (without
+defining just what is an area here).  In that final case, instead
+of holding a giant routing table of every known IP net prefix,
+and routing via the IP number, the router instead can hold a
+giant mapping table, mapping the IP addresses into some other
+number, known only within the backbone nets.   The packet is
+then sent, via some means, using this new number, to the
+destination area, where the original IP address is recovered
+again, and the packet sent on its normal way.
+
+At first glance this doesn't seem like much of an improvement,
+merely a substitution of one giant table for another.  Of
+course, its not that simple, the advantages are two - first the
+new, mapping, table is a lot smaller than the routing table.
+It would need, at most, 4 bytes per IP prefix, implementing this
+the straight forward dumb way would require just about 64Mb max
+for the entire thing (there being around 16M /24 prefixes
+possible).  That's more than current routers can probably deal
+with, but we've been told that all of those numbers won't be
+used till about 2018 - by that time, 64Mb in a router will
+probably be decidely small - its already just average for a
+workstation.    Second, the mapping table is relatively stable,
+changing only when a net shifts from one area to another - and
+recomputing it is trivial - so the cpu load of the current
+network wide effects of route flaps can be much reduced.
+
+Naturally, nothing is free - this scheme requires a new set of
+numbers be allocated, and a protocol be defined to get the
+packets across the backbone.   Fortunately, the latter is easy,
+we can use IP for that, encapsulated IP, using a new magic
+address to indicate backbone routing this way - perhaps the 240/4
+addresses, or perhaps something more mundane like the 223/8
+range, which could be reserved for this.   We don't need many
+addresses, just one IP address per area - 16 bits would be
+plenty for the number of numbers required, except that more
+are needed to allow the addresses to be hierarchically allocated.
+These numbers would of course be subject to changing to match
+the topology of the net, but as they're used for nothing other
+than this backbone routing, renumbering them should be reatively
+easy.
+
+Other costs are the need for new code in all the relevant routers
+to do this, and lower forwarding performance as the encapsulation
+and decapsulation needs to be done on packets to or from remote
+destinations.  The first cost is a one time $ cost, $ costs are
+never nice, but at least its bounded.  The second cost is also
+fortunately a relatively fixed thing - it would be a penalty
+when the scheme is introduced, possibly requiring extra routers
+at some hot spots where the router before was just barely coping
+and now no longer can, but it's not a cost that scales with the
+size of the net, which makes it tolerable.
+
+I suspect there are other schemes that can also work to manage
+routing table growth - they just need to be studied and
+investigated, and the best picked.  Perhaps that will be
+transient topological numbering, but I don't believe that
+we have done enough work in this area to say that yet.  It
+seems like the "CIDR will save us all" chant has the zealots
+enthused, and no opposing viewpoint is even allowed to be
+heard.   Not that I really blame some of the proponents, there
+is clearly a major problem to be solved - if you're in the
+water, and someone throws a liferaft, its rarely appropriate
+to throw it back and ask for one that is better designed.
+Its conservative, and safe, to take what you're offered, with
+whatever its faults, and hope its enough.  Its even easier when
+its someone else who has to bear the costs.   Fortunately, we're
+not quite in the water yet, and have just a little time to
+find the best possible liferaft.  We should be doing that.
+
+I suspect that some of the trouble we now have was illustrated
+by a message Noel sent a couple of weeks ago.  In that he pointed
+out three problems, and said that CIDR solves two of them.  The
+problem isn't the missing third one, its that CIDR is being used
+to solve two different problems.  It has done a very good job
+at conserving address space - and its routing aspect is needed to
+avoid the explosion that would occur if everyone who is now
+getting a /20 instead of a /16 were advertising 16 C's (the
+old way) instead of just the one /20.   However, I believe an
+error was made when we attempted to extend that to solve the
+routing table growth problems that are caused by simple growth
+rather than the change in address allocation policy.  We should
+be looking at other ways, and make sure we get the best.
+
+In fact, if I can believe my memory, which is notoriously bad,
+I think that CIDR may have never been accepted at all, had
+it not been said at the time that CIDR could be used to help
+aggregating routes, but that existing numbers would all be OK,
+and when sites moved providers that would all be OK, as longest
+match routing would get to their number wherever they connected.
+We seem to be (attempting to) move beyond that, with very little
+community discussion.   That is, widespread community discussion.
+Discussing this just in the net community is not enough - while
+it's the net managers who assign IP numbers, they're not the
+only users of the things.
+
+I suspect that there's more than one possible solution to the
+problem that we have, and that the decision will be based on
+the costs of the various possibilities - and on who has to bear
+those costs.   But let's not just advance this draft as if it
+was the one true way without at least having the draft examine
+other possibilities, so that people who read only the draft
+and have to decide what to say at the IESG last call can have
+a little more of an even handed exposition of what the various
+possibilities, and their costs, might be.
+
+Finally, there have been comments made that IPv6 is just like
+IPv4 in this regard.  That's certainly true wrt the packet
+formats, forwarding methods, etc.  Its not true wrt the
+addresses however.  IPv6 has been designed with address
+alterations in mind.  It still needs more work to get this
+done, but its clear that IPv6 addresses are, right from the
+start, intended to be things that are not stable over the long
+haul.  This means that they should not be used anywhere that
+stability is required - meaning that the possibility of
+altering them to match the topology is much greater than with
+IPv4.   That's fortunate, as a giant mapping table of IPv6
+prefixes doesn't seem very likely...
+
+kre
+
+
+-------------------------------
+KRE --- 22 August 1995 -- CIDRD
+
+ownership, leasing, renumbering, and that draft 
+
+I have been quiet on this list for some time now, since
+starting all this debate by daring to question the merits
+of the draft under consideration (draft-ietf-cidrd-ownership-01.txt)
+
+Since then I have been told that it is improper to object to
+a draft without proposing an alternative, which I knew of
+course in any case, [and which is usually a reasonable position
+(occasionally something is simply so brain dead and unworkable
+that even without an alternative it must be opposed)] and so
+proposed a couple of alternatives in my original message.
+
+I have also been told that it is not permitted to mention any
+alternatives on this list, as this isn't the list for that
+(that is, this isn't the working group for that).
+
+Consequently, in this message you won't find me expressing a
+direct opinion on what should be done with the draft, as doing
+that without proposing an alternative (assuming of course, that
+I would be objecting to its progress) is not the best thing to
+do, and the latter is out of order.  Oh well, perhaps you can
+draw your own conclusions from the facts/opinions that I think
+I am permitted to send here - or perhaps more accurately, which
+haven't yet been ruled out of order.   Note that if a chair, AD,
+or doc author, questions this message with a response like
+"Well, what else can we do?" I will take that as an explicit
+OK to go ahead and post my suggestions, and debate their merits.
+
+First, on the question of what is the current state of play
+with regard to address assignments, and whether this draft is
+changing the state of the world, or merely making explicit
+something that was always there, but hidden ... clearly this
+is a change.   It may have never been expressly stated that
+numbers allocated were owned (what does it really mean to own
+a number anyway), it has however always been assumed (and
+practised) that a number once allocated remained with the
+organisation it was allocated to as long as that organisation
+desired to retain it.  That is, more precisely, that number
+would not be allocated to any other organisation.  There is a
+long established principle (of law) that permitting a state
+of affairs to remain long enough, and allowing others to rely
+on that, abrogates any right to claim otherwise.
+
+Now this is not, of itself, an objection to the aim of the
+draft, but to the way it is written.  That is, if address
+leasing is decided to be the way the Internet needs to move,
+then that decision should be made in a frank and honest way.
+That is, the draft should simply say words like "Until now,
+addresses have been allocated in perpetuity, this cannot
+continue (for reasons explained), and consequently a change
+needs to be made.   This document makes that change".
+
+Second, there exist words in the draft that exempt existing
+numbers from this scheme.  I have some comments on that.
+
+First, the most minor issue is existing "as of when", which has
+been asked before.  And answered as well.  This is not really
+important - it's a pick a date, and be done with it, though the
+draft should be more explicit about just when that date is,
+perhaps with words like "as of the publishing of this draft
+as an RFC".
+
+What is relevant is what is the definition of "allocated" at
+that time, whatever it is.   If I go to my service provider a
+week or two after the operative date, and ask for a new number,
+and the service provider allocates it out of a block they
+obtained before the relevant date, is that an "already allocated"
+number or not?   If I have a number I have had allocated for years
+now (say one from the SRI NIC, to put it in perspective), but
+which hasn't been used for almost as many years, that is, it
+is not currently consuming any of the precious router table
+space, is that number exempt from renumbering should I decide
+to start using it again?
+
+For a draft attempting to set in place a major policy initiative
+this one is terribly lacking in detail.
+
+Next, on the same issue, are we guaranteed that existing
+numbers, however they are defined, as of the relevant date,
+will never need to be renumbered?    Who is in the position to
+make that guarantee?   Is the cidrd working group able to
+force providers to accept ancient old numbers and provide
+routing for them?   Since this doc is proposing means of
+keeping routing working, isn't it rather a cop out to simply
+ignore all the existing address allocations, as if they weren't
+a major (perhaps the major) part of the problem being faced?
+
+Would it not be better, if leasing and renumbering is the
+solution to the world's routing problems, to simply make
+the policy apply to everyone - which avoids all of the above
+definition problems?   Of course it does rather raise the
+issue a little higher among those IETF people who get to
+decide on whether the draft should move forward or not, at the
+minute everyone taking any notice of this issue (or essentially
+all of them) can sit back "this doesn't affect me" and allow
+it to slide by - which wouldn't happen if all of those people
+were faced with renumbering.
+
+On a related issue, every time a concern is expressed by someone,
+on how they would not be able to renumber, the standard answer
+is "this doesn't apply to you, only new allocations".  That is
+an inappropriate response.   True, it deals with the particular
+case raised, but fails to notice that these are just examples
+of situations that arise all the time.  New organisations, not
+yet connected, and not yet holding immutable numbers will find
+themselves in all of the same situations as those of us who
+are connected now, with all of the same problems we would face
+if forced to renumber.   When responding to those who object
+on this basis, the defenders of the draft should look beyond the
+immediate objection, and into the reasoning behind the
+objection, and explain how a new organisation, not yet
+connected, not yet with a number, and consequently not yet with
+the knowledge, even if with the means, to object, would avoid
+the problems posed by those who do now have a connection, but
+are being exempted from this draft.
+
+Then there is the qualification that private nets are not a
+concern of this draft, it applies only to "the Internet".
+At first glance that seems resaonable, people building their
+own private nets can use any numbers at all, right?   That
+is, those defined for the purpose in RFC1597 (or its successor
+when, and if, published), or simply any other numbers picked
+at random.
+
+Well, not quite.   This ignores the value of addresses assigned
+to be unique, world wide, regardless of to what the addresses
+are connected.   There seems to be some view prevalent that
+there is the Internet, and it is important, and then there is
+everything else, and that is all irrelevant.   All those other
+nets have just the same needs as the Internet - they are just
+typically a little smaller (or a lot smaller).   Two
+organisations that wish to connect to each other need to agree
+on a numbering plan that avoids conflicts - they need some
+address allocation organisation to deal with this.  Of course,
+for two of them, even several hundred, that isn't hard.
+
+Where the difficulty arises is where two such private nets
+decide to interconnect, having previously used independant
+number allocation plans.   Nightmare is the correct description
+of the results - however of course the draft's standard answer,
+"renumber", is a plausible solution.   If the two medium sized
+nets that are now to connect are doing that as two entities,
+and are able to renumber, then that solution even works.
+
+However consider the case where the two nets are not connecting,
+instead one organisation connected to one of those nets wants
+a connection to the other (simultaneously).  That organisation
+can renumber itself, if necessary, so as to remain unique on
+both of the nets to which it is connected, but how can it
+renumber other organisations on the two nets, which know nothing
+about each other, have no intent to communicate with each other,
+but happen to have picked the same net numbers?  If my
+organisation sends a packet addressed to 10.1.2.3 (where both of
+the other organisations have selected net 10 from 1597), how is
+my router supposed to decide to whom to send it?   Sounds a
+little difficult to me.
+
+There is a reason that unique numbers have always been
+recommended to everyone, connecting to the Internet or not
+(and which is why there are more non-connected allocated numbers
+than connected ones).   It wasn't just that it "seemed good
+at the time".  When we start to break the kinds of assumptions
+that are the basis of the IP protocol suite we really need to
+be very sure that we know exactly what we are doing, and that
+we have considered all of the ramifications.  The answer "we
+don't know any other way to survive" probably just means "we
+aren't bright enough", and should lead to more work to look
+for a solution that has probably been there all the time,
+unnoticed.
+
+Now I imagine that those who are going to object to this have
+already got out their "irrelevant to this draft" big red
+pens, or whatever, as 1597 address allocations are not being
+directly addressed in it, and the question of whather they are
+a good thing or not belongs in another discussion.
+
+Yes, so it does - with one caveat, and that is that this draft
+doesn't change anything wrt those kinds of allocations (or non
+allocations).  Unfortunately, it does.  The problem relates to
+just who does address assignments.  If address assignments are
+now to be leases from providers, to whom does an organisation
+without a provider turn if they decide that they need a unique
+address?
+
+One of the standard rebuttals to this is "the Internet shouldn't
+be subsidising outsiders", and nor should it - the organisation
+requesting a number should be paying whatever costs are incurred
+in granting that request, however that certainly is a side
+issue that isn't relevant here.
+
+If addresses are still to be available to outsiders, from
+somewhere, so they can have addresses that are known unique,
+and which they can use to build their own private (though
+possibly large) independant nets, and then interconnect with
+each other, then what is the relationship of those numbers
+and this draft?
+
+If the organisation, whatever it is, that granted these numbers
+finds that its original lease for its address block has expired,
+and that it cannot be renewed, what happens to the addresses
+it has allocated to unconnected third parties?   Is it really
+correct to claim that this draft does not apply to such cases?
+
+If the effect of this draft is that unique addresses are no
+longer to be available to non-Internet-connected organisations,
+then it should say so explicitly, and justify that decision.
+
+Recall, this is the IETF - the IETF makes standards for all
+users of the IP protocol suite, not just the connected Internet.
+Anything published with the IETF stamp of approval should be
+able to apply equally to all users of the IP protocols.
+
+And finally (I hope) for this message, the draft claims that
+an option for a site faced with renumbering is to decide not to
+do so, and accept limited connectivity instead.   Let's
+examine that option for a minute, and let's take the best
+possible case for this to apply.
+
+Assume that a site (X) has an IP number that has been leased to
+them, and connects to a provider (P) using that address.  
+Further assume that the only party with whom X has any interest
+in communicating is one other site (Y) which happens,
+conveniently, and probably not accidentally, to have a
+connection to the same provider (P).    Now assume that X's
+address lease expires, and for whatever reason, it decides that
+renumbering is not an option for it.
+
+The draft covers this case explicitly, or it seems to ...
+
+   If the organization doesn't require Internet-wide IP connectivity,
+   then renumbering can be avoided. In this case the organization may
+   still maintain limited IP connectivity (e.g. with all the subscribers
+   of its direct provider) by limiting the scope of its routing
+   exception to its direct provider.
+
+Now that fits X perfectly, that is exactly what X doesn't
+require, all it needs is connectivity to Y.   Consequently,
+it accepts the terms of the draft, has its routing advertisments
+limited to its direct provider (P), where they still reach Y,
+and in theory, everyone is happy.
+
+But what about the rest of P's customers?   We assume it has
+some here.  If P is routing packets bound for X's address to
+X, as it has to do to retain connectivity between X and Y, how
+do any of the rest of those people manage to communicate with
+whoever has been reassigned the address that was (nominally)
+taken from X when its lease expired?
+
+Of course, there is a hidden assumption here, which is that
+addresses reclaimed upon lease expiry can be reallocated.
+Address conservation issues would tend to support this as
+a reasonable practice, but perhaps that is not what the draft
+intends, I can't find any explicit statement on that issue
+one way or the other.   Perhaps one should be added so this
+question can be addressed more precisely.
+
+Perhaps the aim is that addresses, once expired will be placed
+into a pool of "unable to be used or routed" addresses, and
+forgotten, or something.
+
+Note that X might have come to P from provider Q, precisely to
+get connectivity to Y (perhaps with some service guarantees
+that couldn't be met via whatever connectivity existed between
+P and Q) bearing an address that was allocated (leased) by Q
+originally.   X is still unable, or unwilling, to renumber.
+So P's other customers can continue to continue to communicate
+with all of Q's customers, existing and future, Q needs to
+remember that it never actually received the address back from
+X, and so never allocate it again.   Further, the relationship
+between Q and X might not be good, X may refuse to tell Q even
+if it does stop using the address - P may also not be a good
+friend of Q's, and even if it is, doesn't necessarily know all
+of X's intentions.   So there is no way that Q can tell that the
+address is now free for use in the general case - it really has
+to assume that it is immediately free after the lease has expired
+(plus any grace period), or it has to assume it is never
+available for re-use.
+
+This won't (needn't) have any adverse implications for the
+routing system, but it seems it may have in other areas.
+
+Of course, the alternative would be to delete this paragraph
+about limited connectivity (offering a little hope to those for
+whom renumbering is not a viable option) and replace it with
+one that explicitly says "renumber or no connectivity", but
+perhaps that might be too politically sensitive to attempt.
+
+There's also the waffle about what size prefixes can be
+moved around without renumbering, which has been pointed out
+before, and which I find one of the most imprecise and
+meaningless specifications I have ever seen (it leaves the
+"best" of the used car contracts for dead).
+
+To finish, I find the draft imprecise, incomplete, inaccurate,
+lacking in intellectual honesty, and impossible to actually
+use for any practical purposes.
+
+However, I am not permitted to draw a conclusion from that,
+as to what should be done with it, as before doing so I would
+need to offer an alternative.  I will not suggest new words for
+a draft I feel is fatally flawed in any case - that would be
+a waste of effort, and I am not permitted to offer my
+alternative, so at this point I think I have to leave it to
+others in the working group to make up their own minds - and
+eventually the IETF as a whole.
+
+kre
+

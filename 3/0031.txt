@@ -1,0 +1,51 @@
+IESG -- 7 May 1998 -- Minutes
+ftp://ftp.ietf.org/iesg/iesg.98-05-07
+-------------------------------------
+
+
+            INTERNET ENGINEERING STEERING GROUP (IESG)
+                       May 7, 1998
+
+
+Reported by: Fred Baker
+
+ATTENDEES
+---------
+
+    Baker, Fred / cisco
+    Carpenter, Brian / IBM (IAB Liaison)
+    Faltstrom, Patrik / Swipnet
+    Leech, Marcus / Nortel
+    Marine, April / Sterling Software
+    Moore, Keith / U of Tennessee
+    Narten, Thomas / IBM
+    Paxson, Vern / Lawrence Berkeley Laboratory
+    Wijnen, Bert / IBM
+    John Klensin / MCI (IAB Liaison)
+    Joyce K. Reynolds / ISI (IANA Liaison)
+
+
+Regrets
+-------
+    Alvestrand, Harald / Maxware
+    Bradner, Scott / Harvard
+    Burgan, Jeff / @home
+    Coltun, Rob / Fore Systems
+    Coya, Steve / CNRI
+    Schiller, Jeff / MIT
+
+
+Minutes
+-------
+The IESG approved publication of
+
+[...deleted...]
+
+12. The IESG thought the time was right to initiate the process to 
+    publish Some Thoughts on the Importance of Modesty and Decorum and 
+    the Need for an IETF Code of Conduct 
+    <draft-odell-code-of-conduct-02.txt> as a BCP. 
+
+    Steve to send Last Call.
+
+

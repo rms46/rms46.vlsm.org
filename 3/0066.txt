@@ -1,0 +1,506 @@
+MEMO: see the reverse UK domain style; "UK.AC.RUTHERFORD.IBM-B"
+---------------------------------------------------------------
+
+From: Paul Bryant <PEB@UK.AC.RUTHERFORD.IBM-B>
+Subject: So you like NSAPS?
+To: iptag@UK.AC.JNT
+
+ 
+ 
+PB660                                       IPTAG/92/23
+SCIENCE AND ENGINEERING RESEARCH COUNCIL
+RUTHERFORD APPLETON LABORATORY
+CENTRAL COMPUTING DEPARTMENT
+ 
+ 
+NSAPs
+ 
+                                             P Bryant
+                                             May 19, 1992
+ 
+--------------------------------------------------------------
+ 
+1 NSAPS
+ 
+This paper surveys how NSAPS are being/will be/may be used with a view
+to deciding on the use of NSAPS within the CLNS project. The survey is
+not exhaustive and in some cases the documents may be out of date.
+Comments are invited and a definitive scheme will follow.
+ 
+ 
+2 Notes on the tables
+ 
+Field lengths suffixed by "x" are in octets otherwise they are decimal
+digits. Values are enclosed in "(" ")" and are in hexadecimal or decimal
+depending on the field length suffix.
+ 
+ 
+3 Notes on the use of NSAPs in CLNS
+ 
+NSAPs are used for routing (ISO DP 10589). For this purpose the ID or
+identifier field is used for ES-IS (end system to router) routing and
+the preceding 2 octets (area field) is recommended to be left unallocat-
+ed and eventually used for optimising routing within a routing domain.
+The NSAP up to the area field is used for IS-IS routing.
+ 
+ISO DP 10589 requires binary encoding.
+ 
+The above two requirements mean that the UK JNT scheme for CONS cannot
+be used. First, it uses decimal encoding and secondly it does not re-
+quire the structure demanded by ISO DP 10589. In the case of Rutherford,
+where the NSAP address for CONS is highly structured and spread over the
+available NSAP space, there is no hope of utilising it for CNLS.
+ 
+ISO TR 9575 defines 3 levels of routing:
+ 
+* Area - a set of ESs and ISs - this is routed using the ID octets which
+may well be a MAC address.
+* Routing Domain - a set of areas connected with IS-IS connections but
+sharing the same intra-domain routing protocol. This could be a site or
+a country depending on organisational considerations.
+* Administrative domain - a set of Routing Domains under single manage-
+ment. This could be a set of sites or a set of countries.
+ 
+ 
+4 US Gosip
+ 
+US Gosip defines the format below.
+ 
++-----------+--------------------------------------+
+|IDP        |                 DSP                  |
++----+------+----------------------------+----+----+
+|AFI | IDI  |   HO-DSP                   | ID | SEL|
++----+------+----+----+------+----+------+    |    |
+|    |      |DFI | AA | Rsvd | RD | Area |    |    |
++----+------+----+----+------+----+------+----+----+
+| 1x |  2x  | 1x |  3x|   2x |  2x|  2x  |  6x|  1x|
+|(47)|(0005)|government wide us                    |
+|(47)|(0006)|delegated for DOD use only            |
++-----+-----+----+----+------+----+------+----+----+
+ 
+IDP - Initial Domain Part
+DSP - Domain specific Part
+AFI - Authority and Format Identifier - defined by OSI
+IDI - Initial Domain Identifier -  allocated by BSI
+HO  - High Order
+DFI - DSP Format identifier - defined by GOSSIP
+AA  - Administrative Authority - allocated by owner of the IDI
+Rsvd- Always useful in time of trouble
+RD  - Routing Domain Identifier - allocated by owner of the AA
+Area- Area identifier - used to help routing
+ID  - System Identifier - follows ISO DP 10589
+SEL - NSAP Selector - follows ISO DP 10598
+ 
+ 
+5 ISO 3848/Addendum 2
+ 
+ISO 3848 defines the format below which is the basis for most schemes of
+interest.
+ 
++--------------------------------------------+
+|IDP        |           DSP                  |
++-----------+-------------------+------+-----+
+|AFI | IDI  |   HO-DSP          |  ID  | SEL |
++----+------+-------------------+------+-----+
+|1x  |2x    | ?                 |1-8x  | 1x  |
++----+------+-------------------+------+-----+
+ 
+All elements in a Routing Domain have the same length ID.
+ 
+All elements in an area usually have the same area address (IDP+HO-DSP)
+and thus IS systems can easily identify destinations within the area
+which are routed on ID. If not in the area then the maximum number of
+digits from the IDP+HO-DSP are matched to route to another IS. (There is
+some doubt as to whether this statement is true and that a complete
+match is required).
+ 
+IDP+HO-DSP must be globally unique.
+ 
+ 
+6 OSI NSAP Allocation in the Internet (RFC 1237)
+ 
+The Internet proposal follows US Gosip.
+ 
++-----------+--------------------------------------+
+|IDP        |                 DSP                  |
++----+------+----------------------------+----+----+
+|AFI | IDI  |   HO-DSP                   | ID | SEL|
++----+------+----+----+------+----+------+    |    |
+|    |      |DFI | AA | Rsvd | RD | Area |    |    |
++----+------+----+----+------+----+------+----+----+
+| 1x |  2x  | 1x |  3x|   2x |  2x|  2x  |  6x|  1x|
+|(47)|(0005)|(80)|    |      |    |      |    |    |
++-----+-----+----+----+------+----+------+----+----+
+ 
+I have not found out the use of the Domain Format Identifier but suspect
+that it allows alternative encodings.
+ 
+ 
+7 ANSI X3S3.3
+ 
+The ANSI formal follows US Gosip apart from the IDP and IDI.
+ 
++----+------+----------------------------------------+
+|IDP | IDI  |                 DSP                    |
++----+------+-----+-----+------+----+------+----+----+
+|    |      | DFI | ORG | Rsvd | RD | Area | ID | Sel|
++----+------+-----+-----+------+----+------+----+----+
+| 1x |  2x  |  1x |  3x |   2x |  2x|   2x |  6x|  1x|
+|(39)|(840F)|     |     |      |    |      |    |    |
++----+------+-----+-----+------+----+------+----+----+
+ 
+This is identical to US GOSSIP apart from IDP/IDI and the renaming of AA
+as ORG. I do not know what the significance of renaming AA (administra-
+tive Authority) as ORG (organisation) is.
+ 
+ 
+8 ECMA TR/44, RFC 1195
+ 
+These documents define the 9 low order octets of the DSP
+ 
++--------+-----------+--------+
+|  SNID  |     SNADD |   NSEL |
++--------+-----------+--------+
+|   2x   |       6x  |    1x  |
++--------+-----------+--------+
+ 
+NSEL=Network Selector - indicates transport  layer to select for a given
+TPDU and is used in OSI IS-IS routing protocol. Why "area" is renamed as
+SNID, ID as SNADD and SEL as NSEL is not known but NSAPS seem to be a
+topic where renaming of fields is a popular activity.
+ 
+ 
+9 RARE WG4 recommendations
+ 
+RARE WG4 have defined the formal below.
+ 
++---------+----------------------------+
+|IDP      |                  DSP       |
++----+----+--------------+-------------+
+|AFI | IDI|  CDP         |         CDSP|
++----+----+------+-------+-------------+
+|    |    |  CFI | CDI   |             |
++----+----+------+-------+-------------+
+|1x  | 3  |1 (1) | 3     |         <=31|
+|(38)|    |  (2) | 5     |         <=29|
+|    |    |  (3) | 9     |         <=25|
+|    |    |      |       |             |
+|1x  | 2x |1 (1) | 3     |        <=12x|
+|(39)|    |  (2) | 5     |        <=11x|
+|    |    |  (3) | 7     |        <=10x|
++----+----+------+-------+-------------+
+ 
+CDP - Country Domain Part
+CDSP- Country Domain Specific Part
+CFI - Country Format Identifier
+CDI - Country Domain identifier
+ 
+Note: it is unclear why the (39) DSP is limited to 14 rather than 17
+octets.
+ 
+A second WG4 paper defines the DSP as being a pure addressing hierarchy
+and omits mention of the CI and CDI. Both papers were written in late
+1990 before CLNS became a cult and may be out of date.
+ 
+This paper also mentions the use of ISO DP 10589 as being under develop-
+ment.
+ 
+ 
+10 Norway CLNS project
+ 
++-----------+---------------------------------------+
+|IDP        |                  DSP                  |
++----+------+--------------+------------------------+
+|AFI | IDI  |  CDP         |         CDSD           |
++----+------+------+-------+-------------+-----+----+
+|    |      |  CFI | CDI   |             |ID   |NSEL|
++----+------+------+-------+-------------+-----+----+
+|1x  | 2x   |1 (1) | 3     |  rest       |6x   |1x  |
+|(39)|(578F)|  (2) | 5     |             |     |    |
+|    |      |  (3) | 7     |             |     |    |
+|    |      |  (4) | 1     |             |     |    |
++----+------+------+-------+-------------+-----+----+
+ 
+Norway follows WG4 with the addition of a CFI of 4 with CDI of 1. AFI is
+39. The terminal 7 octets are 6 for a LAN address and 1 for a network
+selector NSEL which follows US GOSSIP.
+ 
+ 
+11 Holland CLNS project
+ 
++-----------+--------------------------------------+
+|IDP        |                 DSP                  |
++----+------+-------------+------------------------+
+|AFI | IDI  | CDP         |         CDSD           |
++----+------+------+------+----+----+------+-------+
+|    |      |  CFI +CDI   | SFI| SDI|  ASDI|       |
++----+------+------+------+----+----+------+-------+
+|1x  | 3    |    4        | 1  | 4  |   1  | rest  |
+|(38)|(528) |  (1 100)    |    |    | (0)  |       |
+|1x  | 2x   |             |    |    |      |       |
+|(39)|(528F)|  (1 100)    |    |    | (0)  |       |
++----+------+-------------+----+----+------+-------+
+ 
+SFI -SURFnet format identifier allocated by SURFnet.
+SDI -SURFnet domain identifier (site) allocated by SURFnet.
+ASDI - Additional SURFnet domain identifier allocated by SURnet - re-
+served. If SFI=0 SDI maps an organisation to a number. If SFI=1 SDI is a
+number that maps onto a network (?). The "rest" is allocated locally.
+ 
+ 
+12 UK CONS
+ 
++----------+--------------------------------------------+
+|IDP       |                  DSP                       |
++----+-----+--------------+----+---------+--------------+
+|AFI | IDI |  CFI | CDI   | ID | SiteCode|SiteAllocation|
++----+-----+------+-------+----+---------+--------------+
+|1x  | 3   |1     | 3     | 2  | 3-6     | rest         |
+|(38)|(826)|(1)   | (100) |(00)|         |              |
++----+-----+------+-------+----+---------+--------------+
+ 
+UK follows roughly WG4 with AFI of 38, CFI of 1 digit containing 1 and
+CDI of 3 digits containing 100. The CDSD contains 3 fields. First a 2
+digit reserved for future use. Second is a variable length site code of
+between 3 and 6 digits. Third a variable length field allocated by the
+site.
+ 
+ 
+13 Germany CLNS project
+ 
++----+------+----------------------------------------------+
+|IDP | IDI  |                  DSP                         |
++----+------+------+-----+-----+-----+----+------+----+----+
+|    |     |DE-BT | FI1 | RI  |Rsvd | RD | Area | ID | Sel|
++----+------+------+-----+-----+-----+----+------+----+----+
+| 1x |  2x  |  2x  |  1x | 1x  |  2x |  2x|   2x |  6x|  1x|
+|(39)|(376F)|(3100)|(01) |     |     |    |      |    |    |
++----+------+------+-----+-----+-----+----+------+----+----+
+|    |      |DE_BT | FI1 | RI  | RD  |FI2 |                |
++----+------+------+-----+-----+-----+----+----------------+
+| 1x |  2x  |  2x  |  1x | 1x  |  2x | 1x |          10x   |
+|(39)|(376F)|(3100)|(02) |     |     |    |                |
++----+------+------+-----+-----+-----+----+------+----+----+
+ 
+FI - Format Identifier
+RI - Regional Identifier
+RD - Routing Identifier
+ 
+Germany defines two formats The first follows ANSI X3S3.3 with the
+exception that the DFI and ORG fields are replaced with DE-BT of two
+octets containing 3100, FI1 of one octet of 01 and R1 of one octet which
+is a region code. Rsvd is 0. RD defines the site (presumably within the
+region. The second is for CONS where Rsvd, ID, Sel are replaced by a
+single field presumably allocated by the site.
+ 
+ 
+14 DECNET Phase V
+ 
+NSAP used for transition. One assumes that after transition this format
+will become redundant.
+ 
++-----------+--------------------------------+
+|IDP        |                                |
++----+------+--------------------------------+
+|AFI | IDI  |         DSP                    |
++----+------+----------------------+----+----+
+|    |      | Loc Area             | ID | Sel|
++----+------+----------------------+----+----+
+| 1x |  4x  |          2x          |  6x|  1x|
+|(47)|(0020)|(0013) area 19        | DA |(20)|
++----+------+----------------------+----+----+
+ 
+NSAP for DECNET Phase V after transition (proposal from Dave Kelsey).
+ 
+DA = DECNET  phase IV address = AA000400nnnn      nnnn = area*1024+node
+number
+ 
+SEL = 20 hex DECNET transport and session control
+    = 21 OSI transport
+ 
++-----------+------------------------------------+
+|IDP        |                                    |
++----+------+------------------------------------+
+|AFI | IDI  |                             DSP    |
++----+------+------------------+-----------------+
+|    |      |Pre-DSP           | CDSP            |
++----+------+---+-----+----------------+---+-----+
+|    |      |CFI|CDI  |        |LocArea|ID | Sel |
++----+------+---------+--------+-------+---+-----+
+| 1x |  2x  | 1 |3    |  0-6x  | 2x    | 6x|  1x |
+|(39)|(826F)|(1)|(107)|        |       |   |(21) |
++----+-----+----+-----+--------+-------+---+-----+
+ 
+The CDSP is converted between
+CFI - Country Format Identifier
+CDI - Country Domain Identifier
+ID is recommended to be the ethernet address
+ 
+In this scheme each site or ISO CLNS routing domain is defined by up to
+6 octets. This should probably be a site code and could follow the
+current JNT CONS scheme although codes with odd numbers of digits would
+have to be padded to an even number. Alternatively all codes could be 3
+octets - but see discussion below.
+ 
+ 
+15 NORDUNET
+ 
+Follows US GOSSIP and Internet draft OSI NSAP address format.
+ 
++-----------+------------------------------------------------+
+|IDP        |                                                |
++----+------+------------------------------------------------+
+|AFI | IDI  |                   DSP                          |
++----+------+----+---------+------+---------+----+------+----+
+|    |      |DFI |   AA    |Revd  |RD       |Area|System|NSEL|
++----+------+----+---------+------+---------+----+------+----+
+| 1x |  4x  | 1x |      3x | 2x   |    2x   |  2x|  6x  | 1x |
+|(47)|(0023)|(00)| (00000n)|(0000)|         |    |      |    |
+|NORDUnet backbone (000001)|      |  (0001) |(01)|MacAdd|    |
+|DK (UNI-C)        (000002)|      |         |    |IPAddr|    |
+|FI (FUNET)        (000003)|      |         |    |or    |    |
+|IS (SURIS)        (000004)|      |  site   |    |some- |    |
+|NO (UNINETT)      (000005)|      |         |    |thing |    |
+|SE (SUNET)        (000006)|      |         |    |else  |    |
+|NORDUnet DECnet transition|      |         |    |      |    |
+|                  (000007)|      |  (0001) |DA  |MacAdd|SEL |
++--------------------------+------+---------+----+------+----+
+ 
+ 
+16 Switzerland (SWITCH/WG2/DP-91-1))
+ 
+Switzerland uses the ISO DCC scheme
+ 
++----------+----------------------------+
+|IDP       |                  DSP       |
++----+-----+--------------+-------------+
+|AFI | IDI |  CHDP        |        CHDSP|
++----+-----+------+-------+-------------+
+|    |     | CHFI |CHDI   |             |
++----+-----+------+-------+-------------+
+|1x  | 3   |2 (11)| 2     |         <=31| Large organisations
+|(38)|(756)|2 (21)| 4     |         <=29| Intermediate
+|    |     |2 (31)| 8     |         <=25| Small
+|    |     |      |       |             |
+|1x  | 2x  |1x(11)| 1x    |        <=15x| Large organisations
+|(39)|(756)|1x(21)| 2x    |        <=14x| Intermediate
+|    |     |1x(31)| 4x    |        <=12x| Small
+|    |     |1x(80)| 3x    |        <=13x| US Gosip DSP users
++----+-----+------+-------+-------------+
+ 
+CHDI - Swiss Domain Identifier
+CHFI - Swiss Format Identifier
+ 
+The format is compatible with the use of the 9 low order octets with
+ECMA 117.
+ 
+Switch expect to use CHFI = 11 and CHDI = 11
+ 
+ 
+17 Practical considerations
+ 
+DEC recommend that the ID field is the MAC address of the ES. Their
+routers provide a means for an ES indicating its MAC address to the IS
+thus requiring no table maintenance for ESs. Indications are that ISs
+from other suppliers may not include this facility.
+ 
+A network can be split into a set of "routing domain confederations"
+within a routing domain. The significance is that the structure within
+such a confederation is private to the confederation. This reduces the
+size of the tables needed within the ISs and reduces routing information
+traffic. In the case of Europe you could consider a department being a
+confederation within a site, a site being a  confederation within a
+country and a country being a confederation within  European.
+ 
+It would appear that there is advantage in a confederation equating with
+a single IDP HO-DSP combination although there will be many exceptions -
+for example to take account of DECNET phase IV.
+ 
+A corollary is that a "site code" will be needed for the backbone. The
+code 0000 is suggested. Apologies to those familiar with JIPS who may
+find such a comment obvious. Extending this concept a "site code" will
+be needed (or rather exists) for the European backbone. This code has
+been donated/loaned from the NORUNET 47 series and GB will need to
+obtain such a site code for its international IS. The code in use in the
+CLNS WG4 pilot is:
+ 
+47.0023.0000.0001.0000.0001.0001.xxxx.xxxx.xxxx.00
+ 
+Practical experience with JIPS and the above considerations indicate
+that the CLNS project should follow the JIPS structure with a site being
+a confederation with a single connection to a backbone confederation of
+completely interconnected ISs. There should be an international IS form-
+ing part of an international confederation which may or may not be
+completely interconnected depending on topological considerations.
+ 
+ 
+18 Comment
+ 
+The options for NSAPs for the CLNS project are limited.
+ 
+The use of an AFI of 47 is essential if the DECNET community is to be
+accommodated. The use of the AFI should be on an interim basis pending
+the completion of the transition from DECNET phase IV to phase V. A very
+rough estimate is that it will be needed for two years.
+ 
+On the longer term an AFI of 47 or 39 could be used. 39 has advantages
+as it follows the philosophy of NSAPs being structured on a country
+basis. The use of 47 would involve the application for an address space
+on the lines adopted by NORDUnet. On a world wide basis this would
+merely lead to an alternative set of country codes. The reason for
+NORDUnet's decision is to follow RFC1237 which in turn follows US Gosip. However
+Country Code (DCC) subdomain will be common in the international Inter-
+net." and goes on to refer to the ANSI X3 proposal.
+ 
+It is an interesting argument as to whether 47 or 39 should be used and
+on balance I prefer 39. The choice will only be apparent in retrospect
+when we see if products depend on which is chosen.
+ 
+There is no option but to follow ISO DP 10598 in structuring the NSAP
+into essentially two parts - AFI+IDI+HO-DSP for IS-IS routing and ID for
+ES-IS routing. Routers are unlikely to work with any other scheme. The
+SEL field does not take part in routing.
+ 
+An "area" would seem to relate best to a site although there seems no
+good reason why a site should not be composed of a number of areas - it
+probably depends on local circumstances. The "routing domain" and
+"administrative domain" could relate to GB although it could be argued
+that the world wide academic networks (or just European networks) could
+be an administrative domain.
+ 
+In principle the structure of the ID field is a local matter except that
+its length has to be uniform within the routing domain. The popular
+choice for the length of ID (1<=ID<=8) is 6 octets since it is antici-
+pated that this will contain the MAC address of the end system. This
+goes counter to the view that an NSAP should be independent of the
+underlying protocols - but ISO DP 10598 already undermines this philoso-
+phy by overtly using the structure of the NSAP for routing. To go
+against this may be to put the UK in a unique and lonely position. We
+have the situation where the best choice depends on the availability of
+products. Thus it is recommended that the ID should be 6 octets and a
+weak recommendation that it contain the MAC address.
+ 
+It is understood that JNT has obtained an allocation for the binary DCC
+scheme (39 region) which is 1107 hex (2 octets).  Thus we cannot follow
+UK Gosip and are left with 2 octets for the site (or AA field) rather
+than 3. The current site JNT codes defined in "UK Academic Community OSI
+Requirements Note 6" could be used which, apart from 4 or so codes, are
+4 or less digits which may be padded to 2 octets. Following US GOSSIP
+the next 2 octets are reserved and the RD field of 1 octet could be used
+for subdividing a site into several routing domains.
+ 
+This leads to the structure illustrated below.
+ 
++-----------+-------------------------------------------+
+|IDP        |                                           |
++----+------+-------------------------------------------+
+|AFI | IDI  |                               DSP         |
++----+------+-------------------------+-----------------+
+|    |      |Pre-DSP                  | CDSP            |
++----+------+---+-----+----+------+---+----+-------+----+
+|    |      |CFI|CDI  |site|Rsvd  |RD |Area|ID     |Sel |
++----+------+---------+----+------+---+----+-------+----+
+| 1x |  2x  | 1 |3    |  2x| 2x   |2x | 2x |  6x   | 1x |
+|(39)|(826F)|(1)|(107)|    |(0000)|   |    |MAC add|(21)|
++----+-----+----+-----+----+------+---+----+-------+----+
+

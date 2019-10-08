@@ -1,0 +1,52 @@
+POSTEL@USC-ISIF -- 2 November 1983 -- NameDroppers
+--------------------------------------------------
+
+Namedroppers Policy
+
+
+Hi.  Please review this policy statement (para 3 particularly).  --jon.
+
+*** begin ***
+
+This NAMEDROPPERS mailing list is to be used for discussion of the 
+concepts, principles, design, and implementation of the domain style 
+names.
+
+The main focus of this group is the review of documents describing 
+domain style names.  These documents will move through several stages.  
+The discussion in NAMEDROPPERS will be the earliest, subsequently the 
+documents will be made avaliable and discussed in other forums, and 
+eventually they will appear as RFCs.
+
+While one of the advantages of computer mail and mailing lists 
+mechanisms is fast response, in this list we prefer to go a little slow 
+to ensure thoughtful discussion.  In general, one should let some time 
+go by (say, a day) between first reading a message and composing a 
+response.  Even during periods of intense activity on this list one 
+should probably not send more than one message per day.  Typically this 
+would allow one to discuss several other contributions in one message.
+
+On the other hand, this is a list for participants in a discussion, not 
+observers.  Everyone on the list is expected to contribute from time to 
+time.
+
+Nearly everyone in NAMEDROPPERS is also on HEADER-PEOPLE and also on 
+MSGGROUP.  There is no need to send a message to both NAMEDROPPERS and 
+either of these lists (and certianly not both!).
+
+   To get on or off NAMEDROPPERS send your request to
+   NAMEDROPPERS-REQUEST@SRI-NIC.
+
+   To get on or off HEADER-PEOPLE send your request to 
+   HEADER-PEOPLE-REQUEST@MIT-MC.
+
+   To get on or off MSGGROUP send your request to
+   MSGGROUP-REQUEST@BRL.
+
+In fact, when sending to NAMEDROPPERS the only address needed is 
+NAMEDROPPERS@SRI-NIC.  If you are responding to a particular comment by 
+someone he or she will get the message without being explicitly 
+addressed, and you will get a copy back too.
+
+*** end ***
+

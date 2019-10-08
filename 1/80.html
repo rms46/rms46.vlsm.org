@@ -1,0 +1,598 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head><title>
+Jaringan Sistem Unix
+</title>
+<META name="description" 
+content="I am a real nowhere man, sitting in a nowhere LAN, making all my
+	nowhere .plans for nobody -1 -- Rahmat M. Samik-Ibrahim.">
+<META name="keywords" 
+content="RMS46, Rahmat, Samik-Ibrahim, Grounded-Theory, Research,
+Kompas, Kompas-Online, Analisis, Kwik-Kian-Gie, Internet, RFC, IETF"></head>
+<!--  Using STDLIB`(M4)' revision 9.X                         -->
+<!--  (C) 1996-2010 Rahmat M. Samik-Ibrahim under GPL terms.  -->
+<!--  http://vlsm.org/bin/std.m4.gz                           --> 
+     
+<body bgcolor="#ffffff" text="#000000" link="#0000d9" vlink="#000070" alink="#000040">
+<center><table bgcolor="#e6ebfe" width="80%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK1.html" target="_top"><img 
+src="png/LOCAL-LOGO1.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="center" valign="middle"><font color="#00008b" size=4><b>
+Jaringan Sistem Unix
+</b>
+<br><font size=2><b>
+	Joseph F.P. Luhukay,
+	Rahmat M. Samik-Ibrahim,
+	Partono Rudiarto.
+	<br>Pusat Antar Universitas Ilmu Komputer - University Indonesia
+	<br>Jl. Salemba Raya 4, P.O BOX 3442, JAKARTA 10002, Indonesia.
+	<br>1992</b></font></font>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK2.html" target="_top"><img 
+src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table></center>
+
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+<a name="isi"></a>
+<a href="../etc-new.html" target="_top"><font size=2 
+   color="red">WHAT&#39;s NEW</font></a> |
+<a href="../00-0.html" target="_top"><font size=2 color="red">HOME</font></a> |
+<a href="#bawah" target="_top"><font size=1 
+   color="blue">vv BOTTOM vv</font></a> |
+<a href="#0" target="_top"><font size=1 
+   color="blue">NEXT&gt;&gt;&gt;</font></a>
+<br>
+<font size="1" color="#00008b"><small><br>
+<form method="get" action="http://www.google.com/search">
+  <input type="text" name="q" size="30" maxlength=255 value="">
+  <input type="submit" name="btnG" value="Google Search">
+</form></small></font>
+<tr>
+<td align="center">
+<font size=3 face="arial, helvetica, sans-serif">
+|	<a href="#0" target="_top">Abstrak</a>
+|	<a href="#1" target="_top">Pendahuluan</a>
+|	<a href="#2" target="_top">Tujuan</a>
+|	<a href="#3" target="_top">Organisasi</a>
+|	<a href="#4" target="_top">Jenis Jaringan</a>
+|	<a href="#5" target="_top">Kesimpulan</a>
+|	<a href="#6" target="_top">Rujukan</a>
+|	<a href="#7" target="_top">Catatan</a>
+|
+</font>
+
+<tr>
+<td align="right">
+<a name="0"></a>
+<font size=1 color="blue"><a href="80.html" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="80.html" target="_top">^^TOP^^</a> |
+<a href="#1" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Abstrak</h2>
+<p>
+	Makalah ini membahas secara garis besar beberapa aspek dalam 
+	jaringan UNIX. Pembahasan dimulai dengan kegunaan jaringan, 
+	beberapa istilah yang sering digunakan, model ISO/OSI, serta 
+	beberapa protokol baku seperti UUCP, TCP/IP, NFS dan NCS.
+<p>
+<dl>
+<dt><b>Topik</b>: Jaringan, UNIX
+<dt><b>Kata kunci</b>: UNIX, UUCP, TCP/IP, NFS, dan NCS.
+</dl>
+</font>
+
+<tr>
+<td align="right">
+<a name="1"></a>
+<font size=1 color="blue"><a href="#0" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="80.html" target="_top">^^TOP^^</a> |
+<a href="#2" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Pendahuluan</h2>
+<p>
+	UNIX secara <i>de facto</i> telah menjadi sistem operasi baku 
+	(standar) pada berbagai jenis komputer, terutama komputer mini 
+	dan stasiun kerja (<i>work stasiun</i>). Sebelumnya, setiap 
+	pembuat komputer mengembangkan sendiri sistem operasinya. Bahkan 
+	pada saat tersebut tidak merupakan suatu keanehan jika sistem 
+	tidak dapat saling berinteraksi, walau pun berasal dari pembuat 
+	yang sama. Kini, berpindah kerja dari satu jenis komputer ke 
+	komputer lainnya tidak sulit jika masing-masing telah menggunakan 
+	UNIX.
+<p>
+	Kecenderungan tersebut pun berlaku pada protokol komunikasi antar 
+	komputer. Namun - dewasa ini hampir semua bersepakat untuk 
+	menggunakan protokol baku sehingga komputer dengan jenis berbeda 
+	dapat saling berkomunikasi. Bakuan ini dikenal dengan model 
+	referensi OSI. Pada masa yang akan datang, dapat dikatakan semua 
+	akan menggunakan referensi tersebut.
+<p>
+	Kemajuan teknologi perangkat keras memungkinkan dibuatnya sistem 
+	komputer yang semakin canggih dan murah. Sistem yang berharga 
+	jutaan dollar pada tahun 60-an, kini sudah dapat diperoleh dengan 
+	biaya jutaan rupiah. Kemajuan teknologi ini pun berpengaruh pada 
+	teknologi komunikasi jaringan komputer. Sistem jaringan yang 
+	sebelumnya hanya dimiliki instansi penelitian tertentu serta 
+	memerlukan seorang super pakar, kini menjadi sesuatu yang umum pada 
+	dunia komputer serta dioperasikan oleh orang "biasa" saja.
+<p>
+	Beberapa kenyataan dari hasil perkembangan komputer dan 
+	komunikasi [STALL91]:
+<ul>
+<li>	Hampir tak ada perbedaan mendasar antara pemerosesan data (komputer) 
+	dan komunikasi data (peralatan komunikasi).
+<li>	Tidak ada perbedaan antara data, suara, dan video.
+<li>	Perbedaan antara LAN (local Area Network), MAN (Metropolitan Area 
+	Network), dan WAN (Wide Area Network) semakin kabur.
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="2"></a>
+<font size=1 color="blue"><a href="#1" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="80.html" target="_top">^^TOP^^</a> |
+<a href="#3" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Tujuan Penggunaan Jaringan</h2>
+<p>
+	Dewasa ini jarang sekali ada sistem UNIX yang tidak terkoneksi 
+	kesebuah sistem jaringan. Keuntungan yang diperoleh ialah:
+<ul>
+<li>	berbagi sumber daya komputer.
+<li>	peningkatan kehandalan.
+<li>	penghematan.
+</ul>
+<p>
+	Sumber daya komputer yang dibagi bersama mencakup CPU, alokasi 
+	memori, penyimpanan data/ disk, pencetak/ printer, dan program/
+	utilitas. CPU/memori yang sedang diam (<i>idle</i>) dapat "dikaryakan"
+	oleh sistem lain yang sedang sibuk. Disk yang semula tersebar
+	di semua komputer dengan utilitas yang sama kini dapat digabungkan 
+	menjadi unit disk yang besar dan dibagi bersama. Pencetakan/ 
+	<i>printing</i> dapat diklasifikasikan berdasarkan prioritas 
+	(segera, tidak segera) ataupun mutu cetak (laser printer, 
+	LQ printer, line printer).
+<p>
+	Komputer dalam sebuah jaringan lebih handal dibandingkan komputer 
+	yang berdiri sendiri. Jika ada komputer yang tidak berfungsi, 
+	peranannya digantikan oleh komputer yang lain. Sistem dapat 
+	diatur/ dikendalikan hingga pemakai tidak mengetahui bahwa komputer 
+	yang biasa digunakan sedang digantikan oleh komputer lain. Sistem 
+	penyimpanan disk dapat diatur derajat keamanannya. Seperti halnya 
+	CPU, sistem disk yang tidak berfungsi digantikan oleh sistem yang 
+	lain tanpa diketahui oleh pemakai.
+<p>
+	Peningkatan kehandalan serta pemakaian sumberdaya secara bersama 
+	menghasilkan penghematan biaya operasi. Harga 10 komputer 10 MIPS 
+	jauh lebih murah dibandingkan 1 komputer 100 MIPS. Namun, kemampuan 
+	kesepuluh komputer 10 MIPS tersebut dapat hampir menyamai kemampuan 
+	komputer 100 MIPS jika dilakukan utilisasi yang tinggi. Penghematan 
+	lain didapatkan dari penggunaan <i>file server</i> (1 sistem data/
+	disk untuk banyak komputer) serta <i>printer server</i>.
+</font>
+
+<tr>
+<td align="right">
+<a name="3"></a>
+<font size=1 color="blue"><a href="#2" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="80.html" target="_top">^^TOP^^</a> |
+<a href="#4" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Organisasi dan istilah yang berhubungan dengan masalah jaringan</h2>
+<p>
+<h3>Organisasi yang berhubungan dengan jaringan komputer</h3>
+<p>
+	Terdapat beberapa badan di dunia yang berpengaruh dalam masalah 
+	jaringan komunikasi komputer. Badan-badan tersebut antara lain :
+<dl>
+<dt><b>ITU</b> (<i>International Telecommunication Union</i>)
+<br>
+<dd>	Badan PBB yang berhubungan dengan masalah telekomunikasi. 
+	Salah satu komitenya ialah CCITT (<i>Comite Consultatif International 
+	de Telegraphique et Telephonique</i>) yang sangat berpengaruh dalam 
+	menentukan bakuan yang berhubungan dengan Telepon dan Telegrap.
+<p>
+<dt><b>ISO</b> (<i>International Standards Organiazation</i>)
+<dd>	Gabungan organisasi pembuat bakuan nasional dari beberapa negara 
+	seperti ANSI (<i>American National Standards Institute</i>), 
+	BSI (U.K.), AFNOR (Perancis), DIN (Jerman), dll. Organisasi ini 
+	terkenal dengan model ISO/OSI (<i>Open System Interconnection</i>).
+<p>
+<dt><b>IEEE</b> (<i>Institute of Electrical and Electronics Engineers</i>)
+<br>
+<dd>	Terkenal dengan bakuan LAN IEEE seri 802.
+<p>
+<dt><b>EIA</b> (<i>Electronic Industries Association</i>)
+<br>
+<dd>	Pembuat bakuan hubungan serial RS-232-C.
+</dd>
+</dl>
+<p>
+<h3>Model 7 lapis ISO/ OSI</h3>
+<p>
+	ISO merumuskan model komunikasi OSI (<i>Open Systems 
+	Interconection</i>) yang terdiri dari 7 lapisan. Empat lapisan 
+	pertama berorientasi pada jaringan sedangkan 3 lapisan di atasnya 
+	berorientasi pada pemakai/aplikasi.
+<p>
+	Keempat lapisan pertama OSI berfungsi membawa data tanpa catat 
+	antara dua lokasi. Lapisan tersebut berturut-turut: 
+	<b>Lapisan Fisik</b>, yang berupa kabel listrik beserta rumusan  
+	besaran elektrik lainnya; 
+	<b>Lapisan Data Link</b>, yang mengurus arus bit antar peralatan 
+	komunikasi; 
+	<b>Lapisan Jaringan</b>, membawa paket bit ketujuan; 
+	dan <b>Lapisan Transpor</b>, menjamin transportasi data antara 
+	mesin komputer tanpa mempersalahkan jenis jaringan. 
+	Keempat lapisan diatas merupakan pengembangan data dari bakuan 
+	yang ada sebelumnya.
+<p>
+	Lapisan-lapisan berikutnya merupakan nilai tambah dari ISO. 
+	Sebelumnya, lapisan tersebut terpisah secara samar. 
+	Ketiga lapisan tersebut berturut-turut ialah 
+	<b>Lapisan Sesi</b>, menangani persiapan, pengelolaan, 
+	pemutusan antar aplikasi; 
+	<b>Lapisan Presentasi</b>, 
+	menangani pengubahan representasi data (ASCII, EBCDIC, dll); 
+	dan yang terakhir Lapisan Aplikasi: menangani pengaksesan pemakai.
+<p>
+<h3>Beberapa istilah Komunikasi Data</h3>
+<p>
+<dl>
+<dt><b>DATA</b>
+<br>
+<dd>	Representasi dari fakta, konsep, dan instruksi yang dibentuk hingga 
+	dapat diproses oleh manusia ataupun mesin. Secara umum, data dapat 
+	didentifikasikan dan di jabarkan.
+<p>
+<dt><b>INFORMASI</b>
+<br>
+<dd>	Arti dari sebuah data yang sesuai dengan peraturan yang ditetapkan 
+	pada data tersebut. Pertukaran informasi membutuhkan data dan 
+	metode untuk memindahkan data tersebut.
+<p>
+<dt><b>SERVER (PELAYAN)</b>
+<br>
+<dd>	Sistem atau program data sebuah sistem yang menyediakan servis/
+	pelayanan pada jaringan.
+<p>
+<dt><b>CLIENT (PELANGGAN)</b>
+<br>
+<dd>	Sistem atau program pada sistem yang memanfaatkan layanan server.
+<p>
+<dt><b>PROTOKOL</b>
+<br>
+<dd>	Cara yang disepakati antara server dan klien untuk berkomunikasi.
+<p>
+<dt><b>DISKLESS WORKSTATION</b>
+<br>
+<dd>	Sistem yang tidak dimiliki disk sendiri dan memanfaatkan disk 
+	komputer (server) melalui jaringan.
+<p>
+<dt><b>JARINGAN STATELESS</b>
+<br>
+<dd>	Jaringan yang tidak memerlukan referensi tentang status 
+	jaringan sebelumnya.
+<p>
+<dt><b>LAN/MAN/WAN</b>
+<br>
+<dd>	Yang membedakan LAN (<i>Local Area Network</i>), 
+	MAN (<i>Metropolitan Area Network</i>), dan 
+	WAN (<i>Wide Area Network</i>), ialah jangkauan wilayah serta 
+	kecepatan alih data. LAN memiliki jangkauan terbatas (2 km) namun 
+	kecepatan alih data hingga 100 MBPS (juta bit per detik). 
+	WAN memiliki jangkauan jauh (beribu kilometer) namun kecepatan 
+	alih data terbatas hingga 64 kbps (ribu bit per detik).
+</dl>
+</font>
+
+<tr>
+<td align="right">
+<a name="4"></a>
+<font size=1 color="blue"><a href="#3" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="80.html" target="_top">^^TOP^^</a> |
+<a href="#5" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Jenis Jaringan berbasis UNIX</h2>
+<p>
+<h3>UUCP Unix to Unix CoPy</h3>
+<p>
+	UUCP merupakan jenis jaringan pertama kali muncul pada sistem UNIX. 
+	Pada awalnya, UUCP dikembangkan dengan hanya memanfaatkan saluran 
+	serial/ terminal dari sebuah komputer. Kini, UUCP bekerja pada 
+	setiap versi UNIX bahkan sistem non-UNIX seperti VMS dan DOS. 
+	Perangkat keras dapat berupa komputer mikro mau pun komputer super. 
+	Jaringan komunikasi dapat berupa modem nul (sambungan langsung 
+	RS-232), modem telepon, jaringan Ethernet, jaringan publik X.25, 
+	dan lain-lain.
+<p>
+	Layanan yang disediakan UUCP diantaranya:
+<ul>
+<li>	Alih berkas (<i>file transfer</i>)
+<li>	Surat elektronis (<i>e-mail</i>)
+<li>	Terminal jarak jauh (<i>remote terminal</i>)
+<li>	Eksekusi perintah jarak jauh (<i>remote execution</i>)
+</ul>
+<p>
+	Hampir semua proses UUCP berlangsung secara tidak langsung 
+	(<i>batch</i>) serta dapat diatur waktu/ jam pelaksanaanya. 
+	Biasanya proses dieksekusi pada malam hari pada saat biaya 
+	komunikasi interlokal yang murah.
+<p>
+	Jaringan UUCP secera internasional menghubungkan lebih dari 
+	seratus ribu komputer. Secara total, berjuta-juta byte beralih 
+	setiap harinya antara komputer sedunia. Sebagian besar peralihan 
+	tersebut terjadi di Amerika Serikat karena murahnya biaya komunikasi. 
+	Sebagian besar data berupa <i>USENET NEWS</i>, forum diskusi 
+	elektronis terbesar didunia.
+<p>
+	Protokol UUCP ialah digunakan di Indonesia sejak tahun 1985. Pada 
+	tahun tersebut, Universitas Indonesia menjalin kerjasama dengan 
+	KAIST (Korean Advance Institute of Technology) yang membuahkan 
+	hubungan segitiga Indonesia, Korea, dan Amerika Serikat. Pada 
+	saat awal, hubungan ini terlaksana atas kerjasama Universitas 
+	Indonesia dengan P.T. Indosat yang menyediakan fasilitas SKDP (X.25) 
+	dengan tarif khusus.
+<p>
+	Penyampaian berkas melalui UUCP dilakukan secara  beranting. 
+	Jika seseorang di Indonesia hendak mengirim surat elektronis kepada
+	rekannya di Amerika, cukup disimpan/ dikerjakan dikomputer secara 
+	lokal. Komputer akan secara otomatis menyampaikan surat tersebut 
+	ke sebuah simpul di Amerika  Serikat yaitu UUNET (Arlington, Va.). 
+	Secara beranting, surat tersebut akan diteruskan kesimpul berikut 
+	hingga sampai tujuan.
+<p>
+	Beberapa jaringan komputer di Indonesia dibangun berbasis UUCP. 
+	Jaringan tersebut diantaranya ialah UNInet, AUSEAnet, dan UTnet. 
+	UNInet merupakan jaringan komputer antar universitas yang 
+	menghubungkan beberapa institusi dibawah naungan Ditjen, DIKTI, 
+	seperti Institut Pertanian Bogor, Institut Teknologi Bandung, 
+	Institut Teknologi Sepuluh November, Universitas Gadjah Mada, 
+	Universitas Hasanudin, Universitas Indonesia, dan Universitas Terbuka. 
+	AUSEAnet merupakan jaringan yang menghubungkan negara ASEAN 
+	dengan Australia. UTnet merupakan jaringan antara Universitas 
+	Terbuka (Pondok Cabe) dengan beberapa UPBJJ (Unit Pelayanan 
+	Belajar Jarak Jauh) di lingkungan UT.
+<p>
+	Telah diungkapkan sistem UUCP sangat sederhana dan mudah 
+	diterapkan. Kebutuhan minimun ialah sebuah komputer, modem, 
+	serta saluran telepon. Namun, pengalaman menunjukkan bahwa 
+	banyak hambatan yang akan dihadapi pada penerapan jaringan UUCP 
+	di Indonesia. Telepon bukanlah merupakan saran yang mudah 
+	diperoleh. Biaya komunikasi SLJJ ataupun SKDP tidak dapat 
+	dikatakan ringan. Sumber daya manusia yang langka serta 
+	pemeliharaan sumber daya komputer cukup mahal merupakan faktor 
+	yang harus diperhitungkan.
+<p>
+<h3>TCP/IP Transmission Control Protocol/ Internet Protokol</h3>
+<p>
+	Telah diungkapkan bahwa pada awalnya, setiap pembuat komputer 
+	membuat bakuan komunikasi yang khusus berlaku untuk sistemnya. 
+	Penelitian untuk membakukan protokol antar komputer mulai dirintis 
+	pada akhir tahun 1960-an oleh Departemen Pertahanan dan Keamanan 
+	Amerika Serikat. Dua protokol utama (TCP/IP) kemudian digunakan 
+	untuk mengugkapkan seluruh protokol keluarga internet. Jaringan 
+	pertama yang menggunakan protokol TCP/IP ialah ARPANET. Dewasa ini, 
+	ratusan ribu jaringan komputer menggunakan TCP/IP untuk berkomunikasi.
+<p>
+	Internet berkembang sebelum adanya model 7 lapis ISO/OSI sehingga 
+	tidak mengikut model tersebut secara murni. Dipandang dari sudut 
+	model ISO/OSI, protokol TCP/IP berada pada 4 lapisan pertama.
+<p>
+	IP merupakan protokol yang mengatur pengiriman paket antar alamat. 
+	IP dapat diumpamakan sebagai jawatan POS yang mengangkut paket 
+	dari alamat pengirim ke alamat tujuan. Alamat Internet terdiri dari 
+	4 kali 8 bit (32 bit). Pengalamatan internet terdiri dari 
+	kelas-kelas yang sesuai dengan besarnya jaringan. Kelas A 
+	(terbesar) merupakan jaringan dengan sekitar 16 juta (24 bit) 
+	anggota. Lalu kelas B, merupakan jaringan dengan sekitar  65000 
+	(16 bit) anggota.  Kelompok terkecil ialah kelas C dengan 256 
+	(8 bit) anggota. Kelas C merupakan kelas yang paling sering 
+	digunakan dalam sebuah organisasi.
+<p>
+	Terdapat lebih dari satu macam medium pembawa IP. Untuk jarak 
+	pendek, biasanya digunakan medium berkecepatan tinggi seperti 
+	<i>Ethernet</i> (10 MPBS/juta bit per detik), dan lain-lain. 
+	Untuk jarak jauh biasanya menggunakan saluran serial seperti SLIP 
+	(Serial Line IP). SLIP memiliki kecepatan dari 110 BPS hingga 
+	115 KPBS. Saluran serial dapat berbentuk hubungan titik ke titik 
+	(Point to Point), radio, satelit, dan lain-lain.
+<p>
+	TCP merupakan protokol yang mengatur transportasi data antar sistem. 
+	TCP dapat diumpamakan  sebagai "sekretaris perusahaan" yang mengelola 
+	pengiriman berkas antar alamat. TCP biasanya memanfaatkan jasa IP 
+	sebagai media pengantar. Seperti halnya sekretaris, TCP bertanggung 
+	jawab atas kehilangan pengiriman paket berikut tindak lanjutnya 
+	(mengirim ulang paket).
+<p>
+	TCP dimanfaatkan oleh aplikasi-aplikasi lain sebagai pengiriman 
+	data yang handal. Aplikasi-aplikasi mencakup:
+<ul>
+<li>	Login jarak jauh: TELNET (umum) dab rlogin (khusus UNIX)
+<li>	Eksekusi jarak jauh: rsh (khusus UNIX)
+<li>	Alih berkas : FTP (File Transfer Protocol)
+<li>	Surat elektronis: SMTP (Simple Mail Transfer Protocol)
+<li>	Program aplikasi lokal (buatan sendiri) dapat memanfaatkan 
+	fasilitas TCP/IP untuk saling berkomunikasi.
+</ul>
+<p>
+	TCP/IP dan UNIX berkembang dalam kurun waktu yang sama. TCP/IP 
+	pada awalnya banyak dikembangkan pada sistem UNIX terutama versi 
+	Berkeley (BSD). Kini, TCP/IP merupakan bakuan <i>de facto</i> 
+	dalam komunikasi dalam sistem UNIX.
+<p>
+<h3>NFS (Network File System) dan RPC (Remote Procedure Call)</h3>
+<p>
+	NFS pada mulanya dikembangkan oleh Sun Microsystem (1984). Kini, 
+	NFS yang menggunakan RPC diterapkan pada lebih dari 100 jenis 
+	komputer dan diperkirakan dioperasikan pada lebih dari 100000 komputer.
+<p>
+	NFS memungkinkan sebuah kompuer mengakses sistem berkas komputer 
+	lain, dan memperlakukan sistem berkas tersebut seperti bagiannya 
+	sendiri. Fasilitas ini juga didapatkan pada sistem DOS seperti 
+	Netware dari Novell.
+<p>
+	Ada sedikit perbedaan penerapan NFS dibandingkan sistem lainnya. 
+	Sejak awal, NFS dirancang untuk beroperasi tanpa membedakan jenis 
+	sistem operasi dan jenis perangkat keras dari komputer. NFS pertama 
+	kalinya dikembangkan pada sistem UNIX hingga menjadi sangat 
+	populer dikalangan pemakai UNIX.
+<p>
+	Komputer yang memanfaatkan fasilitas NFS disebut <i>client</i>
+	(pelanggan), sedangkan pemberi jasanya disebut <i>server</i> 
+	(pelayan). Antara client dan server digunakan bakuan/ mekanisne RPC. 
+	Sebuah permintaan <i>local client</i> dibakukan melalui RPC. 
+	Pada sisi server, RPC tersebut diterjemahkan sesuai dengan 
+	implementasi pada sistem server. Semua RPC berlangsung secara 
+	stateless, yaitu status pada RPC tidak mempengaruhi status 
+	sebelumnya ataupun status yang akan datang.
+<p>
+<h3>NCS -- Network Computing System</h3>
+<p>
+	Beban antara CPU dalam jaringan biasanya tidak sama pada saat 
+	yang sama. Beberapa penelitian telah mengarah pada pemanfaatan 
+	CPU yang sedang diam (<i>idle</i>). Hingga kini, setiap pembuat 
+	komputer masih mengembangkan protokolnya secara terpisah serta 
+	tidak cocok satu dengan lainnya. Namun, usaha menuju pembakuan 
+	sedang dirintis dan diharapkan akan disepakati dalam kurun waktu 
+	yang tidak lama lagi.
+</font>
+
+<tr>
+<td align="right">
+<a name="5"></a>
+<font size=1 color="blue"><a href="#4" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="80.html" target="_top">^^TOP^^</a> |
+<a href="#6" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Kesimpulan</h2>
+<p>
+	Pembahasan dimulai dengan kegunaaan jaringan, beberapa istilah 
+	yang sering digunakan, serta beberapa protokol baku seperti 
+	UUCP, TCP/IP, NFS, dan NCS.
+<p>
+	Telah dibahas secara singkat beberapa aspek dalam jaringan UNIX. 
+	Tujuan penggunaan jaringan tidak lain ialah memperoleh keuntungan 
+	dalam bentuk berbagai sumber daya komputer, peningkatan 
+	kehandalan sistem, serta penghematan biaya pengoperasian dan 
+	pemeliharaan.
+<p>
+	UUCP merupakan sistem jaringan UNIX yang tertua, tersederhana, 
+	dan termurah. Sedangkan bakuan <i>defacto</i> sistem jaringan 
+	UNIX berbasis TCP/IP. Sistem TCP/IP tidak menerapkan model ISO/OSI 
+	secara murni kerena TCP/IP dikembangkan sebelum adanya model tersebut.
+<p>
+	Ada sebuah sistem yang dikembangkan mengikuti model ISO/OSI yaitu 
+	keluarga X.400. X.400 diharapkan akan menjadi bakuan alih informasi 
+	di masa mendatang.
+</font>
+
+<tr>
+<td align="right">
+<a name="6"></a>
+<font size=1 color="blue"><a href="#5" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="80.html" target="_top">^^TOP^^</a> |
+<a href="#7" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Daftar Pustaka</h2>
+<p>
+<ul>
+<li>	[KOCH90] Kochan, Sephen G. dan Patrick H. Wood: 
+	<i>Unix Networking</i>, Hayden Books, Macmillian Pub.Co., 1989.
+<li>	[KONG90] Kong, Mike: <i>Network Computing System Reference Manual</i>, 
+	Prentice-Hall, 1990.
+<li>	[STALL91] Stallings, William: <i>Data and Computer Communications</i>
+	edisi 3, Macmillan Publishing Co., 1991.
+<li>	[TANEN88] Tanenbaum, Andrew S.: <i>Computer Networks</i>, edisi 2, 
+	Prentice-Hall, 1998.
+</ul>
+</font>
+
+<tr>
+<td align="right">
+<a name="7"></a>
+<font size=1 color="blue"><a href="#6" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="80.html" target="_top">^^TOP^^</a> |
+<a href="#bawah" target="_top">NEXT&gt;&gt;&gt;</a></font>
+<tr>
+<td align="left">
+<font size=3 face="arial, helvetica, sans-serif">
+<h2>Catatan</h2>
+<p>
+	Tulisan ini diketik-ulang oleh <em>Rika Novita</em> serta
+	di-HTML-kan oleh <a href="../index.html" target="_top">Rahmat M. Samik-Ibrahim</a>.
+	Tujuan penulisan ini semata sebagai catatan sejarah.
+	<b>Beberapa bagian dari tulisan ini mungkin KURANG AKURAT atau
+	pun KADALUARSA</b>.
+</font>
+</table>
+</center>
+
+<a name="bawah"></a>
+<center>
+<table width="80%">
+<tr>
+<td align="right">
+	<font size=1 color="blue"><a href="#7" 
+    target="_top">&lt;&lt;&lt;PREV</a> |
+<a href="80.html" target="_top">^^TOP^^</a></font>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e6ebfe" 
+width="80%">
+<tr>
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK3.html" target="_top"><img 
+src="png/LOCAL-LOGO3.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
+<td align="left">
+	<font size=2 color="#00008b">
+	Copyright &copy 1992-2014 <a href="http://www.ui.edu/" target="_top">Joseph F.P. Luhukay, 
+Rahmat M. Samik-Ibrahim, dan Partono Rudiarto</a> .
+	Provided <b>AS-IS</b> with no <b>LIABILITY</b>.
+	
+	Permission is granted to copy, distribute, and/or modify
+	this webpage provided this notice is preserved.
+	<b>MIRRORS</b> of this site:
+<a href="http://rms46.vlsm.org/1/80.html" target="_top">BisnisWeb</a> -
+	<a href="http://rmsui.vlsm.org/rms46/1/80.html" target="_top">Fusilkom-UI</a>.
+
+	File revision: 9.5 2003/05/14 09:49:5
+	-- <a href="mailto:vlsm.org@t-HAPUS-DELETE.gmail.com?subject=[RMS-Feedback]"><font color="blue">E-CONTACT</font></a>.
+	Special thanks for this <a href="LOCAL-LINK3.html" target="_top">webspace provider</a></font>.
+<td width=77 align="center" valign="middle"><a href="LOCAL-LINK4.html" target="_top"><img 
+src="png/LOCAL-LOGO4.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
+</table>
+<table>
+<tr>
+<td height="600" valign="top">
+</table>
+</center>
+</body>
+</html>
+<!-- END -->
+
+

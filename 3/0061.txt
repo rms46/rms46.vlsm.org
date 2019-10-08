@@ -1,0 +1,672 @@
+William Allen Simpson (fwd by IAB) -- 7 July 1999 --IETF-Announce
+-----------------------------------------------------------------
+
+IAB Appeal argument
+
+
+As specified in the IAB appeal, I had hoped to have the opportunity to
+argue my points and directly question participants.  Since that request has
+not been granted, I am submitting this brief argument and several exhibits.
+(This list of exhibits is not exhaustive.)
+
+To avoid duplication, my issues and responses already in the body of the
+notice of appeal are incorporated by reference.  This additional
+detail is distinguished by the use of leading alphabetic groupings.
+
+A.  IESG timeliness
+
+A1  The goals of the Internet Standards Process are:
+       o  technical excellence;
+       o  prior implementation and testing;
+       o  clear, concise, and easily understood documentation;
+       o  openness and fairness;  and
+       o  timeliness.
+    [RFC-2026 page 4]
+
+A2  The "Experimental" designation typically denotes a specification
+    that is part of some research or development effort.  Such a
+    specification is published for the general information of the
+    Internet technical community and as an archival record of the work,
+    subject only to editorial considerations and to verification that
+    there has been adequate coordination with the standards process (see
+    below).  An Experimental specification may be the output of an
+    organized Internet research effort (e.g., a Research Group of the
+    IRTF), an IETF Working Group, or it may be an individual
+    contribution.
+    [RFC-2026 page 14]
+
+A3  An "Informational" specification is published for the general
+    information of the Internet community, and does not represent an
+    Internet community consensus or recommendation.  The Informational
+    designation is intended to provide for the timely publication of a
+    very broad range of responsible informational documents from many
+    sources, subject only to editorial considerations and to
+    verification that there has been adequate coordination with the
+    standards process (see section 4.2.3).
+    [RFC-2026 page 15]
+
+A4  ...  The IESG shall review such a referred document within a
+    reasonable period of time, and recommend either that it be published
+    as originally submitted or referred to the IETF as a contribution to
+    the Internet Standards Process.
+    [RFC-2026 page 15]
+
+A5  If (a) the IESG recommends that the document be brought within the
+    IETF and progressed within the IETF context, but the author declines
+    to do so, or (b) the IESG considers that the document proposes
+    something that conflicts with, or is actually inimical to, an
+    established IETF effort, the document may still be published as an
+    Experimental or Informational RFC.
+    [RFC-2026 pages 15-16]
+
+A6  In all cases a decision concerning the disposition of the
+    dispute, and the communication of that decision to the parties
+    involved, must be accomplished within a reasonable period of time.
+    [RFC-2026 page 24]
+
+A7  Appellant has a significant number of drafts awaiting publication.
+    Many of these have been waiting IESG recommendation of approval or
+    disapproval for several years.  Appellant has periodically reminded
+    the IESG and RFC Editor of these documents.  [Exhibits #1, #2, #3]
+
+A8  "Internet Security Transform Enhancements" was submitted to the IESG
+    for publication as Experimental in April 1996, and the RFC Editor in
+    August 1996, and most recently updated in May 1997.
+
+A8.a    This was an individual contribution, much of which had been
+        written in 1994-1995, that "will not be considered by the Chairs".
+        [Exhibit #4]
+
+A8.b    The IESG did not review within a reasonable period of time, nor
+        publish as originally submitted.
+
+A8.c    After a June 5, 1997, appeal to the IETF Chair, the IESG
+        refused to publish until after working group output.  This was
+        especially detrimental, as the working group was already far
+        behind its charter.  [Exhibits  #5, #6, #7, #8]
+
+A8.d    On February 16, 1999, the IESG refused to publish after the
+        working group had finished.  [Exhibit #9]  Note that the IESG
+        decision is flawed and inaccurate, as the draft actually adds
+        sequence numbers to AH in a manner incompatible with newer RFCs,
+        but is entirely compatible with ESP.
+
+A8.e    Many of the proposals in the paper were incorporated by the IP
+        Security WG in later documents, but without attribution.  The
+        document is an important archival record of the work.
+
+A8.f    As an alternative, Appellant has proposed publication as Historic.
+        [Exhibit #3]
+
+
+A9  "IP Authentication using Keyed SHA1 with Data Padding" was
+    submitted to the IESG for publication as Experimental in May 1996,
+    and the RFC Editor in August 1996.
+
+A9.a    This was an individual contribution, a minor modification of
+        RFC-1952, that "will not be considered by the Chairs".
+        [Exhibit #4]
+
+A9.b    The IESG did not review within a reasonable period of time, nor
+        publish as originally submitted.
+
+A9.c    Many of the proposals in the paper were incorporated by the IP
+        Security WG in later documents, but without attribution.  The
+        document is an important archival record of the work.
+
+A9.d    As an alternative, Appellant has proposed publication as Historic.
+        [Exhibit #3]
+
+A10 "The ESP Triple-DES Transform" was submitted to the IESG for
+    publication as Experimental in May 1996, revised in form during
+    meetings sponsored by ANX, and most recently updated in July 1998.
+
+A10.a   This was an individual contribution, a major modification of
+        RFC-1951, that "will not be considered by the Chairs".
+        [Exhibit #4]
+
+A10.b   The internet-draft was renamed circa 02 July 1997, submitted to
+        the IP Security WG at the request of the new chairs.  [WG list]
+
+A10.c   It was "released" to the authors on 19 Sep 1997.  [WG list]
+
+A10.d   In July 1998, it was submitted to the IESG for publication as a
+        Proposed Standard, or in the case it was not accepted, as
+        Experimental.
+
+A10.e   The IESG did not review within a reasonable period of time, nor
+        publish as originally submitted.
+
+A10.f   The document conforms with the roadmap developed in ANX.  In fact,
+        it was one of the principal templates used to create the roadmap
+        requirements.  [Exhibit #10]
+
+A11 "The ESP DES-XEX3-CBC Transform" was developed during meetings
+    sponsored by ANX, posted as an internet-draft in July 1997, and most
+    recently updated in July 1998.
+
+A11.a   This was an individual contribution, submitted to the IP
+        Security WG at the request of the new chairs, based on one of the
+        "Internet Security Transform Enhancements" (see section A8).
+
+A11.b   It was "released" to the authors on 19 Sep 1997.  [WG list]
+
+A11.c   In July 1998, it was submitted to the IESG for publication as a
+        Proposed Standard, or in the case it was not accepted, as
+        Experimental.
+
+A11.d   The IESG did not review within a reasonable period of time, nor
+        publish as originally submitted.
+
+A11.e   The document conforms with the roadmap developed in ANX.
+
+A12 "ESP with Cipher Block Chaining (CBC)" was developed during meetings
+    sponsored by ANX, posted as an internet-draft in July 1997, and most
+    recently updated in July 1998.
+
+A12.a   This was an individual contribution, submitted to the IP
+        Security WG at the request of the new chairs.
+
+
+A12.b   It was "released" to the authors on 19 Sep 1997.  [WG list]
+
+A12.c   In July 1998, it was submitted to the IESG for publication as
+        Informational.
+
+A12.d   The IESG did not review within a reasonable period of time, nor
+        publish as originally submitted.
+
+A12.e   The document is referenced by Triple-DES and DES-XEX3.
+
+A13 Publication of draft-ietf-ipsec-ciph-cbc-**.txt was expedited,
+    while the IESG Appeal process was unreasonably protracted.
+
+A13.a   Prior to the IESG Appeal process, Appellant consulted Joyce
+        Reynolds (the RFC Editor of record), ISoc VP Scott Bradner (the
+        publisher of record) and Fred Baker (IESG/IETF Chair) whether legal
+        action would be needed to prevent irresponsible publication.
+
+A13.b   Appellant was assured in writing that publication would not
+        occur until the issues had been "resolved", which Appellant took
+        to mean would be the conclusion of the Appeal.  [Exhibit #11]
+
+A13.c   The IESG abrogated the agreement, ordering the RFC Editor to
+        publish the document.  [Exhibit #12]
+
+A13.d   The IESG did not issue its decision regarding the dispute
+        within a reasonable period of time.
+
+A13.e   Publication of this document prior to the conclusion of the
+        appeal was irresponsible, as it was known to be technically flawed,
+        and was subject to allegations of plagiarism and misappropriating
+        copyright.
+
+A14 There is another document not a direct subject of this current
+    appeal, but mentioned as an alternative in the earlier appeal text,
+    draft-simpson-cbcs-**.txt, that was proposed in 1994 and 1995, and
+    has been awaiting publication as Experimental since July 1997.
+
+A15 There is another document not a direct subject of this current
+    appeal, but mentioned as an alternative in the earlier appeal text,
+    draft-simpson-des-as-**.txt, that has been awaiting Last Call and
+    publication as a Best Current Practice since July 1998.
+    [Exhibits #2, #3]
+
+B.  Technical Errors
+
+B1  A Proposed Standard specification is generally stable, has
+    resolved known design choices, is believed to be well-understood,
+    has received significant community review, and appears to enjoy
+    enough community interest to be considered valuable.  However,
+    further experience might result in a change or even retraction of
+    the specification before it advances.
+
+B2  A Proposed Standard should have no known technical omissions with
+    respect to the requirements placed upon it.  However, the IESG may
+    waive this requirement in order to allow a specification to advance
+    to the Proposed Standard state when it is considered to be useful
+    and necessary (and timely) even with known technical omissions.
+    [RFC-2026 page 12]
+
+B3  The IESG did not waive any requirements with regard to technical
+    omissions.  [Exhibit #12]
+
+B4  Design choices detailed in the IESG Appeal were also raised during
+    IETF Last Call, and were not resolved.
+
+B5  The IESG endorsement of 40-bit keying is a serious error.
+
+B5.a    This is contrary to the Danvers' Doctrine, a strong statement
+        of an open plenary that specifically discussed an IBM hashing
+        proposal using 40 bits to make larger key sizes.
+
+B5.b    This is contrary to architectural principles espoused in
+        [RFC-1984].
+
+B5.c    There are no backward compatibility issues that might have
+        mitigated for a temporary transitional use of 40-bit keys.
+
+B5.d    The IESG admits that errors in wording are present, where the
+        word "all" in the cited paragraph might not refer to all the
+        algorithms.
+
+B5.e    A preponderance of working group members rejected the use of
+        "cryptographically challenged IPSec" with 40-bit keying on the
+        mailing list, including (during 1998) Steve Bellovin, Jim Gillogly,
+        Steve Goldhaber, David Jablon, Helger Lipmaa, Dave Mason, Perry
+        Metzger, Derrell Piper, Hugh Redelmeier, Bill Sommerfeld, Henry
+        Spencer, Jim Thompson, and Eric Vyncke.  Messages in 1997, 1996,
+        and 1995 are left as an exercise for the reader.
+
+B5.f    The only proponents of 40-bit keys were Rob Adams, Daniel
+        Harkins, and Roy Pereira.  Their level of polite discourse was
+        not enlightening.  [Exhibit #13]
+
+B5.g    The few others that posted on the issue during this time period
+        appear to be in favor of fence-sitting, letting the "market"
+        decide.
+
+B5.h    Despite the lengthy time in responding to the appeal, this
+        cognitive dissonance with an examination of the record does not
+        give a good feeling about the depths that the "IESG considered
+        your grounds carefully, reviewed the evidence that you submitted
+        and investigated for itself."
+
+B6  The so-called CBC document fails to meet technical requirements
+    specified in [RFC-2411].
+
+B6.a    Contrast the IESG lack of understanding,
+
+        "However the document in question does not define any ciphers.
+        It merely discusses how to use ciphers in the CBC mode of
+        operation."
+
+B6.b    with the Introduction of the roadmap:
+
+        "This document is intended to provide guidelines for the
+        development of collateral specifications describing the use of
+        new encryption and authentication algorithms ...."
+        [RFC-2411 page 2 sentence 1]
+
+B6.c    and the more detailed requirement:
+
+        "The document describing how a specific encryption or
+        authentication algorithm is used should contain information
+        appropriate to that encryption or authentication algorithm."
+        [RFC-2411 page 5].
+
+B6.d    That is, "use" is exactly what the roadmap is all about!
+
+B6.e    The IESG admits that the so-called CBC document fails to meet
+        almost every requirement specified in [RFC-2411].
+
+B7  Other known technical errors should be corrected.  This is not the
+    first time around in the IP Security Proposed Standards.  The
+    document quality should be better, rather than worse.
+
+B7.a    During preparation of previous IP Security documents, existing
+        IP Protocols were surveyed.  None had an interaction with the
+        simple IV generation described in RFC-1829 and RFC-1851.
+
+B7.b    Steve Bellovin has admitted that including the Sequence Number
+        in an IV assists against Replay and Reflection, and adds a few bits
+        of strength to the first encryption block (the weakest).  Although
+        more strength might not be an issue with 256-bit keys, it is a
+        significant enhancement of 56-bit keys.
+
+B7.c    The literature suggests that the most important consideration
+        for an IV is that it not repeat during the lifetime of the key.
+        This is easiest to assure with a counter.
+
+B8  The IESG responses are so irrelevant as to appear obstructionist.
+
+B9  The PPP WG document model used with algorithms for compression and
+    encryption provide a better path for analysis and progression of
+    standards process documents.
+
+C.  Acknowledgements
+
+C1  An Internet-Draft is NOT a means of "publishing" a specification;
+    specifications are published through the RFC mechanism described in
+    the previous section.  Internet-Drafts have no formal status, and
+    are subject to change or removal at any time.
+    [RFC-2026 page 8]
+
+C2  Note: It is acceptable to reference a standards-track
+    specification that may reasonably be expected to be published as an
+    RFC using the phrase "Work in Progress" without referencing an
+    Internet-Draft. This may also be done in a standards track document
+    itself  as long as the specification in which the reference is made
+    would stand as a complete and understandable document with or
+    without the reference to the "Work in Progress".
+    [RFC-2026 page 9]
+
+C3  The roadmap document was developed under the auspices of ANX
+    workshops and mailing lists, as the IETF IP Security Working Group
+    was dysfunctional, and suffered under mismanagement.
+
+C3.a    I was invited to an ANX workshop, and participated in the
+        creation of the "roadmap", together with Rodney Thayer and
+        Naganand Doraswamy, with the occasional comments of Hugh Daniels
+        and Robert Moskowitz.
+
+C3.b    Layering the documents and separating the transforms from AH and
+        ESP was originally my idea, and I wrote most of the boilerplate.
+        [WG list, Jan & Feb 1995]  Limiting the amount of this
+        boilerplate was a prime motivation in formulating the roadmap.
+
+C3.c    The first draft of the roadmap was based upon the layout and
+        language of my latest drafts of DES and 3DES, and carefully
+        compared with several other drafts for explicating differences.
+
+C3.d    During the ensuing discussion, I made a number of revisions of
+        DES and 3DES to exactly conform to the evolving roadmap.
+
+C3.e    The first internet-draft of the roadmap included acknowledgement
+        and references for both DES and 3DES.  [Exhibit #10]
+
+C3.f    In [RFC-2411], all references to my name were removed.
+
+C3.g    During the Last Call, and in the IESG Appeal, I requested that
+        the 3DES "shim" reference be updated to the current internet-draft,
+        or the draft published as an RFC, in accordance with [RFC-2026];
+        see C1 and C2 above.
+
+C3.h    It is inconceivable that work "referenced in writing this
+        document" would deliberately be removed from its acknowledgements,
+        yet it contains references to work never used in the body.
+
+C4  The use of indirection in the Acknowledgements is insufficient.
+
+C4.a    As noted by the IESG, the proper references to my previous work
+        were replaced by references to a "Hughes" draft, that itself was
+        based upon my work.
+
+C4.b    The Hughes draft was rejected by the implementors, as it was
+        overly complicated and so poorly written that implementations
+        were not interoperable.  It is unlikely to be published as an RFC.
+
+C4.c    References to the Hughes draft are inappropriate, and do not meet
+        the requirements of [RFC-2026]; see C1 and C2 above.
+
+C5  The removal of attributions and references is part of concerted
+    effort by a few persons to sully my reputation and impugn my
+    integrity.
+
+D.  Chair Fiat Versus WG Consensus
+
+D1  The IESG appeal decision repeatedly raised a malicious and
+    egregiously false statement, unsupported by the record, that I have
+    "refused to change [documents] even though the working group
+    consensus disagreed with your opinion."  Similar statements are made
+    four times.
+
+D2  There is a well-known propaganda technique, sometimes called "The
+    Big Lie", that involves repeating the same falsehood as often as
+    possible, until it becomes accepted.
+
+D3  Then WG Chair Paul Lambert began promulgating the big lie on the
+    first posting of drafts.
+
+D3.a    He told the internet-drafts editors that the drafts did not
+        represent group consensus and were "intentionally disruptive".
+        [Exhibit #14]
+
+D3.b    His message contained a number of clear fabrications.  The names
+        of this secret cabal of "six people" were not identified on the
+        list or at any meeting.  No such document was published that week,
+        nor any other.
+
+D3.c    The documents had long represented group consensus.  The formats
+        had been established over 6 months earlier.  [Exhibit #15]
+
+D3.d    The WG Chair continuously obstructed the draft process.  He
+        raised pointless objections on the list, showing that he had not
+        even read the draft details.  [WG list Jan - Mar 1995,
+        Exhibit #16]  He attempted to replace the authors.  [Exhibit #17]
+
+D3.e    Even after promising the Area Director, he failed to announce
+        the drafts as working group material, resulting in my first
+        formal call for his removal.  [Exhibit #18]
+
+D3.f    After two months of this misbehavior by the WG Chair, the Area
+        Director ordered the drafts be officially considered working group
+        material.  Note that by this time we were on our 4th revision!
+        [Exhibit #19]
+
+D4  About this time, another list member named Hugo began complaining
+    that Karn and I were not taking his variants of Photuris seriously.
+    He seemed to think it was because of his last name (somewhat
+    amusing, as none of us knew his last name at the time, as it was not
+    in his messages).  Actually, it was because he was busily thinking
+    up ways to make all the design features optional (perfect forward
+    secrecy, privacy protection, pre-computation, resource clogging
+    defenses, etc.)  [WG list Feb & Mar 1995]
+
+D4.a    His repeated complaint involved discrediting the authors, saying
+        that we needed a cryptographer as a co-author.  [Exhibit #20]
+
+D4.b    Actually, we'd had quite a few problems with cryptographers, as
+        none of them seemed able to come to agreement with each other.
+        [Exhibit #21]
+
+D4.c    Many of his messages consisted of personal ad hominem attacks.
+        [Exhibit #22]
+
+D4.d    He interrupted a presentation at a WG meeting to say that we
+        were not "qualified" to design Photuris.
+
+>
+D4.e    Informed speculation opined that he was trolling for authorship
+        credit.  To some researchers, the RFC series looks like an open
+        opportunity for padding the c.v.
+
+D4.f    In April, 1995, we learned that Hugo had applied for patents on
+        his Photuris suggestions.  There was strong consensus in the
+        working group that patents were to be avoided.  [Proceedings
+        32nd IETF pages 523-524]
+
+D5  If anything, we were too willing to adopt working group suggestions.
+
+D5.a    New drafts were released every two weeks reflecting discussion.
+
+D5.b    Changes were made even when the authors disagreed with the
+        working group consensus.  For example, we changed the name of a
+        field from Sequence Number to IV, as it was used for generating
+        a "derived" IV for CBC mode.  Some WG members didn't think a
+        sequence number for replay protection was important, proposing
+        rapid re-keying and per-user keying (Bellovin has since admitted
+        he was wrong).  So, I moved it into a separate document (see
+        section A8), and made support negotiable in Photuris as well.
+
+D5.c    Also, we had written ESP transform drafts with both DES/3DES
+        confidentiality and MD5/SHA1 integrity.  [WG list Jan & Feb 1995]
+        The WG preferred orthogonality for AH and ESP, as there was no
+        consensus whether the integrity would be over the plaintext or
+        ciphertext, and we shelved the drafts for later.
+
+D5.d    Moreover, we changed the authentication formula several times,
+        as each batch of cryptographers made new suggestions.  After
+        publication, more analysis showed that the method that we had
+        started with was actually the strongest....
+
+D5.e    If we had stuck to our original design, we wouldn't have had
+        another round at Proposed Standard.  Large working groups are
+        fickle, and 100 heads are not better than a small talented
+        design team.
+
+D6  The WG Chair(s) continued to refuse our contributions.
+
+D6.a    During the December 1995 IETF meeting, "Paul Lambert noted that
+        there might be other transforms (e.g. DES-CBC integrated with
+        MD5 for use with ESP) needed.  He solicited volunteers to write
+        up drafts.  Only Bill Simpson and Perry Metzger volunteered.
+        Other volunteers are still solicited by the WG chairs."
+        [Dallas minutes posted to the WG list 20 Dec 1995, missing from
+        the Proceedings]
+
+D6.b    As noted earlier, we had already written such drafts (see D5.c).
+
+D6.c    Our concurrently produced drafts had been reviewed and accepted
+        by the working group and IETF, and published as Proposed Standards.
+
+D6.d    The Chair(s) secretly arranged for Jim Hughes to write parallel
+        drafts, borrowing our text without permission.  No mention of
+        this was made to the working group until the agenda was posted
+        for the March 1996 meeting.  [WG list]
+
+D7  The WG Chair(s) continued to ignore working group consensus, and
+    manipulate the meetings to prevent Photuris from going forward.
+
+D7.a    The working group straw poll had overwhelmingly chosen Photuris
+        in April, 1995.  [Proceedings 32nd IETF page 526]
+
+D7.b    Instead, the Chairs continued to schedule presentations for
+        other proposals at IETF meetings.  [WG list]
+
+D7.c    Moreover, the Chairs announced a working group last call for
+        SKIP on 14 November 1995.  [WG list]
+
+D7.d    Furthermore, the Chairs refused to allocate a time slot for
+        Photuris at the December 1995 meeting.
+
+D7.e    At that meeting, outside of the working group, there was a
+        demonstration of 2 interoperable Photuris implementations
+        (Keromytis and Spatscheck), and at least 6 AH and ESP
+        implementations.  About 10 vendors were participating.
+
+D7.f    Immediately after the December 1995 meeting, the Chairs demanded
+        that my name be removed from the Photuris drafts.
+
+D7.g    Upon verbal appeal to the Area Director, my name remained on the
+        Photuris drafts.
+
+D7.h    The Chairs refused to announce a working group last call for
+        Photuris, formally requested on 6 Feb 1996.  [WG list]
+
+D7.i    The Chairs fabricated the "conclusions" of a straw poll, despite
+        the fact that no such questions had been asked in the poll.  Note
+        responses to the poll might be secret.  [Exhibits #24, #25]
+
+D7.j    When this action was questioned by more than a half dozen of the
+        list members, the Chair(s) posted a list of 6 items that they
+        claimed were not in conformance with WG consensus.  [Exhibit #26]
+
+D7.j1       Some were personal editorial opinion of the chair, not
+            supported by the several persons that had contributed text
+            to the sections that he desired to be changed.
+
+D7.j2       (3) was a mandate that Security Labels be moved from an
+            option to mandatory to implement.  This was directly in
+            contradiction of a previous straw poll of the implementors,
+            where only NRL and NIST supported them.  Security Labels are
+            not required to be supported in IPv4 or IPv6, and were
+            shortly thereafter reclassified by the IESG as Historical.
+
+D7.j3       (4) was a mandate that DNS-SIG be moved from an option to
+            mandatory to implement.  The DNS Security WG had not
+            complete their documents.  Nobody had ever previously
+            expressed a desire that this be mandatory.  Even to this
+            day, 3 years later, there is insufficient deployment.
+
+D7.j4       (5) was the option for Sequence Numbers (see D5.b), that
+            apparently the chair VEHEMENTLY opposed!  Keep in mind that
+            was an "extensions" document, not recently updated, and not
+            part of my request for last call.  Since then, Sequence
+            Numbers have been made mandatory in both AH and ESP.
+
+D7.j5       (6) referred to notes to the list.  Those changes had
+            already been made the previous October (about 5 drafts ago);
+            indeed, about 2 days after they were suggested!  Thus, it
+            became apparent that the chair(s) were not actually reading
+            the drafts!
+
+D7.k    A few days later, the Chair(s) posted what can only be described
+        as a temper tantrum.  Many members of the list were horrified,
+        and the IESG was asked to investigate.  [Exhibit #27]
+
+D7.l    When the Chairs were forced to allow time for Photuris at the
+        next (March, 1996) IETF, they interrupted the session after 10
+        minutes, inserted Hugo as a speaker (where he recycled his
+        slides from the previous year that had been rejected by the
+        working group), and adjourned the meeting 20 minutes early.
+
+D8  My formal complaint to the Area Director included the following issues:
+
+D8.a    [details omitted]  When we re-posted our combined DES+MD5 draft,
+        as requested in the December 1995 meeting, Paul Lambert ordered
+        the secretariat not to post it under draft-ietf-ipsec.  [...]
+        As the requested draft was noted in the WG minutes, it would
+        be hard to say that it was "out of the blue".
+
+D8.b    Although I recently posted a (hopefully) final Photuris draft,
+        which included the results of considerable private discussion
+        over 2 months among 7 reviewers (the actual implementors rather
+        than the whole WG), the chairs have failed/refused to issue
+        the last call for comments before sending it to you.  This is
+        contrary to what they did for SKIP.
+
+>
+D8.c    And my working group presentation time was cut in half (or
+        less).  He adjourned the WG early instead.
+
+D8.d    Although you may find my style to be "pedantic and assertive",
+        which may very well be accurate, never-the-less on my initiative
+        the process issues have all been carried out exactly as
+        required.  It is the prerogative of the authors to declare when
+        the document is ready for final review.  [details from WG
+        process document, and example POISED WG last calls by James
+        Galvin omitted.]  This procedure is even cited by Dave Crocker
+        as "facilitating" in his WG chair seminar.
+
+D8.e    I have formally requested from the chairs a "last call" be
+        issued to determine consensus.
+
+D8.f    The chairs have refused, stating IN ADVANCE that Photuris does
+        not meet working group requirements.
+
+D8.g    The chairs have refused to restrict their role to determining WG
+        consensus as it becomes apparent.  ...  The chairs determine
+        _final_ rough consensus, not dictate the contents of drafts.
+
+D8.h    The chairs are instead trying to control consensus, in
+        particular by controlling submissions and refusing time for
+        presentations by the participants.
+
+D8.i    Note that the WG minutes from Dallas show that the WG "straw
+        poll" decided _not_ to replace AH-MD5 with Hugo's HMAC.  Yet,
+        Lambert simply gave Hugo another go at it (presentation time)
+        and then asked this session the same question.  And got a
+        different answer.
+
+D8.j    He refused me time to refute Hugo's claim that HMAC is more
+        secure (I was standing at the mike with the Van Oorshot MDx-MAC
+        papers in hand.)
+
+D8.k    This is the same technique that he used before.  When the WG
+        decided to use the SIPP formats, he simply ignored it, and
+        presented to the next IETF as if that had never happened.  He
+        just keeps asking the same question over and over until he gets
+        the answer he wants.
+
+D8.l    Please remove Paul Lambert for misfeasance, malfeasance,
+        exceeding his authority, and abusing his discretion.  He has not
+        learned from correction of his previous errors.
+
+D9  The Area Director decision for the IESG investigation introduced
+    several fallacious and faulty findings.  [Exhibits #28, #29]  My
+    issues raised were never answered by the Area Director or the IESG.
+    These malicious and egregiously false statements have found their
+    way into the recent appeal decision.
+
+D10 In June 1996, when John Gilmore intervened, he found that the
+    Chairs were unwilling to grant presentation time for Photuris unless
+    my name was removed from the drafts.  Yet, a straw poll indicated
+    that more than half of the participants were still interested in
+    Photuris going forward.
+
+D11 Karn and I were deliberately excluded from the IP Security key
+    management discussion meetings, and Photuris was not mentioned in
+    the Area Directors report of 19 Sep 1996.  [WG list]
+
+
