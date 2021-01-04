@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TESTER</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rahmat M. Samik-Ibrahim" >
+    <meta name="copyright" content="1996-2021">
+    <meta name="description" content="Description">
+    <meta name="keywords" content="VauLSMorg, RMS46, Samik-Ibrahim">
+    <link href="/style.css" rel="stylesheet" type="text/css" title="Style">
+    <style>
+    h1, h2, h3 {
+        text-align: center;
+    } 
+    p, th, dt {
+        text-align: left;
+    } 
+    table  {
+        border:       0;
+        width:        60%;
+        margin-left:  20%;
+        margin-right: 20%;
+    }
+    </style>
+    <script async src="https://cse.google.com/cse.js?cx=c1bcd585429a188f9"></script>
+</head>
+<body style="background-image:url(/png/gtmb.png)">
+<div id="cse" style="width: 30%; margin: 0 auto">
+<div class="gcse-search"></div>
+</div>
+<h1 align="left">Cara Menjadi Seorang Hacker</h1>
+
+<div align="left">
+
+<p>Terjemahan Indonesia dari <em>How To Become A Hacker </em>&lt;<a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/faqs/hacker-howto.html">http://www.tuxedo.org/~esr/faqs/hacker-howto.html</a>&gt;
+oleh <em>Eric S. Raymond </em>&lt;<a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr">http://www.tuxedo.org/~esr</a>&gt;. Diterjemahkan 
+oleh Steven Haryanto (Twitter: @stevenharyanto).
+Pertama diterjemahkan 31 Juli 1999. Update ke revisi 1.7 dan perbaikan 
+terjemahan tanggal 19 Mei 2001.</p>
+
+</div>
+
+<h1>1. Mengapa Tulisan Ini Dibuat?</h1>
+
+<p>Sebagai penyunting <a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/jargon">Jargon File</a> dan 
+penulis beberapa tulisan serupa lain yang telah dikenal luas, saya sering 
+menerima email permintaan dari newbie jaringan yang antusias, bunyinya (kurang 
+lebih) "bagaimana cara menjadi hacker jagoan?". Anehnya, tidak ada FAQ atau 
+dokumen web lain yang membahas pertanyaan penting ini, jadi inilah tulisan saya.</p>
+
+<p>Jika Anda membaca snapshot dokumen ini secara offline, kunjungi versi 
+terakhirnya di
+<a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/faqs/hacker-howto.html" target="_top">
+http://www.tuxedo.org/~esr/faqs/hacker-howto.html</a>.</p>
+
+<p>Catatan: ada daftar <a href="https://web.archive.org/web/20020802163501/http://www.steven.haryan.to:80/hacker-howto.id.html#FAQ">FAQ</a> di akhir tulisan. Bacalah FAQ ini 
+-- dua kali -- sebelum mengirim email pertanyaan pada saya seputar dokumen ini.</p>
+
+<p>Terjemahan berbagai bahasa dari tulisan ini tersedia: :
+<a href="https://web.archive.org/web/20020802163501/http://linux.gyuvet.ch/html/paper/hackers.html" target="_top">Bulgaria</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.angelfire.com/ok/leekawo/hackersim.htm" target="_top">Cina 
+(Simplified)</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.angelfire.com/ok/leekawo/hacker.htm" target="_top">Cina 
+(Tradisional)</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.fys.ku.dk/~omic/hacker-howto.html" target="_top">Denmark</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.satl.com/c/hackerHOWTO.html" target="_top">Belanda</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.math.jussieu.fr/~fermigie/hacker-howto-fr.html" target="_top">
+Prancis</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.crosswinds.net/~tonihusu/translations/miten_hakkeri.html" target="_top">
+Finlandia</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.geocities.com/CapeCanaveral/Launchpad/1380/hackhowt.html" target="_top">
+Jerman</a>,
+<a href="https://web.archive.org/web/20020802163501/http://lme.linux.hu/forditas/hacker-howto.html" target="_top">Hungaria</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.fortunecity.com/tinpan/joolsholland/183/hack2.htm" target="_top">
+Italia</a>, <a target="_top" href="https://web.archive.org/web/20020802163501/http://steven.haryan.to/hacker-howto.id.html">
+Indonesia</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.linux.or.jp/JF/JFdocs/hacker.html" target="_top">Jepang</a>,
+<a href="https://web.archive.org/web/20020802163501/http://genesis.yonsei.ac.kr/~kabin/doc/hacker-howto.htm" target="_top">
+Korea</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.linux.ime.usp.br/~rcaetano/docs/hacker-howto-pt.html" target="_top">
+Portugis</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/faqs/hacker-howto.ru.htm" target="_top">
+Rusia</a>,
+<a href="https://web.archive.org/web/20020802163501/http://www.webhost.cl/~alvherre/hacker-howto_es.html" target="_top">
+Spanyol</a>, dan
+<a href="https://web.archive.org/web/20020802163501/http://www1.tripnet.se/~mly/open/faqs/hacker-howto.se.html" target="_top">
+Swedia</a>. Perhatikan bahwa karena dokumen ini sesekali berubah, 
+terjemahan-terjemahan tersebut mungkin sedikit banyak kadaluarsa.</p>
+
+<h1>2. Apa Hacker Itu?</h1>
+
+<p> <a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/jargon">Jargon File</a> memuat beberapa definisi 
+untuk kata 'hacker', hampir semuanya berkaitan dengan
+kemahiran teknis serta kegemaran menyelesaikan masalah dan mengatasi
+keterbatasan. Namun jika ingin <em>menjadi</em> seorang hacker, hanya ada
+dua definisi yang relevan.</p>
+
+<p>Ada sebuah komunitas, budaya, terdiri dari para programer mahir dan
+ahli jaringan, yang sejarahnya bermula dari dekade minikomputer pertama yang
+memiliki time-sharing dan zaman eksperimen awal ARPAnet. Dari anggota budaya
+inilah muncul istilah 'hacker'. Hackerlah yang membangun internet. Hackerlah yang
+membuat sistem operasi Unix menjadi seperti sekarang. Hackerlah yang
+mengoperasikan Usenet. Hacker yang membuat World Wide Web berjalan. Jika
+Anda bagian dari budaya ini, jika Anda telah menyumbangkan sesuatu untuk
+budaya ini, dan rekan lain di dalamnya mengenali Anda sebagai seorang
+hacker, maka seorang hackerlah Anda.</p>
+
+<p>Cara pikir hacker tidak terbatas pada budaya hacker software. Ada orang
+yang menerapkan sikap hacker pada banyak bidang lain, elektronik atau musik
+-- bahkan, cara pikir hacker ada di tingkat tertinggi setiap bidang ilmu dan
+seni.  Hacker software mengakui semangat serupa ini dan kadang menyebut
+orang-orang tersebut "hacker" pula --  sebagian juga berpendapat bahwa sifat
+seorang hacker tidak bergantung pada wadah tempatnya bekerja. Tapi, untuk
+selanjutnya, kita akan memusatkan perhatian pada software hacker, keahlian
+dan sikap mereka, serta tradisi budaya bersama yang melahirkan istilah
+hacker.</p>
+
+<p>Terdapat pula sekelompok lain yang menyebut-nyebut diri hacker, padahal bukan.
+Mereka-mereka ini (terutama terdiri dari remaja pria)  mendapat kepuasan lewat
+membobol komputer dan mengakali telepon (phreaking). Hacker sejati menyebut
+orang-orang ini 'cracker' dan tidak suka bergaul dengan mereka. Hacker sejati
+memandang cracker sebagai orang malas, tidak bertanggung jawab, dan tidak terlalu
+cerdas. Hacker sejati tidak setuju jika dikatakan bahwa dengan menerobos
+keamanan seseorang telah menjadi hacker, sama seperti jika dikatakan bahwa
+mengontakkan mobil membuat seseorang langsung menjadi ahli mesin. Sayangnya,
+wartawan dan penulis telah salah kaprah dan menggunakan kata 'hacker' untuk
+melukiskan cracker; sesuatu yang selalu membuat kesal para hacker sejati.</p>
+
+<p>Perbedaan mendasar antara hacker dan cracker: hacker membangun, cracker
+membongkar.</p>
+
+<p>Jika Anda ingin menjadi hacker, lanjutkan membaca. Jika ingin menjadi
+cracker, kunjungi newsgroup <a href="https://web.archive.org/web/20020802163501/news:alt.2600">alt.2600</a> dan
+bersiaplah menghabiskan lima sampai sepuluh tahun di balik jeruji setelah
+mengetahui bahwa Anda ternyata tidak sepandai yang Anda kira. Hanya itu yang
+perlu dikatakan tentang cracker.</p>
+
+<h1>3. Sikap Hacker</h1>
+
+<p>Pekerjaan hacker  menyelesaikan masalah dan membangun sesuatu, dan hacker percaya pada kebebasan dan kerjasama sukarela. Agar
+dapat diterima sebagai seorang hacker, Anda harus berbuat seolah-olah Anda
+memiliki sikap ini. Dan agar dapat berbuat demikian, sikap ini harus
+benar-benar diyakini.</p>
+
+<p>Tapi kalau Anda berniat menumbuhkan sikap ini hanya agar dapat diterima
+di lingkungan hacker, maka Anda belum menangkap maknanya. Menjadi orang yang
+meyakini sikap hacker penting bagi <em>Anda sendiri</em> -- agar  bisa
+terus belajar dan termotivasi. Sama seperti semua seni kreatif lain, cara
+paling efektif untuk menjadi seorang ahli adalah dengan meniru cara berpikir
+ahli-ahli lainnya -- bukan hanya secara intelektual tapi juga emosional.</p>
+
+<p>Seperti diungkapkan oleh sebuah sajak Zen modern di bawah:</p>
+
+<p>Untuk mengikuti jalan:<br>
+pandanglah sang ahli,<br>
+ikuti sang ahli,<br>
+berjalan bersama sang ahli,<br>
+kenali sang ahili,<br>
+jadilah sang ahli.</p>
+
+<p>Jadi, jika ingin menjadi hacker, ulangi pernyataan di bawah ini
+sampai benar-benar Anda yakini:</p>
+
+<h2>3.1 Dunia penuh dengan persoalan-persoalan menarik yang menanti untuk
+dipecahkan.</h2>
+
+<p>Menjadi seorang hacker sebetulnya menyenangkan, tapi 'menyenangkan' yang
+menuntut usaha. Usaha ini membutuhkan motivasi. Atlet yang sukses memperoleh
+motivasi dari kepuasan fisik saat tubuh mereka beraksi, saat mendorong diri
+melampaui batasan fisik. Demikian juga, untuk menjadi seorang hacker Anda
+harus merasa tertarik  memecahkan persoalan, mengasah keahlian, dan
+melatih kecerdasan.</p>
+
+<p>Jika Anda merasa  bukan  seperti ini secara naluri, Anda
+harus berusaha menjadi demikian jika ingin berhasil menjadi hacker. Jika
+tidak, energi hacking Anda akan melemah karena perhatian  teralihkan
+oleh seks, uang, dan kedudukan.</p>
+
+<p>(Anda pun harus mengembangkan keyakinan pada kapasitas belajar diri --
+keyakinan bahwa meskipun yang Anda ketahui belum cukup untuk memecahkan
+suatu persoalan, jika satu potongan saja dari persoalan Anda usaha pecahkan,
+maka itu sudah cukup memberi pelajaran kepada Anda untuk menyelesaikan
+potongan berikutnya -- dan berikutnya, hingga semua potongan
+terselesaikan.)</p>
+
+<h2>3.2 Tidak seharusnya masalah yang sama dipecahkan dua kali.</h2>
+
+<p>Otak yang kreatif merupakan sumber daya yang berharga dan terbatas. Tidak
+seharusnya sumber daya ini diboroskan hanya untuk memikirkan kembali suatu
+persoalan dari dasar; padahal ada begitu banyak masalah menarik baru lain di
+dunia ini yang menanti. </p>
+
+<p>Agar dapat bertingkah laku seperti hacker, Anda harus percaya bahwa waktu
+berpikir hacker lain itu berharga -- sebegitu berharganya hingga merupakan
+suatu kewajiban moral bagi Anda untuk membagikan informasi, menyelesaikan
+masalah lalu memberi jawabannya pada hacker lain supaya mereka menyelesaikan
+masalah <em>baru</em> dan tidak selamanya berkutat pada masalah-masalah
+lama.</p>
+
+<p>(Tidak harus berkeyakinan bahwa <em>semua</em> produk kreatif Anda harus
+direlakan bagi orang lain, meski hacker yang demikianlah yang paling
+dihormati hacker lain. Menurut nilai-nilai hacker, jual saja sebagian asal cukup
+untuk tetap makan, tetap dapat membayar sewa rumah, dan tetap dapat memakai
+komputer. Tidak melanggar nilai hacker jika Anda memanfaatkan ilmu Anda
+untuk membiayai keluarga atau bahkan memperkaya diri, asalkan sambil 
+melakukannya tetap setia pada disiplin ilmu dan sesama hacker lain.)</p>
+
+<h2>3.3 Kebosanan dan pekerjaan membosankan itu jahat.</h2>
+
+<p>Hacker (dan manusia kreatif pada umumnya) tidak seharusnya dibosankan
+dengan pekerjaan bodoh yang berulang-ulang, karena ini berarti mereka tidak
+melakukan pekerjaan yang hanya bisa dilakukan oleh mereka -- menyelesaikan
+persoalan-persoalan baru. Pemborosan sumber daya ini merugikan semua pihak. 
+Karena itu kebosanan dan pekerjaan membosankan bukan saja tidak menyenangkan
+tapi juga jahat.</p>
+
+<p>Agar dapat bertingkah laku seperti hacker, Anda harus meyakini hal ini
+sehingga Anda berkeinginan untuk mengotomasi sebanyak mungkin bagian yang
+membosankan, bukan saja bagi diri sendiri tapi juga orang lain (terutama
+sesama hacker).</p>
+
+<p>(Ada satu kekecualian yang jelas. Hacker kadang melakukan pekerjaan yang
+di mata orang lain tampaknya berulang-ulang atau membosankan; ini untuk
+latihan menjernihkan pikiran, atau dalam rangka memperoleh keahlian atau
+pengalaman yang tak bisa tidak harus diperoleh dengan cara demikian. Tentu
+saja hal ini dilakukan atas dasar kehendaknya sendiri -- setiap orang yang
+mampu berpikir tidak seharusnya dipaksa menjadi bosan.)</p>
+
+<h2>3.4 Kebebasan itu baik.</h2>
+
+<p>Secara alamiah hacker itu anti-otoriter. Siapa pun yang dapat memerintah
+Anda akan dapat menghentikan Anda untuk menyelesaikan persoalan yang menarik
+-- dan, sesuai pikiran otak para otoriter, pada umumnya akan membuat alasan
+yang benar-benar bodoh untuk itu. Jadi sikap otoriter harus dilawan di mana
+pun Anda berada, agar nantinya tidak menekan Anda dan hacker-hacker
+lain.</p>
+
+<p>(Tidak untuk disamakan dengan melawan setiap bentuk kekuasaan. Anak-anak
+tetap harus dibimbing, para kriminal ditahan. Seorang hacker mungkin akan
+tunduk pada bentuk-bentuk kekuasaan tertentu agar dapat memperoleh sesuatu
+yang lebih dari waktu yang dibutuhkan untuk mengikuti peraturan. Ini lebih merupakan tawar-menawar yang terbatas dan dilakukan secara sadar;
+jenis tunduk diri yang diinginkan oleh orang-orang otoriter tentu saja tidak
+bisa diterima.)</p>
+
+<p>Para otoriter hidup di atas sensor dan kerahasiaan. Mereka tidak percaya
+pada kerjasama dan berbagi informasi -- satu-satunya jenis 'kerja sama' yang
+disukai adalah yang dapat mereka kendalikan. Jadi untuk berlaku seperti
+seorang hacker, Anda perlu mengembangkan rasa benci pada penyensoran,
+kerahasiaan, dan penggunaan kekerasan atau penipuan untuk memaksakan
+kehendak pada orang dewasa.  Dan Anda harus bersedia bertindak atas dasar keyakinan ini.</p>
+
+<h2>3.5 Sikap saja tak ada artinya tanpa keahlian.</h2>
+
+<p>Untuk menjadi hacker, Anda perlu mengembangkan sebagian dari sikap-sikap
+yang telah disebutkan. Tapi memiliki sikap saja belum membuat seseorang
+menjadi hacker, atau atlet juara atau bintang rock. Untuk menjadi hacker
+dibutuhkan kecerdasan, latihan, dedikasi, dan kerja keras.</p>
+
+<p>Jadi, Anda perlu belajar untuk tidak mempercayai sikap saja dan menghormati
+setiap bentuk kemampuan. Hacker tidak bersedia menghabiskan waktu dengan
+orang-orang yang hanya bersikap seperti hacker, tapi hacker memuja keahlian -- terutama 
+keahlian dalam hacking, tapi juga keahlian di bidang apapun.  Yang terlebih 
+bagus lagi yaitu keahlian dalam bidang yang sulit dan hanya
+dapat dikuasai oleh sedikit orang, dan yang terbaik adalah keahlian dalam
+bidang yang sulit dan melibatkan ketajaman mental, keahlian, serta
+konsentrasi.</p>
+
+<p>Bila Anda memuja keahlian, Anda akan merasa senang dalam meningkatkan
+kemampuan diri -- kerja keras dan dedikasi akan menjadi semacam permainan
+yang mengasyikkan ketimbang pekerjaan membosankan. Dan hal ini penting dalam
+proses menjadi hacker.</p>
+
+<h1>4. Kemampuan Hacking Dasar</h1>
+
+<p>Sikap hacker penting, tapi terlebih penting lagi keahlian. Sikap bukan
+pengganti keahlian, dan ada seperangkat keahlian menggunakan perangkat tool yang perlu Anda kuasai sebelum orang bahkan 
+bisa berpikir  memanggil
+Anda hacker.</p>
+
+<p>Perangkat tool ini perlahan-lahan memang berubah seiring teknologi yang
+menciptakan keahlian baru dan membuat keahlian lama tidak berguna. Misalnya,
+dulu keahlian pemrograman bahasa mesin termasuk, dan kemampuan HTML belum
+dan hanya baru-baru ini saja. Yang jelas saat ini yang termasuk adalah:</p>
+
+<h2>4.1 Pelajari pemrograman.</h2>
+
+<p>Ini tentunya merupakan keahlian hacking yang fundamental. Jika Anda belum
+pernah belajar bahasa pemrograman mana pun, saya sarankan mulai dengan <a href="https://web.archive.org/web/20020802163501/http://www.python.org/">Python</a>.  Disainnya bersih,
+terdokumentasi dengan baik, dan cukup mudah bagi pemula. Meski menjadi bahasa
+pertama, bukan berarti Python hanya mainan; Python amat ampuh dan fleksibel
+dan cocok untuk proyek-proyek besar. Saya menulis
+<a href="https://web.archive.org/web/20020802163501/http://noframes.linuxjournal.com/lj-issues/issue73/3882.html">evaluasi 
+terhadap Python</a> yang lebih mendetil. Tutorial Python bisa dilihat di
+<a href="https://web.archive.org/web/20020802163501/http://www.python.org/">situs web Python</a> (<a href="https://web.archive.org/web/20020802163501/http://steven.haryan.to/pytut.id.html">terjemahan 
+Indonesia</a>).</p>
+
+<p>Java juga bahasa yang baik untuk belajar pemrograman. Lebih sulit dari 
+Python, tapi menghasilkan kode yang lebih cepat dari Python. Menurut saya Java 
+amat bagus sebagai bahasa kedua.</p>
+
+<p>Perlu diingat bahwa dengan satu dua bahasa pemrograman saja Anda tidak
+akan mencapai tingkat keahlian seorang hacker, atau bahkan seorang
+programer -- Anda perlu belajar cara memandang pemrograman secara umum,
+tidak bergantung pada satu bahasa mana pun. Untuk menjadi hacker sejati,
+Anda perlu mencapai tahap di mana Anda dapat mempelajari bahasa baru dalam
+beberapa hari, dengan menghubungkan apa yang ada di manual dengan apa yang
+telah Anda ketahui. Hal ini berarti, Anda perlu mempelajari beberapa bahasa
+yang jauh berbeda satu dengan yang lainnya.</p>
+
+<p>Jika ingin serius dalam pemrograman, pada akhirnya Anda harus belajar C,
+bahasa inti sistem operasi Unix. C++ terkait erat dengan C; jika tahu yang satu, 
+belajar yang lain tidak akan susah. Namun keduanya bukan bahasa yang cocok untuk 
+dipelajari pertama kali.</p>
+
+<p>Bahasa lain yang juga penting untuk hacker antara
+lain <a href="https://web.archive.org/web/20020802163501/http://www.perl.com/">Perl</a> dan <a href="https://web.archive.org/web/20020802163501/http://snaefell.tamu.edu/~colin/lp/">LISP</a>.  Perl patut dipelajari
+untuk kebutuhan praktis; Perl dipakai secara amat meluas untuk halaman web
+aktif dan untuk administrasi sistem, jadi meskipun nantinya Anda tidak akan
+membuat program dalam Perl, Anda sebaiknya belajar cara membaca Perl. LISP
+patut dipelajari karena akan memberikan pengalaman 'membuka pikiran' jika
+Anda telah menangkapnya; dengan mempelajari LISP, Anda akan menjadi seorang
+programer yang lebih baik, meskipun dalam kenyataan Anda akan jarang
+memakainya.</p>
+
+<p>Paling baik sebetulnya mempelajari semuanya (Python, Java, C/C++, Perl, dan LISP). 
+Selain merupakan bahasa-bahasa terpenting dalam hacking, masing-masing
+mewakili cara pendekatan pemrograman yang berbeda, dan tiap bahasa akan
+memberi Anda pelajaran-pelajaran berharga.</p>
+
+<p>Tentu saja, di sini tidak mungkin saya memberi petunjuk lengkap cara
+memrogram -- pemrograman merupakan keahlian yang kompleks. Tapi, satu
+petunjuk yang saya berikan: buku dan kursus saja tidak akan membuat Anda
+menjadi seorang programer (banyak, mungkin hampir semua hacker terbaik
+itu belajar mandiri). Anda akan menjadi programer dengan (a) <em>membaca kode</em>
+dan (b) <em>menulis kode</em>.</p>
+
+<p>Belajar membuat program adalah seperti belajar menulis dalam bahasa
+alamiah. Cara terbaik untuk melakukannya  dengan membaca tulisan yang
+dibuat oleh para ahlinya, membuat tulisan sendiri sedikit, membaca
+lebih banyak lagi, menulis lebih banyak, dan mengulanginya sampai di tulisan
+Anda mulai terbentuk semacam kekuatan dan kemahiran penggunaan kata seperti
+di tulisan-tulisan yang semula Anda teladani. </p>
+
+<p>Dahulu sulit mencari kode yang baik untuk dibaca, karena dulu hanya
+sedikit program-program besar yang terdapat dalam bentuk source untuk bisa
+dibaca dan diutak-atik hacker-hacker pemula. Sekarang kondisinya jauh
+berbeda: software open-source, tool pemrograman, dan sistem operasi (semua
+dibuat oleh hacker) kini banyak terdapat. Dan ini mengantar kita pada poin
+berikutnya </p>
+
+<h2>4.2 Cari, pelajari, dan jalankan salah satu versi Unix open-source.</h2>
+
+<p>Saya anggap Anda memiliki, atau memperoleh akses ke komputer pribadi
+(anak-anak sekarang mudah sekali mendapatkan akses :-)). Kalau ada satu
+langkah terpenting bagi pemula untuk mendapatkan kemampuan hacker, itu
+adalah mendapatkan satu salinan sistem operasi Linux atau salah satu Unix
+BSD, meng-install-nya di komputer sendiri, dan menjalankannya.</p>
+
+<p>(Tidak saya sarankan meng-install Linux sendirian jika Anda pemula. Cari
+klub komputer atau kelompok pengguna Linux di daerah Anda dan mintalah
+bantuan; atau hubungi <a href="https://web.archive.org/web/20020802163501/http://www.linpeople.org/">Linux Internet
+Support Co-Operative</a>. LISC mengurus <a href="https://web.archive.org/web/20020802163501/http://openprojects.nu/services/irc.html">channel-channel IRC</a>
+tempat Anda dapat bertanya). Tentu, di dunia ini ada banyak sistem operasi
+selain Unix. Tapi sistem-sistem operasi tersebut didistribusikan dalam
+program jadi (binary) -- kodenya tidak bisa Anda baca, sehingga sistem
+operasi tersebut tidak bisa Anda modifikasi. Belajar hacking di DOS atau
+Windows atau MacOS adalah bagaikan belajar menari dengan seluruh tubuh
+digips.</p>
+
+<p>Lagipula Unix-lah sistem operasi Internet. Meski tentu bisa belajar
+menggunakan internet tanpa mengenal Unix, Anda tak akan mampu menjadi hacker
+Internet tanpa memahami Unix. Untuk alasan inilah, budaya hacker saat ini
+cukup cenderung berat ke Unix. (Ini tidak selalu benar, beberapa hacker
+zaman dahulu tidak menyukai kenyataan ini, tapi simbiosis antara Unix dan
+Internet telah menjadi kuat sehingga bahkan otot Microsoft pun tak mampu
+membengkokkannya.)</p>
+
+<p>Jadi, buatlah sistem Unix -- saya pribadi menyukai Linux tapi tentu saja
+ada yang lainnya (dan ya, Anda <em>bisa</em> menjalankan Linux dan DOS/Windows
+di mesin yang sama). Pelajari Unix. Jalankan Unix.  Bermain-mainlah dengan
+Unix. Berhubungan dengan internet melalui Unix. Baca kodenya. Modifikasi. Di
+Unix Anda akan menjumpai tool pemrograman yang lebih baik (termasuk C, Lisp,
+Python, dan Perl) ketimbang di sistem operasi Microsoft manapun, Anda akan
+bersenang-senang, dan Anda akan mendapat pengetahuan lebih dari yang Anda
+sadari sampai kemudian ketika mengenang kembali Anda telah seorang hacker
+ahli.</p>
+
+<p>Lebih jauh tentang mempelajari Unix, lihat <a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/faqs/loginataka.html">The Loginataka</a>.
+</p>
+
+<p>Untuk memperoleh Linux, lihat <a href="https://web.archive.org/web/20020802163501/http://linuxresources.com/apps/ftp.html">Where can I get
+Linux</a>.</p>
+
+<p>Bantuan dan resource BSD Unix bisa Anda lihat di <a href="https://web.archive.org/web/20020802163501/http://www.bsd.org/">
+www.bsd.org</a>.</p>
+
+<p>Saya menulis pengantar
+<a href="https://web.archive.org/web/20020802163501/http://www.linuxdoc.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/index.html">
+dasar Unix dan Internet</a>.</p>
+
+<p>(Catatan: Saya tidak menganjurkan menginstal Linux atau BSD sendirian jika 
+Anda seorang pemula. Untuk Linux, carilah sebuah kelompok pengguna lokal Linux 
+[KPLI di Indonesia] dan mintalah bantuan mereka; atau hubungi
+<a href="https://web.archive.org/web/20020802163501/http://www.linpeople.org/">Open Projects Network</a>. LISC memaintain 
+daftar <a href="https://web.archive.org/web/20020802163501/http://openprojects.nu/services/irc.html">IRC channel</a> yang 
+bisa Anda datangi untuk memperoleh bantuan.)</p>
+
+<h2>4.3 Pelajari cara menggunakan World Wide Web dan cara menulis HTML.</h2>
+
+<p>Kebanyakan hasil budaya hacker bekerja di belakang layar tanpa diketahui
+orang banyak, membantu mengoperasikan pabrik, kantor, dan universitas, tanpa
+ada pengaruh yang jelas pada cara hidup para non-hacker. Web adalah satu
+kekecualian, bahkan para politisi pun mengakui bahwa barang mainan hacker
+yang besar dan berkilauan ini telah mengubah dunia. Untuk satu alasan ini
+saja (dan juga banyak alasan bagus lainnya) Anda perlu mempelajari cara
+pengoperasian Web.</p>
+
+<p>Maksudnya lebih dari sekedar cara menggunakan browser (sebab kalau itu
+siapa pun bisa), tapi mempelajari cara menulis HTML, bahasa markup Web. Bila
+Anda belum menguasai pemrograman, lewat menulis HTML Anda akan diajari
+beberapa kebiasaan mental yang akan membantu Anda belajar pemrograman. Jadi,
+buatlah home page.</p>
+
+<p>Hanya dengan membuat homepage tidak akan membuat Anda menjadi (bahkan
+dekat pun tidak) seorang hacker. Web penuh dengan home page. Kebanyakan
+hanyalah kotoran tanpa arti, tanpa isi -- kotoran yang tampak indah, tapi
+tetap kotoran (lebih jauh tentang ini, lihat <a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/html-hell.html">The HTML Hell
+Page</a>).</p>
+
+<p>Agar bermanfaat, halaman Anda harus mengandung <em>content</em> -- harus
+menarik dan/atau berguna bagi hacker lain. Dan ini mengantar kita pada
+bahasan berikutnya...</p>
+
+<h1>5. Status dalam Budaya Hacker</h1>
+
+<p>Seperti halnya dalam kebanyakan budaya lain tanpa ekonomi uang, dunia
+hacker berjalan di atas reputasi. Anda berusaha menyelesaikan
+persoalan-persoalan menarik, tapi seberapa menarik persoalan tersebut, dan
+apakah solusi Anda benar-benar baik, merupakan sesuatu yang umumnya hanya
+dapat dinilai oleh rekan sejawat atau atasan Anda.</p>
+
+<p>Demikian juga, dalam permainan hacker, Anda menjaga nilai terutama lewat
+pandangan hacker lain terhadap kemampuan Anda (inilah sebabnya Anda belum
+benar-benar seorang hacker sampai hacker-hacker lain dengan konsisten
+menyebut Anda seorang hacker). Kenyataan ini dikaburkan oleh citra hacking
+sebagai pekerjaan menyendiri; juga oleh tabu budaya hacker (yang kini
+perlahan-lahan menghilang namun masih tetap kuat) yang tidak mengakui bahwa
+ego atau pengesahan dari luar berpengaruh pada motivasi seseorang.</p>
+
+<p>Tegasnya, dunia hacker merupakan apa yang disebut oleh para antropolog
+sebagai <em>budaya memberi</em>. Kedudukan dan reputasi tidak diperoleh dengan
+menguasai orang lain, atau dengan menjadi seseorang yang cantik, atau dengan
+memiliki sesuatu yang tidak dimiliki orang lain, tapi dengan memberikan
+sesuatu. Tepatnya, dengan memberikan waktu Anda, kreativitas, dan hasil dari
+kemampuan Anda.</p>
+
+<p>Pada dasarnya ada lima hal yang bisa dilakukan agar dihormati oleh
+hacker:</p>
+
+<h2>5.1 Menulis software open-source.</h2>
+
+<p>Yang pertama (yang paling inti dan paling tradisional) adalah menulis
+program yang dipandang berguna atau mengasyikkan oleh hacker lain, kemudian
+memberikan source programnya untuk digunakan oleh seluruh budaya hacker.</p>
+
+<p>(Dulu karya semacam ini disebut 'software bebas' (free software), tapi
+istilah ini memusingkan banyak orang karena mereka tidak tahu apa arti tepat
+dari 'free'. Sekarang banyak yang lebih menyukai istilah 'software
+<a href="https://web.archive.org/web/20020802163501/http://www.opensource.org/">open-source</a>'.)</p>
+
+<p>Para dewa<sup>1</sup> yang dipuja di dunia hacker yaitu mereka yang telah
+menulis program besar yang berkemampuan tinggi dan dibutuhkan di mana-mana,
+lalu memberikan program ini cuma-cuma, dan sekarang program itu telah
+dipakai setiap orang.</p>
+
+<h2>5.2 Membantu menguji dan men-debug software open-source</h2>
+
+<p>Yang selanjutnya berjasa adalah mereka yang bertahan menggunakan dan
+men-debug software open-source. Di dunia yang tak sempurna ini, tanpa
+terhindarkan kita harus menghabiskan sebagian besar waktu pengembangan
+software dalam tahap debugging. Karena itu setiap penulis software
+open-source yang waras akan berpendapat bahwa penguji beta yang baik (yang
+tahu bagaimana menjelaskan gejala masalah dengan jelas, bagaimana
+melokalisir masalah, mampu mentolerir bug di rilis cepat, dan bersedia
+menjalankan beberapa rutin diagnostik sederhana) itu amat sangat berharga.
+Bahkan satu saja penguji beta sudah mampu membantu menjadikan tahap
+debugging dari mimpi buruk panjang yang melelahkan menjadi hanya gangguan
+yang justru menyehatkan.</p>
+
+<p>Bila Anda seorang pemula, cobalah mencari program yang sedang dalam tahap
+pengembangan, yang menarik bagi Anda, dan jadilah seorang penguji beta yang
+baik. Dari sini Anda secara alamiah akan meningkat dari membantu menguji
+program ke membantu memodifikasi program. Anda akan belajar banyak, dan pada
+gilirannya nanti Anda pun akan memperoleh bantuan dari orang lain saat
+membutuhkan.</p>
+
+<h2>5.3 Menerbitkan informasi yang bermanfaat.</h2>
+
+<p>Yang bagus juga untuk dilakukan yaitu mengumpulkan dan menyaring
+informasi-informasi menarik dan berguna ke dalam halaman Web atau dokumen
+seperti FAQ (Frequently Asked Questions -- daftar jawaban
+pertanyaan-pertanyaan yang sering diajukan orang), dan membuat
+dokumen-dokumen ini mudah didapat orang.</p>
+
+<p>Pemelihara FAQ teknis yang besar-besar juga mendapatkan hormat hampir
+seperti para penulis software open-source.</p>
+
+<h2>5.4 Membantu terus berjalannya infrastruktur.</h2>
+
+<p>Budaya hacker (dan juga dalam hal ini pengembangan rekayasa Internet)
+dijalankan oleh relawan. Banyak sekali pekerjaan yang dibutuhkan namun bukan
+pekerjaan yang agung, yang harus dilakukan agar semuanya tetap berjalan
+melakukan administrasi mailing list, moderasi newsgroup, memelihara situs
+archive software yang besar, mengembangkan dokumen-dokumen RFC serta standar
+teknis lainnya.</p>
+
+<p>Mereka yang melakukan hal-hal seperti dengan baik juga dihormati, karena
+orang tahu bahwa pekerjaan seperti ini menghabiskan banyak waktu dan kalah
+mengasyikkan dibanding bermain dengan kode. Melakukan pekerjaan seperti ini
+menunjukkan bahwa seseorang memiliki dedikasi. </p>
+
+<h2>5.5 Mengabdi kepada budaya hacker itu sendiri.</h2>
+
+<p>Terakhir, Anda dapat mengabdi dan menyebarluaskan budaya hacker (lewat,
+misalnya, menulis panduan tepat bagi pemula tentang cara menjadi seorang
+hacker :-)). Anda tidak bisa melakukan hal ini kecuali telah berkecimpung
+cukup lama dan menjadi figur yang cukup terkenal di salah satu dari empat
+hal sebelumnya.</p>
+
+<p>Budaya hacker tidak persis memiliki pemimpin, tapi memiliki pahlawan,
+tetua suku, sejarawan, dan para jubir. Jika Anda telah cukup lama berada di
+'medan tempur', Anda dapat saja memperoleh salah satu dari jabatan-jabatan
+ini.  Peringatan: hacker tidak mempercayai ego tetua suku yang terlampau
+mencolok, jadi berbahaya jika Anda terlalu terlihat untuk berusaha menjadi
+terkenal. Cara yang benar seharusnya yaitu dengan memposisikan diri
+sedemikian rupa sehingga jabatan tersebut jelas telah Anda capai, lalu
+kemudian bersikap rendah hati dan ramah sehubungan dengan kedudukan Anda
+tersebut.</p>
+
+<h1>6. Hubungan Hacker/Orang Nyentrik<sup>2</sup></h1>
+
+<p>Bertentangan dengan mitos populer, tidak perlu menjadi orang nyentrik
+untuk menjadi hacker. Meski itu sebetulnya membantu, dan pada kenyataannya
+banyak hacker yang merupakan orang nyentrik. Menjadi orang yang tersisih
+secara sosial membantu Anda tetap memusatkan perhatian pada hal-hal yang
+benar-benar penting, seperti berpikir dan hacking.</p>
+
+<p>Karena alasan ini, banyak hacker mengadopsi label 'nerd' dan bahkan 
+menggunakan istilah yang lebih kasar 'geek' sebagai lencana kebanggaan -- cara 
+memproklamasikan kebebasan dari tuntutan sosial. Lihatlah
+<a href="https://web.archive.org/web/20020802163501/http://samsara.circus.com/~omni/geek.html">The Geek Page</a> untuk 
+pembahasan menyeluruh. </p>
+
+<p>Bila Anda tetap dapat memusatkan perhatian pada hacking sampai menjadi
+cukup ahli dan tetap memiliki kegiatan sosial, itu sah-sah saja. Hal ini
+memang lebih mudah dilakukan sekarang ketimbang waktu saya seorang pemula di
+tahun 1970-an; budaya mainstream saat ini jauh lebih ramah pada para
+techno-nerd. Malah kini semakin banyak orang yang menyadari bahwa hacker
+kadang merupakan kekasih yang berkualitas dan calon pasangan hidup
+potensial. Lebih lanjut tentang hal ini, lihat <a href="https://web.archive.org/web/20020802163501/http://www.bunnyhop.com/BH5/geekguys.html">Girl's Guide to Geek
+Guys</a>.</p>
+
+<p>Bila ketertarikan Anda pada hacking adalah karena Anda tidak mempunyai
+kegiatan lain, itu juga tidak apa-apa -- setidaknya tidak perlu susah-susah
+memusatkan perhatian. Mudah-mudahan satu hari nanti Anda akan memperoleh
+kehidupan sosial.</p>
+
+<h1>7. Panduan Gaya</h1>
+
+<p>Saya ulangi, untuk menjadi hacker, Anda perlu memasuki cara pikir hacker. 
+Hal-hal tertentu yang Anda lakukan saat jauh dari komputer kadang membantu
+mencapainya. Tentu saja kegiatan-kegiatan ini bukan sebagai pengganti
+hacking (tak ada yang dapat menggantikan hacking) tapi banyak hacker
+melakukannya, dan merasa bahwa kegiatan tersebut secara dasar berhubungan
+dengan intisari hacking.</p>
+
+<ul>
+ <li>Membaca karya fiksi ilmiah.
+     Datang ke pertemuan fiksi ilmiah (salah satu jalan yang bagus untuk
+     bertemu hacker dan proto-hacker).</li>
+ <li>Mempelajari Zen, dan/atau
+     berlatih bela diri. (Disiplin mental yang diajarkan serupa dengan hacking
+     dalam hal-hal penting.)</li>
+ <li>Mengasah pendengaran musik.
+     Belajar menghargai jenis-jenis musik yang tidak lazim. Belajar menjadi
+     ahli dalam bermain alat musik tertentu, atau berlatih bernyanyi.</li>
+ <li>Mengembangkan apresiasi
+     akan permainan kata.</li>
+ <li>Belajar menulis dalam
+     bahasa asli (Sejumlah banyak hacker, termasuk semua hacker terbaik yang
+     saya kenal, adalah penulis yang cakap).</li>
+</ul>
+
+<p>Semakin banyak dari hal-hal di atas yang sudah Anda kerjakan, semakin
+besar kemungkinan Anda adalah calon hacker berbakat. Kenapa hal-hal di atas
+yang berhubungan dengan hacking tidak sepenuhnya jelas, tapi semuanya
+berkaitan dengan gabungan kemampuan otak kiri dan kanan yang penting (hacker
+harus dapat berpikir logis dan juga sewaktu-waktu harus dapat melangkah
+keluar dari logika umum suatu permasalahan).</p>
+
+<p>Terakhir, sebagian dari hal-hal yang <em>tidak</em> sebaiknya dilakukan:</p>
+
+<ul>
+ <li>Jangan menggunakan ID atau
+     nama samaran yang konyol atau berlebihan.</li>
+ <li>Jangan terlibat perang
+     flame di Usenet (atau di mana pun).</li>
+ <li>Jangan menggelari diri
+     'cyberpunk', jangan berurusan dengan para 'cyberpunk'.</li>
+ <li>Jangan mengirim posting
+     atau email yang penuh salah ketik dan bertata bahasa buruk.</li>
+</ul>
+
+<p>Satu-satunya reputasi yang akan Anda dapatkan jika melakukan hal-hal di
+atas adalah sebagai orang dungu. Ingatan hacker biasanya bagus -- mungkin
+dibutuhkan bertahun-tahun lamanya sebelum Anda dapat diterima kembali.</p>
+
+<h1>8. Bacaan Lain</h1>
+
+<p>Peter Seebach mengurus dokumen bagus <a href="https://web.archive.org/web/20020802163501/http://www.plethora.net/~seebs/faqs/hacker.html">Hacker FAQ</a> bagi
+para manajer yang tidak tahu bagaimana harus berhadapan dengan para
+hacker.</p>
+
+<p>Di <a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/faqs/loginataka.html">Loginataka</a>
+terdapat beberapa keterangan
+tentang latihan dan cara bersikap seorang hacker Unix yang benar.</p>
+
+<p>Saya juga menulis <a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/faqs/hacker-hist.html">A Brief History Of
+Hackerdom</a>.</p>
+
+<p>Saya menulis sebuah paper, <a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/writings/cathedral-bazaar/index.html">The
+Cathedral and the Bazaar</a>, yang menjelaskan banyak tentang cara kerja
+Linux dan budaya open-source. Topik ini saya bahas lebih tegas dalam
+kelanjutan paper tersebut, <a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/writings/homesteading/">Homesteading the
+Noosphere</a>.</p>
+
+<p>Rick Moen menulis dokumen yang bagus tentang cara mengoperasikan
+<a href="https://web.archive.org/web/20020802163501/http://linuxmafia.com/~rick/essays/newlug.html">kelompok pengguna Linux</a>.</p>
+
+<h1>9. Tanya Jawab (FAQ)</h1>
+
+<p><b>T: </b>Maukah Anda mengajari saya cara hacking?</p>
+
+<p><b>J: </b>Sejak pertama kali halaman ini diterbitkan online, setiap minggu 
+(kadang setiap hari) saya
+mendapatkan beberapa permintaan dari orang agar saya 'mengajari hacking dari
+A-Z'. Sayangnya, saya tidak memiliki waktu atau tenaga untuk ini;
+proyek-proyek hacking saya telah menghabiskan 110% dari waktu saya.</p>
+
+<p>Meski toh saya ajarkan, hacking adalah sikap dan kemampuan yang pada
+dasarnya harus dipelajari sendiri. Anda akan menyadari bahwa
+meskipun para hacker sejati bersedia membantu, mereka tidak akan menghargai
+Anda jika Anda minta disuapi segala hal yang mereka ketahui.</p>
+
+<p>Pelajari dulu sedikit hal. Tunjukkan bahwa Anda telah berusaha, bahwa
+Anda mampu belajar mandiri. Barulah ajukan pertanyaan-pertanyaan spesifik
+pada hacker yang Anda jumpai.</p>
+
+<p>Jika toh Anda mengirim email pada seorang hacker untuk meminta nasihat, 
+ketahuilah dahulu dua hal. Pertama, kami telah menemukan bahwa orang-orang yang 
+malas dan sembrono dalam menulis biasanya terlalu malas dan sembrono dalam 
+berpikir sehingga tidak cocok menjadi hacker -- karena itu usahakanlah mengeja 
+dengan benar, dan gunakan tata bahasa dan tanda baca yang baik, atau Anda tidak 
+akan diacuhkan. Kedua, jangan <i>berani-berani</i> meminta agar jawaban dikirim 
+ke alamat email lain yang berbeda dari alamat tempat Anda mengirim email; kami 
+menemukan orang-orang ini biasanya pencuri yang memakai account curian, dan kami 
+tidak berminat menghargai pencuri.</p>
+
+<p><b>T: </b>Jadi bagaimana cara memulai?</p>
+
+<p><b>J: </b>Cara terbaik adalah barangkali mengunjungi pertemuan KPLI (kelompok 
+pengguna Linux) setempat. Anda dapat menemukan kelompok yang dimaksud di
+<a href="https://web.archive.org/web/20020802163501/http://metalab.unc.edu/LDP/intro.html" target="_top">LDP General Linux 
+Information Page</a>; mungkin ada satu yang di dekat Anda, kemungkinan terkait 
+dengan sebuah sekolah atau universitas. Anggota KPLI kemungkinan akan memberi 
+Anda Linux jika Anda meminta, dan sudah pasti akan menolong Anda menginstall 
+Linux dan mulai memakainya.</p>
+
+<p><b>T: </b>Kapan saya harus mulai? Apakah sudah terlambat?</p>
+
+<p><b>J: </b>Di usia mana pun saat Anda mulai termotivasi, itu usia yang baik. 
+Kebanyakan orang mulai tertarik di usia 15 s.d. 20, tapi banyak perkecualian 
+(lebih tua maupun lebih muda).</p>
+
+<p><b>T: </b>Berapa lama waktu yang dibutuhkan untuk belajar hacking?</p>
+
+<p><b>J: </b>Bergantung seberapa besar bakat dan usaha Anda. Kebanyakan orang 
+memperoleh keahlian yang cukup dalam delapan belas bulan atau dua tahun, jika 
+mereka berkonsentrasi. Tapi jangan pikir setelah itu selesai; jika Anda hacker 
+sejati, Anda akan menghabiskan sisa waktu belajar dan menyempurnakan keahlian.</p>
+
+<p><b>T: </b>Apakah Visual Basic atau Delphi bahasa permulaan yang bagus?</p>
+
+<p><b>J: </b>Tidak, karena mereka tidak portabel. Belum ada implementasi 
+open-source dari bahasa-bahasa ini, jadi Anda akan terkurung di platform yang 
+dipilih oleh vendor. Menerima situasi monopoli seperti itu bukanlah cara hacker.</p>
+
+<p>Visual Basic amat jelek. Fakta bahwa bahasa ini proprietary dari Microsoft 
+sudah cukup untuk mendiskualifikasikannya, dan seperti halnya Basic-Basic yang 
+lain, bahasa ini didisain dengan jelek dan akan mengajarkan kepada Anda 
+kebiasaan-kebiasaan memrogram yang jelek.</p>
+
+<p><b>T: </b>Maukah Anda membantu saya meng-crack sistem ini, atau mengajari saya
+cara cracking?</p>
+
+<p><b>J: </b>Tidak. Jika orang masih mengajukan pertanyaan bodoh seperti di atas
+setelah membaca tulisan ini, berarti dia terlalu bodoh untuk dididik,
+meskipun saya memiliki waktu untuk mendidiknya. Setiap email kepada saya
+dengan permintaan semacam ini akan diabaikan atau dijawab dengan amat
+kasar.</p>
+
+<p><b>T: </b>Bagaimana cara mendapatkan password account orang lain?</p>
+
+<p><b>J: </b>Ini cracking. Pergi sana, bodoh.</p>
+
+<p><b>T: </b>Bagaimana cara menembus/membaca/memonitor email orang lain?</p>
+
+<p><b>J: </b>Ini cracking. Jauh-jauh sana, goblok.</p>
+
+<p><b>T: </b>Bagaimana cara mencuri privilege op chanel di IRC?</p>
+
+<p><b>J:</b> Ini cracking. Enyah kau, cretin. (Catatan: lihat Jargon File).</p>
+
+<p><b>T: </b>Saya dicrack. Maukah Anda menolong saya mencegah serangan 
+berikutnya?</p>
+
+<p><b>J: </b>Tidak. Setiap kali saya ditanya pertanyaan di atas sejauh ini, 
+ternyata penanyanya seseorang yang menggunakan Microsoft Windows. Tidak mungkin 
+secara efektif melindungi sistem Windows dari serangan crack; kode dan 
+arsitektur Windows terlalu banyak mengandung cacat, sehingga berusaha 
+mengamankan Windows seperti berusaha menyelamatkan kapal yang bocor dengan 
+saringan. Satu-satunya cara pencegahan yang andal adalah berpindah ke Linux atau 
+sistem operasi lain yang setidaknya dirancang untuk keamanan.</p>
+
+<p><b>T: </b>Saya mengalami masalah dengan software Windows saya. Maukah Anda 
+menolong?</p>
+
+<p><b>J: </b>Ya. Buka DOS prompt dengan ketikkan "format c:". Semua masalah yang 
+Anda alami akan lenyap dalam beberapa menit.</p>
+
+<p><b>T: </b>Di mana tempat untuk bertemu dengan para hacker asli dan mengobrol
+dengan mereka?</p>
+
+<p>Jalan terbaik yaitu dengan mencari kelompok pengguna Unix atau Linux di
+daerah Anda dan pergi ke pertemuan rutin mereka (sebagian daftar kelompok
+pengguna ini bisa dilihat di halaman <a href="https://web.archive.org/web/20020802163501/http://sunsite.unc.edu/LDP">LDP</a> di Sunsite).</p>
+
+<p>(Dulu saya pernah berkata bahwa di IRC Anda tidak akan berjumpa dengan
+hacker sejati, tapi sekarang saya mengerti bahwa kenyataan ini telah
+berubah.  Nampaknya komunitas para hacker sejati, yang berhubungan dengan
+hal-hal seperti GIMP dan Perl, telah memiliki channel IRC
+masing-masing).</p>
+
+<p><b>T: </b>Bisakah Anda menganjurkan buku-buku yang berguna seputar hacking?</p>
+
+<p><b>J:</b> Saya memaintain
+<a href="https://web.archive.org/web/20020802163501/http://sunsite.unc.edu/LDP/HOWTO/Reading-List-HOWTO/index.html" target="_top">
+Linux Reading List HOWTO</a> yang mungkin berguna bagi Anda.
+<a href="https://web.archive.org/web/20020802163501/http://www.tuxedo.org/~esr/faqs/loginataka.html" target="_top">
+Loginataka</a> juga barangkali menarik buat Anda.</p>
+
+<p><b>T: </b>Apakah matematika saya harus bagus untuk menjadi hacker?</p>
+
+<p><b>J:</b> Tidak. Meskipun Anda perlu dapat berpikir logis dan mengikuti 
+rantai pemikiran eksak, hacking hanya menggunakan sedikit sekali matematika 
+formal atau aritmetika.</p>
+
+<p>Anda terutama tidak perlu kalkulus atau analisis (kita serahkan itu kepada 
+para insinyur elektro :-)). Sejumlah dasar di matematika finit (termasuk aljabar 
+Bool, teori himpunan hingga, kombinasi, dan teori graph) berguna.</p>
+
+<p><b>T: </b>Bahasa apa yang pertama-tama harus saya pelajari?</p>
+
+<p><b>J: </b>HTML, bila Anda belum menguasainya. Ada banyak buku HTML yang jelek,
+dengan sampul mengkilap dan penuh dengan kata-kata berlebih, sementara amat
+disayangkan jumlah buku yang bagus sedikit. Satu yang paling saya sukai
+yaitu <a href="https://web.archive.org/web/20020802163501/http://www.oreilly.com/catalog/html3/">HTML: The Definitive
+Guide</a>.</p>
+
+<p>Tapi HTML bukan bahasa pemrograman penuh. Bila Anda telah siap untuk
+memrogram, saya sarankan mulai dengan <a href="https://web.archive.org/web/20020802163501/http://www.python.org/">Python</a>. Anda akan mendengar banyak orang
+menyarankan Perl, dan Perl saat ini masih lebih populer ketimbang Python,
+tapi Perl lebih sulit dipelajari.</p>
+
+<p>C amat penting, tapi juga jauh lebih sulit daripada Python atau Perl.
+Jangan langsung belajar C untuk pertama kali.</p>
+
+<p><b>T: </b>Hardware seperti apa yang saya butuhkan?</p>
+
+<p><b>J: </b>Komputer pribadi (PC, personal computer) dulu kurang memiliki daya 
+komputasi dan memori sedikit, sehingga membatasi proses belajar hacker. Sudah 
+agak lama kenyataannya tidak lagi demikian. Setiap mesin mulai dari 486DX50 ke 
+atas sudah lebih dari cukup untuk development, X, dan komunikasi Internet, dan 
+harddisk terkecil yang bisa Anda beli sekarang sudah cukup besar.</p>
+
+<p>Yang penting dalam memilih hardware adalah apakah kompatibel dengan Linux 
+(atau BSD, jika Anda memilih OS itu). Lagi-lagi, hardware modern kebanyakan 
+kompatibel; yang masih kurang banyak kompatibel adalah modem dan printer; 
+beberapa mesin mengandung hardware yang spesifik Windows dan tidak akan bekerja 
+dengan Linux.</p>
+
+<p>Ada FAQ tentang kompatibilitas hardware, versi terakhirnya ada di
+<a href="https://web.archive.org/web/20020802163501/http://users.bart.nl/~patrickr/hardware-howto/Hardware-HOWTO.html">sini</a>.</p>
+
+<p><b>T: </b>Apakah saya harus membenci dan menjelek-jelekkan Microsoft?</p>
+
+<p><b>J: </b>Tidak perlu. Bukannya Microsoft itu menjijikkan, tapi sudah ada 
+budaya hacker jauh sebelum Microsoft dan juga akan ada nanti setelah Microsoft 
+menjadi sejarah. Energi yang Anda berikan untuk membenci Microsoft barangkali 
+lebih baik dikerahkan untuk mencintai pekerjaan Anda. Tulislah kode yang bagus 
+-- itu yang akan cukup menjelekkan Microsoft tanpa mengotori karma Anda.</p>
+
+<p><b>T:</b> Tapi bukankan dengan software open-source programer tidak akan dapat
+memperoleh nafkah?</p>
+
+<p><b>J: </b>Kemungkinan besar tidak -- sejauh ini, industri software open-source
+justru menciptakan ketimbang menghilangkan lapangan pekerjaan. Jika
+ditulisnya suatu program akan menciptakan keuntungan bersih secara ekonomi,
+seorang programer tetap akan memperoleh bayaran terlepas dari apakah
+programnya itu akan menjadi program bebas atau tidak. Dan, terlepas dari
+sebanyak apa pun software bebas yang telah ditulis, selalu ada kebutuhan
+akan aplikasi yang baru dan dibuat sesuai pesanan. Di halaman web <a href="https://web.archive.org/web/20020802163501/http://www.opensource.org/">Open Source</a>, saya menulis lebih jauh
+tentang hal ini.</p>
+
+<p><b>T: </b>Bagaimana caranya mulai? Di mana saya bisa mendapatkan versi Unix
+bebas?</p>
+
+<p><b>J: </b>Di bagian lain tulisan ini saya telah memberi petunjuk tempatnya. Untuk
+menjadi hacker Anda memerlukan motivasi dan inisiatif dan kemampuan untuk
+belajar mandiri. Mulailah sekarang</p>
+
+<p><b>Footnote</b></p>
+
+<p><sup>1</sup> <em>Demigod</em>, hacker yang telah memiliki pengalaman
+bertahun-tahun, memiliki reputasi kelas dunia, dan berperan penting dalam
+pengembangan rancangan, tool, atau game yang dipakai/dikenal oleh minimal
+separuh komunitas hacker (dari <em>Jargon File 4.1.2</em>).</p>
+
+<p><sup>2</sup> <em>Nerd</em>, seseorang yang memiliki IQ di atas rata-rata,
+kurang mampu bercakap-cakap atau melakukan ritual sosial lainnya. (dari
+<em>Jargon File 4.1.2</em>).</p>
+
+<!--
+     FILE ARCHIVED ON 16:35:01 Aug 02, 2002 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:47:41 Jan 04, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+
+
+<table><tr><td>
+File Revision: 102---04-Jan-2021.
+<br><br>
+&copy; 1996-2021 --- Copyright of the files in this repository remains with 
+the respective authors or / and producers. We are <b>NOT</b> responsible for the <b>ACCURACY</b> or 
+<b>LOSSES</b> that may occur as a result of using this site. <b>PLEASE ASSUME ALL RISKS</b>! Don't 
+forget to express / write down acknowledgments if you use work materials from other 
+parties.
+You are free to share, copy and redistribute the material of this site in any medium
+or format for any purpose, even commercially. Please give appropriate credit, provide
+a link to the page, and indicate if changes were made. You may do so in any reasonable 
+manner. You should not apply legal terms or technological measures, that legally 
+restrict others from doing anything that is permitted here.
+<br><br>
+Kami <b>TIDAK</b> bertanggung-jawab atas <b>KEAKURATAN</b> mau pun <b>KERUGIAN</b> yang mungkin terjadi akibat 
+memanfaatkan situs ini.  <b>HARAP MENANGGUNG SENDIRI SEGALA RISIKO</b>!  Jangan lupa mengungkapkan/ 
+menuliskan penghargaan (<b>acknowledgement</b>) jika anda menggunakan bahan karya dari 
+pihak lain.
+Situs ini berbasis “<b>Google Sana, Google Sini, Coba Itu, Coba Ini, Lalu Tanya-tanyi</b>” 
+(GSGSCICILTT). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah ada klaim 
+bahwa ini merupakan karya asli, serta belum tentu pula merupakan solusi terbaik, serta 
+bukan untuk konsumsi Scopus :). Mohon kiranya memberikan tanggapan, terutama jika 
+memiliki solusi alternatif. Semoga catatan ini akan bermanfaat di masa mendatang, 
+saat sudah lupa cara menyelesaikan masalah trivia ini.
+<br><br>
+<a href="https://rahmatm.samik-ibrahim.vlsm.org/">RahmatM.Samik-Ibrahim</a><b>_AT_vlsmDOTorg</b>.
+</td></tr></table>
+</body>
+</html>
+
