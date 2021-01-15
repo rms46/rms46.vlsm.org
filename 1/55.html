@@ -1,74 +1,40 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<!DOCTYPE html>
 <html>
-<head><title>
-UNINET: An Inter-University Computer Network
-</title>
-<META name="description" 
-content="I am a real nowhere man, sitting in a nowhere LAN, making all my
-	nowhere .plans for nobody -1 -- Rahmat M. Samik-Ibrahim.">
-<META name="keywords" 
-content="RMS46, Rahmat, Samik-Ibrahim, Grounded-Theory, Research,
-Kompas, Kompas-Online, Analisis, Kwik-Kian-Gie, Internet, RFC, IETF"></head>
-<!--  Using STDLIB`(M4)' revision 9.X                         -->
-<!--  (C) 1996-2010 Rahmat M. Samik-Ibrahim under GPL terms.  -->
-<!--  http://vlsm.org/bin/std.m4.gz                           --> 
-     
-<body bgcolor="#ffffff" text="#000000" link="#0000d9" vlink="#000070" alink="#000040">
-<center><table bgcolor="#e6ebfe" width="80%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width=77 align="center" valign="middle"><a href="LOCAL-LINK1.html" target="_top"><img 
-src="png/LOCAL-LOGO1.png" ALT="[LOCAL LOGO 1]" width=75 height=75 border=0></a>
-<td align="center" valign="middle"><font color="#00008b" size=4><b>
-UNINET: An Inter-University Computer Network
-</b>
-<br><font size=2><b>Jos Luhukay and Bagio Budiardjo
+<head>
+    <title>The VauLSMorg (vlsm.org) Archive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Rahmat M. Samik-Ibrahim" >
+    <meta name="copyright" content="1996-2021">
+    <meta name="description" content="Description">
+    <meta name="keywords" content="VauLSMorg, RMS46, Samik-Ibrahim">
+    <link href="/css/default.css" rel="stylesheet" type="text/css" title="Style">
+    <!-- <script type="text/javascript" src="/assets/js/javascripts/hello.js" ></script> -->
+    <script async src="https://cse.google.com/cse.js?cx=c1bcd585429a188f9"></script>
+</head>
+<body style="background-image:url(/png/gtmb.png)">
+<div id="container">
+  <header id="header">
+    <h1>The VauLSMorg (vlsm.org) Archive</h1>
+  </header>
+  <div class="gcse-search"></div>
+  <nav id="navbar">
+    <ul>
+      <li class='listitem'><a href='/'>HOME</a></li>
+      <li class='listitem'><a href='/0/'>DIR0</a></li>
+      <li class='listitem'><a href='/1/'>DIR1</a></li>
+      <li class='listitem'><a href='/2/'>DIR2</a></li>
+      <li class='listitem'><a href='/3/'>DIR3</a></li>
+      <li class='listitem'><a href='/4/'>DIR4</a></li>
+      <li class='listitem'><a href='https://github.com/rms46/rms46.vlsm.org/'>GITHUB</a></li>
+    </ul>
+  </nav>
+  <section id="maincontent">
+     <h1>UNINET: An Inter-University Computer Network</h1>
+<br><b>Jos Luhukay and Bagio Budiardjo</b>
 	<br>Computer Science Center - University Indonesia
-	<br>1983</b></font></font>
-<td width=77 align="center" valign="middle"><a href="LOCAL-LINK2.html" target="_top"><img 
-src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
-</table></center>
+	<br>1983
 
-<center>
-<table width="80%">
-<tr>
-<td align="right">
-<a name="isi"></a>
-<a href="../etc-new.html" target="_top"><font size=2 
-   color="red">WHAT&#39;s NEW</font></a> |
-<a href="../00-0.html" target="_top"><font size=2 color="red">HOME</font></a> |
-<a href="#bawah" target="_top"><font size=1 
-   color="blue">vv BOTTOM vv</font></a> |
-<a href="#0" target="_top"><font size=1 
-   color="blue">NEXT&gt;&gt;&gt;</font></a>
-<br>
-<font size="1" color="#00008b"><small><br>
-<form method="get" action="http://www.google.com/search">
-  <input type="text" name="q" size="30" maxlength=255 value="">
-  <input type="submit" name="btnG" value="Google Search">
-</form></small></font>
-<tr>
-<td align="center">
-<font size=3 face="arial, helvetica, sans-serif">
-  <a href="#0" target="_top">Abstract</a>
-| <a href="#1" target="_top">Introduction</a>
-| <a href="#2" target="_top">Design Philosophy</a>
-| <a href="#3" target="_top">Network Architecture</a>
-<br>
-  <a href="#4" target="_top">Institutional Framework</a>
-| <a href="#5" target="_top">Implementation Plans</a>
-| <a href="#6" target="_top">References</a>
-| <a href="#7" target="_top">EndNote</a>
-</font>
-<tr>
-<td align="right">
-<a name="0"></a>
-<font size=1 color="blue"><a href="55.html" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a> |
-<a href="#1" target="_top">NEXT&gt;&gt;&gt;</a></font>
-<tr>
-<td align="left">
-<font size=3 face="arial, helvetica, sans-serif">
 <h2>Abstract</h2>
 <p>
         This paper discusses UNINET, a proposed inter-University 
@@ -82,18 +48,7 @@ src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
 	and single-host nodes. The network&#39;s architecture and 
 	functions are discussed and the implementation plans briefly 
 	laid out.
-</font>
 
-<tr>
-<td align="right">
-<a name="1"></a>
-<font size=1 color="blue"><a href="#0" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a> |
-<a href="#2" target="_top">NEXT&gt;&gt;&gt;</a></font>
-<tr>
-<td align="left">
-<font size=3 face="arial, helvetica, sans-serif">
 <h2>Introduction</h2>
 <p>
         The dependency of modern man upon the computer is getting 
@@ -128,18 +83,7 @@ src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
 	is abbreviated to UNINET in this paper. However, this is by no
 	means the official name by which the network will actually be 
 	known.
-</font>
 
-<tr>
-<td align="right">
-<a name="2"></a>
-<font size=1 color="blue"><a href="#1" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a> |
-<a href="#3" target="_top">NEXT&gt;&gt;&gt;</a></font>
-<tr>
-<td align="left">
-<font size=3 face="arial, helvetica, sans-serif">
 <h2>Design Philosophy</h2>
 <p>
         UNINET is intended to provide educators and researchers 
@@ -163,18 +107,7 @@ src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
 	(and planned) physical communication facilities in order to 
 	attain the best (i.e. the most economical) network configuration.
 </ol>
-</font>
 
-<tr>
-<td align="right">
-<a name="3"></a>
-<font size=1 color="blue"><a href="#2" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a> |
-<a href="#4" target="_top">NEXT&gt;&gt;&gt;</a></font>
-<tr>
-<td align="left">
-<font size=3 face="arial, helvetica, sans-serif">
 <h2>Network Architecture</h2>
 <p>
         By serving the user community with network facilities and access, 
@@ -232,18 +165,7 @@ src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
 	specialized databases, bibliographic services, cartographic 
 	data accesses, etc. It is also conceivable to have a powerful 
 	number cruncher as an SSC.
-</font>
 
-<tr>
-<td align="right">
-<a name="4"></a>
-<font size=1 color="blue"><a href="#3" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a> |
-<a href="#5" target="_top">NEXT&gt;&gt;&gt;</a></font>
-<tr>
-<td align="left">
-<font size=3 face="arial, helvetica, sans-serif">
 <h2>Institutional Framework</h2>
 <p>
         The planning and development activities of UNINET will be 
@@ -254,18 +176,7 @@ src="png/LOCAL-LOGO2.png" ALT="[LOCAL LOGO 2]" width=75 height=75 border=0></a>
 	support. The last three tasks tackle the details of the 
 	development process while the first task includes cooperation 
 	with other organizations  outside the Department.
-</font>
 
-<tr>
-<td align="right">
-<a name="4"></a>
-<font size=1 color="blue"><a href="#3" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a> |
-<a href="#5" target="_top">NEXT&gt;&gt;&gt;</a></font>
-<tr>
-<td align="left">
-<font size=3 face="arial, helvetica, sans-serif">
 <h2>Network Functions</h2>
 <p>
         A user interfacing with a computer network may want to 
@@ -303,18 +214,7 @@ control statements can be submitted to the queue handler at remote site, providi
 permissions (and accounting information) are secured beforehand. In this manner files and batch jobs are
 processed similar to common mail messages. The different being that files are sent to the files handler at
 the target computer, and the batch jobs are sent with the queue handler as the recipient.
-</font>
 
-<tr>
-<td align="right">
-<a name="5"></a>
-<font size=1 color="blue"><a href="#4" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a> |
-<a href="#6" target="_top">NEXT&gt;&gt;&gt;</a></font>
-<tr>
-<td align="left">
-<font size=3 face="arial, helvetica, sans-serif">
 <h2>Implementation Plans</h2>
 <p>
         Rather than tackling the physical problems of network development, it is proposed to concentrate on
@@ -326,18 +226,7 @@ hope that may that time a working packet switching network exists, so that gatew
 be designed and tested. This will bring us well into the third year of implementation, by which time LAN&#39; s
 will be implemented at some of the nodes. The fourth and final year of the five-year plan can then be
 dedicated to the development of the other network functions.
-</font>
 
-<tr>
-<td align="right">
-<a name="6"></a>
-<font size=1 color="blue"><a href="#5" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a> |
-<a href="#6" target="_top">NEXT&gt;&gt;&gt;</a></font>
-<tr>
-<td align="left">
-<font size=3 face="arial, helvetica, sans-serif">
 <h2>References</h2>
 <p>
 <ul>
@@ -354,18 +243,7 @@ dedicated to the development of the other network functions.
 	Packet Switching for Local Computer Networks</em>", Communications 
 	ACM 19/7, July&#39;76, pp. 395 -404.
 </ul>
-</font>
 
-<tr>
-<td align="right">
-<a name="7"></a>
-<font size=1 color="blue"><a href="#6" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a> |
-<a href="#bawah" target="_top">NEXT&gt;&gt;&gt;</a></font>
-<tr>
-<td align="left">
-<font size=3 face="arial, helvetica, sans-serif">
 <h2>EndNote</h2>
 <p>
 	The original paper was written for the "<em>Asia Electronics 
@@ -373,40 +251,46 @@ dedicated to the development of the other network functions.
 	This reproduction was typed in by <em>Rika Novita</em> and
 	HTML-ized by 
         <a href="https://rahmatm.samik-ibrahim.vlsm.org/">Rahmat M. Samik-Ibrahim</a>.
-</font>
-</table>
-</center>
 
-<a name="bawah"></a>
-<center>
-<table width="80%">
-<tr>
-<td align="right">
-	<font size=1 color="blue"><a href="#7" 
-    target="_top">&lt;&lt;&lt;PREV</a> |
-<a href="55.html" target="_top">^^TOP^^</a></font>
-</table>
-<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e6ebfe" 
-width="80%">
-<tr>
-<td width=77></td>
-<td align="left">
-	<font size=2 color="#00008b">
-	Copyright &copy 1983-2020 <a href="https://www.ui.ac.id/">Joseph F.P. Luhukay and Bagio Budiardjo</a>.
-	Provided <b>AS-IS</b> with no <b>LIABILITY</b>.
-<br>	
-	Permission is granted to copy, distribute, and/or modify
-	this webpage provided this notice is preserved.
-<br>	
-	File revision: 10.2 15-Jul-2020
-<td width=77></td>
-</table>
-<table>
-<tr>
-<td height="600" valign="top">
-</table>
-</center>
+
+  </section>
+  <footer id="footer">
+File Revision: 122---16-Jan-2021.
+<br><br>
+<a href="https://rms46.github.io/jekyllTester/">&copy;</a> 1996-2021 --- Copyright of the files in this repository remains with 
+the respective authors or / and producers. We are <b>NOT</b> responsible for the <b>ACCURACY</b> or 
+<b>LOSSES</b> that may occur as a result of using this site. <b>PLEASE ASSUME ALL RISKS</b>! Don't 
+forget to express / write down acknowledgments if you use work materials from other 
+parties.
+You are free to share, copy and redistribute the material of this site in any medium
+or format for any purpose, even commercially. Please give appropriate credit, provide
+a link to the page, and indicate if changes were made. You may do so in any reasonable 
+manner. You should not apply legal terms or technological measures, that legally 
+restrict others from doing anything that is permitted here.
+<br><br>
+Kami <b>TIDAK</b> bertanggung-jawab atas <b>KEAKURATAN</b> mau pun <b>KERUGIAN</b> yang mungkin terjadi akibat 
+memanfaatkan situs ini.  <b>HARAP MENANGGUNG SENDIRI SEGALA RISIKO</b>!  Jangan lupa mengungkapkan/ 
+menuliskan penghargaan (<b>acknowledgement</b>) jika anda menggunakan bahan karya dari 
+pihak lain.
+Situs ini berbasis “<b>Google Sana, Google Sini, Coba Itu, Coba Ini, Lalu Tanya-tanyi</b>” 
+(GSGSCICILTT). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah ada klaim 
+bahwa ini merupakan karya asli, serta belum tentu pula merupakan solusi terbaik, serta 
+bukan untuk konsumsi Scopus :). Mohon kiranya memberikan tanggapan, terutama jika 
+memiliki solusi alternatif. Semoga catatan ini akan bermanfaat di masa mendatang, 
+saat sudah lupa cara menyelesaikan masalah trivia 
+<a href="/test.html">ini</a>.
+<br><br>
+<a href="https://rahmatm.samik-ibrahim.vlsm.org/2021/01/how-to-contact-rahmat-m-samik-ibrahim.html">Rahmat M. Samik-Ibrahim</a>
+  </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-89852122-4', 'auto');
+  ga('send', 'pageview');
+</script>
+</div>
 </body>
 </html>
-<!-- END -->
 
