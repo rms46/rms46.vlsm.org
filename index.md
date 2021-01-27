@@ -12,5 +12,5 @@ layout: "layout"
 <hr>
 * [Riwayat H.A. Samik Ibrahim --- Perintis Muhammadiyah di Pesisir Sumatera Barat]({{ site.baseurl }}/0/00-18.html)
 * [Jaringan Sistem Unix (1992) --- Joseph F.P. Luhukay et.al.]({{ site.baseurl }}/1/80.html)
-* [Ringkasan Makalah --- Information Systems Research (ISR)]({{ site.baseurl }}/2/145.html)
+* [Ringkasan Makalah --- Sistem Informasi]({{ site.baseurl }}/2/145.html)
 
