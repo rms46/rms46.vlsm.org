@@ -30,7 +30,7 @@ layout: "layout"
 # {{ site.title }}
 NNNN
 
-for II in 0 1 2 3 4 ; do
+for II in 0 1 2 3 4 5 ; do
     [ -d $II ] && echo "# [Directory $II]($II/)"  >> index.md
     [ -d $II ] && mkidx $II
 done
