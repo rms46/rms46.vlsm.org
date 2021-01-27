@@ -14,7 +14,7 @@ function mkidx {
     printf -- '# [Directory %s/]\n' $1            >>  index.md
     for II in $(ls) ; do
         [ "$II" == "index.md" ] && continue
-        [ -f $II ] && echo "### [$II]($II)"       >> index.md
+        [ -f $II ] && echo "* [$II]($II)"       >> index.md
     done
 
     cd ..
@@ -31,9 +31,11 @@ layout: "layout"
 NNNN
 
 for II in 0 1 2 3 4 5 ; do
-    [ -d $II ] && echo "# [Directory $II]($II/)"  >> index.md
+    [ -d $II ] && echo "* [Directory $II]($II/)"  >> index.md
     [ -d $II ] && mkidx $II
 done
+
+[ -f 2/229.md ] && cat 2/229.md >> index.md
 
 exit 0
 
