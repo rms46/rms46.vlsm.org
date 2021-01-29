@@ -1278,6 +1278,9 @@ index.html
 0010.jpg
 0011.pdf
 0012.html
+0013.jpg
+0014.jpg
+0015.jpg
 index.html
 
 ./_site/5:
