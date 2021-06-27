@@ -25,7 +25,7 @@ test.md
 ./0:
 00-0.html
 00-10.html
-00-11.html
+00-11.md
 00-12.html
 00-13.html
 00-14.html
