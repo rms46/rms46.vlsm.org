@@ -18,6 +18,7 @@ Gemfile
 Gemfile.lock
 index.md
 _layouts
+Makefile
 README.md
 _site
 test.md
