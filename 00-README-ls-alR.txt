@@ -704,6 +704,7 @@ etc-welcome.html
 extra
 favicon.ico
 index.html
+Makefile
 README.html
 robots.txt
 sitemap.xml
@@ -1313,6 +1314,7 @@ index.html
 0024.jpg
 0025.jpg
 0026.jpg
+0027.jpg
 index.html
 
 ./_site/5:
