@@ -29,3 +29,4 @@ layout: "layout"
 * [0025.jpg](0025.jpg)
 * [0026.jpg](0026.jpg)
 * [0027.jpg](0027.jpg)
+* [0028.jpg](0028.jpg)
