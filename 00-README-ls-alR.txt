@@ -384,6 +384,9 @@ index.md
 230.ods
 230.pdf
 231.pdf
+232.odg
+232.odt
+232.pdf
 index.md
 
 ./3:
