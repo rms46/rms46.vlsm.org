@@ -1080,6 +1080,9 @@ index.html
 230.ods
 230.pdf
 231.pdf
+232.odg
+232.odt
+232.pdf
 index.html
 
 ./_site/3:
