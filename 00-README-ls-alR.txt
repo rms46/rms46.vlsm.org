@@ -387,6 +387,8 @@ index.md
 232.odg
 232.odt
 232.pdf
+233.pdf
+233.tex
 index.md
 
 ./3:
