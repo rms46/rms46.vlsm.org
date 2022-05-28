@@ -1,5 +1,5 @@
 title: The VauLSMorg (vlsm.org) Archive
-version:      158b---28-May-2022
+version:      158c---28-May-2022
 copyright:    1996-2022
 description: This site is managed by VauLSMorg (vlsm.org) since 1996.
 google_analytics: G-JRP5KLLM8B
@@ -13,7 +13,7 @@ plugins:
 social:
   name: URLs
   links:
-    - https://https://github.com/rms46/rms46.vlsm.org/
+    - https://github.com/rms46/rms46.vlsm.org/
 
 # github:
 #    zip_url: https://github.com/...
