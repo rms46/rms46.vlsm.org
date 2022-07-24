@@ -1,0 +1,13 @@
+#!/bin/bash
+# REV02: Sun 24 Jul 2022 20:00
+# REV01: Thu 02 Jun 2022 06:00
+# START: Mon 30 May 2022 10:00
+
+[ -z $1 ] && { echo "No fix"; exit 1; }
+
+for II in _site/*.xml _site/*.html _site/robots.txt ; do
+  echo "fixing $1 in ${II}..."
+  sed -i -e "s/http:\/\/localhost:5002/https:\/\/$1/g" $II
+done
+
+
