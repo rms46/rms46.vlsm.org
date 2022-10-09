@@ -5,6 +5,8 @@
 #navbar ul li {
   display: inline-block;
   padding: 5px 2%;
+  padding-top:      20px;
+  padding-bottom:   20px;
 }
 
 #navbar ul li a {
@@ -12,11 +14,15 @@
   color: #FFFFFF;
   font-size: 1em;
   padding: 5px 0;
+  padding-top:      3px;
+  padding-bottom:   3px;
 }
 
 #navbar ul li a:hover {
   background: blue;
   color: #CCCCCC;
+  padding-top:      3px;
+  padding-bottom:   3px;
 }
 
 #menu {
