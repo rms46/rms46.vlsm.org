@@ -58,6 +58,16 @@
   color: #FFF;
 }
 
+td {
+  padding-top:      10px;
+  padding-bottom:   10px;
+}
+
+li {
+  padding-top:      10px;
+  padding-bottom:   10px;
+}
+
 @media screen and (max-width:768px) {
   ul {
     margin: 0;
