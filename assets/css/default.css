@@ -59,13 +59,13 @@
 }
 
 td {
-  padding-top:      1px;
-  padding-bottom:   1px;
+  padding-top:      9px;
+  padding-bottom:   9px;
 }
 
 li {
-  padding-top:      1px;
-  padding-bottom:   1px;
+  padding-top:      9px;
+  padding-bottom:   9px;
 }
 
 @media screen and (max-width:768px) {
