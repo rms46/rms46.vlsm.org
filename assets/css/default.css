@@ -10,7 +10,7 @@
 #navbar ul li a {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 5px 0;
 }
 
@@ -59,13 +59,13 @@
 }
 
 td {
-  padding-top:      10px;
-  padding-bottom:   10px;
+  padding-top:      8px;
+  padding-bottom:   8px;
 }
 
 li {
-  padding-top:      10px;
-  padding-bottom:   10px;
+  padding-top:      8px;
+  padding-bottom:   8px;
 }
 
 @media screen and (max-width:768px) {
