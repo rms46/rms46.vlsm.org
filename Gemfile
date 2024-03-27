@@ -1,6 +1,14 @@
-source 'https://rubygems.org/'
-gem 'jekyll-sitemap'
-gem 'faraday-retry'
-gem 'webrick'
-gem 'github-pages', group: :jekyll_plugins
+source "https://rubygems.org"
+
+group :jekyll_plugins do
+# gem "faraday-retry"
+# gem "github-pages"
+gem "jekyll"
+gem "jekyll-seo-tag"
+# gem "jekyll-feed"
+# gem "jekyll-paginate"
+gem "jekyll-sitemap"
+# gem "tzinfo-data"
+# gem "webrick"
+end
 

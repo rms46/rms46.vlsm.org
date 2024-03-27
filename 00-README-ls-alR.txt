@@ -1081,7 +1081,6 @@ index.html
 226.jpg
 227.jpg
 228.jpg
-229.html
 229.md
 230.ods
 230.pdf
@@ -1375,7 +1374,6 @@ index.html
 
 ./_site/assets:
 css
-images
 js
 pictures
 
@@ -1383,12 +1381,6 @@ pictures
 default.css
 olddefault1.css
 olddefault.css
-style.css
-
-./_site/assets/images:
-bkg.png
-blacktocat.png
-bullet.png
 
 ./_site/assets/js:
 javascripts
